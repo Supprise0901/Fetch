@@ -5,120 +5,344 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN-183.236.51.6-2952, server: other.kunlun-ppg.com, port: 10841, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: AU-103.224.212.212-6017, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2926, server: us.kunlun-ppg.com, port: 10826, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本KT2|@ripaojiedian, server: 139.227.182.207, port: 10016, type: ss, cipher: aes-128-gcm, password: g12sQi#ss#&1, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: CN-183.236.51.6-2781, server: sg.kunlun-ppg.com, port: 10827, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2924, server: us.kunlun-ppg.com, port: 10824, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2785, server: sg.kunlun-ppg.com, port: 10831, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.7-2922, server: us.kunlun-ppg.com, port: 10822, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2782, server: sg.kunlun-ppg.com, port: 10828, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
+  - {name: RELAY-172.67.229.12-0462, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}, udp: true}
+  - {name: CN-183.240.221.233-5138, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
   - {name: FR-51.77.213.197-7242, server: 51.77.213.197, port: 443, type: trojan, password: 973ed2e0-c4d8-4737-a093-71629148086d, sni: frt2.sshocean.net, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2965, server: other.kunlun-ppg.com, port: 10836, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.240.221.235-5155, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
-  - {name: FR-51.158.195.96-5165, server: 51.158.195.96, port: 80, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
-  - {name: CN-183.236.51.6-2919, server: us.kunlun-ppg.com, port: 10819, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
+  - {name: "-3113-IN【ccbaohe.com〗 永久免费节点机场\r", server: 139.84.144.10, port: 443, type: trojan, password: 4fc77152e665415b9986d5b9b8f43601, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
+  - {name: HK-219.76.161.193-185, server: download2hkt.windowsupdatea.com, port: 443, type: trojan, password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff, sni: glc-hkt2.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: KR-146.56.189.146-6130, server: 146.56.189.146, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: 韩国_121320048, server: unlk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20152, type: trojan, password: 928dc6ee-495b-446f-9f20-883dedce564a, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320021, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 85ba209b-54d1-4aad-871e-98df4eb224bf, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320007, server: frontend.kuangbiaoyun.com, port: 40001, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: HK-203.198.16.190-198, server: download1hkt.windowsupdatea.com, port: 443, type: trojan, password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff, sni: glc-hkt1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: SG-5.44.249.50-8601, server: 5.44.249.50, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
+  - {name: TW-36.228.222.40-189, server: download1tw.windowsupdatea.com, port: 443, type: trojan, password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff, sni: glc-tw1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: "0,1,2,3,4,20|🇩🇪_DE_德国_7", server: 80.71.157.199, port: 443, type: vmess, uuid: a88ba483-d935-4cb8-a425-a8a9a468409b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _FR_法国, server: 135.125.172.153, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: 加拿大_121320025, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 1468eae4-eb01-4b9f-ae8f-ce55c372d1af, skip-cert-verify: true, udp: true}
+  - {name: 香港K|浏览器输入 翻墙.com, server: 1.65.139.94, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: github.com/freefq - 美国  7, server: kkyx.yydsii.com, port: 80, type: vmess, uuid: f32fb637-67eb-48be-9f29-4523c4720de7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yxtw.651568.xyz}}, udp: true}
+  - {name: ZZ_195, server: 5.44.249.44, port: 3306, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320039, server: frontend.yijianlian.app, port: 54530, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: TW-36.228.232.215-8770, server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd, port: 80, type: vmess, uuid: 0876403d-5467-4d9f-8d85-23d520e22e94, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd}}, udp: true}
+  - {name: AU-103.224.212.212-6017, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: true, udp: true}
+  - {name: JP-52.140.215.112-1514, server: ar.mjt000.com, port: 443, type: trojan, password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949, sni: ar.mjt000.com, skip-cert-verify: true, udp: true}
+  - {name: TW-60.249.3.228-5866, server: 60.249.3.228, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
   - {name: FR-51.158.195.96-027, server: 51.158.195.96, port: 110, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: AU-103.224.212.212-5606, server: ap-northeast-1.openssl3.com, port: 443, type: trojan, password: tune7jerky7HAYRICK, sni: ap-northeast-1.openssl3.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320011, server: frontend.kuangbiaoyun.com, port: 40004, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
+  - {name: FR-135.125.172.139-1001, server: 135.125.172.139, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: DE-5.104.108.109-1515, server: 5.104.108.109, port: 443, type: trojan, password: 6504a551-673d-44d6-85a9-b05f67fdf971, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: TW-60.249.3.125-5656, server: 60.249.3.125, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+  - {name: US-45.9.10.103-7908, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
+  - {name: US-15.204.240.119-3855, server: 15.204.240.119, port: 443, type: trojan, password: ddbe4c70-7a02-11ee-aef2-1239d0255272, sni: us1.test3.net, skip-cert-verify: true, udp: true}
+  - {name: SG-5.44.249.43-9582, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: DE-5.104.107.143-1518, server: 5.104.107.143, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: de1.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320009, server: frontend.kuangbiaoyun.com, port: 40007, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_121320893, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 928dc6ee-495b-446f-9f20-883dedce564a, sni: 206.237.5.220, skip-cert-verify: true, udp: true}
+  - {name: "-3098-HK【ccbaohe.com〗 永久免费节点机场\r", server: 118.142.55.54, port: 443, type: trojan, password: 4fc77152e665415b9986d5b9b8f43601, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
+  - {name: 香港 环球全域电讯, server: 118.142.17.238, port: 443, type: trojan, password: 4fc77152e665415b9986d5b9b8f43601, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
   - {name: RU-91.206.92.17-3854, server: 91.206.92.17, port: 443, type: trojan, password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1, sni: insaneguo2333.top, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.7-2787, server: sg.kunlun-ppg.com, port: 10833, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城R|@ripaojiedian, server: cm03.newcome.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@ripaojiedian, udp: true}
-  - {name: CN-183.236.51.7-2920, server: us.kunlun-ppg.com, port: 10820, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2923, server: us.kunlun-ppg.com, port: 10823, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港KT1|@ripaojiedian, server: 47.243.34.184, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: 加拿大_121320008, server: frontend.kuangbiaoyun.com, port: 40006, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
+  - {name: JP-185.212.56.168-3864, server: 185.212.56.168, port: 443, type: trojan, password: share.mjj-home.com, sni: tw.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
+  - {name: 16|🇯🇵 日本特殊|浏览器输入 翻墙.com, server: 52.221.200.66, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: CN-183.240.221.235-5155, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
+  - {name: HK-45.11.104.94-5850, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: sbank.ir, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320036, server: frontend.yijianlian.app, port: 54570, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: FR-51.158.195.96-5165, server: 51.158.195.96, port: 80, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: GB-23.106.33.156-3859, server: 23.106.33.156, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: scottie.golfland.club, skip-cert-verify: true, udp: true}
   - {name: CN-183.240.221.234-5124, server: cm03.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
-  - {name: CN-183.236.51.6-2783, server: sg.kunlun-ppg.com, port: 10829, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2788, server: sg.kunlun-ppg.com, port: 10834, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
-  - {name: CN-183.236.51.6-2784, server: sg.kunlun-ppg.com, port: 10830, type: trojan, password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68, sni: alibaba-node.cn, skip-cert-verify: true, udp: true}
+  - {name: HK-150.107.46.21-5126, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: FR-51.158.200.139-021, server: 51.158.200.139, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: 台湾3|@ripaojiedian, server: wtw1000mline004.chilines.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4d1e8cd03847, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /wlkldrkdzet, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: AU-103.224.212.213-5334, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: 狮城R|@ripaojiedian, server: cm03.newcome.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@ripaojiedian, udp: true}
+  - {name: 加拿大_121320038, server: frontend.yijianlian.app, port: 54420, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320022, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: RELAY-172.67.75.194-0452, server: singapore.com, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}, udp: true}
+  - {name: "US [LV3·原生] 节点更新 bit.ly/36b6iJh", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: edf8e507-b422-42d9-a10d-42f69bfd69b2, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: RELAY-104.21.75.246-1429, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}, udp: true}
+  - {name: 加拿大_121320006, server: frontend.yijianlian.app, port: 54590, type: trojan, password: b5e4e360-5946-470b-aad0-db98f50faa57, skip-cert-verify: true, udp: true}
+  - {name: SG-5.44.249.43-9584, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320024, server: frontend.yijianlian.app, port: 54530, type: trojan, password: cf82acfc-7b90-445e-ac4a-56ce0a48305a, skip-cert-verify: true, udp: true}
+  - {name: 日本KT|@ripaojiedian, server: 139.227.182.207, port: 10013, type: ss, cipher: aes-128-gcm, password: g12sQi#ss#&1, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: RELAY-172.67.229.38-0453, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}, udp: true}
+  - {name: Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb, server: ap.liangyuandiancloud.com, port: 443, type: trojan, password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959, skip-cert-verify: true, udp: true}
+  - {name: "-3110-RU【ccbaohe.com〗 永久免费节点机场\r", server: 185.4.64.225, port: 443, type: trojan, password: 4fc77152e665415b9986d5b9b8f43601, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
+  - {name: 日本KT2|@ripaojiedian, server: 139.227.182.207, port: 10016, type: ss, cipher: aes-128-gcm, password: g12sQi#ss#&1, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: ZZ_197, server: 5.44.249.53, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320037, server: frontend.yijianlian.app, port: 54000, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: ZZ_196, server: 5.44.249.42, port: 3306, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: CA-68.233.121.121-0145, server: frontend.yijianlian.app, port: 54540, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: RELAY-104.17.193.145-1787, server: 104.17.193.145, port: 8080, type: vmess, uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu5.openxai.link}}, udp: true}
+  - {name: FR-51.158.203.4-017, server: 51.158.203.4, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: SG-5.44.249.43-8599, server: 5.44.249.43, port: 3306, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: TW-60.249.3.227-5733, server: 60.249.3.227, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
+  - {name: SG-172.104.177.105-9465, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: RELAY-104.20.25.37-3324, server: v4.cfnode.eu.org, port: 80, type: vmess, uuid: f32fb637-67eb-48be-9f29-4523c4720de7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yxtw.651568.xyz}}, udp: true}
+  - {name: DE-5.104.108.120-1517, server: 5.104.108.120, port: 443, type: trojan, password: 2a9abeb7-6f97-4d33-9069-f6e009d88455, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: RELAY-104.17.129.28-1571, server: 104.17.129.28, port: 8080, type: vmess, uuid: 94242109-0930-427f-f899-15d34021130c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: CA-68.233.121.121-1933, server: frontend.kuangbiaoyun.com, port: 40003, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: unlk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20152, type: trojan, password: d56cb8dc-e932-4d57-bd90-1381a1245f90, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -137,123 +361,351 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港K|浏览器输入 翻墙.com
+      - 香港 环球全域电讯
+      - 香港KT1|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -269,30 +721,86 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.236.51.6-2952
-      - AU-103.224.212.212-6017
-      - CN-183.236.51.6-2926
-      - 日本KT2|@ripaojiedian
-      - CN-183.236.51.6-2781
-      - CN-183.236.51.6-2924
-      - CN-183.236.51.6-2785
-      - CN-183.236.51.7-2922
-      - CN-183.236.51.6-2782
+      - RELAY-172.67.229.12-0462
+      - CN-183.240.221.233-5138
       - FR-51.77.213.197-7242
-      - CN-183.236.51.6-2965
-      - CN-183.240.221.235-5155
-      - FR-51.158.195.96-5165
-      - CN-183.236.51.6-2919
+      - "-3113-IN【ccbaohe.com〗 永久免费节点机场\r"
+      - HK-219.76.161.193-185
+      - KR-146.56.189.146-6130
+      - 韩国_121320048
+      - 加拿大_121320021
+      - 加拿大_121320007
+      - HK-203.198.16.190-198
+      - SG-5.44.249.50-8601
+      - TW-36.228.222.40-189
+      - 0,1,2,3,4,20|🇩🇪_DE_德国_7
+      - _FR_法国
+      - 加拿大_121320025
+      - 香港K|浏览器输入 翻墙.com
+      - github.com/freefq - 美国  7
+      - ZZ_195
+      - 加拿大_121320039
+      - TW-36.228.232.215-8770
+      - AU-103.224.212.212-6017
+      - JP-52.140.215.112-1514
+      - TW-60.249.3.228-5866
       - FR-51.158.195.96-027
+      - AU-103.224.212.212-5606
+      - 加拿大_121320011
+      - FR-135.125.172.139-1001
+      - DE-5.104.108.109-1515
+      - TW-60.249.3.125-5656
+      - US-45.9.10.103-7908
+      - US-15.204.240.119-3855
+      - SG-5.44.249.43-9582
+      - DE-5.104.107.143-1518
+      - 加拿大_121320009
+      - 美国_121320893
+      - "-3098-HK【ccbaohe.com〗 永久免费节点机场\r"
+      - 香港 环球全域电讯
       - RU-91.206.92.17-3854
-      - CN-183.236.51.7-2787
-      - 狮城R|@ripaojiedian
-      - CN-183.236.51.7-2920
-      - CN-183.236.51.6-2923
+      - 香港KT1|@ripaojiedian
+      - 加拿大_121320008
+      - JP-185.212.56.168-3864
+      - 16|🇯🇵 日本特殊|浏览器输入 翻墙.com
+      - CN-183.240.221.235-5155
+      - HK-45.11.104.94-5850
+      - 加拿大_121320036
+      - FR-51.158.195.96-5165
+      - GB-23.106.33.156-3859
       - CN-183.240.221.234-5124
-      - CN-183.236.51.6-2783
-      - CN-183.236.51.6-2788
-      - CN-183.236.51.6-2784
+      - HK-150.107.46.21-5126
+      - FR-51.158.200.139-021
+      - 台湾3|@ripaojiedian
+      - AU-103.224.212.213-5334
+      - 狮城R|@ripaojiedian
+      - 加拿大_121320038
+      - 加拿大_121320022
+      - RELAY-172.67.75.194-0452
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - RELAY-104.21.75.246-1429
+      - 加拿大_121320006
+      - SG-5.44.249.43-9584
+      - 加拿大_121320024
+      - 日本KT|@ripaojiedian
+      - RELAY-172.67.229.38-0453
+      - Relay_🇺🇸US-🇦🇺AU_187 |40.70Mb
+      - "-3110-RU【ccbaohe.com〗 永久免费节点机场\r"
+      - 日本KT2|@ripaojiedian
+      - ZZ_197
+      - 加拿大_121320037
+      - ZZ_196
+      - CA-68.233.121.121-0145
+      - RELAY-104.17.193.145-1787
+      - FR-51.158.203.4-017
+      - SG-5.44.249.43-8599
+      - TW-60.249.3.227-5733
+      - SG-172.104.177.105-9465
+      - RELAY-104.20.25.37-3324
+      - DE-5.104.108.120-1517
+      - RELAY-104.17.129.28-1571
+      - CA-68.233.121.121-1933
+      - 美国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
