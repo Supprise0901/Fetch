@@ -5,48 +5,52 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN-183.240.221.234-6886, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
   - {name: Korea-韩国, server: frontend.kuangbiaoyun.com, port: 40003, type: trojan, password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c, skip-cert-verify: true, udp: true}
-  - {name: KR-43.202.3.93-4607, server: 43.202.3.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "10,15|香港1|@ripaojiedian", server: 112.28.208.10, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN-112.28.208.10-182, server: 112.28.208.10, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "10,11|github.com/freefq - 广西河池市联通 6", server: yes.cnmjcn.net, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: Singapore-新加坡, server: frontend.kuangbiaoyun.com, port: 40006, type: trojan, password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c, skip-cert-verify: true, udp: true}
+  - {name: USA-美国, server: frontend.kuangbiaoyun.com, port: 40007, type: trojan, password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320007, server: frontend.kuangbiaoyun.com, port: 40001, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320008, server: frontend.kuangbiaoyun.com, port: 40006, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320009, server: frontend.kuangbiaoyun.com, port: 40007, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大_121320011, server: frontend.kuangbiaoyun.com, port: 40004, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -65,52 +69,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 10,15|香港1|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,12 +133,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.240.221.234-6886
       - Korea-韩国
-      - KR-43.202.3.93-4607
-      - 10,15|香港1|@ripaojiedian
-      - CN-112.28.208.10-182
-      - 10,11|github.com/freefq - 广西河池市联通 6
+      - Singapore-新加坡
+      - USA-美国
+      - 加拿大_121320007
+      - 加拿大_121320008
+      - 加拿大_121320009
+      - 加拿大_121320011
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
