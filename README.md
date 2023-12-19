@@ -1,7 +1,7 @@
 
 [live](https://mirror.ghproxy.com/https://raw.githubusercontent.com/Supprise0901/Fetch/main/live.txt)
 
-[live18](https://mirror.ghproxy.com/https://raw.githubusercontent.com/Supprise0901/Fetch/main/single_lines/live.txt)
+[source](https://mirror.ghproxy.com/https://raw.githubusercontent.com/Supprise0901/Fetch/main/tvbox.json)
 
 
 
