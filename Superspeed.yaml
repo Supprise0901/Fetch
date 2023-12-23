@@ -5,180 +5,364 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_speednode_0063, server: jp.liangyuandiancloud.com, port: 443, type: trojan, password: 96f625d7-f202-46b0-b679-34f8289c6945, skip-cert-verify: true, udp: true}
-  - {name: 四川省联通数据上网公共出口 36, server: yes.cnmjcn.net, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: 香港核心 IEPL 03, server: hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本核心 IEPL 01, server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本核心 IEPL 03, server: jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港1|@ripaojiedian, server: 112.28.208.10, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|CZ|捷克|@wxgqlfx|58", server: 94.131.97.10, port: 2082, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: 香港核心 IEPL 01, server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡核心 IEPL 03, server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本特殊|@ripaojiedian, server: 3.35.131.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 新加坡核心 IEPL 01, server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CZ-94.131.97.10-8959, server: 94.131.97.10, port: 2082, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: CZ-94.131.97.10-8962, server: 94.131.97.10, port: 8880, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: TW-60.249.3.227-5754, server: 60.249.3.227, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: 美国核心 IEPL 01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: SG-4.193.102.129-5772, server: uk.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 v2rayfree.eu.org, server: 95.164.44.203, port: 2082, type: vmess, uuid: 6f0cca5e-cf21-4279-871e-ca26d9c955a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: 湖南省 联通, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: 湖北省 移动(全省通用), server: m.cnmjcn.com, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: 新加坡2|@ripaojiedian, server: yes.cnmjcn.net, port: 16618, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: JP-185.212.56.168-3918, server: 185.212.56.168, port: 443, type: trojan, password: share.mjj-home.com, sni: tw.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: CN-183.240.221.234-8778, server: zx02.endhigh.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: JP-74.226.229.213-6159, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：26 天, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP-52.194.252.137-0884, server: 52.194.252.137, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 香港KT2|@ripaojiedian, server: 1.65.139.94, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: CN-183.240.221.235-7441, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
-  - {name: -2679-KR【ccbaohe.com〗 永久免费节点机场, server: unlk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20152, type: trojan, password: 37d2266b-d239-47ea-8d26-35583da9e3d5, sni: unlk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
-  - {name: SG-172.104.177.105-9634, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 德国 - 杜塞尔多夫 - myLoc managed IT AG, server: 5.104.107.143, port: 443, type: trojan, password: ca67d9ab-5e39-453a-9419-3d7577358979, skip-cert-verify: true, udp: true}
-  - {name: JP-3.112.69.5-8714, server: 3.112.69.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SE-94.131.115.129-1015, server: 94.131.115.129, port: 38108, type: ss, cipher: chacha20-ietf-poly1305, password: bNUe0jR9rzsvLEzfPmI4Of, udp: true}
-  - {name: 乌克兰  39, server: 95.164.44.203, port: 2082, type: vmess, uuid: 6f0cca5e-cf21-4279-871e-ca26d9c955a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 95.164.44.203}}, udp: true}
-  - {name: IE-95.164.44.203-1891, server: 95.164.44.203, port: 2086, type: vmess, uuid: 6f0cca5e-cf21-4279-871e-ca26d9c955a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: HK-150.107.46.21-7487, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: GR-94.131.8.32-160, server: 94.131.8.32, port: 80, type: vmess, uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: CN-183.240.221.233-8770, server: cm01.newcome.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@ccbaohe, udp: true}
-  - {name: CN-183.240.221.234-8765, server: zx02.endhigh.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: "|US|美国|@wxgqlfx|17", server: 95.164.44.203, port: 8080, type: vmess, uuid: 6f0cca5e-cf21-4279-871e-ca26d9c955a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 中国 - 香港 - Akari Networ%�, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
+  - {name: "德国01{移动|V2ray}", server: cm1.awslcn.info, port: 25241, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: "美国05{优化2|V2ray}", server: us1.awslcn.info, port: 25256, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.info}}, udp: true}
+  - {name: "新加坡02{优化1|V2ray}", server: sg1.awslcn.info, port: 25243, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: "韩国01{移动|V2ray}", server: cm1.awslcn.info, port: 25218, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-116.163.29.181-2685, server: cu.awslcn.info, port: 25277, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-116.163.29.181-2680, server: cu.awslcn.info, port: 25281, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: "台湾02{移动|V2ray}", server: cm.awslcn.info, port: 25233, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2673, server: sg1.awslcn.info, port: 25270, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: HK-47.243.34.184-8142, server: 47.243.34.184, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: CN-116.162.172.120-3381, server: yes.cnmjcn.net, port: 16618, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: CN-183.236.51.21-2684, server: cm.awslcn.info, port: 25218, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: "新加坡03{优化2|V2ray}", server: sg1.awslcn.info, port: 25221, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: 韩国 - 首尔特别市 - Oracle Corporation, server: frontend.kuangbiaoyun.com, port: 40003, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: CN-183.236.51.21-2698, server: cm1.awslcn.info, port: 25241, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.235-8119, server: zx01.endhigh.xyz, port: 2403, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 新加坡7-wap, server: sg1.awslcn.info, port: 25283, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 2, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: CN-183.240.221.233-1782, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: CN-183.236.51.21-2699, server: cm.awslcn.info, port: 25240, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11985, server: zx02.endhigh.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: "英国02{移动|V2ray}", server: cm1.awslcn.info, port: 25240, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.235-10494, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: "马来04{联通|V2ray}", server: cm.awslcn.info, port: 25258, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: "新加坡01{优化2|V2ray}", server: sg1.awslcn.info, port: 25245, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11975, server: cm03.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-183.236.51.21-2669, server: cm1.awslcn.info, port: 25258, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: SG-172.104.177.105-1484, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: CN-183.240.221.233-1783, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: HK-20.24.211.131-1620, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 香港KT1|@ripaojiedian, server: 47.76.185.9, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: 越南02, server: cu.awslcn.info, port: 25285, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: 悉尼02, server: cu.awslcn.info, port: 25286, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.235-10498, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 新加坡6-wap, server: sg1.awslcn.info, port: 25282, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: "印度01{移动|V2ray}", server: cm1.awslcn.info, port: 25216, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2671, server: hk1.awslcn.info, port: 25244, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.info}}, udp: true}
+  - {name: CN-116.163.29.181-2709, server: cu.awslcn.info, port: 25228, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11963, server: cm03.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: JP-20.243.52.239-1663, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: HK-203.198.16.219-1784, server: download1hkt.windowsupdatea.com, port: 443, type: trojan, password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff, sni: glc-hkt1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: CN-116.163.29.181-2692, server: cu.awslcn.info, port: 25286, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: "新加坡04{优化2|V2ray}", server: sg1.awslcn.info, port: 25246, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2686, server: cm1.awslcn.info, port: 25216, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2681, server: cm.awslcn.info, port: 25228, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: "中国 - 台湾 - Chunghwa Telecom Co., Ltd.", server: download1tw.windowsupdatea.com, port: 443, type: trojan, password: e0ca72b2-eb7c-4498-b05e-28a3681bacbf, sni: glc-tw1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: JP-20.89.102.236-9215, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, skip-cert-verify: true, udp: true}
+  - {name: "台湾01{移动|V2ray}", server: cm1.awslcn.info, port: 25233, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: CN-36.140.120.196-3397, server: nc.cm.go002.xyz, port: 19511, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
+  - {name: 越南01, server: cm1.awslcn.info, port: 25285, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: JP-133.242.205.220-8959, server: jp02a.roc-taiwan.net.ua, port: 65012, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: CN-183.236.51.21-2678, server: sg1.awslcn.info, port: 25221, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: CN-116.163.29.181-2707, server: cu.awslcn.info, port: 25276, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-1630, server: us2.awslcn.info, port: 25257, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.info}}, udp: true}
+  - {name: "香港05{优化1|V2ray}", server: hk1.awslcn.info, port: 25244, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2714, server: cm.awslcn.info, port: 25275, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: 湖北省武汉市移动 7, server: m.cnmjcn.com, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: CN-183.240.221.234-11964, server: cm03.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: CN-183.240.221.234-11981, server: zx02.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: "巴基斯坦01{移动|V2ray}", server: cm.awslcn.info, port: 25275, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-8106, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: CN-183.236.51.21-2672, server: sg1.awslcn.info, port: 25246, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2677, server: sg1.awslcn.info, port: 25245, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: "US [LV3·原生] 节点更新 bit.ly/36b6iJh", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: edf8e507-b422-42d9-a10d-42f69bfd69b2, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本4-wap, server: cu.awslcn.info, port: 25277, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: JP-20.89.102.236-8828, server: uk.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: true, udp: true}
+  - {name: CN-183.236.51.21-2675, server: sg1.awslcn.info, port: 25243, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: "韩国03{移动|V2ray}", server: cm.awslcn.info, port: 25218, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-116.163.29.181-1644, server: us1.awslcn.info, port: 25239, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.info}}, udp: true}
+  - {name: "英国01{移动|V2ray}", server: cm.awslcn.info, port: 25240, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2688, server: cm.awslcn.info, port: 25258, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11976, server: zx02.endhigh.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: "马来03{联通|V2ray}", server: cu.awslcn.info, port: 25228, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-220.205.37.10-3368, server: yes.cnmjcn.net, port: 16626, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: "德国02{移动|V2ray}", server: cm.awslcn.info, port: 25241, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11966, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: CN-120.233.45.70-8105, server: nc.cm.go002.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
+  - {name: "美国02{优化2|V2ray}", server: us1.awslcn.info, port: 25239, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.info}}, udp: true}
+  - {name: 新加坡R|@ripaojiedian, server: cm03.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 墨西哥, server: cu.awslcn.info, port: 25284, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.info}}, udp: true}
+  - {name: CN-183.240.221.234-11986, server: zx02.endhigh.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-116.163.29.181-2697, server: us1.awslcn.info, port: 25256, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.info}}, udp: true}
+  - {name: "马来01{移动|V2ray}", server: cm.awslcn.info, port: 25228, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
+  - {name: CN-183.236.51.21-2691, server: cm1.awslcn.info, port: 25286, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -197,187 +381,373 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - 香港核心 IEPL 01
-      - 香港KT2|@ripaojiedian
+      - 中国 - 香港 - Akari Networ%�
+      - 台湾02{移动|V2ray}
+      - 香港KT1|@ripaojiedian
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - 台湾01{移动|V2ray}
+      - 香港05{优化1|V2ray}
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -393,45 +763,91 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_speednode_0063
-      - 四川省联通数据上网公共出口 36
-      - 香港核心 IEPL 03
-      - 日本核心 IEPL 01
-      - 日本核心 IEPL 03
-      - 香港1|@ripaojiedian
-      - "|CZ|捷克|@wxgqlfx|58"
-      - 香港核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本特殊|@ripaojiedian
-      - 新加坡核心 IEPL 01
-      - CZ-94.131.97.10-8959
-      - CZ-94.131.97.10-8962
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - SG-4.193.102.129-5772
-      - 乌克兰 v2rayfree.eu.org
-      - 湖南省 联通
-      - 湖北省 移动(全省通用)
-      - 新加坡2|@ripaojiedian
-      - JP-185.212.56.168-3918
-      - CN-183.240.221.234-8778
-      - JP-74.226.229.213-6159
-      - 距离下次重置剩余：26 天
-      - JP-52.194.252.137-0884
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.235-7441
-      - -2679-KR【ccbaohe.com〗 永久免费节点机场
-      - SG-172.104.177.105-9634
-      - 德国 - 杜塞尔多夫 - myLoc managed IT AG
-      - JP-3.112.69.5-8714
-      - SE-94.131.115.129-1015
-      - 乌克兰  39
-      - IE-95.164.44.203-1891
-      - HK-150.107.46.21-7487
-      - GR-94.131.8.32-160
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8765
-      - "|US|美国|@wxgqlfx|17"
+      - 中国 - 香港 - Akari Networ%�
+      - 德国01{移动|V2ray}
+      - 美国05{优化2|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 韩国01{移动|V2ray}
+      - CN-116.163.29.181-2685
+      - CN-116.163.29.181-2680
+      - 台湾02{移动|V2ray}
+      - CN-183.236.51.21-2673
+      - HK-47.243.34.184-8142
+      - CN-116.162.172.120-3381
+      - CN-183.236.51.21-2684
+      - 新加坡03{优化2|V2ray}
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - _CN_中国->🇺🇸_US_美国
+      - CN-183.236.51.21-2698
+      - CN-183.240.221.235-8119
+      - 新加坡7-wap
+      - _CN_中国->🇺🇸_US_美国 2
+      - CN-183.240.221.233-1782
+      - CN-183.236.51.21-2699
+      - CN-183.240.221.234-11985
+      - 英国02{移动|V2ray}
+      - CN-183.240.221.235-10494
+      - 马来04{联通|V2ray}
+      - 新加坡01{优化2|V2ray}
+      - CN-183.240.221.234-11975
+      - CN-183.236.51.21-2669
+      - SG-172.104.177.105-1484
+      - CN-183.240.221.233-1783
+      - HK-20.24.211.131-1620
+      - 香港KT1|@ripaojiedian
+      - 越南02
+      - 悉尼02
+      - CN-183.240.221.235-10498
+      - 新加坡6-wap
+      - 印度01{移动|V2ray}
+      - CN-183.236.51.21-2671
+      - CN-116.163.29.181-2709
+      - CN-183.240.221.234-11963
+      - JP-20.243.52.239-1663
+      - HK-203.198.16.219-1784
+      - CN-116.163.29.181-2692
+      - 新加坡04{优化2|V2ray}
+      - CN-183.236.51.21-2686
+      - CN-183.236.51.21-2681
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - JP-20.89.102.236-9215
+      - 台湾01{移动|V2ray}
+      - CN-36.140.120.196-3397
+      - 越南01
+      - JP-133.242.205.220-8959
+      - CN-183.236.51.21-2678
+      - CN-116.163.29.181-2707
+      - CN-183.236.51.21-1630
+      - 香港05{优化1|V2ray}
+      - CN-183.236.51.21-2714
+      - 湖北省武汉市移动 7
+      - CN-183.240.221.234-11964
+      - CN-183.240.221.234-11981
+      - 巴基斯坦01{移动|V2ray}
+      - CN-183.240.221.234-8106
+      - CN-183.236.51.21-2672
+      - CN-183.236.51.21-2677
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - 日本4-wap
+      - JP-20.89.102.236-8828
+      - CN-183.236.51.21-2675
+      - 韩国03{移动|V2ray}
+      - CN-116.163.29.181-1644
+      - 英国01{移动|V2ray}
+      - CN-183.236.51.21-2688
+      - CN-183.240.221.234-11976
+      - 马来03{联通|V2ray}
+      - CN-220.205.37.10-3368
+      - 德国02{移动|V2ray}
+      - CN-183.240.221.234-11966
+      - CN-120.233.45.70-8105
+      - 美国02{优化2|V2ray}
+      - 新加坡R|@ripaojiedian
+      - 墨西哥
+      - CN-183.240.221.234-11986
+      - CN-116.163.29.181-2697
+      - 马来01{移动|V2ray}
+      - CN-183.236.51.21-2691
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
