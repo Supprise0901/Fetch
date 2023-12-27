@@ -5,96 +5,120 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN-183.240.221.234-8764, server: zx02.endhigh.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 香港核心 IEPL 01, server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: TW-60.249.3.227-5754, server: 60.249.3.227, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: 美国核心 IEPL 01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本核心 IEPL 01, server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡核心 IEPL 03, server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本核心 IEPL 03, server: jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港核心 IEPL 03, server: hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡核心 IEPL 01, server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN-183.240.221.234-8765, server: zx02.endhigh.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 美国Microsoft数据中心 42, server: my02.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：26 天, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 Microsoft数据中心, server: tw02.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: CN-183.240.221.234-8759, server: cm03.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN-183.240.221.234-8778, server: zx02.endhigh.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN-183.240.221.233-8775, server: cm01.newcome.xyz, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN-183.240.221.233-8770, server: cm01.newcome.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@ccbaohe, udp: true}
-  - {name: CN-183.240.221.234-8748, server: zx02.endhigh.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: "US [LV3·原生] 节点更新 bit.ly/36b6iJh", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: edf8e507-b422-42d9-a10d-42f69bfd69b2, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN-183.240.221.234-11976, server: zx02.endhigh.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: HK-47.243.34.184-8142, server: 47.243.34.184, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: 韩国 - 首尔特别市 - Oracle Corporation, server: frontend.kuangbiaoyun.com, port: 40003, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: CN-183.240.221.234-11966, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: CN-183.240.221.234-11986, server: zx02.endhigh.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-116.162.172.120-3381, server: yes.cnmjcn.net, port: 16618, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: CN-120.233.45.70-8105, server: nc.cm.go002.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
+  - {name: CN-183.240.221.234-11985, server: zx02.endhigh.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-183.240.221.235-10494, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: 中国 - 香港 - Akari Networ%�, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: c75be84263.microsoft.com, udp: true}
+  - {name: SG-172.104.177.105-1484, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: HK-203.198.16.219-1784, server: download1hkt.windowsupdatea.com, port: 443, type: trojan, password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff, sni: glc-hkt1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: CN-183.240.221.234-11963, server: cm03.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-183.240.221.234-11975, server: cm03.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN-220.205.37.10-3368, server: yes.cnmjcn.net, port: 16626, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: JP-20.243.52.239-1663, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 湖北省武汉市移动 7, server: m.cnmjcn.com, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: JP-20.89.102.236-9215, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, skip-cert-verify: true, udp: true}
+  - {name: JP-133.242.205.220-8959, server: jp02a.roc-taiwan.net.ua, port: 65012, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: HK-20.24.211.131-1620, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN-183.240.221.234-11981, server: zx02.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
+  - {name: "中国 - 台湾 - Chunghwa Telecom Co., Ltd.", server: download1tw.windowsupdatea.com, port: 443, type: trojan, password: e0ca72b2-eb7c-4498-b05e-28a3681bacbf, sni: glc-tw1.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: CN-36.140.120.196-3397, server: nc.cm.go002.xyz, port: 19511, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -113,101 +137,125 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港核心 IEPL 01
-      - 香港核心 IEPL 03
+      - 中国 - 香港 - Akari Networ%�
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -223,24 +271,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-183.240.221.234-8764
-      - 香港核心 IEPL 01
-      - TW-60.249.3.227-5754
-      - 美国核心 IEPL 01
-      - 日本核心 IEPL 01
-      - 新加坡核心 IEPL 03
-      - 日本核心 IEPL 03
-      - 香港核心 IEPL 03
-      - 新加坡核心 IEPL 01
-      - CN-183.240.221.234-8765
-      - 美国Microsoft数据中心 42
-      - 距离下次重置剩余：26 天
-      - 美国 Microsoft数据中心
-      - CN-183.240.221.234-8759
-      - CN-183.240.221.234-8778
-      - CN-183.240.221.233-8775
-      - CN-183.240.221.233-8770
-      - CN-183.240.221.234-8748
+      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
+      - CN-183.240.221.234-11976
+      - HK-47.243.34.184-8142
+      - 韩国 - 首尔特别市 - Oracle Corporation
+      - CN-183.240.221.234-11966
+      - CN-183.240.221.234-11986
+      - CN-116.162.172.120-3381
+      - CN-120.233.45.70-8105
+      - CN-183.240.221.234-11985
+      - CN-183.240.221.235-10494
+      - 中国 - 香港 - Akari Networ%�
+      - SG-172.104.177.105-1484
+      - HK-203.198.16.219-1784
+      - CN-183.240.221.234-11963
+      - CN-183.240.221.234-11975
+      - CN-220.205.37.10-3368
+      - JP-20.243.52.239-1663
+      - 湖北省武汉市移动 7
+      - JP-20.89.102.236-9215
+      - JP-133.242.205.220-8959
+      - HK-20.24.211.131-1620
+      - CN-183.240.221.234-11981
+      - 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+      - CN-36.140.120.196-3397
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
