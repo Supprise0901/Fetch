@@ -5,568 +5,216 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VN-103.197.185.161-331, server: vn6.5gsieutocdo.com, port: 443, type: trojan, password: c95357eb-2869-4511-8940-f0dc5e1ec9b1, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: HK-20.187.66.119-352, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: ZZ_208, server: 5.44.249.42, port: 3306, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: 香港1|@ripaojiedian, server: 112.28.208.10, port: 45055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YD|@Zyw_Channel, server: 89.221.224.94, port: 80, type: trojan, password: 28c79056-ccfd-4cc1-93d4-c337cc782e65, sni: is2-t.sshmax.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG-172.104.51.247-9257, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心, server: 45.58.153.24, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702392255355, headers: {Host: www.77935707.xyz}}, udp: true}
-  - {name: AU-103.224.212.213-5651, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN-180.164.85.9-6004, server: official.taipeicitygovernment.co.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: NG-185.255.123.90-11208, server: 185.255.123.90, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: KR-43.201.147.151-9455, server: 43.201.147.151, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_190 |25.26Mb, server: need.uno, port: 443, type: trojan, password: 6aWFNbrFDs, skip-cert-verify: true, udp: true}
-  - {name: GT-170.80.111.5-4062, server: 170.80.111.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 16, server: web.parspack.com, port: 80, type: vmess, uuid: 5f797b91-c7ec-4178-d19e-9b069b70b446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zUlA9.eSmAIlkORea.sHop}}, udp: true}
-  - {name: github.com/freefq - 越南  32, server: vn7.5gsieutocdo.com, port: 80, type: vmess, uuid: c95357eb-2869-4511-8940-f0dc5e1ec9b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /5gsieutocdo.club, headers: {Host: vn7.5gsieutocdo.com}}, udp: true}
-  - {name: 加拿大_121320024, server: frontend.yijianlian.app, port: 54530, type: trojan, password: cf82acfc-7b90-445e-ac4a-56ce0a48305a, skip-cert-verify: true, udp: true}
-  - {name: MD-192.121.87.147-4071, server: 192.121.87.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _BA_波黑, server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: MK-46.183.185.37-10947, server: 46.183.185.37, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国_121320150, server: aws-us-dallas-1.f1rocketnode.com, port: 443, type: trojan, password: pjdnqv, sni: aws-us-dallas-1.f1rocketnode.com, skip-cert-verify: true, udp: true}
-  - {name: HR-46.183.184.61-10949, server: 46.183.184.61, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 13|美国133〖电报：@ccbaohe】免费节点定时更新, server: zfc.windowsupdate1.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
-  - {name: PL-217.30.10.68-11092, server: 217.30.10.68, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: US_183, server: sk01.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
-  - {name: BE-192.71.249.78-11185, server: 192.71.249.78, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb, server: levuior.taiwanesefood.link, port: 443, type: trojan, password: 2FlAxyOy3ScaC5xNOSFeRqZgASj73CpIlCYTE8p4DaBD3Rn3zXe9Y80uaZwD6K, skip-cert-verify: true, udp: true}
-  - {name: CN-123.159.205.114-9142, server: zz6.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, skip-cert-verify: true, udp: true}
-  - {name: PP|tg频道:@Zyw_Channel, server: 112.28.208.10, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港KT2|@ripaojiedian, server: 8.217.217.138, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: CN-183.240.221.234-11981, server: zx02.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: CN_18, server: official.taipeicitygovernment.kiev.ua, port: 8443, type: trojan, password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 捷克  23, server: jp.takeshi.wiki, port: 80, type: vmess, uuid: 59517e0b-ae1c-41d3-9c44-c44cea6f7546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /takeshi.wiki, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: KR-61.111.247.123-6193, server: official.seoulcityhall.com.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: PL-217.30.10.68-11080, server: 217.30.10.68, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: Relay_🇺🇸US-🇲🇾MY_193, server: my02.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: KR-61.111.247.123-6322, server: official.seoulcityhall.com.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: v4.cfnode.eu.org, port: 8080, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kryx.651568.xyz}}, udp: true}
-  - {name: IM-37.235.55.21-4065, server: 37.235.55.21, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: NL-51.158.146.183-10903, server: 51.158.146.183, port: 443, type: trojan, password: f6a0a650-306e-11ee-b692-1239d0255272, sni: Speedtest.net, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_121320021, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 85ba209b-54d1-4aad-871e-98df4eb224bf, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: US-212.102.47.198-018, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: ES-92.38.171.89-021, server: 92.38.171.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国_121320359, server: 15.181.162.90, port: 443, type: trojan, password: pjdnqv, sni: aws-us-nyc-1.f1rocketnode.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: kkyx.yydsii.com, port: 8080, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kryx.651568.xyz}}, udp: true}
-  - {name: DE-5.104.107.143-1439, server: 5.104.107.143, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: de1.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: "US [LV3·原生] 节点更新 bit.ly/36b6iJh", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: edf8e507-b422-42d9-a10d-42f69bfd69b2, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: US-198.2.200.37-345, server: 198.2.200.37, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702215223320, headers: {Host: 198.2.200.37}}, udp: true}
+  - {name: 美国 麻省理工学院, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: _DE_德国, server: 3.79.162.137, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 15|JCBB_ 美国 04【vip1】, server: gdct003.theyydsnode.top, port: 10658, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gdct003.theyydsnode.top}}, udp: true}
+  - {name: 美国 俄勒冈州波特兰Amazon数据中心, server: 44.228.224.252, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS, server: 13.39.246.36, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 【TG：@ccbaohe】定时更新节点订阅, server: 5.78.45.79, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|JCBB_ 美国02_1【vip1】, server: shcm002.theyydsnode.top, port: 48560, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shcm002.theyydsnode.top}}, udp: true}
+  - {name: 15|JCBB_ 美国 04_1【vip1】, server: gdct001.theyydsnode.top, port: 10658, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gdct001.theyydsnode.top}}, udp: true}
+  - {name: 15|JCBB_ 美国02【vip1】, server: gdct003.theyydsnode.top, port: 48560, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gdct003.theyydsnode.top}}, udp: true}
+  - {name: 【TG：@ccbaohe】定时更新节点订阅 2, server: 5.78.74.72, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS, server: 174.138.13.185, port: 19888, type: vmess, uuid: 0d086891-54d2-45e6-a54f-868ecbd3a011, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 11|🚫11@oneclickvpnkeys, server: kom5649l.sbs, port: 34140, type: vmess, uuid: ccfc884c-896e-4280-a11e-c6a3bb6e9fe9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kom5649l.sbs}}, udp: true}
+  - {name: 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3..., server: 51.91.39.11, port: 34140, type: vmess, uuid: ccfc884c-896e-4280-a11e-c6a3bb6e9fe9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 新加坡2|@ripaojiedian, server: sg2.djjsvip.cfd, port: 443, type: trojan, password: 1bc5547d-59d2-45c7-8eec-b7d92cad8a43, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
   - {name: 美国核心 IEPL 01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: US-172.234.25.151-5981, server: t1.teslacdn1.live, port: 443, type: trojan, password: dc21bdbf-04c0-4a7e-8cb4-3d5af39ddf13, sni: t1.teslacdn1.live, skip-cert-verify: true, udp: true}
-  - {name: US-47.76.189.253-5474, server: 47.76.189.253, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: KR-61.111.247.65-5982, server: official.seoulcitygovernment.com.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: IM-37.235.55.42-4066, server: 37.235.55.42, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb, server: ru01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: FR-51.210.182.170-0188, server: 51.210.182.170, port: 443, type: trojan, password: 9c6394b0-a993-11ee-9a19-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: SG-52.221.203.229-0888, server: 52.221.203.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 加拿大_121320007, server: frontend.kuangbiaoyun.com, port: 40001, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: 印度 v2rayfree.eu.org, server: ru1-vmess.sshmax.xyz, port: 80, type: vmess, uuid: fddb3781-7e15-4731-a933-94db110b4bbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ru1-vmess.sshmax.xyz}}, udp: true}
-  - {name: CN-180.164.83.121-6393, server: official.taipeicitygovernment.cn.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: CN-183.240.221.234-5126, server: zx02.endhigh.xyz, port: 2408, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.54.185.113, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702215223320, headers: {Host: www.73664999.xyz}}, udp: true}
-  - {name: HK-150.107.46.21-5444, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 15|🇸🇬 狮城特殊|@ripaojiedian, server: 54.250.43.167, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: RS-194.71.126.31-7526, server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: NL-45.58.153.25-005, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738, headers: {Host: 45.58.153.25}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: kkyx.yydsii.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
-  - {name: PP|www.zyw.asia ZYW免费节点, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738}, udp: true}
-  - {name: DE-5.104.108.120-1438, server: 5.104.108.120, port: 443, type: trojan, password: 2a9abeb7-6f97-4d33-9069-f6e009d88455, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 欧盟  1, server: 45.87.153.246, port: 6199, type: ss, cipher: chacha20-ietf-poly1305, password: f7EI0dGWQM42T8gwN9CZIj, udp: true}
-  - {name: PL-217.30.10.68-11098, server: 217.30.10.68, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: GB-77.72.5.150-004, server: 77.72.5.150, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: github.com/freefq - 法国OVH SAS 37, server: 217.182.198.219, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN-183.240.221.233-5086, server: cm01.newcome.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: 15|🇸🇬 新加坡|@ripaojiedian, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 73637cec-699d-4d87-99af-0776ac880604, udp: true}
-  - {name: HK-20.205.1.66-264, server: sk01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: sk01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: GB-77.72.5.113-025, server: 77.72.5.113, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN-180.164.81.170-6461, server: official.taipeicitygovernment.com.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_177 |16.47Mb, server: tj1.dalazhi.eu.org, port: 443, type: trojan, password: d256e73b-8259-490a-aeb5-23f6a3636a1a, skip-cert-verify: true, udp: true}
-  - {name: RU-91.206.92.17-4182, server: 91.206.92.17, port: 443, type: trojan, password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1, sni: insaneguo2333.top, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 浙江省移动 29, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: SG-5.44.249.43-9381, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: CN-120.240.236.122-9517, server: cm03.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: CN-120.240.236.123-9530, server: cm01.newcome.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: FR-51.77.213.197-7559, server: 51.77.213.197, port: 443, type: trojan, password: 973ed2e0-c4d8-4737-a093-71629148086d, sni: frt2.sshocean.net, skip-cert-verify: true, udp: true}
-  - {name: JP-57.180.13.136-5441, server: 57.180.13.136, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 加拿大_121320008, server: frontend.kuangbiaoyun.com, port: 40006, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 法国OVH SAS 17, server: 217.182.198.219, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR-195.154.185.174-002, server: 195.154.185.174, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: PA-138.186.142.4-015, server: 138.186.142.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国_121320152, server: aws-us-nyc-1.f1rocketnode.com, port: 443, type: trojan, password: pjdnqv, sni: aws-us-nyc-1.f1rocketnode.com, skip-cert-verify: true, udp: true}
-  - {name: JP-52.193.77.139-5434, server: 52.193.77.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: PL-217.30.10.68-11084, server: 217.30.10.68, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: US-45.9.10.103-8287, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
-  - {name: CN-180.164.83.121-6415, server: official.taipeicitygovernment.net.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 103.197.184.41, port: 443, type: trojan, password: b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: CL-190.120.230.9-023, server: 190.120.230.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: HR-46.183.184.60-4063, server: 46.183.184.60, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: HK-45.11.104.94-6167, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: sbank.ir, skip-cert-verify: true, udp: true}
-  - {name: 香港KT|@ripaojiedian, server: 1.65.139.54, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: SG-4.193.250.163-7015, server: ap.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, skip-cert-verify: true, udp: true}
-  - {name: SG-5.44.249.50-8858, server: 5.44.249.50, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: 美国 Akamai科技公司CDN网络节点, server: 172.232.195.16, port: 443, type: trojan, password: 74223dc9-8fe0-4cb3-bd54-fe639851b69e, skip-cert-verify: true, udp: true}
-  - {name: 狮城R|@ripaojiedian, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: US-129.213.63.5-8849, server: no.08.ijg.cc, port: 443, type: trojan, password: fMucnQTndf, skip-cert-verify: true, udp: true}
-  - {name: CN-116.226.36.133-6118, server: official.taipeicitygovernment.if.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: HK-20.205.1.66-309, server: my01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: my01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP-35.77.105.112-5473, server: 35.77.105.112, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 日本核心 IEPL 03, server: jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: JP-18.181.171.223-7804, server: 18.181.171.223, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: ZZ_206, server: 5.44.249.44, port: 3306, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: CN-180.164.82.4-6140, server: official.taipeicitygovernment.org.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: PL-217.30.10.68-11085, server: 217.30.10.68, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: AU-103.224.212.212-5923, server: ap-northeast-1.openssl3.com, port: 443, type: trojan, password: tune7jerky7HAYRICK, sni: ap-northeast-1.openssl3.com, skip-cert-verify: true, udp: true}
-  - {name: ID-38.9.140.66-7564, server: 38.9.140.66, port: 443, type: trojan, password: vvip-periantara, sni: id3tr.jagoan.vip, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_121320022, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb, server: 5.104.107.143, port: 443, type: trojan, password: ca67d9ab-5e39-453a-9419-3d7577358979, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 捷克  38, server: jp.takeshi.wiki, port: 80, type: vmess, uuid: 803b8c6b-192e-4500-a919-485566f8e058, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /takeshi.wiki, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: SG-4.194.0.252-6101, server: ap.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, skip-cert-verify: true, udp: true}
-  - {name: CN-180.164.83.204-6198, server: official.taipeicitygovernment.dp.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: LU-92.38.163.53-10845, server: 92.38.163.53, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: PE-190.120.229.28-4075, server: 190.120.229.28, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN-183.240.221.235-10494, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: CN-180.164.83.121-6242, server: official.taipeicitygovernment.ivano-frankivsk.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: KR-3.34.191.21-0977, server: 3.34.191.21, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 日本核心 IEPL 01, server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: KR-146.56.189.146-6447, server: 146.56.189.146, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 v2rayfree.eu.org, server: 103.154.63.16, port: 443, type: trojan, password: cb85c4a1-5ad3-4194-a919-2bbb5b987564, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: 15|🇰🇷 韩国特殊|@ripaojiedian, server: 43.201.100.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 印度 V2CROSS.COM 2, server: hanoi4.speed4g.click, port: 443, type: trojan, password: b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: AR-190.103.176.29-000, server: 190.103.176.29, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: KR-3.36.92.179-5470, server: 3.36.92.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: PP|www.zyw.asia ZYW免费节点 2, server: 198.2.200.37, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702215223320, headers: {Host: www.61708240.xyz}}, udp: true}
-  - {name: 13|美国115〖电报：@ccbaohe】免费节点定时更新, server: scadn.yydsii.com, port: 8080, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kryx.651568.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: scadn.yydsii.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
-  - {name: VN-103.77.243.87-0150, server: hanoiidc2.5gsieutocdo.com, port: 443, type: trojan, password: c95357eb-2869-4511-8940-f0dc5e1ec9b1, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 北美地区  18, server: 23.146.144.36, port: 10002, type: vmess, uuid: 9c2b64eb-03d8-3cc7-9ba6-2e25002f59b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet}, udp: true}
-  - {name: FR-51.159.111.208-007, server: 51.159.111.208, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 美国 CloudFlare节点, server: us-new03.gujuji.top, port: 8080, type: vmess, uuid: 32a1d578-16ea-49a9-b49e-3f9efc64b9cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.gujuji.top}}, udp: true}
+  - {name: VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS, server: 185.158.175.113, port: 36544, type: vmess, uuid: bf2879d4-1df8-4825-b5d4-7867e803f968, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS, server: 31.172.83.109, port: 37153, type: vmess, uuid: e1d38117-d0c0-4934-b124-2c671836d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 11|speednode_0046, server: hk01.host.csznet.eu.org, port: 443, type: vmess, uuid: d44e1de4-3186-4b55-b8cb-253cc9d94b0d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /admin, headers: {Host: hk01.host.csznet.eu.org}}, udp: true}
+  - {name: _US_美国, server: 172.67.187.109, port: 80, type: vmess, uuid: 2e87cebc-977b-4fec-b079-b1ddc55b19c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ee1.xv2ray.net}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: scadn.yydsii.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
+  - {name: 15|JCBB_ 美国 03【vip1】, server: shcm002.theyydsnode.top, port: 10658, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shcm002.theyydsnode.top}}, udp: true}
+  - {name: 日本|@ripaojiedian, server: service.ouluyun9803.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: _NL_荷兰, server: 91.242.229.77, port: 80, type: vmess, uuid: 56890326-df58-432d-be1e-67064e2b4355, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: nl2.xv2ray.net}}, udp: true}
+  - {name: NL-91.242.229.77-168, server: 91.242.229.77, port: 80, type: vmess, uuid: 56890326-df58-432d-be1e-67064e2b4355, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nl2.xv2ray.net}}, udp: true}
+  - {name: GB-13.41.168.15-243, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 美国133〖电报：@ccbaohe】免费节点定时更新, server: zfc.windowsupdate1.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.18.140.242, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
+  - {name: 15|JCBB_ 美国01【vip1】, server: gdct001.theyydsnode.top, port: 48560, type: vmess, uuid: cfca4430-70f0-49b6-b19c-30d4f5a3a003, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gdct001.theyydsnode.top}}, udp: true}
+  - {name: 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24, server: 103.154.63.16, port: 443, type: trojan, password: cb85c4a1-5ad3-4194-a919-2bbb5b987564, skip-cert-verify: true, udp: true}
+  - {name: 乌克兰 v2rayfree.eu.org, server: 91.242.229.77, port: 80, type: vmess, uuid: 56890326-df58-432d-be1e-67064e2b4355, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nl2.xv2ray.net}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: kr-01.gujuji.top, port: 8080, type: vmess, uuid: 32a1d578-16ea-49a9-b49e-3f9efc64b9cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr-01.gujuji.top}}, udp: true}
+  - {name: github.com/freefq - 乌克兰  8, server: 91.242.229.69, port: 2086, type: vmess, uuid: 88c216b8-56c6-4f34-bcfd-e198ce11f7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: nl1.xv2ray.net}}, udp: true}
+  - {name: _US_美国->🇬🇧_GB_英国, server: web.parspack.com, port: 80, type: vmess, uuid: 7fc27c1c-5052-4d6b-8099-1a8c04f1cd7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: PArspAcK51.eSMAILkOrEA.sHoP}}, udp: true}
+  - {name: _US_美国->🇺🇦_UA_乌克兰, server: glasco.fx-trader.shop, port: 80, type: vmess, uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v3ra3do.wakeuptimerap.shop}}, udp: true}
+  - {name: _NL_荷兰 2, server: 91.242.229.69, port: 2086, type: vmess, uuid: 88c216b8-56c6-4f34-bcfd-e198ce11f7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: zfc.windowsupdate1.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
+  - {name: 台湾|频道:@ripaojiedian, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 美国3|@ripaojiedian, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 新加坡|@ripaojiedian, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 11|美国77〖电报：@ccbaohe】免费节点定时更新, server: zfc.windowsupdate1.com, port: 8080, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgyx.651568.xyz}}, udp: true}
+  - {name: 11|speednode_0050, server: 185.158.211.186, port: 80, type: vmess, uuid: 22aa72b1-605b-4807-8a81-fb414cbb409c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: mizban888.servecounterstrike.com}}, udp: true}
+  - {name: IR-81.12.27.4-296, server: 81.12.27.4, port: 20554, type: vmess, uuid: 5d0b61a0-64fc-4a9f-e4bc-50ecdbc37623, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: PP|tg频道:@Zyw_Channel, server: hms182.glweidf.sbs, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: glweidf.sbs}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: kkyx.yydsii.com, port: 2052, type: vmess, uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkyx.651568.xyz}}, udp: true}
+  - {name: IR-81.12.27.4-295, server: ser52.gsmxssh.com, port: 20554, type: vmess, uuid: 5d0b61a0-64fc-4a9f-e4bc-50ecdbc37623, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -585,574 +233,220 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港1|@ripaojiedian
-      - 香港KT2|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 台湾|频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1168,142 +462,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VN-103.197.185.161-331
-      - HK-20.187.66.119-352
-      - ZZ_208
-      - 香港1|@ripaojiedian
-      - YD|@Zyw_Channel
-      - SG-172.104.51.247-9257
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - AU-103.224.212.213-5651
-      - CN-180.164.85.9-6004
-      - NG-185.255.123.90-11208
-      - KR-43.201.147.151-9455
-      - Relay_🇺🇸US-🇺🇸US_190 |25.26Mb
-      - GT-170.80.111.5-4062
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - github.com/freefq - 越南  32
-      - 加拿大_121320024
-      - MD-192.121.87.147-4071
-      - _BA_波黑
-      - MK-46.183.185.37-10947
-      - 美国_121320150
-      - HR-46.183.184.61-10949
-      - 13|美国133〖电报：@ccbaohe】免费节点定时更新
-      - PL-217.30.10.68-11092
-      - US_183
-      - BE-192.71.249.78-11185
-      - Relay_🇹🇼TW-🇹🇼TW_112 |20.19Mb
-      - CN-123.159.205.114-9142
-      - PP|tg频道:@Zyw_Channel
-      - 香港KT2|@ripaojiedian
-      - CN-183.240.221.234-11981
-      - CN_18
-      - github.com/freefq - 捷克  23
-      - KR-61.111.247.123-6193
-      - PL-217.30.10.68-11080
-      - Relay_🇺🇸US-🇲🇾MY_193
-      - KR-61.111.247.123-6322
-      - 美国 CloudFlare节点
-      - IM-37.235.55.21-4065
-      - NL-51.158.146.183-10903
-      - 加拿大_121320021
-      - US-212.102.47.198-018
-      - ES-92.38.171.89-021
-      - 美国_121320359
-      - 美国 CloudFlare节点 2
-      - DE-5.104.107.143-1439
-      - US [LV3·原生] 节点更新 bit.ly/36b6iJh
-      - US-198.2.200.37-345
+      - 美国 麻省理工学院
+      - _DE_德国
+      - 15|JCBB_ 美国 04【vip1】
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - TR-TCP-TLS 🇫🇷 FR-13.39.246.36:22222 📡 PING-090.39-MS
+      - 【TG：@ccbaohe】定时更新节点订阅
+      - 15|JCBB_ 美国02_1【vip1】
+      - 15|JCBB_ 美国 04_1【vip1】
+      - 15|JCBB_ 美国02【vip1】
+      - 【TG：@ccbaohe】定时更新节点订阅 2
+      - VM-TCP-NA 🇳🇱 NL-174.138.13.185:19888 📡 PING-082.00-MS
+      - 11|🚫11@oneclickvpnkeys
+      - 11|🔒 VM-WS-NA 🇫🇷 FR-51.91.39.11:3...
+      - 新加坡2|@ripaojiedian
       - 美国核心 IEPL 01
-      - US-172.234.25.151-5981
-      - US-47.76.189.253-5474
-      - KR-61.111.247.65-5982
-      - IM-37.235.55.42-4066
-      - Relay_🇺🇸US-🇷🇺RU_178 |10.18Mb
-      - FR-51.210.182.170-0188
-      - SG-52.221.203.229-0888
-      - 加拿大_121320007
-      - 印度 v2rayfree.eu.org
-      - CN-180.164.83.121-6393
-      - CN-183.240.221.234-5126
-      - 美国 华盛顿Cogent通信公司
-      - HK-150.107.46.21-5444
-      - 15|🇸🇬 狮城特殊|@ripaojiedian
-      - RS-194.71.126.31-7526
-      - NL-45.58.153.25-005
-      - 美国 CloudFlare节点 3
-      - PP|www.zyw.asia ZYW免费节点
-      - DE-5.104.108.120-1438
-      - github.com/freefq - 欧盟  1
-      - PL-217.30.10.68-11098
-      - GB-77.72.5.150-004
-      - github.com/freefq - 法国OVH SAS 37
-      - CN-183.240.221.233-5086
-      - 15|🇸🇬 新加坡|@ripaojiedian
-      - HK-20.205.1.66-264
-      - GB-77.72.5.113-025
-      - CN-180.164.81.170-6461
-      - Relay_🇺🇸US-🇺🇸US_177 |16.47Mb
-      - RU-91.206.92.17-4182
-      - github.com/freefq - 浙江省移动 29
-      - SG-5.44.249.43-9381
-      - CN-120.240.236.122-9517
-      - CN-120.240.236.123-9530
-      - FR-51.77.213.197-7559
-      - JP-57.180.13.136-5441
-      - 加拿大_121320008
-      - github.com/freefq - 法国OVH SAS 17
-      - FR-195.154.185.174-002
-      - PA-138.186.142.4-015
-      - 美国_121320152
-      - JP-52.193.77.139-5434
-      - PL-217.30.10.68-11084
-      - US-45.9.10.103-8287
-      - CN-180.164.83.121-6415
-      - 印度 V2CROSS.COM
-      - CL-190.120.230.9-023
-      - HR-46.183.184.60-4063
-      - HK-45.11.104.94-6167
-      - 香港KT|@ripaojiedian
-      - SG-4.193.250.163-7015
-      - SG-5.44.249.50-8858
-      - 美国 Akamai科技公司CDN网络节点
-      - 狮城R|@ripaojiedian
-      - US-129.213.63.5-8849
-      - CN-116.226.36.133-6118
-      - HK-20.205.1.66-309
-      - JP-35.77.105.112-5473
       - 日本核心 IEPL 03
-      - JP-18.181.171.223-7804
-      - ZZ_206
-      - CN-180.164.82.4-6140
-      - PL-217.30.10.68-11085
-      - AU-103.224.212.212-5923
-      - ID-38.9.140.66-7564
-      - 加拿大_121320022
-      - Relay_🇩🇪DE-🇩🇪DE_21 |12.72Mb
-      - github.com/freefq - 捷克  38
-      - SG-4.194.0.252-6101
-      - CN-180.164.83.204-6198
-      - LU-92.38.163.53-10845
-      - PE-190.120.229.28-4075
-      - CN-183.240.221.235-10494
-      - CN-180.164.83.121-6242
-      - KR-3.34.191.21-0977
       - 日本核心 IEPL 01
-      - KR-146.56.189.146-6447
-      - 亚太地区 v2rayfree.eu.org
-      - 15|🇰🇷 韩国特殊|@ripaojiedian
-      - 印度 V2CROSS.COM 2
-      - AR-190.103.176.29-000
-      - KR-3.36.92.179-5470
-      - PP|www.zyw.asia ZYW免费节点 2
-      - 13|美国115〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点
+      - VM-TCP-NONE 🇮🇷 IR-185.158.175.113:36544 📡 PING-171.14-MS
+      - VM-TCP-NONE 🇩🇪 DE-31.172.83.109:37153 📡 PING-088.64-MS
+      - 11|speednode_0046
+      - _US_美国
+      - 美国 CloudFlare节点 2
+      - 15|JCBB_ 美国 03【vip1】
+      - 日本|@ripaojiedian
+      - _NL_荷兰
+      - NL-91.242.229.77-168
+      - GB-13.41.168.15-243
+      - 美国133〖电报：@ccbaohe】免费节点定时更新
+      - 美国 CloudFlare节点 3
+      - 15|JCBB_ 美国01【vip1】
+      - 【电报：@ccbaohe|免费机场节点 🇻🇳 越南 - 河內市 - SUNCLOUD - 24
+      - 乌克兰 v2rayfree.eu.org
       - 美国 CloudFlare节点 4
-      - VN-103.77.243.87-0150
-      - github.com/freefq - 北美地区  18
-      - FR-51.159.111.208-007
+      - github.com/freefq - 乌克兰  8
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇺🇦_UA_乌克兰
+      - _NL_荷兰 2
+      - 美国 CloudFlare节点 5
+      - 台湾|频道:@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 11|美国77〖电报：@ccbaohe】免费节点定时更新
+      - 11|speednode_0050
+      - IR-81.12.27.4-296
+      - PP|tg频道:@Zyw_Channel
+      - 美国 CloudFlare节点 6
+      - IR-81.12.27.4-295
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
