@@ -1,5 +1,6 @@
 import os
 import requests
+import schedule as schedule
 from bs4 import BeautifulSoup
 import time
 
@@ -14,15 +15,15 @@ def get_code():
     code = soup.find('code').string
     with open('speed.txt', 'w', encoding='utf-8') as f:
         f.write(code)
+    print('每秒一次')
 
 
 if __name__ == '__main__':
+    # 安排每小时执行一次的任务
+    schedule.every().seconds.do(get_code)
 
-    # # 获取当前工作目录
-    # current_directory = os.getcwd()
-    # # 构造上级目录的路径
-    # parent_dir = os.path.dirname(current_directory)
-    # output_file_path = os.path.join(parent_dir, 'speed.txt')
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
-    get_code()
 
