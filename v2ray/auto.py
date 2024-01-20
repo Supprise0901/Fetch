@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # # 构造上级目录的路径
     # parent_dir = os.path.dirname(current_directory)
     # output_file_path = os.path.join(parent_dir, 'speed.txt')
-    url = 'https://mksshare.github.io/'
+    url = 'https://abshare.github.io/'
     # get_code(url)
     with open('speed.txt', 'w', encoding='utf-8') as f:
         f.write(get_code(url))
