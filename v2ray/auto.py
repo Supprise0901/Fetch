@@ -15,7 +15,7 @@ def get_code():
     code = soup.find('code').string
     with open('speed.txt', 'w', encoding='utf-8') as f:
         f.write(code)
-    print('每秒一次')
+    print('节点下载成功')
 
 
 if __name__ == '__main__':
