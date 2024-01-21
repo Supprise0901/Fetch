@@ -20,10 +20,11 @@ def get_code():
 
 if __name__ == '__main__':
     # 安排每小时执行一次的任务
-    schedule.every(10).minute.do(get_code)
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    # schedule.every(10).minute.do(get_code)
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
+    get_code()
 
 
 
