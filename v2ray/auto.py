@@ -1,6 +1,6 @@
 import os
 import requests
-import schedule as schedule
+# import schedule as schedule
 from bs4 import BeautifulSoup
 import time
 
@@ -20,10 +20,11 @@ def get_code():
 
 if __name__ == '__main__':
     # 安排每小时执行一次的任务
-    schedule.every().seconds.do(get_code)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    # schedule.every().seconds.do(get_code)
+    #
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
+    get_code()
 
 
