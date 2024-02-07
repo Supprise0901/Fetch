@@ -5,100 +5,68 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RELAY-104.24.208.37-003, server: 104.24.208.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 新加坡核心+IEPL+03, server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
-  - {name: US | vmess | @oneclickvpnkeys | 2, server: 104.24.208.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 美国核心+IEPL+01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 美国【TG：@ccbaohe】定时更新节点订阅 34, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
-  - {name: _US_美国, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.20.231.30, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: for-irancell.outline-vpn.cloud, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: _US_美国 2, server: 104.22.51.162, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 104.21.83.10, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}, udp: true}
-  - {name: +Telegram+ID(@Outline_Vpn), server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
-  - {name: _173, server: 43.245.140.2, port: 443, type: vmess, uuid: 5efa4cc9-ad97-4f61-9b4f-40f9e91fb87b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: kosar36.sytes.net}}, udp: true}
-  - {name: NL-103.214.68.57-004, server: 103.214.68.57, port: 10003, type: trojan, password: 6x8HcghsjS, sni: yes998.chickenkiller.com, skip-cert-verify: true, udp: true}
-  - {name: SG | vmess | @v2Line | 3, server: uk1.xv2ray.net, port: 80, type: vmess, uuid: 3b871117-3a4e-4df2-a8af-08ecc7db6887, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: uk1.xv2ray.net, network: ws, ws-opts: {path: /vmess, headers: {Host: uk1.xv2ray.net}}, udp: true}
-  - {name: Relay_-🇹🇷TR_178, server: 43.245.140.2, port: 443, type: vmess, uuid: b543de01-18e8-43dc-92fc-1e46e2cdbb7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: majazi.zapto.org}}, udp: true}
-  - {name: RELAY-104.20.231.30-028, server: 104.20.231.30, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: _US_美国 3, server: 104.21.94.99, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
   - {name: 日本核心+IEPL+01, server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.20.231.30, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my1.tooters.ir}}, udp: true}
+  - {name: Relay_-🇹🇷TR_178, server: 43.245.140.2, port: 443, type: vmess, uuid: b543de01-18e8-43dc-92fc-1e46e2cdbb7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: majazi.zapto.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
+  - {name: _US_美国, server: 104.21.94.99, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
+  - {name: _US_美国 2, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}, udp: true}
+  - {name: RELAY-104.24.208.37-003, server: 104.24.208.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
+  - {name: RELAY-104.20.231.30-028, server: 104.20.231.30, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
+  - {name: 美国【TG：@ccbaohe】定时更新节点订阅 34, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
+  - {name: 新加坡核心+IEPL+03, server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 美国核心+IEPL+01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -117,25 +85,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -146,74 +106,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -229,25 +165,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-104.24.208.37-003
-      - 新加坡核心+IEPL+03
-      - 美国 CloudFlare节点
-      - US | vmess | @oneclickvpnkeys | 2
-      - 美国核心+IEPL+01
-      - 美国【TG：@ccbaohe】定时更新节点订阅 34
-      - _US_美国
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - _US_美国 2
-      - 美国 CloudFlare节点 4
-      - +Telegram+ID(@Outline_Vpn)
-      - _173
-      - NL-103.214.68.57-004
-      - SG | vmess | @v2Line | 3
-      - Relay_-🇹🇷TR_178
-      - RELAY-104.20.231.30-028
-      - _US_美国 3
       - 日本核心+IEPL+01
+      - 美国 CloudFlare节点
+      - Relay_-🇹🇷TR_178
+      - 美国 CloudFlare节点 2
+      - _US_美国
+      - _US_美国 2
+      - RELAY-104.24.208.37-003
+      - RELAY-104.20.231.30-028
+      - 美国【TG：@ccbaohe】定时更新节点订阅 34
+      - 新加坡核心+IEPL+03
+      - 美国核心+IEPL+01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
