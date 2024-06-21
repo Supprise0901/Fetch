@@ -5,148 +5,476 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 美国核心 IEPL 01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 江苏省徐州市 移动, server: 223.113.54.154, port: 23621, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
-  - {name: 香港KT|@ripaojiedian, server: 172.67.114.125, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: a4.wagaga.online, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 0|-https://t.me/MrXbin-139, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 香港4|@ripaojiedian, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
-  - {name: 爱尔兰 V2CROSS.COM, server: 13.79.72.88, port: 21190, type: ss, cipher: chacha20-ietf-poly1305, password: yoOT6tXP5LdMyyU5IQDcGn, udp: true}
-  - {name: 法国 OVH, server: 51.77.53.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 台湾|@ripaojiedian, server: alm1.the-galgo.top, port: 32011, type: vmess, uuid: db3c11d8-ae65-40ff-a256-babee94056f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 0|-https://t.me/MrXbin-8, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 0|-https://t.me/MrXbin-130, server: 52.79.247.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 北京市 移动, server: alm1.the-galgo.top, port: 32011, type: vmess, uuid: db3c11d8-ae65-40ff-a256-babee94056f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.67.172.88, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 广东省广州市 移动, server: 120.232.240.56, port: 16928, type: vmess, uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%7B%22Host%22:%22193.25.215.160%22%7D"}}, udp: true}
-  - {name: 广东省云浮市 移动, server: 183.232.139.22, port: 50611, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 046, server: 104.19.47.142, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 加拿大 089, server: 172.67.199.69, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 加拿大 039, server: 104.18.189.19, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 加拿大 049, server: 172.67.199.143, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: Github搜索TrojanLinks, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG-172.105.120.73-043, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 0|-https://t.me/MrXbin-121, server: 13.74.30.44, port: 36680, type: ss, cipher: chacha20-ietf-poly1305, password: of9UbKeXjLEpbQ4n7tZjGQ, udp: true}
-  - {name: 日本特殊|@ripaojiedian, server: 43.203.126.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 加拿大 040, server: 172.67.185.218, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 加拿大 019, server: 104.19.47.153, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.19.47.4, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 0|-https://t.me/MrXbin-119, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: JP|Github搜索TrojanLinks, server: 13.230.67.36, port: 12571, type: trojan, password: 8zskCGaBwVOP, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-11, server: 103.172.116.94, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: SG|Github搜索TrojanLinks, server: 13.215.46.1, port: 12588, type: trojan, password: p9Td(oUNCaYA, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-169, server: 103.172.116.94, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 0|-https://t.me/MrXbin-9, server: 103.172.116.94, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
   - {name: 0|-https://t.me/MrXbin-124, server: 13.113.204.156, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 加拿大 044, server: 104.19.47.18, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: 0|-https://t.me/MrXbin-170, server: 103.172.116.94, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: 0|-https://t.me/MrXbin-17, server: 103.172.116.94, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 0|-https://t.me/MrXbin-23, server: 103.172.116.94, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 0|-https://t.me/MrXbin-24, server: 103.172.116.94, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 0|-https://t.me/MrXbin-32, server: 103.172.116.94, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 0|-https://t.me/MrXbin-31, server: 103.172.116.94, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: JP|Github搜索TrojanLinks 2, server: 13.230.4.179, port: 12612, type: trojan, password: 2gSQPxQWyAtA, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-13, server: 103.172.116.94, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 0|-https://t.me/MrXbin-20, server: 103.172.116.94, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 0|-https://t.me/MrXbin-30, server: 103.172.116.94, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 0|-https://t.me/MrXbin-29, server: 103.172.116.94, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: SG|Github搜索TrojanLinks 2, server: 13.229.213.32, port: 12610, type: trojan, password: tsjYRecJw(wV, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: Github搜索TrojanLinks, server: 183.240.235.170, port: 34602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-28, server: 103.172.116.94, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 台湾3|@ripaojiedian, server: 103twai.aixunx168.top, port: 21876, type: trojan, password: ee84695e-978f-40cf-8590-5c36a19de984, sni: aixunx168.top, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-36, server: 103.172.116.94, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 0|-https://t.me/MrXbin-8, server: 103.172.116.94, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 0|-https://t.me/MrXbin-12, server: 103.172.116.94, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 0|-https://t.me/MrXbin-35, server: 103.172.116.94, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: CA-23.162.200.227-203, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.162.200.227}}, udp: true}
+  - {name: 加拿大 167, server: 162.159.136.98, port: 80, type: vmess, uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ccs2.hostmjj.com}}, udp: true}
+  - {name: KR|Github搜索TrojanLinks, server: 43.201.56.115, port: 12605, type: trojan, password: taCdWnUn8gMX, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-68, server: 57.180.25.130, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US | 🟢 | trojan | @DirectVPN | 8, server: 44.234.213.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: DE | 🟢 | trojan | @DirectVPN | 4, server: 3.69.76.167, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: SG|Github搜索TrojanLinks 3, server: 52.221.205.198, port: 12572, type: trojan, password: 2Tk(zUHOe10z, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: JP|Github搜索TrojanLinks 3, server: 43.206.212.161, port: 12573, type: trojan, password: 9mquXU1QZ1hL, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-145, server: 54.238.36.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR|Github搜索TrojanLinks 2, server: 43.203.196.136, port: 12586, type: trojan, password: Dnefy2V4icji, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 韩国特殊|@ripaojiedian, server: 35.72.5.88, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US-38.114.114.6-197, server: 38.114.114.6, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA|Github搜索TrojanLinks, server: 52.60.80.11, port: 12610, type: trojan, password: gqK5nl9ezyew, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国+华盛顿Cogent通信公司, server: 38.114.114.6, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
+  - {name: SG|Github搜索TrojanLinks 4, server: 54.169.241.205, port: 12574, type: trojan, password: 4QLcES1y8d)g, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 英国+Microsoft公司, server: 51.13.182.130, port: 48562, type: ss, cipher: chacha20-ietf-poly1305, password: eHpq4cgXzmWTkI2xKN3w54, udp: true}
+  - {name: 0|-https://t.me/MrXbin-130, server: 52.79.247.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本R|@ripaojiedian, server: 59.56.77.178, port: 15084, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: US|Github搜索TrojanLinks, server: 34.216.57.34, port: 12599, type: trojan, password: eBcjCq5afxH8, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: US|Github搜索TrojanLinks 2, server: 3.141.30.170, port: 12577, type: trojan, password: 3TP65iJxEQv8, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: CA|Github搜索TrojanLinks 2, server: 3.99.140.255, port: 12608, type: trojan, password: t0w(khMkfmkf, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: US|Github搜索TrojanLinks 3, server: 34.215.171.133, port: 12601, type: trojan, password: KTfIKefxXB7S, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-141, server: 18.181.172.112, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 新加坡核心 IEPL 01, server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-16, server: 3.112.128.40, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 越南R|@ripaojiedian, server: 59.56.77.178, port: 15083, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: SG|Github搜索TrojanLinks 5, server: 47.129.53.214, port: 12592, type: trojan, password: SkXaUsQfe7xU, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国核心 IEPL 01, server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡核心 IEPL 03, server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz, port: 443, type: trojan, password: c42b3945-b0ea-4be9-8151-ee0af1cc581c, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 巴西R|@ripaojiedian, server: 59.56.77.178, port: 15111, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: 日本特殊|@ripaojiedian, server: 43.203.126.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本特殊|@ripaojiedian 2, server: 3.39.251.119, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 0|-https://t.me/MrXbin-22, server: 3.38.251.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US|Github搜索TrojanLinks 4, server: 3.147.65.48, port: 12591, type: trojan, password: gNKiCZmlhWzh, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-69, server: 38.114.114.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE|Github搜索TrojanLinks, server: 3.123.32.138, port: 12600, type: trojan, password: wgOI3(Y1YCx4, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-158, server: 43.206.232.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: GB|Github搜索TrojanLinks, server: 3.10.221.141, port: 12573, type: trojan, password: 2yrFqL3PT5L(, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: US|Github搜索TrojanLinks 5, server: 54.202.47.116, port: 12606, type: trojan, password: HrpeGhlM6Wu4, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 江苏省徐州市 移动, server: 223.113.54.154, port: 23621, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-18, server: 43.202.43.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 狮城特殊|@ripaojiedian, server: 52.195.8.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US|Github搜索TrojanLinks 6, server: 54.211.88.129, port: 12578, type: trojan, password: gGgB70V3d(D9, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: DE|Github搜索TrojanLinks 2, server: 18.199.96.147, port: 12608, type: trojan, password: JyfFlp51(hzw, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: FR | 🟢 | trojan | @DirectVPN | 1, server: 35.180.236.18, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-3, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: DE|Github搜索TrojanLinks 3, server: 3.76.12.59, port: 12592, type: trojan, password: x3dKt9zkUaf), sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: DE|Github搜索TrojanLinks 4, server: 3.76.207.131, port: 12568, type: trojan, password: RXvBe6ivhGkH, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: DE | 🟢 | trojan | @PrivateVPNs | 0, server: 3.77.4.245, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 加拿大 025, server: 104.19.44.182, port: 8080, type: vmess, uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd2.720208.xyz}}, udp: true}
+  - {name: TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222, server: 18.219.139.16, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-159, server: 43.202.40.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US|Github搜索TrojanLinks 7, server: 3.142.130.119, port: 12571, type: trojan, password: 4KHZlCQHotUb, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 Amazon数据中心, server: sg08.421421.xyz, port: 20230, type: trojan, password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP|Github搜索TrojanLinks 4, server: 52.196.11.129, port: 12603, type: trojan, password: Srh5c4Kp0Frh, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 广东省云浮市 移动, server: 183.232.139.22, port: 50611, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
+  - {name: KR|Github搜索TrojanLinks 3, server: 43.203.227.111, port: 12607, type: trojan, password: I5KOPzaIqQKx, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: JP|Github搜索TrojanLinks 5, server: 3.112.19.167, port: 12584, type: trojan, password: 75EYsWAn((CP, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: US|Github搜索TrojanLinks 8, server: 34.218.60.240, port: 12584, type: trojan, password: DkYh41D6nYwf, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: SG-172.105.120.73-043, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-142, server: 18.179.23.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _IL_以色列, server: 193.182.144.240, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 香港4|@ripaojiedian, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
+  - {name: US|Github搜索TrojanLinks 9, server: 52.90.181.186, port: 12591, type: trojan, password: 44lPNWhFjpVB, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-150, server: 54.180.230.217, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 加拿大 163, server: 104.23.97.11, port: 80, type: vmess, uuid: 0880c19f-f253-4298-8573-42fb83bf3006, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /other, headers: {Host: dl3.hезнакомцыглава1.劊子手.wick3d邪惡的小字母.suonycars.buzz.}}, udp: true}
+  - {name: Github搜索TrojanLinks 2, server: 183.240.235.162, port: 36002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222, server: 13.49.202.22, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: FR|Github搜索TrojanLinks, server: 13.36.166.54, port: 12604, type: trojan, password: bbGbS1Wk(89r, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: GB|Github搜索TrojanLinks 2, server: 18.132.98.47, port: 12613, type: trojan, password: gNoisEOBESAr, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 加拿大 164, server: 104.25.77.191, port: 80, type: vmess, uuid: 0880c19f-f253-4298-8573-42fb83bf3006, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /other, headers: {Host: dl3.hезнакомцыглава1.劊子手.wick3d邪惡的小字母.suonycars.buzz.}}, udp: true}
+  - {name: 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 150be761-0f1b-464c-a0c7-09fd31bd2f31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/P7EExoE2, headers: {Host: oA5FSz9Tjp1.yofnhkfc.xyz}}, udp: true}
+  - {name: FR|Github搜索TrojanLinks 2, server: 15.188.143.174, port: 12612, type: trojan, password: Emo5YnWUr0Sw, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: 150be761-0f1b-464c-a0c7-09fd31bd2f31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/bYdJ7Vc2We, headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}}, udp: true}
+  - {name: FR|Github搜索TrojanLinks 3, server: 13.38.11.4, port: 12570, type: trojan, password: dI1JFYcKAKAc, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: GB|Github搜索TrojanLinks 3, server: 18.133.78.203, port: 12567, type: trojan, password: E3digw1uETPe, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: Github搜索TrojanLinks 3, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 爱尔兰 V2CROSS.COM, server: 13.79.72.88, port: 21190, type: ss, cipher: chacha20-ietf-poly1305, password: yoOT6tXP5LdMyyU5IQDcGn, udp: true}
+  - {name: Github搜索TrojanLinks 4, server: 107.167.20.189, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/191019072927, headers: {Host: www.15314695.xyz}}, udp: true}
+  - {name: US|Github搜索TrojanLinks 10, server: 18.116.19.235, port: 12608, type: trojan, password: vmtrpghNbIIa, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: DE|Github搜索TrojanLinks 5, server: 18.153.48.181, port: 12588, type: trojan, password: rvCqFajzMxXO, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: CA|Github搜索TrojanLinks 3, server: 15.157.63.147, port: 12587, type: trojan, password: TdZ6)MbNCq8c, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: GB|Github搜索TrojanLinks 4, server: 18.132.114.253, port: 12570, type: trojan, password: OaCWgG7zLhW9, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: CA|Github搜索TrojanLinks 4, server: 15.223.2.238, port: 12579, type: trojan, password: YpVlNO2cCXDq, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: Github搜索TrojanLinks 5, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-121, server: 13.74.30.44, port: 36680, type: ss, cipher: chacha20-ietf-poly1305, password: of9UbKeXjLEpbQ4n7tZjGQ, udp: true}
   - {name: 广东省 移动, server: 183.238.202.173, port: 51193, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国+Akamai科技公司CDN网络节点, server: 172.232.37.114, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: Zg9HJ8NpUH6c2IwEKY0cwg, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: ♻️ 自动选择
     type: load-balance
     strategy: consistent-hashing
     url: http://www.google.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -165,154 +493,481 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港KT|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 台湾|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -328,37 +983,119 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 美国核心 IEPL 01
-      - 江苏省徐州市 移动
-      - 香港KT|@ripaojiedian
-      - 0|-https://t.me/MrXbin-139
-      - 香港4|@ripaojiedian
-      - 爱尔兰 V2CROSS.COM
-      - 法国 OVH
-      - 台湾|@ripaojiedian
-      - 0|-https://t.me/MrXbin-8
-      - 0|-https://t.me/MrXbin-130
-      - 北京市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动
-      - 广东省云浮市 移动
-      - 加拿大 046
-      - 加拿大 089
-      - 加拿大 039
-      - 加拿大 049
-      - Github搜索TrojanLinks
-      - SG-172.105.120.73-043
-      - 0|-https://t.me/MrXbin-121
-      - 日本特殊|@ripaojiedian
-      - 加拿大 040
-      - 加拿大 019
-      - 美国 CloudFlare节点 2
-      - 0|-https://t.me/MrXbin-119
+      - JP|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-11
+      - SG|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-169
+      - 0|-https://t.me/MrXbin-9
       - 0|-https://t.me/MrXbin-124
-      - 加拿大 044
+      - 0|-https://t.me/MrXbin-170
+      - 0|-https://t.me/MrXbin-17
+      - 0|-https://t.me/MrXbin-23
+      - 0|-https://t.me/MrXbin-24
+      - 0|-https://t.me/MrXbin-32
+      - 0|-https://t.me/MrXbin-31
+      - JP|Github搜索TrojanLinks 2
+      - 0|-https://t.me/MrXbin-13
+      - 0|-https://t.me/MrXbin-20
+      - 0|-https://t.me/MrXbin-30
+      - 0|-https://t.me/MrXbin-29
+      - SG|Github搜索TrojanLinks 2
+      - Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-28
+      - 台湾3|@ripaojiedian
+      - 0|-https://t.me/MrXbin-36
+      - 0|-https://t.me/MrXbin-8
+      - 0|-https://t.me/MrXbin-12
+      - 0|-https://t.me/MrXbin-35
+      - CA-23.162.200.227-203
+      - 加拿大 167
+      - KR|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-68
+      - US | 🟢 | trojan | @DirectVPN | 8
+      - DE | 🟢 | trojan | @DirectVPN | 4
+      - SG|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-145
+      - KR|Github搜索TrojanLinks 2
+      - 韩国特殊|@ripaojiedian
+      - US-38.114.114.6-197
+      - CA|Github搜索TrojanLinks
+      - 美国+华盛顿Cogent通信公司
+      - SG|Github搜索TrojanLinks 4
+      - 英国+Microsoft公司
+      - 0|-https://t.me/MrXbin-130
+      - 日本R|@ripaojiedian
+      - US|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 2
+      - CA|Github搜索TrojanLinks 2
+      - US|Github搜索TrojanLinks 3
+      - 0|-https://t.me/MrXbin-141
+      - 新加坡核心 IEPL 01
+      - 0|-https://t.me/MrXbin-16
+      - 越南R|@ripaojiedian
+      - SG|Github搜索TrojanLinks 5
+      - 美国核心 IEPL 01
+      - 新加坡核心 IEPL 03
+      - 巴西R|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian 2
+      - 0|-https://t.me/MrXbin-22
+      - US|Github搜索TrojanLinks 4
+      - 0|-https://t.me/MrXbin-69
+      - DE|Github搜索TrojanLinks
+      - 0|-https://t.me/MrXbin-158
+      - GB|Github搜索TrojanLinks
+      - US|Github搜索TrojanLinks 5
+      - 江苏省徐州市 移动
+      - 0|-https://t.me/MrXbin-18
+      - 狮城特殊|@ripaojiedian
+      - US|Github搜索TrojanLinks 6
+      - DE|Github搜索TrojanLinks 2
+      - FR | 🟢 | trojan | @DirectVPN | 1
+      - 0|-https://t.me/MrXbin-3
+      - DE|Github搜索TrojanLinks 3
+      - DE|Github搜索TrojanLinks 4
+      - DE | 🟢 | trojan | @PrivateVPNs | 0
+      - 美国 V2CROSS.COM
+      - 加拿大 025
+      - TR-TCP-TLS 🇺🇸 US-18.219.139.16:22222
+      - 0|-https://t.me/MrXbin-159
+      - US|Github搜索TrojanLinks 7
+      - 新加坡 Amazon数据中心
+      - JP|Github搜索TrojanLinks 4
+      - 广东省云浮市 移动
+      - KR|Github搜索TrojanLinks 3
+      - JP|Github搜索TrojanLinks 5
+      - US|Github搜索TrojanLinks 8
+      - SG-172.105.120.73-043
+      - 0|-https://t.me/MrXbin-142
+      - _IL_以色列
+      - 香港4|@ripaojiedian
+      - US|Github搜索TrojanLinks 9
+      - 0|-https://t.me/MrXbin-150
+      - 加拿大 163
+      - Github搜索TrojanLinks 2
+      - TR-TCP-TLS 🇸🇪 SE-13.49.202.22:22222
+      - FR|Github搜索TrojanLinks
+      - GB|Github搜索TrojanLinks 2
+      - 加拿大 164
+      - 日本2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 2
+      - 美国2|@ripaojiedian
+      - FR|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 3
+      - Github搜索TrojanLinks 3
+      - 爱尔兰 V2CROSS.COM
+      - Github搜索TrojanLinks 4
+      - US|Github搜索TrojanLinks 10
+      - DE|Github搜索TrojanLinks 5
+      - CA|Github搜索TrojanLinks 3
+      - GB|Github搜索TrojanLinks 4
+      - CA|Github搜索TrojanLinks 4
+      - Github搜索TrojanLinks 5
+      - 0|-https://t.me/MrXbin-121
       - 广东省 移动
-      - 美国+Akamai科技公司CDN网络节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
