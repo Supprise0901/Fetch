@@ -6,6 +6,33 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  name: 香港|@ripaojiedian
+  port: 44801
+  server: ambxxic01hk.dorabbb.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2302fd7b-1b02-4b1b-8391-782f4c99b7b3
+- cipher: chacha20-ietf-poly1305
+  name: 香港5|@ripaojiedian
+  password: 1404585b-fe61-4f4d-9680-f63d2002b429
+  port: 27466
+  server: gdyddx500.xiyunchen.cn
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 韩国2|@ripaojiedian
+  password: 9d8f1194-3798-49eb-99c0-cb3132b7591f
+  port: 59687
+  server: zf01.yydz.one
+  type: ss
+- cipher: chacha20-ietf
+  name: 香港7|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- alterId: 0
+  cipher: auto
   name: 美国2|@ripaojiedian
   network: ws
   port: 2086
@@ -18,120 +45,134 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 香港5|@ripaojiedian
-  password: 1404585b-fe61-4f4d-9680-f63d2002b429
-  port: 27466
-  server: gdyddx500.xiyunchen.cn
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 香港8|@ripaojiedian
-  password: 1404585b-fe61-4f4d-9680-f63d2002b429
-  port: 58774
-  server: gdyddx500.xiyunchen.cn
-  type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 香港|@ripaojiedian
-  port: 44801
-  server: ambxxic01hk.dorabbb.top
+  name: 香港6|@ripaojiedian
+  port: 31778
+  server: 183.236.48.161
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 2302fd7b-1b02-4b1b-8391-782f4c99b7b3
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 美国2|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港8|@ripaojiedian
   - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 香港7|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 香港6|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
