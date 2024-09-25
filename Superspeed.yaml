@@ -3,48 +3,302 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 50
+  network: ws
+  port: 2086
+  server: 104.20.19.168
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 11
+  network: ws
+  port: 2086
+  server: 104.16.149.244
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- name: 英国 社会保险安全部
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.54.135
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 16
+  network: ws
+  port: 2086
+  server: 104.19.45.17
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 2|d*********g.com_0
+  network: ws
+  port: 2086
+  server: 104.19.51.232
+  servername: ip006.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 2|d*********g.com_2
+  network: ws
+  port: 2086
+  server: 104.16.148.244
+  servername: ip006.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.freegradely.xyz
+    path: github.com/Alvin9999
+- name: 15|HK_speednode_0215
+  network: ws
+  password: 95b
+  port: 11417
+  server: 183.178.22.246
+  skip-cert-verify: true
+  sni: c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 22
+  network: ws
+  port: 2086
+  server: 104.26.5.113
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 36
+  network: ws
+  port: 2086
+  server: 104.26.13.31
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 20
+  network: ws
+  port: 2086
+  server: 104.19.45.13
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 美国 CloudFlare节点 50
+  - 美国 CloudFlare节点 11
+  - 英国 社会保险安全部
+  - 美国 CloudFlare节点 16
+  - 2|d*********g.com_0
+  - 2|d*********g.com_2
+  - 15|HK_speednode_0215
+  - 美国 CloudFlare节点 22
+  - 美国 CloudFlare节点 36
+  - 美国 CloudFlare节点 20
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
