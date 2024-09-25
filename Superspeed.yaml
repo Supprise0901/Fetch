@@ -3,100 +3,48 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 2|d*********g.com_1
-  network: ws
-  port: 2086
-  server: 23.227.38.5
-  servername: ip006.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 15|US_speednode_0442
-  network: ws
-  password: 95b
-  port: 443
-  server: 43.153.103.203
-  skip-cert-verify: true
-  sni: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+proxies: []
 proxy-groups:
 - name: 🔰 节点选择
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: ⛔️ 广告拦截
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🚫 运营劫持
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🌍 国外媒体
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🌏 国内媒体
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: Ⓜ️ 微软服务
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 📲 电报信息
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🍎 苹果服务
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🎯 全球直连
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🛑 全球拦截
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 - name: 🐟 漏网之鱼
-  proxies:
-  - 2|d*********g.com_1
-  - 15|US_speednode_0442
+  proxies: []
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
