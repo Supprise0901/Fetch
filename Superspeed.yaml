@@ -3,48 +3,88 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- name: 新加坡核心 IEPL 02
+  password: c42b3945-b0ea-4be9-8151-ee0af1cc581c
+  port: 443
+  server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+- name: 新加坡核心 IEPL 03
+  password: c42b3945-b0ea-4be9-8151-ee0af1cc581c
+  port: 443
+  server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 新加坡核心 IEPL 02
+  - 新加坡核心 IEPL 03
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
