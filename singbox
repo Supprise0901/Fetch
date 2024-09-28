@@ -1,0 +1,3224 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "error",
+        "timestamp": true
+    },
+    "experimental": {
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "secret": "",
+            "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+            "external_ui_download_detour": "",
+            "default_mode": "rule"
+        },
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": false
+        }
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "proxyDns",
+                "address": "tls://8.8.8.8",
+                "detour": "proxy"
+            },
+            {
+                "tag": "localDns",
+                "address": "https://223.5.5.5/dns-query",
+                "detour": "direct"
+            },
+            {
+                "tag": "block",
+                "address": "rcode://success"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "ghproxy.com",
+                    "cdn.jsdelivr.net",
+                    "testingcf.jsdelivr.net"
+                ],
+                "server": "localDns"
+            },
+            {
+                "rule_set": "geosite-category-ads-all",
+                "server": "block"
+            },
+            {
+                "outbound": "any",
+                "server": "localDns",
+                "disable_cache": true
+            },
+            {
+                "clash_mode": "direct",
+                "server": "localDns"
+            },
+            {
+                "clash_mode": "global",
+                "server": "proxyDns"
+            }
+        ],
+        "strategy": "ipv4_only"
+    },
+    "inbounds": [
+        {
+            "type": "mixed",
+            "listen": "127.0.0.1",
+            "listen_port": 2081,
+            "sniff": true,
+            "users": []
+        }
+    ],
+    "outbounds": [
+        {
+            "tag": "🇺🇸 美国2|@ripaojiedian",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_1 5",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_0",
+            "type": "vmess",
+            "server": "104.19.51.232",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_1 6",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "新加坡核心 IEPL 04 2",
+            "type": "trojan",
+            "server": "sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz",
+            "server_port": 443,
+            "password": "c42b3945-b0ea-4be9-8151-ee0af1cc581c",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "144-22-163-118.nhost.00cdn.com"
+            }
+        },
+        {
+            "tag": "新加坡核心 IEPL 04",
+            "type": "trojan",
+            "server": "sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz",
+            "server_port": 443,
+            "password": "c42b3945-b0ea-4be9-8151-ee0af1cc581c",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "144-22-163-118.nhost.00cdn.com"
+            }
+        },
+        {
+            "tag": "新加坡核心 IEPL 02",
+            "type": "trojan",
+            "server": "sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz",
+            "server_port": 443,
+            "password": "c42b3945-b0ea-4be9-8151-ee0af1cc581c",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "144-22-163-118.nhost.00cdn.com"
+            }
+        },
+        {
+            "tag": "新加坡核心 IEPL 01 2",
+            "type": "trojan",
+            "server": "sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz",
+            "server_port": 443,
+            "password": "c42b3945-b0ea-4be9-8151-ee0af1cc581c",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "144-22-163-118.nhost.00cdn.com"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_0 6",
+            "type": "vmess",
+            "server": "104.19.51.232",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_3 5",
+            "type": "vmess",
+            "server": "104.19.38.62",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "美国2|@ripaojiedian 2",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_1 3",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "15|US_speednode_0339",
+            "type": "trojan",
+            "server": "43.153.103.203",
+            "server_port": 443,
+            "password": "95b",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/trojan-6qo.pages.dev/?ed=2560",
+                "headers": {
+                    "Host": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0339 2",
+            "type": "trojan",
+            "server": "43.153.103.203",
+            "server_port": 443,
+            "password": "95b",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/trojan-6qo.pages.dev/?ed=2560",
+                "headers": {
+                    "Host": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+                }
+            }
+        },
+        {
+            "tag": "13,14|美国2|@ripaojiedian",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_3 6",
+            "type": "vmess",
+            "server": "104.19.38.62",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "美国2|@ripaojiedian",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_3 2",
+            "type": "vmess",
+            "server": "104.19.38.62",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "15|HK_speednode_0179",
+            "type": "trojan",
+            "server": "aliyun.2096.us.kg",
+            "server_port": 443,
+            "password": "95b",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/trojan-6qo.pages.dev/?ed=2560",
+                "headers": {
+                    "Host": "30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com"
+                }
+            }
+        },
+        {
+            "tag": "13,14|美国2|@ripaojiedian 2",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "新加坡核心 IEPL 03",
+            "type": "trojan",
+            "server": "sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz",
+            "server_port": 443,
+            "password": "c42b3945-b0ea-4be9-8151-ee0af1cc581c",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "144-22-163-118.nhost.00cdn.com"
+            }
+        },
+        {
+            "tag": "美国2|@ripaojiedian 2 2",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_1 7",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_3 7",
+            "type": "vmess",
+            "server": "104.19.38.62",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "13|🇭🇰 香港R|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "103.161.255.195",
+            "server_port": 16088,
+            "method": "aes-256-cfb",
+            "password": "hGkQ6915tD"
+        },
+        {
+            "tag": "13,14|美国2|@ripaojiedian 3",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "15|AE_speednode_0005",
+            "type": "vless",
+            "server": "94.140.0.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AU_speednode_0012",
+            "type": "vless",
+            "server": "103.169.142.121",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2securityfp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AU_speednode_0013",
+            "type": "vless",
+            "server": "103.169.142.121",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2securityfp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|ES_speednode_0129",
+            "type": "vless",
+            "server": "185.238.228.173",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0144",
+            "type": "vless",
+            "server": "91.193.58.119",
+            "server_port": 2053,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/fp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0140",
+            "type": "vless",
+            "server": "94.247.142.245",
+            "server_port": 443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0141",
+            "type": "vless",
+            "server": "31.22.116.225",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0142",
+            "type": "vless",
+            "server": "94.247.142.245",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0145",
+            "type": "vless",
+            "server": "31.22.116.225",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0148",
+            "type": "vless",
+            "server": "31.22.116.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0147",
+            "type": "vless",
+            "server": "94.247.142.245",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0151",
+            "type": "vless",
+            "server": "31.22.116.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0152",
+            "type": "vless",
+            "server": "31.22.116.56",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0153",
+            "type": "vless",
+            "server": "31.22.116.208",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0157",
+            "type": "vless",
+            "server": "31.22.116.208",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0250",
+            "type": "vless",
+            "server": "188.42.145.84",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0268",
+            "type": "vless",
+            "server": "185.176.24.113",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0263",
+            "type": "vless",
+            "server": "188.42.145.84",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0255",
+            "type": "vless",
+            "server": "185.176.24.113",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0257",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0259",
+            "type": "vless",
+            "server": "188.42.145.178",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0261",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0267",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0276",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0278",
+            "type": "vless",
+            "server": "185.176.24.15",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0305",
+            "type": "vless",
+            "server": "159.112.235.14",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0330",
+            "type": "vless",
+            "server": "159.112.235.14",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0314",
+            "type": "vless",
+            "server": "167.68.11.95",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0339 3",
+            "type": "trojan",
+            "server": "43.153.103.203",
+            "server_port": 443,
+            "password": "95b",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/trojan-6qo.pages.dev/?ed=2560",
+                "headers": {
+                    "Host": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0328",
+            "type": "vless",
+            "server": "45.159.218.7",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodestg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0334",
+            "type": "vless",
+            "server": "185.148.106.134",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0341",
+            "type": "vless",
+            "server": "14.102.229.66",
+            "server_port": 2087,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/security=tlsfp=randomized",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.26.7.132-150",
+            "type": "vmess",
+            "server": "104.26.7.132",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.45.50-151",
+            "type": "vmess",
+            "server": "104.19.45.50",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip13.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-69.50.95.39-154",
+            "type": "shadowsocks",
+            "server": "69.50.95.39",
+            "server_port": 9101,
+            "method": "aes-256-gcm",
+            "password": "e4FCWrgpkji3QY"
+        },
+        {
+            "tag": "🏁RELAY-104.18.14.19-156",
+            "type": "vmess",
+            "server": "104.18.14.19",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.21.230-157",
+            "type": "vmess",
+            "server": "104.19.21.230",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.47.22-165",
+            "type": "vmess",
+            "server": "104.19.47.22",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.123.11-167",
+            "type": "vmess",
+            "server": "104.19.123.11",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip11.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.167.15-175",
+            "type": "vmess",
+            "server": "172.64.167.15",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-162.159.140.89-177",
+            "type": "vmess",
+            "server": "162.159.140.89",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.26.5.90-180",
+            "type": "vmess",
+            "server": "104.26.5.90",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.16.148.244-187",
+            "type": "vmess",
+            "server": "fbi.gov",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.22.37.243-188",
+            "type": "vmess",
+            "server": "icook.tw",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-23.227.38.3-189",
+            "type": "vmess",
+            "server": "23.227.38.3",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-23.157.40.120-191",
+            "type": "shadowsocks",
+            "server": "23.157.40.120",
+            "server_port": 8119,
+            "method": "aes-256-gcm",
+            "password": "cdBIDV42DCwnfIN"
+        },
+        {
+            "tag": "🏁RELAY-104.19.46.59-192",
+            "type": "vmess",
+            "server": "104.19.46.59",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.166.2-194",
+            "type": "vmess",
+            "server": "172.64.166.2",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-139.64.165.155-197",
+            "type": "shadowsocks",
+            "server": "139.64.165.155",
+            "server_port": 9102,
+            "method": "aes-256-gcm",
+            "password": "e4FCWrgpkji3QY"
+        },
+        {
+            "tag": "🏁RELAY-172.64.166.9-198",
+            "type": "vmess",
+            "server": "172.64.166.9",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-139.64.165.144-200",
+            "type": "shadowsocks",
+            "server": "139.64.165.144",
+            "server_port": 8118,
+            "method": "aes-256-gcm",
+            "password": "cdBIDV42DCwnfIN"
+        },
+        {
+            "tag": "🏁RELAY-172.64.167.44-202",
+            "type": "vmess",
+            "server": "172.64.167.44",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.32.88-204",
+            "type": "vmess",
+            "server": "104.19.32.88",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip5-4.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.166.12-205",
+            "type": "vmess",
+            "server": "172.64.166.12",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.194.76-207",
+            "type": "vmess",
+            "server": "172.64.194.76",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip11.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.46.63-209",
+            "type": "vmess",
+            "server": "104.19.46.63",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.22.37.243-213",
+            "type": "vmess",
+            "server": "104.22.37.243",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.21.71-216",
+            "type": "vmess",
+            "server": "104.19.21.71",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇬🇧GB-212.102.53.78-219",
+            "type": "shadowsocks",
+            "server": "212.102.53.78",
+            "server_port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "🇨🇳CN-122.195.189.15-220",
+            "type": "shadowsocks",
+            "server": "122.195.189.15",
+            "server_port": 10722,
+            "method": "chacha20-ietf-poly1305",
+            "password": "dd29d7ad-5fda-4f64-a57e-716ca6010e65"
+        },
+        {
+            "tag": "🏁RELAY-104.20.17.186-221",
+            "type": "vmess",
+            "server": "104.20.17.186",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip11.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇫🇷FR-15.236.58.120-223",
+            "type": "trojan",
+            "server": "15.236.58.120",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "trojan.burgerip.co.uk"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.26.12.31-224",
+            "type": "vmess",
+            "server": "104.26.12.31",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.45.35-225",
+            "type": "vmess",
+            "server": "104.19.45.35",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip13.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-23.157.40.120-227",
+            "type": "shadowsocks",
+            "server": "23.157.40.120",
+            "server_port": 3306,
+            "method": "aes-256-gcm",
+            "password": "Y6R9pAtvxxzmGC"
+        },
+        {
+            "tag": "🏁RELAY-104.19.46.27-229",
+            "type": "vmess",
+            "server": "104.19.46.27",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-139.64.165.144-232",
+            "type": "shadowsocks",
+            "server": "139.64.165.144",
+            "server_port": 5004,
+            "method": "aes-256-gcm",
+            "password": "g5MeD6Ft3CWlJId"
+        },
+        {
+            "tag": "🏁RELAY-104.19.46.42-234",
+            "type": "vmess",
+            "server": "104.19.46.42",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.20.25.146-235",
+            "type": "vmess",
+            "server": "104.20.25.146",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip11.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.45.47-236",
+            "type": "vmess",
+            "server": "104.19.45.47",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip13.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇨🇳CN-122.195.189.15-241",
+            "type": "shadowsocks",
+            "server": "122.195.189.15",
+            "server_port": 10723,
+            "method": "chacha20-ietf-poly1305",
+            "password": "dd29d7ad-5fda-4f64-a57e-716ca6010e65"
+        },
+        {
+            "tag": "🏁RELAY-104.26.0.56-242",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇺🇸US-139.64.165.144-244",
+            "type": "shadowsocks",
+            "server": "139.64.165.144",
+            "server_port": 8090,
+            "method": "aes-256-gcm",
+            "password": "PCnnH6SQSnfoS27"
+        },
+        {
+            "tag": "🏁RELAY-104.19.46.103-245",
+            "type": "vmess",
+            "server": "104.19.46.103",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.19.45.42-246",
+            "type": "vmess",
+            "server": "104.19.45.42",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.18.14.19-247",
+            "type": "vmess",
+            "server": "www.visa.com",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.26.5.60-250",
+            "type": "vmess",
+            "server": "japan.com",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.166.22-251",
+            "type": "vmess",
+            "server": "172.64.166.22",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.166.28-252",
+            "type": "vmess",
+            "server": "172.64.166.28",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.175.213-253",
+            "type": "vmess",
+            "server": "172.64.175.213",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-23.227.38.3-254",
+            "type": "vmess",
+            "server": "23.227.38.3",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.26.13.140-255",
+            "type": "vmess",
+            "server": "singapore.com",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip1.1789034.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-172.64.167.5-257",
+            "type": "vmess",
+            "server": "172.64.167.5",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip2.1457230.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-23.227.38.5-259",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🏁RELAY-104.16.148.244-260",
+            "type": "vmess",
+            "server": "104.16.148.244",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "🇨🇳CN-103.161.255.195-340",
+            "type": "shadowsocks",
+            "server": "103.161.255.195",
+            "server_port": 16088,
+            "method": "aes-256-cfb",
+            "password": "hGkQ6915tD"
+        },
+        {
+            "tag": "🏁RELAY-104.26.0.56-348",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_1 8",
+            "type": "vmess",
+            "server": "23.227.38.5",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "2|d*********g.com_2 8",
+            "type": "vmess",
+            "server": "104.16.148.244",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip006.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "13,14|美国2|@ripaojiedian 4",
+            "type": "vmess",
+            "server": "104.26.0.56",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "ip14.freegradely.xyz"
+                },
+                "path": "github.com/Alvin9999"
+            }
+        },
+        {
+            "tag": "15|AE_speednode_0005 2",
+            "type": "vless",
+            "server": "94.140.0.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AE_speednode_0007 2",
+            "type": "vless",
+            "server": "94.140.0.138",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AE_speednode_0008 2",
+            "type": "vless",
+            "server": "94.140.0.23",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AU_speednode_0012 2",
+            "type": "vless",
+            "server": "103.169.142.121",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2securityfp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|AU_speednode_0013 2",
+            "type": "vless",
+            "server": "103.169.142.121",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2securityfp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|ES_speednode_0129 2",
+            "type": "vless",
+            "server": "185.238.228.173",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0144 2",
+            "type": "vless",
+            "server": "91.193.58.119",
+            "server_port": 2053,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/fp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0141 2",
+            "type": "vless",
+            "server": "31.22.116.225",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0142 2",
+            "type": "vless",
+            "server": "94.247.142.245",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0145 2",
+            "type": "vless",
+            "server": "31.22.116.225",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0148 2",
+            "type": "vless",
+            "server": "31.22.116.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0147 2",
+            "type": "vless",
+            "server": "94.247.142.245",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0151 2",
+            "type": "vless",
+            "server": "31.22.116.186",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0152 2",
+            "type": "vless",
+            "server": "31.22.116.56",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0153 2",
+            "type": "vless",
+            "server": "31.22.116.208",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|GB_speednode_0157 2",
+            "type": "vless",
+            "server": "31.22.116.208",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0250 2",
+            "type": "vless",
+            "server": "188.42.145.84",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0268 2",
+            "type": "vless",
+            "server": "185.176.24.113",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0263 2",
+            "type": "vless",
+            "server": "188.42.145.84",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0255 2",
+            "type": "vless",
+            "server": "185.176.24.113",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0257 2",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0259 2",
+            "type": "vless",
+            "server": "188.42.145.178",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0261 2",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0267 2",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|RU_speednode_0276 2",
+            "type": "vless",
+            "server": "188.42.145.90",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0305 2",
+            "type": "vless",
+            "server": "159.112.235.14",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0330 2",
+            "type": "vless",
+            "server": "159.112.235.14",
+            "server_port": 8443,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?edfp=chromefp=chrome",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0307 2",
+            "type": "vless",
+            "server": "167.68.11.253",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0312 2",
+            "type": "vless",
+            "server": "167.68.11.95",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0314 2",
+            "type": "vless",
+            "server": "167.68.11.95",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chromefp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0339 4",
+            "type": "trojan",
+            "server": "43.153.103.203",
+            "server_port": 443,
+            "password": "95b",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/trojan-6qo.pages.dev/?ed=2560",
+                "headers": {
+                    "Host": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0322 2",
+            "type": "vless",
+            "server": "167.68.11.253",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0326 2",
+            "type": "vless",
+            "server": "45.159.219.23",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0328 2",
+            "type": "vless",
+            "server": "45.159.218.7",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodestg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0334 2",
+            "type": "vless",
+            "server": "185.148.106.134",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cfed.tgzdyz2.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tg@zdyz2fp=chrome",
+                "headers": {
+                    "Host": "cfed.tgzdyz2.top"
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0341 2",
+            "type": "vless",
+            "server": "14.102.229.66",
+            "server_port": 2087,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/security=tlsfp=randomized",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            }
+        },
+        {
+            "tag": "[Hy2]剩余流量：20 GB",
+            "type": "hysteria2",
+            "server": "seoul3-500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 24349,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "1.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "[Hy2]套餐到期：2025-01-28",
+            "type": "hysteria2",
+            "server": "seoul3-500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 24349,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "1.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "[Hy2]🇯🇵日本-东京-500M-1",
+            "type": "hysteria2",
+            "server": "tokyo2-500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 22031,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "2.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "[Hy2]🇯🇵日本-东京-500M-2",
+            "type": "hysteria2",
+            "server": "tokyo3-500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 20740,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "2.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "[Hy2]🇩🇪德国-法兰克福-2500M",
+            "type": "hysteria2",
+            "server": "frankfurt1-2500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 21085,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "1.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "[Hy2]🇩🇪德国-法兰克福-500M 1",
+            "type": "hysteria2",
+            "server": "frankfurt2-500m.node.xn--l6qx3lcvp58x.com",
+            "server_port": 23435,
+            "password": "4bc5d9d3-3ed6-4db5-af78-107d6ccb2798",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "199.nodes.yljc.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "proxy",
+            "type": "selector",
+            "outbounds": [
+                "auto",
+                "direct",
+                "15|RU_speednode_0268 2",
+                "15|AE_speednode_0008 2",
+                "15|US_speednode_0339",
+                "15|GB_speednode_0153 2",
+                "15|US_speednode_0339 3",
+                "15|GB_speednode_0144 2",
+                "15|RU_speednode_0257",
+                "15|US_speednode_0341 2",
+                "15|RU_speednode_0255 2",
+                "15|AU_speednode_0012",
+                "15|US_speednode_0339 4",
+                "15|AE_speednode_0007 2",
+                "🇫🇷FR-15.236.58.120-223",
+                "15|GB_speednode_0145",
+                "15|RU_speednode_0255",
+                "15|GB_speednode_0152 2",
+                "15|GB_speednode_0151 2",
+                "15|GB_speednode_0148 2",
+                "15|US_speednode_0339 2",
+                "新加坡核心 IEPL 01 2",
+                "[Hy2]🇩🇪德国-法兰克福-2500M",
+                "15|AE_speednode_0005",
+                "15|US_speednode_0334 2",
+                "15|GB_speednode_0144",
+                "新加坡核心 IEPL 03",
+                "15|AU_speednode_0013",
+                "15|GB_speednode_0141",
+                "15|US_speednode_0330 2",
+                "15|RU_speednode_0250 2",
+                "15|ES_speednode_0129",
+                "新加坡核心 IEPL 04",
+                "15|RU_speednode_0257 2",
+                "15|GB_speednode_0141 2",
+                "15|US_speednode_0330",
+                "15|AE_speednode_0005 2",
+                "15|US_speednode_0328",
+                "15|AU_speednode_0012 2",
+                "15|US_speednode_0307 2",
+                "[Hy2]🇩🇪德国-法兰克福-500M 1",
+                "15|GB_speednode_0153",
+                "15|RU_speednode_0276",
+                "15|US_speednode_0314 2",
+                "15|RU_speednode_0261",
+                "15|RU_speednode_0263",
+                "新加坡核心 IEPL 02",
+                "[Hy2]🇯🇵日本-东京-500M-2",
+                "[Hy2]🇯🇵日本-东京-500M-1",
+                "15|RU_speednode_0261 2",
+                "15|US_speednode_0312 2",
+                "15|GB_speednode_0151",
+                "15|GB_speednode_0157 2",
+                "15|US_speednode_0328 2",
+                "新加坡核心 IEPL 04 2",
+                "[Hy2]套餐到期：2025-01-28",
+                "15|GB_speednode_0145 2",
+                "15|GB_speednode_0148",
+                "15|AU_speednode_0013 2",
+                "15|RU_speednode_0259",
+                "15|US_speednode_0305 2",
+                "15|ES_speednode_0129 2",
+                "15|US_speednode_0334",
+                "15|US_speednode_0341",
+                "15|RU_speednode_0259 2",
+                "15|RU_speednode_0276 2",
+                "15|RU_speednode_0263 2",
+                "15|HK_speednode_0179",
+                "13|🇭🇰 香港R|@ripaojiedian",
+                "15|US_speednode_0305",
+                "15|RU_speednode_0250",
+                "15|US_speednode_0322 2",
+                "15|RU_speednode_0267 2",
+                "15|RU_speednode_0268",
+                "15|US_speednode_0314",
+                "[Hy2]剩余流量：20 GB",
+                "15|US_speednode_0326 2",
+                "15|GB_speednode_0152",
+                "15|GB_speednode_0157",
+                "15|GB_speednode_0147 2",
+                "15|GB_speednode_0142 2",
+                "🇨🇳CN-103.161.255.195-340",
+                "15|RU_speednode_0278",
+                "🇺🇸US-23.157.40.120-227",
+                "🏁RELAY-104.19.45.47-236",
+                "🏁RELAY-104.19.46.59-192",
+                "🇺🇸US-139.64.165.155-197",
+                "🏁RELAY-23.227.38.5-259",
+                "🇺🇸US-23.157.40.120-191",
+                "🏁RELAY-104.26.7.132-150",
+                "15|RU_speednode_0267",
+                "🇺🇸US-69.50.95.39-154",
+                "🇨🇳CN-122.195.189.15-241",
+                "🏁RELAY-104.18.14.19-156",
+                "🇺🇸US-139.64.165.144-244",
+                "15|GB_speednode_0147",
+                "🇺🇸US-139.64.165.144-200",
+                "2|d*********g.com_1 6",
+                "2|d*********g.com_1 3",
+                "🏁RELAY-104.16.148.244-260",
+                "2|d*********g.com_1 7",
+                "2|d*********g.com_1 5",
+                "2|d*********g.com_3 7",
+                "15|GB_speednode_0142",
+                "🏁RELAY-172.64.167.44-202",
+                "🇬🇧GB-212.102.53.78-219",
+                "🏁RELAY-172.64.166.12-205",
+                "🏁RELAY-104.16.148.244-187",
+                "🏁RELAY-172.64.167.5-257",
+                "🏁RELAY-172.64.166.22-251",
+                "🏁RELAY-172.64.167.15-175",
+                "🏁RELAY-104.26.5.90-180",
+                "🏁RELAY-172.64.166.28-252",
+                "2|d*********g.com_3 6",
+                "2|d*********g.com_3 5",
+                "🏁RELAY-172.64.175.213-253",
+                "🏁RELAY-23.227.38.3-189",
+                "🏁RELAY-104.18.14.19-247",
+                "🏁RELAY-104.22.37.243-188",
+                "🇨🇳CN-122.195.189.15-220",
+                "🏁RELAY-104.19.45.42-246",
+                "🏁RELAY-104.26.5.60-250",
+                "🏁RELAY-162.159.140.89-177",
+                "🏁RELAY-104.26.12.31-224",
+                "🏁RELAY-104.19.46.27-229",
+                "🏁RELAY-104.19.46.103-245",
+                "2|d*********g.com_1 8",
+                "🏁RELAY-104.19.46.42-234",
+                "2|d*********g.com_0",
+                "🏁RELAY-104.26.13.140-255",
+                "15|GB_speednode_0140",
+                "🏁RELAY-104.19.45.50-151",
+                "🏁RELAY-104.19.21.230-157",
+                "🏁RELAY-104.26.0.56-348",
+                "🏁RELAY-104.19.32.88-204",
+                "🏁RELAY-104.22.37.243-213",
+                "🏁RELAY-104.19.123.11-167",
+                "2|d*********g.com_3 2",
+                "🇺🇸US-139.64.165.144-232",
+                "🏁RELAY-172.64.166.2-194",
+                "🏁RELAY-104.20.25.146-235",
+                "13,14|美国2|@ripaojiedian 3",
+                "🏁RELAY-104.26.0.56-242",
+                "13,14|美国2|@ripaojiedian 4",
+                "美国2|@ripaojiedian 2 2",
+                "🏁RELAY-172.64.166.9-198",
+                "🏁RELAY-172.64.194.76-207",
+                "2|d*********g.com_2 8",
+                "🏁RELAY-104.19.45.35-225",
+                "2|d*********g.com_0 6",
+                "🏁RELAY-23.227.38.3-254",
+                "13,14|美国2|@ripaojiedian 2",
+                "🏁RELAY-104.19.47.22-165",
+                "🏁RELAY-104.19.21.71-216",
+                "美国2|@ripaojiedian",
+                "🏁RELAY-104.19.46.63-209",
+                "🏁RELAY-104.20.17.186-221",
+                "13,14|美国2|@ripaojiedian",
+                "美国2|@ripaojiedian 2",
+                "🇺🇸 美国2|@ripaojiedian"
+            ]
+        },
+        {
+            "tag": "auto",
+            "type": "urltest",
+            "outbounds": [
+                "15|RU_speednode_0268 2",
+                "15|AE_speednode_0008 2",
+                "15|US_speednode_0339",
+                "15|GB_speednode_0153 2",
+                "15|US_speednode_0339 3",
+                "15|GB_speednode_0144 2",
+                "15|RU_speednode_0257",
+                "15|US_speednode_0341 2",
+                "15|RU_speednode_0255 2",
+                "15|AU_speednode_0012",
+                "15|US_speednode_0339 4",
+                "15|AE_speednode_0007 2",
+                "🇫🇷FR-15.236.58.120-223",
+                "15|GB_speednode_0145",
+                "15|RU_speednode_0255",
+                "15|GB_speednode_0152 2",
+                "15|GB_speednode_0151 2",
+                "15|GB_speednode_0148 2",
+                "15|US_speednode_0339 2",
+                "新加坡核心 IEPL 01 2",
+                "[Hy2]🇩🇪德国-法兰克福-2500M",
+                "15|AE_speednode_0005",
+                "15|US_speednode_0334 2",
+                "15|GB_speednode_0144",
+                "新加坡核心 IEPL 03",
+                "15|AU_speednode_0013",
+                "15|GB_speednode_0141",
+                "15|US_speednode_0330 2",
+                "15|RU_speednode_0250 2",
+                "15|ES_speednode_0129",
+                "新加坡核心 IEPL 04",
+                "15|RU_speednode_0257 2",
+                "15|GB_speednode_0141 2",
+                "15|US_speednode_0330",
+                "15|AE_speednode_0005 2",
+                "15|US_speednode_0328",
+                "15|AU_speednode_0012 2",
+                "15|US_speednode_0307 2",
+                "[Hy2]🇩🇪德国-法兰克福-500M 1",
+                "15|GB_speednode_0153",
+                "15|RU_speednode_0276",
+                "15|US_speednode_0314 2",
+                "15|RU_speednode_0261",
+                "15|RU_speednode_0263",
+                "新加坡核心 IEPL 02",
+                "[Hy2]🇯🇵日本-东京-500M-2",
+                "[Hy2]🇯🇵日本-东京-500M-1",
+                "15|RU_speednode_0261 2",
+                "15|US_speednode_0312 2",
+                "15|GB_speednode_0151",
+                "15|GB_speednode_0157 2",
+                "15|US_speednode_0328 2",
+                "新加坡核心 IEPL 04 2",
+                "[Hy2]套餐到期：2025-01-28",
+                "15|GB_speednode_0145 2",
+                "15|GB_speednode_0148",
+                "15|AU_speednode_0013 2",
+                "15|RU_speednode_0259",
+                "15|US_speednode_0305 2",
+                "15|ES_speednode_0129 2",
+                "15|US_speednode_0334",
+                "15|US_speednode_0341",
+                "15|RU_speednode_0259 2",
+                "15|RU_speednode_0276 2",
+                "15|RU_speednode_0263 2",
+                "15|HK_speednode_0179",
+                "13|🇭🇰 香港R|@ripaojiedian",
+                "15|US_speednode_0305",
+                "15|RU_speednode_0250",
+                "15|US_speednode_0322 2",
+                "15|RU_speednode_0267 2",
+                "15|RU_speednode_0268",
+                "15|US_speednode_0314",
+                "[Hy2]剩余流量：20 GB",
+                "15|US_speednode_0326 2",
+                "15|GB_speednode_0152",
+                "15|GB_speednode_0157",
+                "15|GB_speednode_0147 2",
+                "15|GB_speednode_0142 2",
+                "🇨🇳CN-103.161.255.195-340",
+                "15|RU_speednode_0278",
+                "🇺🇸US-23.157.40.120-227",
+                "🏁RELAY-104.19.45.47-236",
+                "🏁RELAY-104.19.46.59-192",
+                "🇺🇸US-139.64.165.155-197",
+                "🏁RELAY-23.227.38.5-259",
+                "🇺🇸US-23.157.40.120-191",
+                "🏁RELAY-104.26.7.132-150",
+                "15|RU_speednode_0267",
+                "🇺🇸US-69.50.95.39-154",
+                "🇨🇳CN-122.195.189.15-241",
+                "🏁RELAY-104.18.14.19-156",
+                "🇺🇸US-139.64.165.144-244",
+                "15|GB_speednode_0147",
+                "🇺🇸US-139.64.165.144-200",
+                "2|d*********g.com_1 6",
+                "2|d*********g.com_1 3",
+                "🏁RELAY-104.16.148.244-260",
+                "2|d*********g.com_1 7",
+                "2|d*********g.com_1 5",
+                "2|d*********g.com_3 7",
+                "15|GB_speednode_0142",
+                "🏁RELAY-172.64.167.44-202",
+                "🇬🇧GB-212.102.53.78-219",
+                "🏁RELAY-172.64.166.12-205",
+                "🏁RELAY-104.16.148.244-187",
+                "🏁RELAY-172.64.167.5-257",
+                "🏁RELAY-172.64.166.22-251",
+                "🏁RELAY-172.64.167.15-175",
+                "🏁RELAY-104.26.5.90-180",
+                "🏁RELAY-172.64.166.28-252",
+                "2|d*********g.com_3 6",
+                "2|d*********g.com_3 5",
+                "🏁RELAY-172.64.175.213-253",
+                "🏁RELAY-23.227.38.3-189",
+                "🏁RELAY-104.18.14.19-247",
+                "🏁RELAY-104.22.37.243-188",
+                "🇨🇳CN-122.195.189.15-220",
+                "🏁RELAY-104.19.45.42-246",
+                "🏁RELAY-104.26.5.60-250",
+                "🏁RELAY-162.159.140.89-177",
+                "🏁RELAY-104.26.12.31-224",
+                "🏁RELAY-104.19.46.27-229",
+                "🏁RELAY-104.19.46.103-245",
+                "2|d*********g.com_1 8",
+                "🏁RELAY-104.19.46.42-234",
+                "2|d*********g.com_0",
+                "🏁RELAY-104.26.13.140-255",
+                "15|GB_speednode_0140",
+                "🏁RELAY-104.19.45.50-151",
+                "🏁RELAY-104.19.21.230-157",
+                "🏁RELAY-104.26.0.56-348",
+                "🏁RELAY-104.19.32.88-204",
+                "🏁RELAY-104.22.37.243-213",
+                "🏁RELAY-104.19.123.11-167",
+                "2|d*********g.com_3 2",
+                "🇺🇸US-139.64.165.144-232",
+                "🏁RELAY-172.64.166.2-194",
+                "🏁RELAY-104.20.25.146-235",
+                "13,14|美国2|@ripaojiedian 3",
+                "🏁RELAY-104.26.0.56-242",
+                "13,14|美国2|@ripaojiedian 4",
+                "美国2|@ripaojiedian 2 2",
+                "🏁RELAY-172.64.166.9-198",
+                "🏁RELAY-172.64.194.76-207",
+                "2|d*********g.com_2 8",
+                "🏁RELAY-104.19.45.35-225",
+                "2|d*********g.com_0 6",
+                "🏁RELAY-23.227.38.3-254",
+                "13,14|美国2|@ripaojiedian 2",
+                "🏁RELAY-104.19.47.22-165",
+                "🏁RELAY-104.19.21.71-216",
+                "美国2|@ripaojiedian",
+                "🏁RELAY-104.19.46.63-209",
+                "🏁RELAY-104.20.17.186-221",
+                "13,14|美国2|@ripaojiedian",
+                "美国2|@ripaojiedian 2",
+                "🇺🇸 美国2|@ripaojiedian"
+            ],
+            "url": "https://www.google.com/",
+            "interval": "10m",
+            "tolerance": 50
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "dns",
+            "tag": "dns-out"
+        },
+        {
+            "type": "block",
+            "tag": "block"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "final": "proxy",
+        "rules": [
+            {
+                "protocol": "dns",
+                "outbound": "dns-out"
+            },
+            {
+                "network": "udp",
+                "port": 443,
+                "outbound": "block"
+            },
+            {
+                "rule_set": "geosite-category-ads-all",
+                "outbound": "block"
+            },
+            {
+                "clash_mode": "direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "global",
+                "outbound": "proxy"
+            },
+            {
+                "domain": [
+                    "clash.razord.top",
+                    "yacd.metacubex.one",
+                    "yacd.haishan.me",
+                    "d.metacubex.one"
+                ],
+                "outbound": "direct"
+            }
+        ],
+        "rule_set": [
+            {
+                "tag": "geosite-category-ads-all",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
+                "download_detour": "direct"
+            }
+        ]
+    }
+}
