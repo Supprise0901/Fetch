@@ -3,297 +3,48 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 13,14|美国2|@ripaojiedian
-  network: ws
-  port: 2086
-  server: 104.26.0.56
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 新加坡|@ripaojiedian
-  password: c471ef32-798d-40a0-a57c-acf3475a204e
-  port: 13027
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- name: 15|HK_speednode_0180
-  network: ws
-  password: 95b
-  port: 443
-  server: aliyun.2096.us.kg
-  skip-cert-verify: true
-  sni: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- name: 15|HK_speednode_0179
-  network: ws
-  password: 95b
-  port: 443
-  server: aliyun.2096.us.kg
-  skip-cert-verify: true
-  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 2|d*********g.com_3
-  network: ws
-  port: 2086
-  server: 104.19.38.62
-  servername: ip006.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|d*********g.com_1
-  network: ws
-  port: 2086
-  server: 23.227.38.5
-  servername: ip006.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国2|@ripaojiedian
-  network: ws
-  port: 2086
-  server: 104.26.0.56
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 15|US_speednode_0343
-  network: ws
-  password: 95b
-  port: 10511
-  server: 65.75.194.43
-  skip-cert-verify: true
-  sni: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 2|d*********g.com_0
-  network: ws
-  port: 2086
-  server: 104.19.51.232
-  servername: ip006.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 13,14|新加坡|@ripaojiedian
-  password: c471ef32-798d-40a0-a57c-acf3475a204e
-  port: 13027
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+proxies: []
 proxy-groups:
 - name: 🔰 节点选择
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: ⛔️ 广告拦截
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🚫 运营劫持
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🌍 国外媒体
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🌏 国内媒体
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: Ⓜ️ 微软服务
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 📲 电报信息
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🍎 苹果服务
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🎯 全球直连
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🛑 全球拦截
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 - name: 🐟 漏网之鱼
-  proxies:
-  - 13,14|美国2|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 15|HK_speednode_0180
-  - 15|HK_speednode_0179
-  - 2|d*********g.com_3
-  - 2|d*********g.com_1
-  - 美国2|@ripaojiedian
-  - 15|US_speednode_0343
-  - 2|d*********g.com_0
-  - 13,14|新加坡|@ripaojiedian
+  proxies: []
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
