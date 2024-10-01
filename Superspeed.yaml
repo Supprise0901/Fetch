@@ -6,23 +6,10 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 加拿大 017
-  network: ws
-  port: 2086
-  server: 104.19.47.77
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 3
+  name: 美国 CloudFlare节点 27
   network: ws
   port: 80
-  server: 162.159.136.106
+  server: 172.64.229.209
   tls: false
   type: vmess
   uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
@@ -46,6 +33,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 美国 CloudFlare节点 3
+  network: ws
+  port: 80
+  server: 162.159.136.106
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: RELAY-162.159.129.138-234
   network: ws
   port: 80
@@ -60,123 +60,149 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点 27
+  name: RELAY-104.19.45.188-0319
   network: ws
-  port: 80
-  server: 172.64.229.209
+  port: 2095
+  server: 104.19.45.188
   tls: false
   type: vmess
-  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
     headers:
-      Host: rn2.hostmjj.com
+      Host: onea.flha.ru
     path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.19.47.77-0401
+  network: ws
+  port: 2086
+  server: 104.19.47.77
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 📲 电报信息
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 加拿大 017
-  - 美国 CloudFlare节点 3
-  - RELAY-172.64.229.209-215
-  - RELAY-162.159.129.138-234
   - 美国 CloudFlare节点 27
+  - RELAY-172.64.229.209-215
+  - 美国 CloudFlare节点 3
+  - RELAY-162.159.129.138-234
+  - RELAY-104.19.45.188-0319
+  - RELAY-104.19.47.77-0401
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
