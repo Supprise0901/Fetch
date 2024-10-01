@@ -4,139 +4,150 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 美国5|@ripaojiedian
-  port: 58831
-  server: 120.232.153.27
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 加拿大 017
+  name: RELAY-172.64.229.209-215
+  network: ws
+  port: 80
+  server: 172.64.229.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.64.166.32-202
   network: ws
   port: 2086
-  server: 104.19.47.77
+  server: 172.64.166.32
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: ip14.freegradely.xyz
+      Host: ip2.1457230.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 香港5|@ripaojiedian
-  port: 44826
-  server: ambxxid02hk.dorabbb.top
-  skip-cert-verify: false
+  name: RELAY-162.159.129.138-234
+  network: ws
+  port: 80
+  server: 162.159.129.138
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 0b411754-172d-406c-95fb-7ee650a5b9ad
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
 - alterId: 64
   cipher: auto
-  name: 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
+  name: CN-120.232.153.27-228
+  port: 58831
+  server: 120.232.153.27
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 📲 电报信息
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 美国5|@ripaojiedian
-  - 加拿大 017
-  - 香港5|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - RELAY-172.64.229.209-215
+  - RELAY-172.64.166.32-202
+  - RELAY-162.159.129.138-234
+  - CN-120.232.153.27-228
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
