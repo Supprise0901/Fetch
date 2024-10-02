@@ -4,68 +4,101 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 广东省广州市 移动
-  port: 35601
-  server: 120.232.153.40
+  name: RELAY-104.21.55.174-186
+  network: ws
+  port: 2052
+  server: speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 4b1168e7-82b0-43a7-8dbc-b22b61547ef4
+  ws-opts:
+    headers:
+      Host: speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: GB-5.39.254.196-198
+  network: ws
+  port: 17808
+  server: 5.39.254.196
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: 5.39.254.196
+    path: /
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 📲 电报信息
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 广东省广州市 移动
+  - RELAY-104.21.55.174-186
+  - GB-5.39.254.196-198
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
