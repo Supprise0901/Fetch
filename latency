@@ -6,7 +6,42 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: RELAY-104.21.55.174-186
+  name: NL-154.47.21.37-132
+  port: 8099
+  server: 154.47.21.37
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fa1897db-1925-4c86-a495-939a959af900
+- alterId: 64
+  cipher: auto
+  name: US-198.2.234.98-161
+  port: 39771
+  server: 198.2.234.98
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: CN-120.232.153.40-253
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,16|香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.171.200-122
   network: ws
   port: 2052
   server: speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
@@ -18,227 +53,112 @@ proxies:
     headers:
       Host: speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 安徽省滁州市 电信
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: GB-5.39.254.196-198
-  network: ws
-  port: 17808
-  server: 5.39.254.196
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: 5.39.254.196
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 14|香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 11,15,16|美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 13,14|美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 📲 电报信息
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🎯 全球直连
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - RELAY-104.21.55.174-186
-  - 安徽省滁州市 电信
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - GB-5.39.254.196-198
-  - 14|香港4|@ripaojiedian
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - NL-154.47.21.37-132
+  - US-198.2.234.98-161
+  - CN-120.232.153.40-253
+  - 11,16|香港4|@ripaojiedian
+  - RELAY-172.67.171.200-122
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
