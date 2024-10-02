@@ -19,7 +19,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: RELAY-162.159.136.98-187
+  name: RELAY-162.159.136.98-198
   network: ws
   port: 80
   server: 162.159.136.98
@@ -33,20 +33,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点 42
+  name: RELAY-104.21.77.29-183
   network: ws
-  port: 80
-  server: 162.159.128.248
-  tls: false
+  port: 443
+  server: beyonddbc.sbs
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
   ws-opts:
     headers:
-      Host: rn1.hostmjj.com
-    path: /
+      Host: beyonddbc.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: RELAY-162.159.136.106-266
+  name: 澳大利亚 v2rayfree.eu.org
+  port: 12953
+  server: 63.lwdh.us
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: SG-103.14.92.61-249
+  port: 12953
+  server: 63.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.136.106-202
   network: ws
   port: 80
   server: 162.159.136.106
@@ -60,38 +78,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: FASTLY-151.101.195.10-286
+  name: 美国 CloudFlare节点 47
   network: ws
   port: 80
-  server: 151.101.195.10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: FASTLY-151.101.67.10-257
-  network: ws
-  port: 80
-  server: 151.101.67.10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 4
-  network: ws
-  port: 80
-  server: 172.64.229.209
+  server: 162.159.136.106
   tls: false
   type: vmess
   uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
@@ -101,7 +91,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: RELAY-162.159.136.98-278
+  name: RELAY-162.159.136.98-232
   network: ws
   port: 80
   server: 162.159.136.98
@@ -113,12 +103,59 @@ proxies:
     headers:
       Host: rn2.hostmjj.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 22
+  network: ws
+  port: 80
+  server: 162.159.128.105
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-162.159.136.106-303
+  network: ws
+  port: 80
+  server: 162.159.136.106
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11|澳大利亚 v2rayfree.eu.org
+  port: 12953
+  server: 63.lwdh.us
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 11|美国 CloudFlare节点
+  network: ws
+  port: 80
+  server: 162.159.136.98
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
 - alterId: 64
   cipher: auto
-  name: 香港4|@ripaojiedian
+  name: 14|香港4|@ripaojiedian
   port: 35601
   server: 120.232.153.40
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -126,160 +163,212 @@ proxy-groups:
 - name: 🔰 节点选择
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
   - 美国 CloudFlare节点 11
-  - RELAY-162.159.136.98-187
-  - 美国 CloudFlare节点 42
-  - RELAY-162.159.136.106-266
-  - FASTLY-151.101.195.10-286
-  - FASTLY-151.101.67.10-257
-  - 美国 CloudFlare节点 4
-  - RELAY-162.159.136.98-278
-  - 香港4|@ripaojiedian
+  - RELAY-162.159.136.98-198
+  - RELAY-104.21.77.29-183
+  - 澳大利亚 v2rayfree.eu.org
+  - SG-103.14.92.61-249
+  - RELAY-162.159.136.106-202
+  - 美国 CloudFlare节点 47
+  - RELAY-162.159.136.98-232
+  - 美国 CloudFlare节点 22
+  - RELAY-162.159.136.106-303
+  - 11|澳大利亚 v2rayfree.eu.org
+  - 11|美国 CloudFlare节点
+  - 14|香港4|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
