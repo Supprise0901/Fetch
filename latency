@@ -6,296 +6,71 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 澳大利亚 v2rayfree.eu.org
-  port: 12953
-  server: 63.lwdh.us
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 美国|@ripaojiedian
+  name: 美国 CloudFlare节点 29
   network: ws
-  port: 46010
-  server: 223.244.26.216
-  skip-cert-verify: false
+  port: 80
+  server: 162.159.128.248
   tls: false
   type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: RELAY-104.21.77.29-183
-  network: ws
-  port: 443
-  server: beyonddbc.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
+  uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e
   ws-opts:
     headers:
-      Host: beyonddbc.sbs
-    path: /linkws
-- alterId: 64
-  cipher: auto
-  name: CN-183.236.51.23-233
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13,14|美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: CN-183.236.51.23-145
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 15,16|美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 广东省广州市 移动 2
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 11|澳大利亚 v2rayfree.eu.org
-  port: 12953
-  server: 63.lwdh.us
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: SG-103.14.92.61-249
-  port: 12953
-  server: 63.lwdh.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+      Host: rn1.hostmjj.com
+    path: /
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 📲 电报信息
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 澳大利亚 v2rayfree.eu.org
-  - 美国|@ripaojiedian
-  - RELAY-104.21.77.29-183
-  - CN-183.236.51.23-233
-  - 13,14|美国|@ripaojiedian
-  - CN-183.236.51.23-145
-  - 15,16|美国|@ripaojiedian
-  - 广东省广州市 移动 2
-  - 香港4|@ripaojiedian
-  - 11|澳大利亚 v2rayfree.eu.org
-  - SG-103.14.92.61-249
+  - 美国 CloudFlare节点 29
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
