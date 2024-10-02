@@ -6,114 +6,92 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 V2CROSS.COM 15
-  port: 8099
-  server: 154.47.21.44
-  tls: false
-  type: vmess
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 3
+  name: 美国 CloudFlare节点 2
   network: ws
-  port: 80
-  server: 104.18.84.104
-  tls: false
+  port: 443
+  server: gt021.bestforxray.buzz
+  tls: true
   type: vmess
-  uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e
+  uuid: c1fd780a-3408-4f48-a932-5832a28ce9f6
   ws-opts:
     headers:
-      Host: rn1.hostmjj.com
-    path: /
+      Host: ausgt02.bestforxray.buzz
+    path: /linkws
 - alterId: 64
   cipher: auto
-  name: CN-183.236.51.23-158
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: true
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 美国 V2CROSS.COM 15
-  - 美国 CloudFlare节点 3
-  - CN-183.236.51.23-158
+  - 美国 CloudFlare节点 2
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
