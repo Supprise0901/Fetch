@@ -4,282 +4,127 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  port: 39771
-  server: 198.2.234.98
-  tls: false
+  name: FR-146.19.168.161-158
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
   cipher: auto
-  name: US-198.2.234.98-161
-  port: 39771
-  server: 198.2.234.98
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 2096
+  server: 104.17.106.151
+  tls: true
+  type: vmess
+  uuid: 4bbc92db-5f8f-42fd-87ff-440e9040d23c
+  ws-opts:
+    headers:
+      Host: total-racial-eugene-index.trycloudflare.com
+    path: www.dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: GB-5.39.254.196-169
+  network: ws
+  port: 1780
+  server: 5.39.254.196
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  port: 39771
-  server: 198.2.234.98
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 美国加利福尼亚州洛杉矶 PetaExpress
-  port: 39771
-  server: 198.2.234.98
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11|美国加利福尼亚州洛杉矶 PetaExpress
-  port: 39771
-  server: 198.2.234.98
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: US-198.2.234.98-269 3
-  port: 39771
-  server: 198.2.234.98
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: US-198.2.234.98-269
-  port: 39771
-  server: 198.2.234.98
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 美国加利福尼亚州洛杉矶 PetaExpress 2
-  port: 39771
-  server: 198.2.234.98
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: US-198.2.234.98-269 2
-  port: 39771
-  server: 198.2.234.98
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 美国加利福尼亚州洛杉矶 PetaExpress 3
-  port: 39771
-  server: 198.2.234.98
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 广东省广州市 移动 3
-  port: 45020
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: 5.39.254.196
+    path: /
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 📲 电报信息
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-161
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 美国加利福尼亚州洛杉矶 PetaExpress
-  - 11|美国加利福尼亚州洛杉矶 PetaExpress
-  - US-198.2.234.98-269 3
-  - US-198.2.234.98-269
-  - 美国加利福尼亚州洛杉矶 PetaExpress 2
-  - US-198.2.234.98-269 2
-  - 美国加利福尼亚州洛杉矶 PetaExpress 3
-  - 广东省广州市 移动 3
+  - FR-146.19.168.161-158
+  - 美国 CloudFlare节点
+  - GB-5.39.254.196-169
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
