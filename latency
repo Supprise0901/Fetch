@@ -6,24 +6,11 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: FR-146.19.168.161-158
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
+  name: RELAY-172.64.198.249-286
   network: ws
   port: 2096
-  server: 104.17.106.151
+  server: 172.64.198.249
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 4bbc92db-5f8f-42fd-87ff-440e9040d23c
@@ -31,100 +18,60 @@ proxies:
     headers:
       Host: total-racial-eugene-index.trycloudflare.com
     path: www.dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: GB-5.39.254.196-169
-  network: ws
-  port: 1780
-  server: 5.39.254.196
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: 5.39.254.196
-    path: /
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 📲 电报信息
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🎯 全球直连
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - FR-146.19.168.161-158
-  - 美国 CloudFlare节点
-  - GB-5.39.254.196-169
+  - RELAY-172.64.198.249-286
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
