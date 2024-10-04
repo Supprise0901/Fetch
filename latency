@@ -6,93 +6,135 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,15,16|美国|@ripaojiedian
+  name: 11|法国 法国计算机科学大学
   network: ws
-  port: 46010
-  server: 223.244.26.216
+  port: 443
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 64
+  cipher: auto
+  name: CN-120.232.153.40-240
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13,14|美国|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
+  name: 马来西亚 v2rayfree.eu.org
+  port: 24474
+  server: 101.99.91.234
   tls: false
   type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
-  ws-opts:
-    path: /zh-cn
+  uuid: 990047b1-2ac0-4141-862c-b6c9e24cdac5
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 📲 电报信息
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 11,15,16|美国|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
+  - 11|法国 法国计算机科学大学
+  - CN-120.232.153.40-240
+  - 16|香港4|@ripaojiedian
+  - 马来西亚 v2rayfree.eu.org
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
