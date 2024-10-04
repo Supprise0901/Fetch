@@ -4,234 +4,68 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: FR-163.5.159.231-256 2
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
   type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: FR-163.5.159.231-256
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 法国 法国计算机科学大学
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 11|法国 法国计算机科学大学 2
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: FR-163.5.159.231-188 2
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: FR-163.5.159.231-188 3
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: FR-163.5.159.231-188
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - FR-163.5.159.231-256 2
-  - FR-163.5.159.231-256
-  - 法国 法国计算机科学大学
-  - 11|法国 法国计算机科学大学 2
-  - FR-163.5.159.231-188 2
-  - FR-163.5.159.231-188 3
-  - FR-163.5.159.231-188
+  - 13|🇭🇰 香港4|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
