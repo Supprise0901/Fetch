@@ -3,48 +3,96 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 11,15,16|美国|@ripaojiedian
+  network: ws
+  port: 46010
+  server: 223.244.26.216
+  tls: false
+  type: vmess
+  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
+  ws-opts:
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 13,14|美国|@ripaojiedian
+  network: ws
+  port: 46010
+  server: 223.244.26.216
+  tls: false
+  type: vmess
+  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
+  ws-opts:
+    path: /zh-cn
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 11,15,16|美国|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
