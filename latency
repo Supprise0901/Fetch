@@ -6,86 +6,17 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: RELAY-172.67.172.155-332 2
+  name: 法国 法国计算机科学大学 2
   network: ws
   port: 443
-  server: addressesapi.090227.xyz
-  skip-cert-verify: true
+  server: irvideo.cfd
   tls: true
   type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 38
-  network: ws
-  port: 443
-  server: addressesapi.090227.xyz
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
-- alterId: 0
-  cipher: auto
-  name: RELAY-172.67.172.155-332 3
-  network: ws
-  port: 443
-  server: addressesapi.090227.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 36
-  network: ws
-  port: 443
-  server: addressesapi.090227.xyz
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
-- alterId: 0
-  cipher: auto
-  name: RELAY-172.67.172.155-332
-  network: ws
-  port: 443
-  server: addressesapi.090227.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
-- alterId: 0
-  cipher: auto
-  name: RELAY-172.67.172.155-332 4
-  network: ws
-  port: 443
-  server: addressesapi.090227.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: au1.siris.eu.org
-    path: /au1vmess
+      Host: irvideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 法国 法国计算机科学大学
@@ -101,160 +32,151 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 15,16|美国|@ripaojiedian
+  name: FR-163.5.159.231-256
   network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
-    path: /zh-cn
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: FR-163.5.159.231-188
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 11|法国 法国计算机科学大学
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 📲 电报信息
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🎯 全球直连
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - RELAY-172.67.172.155-332 2
-  - 美国 CloudFlare节点 38
-  - RELAY-172.67.172.155-332 3
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
-  - RELAY-172.67.172.155-332 4
+  - 法国 法国计算机科学大学 2
   - 法国 法国计算机科学大学
-  - 15,16|美国|@ripaojiedian
+  - FR-163.5.159.231-256
+  - FR-163.5.159.231-188
+  - 11|法国 法国计算机科学大学
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
