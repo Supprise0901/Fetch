@@ -6,10 +6,11 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点 38
+  name: RELAY-172.67.172.155-332 2
   network: ws
   port: 443
   server: addressesapi.090227.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
@@ -19,7 +20,21 @@ proxies:
     path: /au1vmess
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点 36
+  name: RELAY-172.67.172.155-332 3
+  network: ws
+  port: 443
+  server: addressesapi.090227.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
+  ws-opts:
+    headers:
+      Host: au1.siris.eu.org
+    path: /au1vmess
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点 38
   network: ws
   port: 443
   server: addressesapi.090227.xyz
@@ -46,11 +61,10 @@ proxies:
     path: /au1vmess
 - alterId: 0
   cipher: auto
-  name: RELAY-172.67.172.155-332 2
+  name: 美国 CloudFlare节点 36
   network: ws
   port: 443
   server: addressesapi.090227.xyz
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
@@ -58,243 +72,112 @@ proxies:
     headers:
       Host: au1.siris.eu.org
     path: /au1vmess
-- alterId: 64
-  cipher: auto
-  name: 香港4|@ripaojiedian 3
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 14|香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: RELAY-104.21.55.174-143
-  network: ws
-  port: 2086
-  server: speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5e7429a4-b006-4a16-b1a3-1af2fbcddbc0
-  ws-opts:
-    headers:
-      Host: speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
-    path: /?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: RELAY-172.67.171.200-293
-  network: ws
-  port: 2086
-  server: speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5e7429a4-b006-4a16-b1a3-1af2fbcddbc0
-  ws-opts:
-    headers:
-      Host: speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点 21
-  network: ws
-  port: 2086
-  server: speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
-  tls: false
-  type: vmess
-  uuid: 5e7429a4-b006-4a16-b1a3-1af2fbcddbc0
-  ws-opts:
-    headers:
-      Host: speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
-    path: /?ed=2048
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 📲 电报信息
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 美国 CloudFlare节点 38
-  - 美国 CloudFlare节点 36
-  - RELAY-172.67.172.155-332
   - RELAY-172.67.172.155-332 2
-  - 香港4|@ripaojiedian 3
-  - 14|香港4|@ripaojiedian
-  - RELAY-104.21.55.174-143
-  - 13|🇭🇰 香港4|@ripaojiedian
-  - RELAY-172.67.171.200-293
-  - 美国 CloudFlare节点 21
+  - RELAY-172.67.172.155-332 3
+  - 美国 CloudFlare节点 38
+  - RELAY-172.67.172.155-332
+  - 美国 CloudFlare节点 36
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
