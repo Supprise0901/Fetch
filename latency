@@ -6,6 +6,33 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  name: 日本6|@ripaojiedian
+  network: ws
+  port: 12000
+  server: 172.234.86.166
+  servername: 172.234.86.166
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: af0bfcce-8730-4133-bdaa-f6b1da70fc1c
+  ws-opts:
+    headers:
+      Host: 172.234.86.166
+    path: /FhmYLiiu
+- alterId: 0
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: 223.244.26.216
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
   name: 11|法国 法国计算机科学大学
   network: ws
   port: 443
@@ -19,149 +46,152 @@ proxies:
     path: /linkws
 - alterId: 64
   cipher: auto
-  name: CN-120.232.153.40-240 2
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: true
+  name: 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 16|香港4|@ripaojiedian 2
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 14|香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
-  name: CN-223.244.26.216-269
+  name: 美国2|@ripaojiedian
   network: ws
   port: 46010
   server: 223.244.26.216
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
   ws-opts:
-    headers:
-      Host: 223.244.26.216
     path: /zh-cn
+- alterId: 64
+  cipher: auto
+  name: 16|香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
+  - 日本6|@ripaojiedian
+  - 香港|@ripaojiedian
   - 11|法国 法国计算机科学大学
-  - CN-120.232.153.40-240 2
-  - 16|香港4|@ripaojiedian 2
-  - 14|香港4|@ripaojiedian
-  - CN-223.244.26.216-269
+  - 德国|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 16|香港4|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
