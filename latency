@@ -3,141 +3,48 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 15,16|美国2|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 13,14|美国2|@ripaojiedian
-  network: ws
-  port: 46010
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 13,14|香港|@ripaojiedian
-  network: ws
-  port: 46001
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 15|🇩🇪 德国|@ripaojiedian
-  port: 43526
-  server: 120.232.153.71
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+proxies: []
 proxy-groups:
 - name: 🔰 节点选择
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: ⛔️ 广告拦截
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🚫 运营劫持
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🌍 国外媒体
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🌏 国内媒体
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: Ⓜ️ 微软服务
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 📲 电报信息
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🍎 苹果服务
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🎯 全球直连
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🛑 全球拦截
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 - name: 🐟 漏网之鱼
-  proxies:
-  - 15,16|美国2|@ripaojiedian
-  - 13,14|美国2|@ripaojiedian
-  - 13,14|香港|@ripaojiedian
-  - 15|🇩🇪 德国|@ripaojiedian
+  proxies: []
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
