@@ -6,15 +6,18 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 安徽省滁州市 电信
+  name: KR-146.56.154.153-256
   network: ws
-  port: 46001
-  server: 223.244.26.216
+  port: 21027
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  uuid: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   ws-opts:
-    path: /zh-cn
+    headers:
+      Host: ent1.imyourdaddy.top
+    path: /
 - alterId: 0
   cipher: auto
   name: 日本 v2rayfree.eu.org 2
@@ -28,73 +31,201 @@ proxies:
     headers:
       Host: ent1.imyourdaddy.top
     path: /
+- alterId: 64
+  cipher: auto
+  name: CN-183.236.51.23-244
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 15|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 13|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 14|德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 16|德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 安徽省滁州市 电信
+  - KR-146.56.154.153-256
   - 日本 v2rayfree.eu.org 2
+  - CN-183.236.51.23-244
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
