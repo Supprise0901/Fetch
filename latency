@@ -3,48 +3,98 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 安徽省滁州市 电信
+  network: ws
+  port: 46001
+  server: 223.244.26.216
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 日本 v2rayfree.eu.org 2
+  network: ws
+  port: 21027
+  server: ent1.imyourdaddy.top
+  tls: false
+  type: vmess
+  uuid: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  ws-opts:
+    headers:
+      Host: ent1.imyourdaddy.top
+    path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 安徽省滁州市 电信
+  - 日本 v2rayfree.eu.org 2
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
