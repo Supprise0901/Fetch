@@ -4,23 +4,9 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: RELAY-172.67.136.233-282
-  network: ws
-  port: 443
-  server: 172.67.136.233
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
 - alterId: 64
   cipher: auto
-  name: 13|🇩🇪 德国|@ripaojiedian
+  name: 11,16|德国|@ripaojiedian
   port: 43526
   server: 120.232.153.71
   tls: false
@@ -28,119 +14,143 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 64
   cipher: auto
-  name: 16|香港4|@ripaojiedian
-  port: 35601
-  server: 120.232.153.40
+  name: 15|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
   cipher: auto
-  name: FR-163.5.159.231-227
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
+  name: 广东省广州市 移动 2
+  port: 43526
+  server: 120.232.153.71
+  tls: false
   type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 13|🇩🇪 德国|@ripaojiedian 2
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 📲 电报信息
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🎯 全球直连
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - RELAY-172.67.136.233-282
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 16|香港4|@ripaojiedian
-  - FR-163.5.159.231-227
+  - 11,16|德国|@ripaojiedian
+  - 15|🇩🇪 德国|@ripaojiedian
+  - 广东省广州市 移动 2
+  - 德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian 2
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
