@@ -17,17 +17,6 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 15,16|香港|@ripaojiedian 2
-  network: ws
-  port: 46001
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
   name: 法国 法国计算机科学大学
   network: ws
   port: 443
@@ -39,34 +28,21 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|广东省广州市 移动
-  port: 42055
-  server: 120.232.153.37
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 德国|@ripaojiedian 2
-  port: 43526
-  server: 120.232.153.71
+  name: 香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: 223.244.26.216
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 14|德国|@ripaojiedian
-  port: 43526
-  server: 120.232.153.71
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 64
-  cipher: auto
-  name: 德国|@ripaojiedian
+  name: 德国|@ripaojiedian 3
   port: 43526
   server: 120.232.153.71
   skip-cert-verify: false
@@ -77,134 +53,95 @@ proxy-groups:
 - name: 🔰 节点选择
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: ⛔️ 广告拦截
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🚫 运营劫持
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🌍 国外媒体
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🌏 国内媒体
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 📲 电报信息
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🎯 全球直连
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🛑 全球拦截
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 - name: 🐟 漏网之鱼
   proxies:
   - 15,16|香港|@ripaojiedian
-  - 15,16|香港|@ripaojiedian 2
   - 法国 法国计算机科学大学
-  - 11|广东省广州市 移动
-  - 德国|@ripaojiedian 2
-  - 14|德国|@ripaojiedian
-  - 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 德国|@ripaojiedian 3
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
