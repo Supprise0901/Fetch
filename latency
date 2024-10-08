@@ -3,48 +3,118 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: RU-45.130.147.162-145
+  network: ws
+  port: 426
+  server: 45.130.147.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: 45.130.147.162
+    path: /
+- alterId: 64
+  cipher: auto
+  name: CN-183.236.51.23-253
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - RU-45.130.147.162-145
+  - CN-183.236.51.23-253
+  - 16|德国|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
