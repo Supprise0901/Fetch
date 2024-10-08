@@ -6,7 +6,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: RU-45.130.147.162-145
+  name: RU-45.130.147.162-145 2
   network: ws
   port: 426
   server: 45.130.147.162
@@ -32,17 +32,34 @@ proxies:
     headers:
       Host: 45.130.147.162
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 14|德国|@ripaojiedian
-  port: 43526
-  server: 120.232.153.71
+  name: RU-45.130.147.162-145
+  network: ws
+  port: 426
+  server: 45.130.147.162
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: 45.130.147.162
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: 223.244.26.216
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 香港4|@ripaojiedian
+  name: 香港4|@ripaojiedian 2
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: false
@@ -51,21 +68,12 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 广东省广州市 移动 2
+  name: 11,16|德国|@ripaojiedian 2
   port: 43526
   server: 120.232.153.71
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 64
-  cipher: auto
-  name: CN-183.236.51.23-141 2
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 德国|@ripaojiedian
@@ -77,157 +85,397 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 64
   cipher: auto
+  name: 14|德国|@ripaojiedian 2
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 14|德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 德国|@ripaojiedian 2
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 广东省广州市 移动 2
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
   name: 11,16|德国|@ripaojiedian
   port: 43526
   server: 120.232.153.71
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 13|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 0
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: 223.244.26.216
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
+- alterId: 64
+  cipher: auto
+  name: CN-183.236.51.23-141
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: CN-183.236.51.23-253
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 广东省广州市 移动 3
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: CN-183.236.51.23-141 2
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 📲 电报信息
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🎯 全球直连
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - RU-45.130.147.162-145
+  - RU-45.130.147.162-145 2
   - RU-45.130.147.162-145 3
-  - 14|德国|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 广东省广州市 移动 2
-  - CN-183.236.51.23-141 2
+  - RU-45.130.147.162-145
+  - 15,16|香港|@ripaojiedian
+  - 香港4|@ripaojiedian 2
+  - 11,16|德国|@ripaojiedian 2
   - 德国|@ripaojiedian
+  - 14|德国|@ripaojiedian 2
+  - 14|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 广东省广州市 移动 2
   - 11,16|德国|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - CN-183.236.51.23-141
+  - CN-183.236.51.23-253
+  - 香港4|@ripaojiedian
+  - 广东省广州市 移动 3
+  - CN-183.236.51.23-141 2
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
