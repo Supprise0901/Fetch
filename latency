@@ -17,6 +17,17 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
+  name: 英国 v2rayfree.eu.org 2
+  network: ws
+  port: 2848
+  server: 5.39.254.196
+  tls: false
+  type: vmess
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
   name: GB-5.39.254.196-180
   network: ws
   port: 2848
@@ -29,193 +40,86 @@ proxies:
     headers:
       Host: 5.39.254.196
     path: /
-- alterId: 0
-  cipher: auto
-  name: GB-5.39.254.196-180 2
-  network: ws
-  port: 2848
-  server: 5.39.254.196
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: 5.39.254.196
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 英国 v2rayfree.eu.org 2
-  network: ws
-  port: 2848
-  server: 5.39.254.196
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11|英国 v2rayfree.eu.org
-  network: ws
-  port: 2848
-  server: 5.39.254.196
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 英国 v2rayfree.eu.org
-  network: ws
-  port: 2848
-  server: 5.39.254.196
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 11|广东省广州市 移动
-  port: 42055
-  server: 120.232.153.37
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: ⛔️ 广告拦截
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🚫 运营劫持
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🌍 国外媒体
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🌏 国内媒体
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 📲 电报信息
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🎯 全球直连
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🛑 全球拦截
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 - name: 🐟 漏网之鱼
   proxies:
   - 15,16|香港|@ripaojiedian
-  - GB-5.39.254.196-180
-  - GB-5.39.254.196-180 2
   - 英国 v2rayfree.eu.org 2
-  - 11|英国 v2rayfree.eu.org
-  - 英国 v2rayfree.eu.org
-  - 11|广东省广州市 移动
+  - GB-5.39.254.196-180
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
