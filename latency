@@ -6,25 +6,6 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,14|香港|@ripaojiedian
-  network: ws
-  port: 46001
-  server: 223.244.26.216
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 广东省广州市 移动 3
-  port: 58831
-  server: 120.232.153.27
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 香港2|@ripaojiedian
   port: 44806
   server: ambxxic01hk.dorabbb.top
@@ -32,15 +13,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: CN-120.232.153.27-298
-  port: 58831
-  server: 120.232.153.27
-  skip-cert-verify: true
+  name: 香港2|@ripaojiedian 3
+  port: 44806
+  server: ambxxic01hk.dorabbb.top
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
 - alterId: 0
   cipher: auto
   name: 香港2|@ripaojiedian 2
@@ -52,6 +33,17 @@ proxies:
   uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
 - alterId: 0
   cipher: auto
+  name: 11,15,16|香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: 223.244.26.216
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
   name: 16|香港2|@ripaojiedian
   port: 44806
   server: ambxxic01hk.dorabbb.top
@@ -60,7 +52,7 @@ proxies:
   uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
 - alterId: 0
   cipher: auto
-  name: 16|香港2|@ripaojiedian 2
+  name: 14|香港2|@ripaojiedian
   port: 44806
   server: ambxxic01hk.dorabbb.top
   tls: false
@@ -76,7 +68,7 @@ proxies:
   uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰 香港2|@ripaojiedian 2
+  name: 14|香港2|@ripaojiedian 3
   port: 44806
   server: ambxxic01hk.dorabbb.top
   tls: false
@@ -84,7 +76,23 @@ proxies:
   uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
 - alterId: 0
   cipher: auto
-  name: 14|香港2|@ripaojiedian
+  name: 16|香港2|@ripaojiedian 2
+  port: 44806
+  server: ambxxic01hk.dorabbb.top
+  tls: false
+  type: vmess
+  uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰 香港2|@ripaojiedian
+  port: 44806
+  server: ambxxic01hk.dorabbb.top
+  tls: false
+  type: vmess
+  uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
+- alterId: 0
+  cipher: auto
+  name: 16|香港2|@ripaojiedian 3
   port: 44806
   server: ambxxic01hk.dorabbb.top
   tls: false
@@ -93,174 +101,187 @@ proxies:
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 📲 电报信息
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 13,14|香港|@ripaojiedian
-  - 广东省广州市 移动 3
   - 香港2|@ripaojiedian
-  - CN-120.232.153.27-298
+  - 香港2|@ripaojiedian 3
   - 香港2|@ripaojiedian 2
+  - 11,15,16|香港|@ripaojiedian
   - 16|香港2|@ripaojiedian
-  - 16|香港2|@ripaojiedian 2
-  - 14|香港2|@ripaojiedian 2
-  - 13|🇭🇰 香港2|@ripaojiedian 2
   - 14|香港2|@ripaojiedian
+  - 14|香港2|@ripaojiedian 2
+  - 14|香港2|@ripaojiedian 3
+  - 16|香港2|@ripaojiedian 2
+  - 13|🇭🇰 香港2|@ripaojiedian
+  - 16|香港2|@ripaojiedian 3
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
