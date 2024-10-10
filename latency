@@ -4,17 +4,9 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 香港6|@ripaojiedian
-  port: 12960
-  server: z3.fragranceninja.com
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 64
   cipher: auto
-  name: 14|美国2|@ripaojiedian
+  name: 14|美国2|@ripaojiedian 2
   port: 43526
   server: 120.232.153.40
   tls: false
@@ -22,17 +14,19 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 64
   cipher: auto
-  name: 13|🇩🇪 德国|@ripaojiedian
-  port: 43526
-  server: 120.232.153.71
+  name: 香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 14|德国|@ripaojiedian
+  name: 美国2|@ripaojiedian
   port: 43526
-  server: 120.232.153.71
+  server: 120.232.153.40
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
@@ -46,6 +40,22 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 64
   cipher: auto
+  name: 16|美国2|@ripaojiedian
+  port: 43526
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   name: 德国|@ripaojiedian
   port: 43526
   server: 120.232.153.71
@@ -53,125 +63,286 @@ proxies:
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 16|德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 德国|@ripaojiedian 2
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰 香港6|@ripaojiedian
+  port: 12960
+  server: z3.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 64
+  cipher: auto
+  name: 13|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 16|香港4|@ripaojiedian
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|🇺🇸 美国2|@ripaojiedian 2
+  port: 43526
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 15|🇩🇪 德国|@ripaojiedian
+  port: 43526
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 proxy-groups:
 - name: 🔰 节点选择
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 📲 电报信息
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🎯 全球直连
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
   proxies:
-  - 13|🇭🇰 香港6|@ripaojiedian
-  - 14|美国2|@ripaojiedian
-  - 13|🇩🇪 德国|@ripaojiedian
-  - 14|德国|@ripaojiedian
+  - 14|美国2|@ripaojiedian 2
+  - 香港4|@ripaojiedian
+  - 美国2|@ripaojiedian
   - 13|🇺🇸 美国2|@ripaojiedian
+  - 16|美国2|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
   - 德国|@ripaojiedian
+  - 16|德国|@ripaojiedian
+  - 德国|@ripaojiedian 2
+  - 13|🇭🇰 香港6|@ripaojiedian
+  - 13|🇩🇪 德国|@ripaojiedian
+  - 16|香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian 2
+  - 15|🇩🇪 德国|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
