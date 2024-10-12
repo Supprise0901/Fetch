@@ -3,48 +3,70 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 香港6|@ripaojiedian
+  port: 12960
+  server: z3.fragranceninja.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 香港6|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
