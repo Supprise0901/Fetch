@@ -3,48 +3,90 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  port: 44826
+  server: ambxxid02hk.dorabbb.top
+  tls: false
+  type: vmess
+  uuid: 5f01c154-4137-4ffc-bf6d-801352a20d7a
+- alterId: 0
+  cipher: auto
+  name: 16|香港5|@ripaojiedian
+  port: 44826
+  server: ambxxid02hk.dorabbb.top
+  tls: false
+  type: vmess
+  uuid: 5f01c154-4137-4ffc-bf6d-801352a20d7a
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: ⛔️ 广告拦截
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🚫 运营劫持
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🌍 国外媒体
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🌏 国内媒体
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 📲 电报信息
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🍎 苹果服务
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🎯 全球直连
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🛑 全球拦截
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 - name: 🐟 漏网之鱼
-  proxies: []
+  proxies:
+  - 13|🇭🇰 香港5|@ripaojiedian
+  - 16|香港5|@ripaojiedian
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
