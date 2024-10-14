@@ -3,70 +3,48 @@ external-controller: :9090
 log-level: info
 mode: Rule
 port: 7890
-proxies:
-- alterId: 64
-  cipher: auto
-  name: CN-120.232.153.40-188
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+proxies: []
 proxy-groups:
 - name: 🔰 节点选择
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: ⛔️ 广告拦截
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🚫 运营劫持
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🌍 国外媒体
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🌏 国内媒体
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: Ⓜ️ 微软服务
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 📲 电报信息
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🍎 苹果服务
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🎯 全球直连
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🛑 全球拦截
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 - name: 🐟 漏网之鱼
-  proxies:
-  - CN-120.232.153.40-188
+  proxies: []
   type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
