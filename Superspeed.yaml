@@ -85,77 +85,100 @@
             "plugin_opts": "obfs=http;obfs-host=7c0ad96494.microsoft.com;"
         },
         {
-            "tag": "日本3|@ripaojiedian",
+            "tag": "台湾2|@ripaojiedian",
             "type": "shadowsocks",
-            "server": "3.112.215.69",
+            "server": "163.177.58.179",
+            "server_port": 1171,
+            "method": "rc4-md5",
+            "password": "Paofu",
+            "plugin": "obfs-local",
+            "plugin_opts": "obfs=http;obfs-host=7c0ad96494.microsoft.com;"
+        },
+        {
+            "tag": "新加坡|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "163.177.58.179",
+            "server_port": 1190,
+            "method": "rc4-md5",
+            "password": "Paofu",
+            "plugin": "obfs-local",
+            "plugin_opts": "obfs=http;obfs-host=7c0ad96494.microsoft.com;"
+        },
+        {
+            "tag": "韩国特殊|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "44.244.21.125",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
         },
         {
-            "tag": "美国 v2rayfree.eu.org",
-            "type": "vmess",
-            "server": "23.162.152.177",
+            "tag": "加拿大|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "149.22.95.183",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "俄罗斯 005",
+            "type": "vless",
+            "server": "188.42.145.159",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "23.162.152.177"
+                "server_name": "juzibaipiao.5112233.xyz"
             },
             "transport": {
                 "type": "ws",
+                "path": "/",
                 "headers": {
-                    "Host": "23.162.152.177"
+                    "Host": "juzibaipiao.5112233.xyz"
                 },
-                "path": "linkvws"
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
             }
         },
         {
-            "tag": "德国 010",
-            "type": "vmess",
-            "server": "23.157.88.6",
+            "tag": "英国 001",
+            "type": "vless",
+            "server": "94.247.142.241",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "23.157.88.6"
+                "server_name": "fq521.6789.cloudns.be"
             },
             "transport": {
                 "type": "ws",
+                "path": "twitterfreecodessecurity",
                 "headers": {
-                    "Host": "23.157.88.6"
-                },
-                "path": "linkvws"
+                    "Host": "fq521.6789.cloudns.be"
+                }
             }
         },
         {
-            "tag": "瑞士 003",
+            "tag": "塞浦路斯 004",
             "type": "vmess",
-            "server": "186.190.215.32",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "go.alipay.ovh",
+            "server_port": 80,
+            "uuid": "a94171be-b387-4f02-a5ef-a1b4b7a26c04",
             "security": "auto",
-            "alter_id": 1,
+            "alter_id": 0,
             "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "186.190.215.32"
-            },
             "transport": {
                 "type": "ws",
                 "headers": {
-                    "Host": "186.190.215.32"
+                    "Host": "open.alipay.ovh"
                 },
-                "path": "linkvws"
+                "path": "/aries",
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
             }
         },
         {
@@ -201,6 +224,46 @@
             }
         },
         {
+            "tag": "美国 041",
+            "type": "vless",
+            "server": "103.116.7.67",
+            "server_port": 2083,
+            "uuid": "0d89a36e-36bc-41d2-8bd3-bbd639991f29",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "nicorobin.eula.cloudns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/telegram",
+                "headers": {
+                    "Host": "nicorobin.eula.cloudns.org"
+                }
+            }
+        },
+        {
+            "tag": "菲律宾 001",
+            "type": "vless",
+            "server": "154.83.2.54",
+            "server_port": 2096,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "am-tunnel-6fs.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "菲律宾 002",
             "type": "vless",
             "server": "154.83.2.200",
@@ -221,6 +284,26 @@
             }
         },
         {
+            "tag": "库拉索岛 001",
+            "type": "vless",
+            "server": "62.72.166.67",
+            "server_port": 2096,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "Twitter苏小柠",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
             "tag": "俄罗斯 009",
             "type": "vless",
             "server": "185.174.138.141",
@@ -237,6 +320,89 @@
                 "path": "Twitter苏小柠",
                 "headers": {
                     "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "加拿大 010",
+            "type": "vless",
+            "server": "172.66.47.66",
+            "server_port": 443,
+            "uuid": "bb27a0c6-aa5e-4105-a943-b87239507057",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "pardazeshvpn-tg86.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/telegram:",
+                "headers": {
+                    "Host": "pardazeshvpn-tg86.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "美国 135",
+            "type": "vless",
+            "server": "199.34.228.47",
+            "server_port": 2053,
+            "uuid": "fca01448-d84a-436e-9aec-3be1ebdfb350",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "SB-1U6.PAgEs.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/fltcxoo6grqvat6v/mtu4ljewms4ymdmumti3",
+                "headers": {
+                    "Host": "SB-1U6.PAgEs.dev"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 080",
+            "type": "vless",
+            "server": "199.232.5.101",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "mefa.ir"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/H",
+                "headers": {
+                    "Host": "mefa.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 166",
+            "type": "trojan",
+            "server": "159.246.55.132",
+            "server_port": 443,
+            "password": "auto",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "vip.123789.pp.ua"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "vip.123789.pp.ua"
                 }
             }
         },
@@ -263,6 +429,46 @@
             }
         },
         {
+            "tag": "加拿大 082",
+            "type": "vless",
+            "server": "172.66.47.82",
+            "server_port": 443,
+            "uuid": "f8a0d15b-e122-4a79-bd04-42c4565078df",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "pardazeshvpn-tg99.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/Telegram:",
+                "headers": {
+                    "Host": "pardazeshvpn-tg99.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "美国 190",
+            "type": "vless",
+            "server": "172.66.44.123",
+            "server_port": 443,
+            "uuid": "22cecc0f-4ad2-4cc0-80e7-e5d6fb375803",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "pardazeshvpn-tg87.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/Telegram:",
+                "headers": {
+                    "Host": "pardazeshvpn-tg87.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "哥斯达黎加 004",
             "type": "vless",
             "server": "190.93.244.221",
@@ -285,25 +491,313 @@
             }
         },
         {
-            "tag": "JP_speednode_0020",
+            "tag": "香港 007",
             "type": "vless",
-            "server": "103.116.7.67",
-            "server_port": 2083,
-            "uuid": "0d89a36e-36bc-41d2-8bd3-bbd639991f29",
+            "server": "8.217.36.98",
+            "server_port": 14934,
+            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=8.217.36.98:14934",
+                "headers": {
+                    "Host": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
+                }
+            }
+        },
+        {
+            "tag": "香港 008",
+            "type": "vless",
+            "server": "34.150.55.114",
+            "server_port": 48489,
+            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=34.150.55.114:48489",
+                "headers": {
+                    "Host": "478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com"
+                }
+            }
+        },
+        {
+            "tag": "韩国 006",
+            "type": "vless",
+            "server": "220.86.175.229",
+            "server_port": 30012,
+            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=220.86.175.229:30012",
+                "headers": {
+                    "Host": "fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net"
+                }
+            }
+        },
+        {
+            "tag": "韩国 007",
+            "type": "vless",
+            "server": "61.81.181.169",
+            "server_port": 14985,
+            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=61.81.181.169:14985",
+                "headers": {
+                    "Host": "547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com"
+                }
+            }
+        },
+        {
+            "tag": "韩国 008",
+            "type": "vless",
+            "server": "211.228.180.147",
+            "server_port": 12273,
+            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=211.228.180.147:12273",
+                "headers": {
+                    "Host": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
+                }
+            }
+        },
+        {
+            "tag": "美国 249",
+            "type": "vless",
+            "server": "104.19.114.125",
+            "server_port": 443,
+            "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "nicorobin.eula.cloudns.org"
+                "server_name": "la.kpcloud.eu.org"
             },
             "transport": {
                 "type": "ws",
-                "path": "/telegram@linkvws",
+                "path": "/",
                 "headers": {
-                    "Host": "nicorobin.eula.cloudns.org"
+                    "Host": "la.kpcloud.eu.org"
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2048
+            }
+        },
+        {
+            "tag": "15|🇨🇦 加拿大|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "149.22.95.183",
+            "server_port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "GB_speednode_0010",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity=tls",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0011",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity=tls",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0012",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/Twitterfreecodes",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0013",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0014",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0016",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0017",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity=tls",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0018",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "JO_speednode_0019",
+            "type": "vless",
+            "server": "62.72.166.67",
+            "server_port": 2096,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/Twitter苏小柠",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
             }
         },
         {
@@ -351,6 +845,66 @@
             }
         },
         {
+            "tag": "RU_speednode_0035",
+            "type": "vless",
+            "server": "188.42.145.159",
+            "server_port": 443,
+            "uuid": "54ef4ecf-ff37-436a-be13-95c8a8a1114d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "VIrgiNiavPn-nL.pagEs.dEv"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/security=tls",
+                "headers": {
+                    "Host": "VIrgiNiavPn-nL.pagEs.dEv"
+                }
+            }
+        },
+        {
+            "tag": "SC_speednode_0036",
+            "type": "vless",
+            "server": "154.83.2.200",
+            "server_port": 443,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "am-tunnel-6fs.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "SC_speednode_0037",
+            "type": "vless",
+            "server": "154.83.2.200",
+            "server_port": 443,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "am-tunnel-6fs.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "SC_speednode_0038",
             "type": "vless",
             "server": "154.83.2.200",
@@ -371,47 +925,85 @@
             }
         },
         {
-            "tag": "US_speednode_0059",
+            "tag": "SC_speednode_0039",
             "type": "vless",
-            "server": "199.232.5.101",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "154.83.2.54",
+            "server_port": 2096,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "mefa.ir"
+                "server_name": "am-tunnel-6fs.pages.dev"
             },
             "transport": {
                 "type": "ws",
-                "path": "/H",
+                "path": "/",
                 "headers": {
-                    "Host": "mefa.ir"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
             }
         },
         {
-            "tag": "US_speednode_0204",
+            "tag": "SC_speednode_0041",
             "type": "vless",
-            "server": "199.34.228.47",
-            "server_port": 8443,
-            "uuid": "fca01448-d84a-436e-9aec-3be1ebdfb350",
+            "server": "154.83.2.54",
+            "server_port": 2096,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "sB-1U6.PAgeS.deV"
+                "server_name": "am-tunnel-6fs.pages.dev"
             },
             "transport": {
                 "type": "ws",
-                "path": "/bdbeqy5r01xte4fl/mtu4ljewms4ymdmumti3",
+                "path": "/",
                 "headers": {
-                    "Host": "sB-1U6.PAgeS.deV"
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "SC_speednode_0042",
+            "type": "vless",
+            "server": "154.83.2.54",
+            "server_port": 2096,
+            "uuid": "fe962226-fe1c-4391-a5ba-7b7c62adda19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "am-tunnel-6fs.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "am-tunnel-6fs.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0211",
+            "type": "vless",
+            "server": "172.66.47.66",
+            "server_port": 443,
+            "uuid": "bb27a0c6-aa5e-4105-a943-b87239507057",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "pardazeshvpn-tg86.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn",
+                "headers": {
+                    "Host": "pardazeshvpn-tg86.pages.dev"
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
+                "max_early_data": 2048
             }
         },
         {
@@ -420,46 +1012,110 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "哥斯达黎加 004",
-                "俄罗斯 021",
-                "瑞士 003",
-                "US_speednode_0059",
-                "US_speednode_0204",
-                "俄罗斯 009",
-                "美国 164",
-                "日本3|@ripaojiedian",
-                "SC_speednode_0038",
-                "JP_speednode_0021",
-                "JP_speednode_0027",
+                "英国 001",
+                "SC_speednode_0042",
+                "新加坡|@ripaojiedian",
+                "菲律宾 001",
+                "俄罗斯 005",
+                "JO_speednode_0019",
+                "GB_speednode_0016",
+                "美国 080",
+                "加拿大|@ripaojiedian",
+                "韩国 007",
                 "台湾|@ripaojiedian",
-                "菲律宾 002",
-                "美国 v2rayfree.eu.org",
+                "JP_speednode_0021",
+                "俄罗斯 021",
+                "GB_speednode_0017",
+                "美国 166",
+                "SC_speednode_0041",
+                "RU_speednode_0035",
+                "JP_speednode_0027",
+                "俄罗斯 009",
+                "GB_speednode_0011",
+                "加拿大 010",
+                "库拉索岛 001",
+                "加拿大 082",
+                "SC_speednode_0038",
+                "韩国 008",
                 "美国 031",
-                "JP_speednode_0020",
-                "德国 010"
+                "美国 135",
+                "SC_speednode_0036",
+                "韩国 006",
+                "GB_speednode_0010",
+                "GB_speednode_0013",
+                "台湾2|@ripaojiedian",
+                "US_speednode_0211",
+                "香港 007",
+                "美国 164",
+                "15|🇨🇦 加拿大|@ripaojiedian",
+                "GB_speednode_0018",
+                "美国 041",
+                "韩国特殊|@ripaojiedian",
+                "塞浦路斯 004",
+                "GB_speednode_0014",
+                "SC_speednode_0037",
+                "美国 249",
+                "香港 008",
+                "菲律宾 002",
+                "SC_speednode_0039",
+                "美国 190",
+                "GB_speednode_0012",
+                "哥斯达黎加 004"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "哥斯达黎加 004",
-                "俄罗斯 021",
-                "瑞士 003",
-                "US_speednode_0059",
-                "US_speednode_0204",
-                "俄罗斯 009",
-                "美国 164",
-                "日本3|@ripaojiedian",
-                "SC_speednode_0038",
-                "JP_speednode_0021",
-                "JP_speednode_0027",
+                "英国 001",
+                "SC_speednode_0042",
+                "新加坡|@ripaojiedian",
+                "菲律宾 001",
+                "俄罗斯 005",
+                "JO_speednode_0019",
+                "GB_speednode_0016",
+                "美国 080",
+                "加拿大|@ripaojiedian",
+                "韩国 007",
                 "台湾|@ripaojiedian",
-                "菲律宾 002",
-                "美国 v2rayfree.eu.org",
+                "JP_speednode_0021",
+                "俄罗斯 021",
+                "GB_speednode_0017",
+                "美国 166",
+                "SC_speednode_0041",
+                "RU_speednode_0035",
+                "JP_speednode_0027",
+                "俄罗斯 009",
+                "GB_speednode_0011",
+                "加拿大 010",
+                "库拉索岛 001",
+                "加拿大 082",
+                "SC_speednode_0038",
+                "韩国 008",
                 "美国 031",
-                "JP_speednode_0020",
-                "德国 010"
+                "美国 135",
+                "SC_speednode_0036",
+                "韩国 006",
+                "GB_speednode_0010",
+                "GB_speednode_0013",
+                "台湾2|@ripaojiedian",
+                "US_speednode_0211",
+                "香港 007",
+                "美国 164",
+                "15|🇨🇦 加拿大|@ripaojiedian",
+                "GB_speednode_0018",
+                "美国 041",
+                "韩国特殊|@ripaojiedian",
+                "塞浦路斯 004",
+                "GB_speednode_0014",
+                "SC_speednode_0037",
+                "美国 249",
+                "香港 008",
+                "菲律宾 002",
+                "SC_speednode_0039",
+                "美国 190",
+                "GB_speednode_0012",
+                "哥斯达黎加 004"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
