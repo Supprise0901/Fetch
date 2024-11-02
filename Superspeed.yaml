@@ -75,27 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🔒 HYSTERIA-UDP 🇫🇮 FI-77.221.158.52:7373",
-            "type": "hysteria2",
-            "server": "77.221.158.52",
-            "server_port": 7373,
-            "password": "81ea378b37931b23",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.google.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "7d9dff369a11f6e0"
-            }
-        },
-        {
             "tag": "🔒 HYSTERIA-UDP 🇦🇺 AU-170.64.217.182:10001",
             "type": "hysteria2",
             "server": "170.64.217.182",
@@ -113,7 +92,68 @@
             }
         },
         {
-            "tag": "英国 001",
+            "tag": "🔒 HYSTERIA-UDP 🇨🇦 CA-68.183.199.224:10001",
+            "type": "hysteria2",
+            "server": "68.183.199.224",
+            "server_port": 10001,
+            "password": "5a4d82f4-5504-41f0-9a37-e82c430b2f98",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "CA.1010520.shop",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-104.168.128.219:10002",
+            "type": "hysteria2",
+            "server": "104.168.128.219",
+            "server_port": 10002,
+            "password": "bc19ee74-433d-4c34-be4b-67f969a2bb57",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "韩国|@ripaojiedian",
+            "type": "trojan",
+            "server": "naiu-other.05vr9nyqg5.download",
+            "server_port": 13036,
+            "password": "5b4becce-5739-483f-97ec-68b81a855d68",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cloudflare.node-ssl.cdn-alibaba.com"
+            }
+        },
+        {
+            "tag": "美国2|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "107.155.57.51",
+            "server_port": 8080,
+            "method": "rc4-md5",
+            "password": "14fFPrbezE3HDZzsMOr6"
+        },
+        {
+            "tag": "13|🇯🇵 日本特殊|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "13.213.30.242",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "15|GB_speednode_0013",
             "type": "vless",
             "server": "94.247.142.241",
             "server_port": 443,
@@ -121,15 +161,86 @@
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "insecure": true,
+                "insecure": false,
                 "server_name": "fq521.6789.cloudns.be"
             },
             "transport": {
                 "type": "ws",
-                "path": "twitterfreecodessecurity",
+                "path": "/twitterfreecodessecurity=tlsfp=edge",
                 "headers": {
                     "Host": "fq521.6789.cloudns.be"
                 }
+            }
+        },
+        {
+            "tag": "15|SE_speednode_0019",
+            "type": "vless",
+            "server": "185.146.173.58",
+            "server_port": 8080,
+            "uuid": "9c92dd71-acac-422b-b23e-e764f8cba0de",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/servernett",
+                "headers": {
+                    "Host": "lc72.lebasnoo.ir."
+                }
+            }
+        },
+        {
+            "tag": "15|US_speednode_0025",
+            "type": "vless",
+            "server": "199.232.37.15",
+            "server_port": 80,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/BCXzvAcvSB7JzMWj",
+                "headers": {
+                    "Host": "sara193.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "15|US_speednode_0034",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 2052,
+            "uuid": "bd51708b-07de-561f-9053-d2e90ca4ee20",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/join-@mosiv2-@mosiv2-",
+                "headers": {
+                    "Host": "www.digikala.com.joinTelegram.mosiv2.pl1.vless.Sitespeedtest.net."
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
+        },
+        {
+            "tag": "俄罗斯 005",
+            "type": "vless",
+            "server": "188.42.145.159",
+            "server_port": 2096,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "juzibaipiao.5112233.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
             }
         },
         {
@@ -149,26 +260,6 @@
                 "path": "/",
                 "headers": {
                     "Host": "kir-too-kos-o-koon-maman-arzeshi-begoo-jooooooon.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "俄罗斯 021",
-            "type": "vless",
-            "server": "188.42.145.159",
-            "server_port": 443,
-            "uuid": "54ef4ecf-ff37-436a-be13-95c8a8a1114d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "VIrgiNiavPn-nL.pagEs.dEv"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/security=tls",
-                "headers": {
-                    "Host": "VIrgiNiavPn-nL.pagEs.dEv"
                 }
             }
         },
@@ -213,50 +304,6 @@
             }
         },
         {
-            "tag": "美国 080",
-            "type": "vless",
-            "server": "199.232.5.101",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "mefa.ir"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/H",
-                "headers": {
-                    "Host": "mefa.ir"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "美国 164",
-            "type": "vless",
-            "server": "199.232.5.79",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "mefa.ir"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/H",
-                "headers": {
-                    "Host": "mefa.ir"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "加拿大 082",
             "type": "vless",
             "server": "172.66.47.82",
@@ -297,81 +344,25 @@
             }
         },
         {
-            "tag": "香港 007",
+            "tag": "哥斯达黎加 004",
             "type": "vless",
-            "server": "8.217.36.98",
-            "server_port": 14934,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=8.217.36.98:14934",
-                "headers": {
-                    "Host": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
-                }
-            }
-        },
-        {
-            "tag": "韩国 006",
-            "type": "vless",
-            "server": "220.86.175.229",
-            "server_port": 30012,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/?ed=2560&proxyip=220.86.175.229:30012",
-                "headers": {
-                    "Host": "fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net"
-                }
-            }
-        },
-        {
-            "tag": "加拿大 172",
-            "type": "trojan",
-            "server": "172.67.180.238",
+            "server": "190.93.244.221",
             "server_port": 443,
-            "password": "bpb-trojan",
+            "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV"
+                "server_name": "az.ylks.xyz"
             },
             "transport": {
                 "type": "ws",
-                "path": "/trep2km0aVhJcl29WO",
+                "path": "/",
                 "headers": {
-                    "Host": "403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV"
-                }
-            }
-        },
-        {
-            "tag": "美国 281",
-            "type": "trojan",
-            "server": "159.112.235.48",
-            "server_port": 2083,
-            "password": "bpb-trojan",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/trZTKk76m0W1AxpNcC",
-                "headers": {
-                    "Host": "403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv"
-                }
+                    "Host": "az.ylks.xyz"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
             }
         },
         {
@@ -390,44 +381,6 @@
                 "path": "/trC8BM8bTsAF0AnLYL",
                 "headers": {
                     "Host": "mindrOOm-5cz.pAgEs.dEV"
-                }
-            }
-        },
-        {
-            "tag": "加拿大 185",
-            "type": "trojan",
-            "server": "172.64.150.145",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "mindrOOm-5cz.pAgEs.dEV"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/trC8BM8bTsAF0AnLYL",
-                "headers": {
-                    "Host": "mindrOOm-5cz.pAgEs.dEV"
-                }
-            }
-        },
-        {
-            "tag": "加拿大 187",
-            "type": "trojan",
-            "server": "172.66.44.203",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/trSo3btsDgOHHUM6Nb",
-                "headers": {
-                    "Host": "403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv"
                 }
             }
         },
@@ -472,48 +425,6 @@
             }
         },
         {
-            "tag": "荷兰 007",
-            "type": "vless",
-            "server": "188.114.99.134",
-            "server_port": 443,
-            "uuid": "9d1c74fe-6495-43c0-8c72-20a0b9a0c639",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "4ef0b961.aru0006.pages.dev"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "4ef0b961.aru0006.pages.dev"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2048
-            }
-        },
-        {
-            "tag": "库拉索岛 002",
-            "type": "vless",
-            "server": "5.10.245.59",
-            "server_port": 443,
-            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "fq521.6789.cloudns.be"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "Twitter苏小柠",
-                "headers": {
-                    "Host": "fq521.6789.cloudns.be"
-                }
-            }
-        },
-        {
             "tag": "加拿大 197",
             "type": "trojan",
             "server": "23.227.60.8",
@@ -529,6 +440,26 @@
                 "path": "/trZkJgi4MLAtl7SrU9?ed",
                 "headers": {
                     "Host": "403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev"
+                }
+            }
+        },
+        {
+            "tag": "德国 011",
+            "type": "vless",
+            "server": "45.159.217.54",
+            "server_port": 2087,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "Twitter苏小柠",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
                 }
             }
         },
@@ -569,6 +500,24 @@
                     "Host": "403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV"
                 }
             }
+        },
+        {
+            "tag": "11,16|香港3|@ripaojiedian",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 48009,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "15|🇺🇸 美国2|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "107.155.57.51",
+            "server_port": 8080,
+            "method": "rc4-md5",
+            "password": "14fFPrbezE3HDZzsMOr6"
         },
         {
             "tag": "CA_speednode_0001",
@@ -630,6 +579,26 @@
             }
         },
         {
+            "tag": "GB_speednode_0007",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity=tls",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
             "tag": "GB_speednode_0008",
             "type": "vless",
             "server": "94.247.142.241",
@@ -670,7 +639,7 @@
             }
         },
         {
-            "tag": "GB_speednode_0012",
+            "tag": "GB_speednode_0010",
             "type": "vless",
             "server": "94.247.142.241",
             "server_port": 443,
@@ -684,6 +653,26 @@
             "transport": {
                 "type": "ws",
                 "path": "/twitterfreecodessecurity",
+                "headers": {
+                    "Host": "fq521.6789.cloudns.be"
+                }
+            }
+        },
+        {
+            "tag": "GB_speednode_0011",
+            "type": "vless",
+            "server": "94.247.142.241",
+            "server_port": 443,
+            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fq521.6789.cloudns.be"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/twitterfreecodessecurity=tls",
                 "headers": {
                     "Host": "fq521.6789.cloudns.be"
                 }
@@ -710,23 +699,47 @@
             }
         },
         {
-            "tag": "JO_speednode_0015",
+            "tag": "US_speednode_0022",
             "type": "vless",
-            "server": "62.72.166.67",
-            "server_port": 2096,
-            "uuid": "775213ac-3976-439a-8977-3277c0e4735d",
+            "server": "199.232.5.101",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "fq521.6789.cloudns.be"
+                "server_name": "mefa.ir"
             },
             "transport": {
                 "type": "ws",
-                "path": "/Twitter苏小柠",
+                "path": "/H",
                 "headers": {
-                    "Host": "fq521.6789.cloudns.be"
-                }
+                    "Host": "mefa.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US_speednode_0032",
+            "type": "vmess",
+            "server": "www.baldengineer.com",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "yen63jj36j3jfflan.thelastronin.cloudns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "yelan.thelastronin.cloudns.org"
+                },
+                "path": "/linkws/afrhms16v.bestxray.buzz"
             }
         },
         {
@@ -735,78 +748,86 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "GB_speednode_0013",
-                "美国 164",
-                "GB_speednode_0008",
-                "加拿大 020",
-                "美国 080",
-                "加拿大 195",
-                "美国 221",
-                "GB_speednode_0012",
-                "加拿大 185",
                 "GB_speednode_0005",
-                "🔒 HYSTERIA-UDP 🇫🇮 FI-77.221.158.52:7373",
-                "加拿大 082",
+                "韩国|@ripaojiedian",
+                "美国 221",
+                "15|US_speednode_0025",
                 "库拉索岛 001",
-                "加拿大 197",
-                "加拿大 187",
-                "香港 007",
-                "美国 281",
-                "JO_speednode_0015",
-                "美国 238",
-                "俄罗斯 021",
-                "美国 190",
-                "GB_speednode_0006",
-                "库拉索岛 002",
-                "加拿大 172",
-                "英国 001",
+                "13|🇯🇵 日本特殊|@ripaojiedian",
+                "15|US_speednode_0034",
+                "GB_speednode_0008",
+                "GB_speednode_0007",
+                "加拿大 020",
+                "15|SE_speednode_0019",
                 "GB_speednode_0009",
-                "韩国 006",
-                "CA_speednode_0001",
-                "🔒 HYSTERIA-UDP 🇦🇺 AU-170.64.217.182:10001",
-                "荷兰 007",
+                "美国 190",
                 "加拿大 191",
+                "11,16|香港3|@ripaojiedian",
+                "🔒 HYSTERIA-UDP 🇨🇦 CA-68.183.199.224:10001",
+                "德国 011",
+                "GB_speednode_0006",
+                "加拿大 082",
+                "GB_speednode_0010",
+                "美国2|@ripaojiedian",
+                "加拿大 197",
+                "俄罗斯 005",
+                "US_speednode_0032",
+                "加拿大 195",
+                "15|GB_speednode_0013",
+                "GB_speednode_0011",
+                "US_speednode_0022",
                 "俄罗斯 009",
-                "保加利亚 001"
+                "美国 238",
+                "🔒 HYSTERIA-UDP 🇦🇺 AU-170.64.217.182:10001",
+                "保加利亚 001",
+                "CA_speednode_0001",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-104.168.128.219:10002",
+                "15|🇺🇸 美国2|@ripaojiedian",
+                "GB_speednode_0013",
+                "哥斯达黎加 004"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "GB_speednode_0013",
-                "美国 164",
-                "GB_speednode_0008",
-                "加拿大 020",
-                "美国 080",
-                "加拿大 195",
-                "美国 221",
-                "GB_speednode_0012",
-                "加拿大 185",
                 "GB_speednode_0005",
-                "🔒 HYSTERIA-UDP 🇫🇮 FI-77.221.158.52:7373",
-                "加拿大 082",
+                "韩国|@ripaojiedian",
+                "美国 221",
+                "15|US_speednode_0025",
                 "库拉索岛 001",
-                "加拿大 197",
-                "加拿大 187",
-                "香港 007",
-                "美国 281",
-                "JO_speednode_0015",
-                "美国 238",
-                "俄罗斯 021",
-                "美国 190",
-                "GB_speednode_0006",
-                "库拉索岛 002",
-                "加拿大 172",
-                "英国 001",
+                "13|🇯🇵 日本特殊|@ripaojiedian",
+                "15|US_speednode_0034",
+                "GB_speednode_0008",
+                "GB_speednode_0007",
+                "加拿大 020",
+                "15|SE_speednode_0019",
                 "GB_speednode_0009",
-                "韩国 006",
-                "CA_speednode_0001",
-                "🔒 HYSTERIA-UDP 🇦🇺 AU-170.64.217.182:10001",
-                "荷兰 007",
+                "美国 190",
                 "加拿大 191",
+                "11,16|香港3|@ripaojiedian",
+                "🔒 HYSTERIA-UDP 🇨🇦 CA-68.183.199.224:10001",
+                "德国 011",
+                "GB_speednode_0006",
+                "加拿大 082",
+                "GB_speednode_0010",
+                "美国2|@ripaojiedian",
+                "加拿大 197",
+                "俄罗斯 005",
+                "US_speednode_0032",
+                "加拿大 195",
+                "15|GB_speednode_0013",
+                "GB_speednode_0011",
+                "US_speednode_0022",
                 "俄罗斯 009",
-                "保加利亚 001"
+                "美国 238",
+                "🔒 HYSTERIA-UDP 🇦🇺 AU-170.64.217.182:10001",
+                "保加利亚 001",
+                "CA_speednode_0001",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-104.168.128.219:10002",
+                "15|🇺🇸 美国2|@ripaojiedian",
+                "GB_speednode_0013",
+                "哥斯达黎加 004"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
