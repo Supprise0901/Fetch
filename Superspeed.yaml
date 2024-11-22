@@ -75,44 +75,20 @@
     ],
     "outbounds": [
         {
-            "tag": "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102",
             "type": "hysteria2",
-            "server": "70.34.207.153",
-            "server_port": 443,
-            "password": "18240b2dfdd76484",
+            "server": "207.211.189.252",
+            "server_port": 30102,
+            "password": "7d417084-d308-4b35-96c8-99dfb2547ec2",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "70.34.207.153",
+                "server_name": "us12.wish.ml",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "d2648ec2"
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
-            "type": "hysteria2",
-            "server": "179.61.132.91",
-            "server_port": 8443,
-            "password": "KevinZakarian",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "KevinZakarian"
             }
         },
         {
@@ -136,20 +112,23 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102",
+            "tag": "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
             "type": "hysteria2",
-            "server": "207.211.189.252",
-            "server_port": 30102,
-            "password": "7d417084-d308-4b35-96c8-99dfb2547ec2",
+            "server": "179.61.132.91",
+            "server_port": 8443,
+            "password": "KevinZakarian",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "us12.wish.ml",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
             }
         },
         {
@@ -173,27 +152,6 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-            "type": "hysteria2",
-            "server": "207.148.22.93",
-            "server_port": 443,
-            "password": "9bb452b106ffc217",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "207.148.22.93",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "cd29099d"
-            }
-        },
-        {
             "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.176.63:30102",
             "type": "hysteria2",
             "server": "207.211.176.63",
@@ -208,6 +166,26 @@
                 "alpn": [
                     "h3"
                 ]
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+            "type": "hysteria2",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
             }
         },
         {
@@ -248,12 +226,26 @@
             }
         },
         {
-            "tag": "0|--1",
-            "type": "shadowsocks",
-            "server": "221.139.79.57",
-            "server_port": 54345,
-            "method": "aes-256-cfb",
-            "password": "qwerREWQ@@"
+            "tag": "美国 080",
+            "type": "vless",
+            "server": "199.232.5.101",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "mefa.ir"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/H",
+                "headers": {
+                    "Host": "mefa.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
         },
         {
             "tag": "美国 164",
@@ -272,6 +264,28 @@
                 "path": "/H",
                 "headers": {
                     "Host": "mefa.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "加拿大 273",
+            "type": "vless",
+            "server": "162.159.192.163",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "blOOM-cHh.pAges.DeV"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/nyx3uit72gutb8pa",
+                "headers": {
+                    "Host": "blOOM-cHh.pAges.DeV"
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
@@ -300,28 +314,6 @@
             }
         },
         {
-            "tag": "美国 032",
-            "type": "vless",
-            "server": "151.101.65.210",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "pooleno.ir"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/GGPPfZ3NKyOoKNiK",
-                "headers": {
-                    "Host": "pooleno.ir"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "美国 033",
             "type": "vless",
             "server": "199.232.32.247",
@@ -338,28 +330,6 @@
                 "path": "/H",
                 "headers": {
                     "Host": "Sanjeshp.Ir"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "美国 035",
-            "type": "vless",
-            "server": "199.232.33.127",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "mefa.ir"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/H",
-                "headers": {
-                    "Host": "mefa.ir"
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
@@ -426,6 +396,28 @@
                 "path": "/H",
                 "headers": {
                     "Host": "behdasht.hrtc.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 039",
+            "type": "vless",
+            "server": "199.232.8.31",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "Sanjeshp.Ir"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/H",
+                "headers": {
+                    "Host": "Sanjeshp.Ir"
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
@@ -516,251 +508,134 @@
             }
         },
         {
-            "tag": "美国 132",
-            "type": "trojan",
-            "server": "159.246.55.132",
+            "tag": "俄罗斯 007",
+            "type": "vmess",
+            "server": "45.67.215.119",
             "server_port": 443,
-            "password": "auto",
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "vip.123789.pp.ua"
+                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+                },
+                "path": "/obdii.cfd:443/linkws"
+            }
+        },
+        {
+            "tag": "美国 135",
+            "type": "vmess",
+            "server": "216.24.57.68",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+                },
+                "path": "/obdii.cfd:443/linkws"
+            }
+        },
+        {
+            "tag": "澳大利亚 003",
+            "type": "vmess",
+            "server": "43.153.103.203",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
+                },
+                "path": "/obdii.cfd:443/linkws"
+            }
+        },
+        {
+            "tag": "加拿大 125",
+            "type": "vless",
+            "server": "172.66.44.101",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "bLoOM-Chh.PAgES.dEv"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/gqhfu7ghhvkq8bov",
+                "headers": {
+                    "Host": "bLoOM-Chh.PAgES.dEv"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "加拿大 134",
+            "type": "vless",
+            "server": "104.18.12.229",
+            "server_port": 8443,
+            "uuid": "ffd3906e-60c9-451e-8ed1-7114107e102c",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "pardazeshvpn-tg70.pages.dev"
             },
             "transport": {
                 "type": "ws",
                 "path": "/",
                 "headers": {
-                    "Host": "vip.123789.pp.ua"
+                    "Host": "pardazeshvpn-tg70.pages.dev"
                 }
             }
         },
         {
-            "tag": "美国 137",
-            "type": "vless",
-            "server": "108.165.216.93",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
+            "tag": "加拿大 137",
+            "type": "vmess",
+            "server": "172.67.24.121",
+            "server_port": 2087,
+            "uuid": "7a61d2d0-ad6a-469d-ad59-4929b3a4f756",
+            "security": "auto",
+            "alter_id": 0,
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
+                "insecure": true,
+                "server_name": "OfFeR.MirAclestORy.tOP."
             },
             "transport": {
                 "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
                 "headers": {
-                    "Host": "5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com"
-                }
+                    "Host": "OfFeR.MirAclestORy.tOP."
+                },
+                "path": "/"
             }
-        },
-        {
-            "tag": "荷兰 013",
-            "type": "vless",
-            "server": "188.42.145.30",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
-                }
-            }
-        },
-        {
-            "tag": "哈萨克斯坦 008",
-            "type": "vless",
-            "server": "31.43.179.58",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com"
-                }
-            }
-        },
-        {
-            "tag": "英国 014",
-            "type": "vless",
-            "server": "185.193.29.238",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-                }
-            }
-        },
-        {
-            "tag": "英国 015",
-            "type": "vless",
-            "server": "194.36.55.67",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-                }
-            }
-        },
-        {
-            "tag": "美国 138",
-            "type": "vless",
-            "server": "156.225.72.32",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org"
-                }
-            }
-        },
-        {
-            "tag": "德国 002",
-            "type": "vless",
-            "server": "45.159.217.141",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org"
-                }
-            }
-        },
-        {
-            "tag": "乌克兰 001",
-            "type": "vless",
-            "server": "194.152.44.191",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com"
-                }
-            }
-        },
-        {
-            "tag": "伯利兹 001",
-            "type": "vless",
-            "server": "45.131.210.98",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com"
-                }
-            }
-        },
-        {
-            "tag": "英国 016",
-            "type": "vless",
-            "server": "185.193.29.229",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com"
-                }
-            }
-        },
-        {
-            "tag": "日本 003",
-            "type": "vless",
-            "server": "156.238.19.178",
-            "server_port": 443,
-            "uuid": "113dd109-540e-4497-9d47-eed30315260f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com"
-                }
-            }
-        },
-        {
-            "tag": "15|🇸🇬 狮城特殊|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "13.229.238.238",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
         },
         {
             "tag": "proxy",
@@ -768,82 +643,66 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "0|--1",
-                "15|🇸🇬 狮城特殊|@ripaojiedian",
                 "美国 045",
-                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
-                "英国 014",
-                "美国 033",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.176.63:30102",
-                "美国 044",
-                "美国 038",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "美国 032",
-                "荷兰 013",
+                "俄罗斯 007",
+                "加拿大 273",
+                "加拿大 134",
+                "美国 080",
                 "🔒 HYSTERIA-UDP 🇱🇺 LU-107.189.29.215:32739",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
-                "加拿大 274",
-                "加拿大 019",
-                "哈萨克斯坦 008",
-                "俄罗斯 004",
-                "美国 138",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.92:8443",
-                "英国 015",
-                "乌克兰 001",
-                "美国 037",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102",
-                "英国 016",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.96:8443",
                 "奥地利 005",
-                "日本 003",
-                "美国 137",
+                "美国 038",
+                "美国 044",
+                "俄罗斯 004",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.176.63:30102",
+                "澳大利亚 003",
+                "美国 039",
+                "美国 037",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "美国 033",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.96:8443",
+                "美国 135",
+                "加拿大 019",
+                "加拿大 137",
                 "美国 164",
-                "美国 132",
-                "伯利兹 001",
-                "美国 035",
-                "德国 002",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.90:8443"
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.92:8443",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.90:8443",
+                "加拿大 274",
+                "加拿大 125",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "0|--1",
-                "15|🇸🇬 狮城特殊|@ripaojiedian",
                 "美国 045",
-                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
-                "英国 014",
-                "美国 033",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.176.63:30102",
-                "美国 044",
-                "美国 038",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "美国 032",
-                "荷兰 013",
+                "俄罗斯 007",
+                "加拿大 273",
+                "加拿大 134",
+                "美国 080",
                 "🔒 HYSTERIA-UDP 🇱🇺 LU-107.189.29.215:32739",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
-                "加拿大 274",
-                "加拿大 019",
-                "哈萨克斯坦 008",
-                "俄罗斯 004",
-                "美国 138",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.92:8443",
-                "英国 015",
-                "乌克兰 001",
-                "美国 037",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102",
-                "英国 016",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.96:8443",
                 "奥地利 005",
-                "日本 003",
-                "美国 137",
+                "美国 038",
+                "美国 044",
+                "俄罗斯 004",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.176.63:30102",
+                "澳大利亚 003",
+                "美国 039",
+                "美国 037",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "美国 033",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.96:8443",
+                "美国 135",
+                "加拿大 019",
+                "加拿大 137",
                 "美国 164",
-                "美国 132",
-                "伯利兹 001",
-                "美国 035",
-                "德国 002",
-                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.90:8443"
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.91:8443",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.92:8443",
+                "🔒 HYSTERIA-UDP 🇩🇪 DE-179.61.132.90:8443",
+                "加拿大 274",
+                "加拿大 125",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.211.189.252:30102"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
