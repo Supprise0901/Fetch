@@ -75,22 +75,104 @@
     ],
     "outbounds": [
         {
-            "tag": "15|GB_speednode_0019",
-            "type": "vless",
-            "server": "217.163.76.107",
-            "server_port": 8443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "packet_encoding": "xudp",
+            "tag": "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "edgood.889876.xyz"
+                "server_name": "70.34.207.153",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
+            }
+        },
+        {
+            "tag": "香港7|@ripaojiedian",
+            "type": "vmess",
+            "server": "m.cnmjin.net",
+            "server_port": 16622,
+            "uuid": "1ba48a0e-af2e-45fb-9e15-2b2d4134657c",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
-                "path": "/?ed=2048fp=chrome",
                 "headers": {
-                    "Host": "edgood.889876.xyz"
+                    "Host": "3fe454755ea98eaa00f870f7fa2990c7.mobgslb.tbcache.com"
+                },
+                "path": "/"
+            }
+        },
+        {
+            "tag": "香港8|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "111.29.57.108",
+            "server_port": 41903,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2c3f6d56-e5d6-44e8-a69b-a7bcd810ca0b"
+        },
+        {
+            "tag": "台湾2|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "111.29.57.108",
+            "server_port": 41923,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2c3f6d56-e5d6-44e8-a69b-a7bcd810ca0b"
+        },
+        {
+            "tag": "美国|@ripaojiedian",
+            "type": "vmess",
+            "server": "170.114.45.53",
+            "server_port": 80,
+            "uuid": "3db2d115-1db9-457d-850f-818b73228f67",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "us1.849yht89w.jiesk4pdqcqjo16j.xyz"
+                },
+                "path": "/"
+            }
+        },
+        {
+            "tag": "日本特殊|@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "54.250.148.116",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "0|--2",
+            "type": "shadowsocks",
+            "server": "193.108.119.230",
+            "server_port": 8080,
+            "method": "rc4-md5",
+            "password": "14fFPrbezE3HDZzsMOr6"
+        },
+        {
+            "tag": "15|CR_speednode_0014",
+            "type": "vless",
+            "server": "190.93.247.155",
+            "server_port": 2095,
+            "uuid": "1f19c0e8-74b5-4cd9-cc59-a6e6d75af944",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/ed=2082",
+                "headers": {
+                    "Host": "Da8.speedtest.Hopeserver1.tech."
                 }
             }
         },
@@ -105,26 +187,45 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "GB_speednode_0019",
+            "tag": "CN_speednode_0007",
+            "type": "shadowsocks",
+            "server": "gdgs.tarioblink.me",
+            "server_port": 30002,
+            "method": "chacha20-ietf-poly1305",
+            "password": "a185d8e2-7a35-46a6-8ff6-cb1d92be2d42"
+        },
+        {
+            "tag": "CN_speednode_0011",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 40434,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "CR_speednode_0014",
             "type": "vless",
-            "server": "217.163.76.107",
-            "server_port": 8443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+            "server": "190.93.247.155",
+            "server_port": 2095,
+            "uuid": "1f19c0e8-74b5-4cd9-cc59-a6e6d75af944",
             "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "edgood.889876.xyz"
-            },
             "transport": {
                 "type": "ws",
-                "path": "/",
+                "path": "/ed=2082",
                 "headers": {
-                    "Host": "edgood.889876.xyz"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2048
+                    "Host": "Da8.speedtest.Hopeserver1.tech."
+                }
             }
+        },
+        {
+            "tag": "FR_speednode_0017",
+            "type": "shadowsocks",
+            "server": "62.210.88.22",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "fHMmtjH3MuKYWYvGEqQpdH"
         },
         {
             "tag": "proxy",
@@ -132,18 +233,38 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "15|GB_speednode_0019",
+                "CN_speednode_0007",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
                 "CN_speednode_0005",
-                "GB_speednode_0019"
+                "CR_speednode_0014",
+                "FR_speednode_0017",
+                "0|--2",
+                "15|CR_speednode_0014",
+                "香港7|@ripaojiedian",
+                "香港8|@ripaojiedian",
+                "CN_speednode_0011",
+                "美国|@ripaojiedian",
+                "日本特殊|@ripaojiedian",
+                "台湾2|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "15|GB_speednode_0019",
+                "CN_speednode_0007",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
                 "CN_speednode_0005",
-                "GB_speednode_0019"
+                "CR_speednode_0014",
+                "FR_speednode_0017",
+                "0|--2",
+                "15|CR_speednode_0014",
+                "香港7|@ripaojiedian",
+                "香港8|@ripaojiedian",
+                "CN_speednode_0011",
+                "美国|@ripaojiedian",
+                "日本特殊|@ripaojiedian",
+                "台湾2|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
