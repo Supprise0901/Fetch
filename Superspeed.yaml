@@ -75,38 +75,33 @@
     ],
     "outbounds": [
         {
-            "tag": "CN_speednode_0002",
-            "type": "trojan",
-            "server": "gyl.58n.net",
-            "server_port": 20309,
-            "password": "55e6d4ab-e382-33ef-96d4-7a475bde8732",
+            "tag": "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "server_name": "70.34.207.153",
                 "insecure": true,
-                "server_name": "z309.hongkongnode.top"
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
             }
         },
         {
-            "tag": "GB_speednode_0007",
-            "type": "vless",
-            "server": "217.163.76.107",
-            "server_port": 8443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "edgood.889876.xyz"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "edgood.889876.xyz"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2048
-            }
+            "tag": "CN_speednode_0005",
+            "type": "shadowsocks",
+            "server": "jsyd.yunnode.win",
+            "server_port": 31640,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ab4c0396-ff75-4a42-9ed3-484237638d11"
         },
         {
             "tag": "GB_speednode_0009",
@@ -129,93 +124,29 @@
             }
         },
         {
-            "tag": "JP_speednode_0011",
-            "type": "trojan",
-            "server": "43.206.140.241",
-            "server_port": 443,
-            "password": "6b7ec37b-96e7-37a1-9c9f-80399b8e7256",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "akamai.cdn.steampipe.steamcontent.com"
-            }
-        },
-        {
-            "tag": "JP_speednode_0013",
-            "type": "trojan",
-            "server": "18.179.44.127",
-            "server_port": 443,
-            "password": "6b7ec37b-96e7-37a1-9c9f-80399b8e7256",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "steampipe.akamaized.net"
-            }
-        },
-        {
-            "tag": "US_speednode_0025",
+            "tag": "Relay_-🇩🇪DE_01",
             "type": "vless",
-            "server": "151.101.65.210",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "f9d2b3ea-cb00-42ff-8cd4-3a228f060672",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "pooleno.ir"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/GGPPfZ3NKyOoKNiK",
-                "headers": {
-                    "Host": "pooleno.ir"
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
                 },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0029",
-            "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "backtory.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "backtory.com"
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
                 }
             }
         },
         {
-            "tag": "8TdZU8fo_vless",
-            "type": "vless",
-            "server": "217.163.76.107",
-            "server_port": 8443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "edgood.889876.xyz"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2048fp=chrome",
-                "headers": {
-                    "Host": "edgood.889876.xyz"
-                }
-            }
-        },
-        {
-            "tag": "596VxuJi_vless",
+            "tag": "Relay_-🇰🇷KR_27",
             "type": "vless",
             "server": "217.163.76.107",
             "server_port": 8443,
@@ -237,151 +168,211 @@
             }
         },
         {
-            "tag": "lev7KDoy_vless",
+            "tag": "Relay_-🇰🇷KR_41",
             "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "217.163.76.107",
+            "server_port": 8443,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "backtory.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/GGPPfZ3NKyOoKNiK",
-                "headers": {
-                    "Host": "backtory.com"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "V4Paprem_vless",
-            "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "backtory.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/GGPPfZ3NKyOoKNiK?ed=2560fp=randomized",
-                "headers": {
-                    "Host": "backtory.com"
-                }
-            }
-        },
-        {
-            "tag": "HoHnYe6l_vless",
-            "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "backtory.com"
+                "server_name": "edgood.889876.xyz"
             },
             "transport": {
                 "type": "ws",
                 "path": "/",
                 "headers": {
-                    "Host": "backtory.com"
+                    "Host": "edgood.889876.xyz"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
+        },
+        {
+            "tag": "Relay_-🇩🇪DE_78",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "5d5a26f5-fb1e-4165-b7b5-659b279f37b3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
                 }
             }
         },
         {
-            "tag": "ZmMQcNhE_vmess",
-            "type": "vmess",
-            "server": "104.18.114.58",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
-            "security": "auto",
-            "alter_id": 0,
+            "tag": "Relay_-🇩🇪DE_105",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "a1d17715-093b-491d-af59-c8f760719a03",
             "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "c3.6016725.xyz"
-                },
-                "path": "github.com/Alvin9999"
-            }
-        },
-        {
-            "tag": "a7t9eN6M_vmess",
-            "type": "vmess",
-            "server": "104.26.0.59",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "c3.6016725.xyz"
-                },
-                "path": "github.com/Alvin9999"
-            }
-        },
-        {
-            "tag": "8noNyAnP_vmess",
-            "type": "vmess",
-            "server": "47.104.186.133",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "LrmyKup7_vmess",
-            "type": "vmess",
-            "server": "47.116.173.76",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "NgZWvZlk_vmess",
-            "type": "vmess",
-            "server": "112.132.212.19",
-            "server_port": 50004,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "LVomskqN_trojan",
-            "type": "trojan",
-            "server": "63.176.191.9",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "trojan.burgerip.co.uk"
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                }
             }
         },
         {
-            "tag": "VouSay6g_vmess",
+            "tag": "Relay_-🇩🇪DE_115",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "469e824f-b5d1-4533-a3f3-f418b51cf17e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "Relay_-🇸🇪SE_121",
+            "type": "vless",
+            "server": "sgv2test.566678.xyz",
+            "server_port": 18443,
+            "uuid": "7af8a763-ac88-4fd2-8fc2-f04d66e2378a",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA",
+                    "short_id": "32ff656d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "Relay_-🇸🇪SE_124",
+            "type": "vless",
+            "server": "sgv2test.566678.xyz",
+            "server_port": 18443,
+            "uuid": "92a70433-5a60-4724-9172-cbde71879ca3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA",
+                    "short_id": "32ff656d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "Relay_-🇩🇪DE_125",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "92a70433-5a60-4724-9172-cbde71879ca3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "Relay_-🇩🇪DE_137",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "4018a780-0ef9-45ce-9a1e-1057dc3cd1af",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                }
+            }
+        },
+        {
+            "tag": "Relay_-🇩🇪DE_143",
+            "type": "vless",
+            "server": "frankfurt.faforex.eu.org",
+            "server_port": 18443,
+            "uuid": "a51c8701-ae69-4976-9b23-cafb8d12ef60",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.tesla.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bRUCz8KaceEKnBFT5V7czJj1t0OAu_nbKnMyVfyeK1I",
+                    "short_id": "e6658462"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇳CN_1338",
             "type": "vmess",
-            "server": "89.23.103.249",
-            "server_port": 8081,
-            "uuid": "60b85ec5-4cc9-4dd5-a5d2-edc876501b69",
+            "server": "183.236.51.36",
+            "server_port": 59003,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "packet_encoding": "xudp"
         },
         {
@@ -391,24 +382,20 @@
                 "auto",
                 "direct",
                 "GB_speednode_0009",
-                "a7t9eN6M_vmess",
-                "HoHnYe6l_vless",
-                "CN_speednode_0002",
-                "596VxuJi_vless",
-                "VouSay6g_vmess",
-                "US_speednode_0025",
-                "GB_speednode_0007",
-                "NgZWvZlk_vmess",
-                "lev7KDoy_vless",
-                "ZmMQcNhE_vmess",
-                "LVomskqN_trojan",
-                "LrmyKup7_vmess",
-                "V4Paprem_vless",
-                "JP_speednode_0011",
-                "8TdZU8fo_vless",
-                "8noNyAnP_vmess",
-                "JP_speednode_0013",
-                "US_speednode_0029"
+                "🇨🇳CN_1338",
+                "Relay_-🇩🇪DE_78",
+                "Relay_-🇰🇷KR_27",
+                "Relay_-🇰🇷KR_41",
+                "Relay_-🇸🇪SE_124",
+                "Relay_-🇩🇪DE_137",
+                "Relay_-🇸🇪SE_121",
+                "Relay_-🇩🇪DE_01",
+                "Relay_-🇩🇪DE_143",
+                "Relay_-🇩🇪DE_125",
+                "Relay_-🇩🇪DE_115",
+                "Relay_-🇩🇪DE_105",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+                "CN_speednode_0005"
             ]
         },
         {
@@ -416,24 +403,20 @@
             "type": "urltest",
             "outbounds": [
                 "GB_speednode_0009",
-                "a7t9eN6M_vmess",
-                "HoHnYe6l_vless",
-                "CN_speednode_0002",
-                "596VxuJi_vless",
-                "VouSay6g_vmess",
-                "US_speednode_0025",
-                "GB_speednode_0007",
-                "NgZWvZlk_vmess",
-                "lev7KDoy_vless",
-                "ZmMQcNhE_vmess",
-                "LVomskqN_trojan",
-                "LrmyKup7_vmess",
-                "V4Paprem_vless",
-                "JP_speednode_0011",
-                "8TdZU8fo_vless",
-                "8noNyAnP_vmess",
-                "JP_speednode_0013",
-                "US_speednode_0029"
+                "🇨🇳CN_1338",
+                "Relay_-🇩🇪DE_78",
+                "Relay_-🇰🇷KR_27",
+                "Relay_-🇰🇷KR_41",
+                "Relay_-🇸🇪SE_124",
+                "Relay_-🇩🇪DE_137",
+                "Relay_-🇸🇪SE_121",
+                "Relay_-🇩🇪DE_01",
+                "Relay_-🇩🇪DE_143",
+                "Relay_-🇩🇪DE_125",
+                "Relay_-🇩🇪DE_115",
+                "Relay_-🇩🇪DE_105",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+                "CN_speednode_0005"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
