@@ -75,30 +75,10 @@
     ],
     "outbounds": [
         {
-            "tag": "15|US_speednode_0056",
+            "tag": "US_speednode_0056",
             "type": "vless",
             "server": "155.248.192.204",
             "server_port": 34237,
-            "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "test2.ccdd.site"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560fp=chrome",
-                "headers": {
-                    "Host": "test2.ccdd.site"
-                }
-            }
-        },
-        {
-            "tag": "KR_speednode_0025",
-            "type": "vless",
-            "server": "121.146.123.154",
-            "server_port": 50000,
             "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
             "packet_encoding": "xudp",
             "tls": {
@@ -117,44 +97,14 @@
             }
         },
         {
-            "tag": "US_speednode_0062",
-            "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "backtory.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "backtory.com"
-                }
-            }
-        },
-        {
-            "tag": "Relay_-🇺🇸US_67",
-            "type": "vless",
-            "server": "167.82.97.248",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "backtory.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/security=tls",
-                "headers": {
-                    "Host": "backtory.com"
-                }
-            }
+            "tag": "🇨🇳CN_925",
+            "type": "vmess",
+            "server": "47.104.186.133",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
         },
         {
             "tag": "🇨🇳CN_927",
@@ -167,9 +117,9 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇫🇷FR_953",
+            "tag": "🇫🇷FR_952",
             "type": "trojan",
-            "server": "35.181.213.173",
+            "server": "52.47.154.110",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "tls": {
@@ -179,20 +129,36 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇭🇰 HK-141.11.217.113:8080 2",
+            "tag": "Relay_🇸🇬SG-🇸🇬SG_1032",
+            "type": "trojan",
+            "server": "sg008.421421.xyz",
+            "server_port": 20230,
+            "password": "5a81db08-7af3-49a4-b089-b7a5b2c24c38",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "421421.xyz"
+            }
+        },
+        {
+            "tag": "🍐15@ConfigV2RayNG",
             "type": "hysteria2",
-            "server": "141.11.217.113",
-            "server_port": 8080,
-            "password": "4bc0d92d-a928-497c-8eb6-1ae91baf2704",
+            "server": "45.76.0.86",
+            "server_port": 443,
+            "password": "1f17cdf0578a2860",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "www.bing.com",
+                "server_name": "45.76.0.86",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "4b817757"
             }
         },
         {
@@ -201,26 +167,24 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇫🇷FR_953",
+                "🇨🇳CN_925",
+                "🇫🇷FR_952",
+                "US_speednode_0056",
+                "Relay_🇸🇬SG-🇸🇬SG_1032",
                 "🇨🇳CN_927",
-                "KR_speednode_0025",
-                "🔒 HYSTERIA-UDP 🇭🇰 HK-141.11.217.113:8080 2",
-                "15|US_speednode_0056",
-                "Relay_-🇺🇸US_67",
-                "US_speednode_0062"
+                "🍐15@ConfigV2RayNG"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR_953",
+                "🇨🇳CN_925",
+                "🇫🇷FR_952",
+                "US_speednode_0056",
+                "Relay_🇸🇬SG-🇸🇬SG_1032",
                 "🇨🇳CN_927",
-                "KR_speednode_0025",
-                "🔒 HYSTERIA-UDP 🇭🇰 HK-141.11.217.113:8080 2",
-                "15|US_speednode_0056",
-                "Relay_-🇺🇸US_67",
-                "US_speednode_0062"
+                "🍐15@ConfigV2RayNG"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
