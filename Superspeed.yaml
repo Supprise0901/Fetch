@@ -75,18 +75,7 @@
     ],
     "outbounds": [
         {
-            "tag": "香港2|@ripaojiedian",
-            "type": "trojan",
-            "server": "223.113.54.144",
-            "server_port": 17956,
-            "password": "QwwHvrnN",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "0|--3",
+            "tag": "0|--1",
             "type": "shadowsocks",
             "server": "52.12.67.119",
             "server_port": 443,
@@ -94,28 +83,37 @@
             "password": "amazonskr05"
         },
         {
-            "tag": "13,14|香港2|@ripaojiedian",
-            "type": "trojan",
-            "server": "223.113.54.144",
-            "server_port": 17956,
-            "password": "QwwHvrnN",
+            "tag": "加拿大 002",
+            "type": "vmess",
+            "server": "visa.com",
+            "server_port": 443,
+            "uuid": "302fe943-4bbe-4cd6-bdbd-4446aeb72b1e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "insecure": true
+                "insecure": true,
+                "server_name": "xjp.daluquan.top"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "xjp.daluquan.top"
+                },
+                "path": "/"
             }
         },
         {
-            "tag": "🇨🇳CN_857",
-            "type": "vmess",
-            "server": "47.104.186.133",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
+            "tag": "US_speednode_0127",
+            "type": "shadowsocks",
+            "server": "34.208.196.91",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
         },
         {
-            "tag": "🇨🇳CN_858",
+            "tag": "🇨🇳CN_946",
             "type": "vmess",
             "server": "47.116.173.76",
             "server_port": 50002,
@@ -125,22 +123,55 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇬🇧GB_935",
+            "tag": "🇨🇳CN_947",
             "type": "vmess",
-            "server": "149.7.16.75",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "112.132.212.19",
+            "server_port": 50004,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "server_name": "70.34.207.153",
                 "insecure": true,
-                "server_name": "inna.cfd"
+                "alpn": [
+                    "h3"
+                ]
             },
-            "transport": {
-                "type": "ws",
-                "path": "/linkvws"
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "207.148.22.93",
+            "server_port": 443,
+            "password": "9bb452b106ffc217",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vkvd127.mycdn.me",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "cd29099d"
             }
         },
         {
@@ -149,24 +180,26 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇬🇧GB_935",
-                "🇨🇳CN_858",
-                "0|--3",
-                "🇨🇳CN_857",
-                "香港2|@ripaojiedian",
-                "13,14|香港2|@ripaojiedian"
+                "0|--1",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "🇨🇳CN_946",
+                "US_speednode_0127",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+                "加拿大 002",
+                "🇨🇳CN_947"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB_935",
-                "🇨🇳CN_858",
-                "0|--3",
-                "🇨🇳CN_857",
-                "香港2|@ripaojiedian",
-                "13,14|香港2|@ripaojiedian"
+                "0|--1",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "🇨🇳CN_946",
+                "US_speednode_0127",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+                "加拿大 002",
+                "🇨🇳CN_947"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
