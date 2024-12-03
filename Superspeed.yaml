@@ -86,12 +86,23 @@
             }
         },
         {
-            "tag": "0|--2",
+            "tag": "0|--3",
             "type": "shadowsocks",
-            "server": "34.208.196.91",
+            "server": "52.12.67.119",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
+        },
+        {
+            "tag": "13,14|香港2|@ripaojiedian",
+            "type": "trojan",
+            "server": "223.113.54.144",
+            "server_port": 17956,
+            "password": "QwwHvrnN",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
         },
         {
             "tag": "🇨🇳CN_857",
@@ -114,34 +125,22 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "Pool_🏁 ZZ_2167",
+            "tag": "🇬🇧GB_935",
             "type": "vmess",
-            "server": "34.92.66.193",
-            "server_port": 30251,
-            "uuid": "9e88a10b-655c-5120-89d0-408634169561",
+            "server": "149.7.16.75",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443 2",
-            "type": "hysteria2",
-            "server": "45.76.0.86",
-            "server_port": 443,
-            "password": "1f17cdf0578a2860",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "server_name": "45.76.0.86",
                 "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "server_name": "inna.cfd"
             },
-            "obfs": {
-                "type": "salamander",
-                "password": "4b817757"
+            "transport": {
+                "type": "ws",
+                "path": "/linkvws"
             }
         },
         {
@@ -150,24 +149,24 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443 2",
-                "Pool_🏁 ZZ_2167",
-                "香港2|@ripaojiedian",
+                "🇬🇧GB_935",
+                "🇨🇳CN_858",
+                "0|--3",
                 "🇨🇳CN_857",
-                "0|--2",
-                "🇨🇳CN_858"
+                "香港2|@ripaojiedian",
+                "13,14|香港2|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443 2",
-                "Pool_🏁 ZZ_2167",
-                "香港2|@ripaojiedian",
+                "🇬🇧GB_935",
+                "🇨🇳CN_858",
+                "0|--3",
                 "🇨🇳CN_857",
-                "0|--2",
-                "🇨🇳CN_858"
+                "香港2|@ripaojiedian",
+                "13,14|香港2|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
