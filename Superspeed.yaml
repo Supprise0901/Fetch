@@ -75,9 +75,38 @@
     ],
     "outbounds": [
         {
-            "tag": "0|--7",
+            "tag": "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "70.34.207.153",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
+            }
+        },
+        {
+            "tag": "0|--2",
             "type": "shadowsocks",
-            "server": "34.208.196.91",
+            "server": "18.236.89.178",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "0|--3",
+            "type": "shadowsocks",
+            "server": "52.12.67.119",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
@@ -105,21 +134,73 @@
             }
         },
         {
+            "tag": "11,16|美国2|@ripaojiedian",
+            "type": "vmess",
+            "server": "120.232.153.27",
+            "server_port": 58831,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇨🇳 CN_1015",
+            "type": "vmess",
+            "server": "112.132.215.12",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇨🇳CN_1018",
+            "type": "vmess",
+            "server": "47.116.173.76",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇨🇳CN_1019",
+            "type": "vmess",
+            "server": "47.104.186.133",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "0|--2",
+                "🇨🇳CN_1019",
                 "美国 031",
-                "0|--7"
+                "11,16|美国2|@ripaojiedian",
+                "0|--3",
+                "🇨🇳 CN_1015",
+                "🇨🇳CN_1018",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "0|--2",
+                "🇨🇳CN_1019",
                 "美国 031",
-                "0|--7"
+                "11,16|美国2|@ripaojiedian",
+                "0|--3",
+                "🇨🇳 CN_1015",
+                "🇨🇳CN_1018",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
