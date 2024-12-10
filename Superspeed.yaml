@@ -75,16 +75,79 @@
     ],
     "outbounds": [
         {
-            "tag": "MCi-@V2ray_Alpha-8",
+            "tag": "CN_speednode_0002",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 41020,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "CN_speednode_0003",
+            "type": "shadowsocks",
+            "server": "t-wn04.loveroise.com",
+            "server_port": 54038,
+            "method": "chacha20-ietf-poly1305",
+            "password": "09833a6f-4d46-426e-87fe-7793a5489f84"
+        },
+        {
+            "tag": "JP_speednode_0006",
+            "type": "shadowsocks",
+            "server": "43.206.233.92",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "JP_speednode_0008",
+            "type": "vless",
+            "server": "pscresearch.faculty.ucdavis.edu",
+            "server_port": 443,
+            "uuid": "ef78d69f-1bbf-4f5a-a669-df9670ed636a",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "pscresearch.faculty.ucdavis.edu"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/ws/",
+                "headers": {
+                    "Host": "jihvbtctvy9778.com"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
+        },
+        {
+            "tag": "US_speednode_0043",
+            "type": "vless",
+            "server": "199.232.8.123",
+            "server_port": 80,
+            "uuid": "d578322a-266b-479d-9eda-f1b41324e721",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/RsAMasAPMX5yb1YZ?ed=2560fp=chrome",
+                "headers": {
+                    "Host": "IRANINGOAT2.IR"
+                }
+            }
+        },
+        {
+            "tag": "Ir-@@V2ray_Alpha-24",
             "type": "hysteria2",
-            "server": "212.192.13.222",
-            "server_port": 1995,
-            "password": "0d42717f",
+            "server": "165.1.76.128",
+            "server_port": 444,
+            "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "www.bing.com",
+                "server_name": "mg1.wtn.wang",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -92,15 +155,48 @@
             }
         },
         {
-            "tag": "WiFi-@V2ray_Raha-10",
+            "tag": "IR-@V2ray_Alpha-03",
             "type": "hysteria2",
-            "server": "170.205.54.5",
+            "server": "20.14.96.63",
             "server_port": 443,
             "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "IR-@V2ray_Raha-03",
+            "type": "hysteria2",
+            "server": "20.14.96.63",
+            "server_port": 443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "WiFi-@V2ray_Raha-08",
+            "type": "hysteria2",
+            "server": "66.103.214.157",
+            "server_port": 1443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "tz.xiahaitao.cn",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -125,37 +221,44 @@
             }
         },
         {
-            "tag": "WiFi-@V2ray_Alpha-08 2",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
             "type": "hysteria2",
-            "server": "66.103.214.157",
-            "server_port": 1443,
-            "password": "sysadmin.sysadmin",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "tz.xiahaitao.cn",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
             }
         },
         {
-            "tag": "WiFi-@V2ray_Raha-08 2",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
             "type": "hysteria2",
-            "server": "66.103.214.157",
-            "server_port": 1443,
-            "password": "sysadmin.sysadmin",
+            "server": "207.148.22.93",
+            "server_port": 443,
+            "password": "9bb452b106ffc217",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "tz.xiahaitao.cn",
+                "server_name": "207.148.22.93",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "cd29099d"
             }
         },
         {
@@ -179,29 +282,111 @@
             }
         },
         {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+            "type": "hysteria2",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "66.135.11.68",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
+            "type": "hysteria2",
+            "server": "207.148.22.93",
+            "server_port": 443,
+            "password": "9bb452b106ffc217",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "cd29099d"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
+            "type": "hysteria2",
+            "server": "45.76.0.86",
+            "server_port": 443,
+            "password": "1f17cdf0578a2860",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vkvd127.mycdn.me",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "4b817757"
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "Ir-@@V2ray_Alpha-24",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "JP_speednode_0008",
+                "US_speednode_0043",
+                "IR-@V2ray_Alpha-03",
+                "WiFi-@V2ray_Raha-08",
+                "CN_speednode_0003",
                 "🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.161.15:2453",
-                "MCi-@V2ray_Alpha-8",
+                "IR-@V2ray_Raha-03",
                 "MCi-@V2ray_Alpha-8 2",
-                "WiFi-@V2ray_Raha-08 2",
-                "WiFi-@V2ray_Raha-10",
-                "WiFi-@V2ray_Alpha-08 2"
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
+                "CN_speednode_0002",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "JP_speednode_0006",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "Ir-@@V2ray_Alpha-24",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "JP_speednode_0008",
+                "US_speednode_0043",
+                "IR-@V2ray_Alpha-03",
+                "WiFi-@V2ray_Raha-08",
+                "CN_speednode_0003",
                 "🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.161.15:2453",
-                "MCi-@V2ray_Alpha-8",
+                "IR-@V2ray_Raha-03",
                 "MCi-@V2ray_Alpha-8 2",
-                "WiFi-@V2ray_Raha-08 2",
-                "WiFi-@V2ray_Raha-10",
-                "WiFi-@V2ray_Alpha-08 2"
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
+                "CN_speednode_0002",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "JP_speednode_0006",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
