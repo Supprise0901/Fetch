@@ -75,99 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "CN_speednode_0001",
-            "type": "vmess",
-            "server": "183.236.51.23",
-            "server_port": 41020,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "HK_speednode_0004",
-            "type": "trojan",
-            "server": "1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green",
-            "server_port": 48539,
-            "password": "aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "hk12.bilibili.com"
-            }
-        },
-        {
-            "tag": "Ir-@@V2ray_Alpha-24",
-            "type": "hysteria2",
-            "server": "165.1.76.128",
-            "server_port": 444,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "mg1.wtn.wang",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "WiFi-@V2ray_Alpha-10",
-            "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "WiFi-@V2ray_Raha-10",
-            "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "WiFi-@V2ray_Raha-10",
-                "WiFi-@V2ray_Alpha-10",
-                "CN_speednode_0001",
-                "Ir-@@V2ray_Alpha-24",
-                "HK_speednode_0004"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "WiFi-@V2ray_Raha-10",
-                "WiFi-@V2ray_Alpha-10",
-                "CN_speednode_0001",
-                "Ir-@@V2ray_Alpha-24",
-                "HK_speednode_0004"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
