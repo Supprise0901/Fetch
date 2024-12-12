@@ -75,17 +75,37 @@
     ],
     "outbounds": [
         {
+            "tag": "Ir-@@V2ray_Alpha-22 2",
+            "type": "hysteria2",
+            "server": "152.67.234.151",
+            "server_port": 444,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "mg2.wtn.wang",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "Ir-@@V2ray_Alpha-22 2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "Ir-@@V2ray_Alpha-22 2"
+            ],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
