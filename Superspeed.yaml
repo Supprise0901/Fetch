@@ -75,20 +75,40 @@
     ],
     "outbounds": [
         {
-            "tag": "Ir-@@V2ray_Alpha-22 2",
+            "tag": "Ir-@@V2ray_Alpha-19",
             "type": "hysteria2",
-            "server": "152.67.234.151",
-            "server_port": 444,
+            "server": "108.174.197.101",
+            "server_port": 443,
             "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "mg2.wtn.wang",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "207.148.22.93",
+            "server_port": 443,
+            "password": "9bb452b106ffc217",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vkvd127.mycdn.me",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "cd29099d"
             }
         },
         {
@@ -97,14 +117,16 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "Ir-@@V2ray_Alpha-22 2"
+                "Ir-@@V2ray_Alpha-19",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "Ir-@@V2ray_Alpha-22 2"
+                "Ir-@@V2ray_Alpha-19",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
