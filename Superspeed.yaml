@@ -75,37 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "WiFi-@V2ray_Raha-08 2",
-            "type": "hysteria2",
-            "server": "66.103.214.157",
-            "server_port": 1443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "tz.xiahaitao.cn",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "WiFi-@V2ray_Raha-08 2"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "WiFi-@V2ray_Raha-08 2"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
