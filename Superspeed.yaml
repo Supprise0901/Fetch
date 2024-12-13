@@ -75,53 +75,25 @@
     ],
     "outbounds": [
         {
-            "tag": "CN_speednode_0001",
-            "type": "vmess",
-            "server": "120.198.71.214",
-            "server_port": 34493,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "HK_speednode_0011",
-            "type": "trojan",
-            "server": "0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green",
-            "server_port": 44991,
-            "password": "aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856",
+            "tag": "Ir-@@V2ray_Alpha-21",
+            "type": "hysteria2",
+            "server": "142.171.194.167",
+            "server_port": 443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "us1.bilibili.com"
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
-            "tag": "US_speednode_0018",
-            "type": "vless",
-            "server": "69.84.182.234",
-            "server_port": 443,
-            "uuid": "9df625ba-7d04-405d-9d54-2c8c1e5fbccb",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "cc.aimercc.filegear-sg.me"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "cc.aimercc.filegear-sg.me"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "Ir-@@V2ray_Alpha-19 2",
+            "tag": "WiFi-@V2ray_Raha-10 2",
             "type": "hysteria2",
-            "server": "108.174.197.101",
+            "server": "170.205.54.5",
             "server_port": 443,
             "password": "sysadmin.sysadmin",
             "up_mbps": 10,
@@ -140,20 +112,16 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "CN_speednode_0001",
-                "US_speednode_0018",
-                "Ir-@@V2ray_Alpha-19 2",
-                "HK_speednode_0011"
+                "WiFi-@V2ray_Raha-10 2",
+                "Ir-@@V2ray_Alpha-21"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "CN_speednode_0001",
-                "US_speednode_0018",
-                "Ir-@@V2ray_Alpha-19 2",
-                "HK_speednode_0011"
+                "WiFi-@V2ray_Raha-10 2",
+                "Ir-@@V2ray_Alpha-21"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
