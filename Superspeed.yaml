@@ -75,36 +75,12 @@
     ],
     "outbounds": [
         {
-            "tag": "Ir-@@V2ray_Alpha-21",
-            "type": "hysteria2",
-            "server": "142.171.194.167",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "WiFi-@V2ray_Raha-10 2",
-            "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
+            "tag": "US_speednode_0014",
+            "type": "shadowsocks",
+            "server": "107.155.57.11",
+            "server_port": 8080,
+            "method": "rc4-md5",
+            "password": "14fFPrbezE3HDZzsMOr6"
         },
         {
             "tag": "proxy",
@@ -112,16 +88,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "WiFi-@V2ray_Raha-10 2",
-                "Ir-@@V2ray_Alpha-21"
+                "US_speednode_0014"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "WiFi-@V2ray_Raha-10 2",
-                "Ir-@@V2ray_Alpha-21"
+                "US_speednode_0014"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
