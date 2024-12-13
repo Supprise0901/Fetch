@@ -75,12 +75,21 @@
     ],
     "outbounds": [
         {
-            "tag": "US_speednode_0014",
-            "type": "shadowsocks",
-            "server": "107.155.57.11",
-            "server_port": 8080,
-            "method": "rc4-md5",
-            "password": "14fFPrbezE3HDZzsMOr6"
+            "tag": "WiFi-@V2ray_Raha-08 2",
+            "type": "hysteria2",
+            "server": "66.103.214.157",
+            "server_port": 1443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "tz.xiahaitao.cn",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         },
         {
             "tag": "proxy",
@@ -88,14 +97,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "US_speednode_0014"
+                "WiFi-@V2ray_Raha-08 2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US_speednode_0014"
+                "WiFi-@V2ray_Raha-08 2"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
