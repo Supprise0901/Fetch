@@ -85,19 +85,75 @@
             "packet_encoding": "xudp"
         },
         {
+            "tag": "HK_speednode_0011",
+            "type": "trojan",
+            "server": "0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green",
+            "server_port": 44991,
+            "password": "aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "us1.bilibili.com"
+            }
+        },
+        {
+            "tag": "US_speednode_0018",
+            "type": "vless",
+            "server": "69.84.182.234",
+            "server_port": 443,
+            "uuid": "9df625ba-7d04-405d-9d54-2c8c1e5fbccb",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cc.aimercc.filegear-sg.me"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cc.aimercc.filegear-sg.me"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "Ir-@@V2ray_Alpha-19 2",
+            "type": "hysteria2",
+            "server": "108.174.197.101",
+            "server_port": 443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "CN_speednode_0001"
+                "CN_speednode_0001",
+                "US_speednode_0018",
+                "Ir-@@V2ray_Alpha-19 2",
+                "HK_speednode_0011"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "CN_speednode_0001"
+                "CN_speednode_0001",
+                "US_speednode_0018",
+                "Ir-@@V2ray_Alpha-19 2",
+                "HK_speednode_0011"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
