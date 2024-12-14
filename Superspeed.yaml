@@ -75,130 +75,43 @@
     ],
     "outbounds": [
         {
-            "tag": "CN_speednode_0001",
-            "type": "vmess",
-            "server": "120.198.71.214",
-            "server_port": 34493,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "CN_speednode_0004",
-            "type": "vmess",
-            "server": "zfa04.333210.xyz",
-            "server_port": 40380,
-            "uuid": "13364789-a8b2-4bcd-8df7-a794fb6f87e5",
-            "security": "auto",
-            "alter_id": 0,
+            "tag": "US_speednode_0020",
+            "type": "vless",
+            "server": "69.84.182.164",
+            "server_port": 443,
+            "uuid": "9df625ba-7d04-405d-9d54-2c8c1e5fbccb",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "server_name": ""
-            }
-        },
-        {
-            "tag": "FR_speednode_0006",
-            "type": "shadowsocks",
-            "server": "51.158.252.130",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "ongZotTbkFtDICYZyi63nA"
-        },
-        {
-            "tag": "GB_speednode_0008",
-            "type": "shadowsocks",
-            "server": "169.150.210.233",
-            "server_port": 8080,
-            "method": "rc4-md5",
-            "password": "14fFPrbezE3HDZzsMOr6"
-        },
-        {
-            "tag": "US_speednode_0029",
-            "type": "shadowsocks",
-            "server": "184.170.241.194",
-            "server_port": 443,
-            "method": "aes-128-cfb",
-            "password": "shadowsocks"
-        },
-        {
-            "tag": "0|--1",
-            "type": "shadowsocks",
-            "server": "184.170.241.194",
-            "server_port": 443,
-            "method": "aes-128-cfb",
-            "password": "shadowsocks"
-        },
-        {
-            "tag": "0|--14",
-            "type": "shadowsocks",
-            "server": "169.150.210.233",
-            "server_port": 8080,
-            "method": "rc4-md5",
-            "password": "14fFPrbezE3HDZzsMOr6"
-        },
-        {
-            "tag": "0|--36",
-            "type": "vmess",
-            "server": "23.158.56.227",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "23.158.56.227"
+                "insecure": false,
+                "server_name": "cc.aimercc.filegear-sg.me"
             },
             "transport": {
                 "type": "ws",
+                "path": "/",
                 "headers": {
-                    "Host": "23.158.56.227"
+                    "Host": "cc.aimercc.filegear-sg.me"
                 },
-                "path": "/linkvws"
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
             }
         },
         {
-            "tag": "👉🆔 @v2ray_configs_pool📡🇷🇺Russia 7",
-            "type": "hysteria2",
-            "server": "46.29.161.224",
-            "server_port": 1200,
-            "password": "e763a9d1-418a-4114-8b15-d86ba4206e76",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "tag": "11,15,16|日本2|@ripaojiedian",
+            "type": "vmess",
+            "server": "jp1.tiljkc.top",
+            "server_port": 53892,
+            "uuid": "8995f5b8-6ad5-3c29-836f-ec8baa292ba0",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "server_name": "urydh.ljricbrd.top"
             },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
-            }
-        },
-        {
-            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 6",
-            "type": "hysteria2",
-            "server": "45.76.0.86",
-            "server_port": 443,
-            "password": "1f17cdf0578a2860",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "4b817757"
+            "transport": {
+                "type": "http"
             }
         },
         {
@@ -207,32 +120,16 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "CN_speednode_0004",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 6",
-                "US_speednode_0029",
-                "FR_speednode_0006",
-                "0|--14",
-                "0|--1",
-                "GB_speednode_0008",
-                "CN_speednode_0001",
-                "0|--36",
-                "👉🆔 @v2ray_configs_pool📡🇷🇺Russia 7"
+                "US_speednode_0020",
+                "11,15,16|日本2|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "CN_speednode_0004",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 6",
-                "US_speednode_0029",
-                "FR_speednode_0006",
-                "0|--14",
-                "0|--1",
-                "GB_speednode_0008",
-                "CN_speednode_0001",
-                "0|--36",
-                "👉🆔 @v2ray_configs_pool📡🇷🇺Russia 7"
+                "US_speednode_0020",
+                "11,15,16|日本2|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
