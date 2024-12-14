@@ -75,6 +75,77 @@
     ],
     "outbounds": [
         {
+            "tag": "CN_speednode_0002",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 41020,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "US_speednode_0029",
+            "type": "shadowsocks",
+            "server": "184.170.241.194",
+            "server_port": 443,
+            "method": "aes-128-cfb",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "0|--8",
+            "type": "shadowsocks",
+            "server": "184.170.241.194",
+            "server_port": 443,
+            "method": "aes-128-cfb",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "15|CN_speednode_0003",
+            "type": "trojan",
+            "server": "219.135.231.205",
+            "server_port": 18147,
+            "password": "6307d00e-56e0-4d0d-afe9-254155638bdf",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "Mci-@V2ray_Alpha-06",
+            "type": "hysteria2",
+            "server": "107.175.70.80",
+            "server_port": 16424,
+            "password": "ksGeWd8r9Rz8",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "Mci-@V2ray_Raha-06",
+            "type": "hysteria2",
+            "server": "107.175.70.80",
+            "server_port": 16424,
+            "password": "ksGeWd8r9Rz8",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "سرور رایگان پرسرعت🌊 @vmess_ir",
             "type": "hysteria2",
             "server": "107.175.70.80",
@@ -92,40 +163,7 @@
             }
         },
         {
-            "tag": "Ir-@@V2ray_Raha-5",
-            "type": "hysteria2",
-            "server": "165.1.76.128",
-            "server_port": 444,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "mg1.wtn.wang",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "WiFi-@V2ray_Alpha-10",
-            "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "سرور رایگان پرسرعت🌊 @vmess_ir 2",
+            "tag": "Mci-@V2ray_Alpha-06 2",
             "type": "hysteria2",
             "server": "107.175.70.80",
             "server_port": 16424,
@@ -142,20 +180,40 @@
             }
         },
         {
-            "tag": "Ir-@@V2ray_Alpha-24 2",
+            "tag": "WiFi-@V2ray_Alpha-10 2",
             "type": "hysteria2",
-            "server": "165.1.76.128",
-            "server_port": 444,
+            "server": "170.205.54.5",
+            "server_port": 443,
             "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "mg1.wtn.wang",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            }
+        },
+        {
+            "tag": "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "70.34.207.153",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
             }
         },
         {
@@ -164,22 +222,32 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "Ir-@@V2ray_Raha-5",
-                "سرور رایگان پرسرعت🌊 @vmess_ir 2",
+                "US_speednode_0029",
+                "WiFi-@V2ray_Alpha-10 2",
+                "0|--8",
                 "سرور رایگان پرسرعت🌊 @vmess_ir",
-                "WiFi-@V2ray_Alpha-10",
-                "Ir-@@V2ray_Alpha-24 2"
+                "Mci-@V2ray_Alpha-06",
+                "CN_speednode_0002",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "15|CN_speednode_0003",
+                "Mci-@V2ray_Alpha-06 2",
+                "Mci-@V2ray_Raha-06"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "Ir-@@V2ray_Raha-5",
-                "سرور رایگان پرسرعت🌊 @vmess_ir 2",
+                "US_speednode_0029",
+                "WiFi-@V2ray_Alpha-10 2",
+                "0|--8",
                 "سرور رایگان پرسرعت🌊 @vmess_ir",
-                "WiFi-@V2ray_Alpha-10",
-                "Ir-@@V2ray_Alpha-24 2"
+                "Mci-@V2ray_Alpha-06",
+                "CN_speednode_0002",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "15|CN_speednode_0003",
+                "Mci-@V2ray_Alpha-06 2",
+                "Mci-@V2ray_Raha-06"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
