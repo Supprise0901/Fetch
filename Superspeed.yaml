@@ -75,7 +75,51 @@
     ],
     "outbounds": [
         {
-            "tag": "US_speednode_0036",
+            "tag": "CN_speednode_0002",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 41020,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "US_speednode_0010",
+            "type": "vless",
+            "server": "cf.cishanjichang.me",
+            "server_port": 443,
+            "uuid": "89b90001-4206-4871-a99d-1744d48f215b",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gbr.cishanjichang.me"
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "swordnewnew"
+            }
+        },
+        {
+            "tag": "US_speednode_0012",
+            "type": "vless",
+            "server": "cf.cishanjichang.me",
+            "server_port": 443,
+            "uuid": "89b90001-4206-4871-a99d-1744d48f215b",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ghk.jintianpaolu.tech"
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "swordnewnew"
+            }
+        },
+        {
+            "tag": "0|--3",
             "type": "shadowsocks",
             "server": "79.110.53.169",
             "server_port": 8080,
@@ -83,40 +127,24 @@
             "password": "14fFPrbezE3HDZzsMOr6"
         },
         {
-            "tag": "加拿大 337",
-            "type": "vmess",
-            "server": "104.26.0.98",
-            "server_port": 2086,
-            "uuid": "7d92ffc9-02e1-4087-8a46-cc4d76560917",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "e1.285581.xyz"
-                },
-                "path": "github.com/Alvin9999"
-            }
-        },
-        {
-            "tag": "0|--7",
+            "tag": "13|🇸🇬 狮城特殊|@ripaojiedian",
             "type": "shadowsocks",
-            "server": "193.108.119.230",
-            "server_port": 8080,
-            "method": "rc4-md5",
-            "password": "14fFPrbezE3HDZzsMOr6"
+            "server": "43.207.81.209",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
         },
         {
-            "tag": "WiFi-@V2ray_Alpha-10 2",
+            "tag": "Mci-@V2ray_Alpha-06",
             "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
+            "server": "107.175.70.80",
+            "server_port": 16424,
+            "password": "ksGeWd8r9Rz8",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "server_name": "www.bing.com",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -124,7 +152,7 @@
             }
         },
         {
-            "tag": "WiFi-@V2ray_Alpha-08 2",
+            "tag": "WiFi-@V2ray_Raha-08",
             "type": "hysteria2",
             "server": "66.103.214.157",
             "server_port": 1443,
@@ -141,27 +169,49 @@
             }
         },
         {
+            "tag": "Ir-@@V2ray_Alpha-19 2",
+            "type": "hysteria2",
+            "server": "108.174.197.101",
+            "server_port": 443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "0|--7",
-                "US_speednode_0036",
-                "WiFi-@V2ray_Alpha-10 2",
-                "加拿大 337",
-                "WiFi-@V2ray_Alpha-08 2"
+                "Ir-@@V2ray_Alpha-19 2",
+                "US_speednode_0010",
+                "0|--3",
+                "WiFi-@V2ray_Raha-08",
+                "CN_speednode_0002",
+                "13|🇸🇬 狮城特殊|@ripaojiedian",
+                "US_speednode_0012",
+                "Mci-@V2ray_Alpha-06"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "0|--7",
-                "US_speednode_0036",
-                "WiFi-@V2ray_Alpha-10 2",
-                "加拿大 337",
-                "WiFi-@V2ray_Alpha-08 2"
+                "Ir-@@V2ray_Alpha-19 2",
+                "US_speednode_0010",
+                "0|--3",
+                "WiFi-@V2ray_Raha-08",
+                "CN_speednode_0002",
+                "13|🇸🇬 狮城特殊|@ripaojiedian",
+                "US_speednode_0012",
+                "Mci-@V2ray_Alpha-06"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
