@@ -75,42 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "美国 121",
-            "type": "vless",
-            "server": "205.233.181.36",
-            "server_port": 2053,
-            "uuid": "b9dad5ed-74da-4a43-8145-90d06df1f890",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "rix.tgzdyz2.top"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "rix.tgzdyz2.top"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "美国 121"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "美国 121"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
