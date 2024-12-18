@@ -75,9 +75,41 @@
     ],
     "outbounds": [
         {
-            "tag": "KZ_speednode_0014",
+            "tag": "CN_speednode_0001",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 41020,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "CR_speednode_0003",
+            "type": "vless",
+            "server": "190.93.245.137",
+            "server_port": 443,
+            "uuid": "15c64822-1a11-419c-9ec2-7cb2807ec3b4",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.arashiphone.com."
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "www.arashiphone.com."
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "RU_speednode_0018",
             "type": "trojan",
-            "server": "194.76.18.129",
+            "server": "45.67.215.95",
             "server_port": 443,
             "password": "tg-fq521free",
             "tls": {
@@ -94,15 +126,26 @@
             }
         },
         {
-            "tag": "0|--5",
-            "type": "shadowsocks",
-            "server": "54.70.176.73",
+            "tag": "US_speednode_0025",
+            "type": "trojan",
+            "server": "216.24.57.30",
             "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
+            "password": "tg-fq521free",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "torjan.xn--xhq44j.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "torjan.xn--xhq44j.eu.org"
+                }
+            }
         },
         {
-            "tag": "0|--6",
+            "tag": "0|--9",
             "type": "shadowsocks",
             "server": "43.202.65.32",
             "server_port": 443,
@@ -156,17 +199,17 @@
             }
         },
         {
-            "tag": "🇨🇳CN_243",
+            "tag": "11,16|香港4|@ripaojiedian",
             "type": "vmess",
-            "server": "47.92.152.169",
-            "server_port": 50002,
+            "server": "120.198.71.214",
+            "server_port": 34493,
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇨🇳CN_245",
+            "tag": "🇨🇳CN_282",
             "type": "vmess",
             "server": "183.236.51.36",
             "server_port": 59003,
@@ -176,9 +219,39 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.27:443",
+            "tag": "🇨🇳CN_284",
+            "type": "vmess",
+            "server": "112.132.212.19",
+            "server_port": 50004,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇨🇳CN_285",
+            "type": "vmess",
+            "server": "112.132.215.12",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇨🇳CN_287",
+            "type": "vmess",
+            "server": "114.55.132.202",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.29:443",
             "type": "hysteria2",
-            "server": "66.23.198.27",
+            "server": "66.23.198.29",
             "server_port": 443,
             "password": "KevinZakarian",
             "up_mbps": 10,
@@ -196,6 +269,83 @@
             }
         },
         {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.28:443",
+            "type": "hysteria2",
+            "server": "66.23.198.28",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.34:443",
+            "type": "hysteria2",
+            "server": "66.23.198.34",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.33:443",
+            "type": "hysteria2",
+            "server": "66.23.198.33",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+            "type": "hysteria2",
+            "server": "165.1.76.128",
+            "server_port": 444,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "mg1.wtn.wang",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "🇷🇺 Russian Federation - Moscow 🌍 HY2-UDP-TLS 4⃣ 3",
             "type": "hysteria2",
             "server": "45.140.169.231",
@@ -210,6 +360,106 @@
                 "alpn": [
                     "h3"
                 ]
+            }
+        },
+        {
+            "tag": "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 121",
+            "type": "hysteria2",
+            "server": "176.32.33.124",
+            "server_port": 2453,
+            "password": "a53ad399-94f0-44db-aa7f-7de9344487c0",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "NWFiMGE5MDNlNmI5YWY1MA=="
+            }
+        },
+        {
+            "tag": "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 202",
+            "type": "hysteria2",
+            "server": "46.29.161.15",
+            "server_port": 2453,
+            "password": "e48e92a9-7168-427b-9e16-4eb7d98229c1",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "NWFiMGE5MDNlNmI5YWY1MA=="
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "66.23.198.33",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 3",
+            "type": "hysteria2",
+            "server": "66.23.198.31",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 6",
+            "type": "hysteria2",
+            "server": "66.23.198.29",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
             }
         },
         {
@@ -233,9 +483,9 @@
             }
         },
         {
-            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 8",
+            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 9",
             "type": "hysteria2",
-            "server": "66.23.198.34",
+            "server": "66.23.198.27",
             "server_port": 443,
             "password": "KevinZakarian",
             "up_mbps": 10,
@@ -253,41 +503,129 @@
             }
         },
         {
+            "tag": "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 10",
+            "type": "hysteria2",
+            "server": "66.23.198.26",
+            "server_port": 443,
+            "password": "KevinZakarian",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KevinZakarian"
+            }
+        },
+        {
+            "tag": "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "204.216.108.5",
+            "server_port": 2024,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "204-216-108-5.nip.io",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "141.11.217.113",
+            "server_port": 8080,
+            "password": "9a9dac4e-95df-4ffe-ac71-812b29a167fd",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "0|--5",
-                "0|--6",
                 "🇷🇺 Russian Federation - Moscow 🌍 HY2-UDP-TLS 4⃣ 3",
-                "🇨🇳CN_243",
-                "15|US_speednode_0026",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.27:443",
-                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 8",
-                "15|RU_speednode_0018",
-                "KZ_speednode_0014",
+                "🇨🇳CN_285",
+                "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣",
+                "🇨🇳CN_282",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.34:443",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.29:443",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.28:443",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 6",
+                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 3",
+                "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 202",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 10",
+                "US_speednode_0025",
+                "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 121",
+                "🇨🇳CN_284",
+                "0|--9",
+                "RU_speednode_0018",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 9",
+                "🇨🇳CN_287",
                 "0|--11",
-                "🇨🇳CN_245",
-                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 7"
+                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+                "15|RU_speednode_0018",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 7",
+                "CR_speednode_0003",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.33:443",
+                "CN_speednode_0001",
+                "11,16|香港4|@ripaojiedian",
+                "15|US_speednode_0026"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "0|--5",
-                "0|--6",
                 "🇷🇺 Russian Federation - Moscow 🌍 HY2-UDP-TLS 4⃣ 3",
-                "🇨🇳CN_243",
-                "15|US_speednode_0026",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.27:443",
-                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 8",
-                "15|RU_speednode_0018",
-                "KZ_speednode_0014",
+                "🇨🇳CN_285",
+                "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣",
+                "🇨🇳CN_282",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.34:443",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.29:443",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.28:443",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 6",
+                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 3",
+                "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 202",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 10",
+                "US_speednode_0025",
+                "🇷🇺 Russian Federation - Kazan' 🌍 HY2-UDP-TLS 4⃣ 121",
+                "🇨🇳CN_284",
+                "0|--9",
+                "RU_speednode_0018",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 9",
+                "🇨🇳CN_287",
                 "0|--11",
-                "🇨🇳CN_245",
-                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 7"
+                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+                "15|RU_speednode_0018",
+                "🇺🇸 United States - Norristown 🌎 HY2-UDP-TLS 4⃣ 7",
+                "CR_speednode_0003",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198.33:443",
+                "CN_speednode_0001",
+                "11,16|香港4|@ripaojiedian",
+                "15|US_speednode_0026"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
