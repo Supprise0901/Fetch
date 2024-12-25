@@ -75,17 +75,92 @@
     ],
     "outbounds": [
         {
-            "tag": "0|--29",
+            "tag": "CN_speednode_0003",
+            "type": "vmess",
+            "server": "183.236.51.23",
+            "server_port": 54104,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "0|--12",
             "type": "shadowsocks",
-            "server": "184.170.241.194",
+            "server": "13.114.67.166",
             "server_port": 443,
-            "method": "aes-128-cfb",
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "0|--23",
+            "type": "shadowsocks",
+            "server": "212.102.53.193",
+            "server_port": 443,
+            "method": "aes-128-gcm",
             "password": "shadowsocks"
         },
         {
-            "tag": "🇨🇳CN_286",
+            "tag": "13,14|香港2|@ripaojiedian",
+            "type": "trojan",
+            "server": "223.113.54.145",
+            "server_port": 36442,
+            "password": "QwwHvrnN",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "11,15,16|法国|@ripaojiedian",
             "type": "vmess",
-            "server": "47.104.186.133",
+            "server": "primer.ibilibi.li",
+            "server_port": 443,
+            "uuid": "e5852393-ca52-4c90-a237-d63cbbb57f21",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ameblo.jp"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "loki.oracle"
+                },
+                "path": "/farcry",
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "Relay_-🇫🇷FR_137",
+            "type": "vmess",
+            "server": "158.180.228.226",
+            "server_port": 443,
+            "uuid": "9b456c2a-f2c1-45e1-87a9-b7628b04bb24",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "beyonddsz.cfd"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "beyonddsz.cfd"
+                },
+                "path": "/linkws"
+            }
+        },
+        {
+            "tag": "🇨🇳CN_247",
+            "type": "vmess",
+            "server": "47.92.152.169",
             "server_port": 50002,
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
@@ -93,33 +168,63 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇨🇳CN_287",
+            "tag": "🇨🇳CN_248",
             "type": "vmess",
-            "server": "183.236.51.36",
-            "server_port": 59003,
+            "server": "112.132.215.12",
+            "server_port": 50002,
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
             "packet_encoding": "xudp"
         },
         {
-            "tag": "@meli_proxyy 2",
-            "type": "hysteria2",
-            "server": "api.tg8lnk.tech",
-            "server_port": 443,
-            "password": "ThisIsNotForSale-Free$ervice",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "tag": "🇨🇳CN_250",
+            "type": "vmess",
+            "server": "112.132.212.19",
+            "server_port": 50004,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇬🇧GB_312",
+            "type": "trojan",
+            "server": "52.56.219.23",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "insecure": false,
+                "server_name": "trojan.burgerip.co.uk"
             }
         },
         {
-            "tag": "MCI-@V2ray_Alpha-06",
+            "tag": "🇬🇧GB_314",
+            "type": "trojan",
+            "server": "18.175.95.186",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "trojan.burgerip.co.uk"
+            }
+        },
+        {
+            "tag": "🇸🇪SE_384",
+            "type": "trojan",
+            "server": "13.60.114.85",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "trojan.burgerip.co.uk"
+            }
+        },
+        {
+            "tag": "@meli_proxyy 2",
             "type": "hysteria2",
             "server": "api.tg8lnk.tech",
             "server_port": 443,
@@ -167,22 +272,6 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇰🇷 KR-193.123.229.162:8443",
-            "type": "hysteria2",
-            "server": "193.123.229.162",
-            "server_port": 8443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
             "type": "hysteria2",
             "server": "207.148.22.93",
@@ -203,15 +292,16 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-148.135.36.71:56666",
+            "tag": "🔒 HYSTERIA-UDP 🇯🇵 JP-54.178.107.109:5001",
             "type": "hysteria2",
-            "server": "148.135.36.71",
-            "server_port": 56666,
-            "password": "sysadmin.sysadmin",
+            "server": "54.178.107.109",
+            "server_port": 5001,
+            "password": "96cad374-7573-4463-8804-4665c2c3d932",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "server_name": "d1--cn-gotcha204-4.bilivideo.com",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -219,16 +309,37 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+            "tag": "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
             "type": "hysteria2",
-            "server": "165.1.76.128",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "70.34.207.153",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇧🇷 BR-167.234.249.46:444",
+            "type": "hysteria2",
+            "server": "167.234.249.46",
             "server_port": 444,
             "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "mg1.wtn.wang",
+                "server_name": "a.961229.xyz",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -252,44 +363,70 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.108.5:2024",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
             "type": "hysteria2",
-            "server": "204.216.108.5",
-            "server_port": 2024,
-            "password": "sysadmin.sysadmin",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "204-216-108-5.nip.io",
+                "server_name": "66.135.11.68",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
             }
         },
         {
-            "tag": "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
-            "type": "tuic",
-            "server": "213.189.52.181",
-            "server_port": 54555,
-            "uuid": "bc97f674-c578-4940-9234-0a1da46041b9",
-            "password": "admin123",
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443",
+            "type": "hysteria2",
+            "server": "45.76.0.86",
+            "server_port": 443,
+            "password": "1f17cdf0578a2860",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "server_name": "45.76.0.86",
+                "insecure": true,
                 "alpn": [
                     "h3"
-                ],
-                "insecure": true,
-                "server_name": "www.bing.com"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "4b817757"
             }
         },
         {
-            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
+            "tag": "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "70.34.207.153",
+            "server_port": 443,
+            "password": "18240b2dfdd76484",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "70.34.207.153",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "d2648ec2"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
             "type": "hysteria2",
             "server": "207.148.22.93",
             "server_port": 443,
@@ -298,7 +435,47 @@
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "207.148.22.93",
+                "server_name": "vkvd127.mycdn.me",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "cd29099d"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+            "type": "hysteria2",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
+            }
+        },
+        {
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
+            "type": "hysteria2",
+            "server": "207.148.22.93",
+            "server_port": 443,
+            "password": "9bb452b106ffc217",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -327,11 +504,28 @@
             }
         },
         {
-            "tag": "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
+            "tag": "🇺🇸 United States - Los Angeles 🌎 HY2-UDP-TLS 4⃣",
             "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
+            "server": "66.103.214.157",
+            "server_port": 1443,
             "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "tz.xiahaitao.cn",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣ 60",
+            "type": "hysteria2",
+            "server": "212.192.15.239",
+            "server_port": 1327,
+            "password": "756d4fb3-8fa0-454c-bd32-1982d956a477",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
@@ -340,6 +534,10 @@
                 "alpn": [
                     "h3"
                 ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "Y2JhZTU3ZjE4ZTI0MzRmMQ=="
             }
         },
         {
@@ -348,46 +546,70 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇨🇳CN_287",
-                "MCI-@V2ray_Alpha-06",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
-                "🇨🇳CN_286",
+                "🇸🇪SE_384",
+                "CN_speednode_0003",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443",
+                "@meli_proxyy 5",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
                 "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443",
-                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
-                "🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.108.5:2024",
-                "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
-                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
-                "0|--29",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-148.135.36.71:56666",
-                "🔒 HYSTERIA-UDP 🇰🇷 KR-193.123.229.162:8443",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇧🇷 BR-167.234.249.46:444",
+                "Relay_-🇫🇷FR_137",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
+                "🇺🇸 United States - Los Angeles 🌎 HY2-UDP-TLS 4⃣",
                 "@meli_proxyy 2",
+                "🇨🇳CN_247",
+                "11,15,16|法国|@ripaojiedian",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣ 60",
                 "MCI-@V2ray_Alpha-06 2",
-                "@meli_proxyy 5"
+                "🇬🇧GB_312",
+                "🔒 HYSTERIA-UDP 🇯🇵 JP-54.178.107.109:5001",
+                "🇨🇳CN_250",
+                "🇬🇧GB_314",
+                "0|--12",
+                "13,14|香港2|@ripaojiedian",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
+                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
+                "0|--23",
+                "🇨🇳CN_248",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳CN_287",
-                "MCI-@V2ray_Alpha-06",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
-                "🇨🇳CN_286",
+                "🇸🇪SE_384",
+                "CN_speednode_0003",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.86:443",
+                "@meli_proxyy 5",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443",
                 "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443",
-                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
-                "🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.108.5:2024",
-                "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
-                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
-                "0|--29",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-148.135.36.71:56666",
-                "🔒 HYSTERIA-UDP 🇰🇷 KR-193.123.229.162:8443",
+                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇧🇷 BR-167.234.249.46:444",
+                "Relay_-🇫🇷FR_137",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
+                "🇺🇸 United States - Los Angeles 🌎 HY2-UDP-TLS 4⃣",
                 "@meli_proxyy 2",
+                "🇨🇳CN_247",
+                "11,15,16|法国|@ripaojiedian",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+                "🇭🇰 Hong Kong - Hong Kong 🌏 HY2-UDP-TLS 4⃣ 60",
                 "MCI-@V2ray_Alpha-06 2",
-                "@meli_proxyy 5"
+                "🇬🇧GB_312",
+                "🔒 HYSTERIA-UDP 🇯🇵 JP-54.178.107.109:5001",
+                "🇨🇳CN_250",
+                "🇬🇧GB_314",
+                "0|--12",
+                "13,14|香港2|@ripaojiedian",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
+                "🇨🇦 Canada - Montreal 🌎 HY2-UDP-TLS 4⃣",
+                "0|--23",
+                "🇨🇳CN_248",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
