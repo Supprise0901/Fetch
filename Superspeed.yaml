@@ -75,23 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787",
-            "type": "hysteria",
-            "server": "195.154.184.5",
-            "server_port": 22787,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717",
             "type": "hysteria2",
             "server": "46.17.41.189",
@@ -102,6 +85,23 @@
             "tls": {
                 "enabled": true,
                 "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+            "type": "hysteria2",
+            "server": "165.1.76.128",
+            "server_port": 444,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "mg1.wtn.wang",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -129,55 +129,20 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
+            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443",
             "type": "hysteria2",
-            "server": "66.135.11.68",
+            "server": "108.174.197.101",
             "server_port": 443,
-            "password": "4e9ee29b39a28277",
+            "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "66.135.11.68",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "13f7ba5f"
             }
-        },
-        {
-            "tag": "CA_speednode_0001",
-            "type": "vless",
-            "server": "40.69.106.103",
-            "server_port": 443,
-            "uuid": "6f995056-7802-4a1d-bff7-61678e626c3f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "mmghgy5.azurewebsites.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "mmghgy5.azurewebsites.net"
-                }
-            }
-        },
-        {
-            "tag": "CN_speednode_0005",
-            "type": "vmess",
-            "server": "183.236.48.163",
-            "server_port": 54882,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
         },
         {
             "tag": "CN_speednode_0006",
@@ -188,18 +153,26 @@
             "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
         },
         {
-            "tag": "CN_speednode_0011",
+            "tag": "CN_speednode_0010",
             "type": "shadowsocks",
-            "server": "xm.miloli.cc",
-            "server_port": 45395,
+            "server": "j-p04.loveroise.com",
+            "server_port": 54102,
             "method": "chacha20-ietf-poly1305",
-            "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
+            "password": "09833a6f-4d46-426e-87fe-7793a5489f84"
         },
         {
             "tag": "CN_speednode_0013",
             "type": "shadowsocks",
             "server": "xm.miloli.cc",
             "server_port": 23752,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
+        },
+        {
+            "tag": "CN_speednode_0014",
+            "type": "shadowsocks",
+            "server": "xm.miloli.cc",
+            "server_port": 19242,
             "method": "chacha20-ietf-poly1305",
             "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
         },
@@ -212,10 +185,10 @@
             "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
         },
         {
-            "tag": "CN_speednode_0020",
+            "tag": "CN_speednode_0019",
             "type": "shadowsocks",
             "server": "xm.miloli.cc",
-            "server_port": 32948,
+            "server_port": 46222,
             "method": "chacha20-ietf-poly1305",
             "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
         },
@@ -224,6 +197,14 @@
             "type": "shadowsocks",
             "server": "xm.miloli.cc",
             "server_port": 19105,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
+        },
+        {
+            "tag": "CN_speednode_0022",
+            "type": "shadowsocks",
+            "server": "xm.miloli.cc",
+            "server_port": 30800,
             "method": "chacha20-ietf-poly1305",
             "password": "2e5ee744-8dff-4a7f-b33c-20fa3a10d0c5"
         },
@@ -292,16 +273,28 @@
             }
         },
         {
-            "tag": "HK_speednode_0036",
+            "tag": "FR_speednode_0032",
+            "type": "trojan",
+            "server": "51.44.134.174",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "trojan.burgerip.co.uk"
+            }
+        },
+        {
+            "tag": "HK_speednode_0035",
             "type": "vless",
-            "server": "47.76.136.169",
+            "server": "8.217.246.186",
             "server_port": 443,
             "uuid": "e927b27f-e73c-4580-802e-9265fd7c40e8",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "www.dayuse.com.hk",
+                "server_name": "b.travel-assets.com",
                 "reality": {
                     "enabled": true,
                     "public_key": "DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw",
@@ -360,49 +353,10 @@
             }
         },
         {
-            "tag": "TR_speednode_0042",
-            "type": "vless",
-            "server": "176.98.41.45",
-            "server_port": 13509,
-            "uuid": "dbc34aa9-3cb1-477a-c47d-998f8badf0e8",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.sega.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "TW_speednode_0044",
+            "tag": "TW_speednode_0043",
             "type": "hysteria2",
-            "server": "tw3.akebi.cc",
-            "server_port": 2015,
-            "password": "338b9800-fb4d-4934-8425-388f6d4342f5",
-            "up_mbps": 500,
-            "down_mbps": 500,
-            "tls": {
-                "enabled": true,
-                "server_name": "jp01.akebi.cc",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "TW_speednode_0045",
-            "type": "hysteria2",
-            "server": "tw3.akebi.cc",
-            "server_port": 2000,
+            "server": "tw2.akebi.cc",
+            "server_port": 2002,
             "password": "338b9800-fb4d-4934-8425-388f6d4342f5",
             "up_mbps": 500,
             "down_mbps": 500,
@@ -484,28 +438,6 @@
             }
         },
         {
-            "tag": "US_speednode_0057",
-            "type": "vless",
-            "server": "phx-plus-1ddns.faforex.eu.org",
-            "server_port": 18443,
-            "uuid": "311faab5-5e89-4f41-b2a4-ca4452508cc6",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.tesla.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s",
-                    "short_id": "e6658462"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0059",
             "type": "vless",
             "server": "phx-plus-1ddns.faforex.eu.org",
@@ -572,28 +504,6 @@
             }
         },
         {
-            "tag": "13|🇭🇰 香港4|@ripaojiedian",
-            "type": "vmess",
-            "server": "120.198.71.214",
-            "server_port": 34493,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "15|FR_speednode_0031",
-            "type": "trojan",
-            "server": "51.44.134.174",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "trojan.burgerip.co.uk"
-            }
-        },
-        {
             "tag": "美国|@ripaojiedian 2",
             "type": "shadowsocks",
             "server": "console.02.aliyun.aq.kunlunaqs.com",
@@ -604,43 +514,14 @@
             "plugin_opts": "obfs=http;obfs-host=215996dd9f1c3db1e54b.microsoft.com;"
         },
         {
-            "tag": "香港|@ripaojiedian",
+            "tag": "香港2|@ripaojiedian",
             "type": "trojan",
-            "server": "36.150.215.196",
-            "server_port": 42395,
-            "password": "lidnBTGb",
+            "server": "223.113.54.145",
+            "server_port": 36442,
+            "password": "QwwHvrnN",
             "tls": {
                 "enabled": true,
                 "insecure": true
-            }
-        },
-        {
-            "tag": "香港4|@ripaojiedian",
-            "type": "vmess",
-            "server": "120.198.71.214",
-            "server_port": 34493,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "新加坡|@ripaojiedian",
-            "type": "vmess",
-            "server": "www.aetv.com",
-            "server_port": 80,
-            "uuid": "beb7d098-48ba-4be8-a47a-758bf3c470b8",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "amd.al"
-                },
-                "path": "/",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2048
             }
         },
         {
@@ -654,65 +535,65 @@
             "plugin_opts": "obfs=http;obfs-host=215996dd9f1c3db1e54b.microsoft.com;"
         },
         {
-            "tag": "0|--8",
+            "tag": "韩国特殊|@ripaojiedian",
             "type": "shadowsocks",
-            "server": "13.250.115.217",
+            "server": "52.79.73.137",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
         },
         {
-            "tag": "0|--16",
+            "tag": "0|--1",
             "type": "shadowsocks",
-            "server": "34.213.242.165",
+            "server": "217.30.10.18",
+            "server_port": 9041,
+            "method": "aes-256-cfb",
+            "password": "U6qnYRhfyDmn8sgn"
+        },
+        {
+            "tag": "0|--4",
+            "type": "shadowsocks",
+            "server": "3.38.212.48",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
         },
         {
-            "tag": "0|--18",
+            "tag": "0|--10",
             "type": "shadowsocks",
-            "server": "13.215.250.79",
+            "server": "13.215.51.127",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
         },
         {
-            "tag": "0|--19",
+            "tag": "0|--23",
             "type": "shadowsocks",
-            "server": "34.222.132.123",
+            "server": "43.203.122.162",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
         },
         {
-            "tag": "0|--22",
-            "type": "shadowsocks",
-            "server": "169.150.210.233",
-            "server_port": 8080,
-            "method": "rc4-md5",
-            "password": "14fFPrbezE3HDZzsMOr6"
-        },
-        {
-            "tag": "0|--47",
-            "type": "vmess",
-            "server": "199.180.101.29",
-            "server_port": 38004,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp",
+            "tag": "13,14|香港|@ripaojiedian 2",
+            "type": "trojan",
+            "server": "36.150.215.196",
+            "server_port": 42395,
+            "password": "lidnBTGb",
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "server_name": "www.70778598.xyz"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "www.70778598.xyz"
-                },
-                "path": "/path/1734770577466"
+                "insecure": true
+            }
+        },
+        {
+            "tag": "13,14|香港2|@ripaojiedian 2",
+            "type": "trojan",
+            "server": "223.113.54.145",
+            "server_port": 36442,
+            "password": "QwwHvrnN",
+            "tls": {
+                "enabled": true,
+                "insecure": true
             }
         },
         {
@@ -724,28 +605,6 @@
             "password": "3938bfae997974860251",
             "plugin": "obfs-local",
             "plugin_opts": "obfs=http;obfs-host=215996dd9f1c3db1e54b.microsoft.com;"
-        },
-        {
-            "tag": "11|0|--47",
-            "type": "vmess",
-            "server": "199.180.101.29",
-            "server_port": 38004,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.70778598.xyz"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "www.70778598.xyz"
-                },
-                "path": "/path/1734770577466"
-            }
         },
         {
             "tag": "11,15,16|法国|@ripaojiedian",
@@ -770,14 +629,6 @@
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
             }
-        },
-        {
-            "tag": "15|🇰🇷 韩国特殊|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "52.79.73.137",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
         },
         {
             "tag": "_08",
@@ -871,6 +722,19 @@
             }
         },
         {
+            "tag": "Relay_-🇺🇸US_43",
+            "type": "vless",
+            "server": "147.135.1.195",
+            "server_port": 443,
+            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "147135001195.sec22org.com"
+            }
+        },
+        {
             "tag": "_48",
             "type": "vless",
             "server": "176.98.41.45",
@@ -889,47 +753,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "Pool__196",
-            "type": "vmess",
-            "server": "199.180.101.29",
-            "server_port": 38004,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.70778598.xyz"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "www.70778598.xyz"
-                },
-                "path": "/path/1734770577466"
-            }
-        },
-        {
-            "tag": "Relay_-🇰🇷KR_205",
-            "type": "trojan",
-            "server": "45.67.215.95",
-            "server_port": 443,
-            "password": "tg-fq521free",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "torjan.xn--xhq44j.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "torjan.xn--xhq44j.eu.org"
                 }
             }
         },
@@ -964,26 +787,30 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇩🇪DE_249",
+            "tag": "🇰🇷 KR_307",
+            "type": "vmess",
+            "server": "132.226.229.16",
+            "server_port": 23451,
+            "uuid": "487dcdf2-82b7-4301-92c4-95a330175ade",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/"
+            }
+        },
+        {
+            "tag": "🇸🇪SE_381",
             "type": "trojan",
-            "server": "35.157.74.247",
+            "server": "13.61.110.132",
             "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "password": "telegram-id-privatevpns",
             "tls": {
                 "enabled": true,
                 "insecure": false,
                 "server_name": "trojan.burgerip.co.uk"
             }
-        },
-        {
-            "tag": "Relay_🇮🇷IR-🇨🇴CO_298",
-            "type": "vmess",
-            "server": "92.242.220.22",
-            "server_port": 37885,
-            "uuid": "8dee19ab-50ce-4d06-be42-5e53c8989ccc",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
         },
         {
             "tag": "🇸🇪SE_383",
@@ -1041,6 +868,23 @@
             "tls": {
                 "enabled": true,
                 "server_name": "api.tg8lnk.tech",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "Relay_🇹🇼TW-🇭🇰HK_405",
+            "type": "hysteria2",
+            "server": "tw3.akebi.cc",
+            "server_port": 2010,
+            "password": "338b9800-fb4d-4934-8425-388f6d4342f5",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hk02.akebi.cc",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1114,39 +958,6 @@
             }
         },
         {
-            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪",
-            "type": "hysteria2",
-            "server": "tw3.akebi.cc",
-            "server_port": 2010,
-            "password": "338b9800-fb4d-4934-8425-388f6d4342f5",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "hk02.akebi.cc",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 2",
-            "type": "hysteria2",
-            "server": "166.1.18.244",
-            "server_port": 26699,
-            "password": "95c2b673-d899-4ff4-a6c1-eafa74268a5e",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "MCI-@V2ray_Alpha-9",
             "type": "hysteria2",
             "server": "166.1.18.244",
@@ -1172,6 +983,39 @@
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "سرور رایگان پرسرعت🌊 @vmess_ir",
+            "type": "hysteria2",
+            "server": "166.1.18.244",
+            "server_port": 26699,
+            "password": "95c2b673-d899-4ff4-a6c1-eafa74268a5e",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 3",
+            "type": "hysteria2",
+            "server": "52.163.114.191",
+            "server_port": 443,
+            "password": "ThisIsNotForSale-Free$ervice",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "api.tg8lnk.tech",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1213,6 +1057,23 @@
             }
         },
         {
+            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 4",
+            "type": "hysteria2",
+            "server": "52.187.5.16",
+            "server_port": 443,
+            "password": "ThisIsNotForSale-Free$ervice",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "api.tg8lnk.tech",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "IR-@V2ray_Alpha-2",
             "type": "hysteria2",
             "server": "52.187.5.16",
@@ -1240,6 +1101,22 @@
             "tls": {
                 "enabled": true,
                 "server_name": "api.tg8lnk.tech",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
+            "type": "hysteria2",
+            "server": "api.tg8lnk.tech",
+            "server_port": 443,
+            "password": "ThisIsNotForSale-Free$ervice",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1353,23 +1230,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
-            "type": "hysteria2",
-            "server": "tw3.akebi.cc",
-            "server_port": 2010,
-            "password": "338b9800-fb4d-4934-8425-388f6d4342f5",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "hk02.akebi.cc",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1525,6 +1385,22 @@
             }
         },
         {
+            "tag": "@WiFi-@V2ray_Raha-9 2",
+            "type": "hysteria2",
+            "server": "api.tg8lnk.tech",
+            "server_port": 443,
+            "password": "ThisIsNotForSale-Free$ervice",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "MCI-@V2ray_Alpha-06 2",
             "type": "hysteria2",
             "server": "api.tg8lnk.tech",
@@ -1546,39 +1422,6 @@
             "server": "api.tg8lnk.tech",
             "server_port": 443,
             "password": "ThisIsNotForSale-Free$ervice",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "WiFi-@V2ray_Alpha-10 2",
-            "type": "hysteria2",
-            "server": "46.17.41.189",
-            "server_port": 50717,
-            "password": "dongtaiwang.com",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443 2",
-            "type": "hysteria2",
-            "server": "108.174.197.101",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
@@ -1620,73 +1463,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇸🇬 SG-217.142.191.118:5001 2",
-            "type": "hysteria2",
-            "server": "217.142.191.118",
-            "server_port": 5001,
-            "password": "96cad374-7573-4463-8804-4665c2c3d932",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "d1--cn-gotcha204-4.bilivideo.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444 2",
-            "type": "hysteria2",
-            "server": "165.1.76.128",
-            "server_port": 444,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "mg1.wtn.wang",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇮🇳 IN-170.205.54.5:443 2",
-            "type": "hysteria2",
-            "server": "170.205.54.5",
-            "server_port": 443,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇭🇰 HK-103.235.18.69:444 2",
-            "type": "hysteria2",
-            "server": "103.235.18.69",
-            "server_port": 444,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "tototel.dogpp.com",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1736,23 +1512,6 @@
             }
         },
         {
-            "tag": "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717 2",
-            "type": "hysteria2",
-            "server": "46.17.41.189",
-            "server_port": 50717,
-            "password": "dongtaiwang.com",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
             "type": "tuic",
             "server": "213.189.52.181",
@@ -1770,27 +1529,6 @@
                 ],
                 "insecure": true,
                 "server_name": "www.bing.com"
-            }
-        },
-        {
-            "tag": "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
-            "type": "hysteria2",
-            "server": "70.34.207.153",
-            "server_port": 443,
-            "password": "18240b2dfdd76484",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "70.34.207.153",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "d2648ec2"
             }
         },
         {
@@ -1856,7 +1594,7 @@
             }
         },
         {
-            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 5",
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 4",
             "type": "hysteria2",
             "server": "66.135.11.68",
             "server_port": 443,
@@ -1865,7 +1603,7 @@
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "66.135.11.68",
+                "server_name": "wrmelmwxlf.gktevlrqznwqqqozy6hgvqxwfmfs vgvs6c7kjnrubuh.cc",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1877,16 +1615,15 @@
             }
         },
         {
-            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
+            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
             "type": "hysteria2",
-            "server": "45.76.0.86",
+            "server": "207.148.22.93",
             "server_port": 443,
-            "password": "1f17cdf0578a2860",
+            "password": "9bb452b106ffc217",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -1894,28 +1631,40 @@
             },
             "obfs": {
                 "type": "salamander",
-                "password": "4b817757"
+                "password": "cd29099d"
             }
         },
         {
-            "tag": "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 9",
+            "tag": "🇧🇷 Brazil - São Paulo 🌎 HY2-UDP-TLS 4⃣",
             "type": "hysteria2",
-            "server": "45.76.0.86",
-            "server_port": 443,
-            "password": "1f17cdf0578a2860",
+            "server": "167.234.249.46",
+            "server_port": 444,
+            "password": "sysadmin.sysadmin",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "vkvd127.mycdn.me",
+                "server_name": "a.961229.xyz",
                 "insecure": true,
                 "alpn": [
                     "h3"
                 ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "4b817757"
+            }
+        },
+        {
+            "tag": "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
+            "type": "hysteria2",
+            "server": "170.205.54.5",
+            "server_port": 443,
+            "password": "sysadmin.sysadmin",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
@@ -1924,242 +1673,218 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "美国|@ripaojiedian 2",
+                "0|--1",
                 "US_speednode_0059",
-                "CN_speednode_0020",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 5",
-                "IR-@V2ray_Alpha-3 2",
-                "TW_speednode_0044",
-                "IR-@V2ray_Raha-2",
-                "IR-@V2ray_Alpha-2",
-                "@VPNMEGA1",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 9",
-                "🔒 HYSTERIA-UDP 🇭🇰 HK-103.235.18.69:444 2",
-                "TW_speednode_0045",
-                "香港4|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717",
-                "Pool__196",
-                "CN_speednode_0013",
-                "香港|@ripaojiedian",
-                "IR-@V2ray_Raha-2 2",
-                "MCI-@V2ray_Raha-9",
-                "15|🇰🇷 韩国特殊|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443 2",
-                "🇨🇳CN_228",
-                "Pool_🇸🇬SG_389",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
-                "IR-@V2ray_Raha-3 2",
-                "IR-@V2ray_Alpha-3",
-                "Relay_🇺🇸US-🇺🇸US_688",
-                "Relay_-🇰🇷KR_205",
-                "FR_speednode_0031",
-                "@VPNMEGA1 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
-                "IR-@V2ray_Raha-3",
-                "CN_speednode_0011",
-                "WiFi-@V2ray_Alpha-10",
-                "CN_speednode_0027",
-                "Relay_🇺🇸US-🇰🇷KR_681",
-                "🇩🇪DE_249",
-                "TW_speednode_0047",
-                "@V2ray1_Ng 2",
-                "美国|@ripaojiedian 4",
-                "13|🇭🇰 香港4|@ripaojiedian",
-                "HK_speednode_0036",
-                "0|--19",
-                "WiFi-@V2ray_Alpha-10 2",
-                "MCI-@V2ray_Raha-9 2",
-                "CN_speednode_0017",
-                "@WiFi-@V2ray_Alpha-9",
-                "@WiFi-@V2ray_Alpha-9 2",
-                "🔰@fast_2ray 👈سرورهای‌بیشتر 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443 2",
-                "CA_speednode_0001",
-                "8|WiFi-@V2ray_Alpha-10",
-                "美国|@ripaojiedian 3",
-                "US_speednode_0057",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
-                "MCI-@V2ray_Alpha-06 2",
-                "🇹🇼TW_407",
-                "MCI-@V2ray_Alpha-9",
-                "0|--18",
-                "RU_speednode_0039",
-                "Relay_🇸🇬SG-🇸🇬SG_390",
-                "_38",
+                "CN_speednode_0022",
+                "13,14|香港|@ripaojiedian 2",
+                "CN_speednode_0010",
                 "CN_speednode_0023",
-                "IR-@V2ray_Alpha-2 2",
-                "🔰@fast_2ray 👈سرورهای‌بیشتر",
-                "@WiFi-@V2ray_Raha-9",
-                "0|--22",
-                "🔒 HYSTERIA-UDP 🇸🇬 SG-217.142.191.118:5001 2",
-                "0|--16",
-                "TW_speednode_0046",
-                "🇨🇳CN_229",
-                "@V2ray1_Ng",
-                "FR_speednode_0030",
-                "13,14|香港|@ripaojiedian",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443 2",
-                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
-                "0|--8",
-                "CN_speednode_0028",
-                "MCI-@V2ray_Alpha-06",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 2",
-                "11,15,16|法国|@ripaojiedian",
-                "MCI-@V2ray_Alpha-9 2",
-                "TW_speednode_0049",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444 2",
-                "🇸🇪SE_383",
-                "🇺🇸US_545",
-                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
-                "_08",
-                "Relay_-🇺🇸US_34",
                 "8|MCI-@V2ray_Raha-9",
-                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787",
-                "_37",
-                "15|FR_speednode_0031",
-                "11|0|--47",
-                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443 2",
-                "Relay_🇮🇷IR-🇨🇴CO_298",
+                "韩国特殊|@ripaojiedian",
+                "@WiFi-@V2ray_Raha-9 2",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
                 "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
-                "新加坡|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717 2",
-                "CN_speednode_0005",
-                "_48",
-                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787 2",
-                "TW_speednode_0048",
-                "🇨🇳CN_227",
+                "@WiFi-@V2ray_Alpha-9 2",
+                "Relay_🇹🇼TW-🇭🇰HK_405",
+                "TW_speednode_0047",
+                "MCI-@V2ray_Raha-9",
+                "美国|@ripaojiedian 2",
+                "RU_speednode_0039",
+                "FR_speednode_0030",
+                "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
+                "🔰@fast_2ray 👈سرورهای‌بیشتر 2",
                 "CN_speednode_0006",
-                "TR_speednode_0042",
-                "Relay_🇸🇬SG-🇸🇬SG_391",
-                "0|--47",
-                "🔒 HYSTERIA-UDP 🇮🇳 IN-170.205.54.5:443 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443",
+                "🇺🇸US_545",
+                "Relay_-🇺🇸US_43",
+                "CN_speednode_0014",
+                "13,14|香港2|@ripaojiedian 2",
+                "MCI-@V2ray_Alpha-9",
+                "WiFi-@V2ray_Alpha-10",
+                "美国|@ripaojiedian 3",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 4",
+                "🇸🇪SE_381",
+                "🇨🇳CN_228",
+                "CN_speednode_0019",
+                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717",
+                "🇸🇪SE_383",
+                "13,14|香港|@ripaojiedian",
                 "CN_speednode_0021",
-                "IL_speednode_0037"
+                "IR-@V2ray_Alpha-3 2",
+                "IR-@V2ray_Raha-3",
+                "Relay_🇺🇸US-🇰🇷KR_681",
+                "TW_speednode_0049",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
+                "CN_speednode_0017",
+                "🇹🇼TW_407",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 4",
+                "@WiFi-@V2ray_Raha-9",
+                "@WiFi-@V2ray_Alpha-9",
+                "_48",
+                "سرور رایگان پرسرعت🌊 @vmess_ir",
+                "香港2|@ripaojiedian",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787 2",
+                "0|--23",
+                "MCI-@V2ray_Alpha-9 2",
+                "Pool_🇸🇬SG_389",
+                "CN_speednode_0028",
+                "🇰🇷 KR_307",
+                "IR-@V2ray_Raha-2 2",
+                "0|--4",
+                "IR-@V2ray_Alpha-2",
+                "@V2ray1_Ng 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443 2",
+                "Relay_-🇺🇸US_34",
+                "Relay_🇺🇸US-🇺🇸US_688",
+                "TW_speednode_0048",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443 2",
+                "0|--10",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443 2",
+                "🇨🇳CN_229",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+                "8|WiFi-@V2ray_Alpha-10",
+                "HK_speednode_0035",
+                "Relay_🇸🇬SG-🇸🇬SG_391",
+                "TW_speednode_0046",
+                "11,15,16|法国|@ripaojiedian",
+                "@V2ray1_Ng",
+                "TW_speednode_0043",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 3",
+                "@VPNMEGA1",
+                "FR_speednode_0031",
+                "FR_speednode_0032",
+                "美国|@ripaojiedian 4",
+                "MCI-@V2ray_Raha-9 2",
+                "IR-@V2ray_Alpha-2 2",
+                "🇨🇳CN_227",
+                "CN_speednode_0027",
+                "@VPNMEGA1 2",
+                "_08",
+                "🇧🇷 Brazil - São Paulo 🌎 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
+                "_37",
+                "_38",
+                "🔰@fast_2ray 👈سرورهای‌بیشتر",
+                "IR-@V2ray_Alpha-3",
+                "IL_speednode_0037",
+                "Relay_🇸🇬SG-🇸🇬SG_390",
+                "CN_speednode_0013",
+                "MCI-@V2ray_Alpha-06 2",
+                "IR-@V2ray_Raha-2",
+                "IR-@V2ray_Raha-3 2",
+                "MCI-@V2ray_Alpha-06",
+                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "美国|@ripaojiedian 2",
+                "0|--1",
                 "US_speednode_0059",
-                "CN_speednode_0020",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 5",
-                "IR-@V2ray_Alpha-3 2",
-                "TW_speednode_0044",
-                "IR-@V2ray_Raha-2",
-                "IR-@V2ray_Alpha-2",
-                "@VPNMEGA1",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 9",
-                "🔒 HYSTERIA-UDP 🇭🇰 HK-103.235.18.69:444 2",
-                "TW_speednode_0045",
-                "香港4|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717",
-                "Pool__196",
-                "CN_speednode_0013",
-                "香港|@ripaojiedian",
-                "IR-@V2ray_Raha-2 2",
-                "MCI-@V2ray_Raha-9",
-                "15|🇰🇷 韩国特殊|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443 2",
-                "🇨🇳CN_228",
-                "Pool_🇸🇬SG_389",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
-                "IR-@V2ray_Raha-3 2",
-                "IR-@V2ray_Alpha-3",
-                "Relay_🇺🇸US-🇺🇸US_688",
-                "Relay_-🇰🇷KR_205",
-                "FR_speednode_0031",
-                "@VPNMEGA1 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
-                "IR-@V2ray_Raha-3",
-                "CN_speednode_0011",
-                "WiFi-@V2ray_Alpha-10",
-                "CN_speednode_0027",
-                "Relay_🇺🇸US-🇰🇷KR_681",
-                "🇩🇪DE_249",
-                "TW_speednode_0047",
-                "@V2ray1_Ng 2",
-                "美国|@ripaojiedian 4",
-                "13|🇭🇰 香港4|@ripaojiedian",
-                "HK_speednode_0036",
-                "0|--19",
-                "WiFi-@V2ray_Alpha-10 2",
-                "MCI-@V2ray_Raha-9 2",
-                "CN_speednode_0017",
-                "@WiFi-@V2ray_Alpha-9",
-                "@WiFi-@V2ray_Alpha-9 2",
-                "🔰@fast_2ray 👈سرورهای‌بیشتر 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443 2",
-                "CA_speednode_0001",
-                "8|WiFi-@V2ray_Alpha-10",
-                "美国|@ripaojiedian 3",
-                "US_speednode_0057",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
-                "MCI-@V2ray_Alpha-06 2",
-                "🇹🇼TW_407",
-                "MCI-@V2ray_Alpha-9",
-                "0|--18",
-                "RU_speednode_0039",
-                "Relay_🇸🇬SG-🇸🇬SG_390",
-                "_38",
+                "CN_speednode_0022",
+                "13,14|香港|@ripaojiedian 2",
+                "CN_speednode_0010",
                 "CN_speednode_0023",
-                "IR-@V2ray_Alpha-2 2",
-                "🔰@fast_2ray 👈سرورهای‌بیشتر",
-                "@WiFi-@V2ray_Raha-9",
-                "0|--22",
-                "🔒 HYSTERIA-UDP 🇸🇬 SG-217.142.191.118:5001 2",
-                "0|--16",
-                "TW_speednode_0046",
-                "🇨🇳CN_229",
-                "@V2ray1_Ng",
-                "FR_speednode_0030",
-                "13,14|香港|@ripaojiedian",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443 2",
-                "🇸🇪 Sweden - Spånga 🌍 HY2-UDP-TLS 4⃣",
-                "0|--8",
-                "CN_speednode_0028",
-                "MCI-@V2ray_Alpha-06",
-                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 2",
-                "11,15,16|法国|@ripaojiedian",
-                "MCI-@V2ray_Alpha-9 2",
-                "TW_speednode_0049",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444 2",
-                "🇸🇪SE_383",
-                "🇺🇸US_545",
-                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555",
-                "_08",
-                "Relay_-🇺🇸US_34",
                 "8|MCI-@V2ray_Raha-9",
-                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787",
-                "_37",
-                "15|FR_speednode_0031",
-                "11|0|--47",
-                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443 2",
-                "Relay_🇮🇷IR-🇨🇴CO_298",
+                "韩国特殊|@ripaojiedian",
+                "@WiFi-@V2ray_Raha-9 2",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 5",
                 "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 3",
-                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 7",
-                "新加坡|@ripaojiedian",
-                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717 2",
-                "CN_speednode_0005",
-                "_48",
-                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787 2",
-                "TW_speednode_0048",
-                "🇨🇳CN_227",
+                "@WiFi-@V2ray_Alpha-9 2",
+                "Relay_🇹🇼TW-🇭🇰HK_405",
+                "TW_speednode_0047",
+                "MCI-@V2ray_Raha-9",
+                "美国|@ripaojiedian 2",
+                "RU_speednode_0039",
+                "FR_speednode_0030",
+                "🇮🇳 India - Hyderabad 🌏 HY2-UDP-TLS 4⃣",
+                "🔰@fast_2ray 👈سرورهای‌بیشتر 2",
                 "CN_speednode_0006",
-                "TR_speednode_0042",
-                "Relay_🇸🇬SG-🇸🇬SG_391",
-                "0|--47",
-                "🔒 HYSTERIA-UDP 🇮🇳 IN-170.205.54.5:443 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-108.174.197.101:443",
+                "🇺🇸US_545",
+                "Relay_-🇺🇸US_43",
+                "CN_speednode_0014",
+                "13,14|香港2|@ripaojiedian 2",
+                "MCI-@V2ray_Alpha-9",
+                "WiFi-@V2ray_Alpha-10",
+                "美国|@ripaojiedian 3",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 4",
+                "🇸🇪SE_381",
+                "🇨🇳CN_228",
+                "CN_speednode_0019",
+                "🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.189:50717",
+                "🇸🇪SE_383",
+                "13,14|香港|@ripaojiedian",
                 "CN_speednode_0021",
-                "IL_speednode_0037"
+                "IR-@V2ray_Alpha-3 2",
+                "IR-@V2ray_Raha-3",
+                "Relay_🇺🇸US-🇰🇷KR_681",
+                "TW_speednode_0049",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 8",
+                "CN_speednode_0017",
+                "🇹🇼TW_407",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 4",
+                "@WiFi-@V2ray_Raha-9",
+                "@WiFi-@V2ray_Alpha-9",
+                "_48",
+                "سرور رایگان پرسرعت🌊 @vmess_ir",
+                "香港2|@ripaojiedian",
+                "🇺🇸 United States - Piscataway 🌎 HY2-UDP-TLS 4⃣ 2",
+                "🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787 2",
+                "0|--23",
+                "MCI-@V2ray_Alpha-9 2",
+                "Pool_🇸🇬SG_389",
+                "CN_speednode_0028",
+                "🇰🇷 KR_307",
+                "IR-@V2ray_Raha-2 2",
+                "0|--4",
+                "IR-@V2ray_Alpha-2",
+                "@V2ray1_Ng 2",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11.68:443 2",
+                "Relay_-🇺🇸US_34",
+                "Relay_🇺🇸US-🇺🇸US_688",
+                "TW_speednode_0048",
+                "🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443 2",
+                "0|--10",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443 2",
+                "🇨🇳CN_229",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-165.1.76.128:444",
+                "8|WiFi-@V2ray_Alpha-10",
+                "HK_speednode_0035",
+                "Relay_🇸🇬SG-🇸🇬SG_391",
+                "TW_speednode_0046",
+                "11,15,16|法国|@ripaojiedian",
+                "@V2ray1_Ng",
+                "TW_speednode_0043",
+                "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 3",
+                "@VPNMEGA1",
+                "FR_speednode_0031",
+                "FR_speednode_0032",
+                "美国|@ripaojiedian 4",
+                "MCI-@V2ray_Raha-9 2",
+                "IR-@V2ray_Alpha-2 2",
+                "🇨🇳CN_227",
+                "CN_speednode_0027",
+                "@VPNMEGA1 2",
+                "_08",
+                "🇧🇷 Brazil - São Paulo 🌎 HY2-UDP-TLS 4⃣",
+                "🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443",
+                "_37",
+                "_38",
+                "🔰@fast_2ray 👈سرورهای‌بیشتر",
+                "IR-@V2ray_Alpha-3",
+                "IL_speednode_0037",
+                "Relay_🇸🇬SG-🇸🇬SG_390",
+                "CN_speednode_0013",
+                "MCI-@V2ray_Alpha-06 2",
+                "IR-@V2ray_Raha-2",
+                "IR-@V2ray_Raha-3 2",
+                "MCI-@V2ray_Alpha-06",
+                "🔒 TUIC-UDP 🇵🇱 PL-213.189.52.181:54555"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
