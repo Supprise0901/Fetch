@@ -75,113 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024",
-            "type": "hysteria2",
-            "server": "107.175.32.131",
-            "server_port": 2024,
-            "password": "6cc30ad1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024 2",
-            "type": "hysteria2",
-            "server": "107.175.32.131",
-            "server_port": 2024,
-            "password": "6cc30ad1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "爱尔兰+都柏林Amazon数据中心 2",
-            "type": "trojan",
-            "server": "34.247.153.108",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ],
-                "server_name": "trojan.burgerip.co.uk"
-            }
-        },
-        {
-            "tag": "俄罗斯 V2CROSS.COM",
-            "type": "vmess",
-            "server": "195.133.5.127",
-            "server_port": 23035,
-            "uuid": "e5381b55-ae63-4ce5-9968-b8c0af015001",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/"
-            }
-        },
-        {
-            "tag": "巴西圣保罗 CloudFlare节点 4",
-            "type": "vmess",
-            "server": "188.114.96.5",
-            "server_port": 443,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "linde06.indiavideo.sbs"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "linde06.indiavideo.sbs"
-                },
-                "path": "/linkws"
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "俄罗斯 V2CROSS.COM",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024 2",
-                "爱尔兰+都柏林Amazon数据中心 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024",
-                "巴西圣保罗 CloudFlare节点 4"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "俄罗斯 V2CROSS.COM",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024 2",
-                "爱尔兰+都柏林Amazon数据中心 2",
-                "🔒 HYSTERIA-UDP 🇺🇸 US-107.175.32.131:2024",
-                "巴西圣保罗 CloudFlare节点 4"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
