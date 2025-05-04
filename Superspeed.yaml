@@ -75,17 +75,114 @@
     ],
     "outbounds": [
         {
+            "tag": "广东省汕头市 移动",
+            "type": "vmess",
+            "server": "f108c201-sv2sg0-t1u9f2-mdk9.cm5.p5pv.com",
+            "server_port": 17234,
+            "uuid": "b235e3d0-50ee-11eb-a8bf-f23c91cfbbc9",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "上海市 移动",
+            "type": "vmess",
+            "server": "jp3.vip2.g2.moonbase.life",
+            "server_port": 35243,
+            "uuid": "46a539d2-d3ba-4a6e-aedb-b727d2fc60f8",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "web.xcjs.info"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "web.xcjs.info"
+                },
+                "path": "/home"
+            }
+        },
+        {
+            "tag": "广东省汕头市 移动 6",
+            "type": "vmess",
+            "server": "69c584f2-suif40-tee612-2r82.cm5.p5pv.com",
+            "server_port": 17233,
+            "uuid": "03573f46-e944-11eb-a8bf-f23c91cfbbc9",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "广东省中山市 移动",
+            "type": "vmess",
+            "server": "120.198.44.126",
+            "server_port": 47883,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "广东省汕头市 移动 7",
+            "type": "vmess",
+            "server": "4924b4e1-sux8g0-sxlqgq-1spnr.cm5.p5pv.com",
+            "server_port": 17232,
+            "uuid": "127e3f92-f714-11ef-bbb0-f23c91cfbbc9",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "广东省广州市 移动",
+            "type": "vmess",
+            "server": "120.232.153.40",
+            "server_port": 36609,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "广东省汕头市 移动 8",
+            "type": "vmess",
+            "server": "ee53ff51-sux8g0-sxxbmq-1szgv.cm5.p5pv.com",
+            "server_port": 17234,
+            "uuid": "448aff24-b2e6-11ef-97e0-f23c9164ca5d",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "广东省汕头市 移动 7",
+                "上海市 移动",
+                "广东省汕头市 移动",
+                "广东省广州市 移动",
+                "广东省汕头市 移动 6",
+                "广东省中山市 移动",
+                "广东省汕头市 移动 8"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "广东省汕头市 移动 7",
+                "上海市 移动",
+                "广东省汕头市 移动",
+                "广东省广州市 移动",
+                "广东省汕头市 移动 6",
+                "广东省中山市 移动",
+                "广东省汕头市 移动 8"
+            ],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
