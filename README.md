@@ -1,4 +1,4 @@
 
 
-![Visitor's Count](https://profile-counter.glitch.me/Supprise0901_Fetch/count.svg)
+<img src="https://profile-counter.deno.dev/Fetch/count.svg">
 
