@@ -75,21 +75,20 @@
     ],
     "outbounds": [
         {
-            "tag": "RU_speednode_0020",
+            "tag": "US_speednode_0026",
             "type": "vless",
-            "server": "94.26.228.68",
-            "server_port": 443,
-            "uuid": "5475990d-e0ce-46ea-95e5-50f9e4879af9",
+            "server": "172.245.251.10",
+            "server_port": 8443,
+            "uuid": "9b3d65ab-576c-4750-9cb3-bb41c12c085e",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "ru.sfasti.ru",
+                "server_name": "www.ieee.org",
                 "reality": {
                     "enabled": true,
-                    "public_key": "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8",
-                    "short_id": "16895459a2c7768d"
+                    "public_key": "XgQPLMVHvbUKTzcAZPBDGZ_mDhaZRiAJEk7c4-7UzR4"
                 },
                 "utls": {
                     "enabled": true,
@@ -98,19 +97,149 @@
             }
         },
         {
+            "tag": "🇺🇸 US美国(mibei77.com 米贝节点分享) 3",
+            "type": "vmess",
+            "server": "v8.heduian.link",
+            "server_port": 30808,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "v8.heduian.link"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
+            "tag": "江苏省 移动",
+            "type": "vmess",
+            "server": "v8.heduian.link",
+            "server_port": 30808,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "v8.heduian.link"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
+            "tag": "美国 CloudFlare节点",
+            "type": "vmess",
+            "server": "qqqqqqqqqqqqaaaa.www890604.dpdns.org",
+            "server_port": 443,
+            "uuid": "4174b95d-115e-4d39-add6-1f8db95bb860",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "qqqqqqqqqqqqaaaa.www890604.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "qqqqqqqqqqqqaaaa.www890604.dpdns.org"
+                },
+                "path": "/6We3U9Df1WGxgFnoFPw1"
+            }
+        },
+        {
+            "tag": "8|کانا تلگرام : injastvpn@",
+            "type": "hysteria2",
+            "server": "yapc-1.adamhayward.co.uk",
+            "server_port": 36400,
+            "password": "Yet-Another-Public-Config-1",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "YAPC-1.afshin.ir",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "Yet-Another-Public-Config-1"
+            }
+        },
+        {
+            "tag": "🇨🇦CA_104",
+            "type": "vmess",
+            "server": "51.222.158.243",
+            "server_port": 8443,
+            "uuid": "4b0df213-0e59-4c16-b391-e0d97686bfa9",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": ""
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/vmess/"
+            }
+        },
+        {
+            "tag": "🇸🇬 SG_242",
+            "type": "vmess",
+            "server": "43.156.224.60",
+            "server_port": 50512,
+            "uuid": "05c83256-cc7b-4356-a6de-a2e4d4e6c184",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_309",
+            "type": "vmess",
+            "server": "216.167.32.129",
+            "server_port": 54838,
+            "uuid": "b96a0b00-8349-4dcb-9bac-8c215082badd",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "RU_speednode_0020"
+                "🇺🇸 US美国(mibei77.com 米贝节点分享) 3",
+                "🇺🇸 US_309",
+                "🇨🇦CA_104",
+                "美国 CloudFlare节点",
+                "US_speednode_0026",
+                "8|کانا تلگرام : injastvpn@",
+                "🇸🇬 SG_242",
+                "江苏省 移动"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "RU_speednode_0020"
+                "🇺🇸 US美国(mibei77.com 米贝节点分享) 3",
+                "🇺🇸 US_309",
+                "🇨🇦CA_104",
+                "美国 CloudFlare节点",
+                "US_speednode_0026",
+                "8|کانا تلگرام : injastvpn@",
+                "🇸🇬 SG_242",
+                "江苏省 移动"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
