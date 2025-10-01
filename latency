@@ -75,37 +75,12 @@
     ],
     "outbounds": [
         {
-            "tag": "香港|@ripaojiedian",
-            "type": "vmess",
-            "server": "v9.heduian.link",
-            "server_port": 30809,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "baidu.com"
-                },
-                "path": "/oooo"
-            }
-        },
-        {
             "tag": "韩国|@ripaojiedian",
             "type": "shadowsocks",
             "server": "121.170.203.147",
             "server_port": 2520,
             "method": "aes-256-cfb",
             "password": "qwerREWQ@@"
-        },
-        {
-            "tag": "越南|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "103.186.154.42",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
         },
         {
             "tag": "俄罗斯 001",
@@ -123,6 +98,26 @@
                 "path": "/",
                 "headers": {
                     "Host": "hsdgbuys.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "澳大利亚 002",
+            "type": "vless",
+            "server": "hk3.kaipi.link",
+            "server_port": 443,
+            "uuid": "d8665d45-8103-46e9-9cb7-8902bb7559b4",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hk3.kaipi.link"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/texaws",
+                "headers": {
+                    "Host": "hk3.kaipi.link"
                 }
             }
         },
@@ -229,23 +224,6 @@
             }
         },
         {
-            "tag": "美国 224",
-            "type": "vless",
-            "server": "167.68.42.168",
-            "server_port": 443,
-            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "pqh24v3.hiddendom.shop"
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": ""
-            }
-        },
-        {
             "tag": "美国 225",
             "type": "vless",
             "server": "184.174.80.250",
@@ -280,40 +258,62 @@
             }
         },
         {
-            "tag": "荷兰 013",
+            "tag": "美国 242",
             "type": "vless",
-            "server": "45.159.218.165",
-            "server_port": 443,
-            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+            "server": "172.66.47.175",
+            "server_port": 2083,
+            "uuid": "4d794980-54c0-4fcb-8def-c2beaecadbad",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "pqh24v3.hiddendom.shop"
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": ""
-            }
-        },
-        {
-            "tag": "美国 478",
-            "type": "vless",
-            "server": "72.167.25.253",
-            "server_port": 2096,
-            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "gaosir.unfeeling.sbs"
+                "server_name": "azadnet05.pages.dev"
             },
             "transport": {
                 "type": "ws",
-                "path": "/Telegram",
+                "path": "/lZU7WqWIDqC1jRn6",
                 "headers": {
-                    "Host": "gaosir.unfeeling.sbs"
-                }
+                    "Host": "azadnet05.pages.dev"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "亚太地区 002",
+            "type": "vless",
+            "server": "103.160.204.50",
+            "server_port": 443,
+            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vless8-ekh.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "vless8-ekh.pages.dev"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 491",
+            "type": "vmess",
+            "server": "38.54.98.110",
+            "server_port": 2052,
+            "uuid": "665d9b8f-153d-4907-adac-de12afd9c851",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": ""
             }
         },
         {
@@ -351,9 +351,192 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 12",
+            "tag": "美国 655",
+            "type": "vmess",
+            "server": "38.60.195.254",
+            "server_port": 1037,
+            "uuid": "2d978341-a391-4b54-8623-12284dc24525",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": ""
+            }
+        },
+        {
+            "tag": "美国 665",
             "type": "vless",
-            "server": "92.53.188.36",
+            "server": "104.16.113.127",
+            "server_port": 2083,
+            "uuid": "3f3db1c3-4f40-4102-b4e7-c201cd8c36f4",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "241888.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxyip=47.239.8.172",
+                "headers": {
+                    "Host": "241888.xyz"
+                }
+            }
+        },
+        {
+            "tag": "美国 666",
+            "type": "vless",
+            "server": "104.16.150.135",
+            "server_port": 443,
+            "uuid": "3f3db1c3-4f40-4102-b4e7-c201cd8c36f4",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "241888.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxyip=47.239.8.172",
+                "headers": {
+                    "Host": "241888.xyz"
+                }
+            }
+        },
+        {
+            "tag": "美国 667",
+            "type": "vless",
+            "server": "172.64.155.86",
+            "server_port": 2083,
+            "uuid": "3f3db1c3-4f40-4102-b4e7-c201cd8c36f4",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "241888.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxyip=47.239.8.172",
+                "headers": {
+                    "Host": "241888.xyz"
+                }
+            }
+        },
+        {
+            "tag": "美国 668",
+            "type": "vless",
+            "server": "103.21.244.115",
+            "server_port": 443,
+            "uuid": "45c0483a-eef1-4447-9607-49d789e20c7d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "xw0083.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "xw0083.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 669",
+            "type": "vless",
+            "server": "104.16.54.234",
+            "server_port": 443,
+            "uuid": "45c0483a-eef1-4447-9607-49d789e20c7d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "xw0083.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "xw0083.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "巴西 017",
+            "type": "vless",
+            "server": "188.114.98.151",
+            "server_port": 443,
+            "uuid": "45c0483a-eef1-4447-9607-49d789e20c7d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "xw0083.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "xw0083.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国 680",
+            "type": "vless",
+            "server": "104.21.9.71",
+            "server_port": 443,
+            "uuid": "c226ac5d-65e9-4379-95c3-fb542bc242d8",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ddDDdDDdDDF.777198.XyZ"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/OjdW89Bpg4ykd4O",
+                "headers": {
+                    "Host": "ddDDdDDdDDF.777198.XyZ"
+                }
+            }
+        },
+        {
+            "tag": "韩国 003",
+            "type": "vmess",
+            "server": "220.92.146.161",
+            "server_port": 50001,
+            "uuid": "ffde381b-4a30-41d4-90eb-151f228b06ea",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "aa.nbee.pp.ua"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "aa.nbee.pp.ua"
+                },
+                "path": "/qq"
+            }
+        },
+        {
+            "tag": "FR法国(mibei77.com 米贝节点分享)",
+            "type": "vless",
+            "server": "94.140.0.141",
             "server_port": 443,
             "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
             "packet_encoding": "xudp",
@@ -368,24 +551,7 @@
             }
         },
         {
-            "tag": "GB英国(mibei77.com 米贝节点分享) 2",
-            "type": "vless",
-            "server": "45.8.211.71",
-            "server_port": 443,
-            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "pqh24v3.hiddendom.shop"
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": ""
-            }
-        },
-        {
-            "tag": "乌克兰(mibei77.com 米贝节点分享) 2",
+            "tag": "乌克兰(mibei77.com 米贝节点分享)",
             "type": "vless",
             "server": "31.43.179.38",
             "server_port": 443,
@@ -419,7 +585,41 @@
             }
         },
         {
-            "tag": "GB英国(mibei77.com 米贝节点分享) 4",
+            "tag": "US美国(mibei77.com 米贝节点分享) 19",
+            "type": "vless",
+            "server": "104.26.2.186",
+            "server_port": 443,
+            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "pqh24v3.hiddendom.shop"
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": ""
+            }
+        },
+        {
+            "tag": "俄罗斯(mibei77.com 米贝节点分享)",
+            "type": "vless",
+            "server": "94.247.142.103",
+            "server_port": 443,
+            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "pqh23v4.hiddendom.shop"
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": ""
+            }
+        },
+        {
+            "tag": "GB英国(mibei77.com 米贝节点分享) 2",
             "type": "vless",
             "server": "45.8.211.86",
             "server_port": 443,
@@ -436,16 +636,24 @@
             }
         },
         {
-            "tag": "立陶宛(mibei77.com 米贝节点分享) 2",
+            "tag": "立陶宛(mibei77.com 米贝节点分享)",
             "type": "vless",
-            "server": "89.116.180.248",
+            "server": "183.240.179.94",
+            "server_port": 8080,
+            "uuid": "b1e5c3d2-7a49-4f88-8c3d-5a1e9b7c4d20",
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "GB英国(mibei77.com 米贝节点分享) 3",
+            "type": "vless",
+            "server": "45.8.211.71",
             "server_port": 443,
             "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "pqh23v4.hiddendom.shop"
+                "server_name": "pqh24v3.hiddendom.shop"
             },
             "transport": {
                 "type": "grpc",
@@ -453,9 +661,9 @@
             }
         },
         {
-            "tag": "FR法国(mibei77.com 米贝节点分享) 4",
+            "tag": "US美国(mibei77.com 米贝节点分享) 77",
             "type": "vless",
-            "server": "94.140.0.141",
+            "server": "92.53.188.36",
             "server_port": 443,
             "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
             "packet_encoding": "xudp",
@@ -508,20 +716,20 @@
             }
         },
         {
-            "tag": "新加坡3|@ripaojiedian",
-            "type": "vmess",
-            "server": "v39.heduian.link",
-            "server_port": 30839,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "baidu.com"
-                },
-                "path": "/oooo"
+            "tag": "🇺🇲@FreakConfig",
+            "type": "hysteria2",
+            "server": "208.87.243.187",
+            "server_port": 22222,
+            "password": "dongtaiwang.com",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
@@ -558,56 +766,6 @@
             }
         },
         {
-            "tag": "CN_speednode_0016",
-            "type": "trojan",
-            "server": "106.75.134.1",
-            "server_port": 12000,
-            "password": "2fd0d127-266d-4d0b-b453-f94659a132fc",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 电讯盈科有限公司",
-            "type": "vmess",
-            "server": "hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "hkt.gotochinatown.net"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇺🇸_US_美国 3",
-            "type": "shadowsocks",
-            "server": "38.54.57.90",
-            "server_port": 989,
-            "method": "aes-256-cfb",
-            "password": "f8f7aCzcPKbsF8p3"
-        },
-        {
-            "tag": "Relay_-🇯🇵JP_21",
-            "type": "vmess",
-            "server": "vt50k-g01.jp05-6786-vm0.entry.fr0307a.art",
-            "server_port": 46482,
-            "uuid": "7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8",
-            "security": "auto",
-            "alter_id": 1,
-            "packet_encoding": "xudp"
-        },
-        {
             "tag": "🇦🇪 AE_103",
             "type": "vmess",
             "server": "38.182.115.109",
@@ -618,67 +776,11 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇭🇰 HK_181",
-            "type": "vmess",
-            "server": "47.243.245.143",
-            "server_port": 11455,
-            "uuid": "06e10e0b-57ae-48db-a37a-f2fd207e3b11",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇭🇰 HK_182",
-            "type": "vmess",
-            "server": "154.219.108.219",
-            "server_port": 8889,
-            "uuid": "06771fd0-ebef-40a2-ba99-f7891d55b857",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇯🇵 JP_197",
-            "type": "vmess",
-            "server": "103.93.76.145",
-            "server_port": 12996,
-            "uuid": "969053ca-7473-47a0-b21d-ed1a2e1575e7",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇲🇾MY_242",
-            "type": "vmess",
-            "server": "47.254.240.75",
-            "server_port": 21572,
-            "uuid": "c2ca7006-042e-442f-984c-1148f797c1e3",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/arki",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2048
-            }
-        },
-        {
             "tag": "🇸🇬 SG_267",
             "type": "vmess",
             "server": "101.32.244.46",
             "server_port": 52076,
             "uuid": "8601e642-fbd3-49a2-a32a-f8afa63c5a31",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇺🇸 US_314",
-            "type": "vmess",
-            "server": "154.94.235.74",
-            "server_port": 43419,
-            "uuid": "ffc66db8-ce10-431f-8a9d-ea4cbaa95524",
             "security": "auto",
             "alter_id": 0,
             "packet_encoding": "xudp"
@@ -692,81 +794,6 @@
             "security": "auto",
             "alter_id": 0,
             "packet_encoding": "xudp"
-        },
-        {
-            "tag": "Relay_🇺🇸US-🇸🇬SG_390",
-            "type": "vmess",
-            "server": "cgroup.node3.v.nodelist-airport.com",
-            "server_port": 24321,
-            "uuid": "8f3a835c-8a45-480d-ae35-1deb2c52dcae",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🏁 ZZ_401",
-            "type": "vmess",
-            "server": "163.227.160.55",
-            "server_port": 43930,
-            "uuid": "e1285cf3-293f-41bd-8f2a-217cf1269e24",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "r♡ya",
-            "type": "hysteria2",
-            "server": "5.231.70.79",
-            "server_port": 443,
-            "password": "2b67ONZROv+fRVMxB94BSw==",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "@Daily_Configs 2",
-            "type": "hysteria2",
-            "server": "185.92.220.240",
-            "server_port": 30205,
-            "password": "8864aa9f-7517-4fd5-aef1-32050eb3095d",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "net2025.afsharidempire.uk",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "GdQ4bgvT8RFwuWi2"
-            }
-        },
-        {
-            "tag": "🇺🇲@FreakConfig",
-            "type": "hysteria2",
-            "server": "208.87.243.187",
-            "server_port": 22222,
-            "password": "dongtaiwang.com",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
         },
         {
             "tag": "🇫🇷FR(AzadNet.t.me) 2",
@@ -786,27 +813,6 @@
             }
         },
         {
-            "tag": "🇺🇸US(AzadNet.t.me) 7",
-            "type": "hysteria2",
-            "server": "206.71.158.37",
-            "server_port": 36400,
-            "password": "Yet-Another-Public-Config-1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "YAPC-1.afshin.ir",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "Yet-Another-Public-Config-1"
-            }
-        },
-        {
             "tag": "🇺🇸US(AzadNet.t.me) 8",
             "type": "hysteria",
             "server": "208.87.243.187",
@@ -817,103 +823,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇽🇽XX(AzadNet.t.me) 4",
-            "type": "hysteria2",
-            "server": "yapc-1.adamhayward.co.uk",
-            "server_port": 35200,
-            "password": "Yet-Another-Public-Config-1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "YAPC-1.afshin.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "Yet-Another-Public-Config-1"
-            }
-        },
-        {
-            "tag": "@Rayan_Config 7",
-            "type": "hysteria2",
-            "server": "206.71.158.37",
-            "server_port": 36300,
-            "password": "Yet-Another-Public-Config-1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "YAPC-1.afshin.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "Yet-Another-Public-Config-1"
-            }
-        },
-        {
-            "tag": "Channel id: @ShadowProxy66🇳🇱",
-            "type": "hysteria2",
-            "server": "206.71.158.37",
-            "server_port": 35000,
-            "password": "Yet-Another-Public-Config-1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "YAPC-1.afshin.ir",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "Yet-Another-Public-Config-1"
-            }
-        },
-        {
-            "tag": "🇭🇰@FREE2CONFIG ",
-            "type": "hysteria2",
-            "server": "103.136.150.42",
-            "server_port": 2056,
-            "password": "78c2bad7-f5f3-41f2-88cc-81de9d05040b",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "xg1.mangshe.xyz",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇭🇰@FREE2CONFIG  2",
-            "type": "hysteria2",
-            "server": "45.149.92.33",
-            "server_port": 37771,
-            "password": "04a24f06-17fa-464b-a799-90600783499f",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "hg1.xiaohuolongjc.top",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -963,17 +872,197 @@
             }
         },
         {
-            "tag": "US 7",
+            "tag": "CN_speednode_0016",
+            "type": "trojan",
+            "server": "106.75.134.1",
+            "server_port": 12000,
+            "password": "2fd0d127-266d-4d0b-b453-f94659a132fc",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "法国 国际航空电讯集团公司(SITA)",
+            "type": "vmess",
+            "server": "57.128.189.240",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": ""
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/linkvws"
+            }
+        },
+        {
+            "tag": "_75",
+            "type": "vmess",
+            "server": "103.30.78.138",
+            "server_port": 35436,
+            "uuid": "084928cf-ed55-42e8-b686-b8e271dfb0ce",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "http"
+            }
+        },
+        {
+            "tag": "🇭🇰 HK_235",
+            "type": "vmess",
+            "server": "154.219.108.219",
+            "server_port": 8889,
+            "uuid": "06771fd0-ebef-40a2-ba99-f7891d55b857",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_399",
+            "type": "vmess",
+            "server": "47.83.10.70",
+            "server_port": 53544,
+            "uuid": "e7b88e16-7480-4ec1-e1f2-523b45462467",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_413",
+            "type": "vmess",
+            "server": "64.69.40.135",
+            "server_port": 10678,
+            "uuid": "c5aec222-3b11-4af8-f01f-f9145b0caabb",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_414",
+            "type": "vmess",
+            "server": "192.3.109.156",
+            "server_port": 36032,
+            "uuid": "b2c5a45b-46c6-4d55-8d70-a9ec91b5a5d7",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_436",
+            "type": "vmess",
+            "server": "64.69.40.135",
+            "server_port": 41185,
+            "uuid": "9ba1c290-2f90-4fe7-efab-390af3dfd498",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 US_451",
+            "type": "vmess",
+            "server": "38.246.244.3",
+            "server_port": 37639,
+            "uuid": "8baca37e-4338-419a-b1ac-f94dd5a8d6d4",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🏁 ZZ_496",
+            "type": "vmess",
+            "server": "163.227.160.55",
+            "server_port": 43930,
+            "uuid": "e1285cf3-293f-41bd-8f2a-217cf1269e24",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸US(AzadNet.t.me) 7",
             "type": "hysteria2",
-            "server": "b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk",
-            "server_port": 1743,
-            "password": "a16d62f6-048d-11f0-af5a-f23c93136cb3",
+            "server": "206.71.158.37",
+            "server_port": 36400,
+            "password": "Yet-Another-Public-Config-1",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk",
+                "server_name": "YAPC-1.afshin.ir",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "Yet-Another-Public-Config-1"
+            }
+        },
+        {
+            "tag": "🇽🇽XX(AzadNet.t.me) 4",
+            "type": "hysteria2",
+            "server": "yapc-1.adamhayward.co.uk",
+            "server_port": 35200,
+            "password": "Yet-Another-Public-Config-1",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "YAPC-1.afshin.ir",
                 "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "Yet-Another-Public-Config-1"
+            }
+        },
+        {
+            "tag": "🇳🇱@FREE2CONFIG  8",
+            "type": "hysteria2",
+            "server": "206.71.158.37",
+            "server_port": 35000,
+            "password": "Yet-Another-Public-Config-1",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "YAPC-1.afshin.ir",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "Yet-Another-Public-Config-1"
+            }
+        },
+        {
+            "tag": "🇭🇰@FREE2CONFIG ",
+            "type": "hysteria2",
+            "server": "103.136.150.42",
+            "server_port": 2056,
+            "password": "78c2bad7-f5f3-41f2-88cc-81de9d05040b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "xg1.mangshe.xyz",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
@@ -985,126 +1074,132 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇯🇵 JP_197",
-                "@Rayan_Config 7",
-                "GB英国(mibei77.com 米贝节点分享) 2",
-                "FR法国(mibei77.com 米贝节点分享) 4",
                 "🇽🇽XX(AzadNet.t.me) 4",
-                "🇭🇰 香港 电讯盈科有限公司",
-                "🇳🇱@FREE2CONFIG  4",
-                "Relay_-🇯🇵JP_21",
-                "俄罗斯 001",
-                "🇺🇸 US_346",
-                "🇲🇾MY_242",
-                "🇦🇪 AE_103",
-                "越南|@ripaojiedian",
-                "🇺🇸 US_314",
-                "🇺🇸_US_美国 3",
                 "@Rayan_Config 10",
-                "r♡ya",
-                "香港|@ripaojiedian",
-                "AU澳大利亚(mibei77.com 米贝节点分享)",
-                "中国 053",
-                "俄罗斯 011",
-                "GB英国(mibei77.com 米贝节点分享) 4",
-                "US美国(mibei77.com 米贝节点分享) 12",
-                "立陶宛(mibei77.com 米贝节点分享) 2",
-                "乌克兰(mibei77.com 米贝节点分享) 2",
-                "新加坡3|@ripaojiedian",
-                "美国 478",
                 "🇫🇷FR(AzadNet.t.me) 2",
-                "韩国|@ripaojiedian",
-                "Channel id: @vpnserverrr🇸🇬",
-                "美国 222",
-                "@Daily_Configs 2",
-                "南非 001",
-                "🇭🇰 HK_182",
-                "🇸🇬 SG_267",
-                "🇳🇱@FREE2CONFIG   2",
-                "🇭🇰@FREE2CONFIG  2",
-                "美国 223",
-                "荷兰 013",
-                "中国 046",
-                "亚太地区 001",
-                "🇭🇰 HK_181",
                 "美国 219",
-                "🇺🇸US(AzadNet.t.me) 8",
-                "🇭🇰@FREE2CONFIG ",
-                "US 7",
+                "🇽🇽XX(AzadNet.t.me) 2",
+                "美国 680",
+                "韩国 003",
+                "🇸🇬 SG_267",
+                "🇳🇱@FREE2CONFIG  8",
+                "美国 491",
+                "美国 668",
+                "🇳🇱@FREE2CONFIG   2",
+                "🇺🇸 US_346",
+                "亚太地区 002",
+                "亚太地区 001",
+                "🇺🇸US(AzadNet.t.me) 7",
+                "美国 669",
+                "🇭🇰 HK_235",
+                "🇺🇸 US_451",
+                "日本 038",
+                "立陶宛(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 77",
                 "All-@IRAN_V2RAY1",
                 "CN_speednode_0016",
-                "Relay_🇺🇸US-🇸🇬SG_390",
-                "🏁 ZZ_401",
-                "Channel id: @ShadowProxy66🇳🇱",
-                "🇽🇽XX(AzadNet.t.me) 2",
-                "美国 224",
-                "日本 038",
+                "🇺🇸US(AzadNet.t.me) 8",
+                "美国 225",
+                "俄罗斯 011",
+                "俄罗斯(mibei77.com 米贝节点分享)",
+                "法国 国际航空电讯集团公司(SITA)",
+                "韩国|@ripaojiedian",
+                "🇺🇸 US_413",
+                "🇺🇸 US_414",
+                "🇭🇰@FREE2CONFIG ",
+                "🏁 ZZ_496",
+                "美国 222",
+                "Channel id: @vpnserverrr🇸🇬",
+                "美国 666",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "美国 655",
+                "AU澳大利亚(mibei77.com 米贝节点分享)",
+                "🇺🇸 US_399",
+                "🇳🇱@FREE2CONFIG  4",
                 "🇺🇲@FreakConfig",
-                "🇺🇸US(AzadNet.t.me) 7",
-                "美国 225"
+                "乌克兰(mibei77.com 米贝节点分享)",
+                "中国 046",
+                "FR法国(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 19",
+                "美国 242",
+                "GB英国(mibei77.com 米贝节点分享) 3",
+                "美国 665",
+                "美国 667",
+                "中国 053",
+                "🇦🇪 AE_103",
+                "南非 001",
+                "_75",
+                "🇺🇸 US_436",
+                "澳大利亚 002",
+                "俄罗斯 001",
+                "美国 223",
+                "巴西 017"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇯🇵 JP_197",
-                "@Rayan_Config 7",
-                "GB英国(mibei77.com 米贝节点分享) 2",
-                "FR法国(mibei77.com 米贝节点分享) 4",
                 "🇽🇽XX(AzadNet.t.me) 4",
-                "🇭🇰 香港 电讯盈科有限公司",
-                "🇳🇱@FREE2CONFIG  4",
-                "Relay_-🇯🇵JP_21",
-                "俄罗斯 001",
-                "🇺🇸 US_346",
-                "🇲🇾MY_242",
-                "🇦🇪 AE_103",
-                "越南|@ripaojiedian",
-                "🇺🇸 US_314",
-                "🇺🇸_US_美国 3",
                 "@Rayan_Config 10",
-                "r♡ya",
-                "香港|@ripaojiedian",
-                "AU澳大利亚(mibei77.com 米贝节点分享)",
-                "中国 053",
-                "俄罗斯 011",
-                "GB英国(mibei77.com 米贝节点分享) 4",
-                "US美国(mibei77.com 米贝节点分享) 12",
-                "立陶宛(mibei77.com 米贝节点分享) 2",
-                "乌克兰(mibei77.com 米贝节点分享) 2",
-                "新加坡3|@ripaojiedian",
-                "美国 478",
                 "🇫🇷FR(AzadNet.t.me) 2",
-                "韩国|@ripaojiedian",
-                "Channel id: @vpnserverrr🇸🇬",
-                "美国 222",
-                "@Daily_Configs 2",
-                "南非 001",
-                "🇭🇰 HK_182",
-                "🇸🇬 SG_267",
-                "🇳🇱@FREE2CONFIG   2",
-                "🇭🇰@FREE2CONFIG  2",
-                "美国 223",
-                "荷兰 013",
-                "中国 046",
-                "亚太地区 001",
-                "🇭🇰 HK_181",
                 "美国 219",
-                "🇺🇸US(AzadNet.t.me) 8",
-                "🇭🇰@FREE2CONFIG ",
-                "US 7",
+                "🇽🇽XX(AzadNet.t.me) 2",
+                "美国 680",
+                "韩国 003",
+                "🇸🇬 SG_267",
+                "🇳🇱@FREE2CONFIG  8",
+                "美国 491",
+                "美国 668",
+                "🇳🇱@FREE2CONFIG   2",
+                "🇺🇸 US_346",
+                "亚太地区 002",
+                "亚太地区 001",
+                "🇺🇸US(AzadNet.t.me) 7",
+                "美国 669",
+                "🇭🇰 HK_235",
+                "🇺🇸 US_451",
+                "日本 038",
+                "立陶宛(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 77",
                 "All-@IRAN_V2RAY1",
                 "CN_speednode_0016",
-                "Relay_🇺🇸US-🇸🇬SG_390",
-                "🏁 ZZ_401",
-                "Channel id: @ShadowProxy66🇳🇱",
-                "🇽🇽XX(AzadNet.t.me) 2",
-                "美国 224",
-                "日本 038",
+                "🇺🇸US(AzadNet.t.me) 8",
+                "美国 225",
+                "俄罗斯 011",
+                "俄罗斯(mibei77.com 米贝节点分享)",
+                "法国 国际航空电讯集团公司(SITA)",
+                "韩国|@ripaojiedian",
+                "🇺🇸 US_413",
+                "🇺🇸 US_414",
+                "🇭🇰@FREE2CONFIG ",
+                "🏁 ZZ_496",
+                "美国 222",
+                "Channel id: @vpnserverrr🇸🇬",
+                "美国 666",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "美国 655",
+                "AU澳大利亚(mibei77.com 米贝节点分享)",
+                "🇺🇸 US_399",
+                "🇳🇱@FREE2CONFIG  4",
                 "🇺🇲@FreakConfig",
-                "🇺🇸US(AzadNet.t.me) 7",
-                "美国 225"
+                "乌克兰(mibei77.com 米贝节点分享)",
+                "中国 046",
+                "FR法国(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 19",
+                "美国 242",
+                "GB英国(mibei77.com 米贝节点分享) 3",
+                "美国 665",
+                "美国 667",
+                "中国 053",
+                "🇦🇪 AE_103",
+                "南非 001",
+                "_75",
+                "🇺🇸 US_436",
+                "澳大利亚 002",
+                "俄罗斯 001",
+                "美国 223",
+                "巴西 017"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
