@@ -75,46 +75,94 @@
     ],
     "outbounds": [
         {
+            "tag": "CN_speednode_0002",
+            "type": "trojan",
+            "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+            "server_port": 26004,
+            "password": "e531d1bc-a56f-4e1a-a295-1442369a19c1",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.bilibili.com"
+            }
+        },
+        {
+            "tag": "美国 542",
+            "type": "vless",
+            "server": "104.16.253.83",
+            "server_port": 443,
+            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vless7-7a1.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "vless7-7a1.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "中国 095",
+            "type": "vmess",
+            "server": "v8.heduian.link",
+            "server_port": 30808,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "v8.heduian.link"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
+            "tag": "🇬🇧_GB_英国",
+            "type": "shadowsocks",
+            "server": "51.15.17.169",
+            "server_port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+        },
+        {
+            "tag": "🇨🇳_CN_中国->🇺🇸_US_美国 2",
+            "type": "vmess",
+            "server": "v5.heduian.link",
+            "server_port": 30805,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "v5.heduian.link"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
+            "tag": "🇨🇳_CN_中国 2",
+            "type": "vless",
+            "server": "89.44.242.222",
+            "server_port": 29495,
+            "uuid": "4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b",
+            "packet_encoding": "xudp"
+        },
+        {
             "tag": "🇦🇺_AU_澳大利亚",
             "type": "shadowsocks",
             "server": "3.25.225.79",
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
-        },
-        {
-            "tag": "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
-            "type": "hysteria",
-            "server": "195.154.200.40",
-            "server_port": 15010,
-            "up_mbps": 100,
-            "down_mbps": 100,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇳🇱@FREE2CONFIG  10",
-            "type": "hysteria",
-            "server": "51.159.226.1",
-            "server_port": 49003,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
         },
         {
             "tag": "🇨🇦 机场推荐:dafei.de 加拿大 03",
@@ -139,22 +187,6 @@
             "server": "ca9e76f5-t4a9s0-tifnix-1ro8s.us.hyhuawei.com",
             "server_port": 443,
             "password": "a18ef18e-293a-11ef-b76e-f23c91cfbbc9",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇭🇰 香港家宽 178",
-            "type": "hysteria2",
-            "server": "15755c8e-t4a9s0-tb016b-1m7l4.hk2.hyhuawei.com",
-            "server_port": 443,
-            "password": "bd515574-3b10-11ee-ac14-f23c9164ca5d",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
@@ -206,22 +238,6 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 281",
-            "type": "hysteria2",
-            "server": "af3d693a-t48f40-t4up6r-1f0gu.us.hyhuawei.com",
-            "server_port": 443,
-            "password": "3085fcf8-a69c-11ec-bd7c-f23c913c8d2b",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 美国 221",
             "type": "hysteria2",
             "server": "be74b8f2-t48f40-tfvcxz-1nq4g.us.hyhuawei.com",
@@ -254,22 +270,6 @@
             }
         },
         {
-            "tag": "🇭🇰 香港家宽 228",
-            "type": "hysteria2",
-            "server": "beae2572-t4a9s0-t4ixjm-1hhyy.hk2.hyhuawei.com",
-            "server_port": 443,
-            "password": "c594c7ec-8b10-11ef-a2b8-f23c9164ca5d",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 美国 187",
             "type": "hysteria2",
             "server": "a4c80725-t48f40-t7udc0-1pqhp.us.hyhuawei.com",
@@ -283,23 +283,6 @@
                 "alpn": [
                     "h3"
                 ]
-            }
-        },
-        {
-            "tag": "🇸🇬 新加坡 08",
-            "type": "vmess",
-            "server": "v12.heduian.link",
-            "server_port": 30812,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "ocbc.com"
-                },
-                "path": "/oooo"
             }
         },
         {
@@ -446,14 +429,6 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 219",
-            "type": "shadowsocks",
-            "server": "54.84.99.165",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
-        },
-        {
             "tag": "🇺🇸 美国 302",
             "type": "hysteria2",
             "server": "78728043-t48f40-t72h4q-1spnr.us.hyhuawei.com",
@@ -486,22 +461,6 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 164",
-            "type": "hysteria2",
-            "server": "f343c51c-t48f40-tbicd9-1go3q.us.hyhuawei.com",
-            "server_port": 443,
-            "password": "19dd9c70-e4a5-11ed-8347-f23c9164ca5d",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 美国 007",
             "type": "hysteria2",
             "server": "ba425942-t4a9s0-tcsjnd-1tff5.us.hyhuawei.com",
@@ -515,28 +474,6 @@
                 "alpn": [
                     "h3"
                 ]
-            }
-        },
-        {
-            "tag": "🇫🇮 芬兰 02",
-            "type": "vless",
-            "server": "178.20.215.2",
-            "server_port": 443,
-            "uuid": "192ea2c7-d7d0-6676-2929-b04a072b387d",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "speed.cloudflare.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
@@ -572,22 +509,6 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 038",
-            "type": "hysteria2",
-            "server": "c1f1b19f-t4a9s0-t71mow-4cl7.us.hyhuawei.com",
-            "server_port": 443,
-            "password": "7c129766-8656-11ea-8fc9-f23c913c8d2b",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:27.8ms",
             "type": "vless",
             "server": "best.cdniran.info",
@@ -605,25 +526,863 @@
             }
         },
         {
-            "tag": "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Lelystad🅿️ping:47.84ms",
-            "type": "vless",
-            "server": "yofree.top",
-            "server_port": 443,
-            "uuid": "00d23508-a9e0-11f0-a6ec-52540015e6ea",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
+            "tag": "KR_speednode_0006",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
             "tls": {
                 "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "🇺🇸 美国 5",
+            "type": "vmess",
+            "server": "entrance01.qqa678.cc",
+            "server_port": 47084,
+            "uuid": "8e94ed0e-3717-4c46-aa13-6757a89b392e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇮🇳_IN_印度",
+            "type": "shadowsocks",
+            "server": "134.209.147.198",
+            "server_port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+        },
+        {
+            "tag": "🇸🇬 SG_337",
+            "type": "vmess",
+            "server": "47.245.106.193",
+            "server_port": 22286,
+            "uuid": "8646218f-a600-4b73-8721-aa5d4567819e",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "http",
+                "method": "GET",
+                "path": "/"
+            }
+        },
+        {
+            "tag": "🏁 ZZ_451",
+            "type": "vmess",
+            "server": "163.223.52.61",
+            "server_port": 44829,
+            "uuid": "05452c63-4e27-4af6-e0e6-92ceff88cba7",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇭🇰@FREE2CONFIG ",
+            "type": "hysteria2",
+            "server": "103.136.150.23",
+            "server_port": 22153,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hsxg.huasuan666.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "Russia🇷🇺",
+            "type": "hysteria2",
+            "server": "hsels.huasuan666.top",
+            "server_port": 22160,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hsels.huasuan666.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇷🇺@FREE2CONFIG ",
+            "type": "hysteria2",
+            "server": "45.130.146.158",
+            "server_port": 22160,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hsels.huasuan666.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸@FREE2CONFIG  8",
+            "type": "hysteria2",
+            "server": "107.167.18.99",
+            "server_port": 443,
+            "password": "7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "bc2a2b46-t48f40-t5ixb5-1rk0x.us.hyhuawei.com",
                 "insecure": false,
-                "server_name": "yofree.top",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AWyicEDYi7KB3qzo8OEvEd1HK0gZhCHAENBd_buyhQk",
-                    "short_id": "fa2f"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰@FREE2CONFIG  3",
+            "type": "hysteria2",
+            "server": "220.246.94.129",
+            "server_port": 443,
+            "password": "06b2ac52-fcc6-11ec-bb74-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "d24ca6a4-t46kg0-t9byd7-1jfvb.hk1.hyhuawei.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱@FREE2CONFIG  26",
+            "type": "hysteria2",
+            "server": "195.133.79.116",
+            "server_port": 22157,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hshl.huasuan666.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🥊97@ConfigV2RayNG﻿",
+            "type": "hysteria2",
+            "server": "hsxg.huasuan666.top",
+            "server_port": 22153,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hsxg.huasuan666.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 308",
+            "type": "hysteria2",
+            "server": "813f61a6-t48f40-tk5ls1-z7a1.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 206",
+            "type": "hysteria2",
+            "server": "83f33f6a-t48f40-tkhmfr-1jm8i.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "a6ddfc37-05eb-11ed-af40-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 212",
+            "type": "hysteria2",
+            "server": "624d7264-t48f40-tkp3tl-1s09x.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "62b7824e-47dc-11ef-9f2d-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 142",
+            "type": "hysteria2",
+            "server": "9e16e299-t4a9s0-t7uinf-i8ie.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 149",
+            "type": "hysteria2",
+            "server": "228267f7-t4a9s0-tcmtfl-1qudp.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "99129cef-f705-11ee-ada6-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 157",
+            "type": "hysteria2",
+            "server": "5fe41dde-t4a9s0-t7x08i-1i87l.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "40d572ec-7f67-11ed-bf1f-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 145",
+            "type": "hysteria2",
+            "server": "c6b2146f-t4a9s0-t5ivfn-1m0fq.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "a698c4a6-c3c9-11ee-9693-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 034",
+            "type": "hysteria2",
+            "server": "556e9288-t48f40-t5j6xt-1fqef.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "1239028c-a825-11ed-a0ca-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 060",
+            "type": "hysteria2",
+            "server": "b5fba5d6-t48f40-t72h4q-1spnr.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "127e3f92-f714-11ef-bbb0-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 298",
+            "type": "hysteria2",
+            "server": "5b127592-t48f40-t7k911-1gxvd.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "398e0d38-8649-11ef-959c-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 047",
+            "type": "hysteria2",
+            "server": "2628b64d-t46kg0-tk30wc-eyem.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "64617ed2-4823-11ef-9f2d-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 070",
+            "type": "hysteria2",
+            "server": "bf342bb9-t4a9s0-tbcla6-194tt.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "602e99aa-718d-11eb-b77b-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 248",
+            "type": "hysteria2",
+            "server": "a9f8577d-t4a9s0-t7udc0-1pqhp.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "b02327ac-a49a-11ef-a673-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 135",
+            "type": "hysteria2",
+            "server": "ece05216-t4a9s0-t5hirq-1hfyu.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "ab0147e4-e673-11ee-8058-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 185",
+            "type": "hysteria2",
+            "server": "4042b2ec-t48f40-tc2sod-1tizo.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "bf36227c-0191-11f0-aee1-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 057",
+            "type": "hysteria2",
+            "server": "a31db376-t4a9s0-t50m4g-xu74.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "715a2574-9c25-11eb-8673-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 095",
+            "type": "hysteria2",
+            "server": "f77d4a19-t4a9s0-t5hnap-nx3b.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "32315324-cf6b-11ed-979b-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 210",
+            "type": "hysteria2",
+            "server": "9673f3cf-t4a9s0-tlvq5w-1jcwu.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "f93486ce-cc84-11ed-9e98-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 032",
+            "type": "hysteria2",
+            "server": "e45d16c5-t4a9s0-tdwxjg-vmdo.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "24e32978-4858-11eb-8684-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 032",
+            "type": "hysteria2",
+            "server": "f658b572-t46kg0-t5j6xt-1fqef.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "1239028c-a825-11ed-a0ca-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 350",
+            "type": "hysteria2",
+            "server": "52846687-t46kg0-tcdlur-1qwom.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "52846687-t46kg0-tcdlur-1qwom.hk2.hyhuawei.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 261",
+            "type": "hysteria2",
+            "server": "53c3b585-t4a9s0-taj9mo-1tco3.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "e29de954-ea01-11ef-a271-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇸🇬 新加坡 05",
+            "type": "vless",
+            "server": "www.wto.org",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "freedom.pusytroller.cf"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 124",
+            "type": "hysteria2",
+            "server": "492e4fd1-t4a9s0-td1l1t-1s824.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 292",
+            "type": "hysteria2",
+            "server": "07d638ae-t48f40-t6eg6k-1pckg.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "526a1128-7487-11ee-9bca-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 223",
+            "type": "hysteria2",
+            "server": "1033e451-t48f40-t5wcb1-13x18.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "e4499a62-0cfe-11eb-ad8c-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 199",
+            "type": "hysteria2",
+            "server": "cca5c0cb-t4a9s0-t5hsrg-1j0a4.hk1.hyhuawei.com",
+            "server_port": 443,
+            "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 214",
+            "type": "hysteria2",
+            "server": "8be7a528-t48f40-tc61cs-1tja8.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 014",
+            "type": "hysteria2",
+            "server": "923d5fdd-t4a9s0-thcykv-14au8.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "44811728-ebd8-11ec-adf5-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 035",
+            "type": "hysteria2",
+            "server": "83f75fca-t4a9s0-th9kx9-1os43.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "96c798f6-4645-11ee-b8a1-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 040",
+            "type": "hysteria2",
+            "server": "c33a02a7-t4a9s0-t5ca44-1rfon.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 027",
+            "type": "hysteria2",
+            "server": "29e6e4da-t48f40-t6i5o0-gacy.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "20f87b02-0eaa-11eb-8684-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 119",
+            "type": "hysteria2",
+            "server": "8d984885-t4a9s0-tiqsce-t6fv.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "af7ddbb2-3567-11ec-bd7c-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 329",
+            "type": "hysteria2",
+            "server": "162f4bdd-t48f40-tdcdb7-1k27l.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 147",
+            "type": "hysteria2",
+            "server": "d35bc4cb-t4a9s0-tcdlur-1qwom.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 085",
+            "type": "hysteria2",
+            "server": "43a514c4-t4a9s0-tk4rx8-1n7d9.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "48e51dfa-db8f-11ed-a23f-f23c91369f2d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 香港家宽 252",
+            "type": "hysteria2",
+            "server": "fd355def-t4a9s0-tcr97d-2b2n.hk2.hyhuawei.com",
+            "server_port": 443,
+            "password": "fcd39788-ca23-11ed-86e2-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 113",
+            "type": "hysteria2",
+            "server": "07e3f156-t4a9s0-t59z4l-1oijm.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "bf140bc0-3f68-11ee-953a-f23c9164ca5d",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 049",
+            "type": "hysteria2",
+            "server": "6cfa8d1a-t4a9s0-t7scm6-1o20w.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "d70a9508-5477-11ef-bf61-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 073",
+            "type": "hysteria2",
+            "server": "08c17c5f-t4a9s0-tbnucr-1thfv.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 092",
+            "type": "hysteria2",
+            "server": "18ede06e-t4a9s0-t83bw1-1f596.us.hyhuawei.com",
+            "server_port": 443,
+            "password": "e3975a05-b89e-11ec-a50d-f23c91cfbbc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇮🇪 爱尔兰 01",
+            "type": "shadowsocks",
+            "server": "54.216.80.211",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "美国(yudou123.top 玉豆免费节点) 27",
+            "type": "vless",
+            "server": "183.240.179.88",
+            "server_port": 11443,
+            "uuid": "df245bf8-8253-4029-90d8-ef30cfac75f1",
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore (Pioneer)🅿️ping:172.43ms",
+            "type": "vless",
+            "server": "178.128.17.93",
+            "server_port": 11125,
+            "uuid": "171bf1a6-237d-49ce-ab00-32758da0f9a2",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/FREE By Tharuwa (0767597317)",
+                "headers": {
+                    "Host": "zoom.us"
                 }
             }
         },
@@ -633,82 +1392,184 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇸🇬 新加坡 08",
-                "🇺🇸 美国 140",
-                "🇺🇸 美国 165",
-                "🇺🇸 美国 029",
-                "🇺🇸 美国 281",
-                "🇺🇸 美国 306",
-                "🇺🇸 美国 031",
-                "🇺🇸 美国 219",
                 "🇺🇸 美国 236",
-                "🇫🇷 法国 02",
-                "🇺🇸 美国 303",
-                "🇺🇸 美国 087",
-                "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Lelystad🅿️ping:47.84ms",
-                "🇦🇺_AU_澳大利亚",
+                "🇨🇳_CN_中国 2",
+                "🇺🇸 美国 095",
+                "🥊97@ConfigV2RayNG﻿",
+                "🇮🇳_IN_印度",
+                "🏁 ZZ_451",
+                "🇺🇸 美国 165",
+                "🇺🇸 美国 206",
+                "🇺🇸 美国 308",
+                "🇺🇸 美国 212",
                 "🇺🇸 美国 037",
-                "🇺🇸 美国 043",
-                "🇨🇦 机场推荐:dafei.de 加拿大 03",
-                "🇫🇮 芬兰 02",
-                "🇺🇸 美国 038",
-                "🇺🇸 美国 023",
-                "🇺🇸 美国 221",
-                "🇺🇸 美国 264",
-                "🇭🇰 香港家宽 228",
-                "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:27.8ms",
-                "🇺🇸 美国 164",
-                "🇭🇰 香港家宽 178",
-                "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
-                "🇺🇸 美国 302",
-                "🇺🇸 美国 203",
-                "🇺🇸 美国 244",
-                "🇺🇸 美国 007",
-                "🇺🇸 美国 202",
                 "🇺🇸 美国 323",
-                "🇳🇱@FREE2CONFIG  10",
-                "🇺🇸 美国 187"
+                "🇺🇸 美国 303",
+                "🇺🇸 美国 145",
+                "美国(yudou123.top 玉豆免费节点) 27",
+                "🇭🇰 香港家宽 034",
+                "🇺🇸 美国 298",
+                "🇦🇺_AU_澳大利亚",
+                "🇺🇸 美国 264",
+                "🇺🇸 美国 119",
+                "🇺🇸 美国 070",
+                "🇺🇸 美国 043",
+                "🇺🇸 美国 087",
+                "🇳🇱@FREE2CONFIG  26",
+                "🇭🇰 香港家宽 032",
+                "🇺🇸 美国 302",
+                "🇺🇸 美国 306",
+                "KR_speednode_0006",
+                "🇺🇸 美国 040",
+                "🇭🇰 香港家宽 329",
+                "🇺🇸 美国 049",
+                "🇭🇰 香港家宽 157",
+                "🇺🇸 美国 147",
+                "🇺🇸 美国 223",
+                "🇺🇸 美国 014",
+                "🇺🇸 美国 187",
+                "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:27.8ms",
+                "🇭🇰 香港家宽 252",
+                "🇭🇰 香港家宽 027",
+                "🇭🇰@FREE2CONFIG  3",
+                "🇺🇸 美国 057",
+                "🇺🇸 美国 023",
+                "🇭🇰 香港家宽 292",
+                "🇮🇪 爱尔兰 01",
+                "🇺🇸 美国 035",
+                "CN_speednode_0002",
+                "🇨🇳_CN_中国->🇺🇸_US_美国 2",
+                "🇬🇧_GB_英国",
+                "🇭🇰 香港家宽 047",
+                "🇺🇸@FREE2CONFIG  8",
+                "🇺🇸 美国 185",
+                "🇺🇸 美国 092",
+                "🇺🇸 美国 221",
+                "🇭🇰 香港家宽 149",
+                "🇭🇰 香港家宽 248",
+                "🇭🇰 香港家宽 060",
+                "🇺🇸 美国 032",
+                "🇷🇺@FREE2CONFIG ",
+                "🇺🇸 美国 031",
+                "🇺🇸 美国 140",
+                "🇺🇸 美国 007",
+                "🇨🇦 机场推荐:dafei.de 加拿大 03",
+                "🇫🇷 法国 02",
+                "🇺🇸 美国 085",
+                "🇸🇬 SG_337",
+                "🇺🇸 美国 073",
+                "🇺🇸 美国 029",
+                "🇭🇰 香港家宽 210",
+                "🇺🇸 美国 124",
+                "🇺🇸 美国 214",
+                "🇺🇸 美国 203",
+                "🇭🇰 香港家宽 261",
+                "Russia🇷🇺",
+                "🇭🇰 香港家宽 350",
+                "🇺🇸 美国 5",
+                "🇸🇬 新加坡 05",
+                "🇭🇰@FREE2CONFIG ",
+                "🇭🇰 香港家宽 199",
+                "美国 542",
+                "🇺🇸 美国 142",
+                "🇺🇸 美国 244",
+                "🇺🇸 美国 202",
+                "👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore (Pioneer)🅿️ping:172.43ms",
+                "🇺🇸 美国 135",
+                "中国 095",
+                "🇺🇸 美国 113"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇸🇬 新加坡 08",
-                "🇺🇸 美国 140",
-                "🇺🇸 美国 165",
-                "🇺🇸 美国 029",
-                "🇺🇸 美国 281",
-                "🇺🇸 美国 306",
-                "🇺🇸 美国 031",
-                "🇺🇸 美国 219",
                 "🇺🇸 美国 236",
-                "🇫🇷 法国 02",
-                "🇺🇸 美国 303",
-                "🇺🇸 美国 087",
-                "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Lelystad🅿️ping:47.84ms",
-                "🇦🇺_AU_澳大利亚",
+                "🇨🇳_CN_中国 2",
+                "🇺🇸 美国 095",
+                "🥊97@ConfigV2RayNG﻿",
+                "🇮🇳_IN_印度",
+                "🏁 ZZ_451",
+                "🇺🇸 美国 165",
+                "🇺🇸 美国 206",
+                "🇺🇸 美国 308",
+                "🇺🇸 美国 212",
                 "🇺🇸 美国 037",
-                "🇺🇸 美国 043",
-                "🇨🇦 机场推荐:dafei.de 加拿大 03",
-                "🇫🇮 芬兰 02",
-                "🇺🇸 美国 038",
-                "🇺🇸 美国 023",
-                "🇺🇸 美国 221",
-                "🇺🇸 美国 264",
-                "🇭🇰 香港家宽 228",
-                "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:27.8ms",
-                "🇺🇸 美国 164",
-                "🇭🇰 香港家宽 178",
-                "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
-                "🇺🇸 美国 302",
-                "🇺🇸 美国 203",
-                "🇺🇸 美国 244",
-                "🇺🇸 美国 007",
-                "🇺🇸 美国 202",
                 "🇺🇸 美国 323",
-                "🇳🇱@FREE2CONFIG  10",
-                "🇺🇸 美国 187"
+                "🇺🇸 美国 303",
+                "🇺🇸 美国 145",
+                "美国(yudou123.top 玉豆免费节点) 27",
+                "🇭🇰 香港家宽 034",
+                "🇺🇸 美国 298",
+                "🇦🇺_AU_澳大利亚",
+                "🇺🇸 美国 264",
+                "🇺🇸 美国 119",
+                "🇺🇸 美国 070",
+                "🇺🇸 美国 043",
+                "🇺🇸 美国 087",
+                "🇳🇱@FREE2CONFIG  26",
+                "🇭🇰 香港家宽 032",
+                "🇺🇸 美国 302",
+                "🇺🇸 美国 306",
+                "KR_speednode_0006",
+                "🇺🇸 美国 040",
+                "🇭🇰 香港家宽 329",
+                "🇺🇸 美国 049",
+                "🇭🇰 香港家宽 157",
+                "🇺🇸 美国 147",
+                "🇺🇸 美国 223",
+                "🇺🇸 美国 014",
+                "🇺🇸 美国 187",
+                "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:27.8ms",
+                "🇭🇰 香港家宽 252",
+                "🇭🇰 香港家宽 027",
+                "🇭🇰@FREE2CONFIG  3",
+                "🇺🇸 美国 057",
+                "🇺🇸 美国 023",
+                "🇭🇰 香港家宽 292",
+                "🇮🇪 爱尔兰 01",
+                "🇺🇸 美国 035",
+                "CN_speednode_0002",
+                "🇨🇳_CN_中国->🇺🇸_US_美国 2",
+                "🇬🇧_GB_英国",
+                "🇭🇰 香港家宽 047",
+                "🇺🇸@FREE2CONFIG  8",
+                "🇺🇸 美国 185",
+                "🇺🇸 美国 092",
+                "🇺🇸 美国 221",
+                "🇭🇰 香港家宽 149",
+                "🇭🇰 香港家宽 248",
+                "🇭🇰 香港家宽 060",
+                "🇺🇸 美国 032",
+                "🇷🇺@FREE2CONFIG ",
+                "🇺🇸 美国 031",
+                "🇺🇸 美国 140",
+                "🇺🇸 美国 007",
+                "🇨🇦 机场推荐:dafei.de 加拿大 03",
+                "🇫🇷 法国 02",
+                "🇺🇸 美国 085",
+                "🇸🇬 SG_337",
+                "🇺🇸 美国 073",
+                "🇺🇸 美国 029",
+                "🇭🇰 香港家宽 210",
+                "🇺🇸 美国 124",
+                "🇺🇸 美国 214",
+                "🇺🇸 美国 203",
+                "🇭🇰 香港家宽 261",
+                "Russia🇷🇺",
+                "🇭🇰 香港家宽 350",
+                "🇺🇸 美国 5",
+                "🇸🇬 新加坡 05",
+                "🇭🇰@FREE2CONFIG ",
+                "🇭🇰 香港家宽 199",
+                "美国 542",
+                "🇺🇸 美国 142",
+                "🇺🇸 美国 244",
+                "🇺🇸 美国 202",
+                "👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore (Pioneer)🅿️ping:172.43ms",
+                "🇺🇸 美国 135",
+                "中国 095",
+                "🇺🇸 美国 113"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
