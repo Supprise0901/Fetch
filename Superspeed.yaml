@@ -75,38 +75,10 @@
     ],
     "outbounds": [
         {
-            "tag": "香港5|@ripaojiedian",
-            "type": "trojan",
-            "server": "36.151.195.112",
-            "server_port": 4556,
-            "password": "BxceQaOe",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "澳大利亚 001",
-            "type": "vmess",
-            "server": "zhuli.jineng.buzz",
-            "server_port": 80,
-            "uuid": "77cf0cde-fd6c-4336-86de-4c60b797e712",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "hk.jineng.buzz"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "伊朗(mibei77.com 米贝节点分享)",
+            "tag": "KR韩国(mibei77.com 米贝节点分享) 26",
             "type": "vless",
-            "server": "217.60.38.191",
-            "server_port": 2053,
+            "server": "147.75.225.105",
+            "server_port": 443,
             "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
             "packet_encoding": "xudp",
             "tls": {
@@ -116,29 +88,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "Telegram🇨🇳@WangCai2/",
-                "headers": {
-                    "Host": "gaosir.unfeeling.sbs"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "KR韩国(mibei77.com 米贝节点分享) 119",
-            "type": "vless",
-            "server": "218.148.100.87",
-            "server_port": 12228,
-            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "gaosir.unfeeling.sbs"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "Telegram@freecodes/",
+                "path": "/Telegram🇨🇳@WangCai2/",
                 "headers": {
                     "Host": "gaosir.unfeeling.sbs"
                 },
@@ -164,29 +114,17 @@
             }
         },
         {
-            "tag": "KR_speednode_0016 2",
-            "type": "http",
-            "server": "testkr3.ssv.vc",
-            "server_port": 30446,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "test",
-            "password": "test.+"
-        },
-        {
-            "tag": "Kyiv-GetAFreeNode",
-            "type": "hysteria2",
-            "server": "185.126.255.78",
-            "server_port": 45294,
-            "password": "4685eb2a-5ddb-4dc6-9e53-f0c90d6124c1",
-            "up_mbps": 10,
+            "tag": "🇫🇷@FREE2CONFIG  4",
+            "type": "hysteria",
+            "server": "62.210.127.217",
+            "server_port": 40099,
+            "up_mbps": 100,
             "down_mbps": 100,
+            "auth_str": "dongtaiwang.com",
             "tls": {
                 "enabled": true,
-                "server_name": "real.getafreenode.sbs",
-                "insecure": false,
+                "server_name": "apple.com",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
@@ -215,33 +153,49 @@
             }
         },
         {
+            "tag": "美国(yudou123.top 玉豆免费节点) 175",
+            "type": "vless",
+            "server": "222.113.18.207",
+            "server_port": 18001,
+            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gaosir.unfeeling.sbs"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "Telegram🇨🇳@WangCai2/",
+                "headers": {
+                    "Host": "gaosir.unfeeling.sbs"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "KR_speednode_0016 2",
-                "Kyiv-GetAFreeNode",
                 "🇳🇱@FREE2CONFIG  12",
-                "香港5|@ripaojiedian",
-                "澳大利亚 001",
+                "KR韩国(mibei77.com 米贝节点分享) 26",
                 "美国(yudou123.top 玉豆免费节点) 56",
-                "KR韩国(mibei77.com 米贝节点分享) 119",
-                "伊朗(mibei77.com 米贝节点分享)"
+                "🇫🇷@FREE2CONFIG  4",
+                "美国(yudou123.top 玉豆免费节点) 175"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "KR_speednode_0016 2",
-                "Kyiv-GetAFreeNode",
                 "🇳🇱@FREE2CONFIG  12",
-                "香港5|@ripaojiedian",
-                "澳大利亚 001",
+                "KR韩国(mibei77.com 米贝节点分享) 26",
                 "美国(yudou123.top 玉豆免费节点) 56",
-                "KR韩国(mibei77.com 米贝节点分享) 119",
-                "伊朗(mibei77.com 米贝节点分享)"
+                "🇫🇷@FREE2CONFIG  4",
+                "美国(yudou123.top 玉豆免费节点) 175"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
