@@ -75,6 +75,62 @@
     ],
     "outbounds": [
         {
+            "tag": "澳大利亚 001",
+            "type": "vmess",
+            "server": "zhuli.jineng.buzz",
+            "server_port": 80,
+            "uuid": "77cf0cde-fd6c-4336-86de-4c60b797e712",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "hk.jineng.buzz"
+                },
+                "path": "/"
+            }
+        },
+        {
+            "tag": "KR韩国(mibei77.com 米贝节点分享) 98",
+            "type": "vless",
+            "server": "222.114.57.191",
+            "server_port": 50001,
+            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gaosir.unfeeling.sbs"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "Telegram@freecodes/",
+                "headers": {
+                    "Host": "gaosir.unfeeling.sbs"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇳🇱@FREE2CONFIG  12",
+            "type": "hysteria",
+            "server": "51.159.226.1",
+            "server_port": 49003,
+            "up_mbps": 11,
+            "down_mbps": 55,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "🇫🇷@FREE2CONFIG  4",
             "type": "hysteria",
             "server": "62.210.127.217",
@@ -109,23 +165,6 @@
             }
         },
         {
-            "tag": "Fremont-GetAFreeNode",
-            "type": "hysteria2",
-            "server": "104.250.239.32",
-            "server_port": 53810,
-            "password": "ebbeef45-0fd8-40cd-aca5-1e2ce18abeff",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "real.getafreenode.sbs",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
@@ -133,7 +172,9 @@
                 "direct",
                 "Kyiv-GetAFreeNode",
                 "🇫🇷@FREE2CONFIG  4",
-                "Fremont-GetAFreeNode"
+                "🇳🇱@FREE2CONFIG  12",
+                "澳大利亚 001",
+                "KR韩国(mibei77.com 米贝节点分享) 98"
             ]
         },
         {
@@ -142,7 +183,9 @@
             "outbounds": [
                 "Kyiv-GetAFreeNode",
                 "🇫🇷@FREE2CONFIG  4",
-                "Fremont-GetAFreeNode"
+                "🇳🇱@FREE2CONFIG  12",
+                "澳大利亚 001",
+                "KR韩国(mibei77.com 米贝节点分享) 98"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
