@@ -75,6 +75,26 @@
     ],
     "outbounds": [
         {
+            "tag": "HK香港(mibei77.com 米贝节点分享) 4",
+            "type": "vless",
+            "server": "223.16.138.113",
+            "server_port": 10002,
+            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gaosir.unfeeling.sbs"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/X@节点狂魔/",
+                "headers": {
+                    "Host": "gaosir.unfeeling.sbs"
+                }
+            }
+        },
+        {
             "tag": "CH_speednode_0002",
             "type": "vless",
             "server": "83.228.208.219",
@@ -98,51 +118,6 @@
             }
         },
         {
-            "tag": "KR_speednode_0010 2",
-            "type": "http",
-            "server": "testkr3.ssv.vc",
-            "server_port": 30446,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "test",
-            "password": "test.+"
-        },
-        {
-            "tag": "wG8YzXGY_hysteria2",
-            "type": "hysteria2",
-            "server": "40.233.71.37",
-            "server_port": 30300,
-            "password": "2429bee3-e0c1-47dd-b420-75e6512b184b",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇨🇦 机场推荐:dafei.de 加拿大 04",
-            "type": "hysteria2",
-            "server": "40.233.92.219",
-            "server_port": 13805,
-            "password": "dcdd09ad-4519-46f7-8107-4c4290a9b2a3",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇳🇱@FREE2CONFIG  18",
             "type": "hysteria",
             "server": "51.159.226.1",
@@ -160,46 +135,23 @@
             }
         },
         {
-            "tag": "🇫🇷@FREE2CONFIG  5",
-            "type": "hysteria",
-            "server": "62.210.127.217",
-            "server_port": 40099,
-            "up_mbps": 100,
-            "down_mbps": 100,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇫🇷@FREE2CONFIG  5",
-                "KR_speednode_0010 2",
-                "🇳🇱@FREE2CONFIG  18",
-                "🇨🇦 机场推荐:dafei.de 加拿大 04",
-                "wG8YzXGY_hysteria2",
-                "CH_speednode_0002"
+                "CH_speednode_0002",
+                "HK香港(mibei77.com 米贝节点分享) 4",
+                "🇳🇱@FREE2CONFIG  18"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷@FREE2CONFIG  5",
-                "KR_speednode_0010 2",
-                "🇳🇱@FREE2CONFIG  18",
-                "🇨🇦 机场推荐:dafei.de 加拿大 04",
-                "wG8YzXGY_hysteria2",
-                "CH_speednode_0002"
+                "CH_speednode_0002",
+                "HK香港(mibei77.com 米贝节点分享) 4",
+                "🇳🇱@FREE2CONFIG  18"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
