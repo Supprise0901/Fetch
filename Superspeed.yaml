@@ -126,23 +126,100 @@
             }
         },
         {
+            "tag": "FR_speednode_0001",
+            "type": "shadowsocks",
+            "server": "15.237.118.240",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "FR_speednode_0002",
+            "type": "shadowsocks",
+            "server": "13.36.166.230",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "6VItGzTm_hysteria2",
+            "type": "hysteria2",
+            "server": "103.136.150.23",
+            "server_port": 22153,
+            "password": "571ec94e-613c-430a-93de-397d3d237475",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "🔒",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "KR_9df02_0009",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "美国(yudou678.top 玉豆免费节点) 178",
+            "type": "vless",
+            "server": "222.113.18.207",
+            "server_port": 16030,
+            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gaosir.unfeeling.sbs"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "X@节点狂魔/",
+                "headers": {
+                    "Host": "gaosir.unfeeling.sbs"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "⛰️67@oneclickvpnkeys",
                 "🇫🇷@FREE2CONFIG ",
-                "🇫🇷@FREE2CONFIG  5"
+                "🇫🇷@FREE2CONFIG  5",
+                "FR_speednode_0001",
+                "KR_9df02_0009",
+                "FR_speednode_0002",
+                "6VItGzTm_hysteria2",
+                "⛰️67@oneclickvpnkeys",
+                "美国(yudou678.top 玉豆免费节点) 178"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "⛰️67@oneclickvpnkeys",
                 "🇫🇷@FREE2CONFIG ",
-                "🇫🇷@FREE2CONFIG  5"
+                "🇫🇷@FREE2CONFIG  5",
+                "FR_speednode_0001",
+                "KR_9df02_0009",
+                "FR_speednode_0002",
+                "6VItGzTm_hysteria2",
+                "⛰️67@oneclickvpnkeys",
+                "美国(yudou678.top 玉豆免费节点) 178"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
