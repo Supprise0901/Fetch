@@ -75,6 +75,23 @@
     ],
     "outbounds": [
         {
+            "tag": "香港|@ripaojiedian",
+            "type": "vmess",
+            "server": "v9.heduian.link",
+            "server_port": 30809,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "baidu.com"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
             "tag": "香港5|@ripaojiedian",
             "type": "trojan",
             "server": "58.152.53.3",
@@ -86,50 +103,35 @@
             }
         },
         {
+            "tag": "新加坡3|@ripaojiedian",
+            "type": "trojan",
+            "server": "36.150.215.197",
+            "server_port": 2088,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "CN_speednode_0001",
+            "type": "vless",
+            "server": "linkgulang.evoay.com",
+            "server_port": 53214,
+            "uuid": "6c0472bc-82df-449e-90bd-2f91c6a46402",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.lamer.com.hk"
+            }
+        },
+        {
             "tag": "JP日本(mibei77.com 米贝节点分享)",
             "type": "vless",
             "server": "113.37.149.36",
             "server_port": 12553,
-            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "gaosir.unfeeling.sbs"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/Telegram@节点狂魔/",
-                "headers": {
-                    "Host": "gaosir.unfeeling.sbs"
-                }
-            }
-        },
-        {
-            "tag": "US美国(mibei77.com 米贝节点分享) 61",
-            "type": "vless",
-            "server": "172.237.11.207",
-            "server_port": 8443,
-            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "gaosir.unfeeling.sbs"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/freecodes/",
-                "headers": {
-                    "Host": "gaosir.unfeeling.sbs"
-                }
-            }
-        },
-        {
-            "tag": "US美国(mibei77.com 米贝节点分享) 127",
-            "type": "vless",
-            "server": "147.75.225.105",
-            "server_port": 443,
             "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
             "packet_encoding": "xudp",
             "tls": {
@@ -154,6 +156,18 @@
             "tls": {
                 "enabled": true,
                 "insecure": true
+            }
+        },
+        {
+            "tag": "香港6|@ripaojiedian 3",
+            "type": "trojan",
+            "server": "oss-cn-shanghai.letssepub.com",
+            "server_port": 20021,
+            "password": "adbac894-90b9-4913-b77e-a715a8d4ebc8",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "dingding-doc.com"
             }
         },
         {
@@ -304,32 +318,6 @@
             }
         },
         {
-            "tag": "CN_speednode_0001 2",
-            "type": "vless",
-            "server": "linkgulang.evoay.com",
-            "server_port": 53214,
-            "uuid": "6c0472bc-82df-449e-90bd-2f91c6a46402",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.lamer.com.hk"
-            }
-        },
-        {
-            "tag": "KR_speednode_0003",
-            "type": "http",
-            "server": "testkr3.ssv.vc",
-            "server_port": 30446,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "test",
-            "password": "test.+"
-        },
-        {
             "tag": "US_speednode_0005",
             "type": "hysteria2",
             "server": "b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk",
@@ -344,206 +332,6 @@
                 "alpn": [
                     "h3"
                 ]
-            }
-        },
-        {
-            "tag": "US_speednode_0007",
-            "type": "shadowsocks",
-            "server": "54.90.226.121",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "dada0801"
-        },
-        {
-            "tag": "US_speednode_0008 3",
-            "type": "vless",
-            "server": "usa84.freednet.org",
-            "server_port": 443,
-            "uuid": "f2f5905b-e814-4a9f-beae-8b1353f25a06",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.utexas.edu",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0009",
-            "type": "vless",
-            "server": "usa102.unlockspace.org",
-            "server_port": 443,
-            "uuid": "5c9f0284-a8da-40f0-9bca-da9a98049fb0",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.utexas.edu",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "VN_speednode_0010",
-            "type": "shadowsocks",
-            "server": "103.186.154.159",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0011",
-            "type": "shadowsocks",
-            "server": "103.186.154.196",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0012",
-            "type": "shadowsocks",
-            "server": "103.186.154.192",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0013",
-            "type": "shadowsocks",
-            "server": "103.186.154.194",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0014",
-            "type": "shadowsocks",
-            "server": "103.186.154.225",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0015",
-            "type": "shadowsocks",
-            "server": "103.186.154.228",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0017",
-            "type": "shadowsocks",
-            "server": "103.186.154.41",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0018",
-            "type": "shadowsocks",
-            "server": "103.186.154.253",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0019",
-            "type": "shadowsocks",
-            "server": "103.186.154.39",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0020",
-            "type": "shadowsocks",
-            "server": "103.186.154.62",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0021",
-            "type": "shadowsocks",
-            "server": "103.186.155.105",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0022",
-            "type": "shadowsocks",
-            "server": "103.186.155.106",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0023",
-            "type": "shadowsocks",
-            "server": "103.186.155.12",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0026",
-            "type": "shadowsocks",
-            "server": "103.186.155.16",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "VN_speednode_0028",
-            "type": "shadowsocks",
-            "server": "103.186.155.43",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "美国+弗吉尼亚州阿什本Amazon数据中心",
-            "type": "shadowsocks",
-            "server": "34.235.122.208",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "dada0801"
-        },
-        {
-            "tag": "🇺🇸 机场推荐:dafei.de 美国 11",
-            "type": "hysteria2",
-            "server": "212.192.13.86",
-            "server_port": 33079,
-            "password": "2a4ba254-9519-4d75-b5b4-bb8a64b77647",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
             }
         },
         {
@@ -565,23 +353,6 @@
             "obfs": {
                 "type": "salamander",
                 "password": "1WHvwbb7lzCU3Vro"
-            }
-        },
-        {
-            "tag": "8uMClGRM_hysteria2",
-            "type": "hysteria2",
-            "server": "40.233.103.51",
-            "server_port": 47262,
-            "password": "862e90e1-2f26-4506-b8b9-0adf20da05fc",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "🔒",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
             }
         },
         {
@@ -619,38 +390,6 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 149",
-            "type": "hysteria2",
-            "server": "026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk",
-            "server_port": 1743,
-            "password": "6286105c-fb6d-11ef-be96-f23c93136cb3",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇺🇸 美国 165",
-            "type": "hysteria2",
-            "server": "dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk",
-            "server_port": 1743,
-            "password": "537d7098-fdbe-11ef-8ebc-f23c93141fad",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 美国 167",
             "type": "hysteria2",
             "server": "ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk",
@@ -667,43 +406,11 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 168",
-            "type": "hysteria2",
-            "server": "c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk",
-            "server_port": 1743,
-            "password": "17cdeb6c-f046-11ee-bdac-f23c93141fad",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 美国 166",
             "type": "hysteria2",
             "server": "eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk",
             "server_port": 1743,
             "password": "1b609740-eec2-11ef-8543-f23c93136cb3",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇺🇸 美国 038",
-            "type": "hysteria2",
-            "server": "e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk",
-            "server_port": 1743,
-            "password": "df7bed3c-06eb-11f0-8ebc-f23c93141fad",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
@@ -747,6 +454,263 @@
             }
         },
         {
+            "tag": "KR_speednode_0003",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "VN_speednode_0010",
+            "type": "shadowsocks",
+            "server": "103.186.154.159",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0011",
+            "type": "shadowsocks",
+            "server": "103.186.154.196",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0012",
+            "type": "shadowsocks",
+            "server": "103.186.154.192",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0014",
+            "type": "shadowsocks",
+            "server": "103.186.154.225",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0015",
+            "type": "shadowsocks",
+            "server": "103.186.154.228",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0016",
+            "type": "shadowsocks",
+            "server": "103.186.154.245",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0017",
+            "type": "shadowsocks",
+            "server": "103.186.154.41",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0018",
+            "type": "shadowsocks",
+            "server": "103.186.154.253",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0019",
+            "type": "shadowsocks",
+            "server": "103.186.154.39",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0020",
+            "type": "shadowsocks",
+            "server": "103.186.154.62",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0022",
+            "type": "shadowsocks",
+            "server": "103.186.155.106",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0023",
+            "type": "shadowsocks",
+            "server": "103.186.155.12",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0024",
+            "type": "shadowsocks",
+            "server": "103.186.155.139",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0025",
+            "type": "shadowsocks",
+            "server": "103.186.155.154",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0026",
+            "type": "shadowsocks",
+            "server": "103.186.155.16",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0027",
+            "type": "shadowsocks",
+            "server": "103.186.155.2",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "VN_speednode_0028",
+            "type": "shadowsocks",
+            "server": "103.186.155.43",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+        },
+        {
+            "tag": "🇺🇸 机场推荐:dafei.de 美国 11",
+            "type": "hysteria2",
+            "server": "212.192.13.86",
+            "server_port": 33079,
+            "password": "2a4ba254-9519-4d75-b5b4-bb8a64b77647",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+            }
+        },
+        {
+            "tag": "fuhXWJNj_hysteria2",
+            "type": "hysteria2",
+            "server": "40.233.103.51",
+            "server_port": 47262,
+            "password": "862e90e1-2f26-4506-b8b9-0adf20da05fc",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "🔒",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 149",
+            "type": "hysteria2",
+            "server": "026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk",
+            "server_port": 1743,
+            "password": "6286105c-fb6d-11ef-be96-f23c93136cb3",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 165",
+            "type": "hysteria2",
+            "server": "dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk",
+            "server_port": 1743,
+            "password": "537d7098-fdbe-11ef-8ebc-f23c93141fad",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 168",
+            "type": "hysteria2",
+            "server": "c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk",
+            "server_port": 1743,
+            "password": "17cdeb6c-f046-11ee-bdac-f23c93141fad",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇵🇹 葡萄牙 01",
+            "type": "shadowsocks",
+            "server": "185.231.233.112",
+            "server_port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+        },
+        {
+            "tag": "🇺🇸 美国 038",
+            "type": "hysteria2",
+            "server": "e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk",
+            "server_port": 1743,
+            "password": "df7bed3c-06eb-11f0-8ebc-f23c93141fad",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "🇺🇸 美国 202",
             "type": "vless",
             "server": "212.18.104.19",
@@ -770,117 +734,161 @@
             }
         },
         {
+            "tag": "美国_19",
+            "type": "vmess",
+            "server": "165.154.197.225",
+            "server_port": 35218,
+            "uuid": "1a237dd2-851c-47e1-cf7e-e447a363830a",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "新加坡 16",
+            "type": "shadowsocks",
+            "server": "liubu9.singdns.com",
+            "server_port": 17459,
+            "method": "aes-128-gcm",
+            "password": "57bc0c04-8184-48f5-906b-897d095ed445"
+        },
+        {
+            "tag": "美国(yudou678.top 玉豆免费节点) 33",
+            "type": "vless",
+            "server": "121.165.101.69",
+            "server_port": 19413,
+            "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "gaosir.unfeeling.sbs"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "gaosir.unfeeling.sbs"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "US_speednode_0007",
-                "VN_speednode_0018",
-                "8uMClGRM_hysteria2",
-                "KR_speednode_0003",
-                "VN_speednode_0017",
-                "VN_speednode_0013",
-                "VN_speednode_0020",
-                "US_speednode_0009",
-                "🇺🇸 美国 165",
-                "🇺🇸 美国 025",
-                "VN_speednode_0019",
-                "VN_speednode_0011",
-                "🇺🇸 美国 042",
-                "🇺🇸 美国 150",
-                "💸81@oneclickvpnkeys",
-                "🇺🇸 美国 151",
-                "🇺🇸 机场推荐:dafei.de 美国 11",
-                "🇺🇸 美国 037",
                 "🪔17@oneclickvpnkeys",
-                "US_speednode_0008 3",
+                "香港5|@ripaojiedian",
+                "VN_speednode_0020",
+                "JP日本(mibei77.com 米贝节点分享)",
+                "VN_speednode_0011",
+                "US_speednode_0005",
+                "新加坡 16",
+                "VN_speednode_0014",
+                "VN_speednode_0024",
+                "CN_speednode_0001",
+                "VN_speednode_0026",
+                "香港5|@ripaojiedian 3",
+                "🇺🇸 美国 168",
+                "VN_speednode_0025",
+                "🇺🇸 美国 202",
+                "🇺🇸 美国 166",
+                "香港|@ripaojiedian",
+                "VN_speednode_0012",
+                "🇺🇸 美国 042",
+                "VN_speednode_0023",
+                "新加坡3|@ripaojiedian",
                 "🇫🇷@FREE2CONFIG  3",
                 "美国 112",
-                "🇺🇸 美国 202",
-                "VN_speednode_0010",
-                "🇺🇸 美国 167",
-                "US_speednode_0005",
-                "🇺🇸 美国 146",
-                "VN_speednode_0021",
-                "VN_speednode_0023",
-                "🇺🇸 美国 161",
-                "🇫🇷@FREE2CONFIG  2",
-                "US美国(mibei77.com 米贝节点分享) 127",
-                "VN_speednode_0026",
-                "US美国(mibei77.com 米贝节点分享) 61",
-                "🇳🇱@FREE2CONFIG  7",
-                "香港5|@ripaojiedian",
-                "VN_speednode_0015",
+                "fuhXWJNj_hysteria2",
+                "🇺🇸 美国 165",
                 "VN_speednode_0022",
-                "🇺🇸 美国 038",
+                "VN_speednode_0027",
+                "🇵🇹 葡萄牙 01",
                 "VN_speednode_0028",
-                "🇺🇸 美国 168",
-                "香港5|@ripaojiedian 3",
-                "VN_speednode_0012",
+                "🇺🇸 美国 037",
+                "VN_speednode_0010",
+                "美国(yudou678.top 玉豆免费节点) 33",
+                "🇺🇸 美国 038",
+                "🇺🇸 美国 149",
+                "🇺🇸 美国 150",
                 "🇺🇸 美国 039",
-                "VN_speednode_0014",
-                "🇺🇸 美国 166",
-                "CN_speednode_0001 2",
-                "美国+弗吉尼亚州阿什本Amazon数据中心",
-                "JP日本(mibei77.com 米贝节点分享)",
-                "🇺🇸 美国 149"
+                "VN_speednode_0019",
+                "💸81@oneclickvpnkeys",
+                "🇫🇷@FREE2CONFIG  2",
+                "VN_speednode_0018",
+                "香港6|@ripaojiedian 3",
+                "🇺🇸 美国 167",
+                "VN_speednode_0016",
+                "美国_19",
+                "🇺🇸 美国 025",
+                "🇺🇸 机场推荐:dafei.de 美国 11",
+                "VN_speednode_0015",
+                "🇺🇸 美国 161",
+                "VN_speednode_0017",
+                "🇺🇸 美国 151",
+                "KR_speednode_0003",
+                "🇳🇱@FREE2CONFIG  7",
+                "🇺🇸 美国 146"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US_speednode_0007",
-                "VN_speednode_0018",
-                "8uMClGRM_hysteria2",
-                "KR_speednode_0003",
-                "VN_speednode_0017",
-                "VN_speednode_0013",
-                "VN_speednode_0020",
-                "US_speednode_0009",
-                "🇺🇸 美国 165",
-                "🇺🇸 美国 025",
-                "VN_speednode_0019",
-                "VN_speednode_0011",
-                "🇺🇸 美国 042",
-                "🇺🇸 美国 150",
-                "💸81@oneclickvpnkeys",
-                "🇺🇸 美国 151",
-                "🇺🇸 机场推荐:dafei.de 美国 11",
-                "🇺🇸 美国 037",
                 "🪔17@oneclickvpnkeys",
-                "US_speednode_0008 3",
+                "香港5|@ripaojiedian",
+                "VN_speednode_0020",
+                "JP日本(mibei77.com 米贝节点分享)",
+                "VN_speednode_0011",
+                "US_speednode_0005",
+                "新加坡 16",
+                "VN_speednode_0014",
+                "VN_speednode_0024",
+                "CN_speednode_0001",
+                "VN_speednode_0026",
+                "香港5|@ripaojiedian 3",
+                "🇺🇸 美国 168",
+                "VN_speednode_0025",
+                "🇺🇸 美国 202",
+                "🇺🇸 美国 166",
+                "香港|@ripaojiedian",
+                "VN_speednode_0012",
+                "🇺🇸 美国 042",
+                "VN_speednode_0023",
+                "新加坡3|@ripaojiedian",
                 "🇫🇷@FREE2CONFIG  3",
                 "美国 112",
-                "🇺🇸 美国 202",
-                "VN_speednode_0010",
-                "🇺🇸 美国 167",
-                "US_speednode_0005",
-                "🇺🇸 美国 146",
-                "VN_speednode_0021",
-                "VN_speednode_0023",
-                "🇺🇸 美国 161",
-                "🇫🇷@FREE2CONFIG  2",
-                "US美国(mibei77.com 米贝节点分享) 127",
-                "VN_speednode_0026",
-                "US美国(mibei77.com 米贝节点分享) 61",
-                "🇳🇱@FREE2CONFIG  7",
-                "香港5|@ripaojiedian",
-                "VN_speednode_0015",
+                "fuhXWJNj_hysteria2",
+                "🇺🇸 美国 165",
                 "VN_speednode_0022",
-                "🇺🇸 美国 038",
+                "VN_speednode_0027",
+                "🇵🇹 葡萄牙 01",
                 "VN_speednode_0028",
-                "🇺🇸 美国 168",
-                "香港5|@ripaojiedian 3",
-                "VN_speednode_0012",
+                "🇺🇸 美国 037",
+                "VN_speednode_0010",
+                "美国(yudou678.top 玉豆免费节点) 33",
+                "🇺🇸 美国 038",
+                "🇺🇸 美国 149",
+                "🇺🇸 美国 150",
                 "🇺🇸 美国 039",
-                "VN_speednode_0014",
-                "🇺🇸 美国 166",
-                "CN_speednode_0001 2",
-                "美国+弗吉尼亚州阿什本Amazon数据中心",
-                "JP日本(mibei77.com 米贝节点分享)",
-                "🇺🇸 美国 149"
+                "VN_speednode_0019",
+                "💸81@oneclickvpnkeys",
+                "🇫🇷@FREE2CONFIG  2",
+                "VN_speednode_0018",
+                "香港6|@ripaojiedian 3",
+                "🇺🇸 美国 167",
+                "VN_speednode_0016",
+                "美国_19",
+                "🇺🇸 美国 025",
+                "🇺🇸 机场推荐:dafei.de 美国 11",
+                "VN_speednode_0015",
+                "🇺🇸 美国 161",
+                "VN_speednode_0017",
+                "🇺🇸 美国 151",
+                "KR_speednode_0003",
+                "🇳🇱@FREE2CONFIG  7",
+                "🇺🇸 美国 146"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
