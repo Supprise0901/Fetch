@@ -75,6 +75,84 @@
     ],
     "outbounds": [
         {
+            "tag": "香港|@ripaojiedian",
+            "type": "vmess",
+            "server": "v9.heduian.link",
+            "server_port": 30809,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "baidu.com"
+                },
+                "path": "/oooo"
+            }
+        },
+        {
+            "tag": "香港5|@ripaojiedian",
+            "type": "trojan",
+            "server": "219.79.165.55",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "RU_speednode_0005",
+            "type": "trojan",
+            "server": "95.182.120.208",
+            "server_port": 2053,
+            "password": "3b38715b-f08a-46dd-9904-7531ca4bb6e8",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "joss.gpj.web.id"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/Free-VPN-CF-Geo-Project/95.182.120.208=2053",
+                "headers": {
+                    "Host": "joss.gpj.web.id"
+                }
+            }
+        },
+        {
+            "tag": "🔷🆔@v2ray_configs_pool🔷",
+            "type": "vmess",
+            "server": "dd.openaccessnode.com",
+            "server_port": 5228,
+            "uuid": "6202ab99-7f57-0a6a-180a-e980b41f5789",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇲🇩_MD_摩尔多瓦",
+            "type": "vless",
+            "server": "sk3.node.ibst.me",
+            "server_port": 7079,
+            "uuid": "a54c3b5a-5f44-4411-8c1e-7bf52a567d7f",
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "FR法国(mibei77.com 米贝节点分享)",
+            "type": "vless",
+            "server": "94.131.110.115",
+            "server_port": 8880,
+            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "grpc",
+                "service_name": ""
+            }
+        },
+        {
             "tag": "US美国(mibei77.com 米贝节点分享) 20",
             "type": "vless",
             "server": "89.221.224.225",
@@ -87,6 +165,14 @@
             }
         },
         {
+            "tag": "🇰🇷_KR_韩国",
+            "type": "shadowsocks",
+            "server": "221.139.79.57",
+            "server_port": 37008,
+            "method": "aes-256-cfb",
+            "password": "qwerREWQ@@"
+        },
+        {
             "tag": "⭐@mshojaei77 | 🇬🇧 1UK",
             "type": "hysteria",
             "server": "uk1.shiyuandian.shop",
@@ -97,23 +183,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "uk1.shiyuandian.shop",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "Lahovgyt_hysteria2",
-            "type": "hysteria2",
-            "server": "mg1.mangshe.xyz",
-            "server_port": 2056,
-            "password": "78c2bad7-f5f3-41f2-88cc-81de9d05040b",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "🔒",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -154,28 +223,6 @@
             }
         },
         {
-            "tag": "🇺🇸_美国_5",
-            "type": "vmess",
-            "server": "172.82.67.156.sslip.io",
-            "server_port": 443,
-            "uuid": "55821780-6970-49df-8a23-800c2c9b7d3a",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "172.82.67.156.sslip.io"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "172.82.67.156.sslip.io"
-                },
-                "path": "/SGBvMNdpPtNtvgyaVXm"
-            }
-        },
-        {
             "tag": "法国",
             "type": "hysteria2",
             "server": "163.172.21.105",
@@ -190,29 +237,6 @@
                 "alpn": [
                     "h3"
                 ]
-            }
-        },
-        {
-            "tag": "荷蘭",
-            "type": "vless",
-            "server": "89.23.96.122",
-            "server_port": 443,
-            "uuid": "9d97c649-47a5-47e2-aa33-65e30e74bc76",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "stats.vk-portal.net",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "6_Fj5F7wmZoehHhk7X0su7zMfN9J5SiQa4GNgXtJl1o",
-                    "short_id": "69fa4297"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
@@ -238,35 +262,193 @@
             }
         },
         {
+            "tag": "⭐@mshojaei77 | 🇸🇬 1Poland",
+            "type": "hysteria",
+            "server": "sg1.shiyuandian.shop",
+            "server_port": 10317,
+            "up_mbps": 100,
+            "down_mbps": 200,
+            "auth_str": "ae845cbd-08fb-4346-929a-e28a6f3960a8",
+            "tls": {
+                "enabled": true,
+                "server_name": "sg1.shiyuandian.shop",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "Channel id: @proxy_kafee🇺🇸 4",
+            "type": "hysteria2",
+            "server": "51.81.223.22",
+            "server_port": 30102,
+            "password": "338ce171-d764-4610-8fd5-6688b0d321f0",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇸🇬@FREE2CONFIG ",
+            "type": "hysteria",
+            "server": "154.18.239.101",
+            "server_port": 10317,
+            "up_mbps": 100,
+            "down_mbps": 200,
+            "auth_str": "ae845cbd-08fb-4346-929a-e28a6f3960a8",
+            "tls": {
+                "enabled": true,
+                "server_name": "sg1.shiyuandian.shop",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣ 2",
+            "type": "hysteria",
+            "server": "195.154.200.40",
+            "server_port": 15010,
+            "up_mbps": 100,
+            "down_mbps": 100,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "⭐@mshojaei77 | 🇺🇸 1Usa",
+            "type": "hysteria",
+            "server": "us1.shiyuandian.shop",
+            "server_port": 10014,
+            "up_mbps": 100,
+            "down_mbps": 200,
+            "auth_str": "ae845cbd-08fb-4346-929a-e28a6f3960a8",
+            "tls": {
+                "enabled": true,
+                "server_name": "us1.shiyuandian.shop",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸@FREE2CONFIG  12",
+            "type": "hysteria",
+            "server": "206.206.123.187",
+            "server_port": 10014,
+            "up_mbps": 100,
+            "down_mbps": 200,
+            "auth_str": "ae845cbd-08fb-4346-929a-e28a6f3960a8",
+            "tls": {
+                "enabled": true,
+                "server_name": "us1.shiyuandian.shop",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "新加坡1",
+            "type": "hysteria2",
+            "server": "sg.xn--9kqx4sc0n.shop",
+            "server_port": 21932,
+            "password": "110f8d29-f9d0-47dc-abe4-2f4ac679879b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇨🇦 加拿大 08",
+            "type": "hysteria2",
+            "server": "mla6.maliaojc.top",
+            "server_port": 58330,
+            "password": "07ddbe26-1527-4f47-bdfb-60f57e5ca58c",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "mla6.maliaojc.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "gKYOfkWf_hysteria2",
+                "香港5|@ripaojiedian",
                 "新加坡2",
-                "法国",
-                "Lahovgyt_hysteria2",
+                "🇲🇩_MD_摩尔多瓦",
+                "FR法国(mibei77.com 米贝节点分享)",
                 "⭐@mshojaei77 | 🇬🇧 1UK",
-                "US美国(mibei77.com 米贝节点分享) 20",
-                "荷蘭",
                 "哈萨克斯坦",
-                "🇺🇸_美国_5"
+                "香港|@ripaojiedian",
+                "🔷🆔@v2ray_configs_pool🔷",
+                "RU_speednode_0005",
+                "🇰🇷_KR_韩国",
+                "⭐@mshojaei77 | 🇸🇬 1Poland",
+                "⭐@mshojaei77 | 🇺🇸 1Usa",
+                "US美国(mibei77.com 米贝节点分享) 20",
+                "Channel id: @proxy_kafee🇺🇸 4",
+                "法国",
+                "gKYOfkWf_hysteria2",
+                "🇨🇦 加拿大 08",
+                "🇺🇸@FREE2CONFIG  12",
+                "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣ 2",
+                "新加坡1",
+                "🇸🇬@FREE2CONFIG "
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "gKYOfkWf_hysteria2",
+                "香港5|@ripaojiedian",
                 "新加坡2",
-                "法国",
-                "Lahovgyt_hysteria2",
+                "🇲🇩_MD_摩尔多瓦",
+                "FR法国(mibei77.com 米贝节点分享)",
                 "⭐@mshojaei77 | 🇬🇧 1UK",
-                "US美国(mibei77.com 米贝节点分享) 20",
-                "荷蘭",
                 "哈萨克斯坦",
-                "🇺🇸_美国_5"
+                "香港|@ripaojiedian",
+                "🔷🆔@v2ray_configs_pool🔷",
+                "RU_speednode_0005",
+                "🇰🇷_KR_韩国",
+                "⭐@mshojaei77 | 🇸🇬 1Poland",
+                "⭐@mshojaei77 | 🇺🇸 1Usa",
+                "US美国(mibei77.com 米贝节点分享) 20",
+                "Channel id: @proxy_kafee🇺🇸 4",
+                "法国",
+                "gKYOfkWf_hysteria2",
+                "🇨🇦 加拿大 08",
+                "🇺🇸@FREE2CONFIG  12",
+                "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣ 2",
+                "新加坡1",
+                "🇸🇬@FREE2CONFIG "
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
