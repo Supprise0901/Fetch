@@ -75,42 +75,27 @@
     ],
     "outbounds": [
         {
-            "tag": "🇺🇸_US_美国 11",
-            "type": "hysteria2",
-            "server": "40.233.80.237",
-            "server_port": 30300,
-            "password": "2429bee3-e0c1-47dd-b420-75e6512b184b",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "tag": "香港5|@ripaojiedian",
+            "type": "trojan",
+            "server": "219.79.165.55",
+            "server_port": 443,
+            "password": "BxceQaOe",
             "tls": {
                 "enabled": true,
-                "server_name": "www.bing.com",
                 "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "server_name": "t.me/ripaojiedian"
             }
         },
         {
-            "tag": "哈萨克斯坦",
-            "type": "vless",
-            "server": "178.236.16.98",
-            "server_port": 35728,
-            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-            "packet_encoding": "xudp",
+            "tag": "新加坡3|@ripaojiedian",
+            "type": "trojan",
+            "server": "116.49.237.130",
+            "server_port": 3579,
+            "password": "BxceQaOe",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "yahoo.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-                    "short_id": "69a2"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+                "server_name": "t.me/ripaojiedian"
             }
         },
         {
@@ -132,14 +117,6 @@
                     "Host": "speedtest.net"
                 }
             }
-        },
-        {
-            "tag": "🇩🇪_德国 2",
-            "type": "vless",
-            "server": "sk3.node.ibst.me",
-            "server_port": 7079,
-            "uuid": "a54c3b5a-5f44-4411-8c1e-7bf52a567d7f",
-            "packet_encoding": "xudp"
         },
         {
             "tag": "荷蘭",
@@ -165,27 +142,103 @@
             }
         },
         {
+            "tag": "马来西亚1",
+            "type": "hysteria2",
+            "server": "my.xn--9kqx4sc0n.shop",
+            "server_port": 21622,
+            "password": "110f8d29-f9d0-47dc-abe4-2f4ac679879b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇫🇷_FR_法国 3",
+            "type": "vless",
+            "server": "195.154.200.156",
+            "server_port": 33009,
+            "uuid": "77a33d77-7af9-4c33-9556-d6711becca04",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.yahoo.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vQxUlk2tCENv9crfrUAp5JdJOZTKhMH7XnoKLqbAYx0",
+                    "short_id": "c0d304da0c4dcadc"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱_NL_荷兰 8",
+            "type": "trojan",
+            "server": "grdfg.zippydeal.xyz",
+            "server_port": 5755,
+            "password": "fg20mtCFHy",
+            "tls": {
+                "enabled": true,
+                "insecure": false
+            }
+        },
+        {
+            "tag": "伊朗 11",
+            "type": "vless",
+            "server": "ir11.drinfoo.com",
+            "server_port": 890,
+            "uuid": "8cfd1eb5-81ab-41d7-9b63-191af959344e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "speedtest.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "🇫🇷_FR_法国 3",
+                "🇳🇱_NL_荷兰 8",
+                "马来西亚1",
+                "伊朗 11",
                 "伊朗 17",
-                "哈萨克斯坦",
-                "荷蘭",
-                "🇺🇸_US_美国 11",
-                "🇩🇪_德国 2"
+                "新加坡3|@ripaojiedian",
+                "香港5|@ripaojiedian",
+                "荷蘭"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷_FR_法国 3",
+                "🇳🇱_NL_荷兰 8",
+                "马来西亚1",
+                "伊朗 11",
                 "伊朗 17",
-                "哈萨克斯坦",
-                "荷蘭",
-                "🇺🇸_US_美国 11",
-                "🇩🇪_德国 2"
+                "新加坡3|@ripaojiedian",
+                "香港5|@ripaojiedian",
+                "荷蘭"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
