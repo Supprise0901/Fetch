@@ -75,88 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "香港3|@ripaojiedian",
-            "type": "trojan",
-            "server": "58.152.110.206",
-            "server_port": 443,
-            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.nintendogames.net"
-            }
-        },
-        {
-            "tag": "US_speednode_0013",
-            "type": "trojan",
-            "server": "108.165.255.5",
-            "server_port": 443,
-            "password": "019a8c1f-3d28-74e8-8a8e-40045d7ec77f",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.bilibili.com"
-            }
-        },
-        {
-            "tag": "US8-HY2",
-            "type": "hysteria2",
-            "server": "us8.dexlos.com",
-            "server_port": 15589,
-            "password": "95D27EEF-B7AE-4076-BA39-40FDFA3D0F61",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "香港",
-            "type": "vless",
-            "server": "47.245.38.111",
-            "server_port": 443,
-            "uuid": "86b414b6-966e-4f6d-ab16-32049ef732d3",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.autodesk.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "y167aJhpgWWjltY4UCir_uu8Mj__Hkc1W4etD0QXYH4",
-                    "short_id": "860705e716cbe6ed"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "US_speednode_0013",
-                "香港3|@ripaojiedian",
-                "香港",
-                "US8-HY2"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "US_speednode_0013",
-                "香港3|@ripaojiedian",
-                "香港",
-                "US8-HY2"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
