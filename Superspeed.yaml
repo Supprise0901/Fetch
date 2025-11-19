@@ -75,17 +75,50 @@
     ],
     "outbounds": [
         {
+            "tag": "香港3|@ripaojiedian",
+            "type": "trojan",
+            "server": "58.152.110.206",
+            "server_port": 443,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.nintendogames.net"
+            }
+        },
+        {
+            "tag": "US 6",
+            "type": "hysteria2",
+            "server": "51.81.223.31",
+            "server_port": 30102,
+            "password": "338ce171-d764-4610-8fd5-6688b0d321f0",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "US 6",
+                "香港3|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "US 6",
+                "香港3|@ripaojiedian"
+            ],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
