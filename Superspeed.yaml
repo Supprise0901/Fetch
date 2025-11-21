@@ -75,59 +75,35 @@
     ],
     "outbounds": [
         {
-            "tag": "EE_speednode_0007",
-            "type": "trojan",
-            "server": "37.252.5.75",
-            "server_port": 443,
-            "password": "3208e968-b862-4e2e-ad90-2b49e7ce7afb",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "joss.gpj1.web.id"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/Free-VPN-CF-Geo-Project/37.252.5.75=443",
-                "headers": {
-                    "Host": "joss.gpj1.web.id"
-                }
-            }
+            "tag": "日本4|@ripaojiedian",
+            "type": "vmess",
+            "server": "113.57.36.148",
+            "server_port": 3304,
+            "uuid": "f0305e21-30bb-32f9-9b1b-9e02dcf3af54",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
         },
         {
-            "tag": "NL_speednode_0021",
-            "type": "trojan",
-            "server": "138.124.30.8",
+            "tag": "🇨🇳_CN_中国 8",
+            "type": "vless",
+            "server": "62.60.148.21",
             "server_port": 443,
-            "password": "0311306e-56d4-4aa1-bde5-8cede7fcd3e4",
+            "uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "joss.gpj1.web.id"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/Free-VPN-CF-Geo-Project/138.124.30.8=443",
-                "headers": {
-                    "Host": "joss.gpj1.web.id"
-                }
-            }
-        },
-        {
-            "tag": "PL_speednode_0022",
-            "type": "trojan",
-            "server": "217.30.10.31",
-            "server_port": 8443,
-            "password": "422d402c-58f1-4473-abeb-fe6e69dc97ed",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "joss.gpj1.web.id"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/Free-VPN-CF-Geo-Project/217.30.10.31=8443",
-                "headers": {
-                    "Host": "joss.gpj1.web.id"
+                "server_name": "st.ozone.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
+                    "short_id": "ee6f3e8f44b1f0b6"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -159,20 +135,18 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "NL_speednode_0021",
                 "加拿大",
-                "PL_speednode_0022",
-                "EE_speednode_0007"
+                "日本4|@ripaojiedian",
+                "🇨🇳_CN_中国 8"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "NL_speednode_0021",
                 "加拿大",
-                "PL_speednode_0022",
-                "EE_speednode_0007"
+                "日本4|@ripaojiedian",
+                "🇨🇳_CN_中国 8"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
