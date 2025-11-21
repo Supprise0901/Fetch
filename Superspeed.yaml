@@ -75,11 +75,11 @@
     ],
     "outbounds": [
         {
-            "tag": "FR_speednode_0011",
+            "tag": "EE_speednode_0007",
             "type": "trojan",
-            "server": "51.15.210.1",
+            "server": "37.252.5.75",
             "server_port": 443,
-            "password": "e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098",
+            "password": "3208e968-b862-4e2e-ad90-2b49e7ce7afb",
             "tls": {
                 "enabled": true,
                 "insecure": false,
@@ -87,52 +87,10 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/Free-VPN-CF-Geo-Project/51.15.210.1=443",
+                "path": "/Free-VPN-CF-Geo-Project/37.252.5.75=443",
                 "headers": {
                     "Host": "joss.gpj1.web.id"
                 }
-            }
-        },
-        {
-            "tag": "🇷🇺_俄罗斯_7",
-            "type": "vless",
-            "server": "185.22.174.195",
-            "server_port": 443,
-            "uuid": "54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "bp.hexo.cloudns.ch"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/proxyip=proxyip.sg.cmliussss.net",
-                "headers": {
-                    "Host": "bp.hexo.cloudns.ch"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇬_尼日利亚",
-            "type": "vless",
-            "server": "83.229.126.199",
-            "server_port": 443,
-            "uuid": "e258977b-e413-4718-a3af-02d75492c349",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "ww1.x-aniu-hk.netlib.re"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "ww1.x-aniu-hk.netlib.re"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
             }
         },
         {
@@ -141,18 +99,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇳🇬_尼日利亚",
-                "FR_speednode_0011",
-                "🇷🇺_俄罗斯_7"
+                "EE_speednode_0007"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇳🇬_尼日利亚",
-                "FR_speednode_0011",
-                "🇷🇺_俄罗斯_7"
+                "EE_speednode_0007"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
