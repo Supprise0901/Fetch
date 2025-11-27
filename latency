@@ -75,6 +75,14 @@
     ],
     "outbounds": [
         {
+            "tag": "tg频道:@ripaojiedian",
+            "type": "shadowsocks",
+            "server": "63.180.254.10",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
             "tag": "香港4|@ripaojiedian",
             "type": "trojan",
             "server": "58.152.53.8",
@@ -99,25 +107,30 @@
             }
         },
         {
-            "tag": "美国4|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "107.23.148.46",
+            "tag": "DE VLESS-54@free-nodes",
+            "type": "vless",
+            "server": "178.17.51.244",
             "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
+            "uuid": "b127d2d2-277a-491e-bf80-2e8688fa85e2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "firebase.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YbcsLbM-ZxDJJZj3IYGsSReprZPs2chlo1tSFpnk2C0",
+                    "short_id": "bc541f8a6ad839c3"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
-            "tag": "🇭🇰 香港6|@ripaojiedian",
-            "type": "vmess",
-            "server": "v10.hdacd.com",
-            "server_port": 30807,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "RU_speednode_0030",
+            "tag": "RU TROJAN-60@free-nodes",
             "type": "trojan",
             "server": "37.18.14.33",
             "server_port": 443,
@@ -151,14 +164,26 @@
             }
         },
         {
-            "tag": "🇳🇱 荷兰 05",
-            "type": "vmess",
-            "server": "v30.hdacd.com",
-            "server_port": 30830,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
+            "tag": "🇷🇺_RU_俄罗斯",
+            "type": "vless",
+            "server": "193.124.18.13",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
         },
         {
             "tag": "🇩🇪 德国 24",
@@ -191,6 +216,16 @@
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
             }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 2",
+            "type": "vmess",
+            "server": "82.198.246.97",
+            "server_port": 180,
+            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
         },
         {
             "tag": "US美国(mibei77.com 米贝节点分享)-clone 2",
@@ -237,31 +272,9 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享)-clone 3",
+            "tag": "US美国(mibei77.com 米贝节点分享) 3",
             "type": "vless",
-            "server": "202.85.53.77",
-            "server_port": 7000,
-            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "kuangbao.xiejiang.dpdns.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "kuangbao.xiejiang.dpdns.org"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US美国(mibei77.com 米贝节点分享) 5",
-            "type": "vless",
-            "server": "154.17.225.73",
+            "server": "193.124.41.29",
             "server_port": 443,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
@@ -303,10 +316,54 @@
             }
         },
         {
+            "tag": "US美国(mibei77.com 米贝节点分享)-clone 4",
+            "type": "vless",
+            "server": "194.35.119.135",
+            "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
             "tag": "US美国(mibei77.com 米贝节点分享) 8",
             "type": "vless",
             "server": "5.144.182.111",
             "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 11",
+            "type": "vless",
+            "server": "51.195.43.174",
+            "server_port": 8443,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
@@ -347,28 +404,6 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 13",
-            "type": "vless",
-            "server": "47.79.41.201",
-            "server_port": 443,
-            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "kuangbao.xiejiang.dpdns.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "kuangbao.xiejiang.dpdns.org"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "US美国(mibei77.com 米贝节点分享) 14",
             "type": "vless",
             "server": "80.76.32.12",
@@ -391,10 +426,62 @@
             }
         },
         {
+            "tag": "US美国(mibei77.com 米贝节点分享) 15",
+            "type": "vless",
+            "server": "51.195.102.180",
+            "server_port": 8443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 20",
+            "type": "shadowsocks",
+            "server": "wangcai.singdns.com",
+            "server_port": 23344,
+            "method": "aes-128-gcm",
+            "password": "79ad2852-eb76-4c3e-ba4d-3668ee5ece74"
+        },
+        {
             "tag": "US美国(mibei77.com 米贝节点分享) 23",
             "type": "vless",
             "server": "142.132.140.130",
             "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 25",
+            "type": "vless",
+            "server": "194.35.119.49",
+            "server_port": 2053,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
@@ -457,10 +544,54 @@
             }
         },
         {
-            "tag": "SG新加坡(mibei77.com 米贝节点分享) 2",
+            "tag": "US美国(mibei77.com 米贝节点分享) 40",
             "type": "vless",
-            "server": "158.178.247.58",
-            "server_port": 30008,
+            "server": "77.221.157.32",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享)-clone 9",
+            "type": "vless",
+            "server": "81.200.154.2",
+            "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享)-clone 10",
+            "type": "vless",
+            "server": "91.149.253.249",
+            "server_port": 443,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
@@ -523,28 +654,6 @@
             }
         },
         {
-            "tag": "KR韩国(mibei77.com 米贝节点分享) 4",
-            "type": "vless",
-            "server": "211.252.50.74",
-            "server_port": 30004,
-            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "kuangbao.xiejiang.dpdns.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "kuangbao.xiejiang.dpdns.org"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "US美国(mibei77.com 米贝节点分享) 57",
             "type": "vless",
             "server": "202.85.53.67",
@@ -589,10 +698,98 @@
             }
         },
         {
+            "tag": "GB英国(mibei77.com 米贝节点分享) 2",
+            "type": "vless",
+            "server": "167.99.86.115",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 61",
+            "type": "vless",
+            "server": "185.103.252.54",
+            "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 62",
+            "type": "vless",
+            "server": "206.189.25.65",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
             "tag": "US美国(mibei77.com 米贝节点分享)-clone 13",
             "type": "vless",
             "server": "98.70.151.190",
             "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "NL荷兰(mibei77.com 米贝节点分享) 2",
+            "type": "vless",
+            "server": "90.156.228.74",
+            "server_port": 2053,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
@@ -655,10 +852,54 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 80",
+            "tag": "US美国(mibei77.com 米贝节点分享) 75",
             "type": "vless",
-            "server": "98.70.151.163",
-            "server_port": 443,
+            "server": "80.90.187.190",
+            "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享)-clone 16",
+            "type": "vless",
+            "server": "85.193.95.23",
+            "server_port": 8443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 81",
+            "type": "vless",
+            "server": "85.193.95.220",
+            "server_port": 2053,
             "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
@@ -699,28 +940,6 @@
             }
         },
         {
-            "tag": "🇷🇺_RU_俄罗斯 4",
-            "type": "vless",
-            "server": "178.236.16.98",
-            "server_port": 35728,
-            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yahoo.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-                    "short_id": "69a2"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇨🇳_中国_4",
             "type": "vmess",
             "server": "v29.hdacd.com",
@@ -754,6 +973,39 @@
             }
         },
         {
+            "tag": "KR_speednode_0021 2",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "Dr-Anv 🇸🇪",
+            "type": "hysteria2",
+            "server": "dd.openaccessnode.com",
+            "server_port": 989,
+            "password": "77238c49bd20e407f05e0c073ad08fdb",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "dd.ircybersec.org",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "@JavidnamanIran-Javid-SHAH-King-Reza-Pahlavi"
+            }
+        },
+        {
             "tag": "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
             "type": "hysteria",
             "server": "195.154.200.40",
@@ -771,7 +1023,7 @@
             }
         },
         {
-            "tag": "🇺🇸@FREE2CONFIG ",
+            "tag": "Channel id: @proxy_kafee🇺🇸 9",
             "type": "hysteria2",
             "server": "us.xn--gmq00sc0nuve.shop",
             "server_port": 21190,
@@ -780,7 +1032,8 @@
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "insecure": true,
+                "server_name": "us.xn--gmq00sc0nuve.shop",
+                "insecure": false,
                 "alpn": [
                     "h3"
                 ]
@@ -819,7 +1072,39 @@
             }
         },
         {
-            "tag": "🇯🇵_日本_2",
+            "tag": "🇨🇳_中国_1",
+            "type": "vmess",
+            "server": "v12.hdacd.com",
+            "server_port": 30812,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇩🇪_德国",
+            "type": "vless",
+            "server": "49.12.210.182",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇯🇵_日本_1",
             "type": "vmess",
             "server": "n1744454498.lie5d.cyou",
             "server_port": 443,
@@ -841,29 +1126,197 @@
             }
         },
         {
-            "tag": "美国 22",
-            "type": "vless",
-            "server": "194.61.31.126",
+            "tag": "🇺🇸_美国_7",
+            "type": "vmess",
+            "server": "107.174.82.102.sslip.io",
             "server_port": 443,
-            "uuid": "5f39f871-2fae-446e-99ad-719fa8be687c",
+            "uuid": "bb824a22-b7ce-427b-9ed6-1adf0751da02",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "107.174.82.102.sslip.io"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "107.174.82.102.sslip.io"
+                },
+                "path": "/Ov7HrgwlEcRugowKV"
+            }
+        },
+        {
+            "tag": "🇭🇰_香港_4",
+            "type": "vmess",
+            "server": "www.zhoubowen.vip",
+            "server_port": 443,
+            "uuid": "71b2655e-07d9-4dad-a770-a2b08275142b",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "www.zhoubowen.vip"
+            },
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "www.zhoubowen.vip"
+                },
+                "path": "/biutefor.icu"
+            }
+        },
+        {
+            "tag": "🇯🇵_日本_3",
+            "type": "vless",
+            "server": "57.180.14.97",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇬🇧_英国_14",
+            "type": "vless",
+            "server": "5.144.182.158",
+            "server_port": 2053,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇮🇳_印度_2",
+            "type": "vless",
+            "server": "4.240.110.47",
+            "server_port": 443,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇫🇷_法国_10",
+            "type": "vless",
+            "server": "213.21.242.82",
+            "server_port": 443,
+            "uuid": "46c0349a-4c2f-463a-bced-e45cc132205b",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hikoop.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/ray",
+                "headers": {
+                    "Host": "hikoop.ru"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺_俄罗斯_4",
+            "type": "vless",
+            "server": "ru.ufavpn.ru",
+            "server_port": 9443,
+            "uuid": "953bcea6-dd81-4c9a-a20a-053805f48195",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ger.ufavpn.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/update",
+                "headers": {
+                    "Host": "ger.ufavpn.ru"
+                }
+            }
+        },
+        {
+            "tag": "美国(yudou6677.top 玉豆免费节点) 112",
+            "type": "vless",
+            "server": "108.162.198.24",
+            "server_port": 2096,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "www.microsoft.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "L3UuY_lketYWBrW_naLct9-VFIAGwdtMplkubdHdEHQ",
-                    "short_id": "ce874361e8dfcd4e"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                }
+                "server_name": "kuangbao.xiejiang.dpdns.org"
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "78e691d782c9b9b2cd3c5621"
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国(yudou6677.top 玉豆免费节点) 116",
+            "type": "vless",
+            "server": "108.162.198.11",
+            "server_port": 2096,
+            "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "kuangbao.xiejiang.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kuangbao.xiejiang.dpdns.org"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
             }
         },
         {
@@ -872,94 +1325,138 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "US美国(mibei77.com 米贝节点分享)-clone 2",
+                "FR法国(mibei77.com 米贝节点分享)-clone 2",
+                "US美国(mibei77.com 米贝节点分享) 3",
+                "🇯🇵_日本_3",
+                "US美国(mibei77.com 米贝节点分享) 75",
+                "🇨🇳_中国_1",
+                "KR_speednode_0021 2",
+                "US美国(mibei77.com 米贝节点分享) 11",
+                "🇷🇺_俄罗斯_4",
+                "香港4|@ripaojiedian",
+                "US美国(mibei77.com 米贝节点分享)-clone 4",
+                "Dr-Anv 🇸🇪",
+                "🇩🇪 德国 24",
+                "伊朗(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享)-clone 13",
                 "🇳🇱 荷兰 03",
-                "香港5|@ripaojiedian",
+                "🇯🇵_日本_1",
+                "🇮🇳_印度_2",
+                "US美国(mibei77.com 米贝节点分享) 40",
+                "US美国(mibei77.com 米贝节点分享) 57",
+                "RU TROJAN-60@free-nodes",
+                "KR韩国(mibei77.com 米贝节点分享)-clone",
+                "US美国(mibei77.com 米贝节点分享) 25",
+                "US美国(mibei77.com 米贝节点分享) 55",
                 "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
-                "US美国(mibei77.com 米贝节点分享) 74",
-                "US美国(mibei77.com 米贝节点分享) 14",
+                "DE VLESS-54@free-nodes",
+                "PL波兰(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 61",
+                "US美国(mibei77.com 米贝节点分享) 20",
+                "香港5|@ripaojiedian",
                 "HK香港(mibei77.com 米贝节点分享) 10",
+                "美国(yudou6677.top 玉豆免费节点) 112",
+                "US美国(mibei77.com 米贝节点分享) 12",
+                "🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 74",
+                "🇷🇺_RU_俄罗斯",
+                "HK香港(mibei77.com 米贝节点分享) 8",
+                "US美国(mibei77.com 米贝节点分享)-clone 2",
+                "NL荷兰(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 72",
+                "tg频道:@ripaojiedian",
+                "🇫🇷_法国_10",
+                "US美国(mibei77.com 米贝节点分享) 14",
+                "🇩🇪_德国",
+                "🇭🇰_香港_4",
+                "US美国(mibei77.com 米贝节点分享)-clone 10",
+                "🇨🇳_中国_4",
+                "US美国(mibei77.com 米贝节点分享) 81",
+                "🇬🇧_英国_14",
+                "US美国(mibei77.com 米贝节点分享) 62",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 15",
+                "法国",
+                "US美国(mibei77.com 米贝节点分享)-clone 9",
+                "US美国(mibei77.com 米贝节点分享) 23",
+                "美国(yudou6677.top 玉豆免费节点) 116",
+                "US美国(mibei77.com 米贝节点分享)-clone 16",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 85",
                 "🇺🇸 美国 11",
                 "US美国(mibei77.com 米贝节点分享) 30",
-                "US美国(mibei77.com 米贝节点分享) 55",
-                "法国",
-                "US美国(mibei77.com 米贝节点分享) 80",
-                "US美国(mibei77.com 米贝节点分享) 72",
-                "香港4|@ripaojiedian",
-                "🇺🇸_US_美国",
-                "US美国(mibei77.com 米贝节点分享) 12",
-                "SG新加坡(mibei77.com 米贝节点分享) 2",
-                "PL波兰(mibei77.com 米贝节点分享)",
-                "🇩🇪 德国 24",
-                "US美国(mibei77.com 米贝节点分享) 23",
-                "RU_speednode_0030",
-                "US美国(mibei77.com 米贝节点分享) 5",
-                "KR韩国(mibei77.com 米贝节点分享)-clone",
-                "HK香港(mibei77.com 米贝节点分享) 8",
-                "KR韩国(mibei77.com 米贝节点分享) 4",
-                "🇷🇺_RU_俄罗斯 4",
-                "🇯🇵_日本_2",
-                "🇨🇳_中国_4",
-                "FR法国(mibei77.com 米贝节点分享)-clone 2",
-                "美国 22",
-                "US美国(mibei77.com 米贝节点分享)-clone 3",
-                "🇭🇰 香港6|@ripaojiedian",
-                "🇳🇱 荷兰 05",
-                "US美国(mibei77.com 米贝节点分享) 13",
-                "🇺🇸@FREE2CONFIG ",
-                "美国4|@ripaojiedian",
-                "US美国(mibei77.com 米贝节点分享)-clone 13",
-                "US美国(mibei77.com 米贝节点分享) 8",
-                "US美国(mibei77.com 米贝节点分享) 85",
-                "US美国(mibei77.com 米贝节点分享) 57",
-                "伊朗(mibei77.com 米贝节点分享)"
+                "Channel id: @proxy_kafee🇺🇸 9",
+                "🇺🇸_美国_7",
+                "US美国(mibei77.com 米贝节点分享) 8"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US美国(mibei77.com 米贝节点分享)-clone 2",
+                "FR法国(mibei77.com 米贝节点分享)-clone 2",
+                "US美国(mibei77.com 米贝节点分享) 3",
+                "🇯🇵_日本_3",
+                "US美国(mibei77.com 米贝节点分享) 75",
+                "🇨🇳_中国_1",
+                "KR_speednode_0021 2",
+                "US美国(mibei77.com 米贝节点分享) 11",
+                "🇷🇺_俄罗斯_4",
+                "香港4|@ripaojiedian",
+                "US美国(mibei77.com 米贝节点分享)-clone 4",
+                "Dr-Anv 🇸🇪",
+                "🇩🇪 德国 24",
+                "伊朗(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享)-clone 13",
                 "🇳🇱 荷兰 03",
-                "香港5|@ripaojiedian",
+                "🇯🇵_日本_1",
+                "🇮🇳_印度_2",
+                "US美国(mibei77.com 米贝节点分享) 40",
+                "US美国(mibei77.com 米贝节点分享) 57",
+                "RU TROJAN-60@free-nodes",
+                "KR韩国(mibei77.com 米贝节点分享)-clone",
+                "US美国(mibei77.com 米贝节点分享) 25",
+                "US美国(mibei77.com 米贝节点分享) 55",
                 "⭐@mshojaei77 | 🇫🇷 France - Ivry-sur-Seine 🌍 HY1-UDP-TLS 4⃣",
-                "US美国(mibei77.com 米贝节点分享) 74",
-                "US美国(mibei77.com 米贝节点分享) 14",
+                "DE VLESS-54@free-nodes",
+                "PL波兰(mibei77.com 米贝节点分享)",
+                "US美国(mibei77.com 米贝节点分享) 61",
+                "US美国(mibei77.com 米贝节点分享) 20",
+                "香港5|@ripaojiedian",
                 "HK香港(mibei77.com 米贝节点分享) 10",
+                "美国(yudou6677.top 玉豆免费节点) 112",
+                "US美国(mibei77.com 米贝节点分享) 12",
+                "🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 74",
+                "🇷🇺_RU_俄罗斯",
+                "HK香港(mibei77.com 米贝节点分享) 8",
+                "US美国(mibei77.com 米贝节点分享)-clone 2",
+                "NL荷兰(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 72",
+                "tg频道:@ripaojiedian",
+                "🇫🇷_法国_10",
+                "US美国(mibei77.com 米贝节点分享) 14",
+                "🇩🇪_德国",
+                "🇭🇰_香港_4",
+                "US美国(mibei77.com 米贝节点分享)-clone 10",
+                "🇨🇳_中国_4",
+                "US美国(mibei77.com 米贝节点分享) 81",
+                "🇬🇧_英国_14",
+                "US美国(mibei77.com 米贝节点分享) 62",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 15",
+                "法国",
+                "US美国(mibei77.com 米贝节点分享)-clone 9",
+                "US美国(mibei77.com 米贝节点分享) 23",
+                "美国(yudou6677.top 玉豆免费节点) 116",
+                "US美国(mibei77.com 米贝节点分享)-clone 16",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "US美国(mibei77.com 米贝节点分享) 85",
                 "🇺🇸 美国 11",
                 "US美国(mibei77.com 米贝节点分享) 30",
-                "US美国(mibei77.com 米贝节点分享) 55",
-                "法国",
-                "US美国(mibei77.com 米贝节点分享) 80",
-                "US美国(mibei77.com 米贝节点分享) 72",
-                "香港4|@ripaojiedian",
-                "🇺🇸_US_美国",
-                "US美国(mibei77.com 米贝节点分享) 12",
-                "SG新加坡(mibei77.com 米贝节点分享) 2",
-                "PL波兰(mibei77.com 米贝节点分享)",
-                "🇩🇪 德国 24",
-                "US美国(mibei77.com 米贝节点分享) 23",
-                "RU_speednode_0030",
-                "US美国(mibei77.com 米贝节点分享) 5",
-                "KR韩国(mibei77.com 米贝节点分享)-clone",
-                "HK香港(mibei77.com 米贝节点分享) 8",
-                "KR韩国(mibei77.com 米贝节点分享) 4",
-                "🇷🇺_RU_俄罗斯 4",
-                "🇯🇵_日本_2",
-                "🇨🇳_中国_4",
-                "FR法国(mibei77.com 米贝节点分享)-clone 2",
-                "美国 22",
-                "US美国(mibei77.com 米贝节点分享)-clone 3",
-                "🇭🇰 香港6|@ripaojiedian",
-                "🇳🇱 荷兰 05",
-                "US美国(mibei77.com 米贝节点分享) 13",
-                "🇺🇸@FREE2CONFIG ",
-                "美国4|@ripaojiedian",
-                "US美国(mibei77.com 米贝节点分享)-clone 13",
-                "US美国(mibei77.com 米贝节点分享) 8",
-                "US美国(mibei77.com 米贝节点分享) 85",
-                "US美国(mibei77.com 米贝节点分享) 57",
-                "伊朗(mibei77.com 米贝节点分享)"
+                "Channel id: @proxy_kafee🇺🇸 9",
+                "🇺🇸_美国_7",
+                "US美国(mibei77.com 米贝节点分享) 8"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
