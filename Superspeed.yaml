@@ -75,110 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "香港4|@ripaojiedian",
-            "type": "trojan",
-            "server": "219.79.186.107",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "t.me/ripaojiedian"
-            }
-        },
-        {
-            "tag": "香港5|@ripaojiedian",
-            "type": "trojan",
-            "server": "58.152.25.242",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "t.me/ripaojiedian"
-            }
-        },
-        {
-            "tag": "RU VLESS-42 | free-nodes",
-            "type": "vless",
-            "server": "bg.fasssst.ru",
-            "server_port": 443,
-            "uuid": "c1853115-eb6b-4592-b01f-05037d33505d",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "bg.fasssst.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "v5phvruLtbRahHL0xJtl77s4sXHiuSHzUTPq2znyCF4",
-                    "short_id": "f5b76860a3c9c3f5"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0021",
-            "type": "vless",
-            "server": "69.84.182.13",
-            "server_port": 443,
-            "uuid": "04f3ed37-bfd4-46d3-b4eb-e62d1f32b6f9",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "fr-1-fr-1.aiopen.sbs"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/kbjc/fr1",
-                "headers": {
-                    "Host": "fr-1-fr-1.aiopen.sbs"
-                }
-            }
-        },
-        {
-            "tag": "加拿大",
-            "type": "vless",
-            "server": "14.102.228.75",
-            "server_port": 80,
-            "uuid": "b49d8a13-12f6-4613-bb0d-3e2f6244f29c",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/vless/",
-                "headers": {
-                    "Host": "ov-canada1.09vpn.com"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "香港4|@ripaojiedian",
-                "US_speednode_0021",
-                "RU VLESS-42 | free-nodes",
-                "加拿大",
-                "香港5|@ripaojiedian"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "香港4|@ripaojiedian",
-                "US_speednode_0021",
-                "RU VLESS-42 | free-nodes",
-                "加拿大",
-                "香港5|@ripaojiedian"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
