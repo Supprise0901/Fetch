@@ -75,42 +75,7 @@
     ],
     "outbounds": [
         {
-            "tag": "香港4|@ripaojiedian",
-            "type": "trojan",
-            "server": "219.79.186.107",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "t.me/ripaojiedian"
-            }
-        },
-        {
-            "tag": "RU VLESS-19 | free-nodes",
-            "type": "vless",
-            "server": "176.123.162.253",
-            "server_port": 8443,
-            "uuid": "2a2a6062-003c-0012-b293-ee0d0416afee",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "pimg.mycdn.me",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "73XglR9lOaXBISd7mGgTEP60v28mz8pmCDivcDAF_WU",
-                    "short_id": "7c9cc821"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "GB VLESS-21 | free-nodes",
+            "tag": "GB VLESS-20 | free-nodes",
             "type": "vless",
             "server": "uk1.oomz.ru",
             "server_port": 443,
@@ -130,6 +95,18 @@
                     "enabled": true,
                     "fingerprint": "qq"
                 }
+            }
+        },
+        {
+            "tag": "HK TROJAN-107 | free-nodes",
+            "type": "trojan",
+            "server": "58.152.25.20",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
             }
         },
         {
@@ -156,14 +133,36 @@
             }
         },
         {
+            "tag": "🇮🇱_以色列",
+            "type": "vless",
+            "server": "185.136.132.171",
+            "server_port": 24170,
+            "uuid": "fe21e399-ec6f-4cb5-8441-e911178665b1",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "speedtest.net",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4",
+                    "short_id": "2fb2106a629b"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "RU VLESS-19 | free-nodes",
-                "香港4|@ripaojiedian",
-                "GB VLESS-21 | free-nodes",
+                "GB VLESS-20 | free-nodes",
+                "🇮🇱_以色列",
+                "HK TROJAN-107 | free-nodes",
                 "LB_speednode_0015"
             ]
         },
@@ -171,9 +170,9 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "RU VLESS-19 | free-nodes",
-                "香港4|@ripaojiedian",
-                "GB VLESS-21 | free-nodes",
+                "GB VLESS-20 | free-nodes",
+                "🇮🇱_以色列",
+                "HK TROJAN-107 | free-nodes",
                 "LB_speednode_0015"
             ],
             "url": "https://www.google.com/",
