@@ -75,43 +75,38 @@
     ],
     "outbounds": [
         {
-            "tag": "香港3|@ripaojiedian",
-            "type": "trojan",
-            "server": "58.152.110.82",
-            "server_port": 443,
-            "password": "76d630f2af6619c4a5de0ef953df3c6a",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.nintendogames.net"
-            }
-        },
-        {
-            "tag": "🇨🇳_CN_中国 20",
-            "type": "hysteria2",
-            "server": "21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com",
-            "server_port": 443,
-            "password": "48e51dfa-db8f-11ed-a23f-f23c91369f2d",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇨🇳_中国_1",
+            "tag": "香港7|@ripaojiedian",
             "type": "vmess",
-            "server": "v12.hdacd.com",
-            "server_port": 30812,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "server": "cfa9c38f-t6uv40-ta5nd4-e06r.hk3.p5pv.com",
+            "server_port": 80,
+            "uuid": "861726bb-c61a-b0e0-99fa-5ddfdcf21902",
             "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "broadcastlv.chat.bilibili.com"
+                },
+                "path": "/"
+            }
+        },
+        {
+            "tag": "🇭🇰 HK_188",
+            "type": "vmess",
+            "server": "865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com",
+            "server_port": 80,
+            "uuid": "88da0d21-b25d-11ec-b9f7-f23c91cfbbc9",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "broadcastlv.chat.bilibili.com"
+                },
+                "path": "/"
+            }
         },
         {
             "tag": "proxy",
@@ -119,18 +114,16 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇨🇳_CN_中国 20",
-                "🇨🇳_中国_1",
-                "香港3|@ripaojiedian"
+                "香港7|@ripaojiedian",
+                "🇭🇰 HK_188"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳_CN_中国 20",
-                "🇨🇳_中国_1",
-                "香港3|@ripaojiedian"
+                "香港7|@ripaojiedian",
+                "🇭🇰 HK_188"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
