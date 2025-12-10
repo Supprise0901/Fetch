@@ -75,37 +75,85 @@
     ],
     "outbounds": [
         {
-            "tag": "香港7|@ripaojiedian",
-            "type": "vmess",
-            "server": "cfa9c38f-t6uv40-ta5nd4-e06r.hk3.p5pv.com",
-            "server_port": 80,
-            "uuid": "861726bb-c61a-b0e0-99fa-5ddfdcf21902",
-            "security": "auto",
-            "alter_id": 2,
+            "tag": "DE VLESS-47 | free-nodes",
+            "type": "vless",
+            "server": "51.250.25.11",
+            "server_port": 1488,
+            "uuid": "4a6de183-2ad3-456c-b420-feeac81f6257",
             "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ads.x5.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": "6ba85179e30d4fc2"
                 },
-                "path": "/"
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "🇭🇰 HK_188",
-            "type": "vmess",
-            "server": "865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com",
+            "tag": "未知 VLESS-57 | free-nodes",
+            "type": "vless",
+            "server": "nl-78w-c.southnetworks.cloud",
             "server_port": 80,
-            "uuid": "88da0d21-b25d-11ec-b9f7-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
+            "uuid": "094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa",
             "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
+                "path": "/getWorkerUpdates",
                 "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
+                    "Host": "nl-78w-c.southnetworks.cloud"
+                }
+            }
+        },
+        {
+            "tag": "IL_speednode_0005",
+            "type": "vless",
+            "server": "185.136.132.171",
+            "server_port": 24170,
+            "uuid": "fe21e399-ec6f-4cb5-8441-e911178665b1",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "speedtest.net",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4",
+                    "short_id": "2fb2106a629b"
                 },
-                "path": "/"
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "RU_speednode_0009",
+            "type": "vless",
+            "server": "178.236.16.98",
+            "server_port": 35728,
+            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "yahoo.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+                    "short_id": "69a2"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -114,16 +162,20 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "香港7|@ripaojiedian",
-                "🇭🇰 HK_188"
+                "DE VLESS-47 | free-nodes",
+                "RU_speednode_0009",
+                "IL_speednode_0005",
+                "未知 VLESS-57 | free-nodes"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "香港7|@ripaojiedian",
-                "🇭🇰 HK_188"
+                "DE VLESS-47 | free-nodes",
+                "RU_speednode_0009",
+                "IL_speednode_0005",
+                "未知 VLESS-57 | free-nodes"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
