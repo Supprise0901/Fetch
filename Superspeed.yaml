@@ -75,7 +75,19 @@
     ],
     "outbounds": [
         {
-            "tag": "DE VLESS-47 | free-nodes",
+            "tag": "香港4|@ripaojiedian",
+            "type": "trojan",
+            "server": "58.152.53.174",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "DE VLESS-59 | free-nodes",
             "type": "vless",
             "server": "51.250.25.11",
             "server_port": 1488,
@@ -98,84 +110,21 @@
             }
         },
         {
-            "tag": "未知 VLESS-57 | free-nodes",
-            "type": "vless",
-            "server": "nl-78w-c.southnetworks.cloud",
-            "server_port": 80,
-            "uuid": "094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/getWorkerUpdates",
-                "headers": {
-                    "Host": "nl-78w-c.southnetworks.cloud"
-                }
-            }
-        },
-        {
-            "tag": "IL_speednode_0005",
-            "type": "vless",
-            "server": "185.136.132.171",
-            "server_port": 24170,
-            "uuid": "fe21e399-ec6f-4cb5-8441-e911178665b1",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "speedtest.net",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4",
-                    "short_id": "2fb2106a629b"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "RU_speednode_0009",
-            "type": "vless",
-            "server": "178.236.16.98",
-            "server_port": 35728,
-            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yahoo.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-                    "short_id": "69a2"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "DE VLESS-47 | free-nodes",
-                "RU_speednode_0009",
-                "IL_speednode_0005",
-                "未知 VLESS-57 | free-nodes"
+                "DE VLESS-59 | free-nodes",
+                "香港4|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "DE VLESS-47 | free-nodes",
-                "RU_speednode_0009",
-                "IL_speednode_0005",
-                "未知 VLESS-57 | free-nodes"
+                "DE VLESS-59 | free-nodes",
+                "香港4|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
