@@ -75,10 +75,20 @@
     ],
     "outbounds": [
         {
-            "tag": "🇫🇷_FR_法国",
+            "tag": "新加坡4|@ripaojiedian",
+            "type": "vmess",
+            "server": "v12.hdacd.com",
+            "server_port": 30812,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸_US_美国",
             "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 35511,
+            "server": "51.159.226.1",
+            "server_port": 49003,
             "up_mbps": 11,
             "down_mbps": 55,
             "auth_str": "dongtaiwang.com",
@@ -92,34 +102,12 @@
             }
         },
         {
-            "tag": "🇵🇱_PL_波兰",
-            "type": "vless",
-            "server": "185.136.132.171",
-            "server_port": 24170,
-            "uuid": "fe21e399-ec6f-4cb5-8441-e911178665b1",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "speedtest.net",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4",
-                    "short_id": "2fb2106a629b"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷_FR_法国 3",
+            "tag": "🇫🇷_FR_法国 2",
             "type": "hysteria",
-            "server": "195.154.200.40",
-            "server_port": 15010,
-            "up_mbps": 100,
-            "down_mbps": 100,
+            "server": "62.210.10.186",
+            "server_port": 50011,
+            "up_mbps": 11,
+            "down_mbps": 55,
             "auth_str": "dongtaiwang.com",
             "tls": {
                 "enabled": true,
@@ -131,35 +119,23 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 29",
-            "type": "vmess",
-            "server": "v29.hdacd.com",
-            "server_port": 30829,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp"
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇵🇱_PL_波兰",
-                "🇺🇸 美国 29",
-                "🇫🇷_FR_法国 3",
-                "🇫🇷_FR_法国"
+                "🇫🇷_FR_法国 2",
+                "新加坡4|@ripaojiedian",
+                "🇺🇸_US_美国"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇵🇱_PL_波兰",
-                "🇺🇸 美国 29",
-                "🇫🇷_FR_法国 3",
-                "🇫🇷_FR_法国"
+                "🇫🇷_FR_法国 2",
+                "新加坡4|@ripaojiedian",
+                "🇺🇸_US_美国"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
