@@ -75,144 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇫🇷_FR_法国",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 35511,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇫🇷_FR_法国 2",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 50011,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇫🇷_FR_法国 3",
-            "type": "hysteria",
-            "server": "195.154.200.40",
-            "server_port": 15010,
-            "up_mbps": 100,
-            "down_mbps": 100,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇱🇧_黎巴嫩",
-            "type": "vless",
-            "server": "us01-vlr01-gmn03.vpnvezdehod.net",
-            "server_port": 443,
-            "uuid": "2ca07504-c06a-41a4-b26b-99807a7d24cf",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "hls-svod.itunes.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-                    "short_id": "48720c"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 01",
-            "type": "hysteria2",
-            "server": "85.209.53.170",
-            "server_port": 443,
-            "password": "fef5ca01-f954-4729-a798-b365ea60688c",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
-            }
-        },
-        {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 02",
-            "type": "hysteria2",
-            "server": "85.209.53.170",
-            "server_port": 80,
-            "password": "e981d6e0-014f-4327-9680-7a3cbc8a0f37",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇩🇪 机场推荐:dafei.de 德国 02",
-                "🇩🇪 机场推荐:dafei.de 德国 01",
-                "🇫🇷_FR_法国 2",
-                "🇱🇧_黎巴嫩",
-                "🇫🇷_FR_法国 3",
-                "🇫🇷_FR_法国"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇩🇪 机场推荐:dafei.de 德国 02",
-                "🇩🇪 机场推荐:dafei.de 德国 01",
-                "🇫🇷_FR_法国 2",
-                "🇱🇧_黎巴嫩",
-                "🇫🇷_FR_法国 3",
-                "🇫🇷_FR_法国"
-            ],
+            "outbounds": [],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
