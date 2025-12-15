@@ -75,16 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "新加坡4|@ripaojiedian",
-            "type": "vmess",
-            "server": "v12.hdacd.com",
-            "server_port": 30812,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
             "tag": "🇺🇸_US_美国",
             "type": "hysteria",
             "server": "51.159.226.1",
@@ -119,25 +109,54 @@
             }
         },
         {
-            "tag": "俄罗斯 24",
-            "type": "vless",
-            "server": "62.60.148.21",
+            "tag": "🇩🇪 机场推荐:dafei.de 德国 01",
+            "type": "hysteria2",
+            "server": "85.209.53.170",
             "server_port": 443,
-            "uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
+            "password": "fef5ca01-f954-4729-a798-b365ea60688c",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "st.ozone.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
-                    "short_id": "ee6f3e8f44b1f0b6"
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+            }
+        },
+        {
+            "tag": "🇬🇧 英国 01",
+            "type": "vmess",
+            "server": "xiaoniu.andcdn.bid",
+            "server_port": 41320,
+            "uuid": "53816f08-560b-48ba-a0bb-6dbe1bfba109",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "img14.360buyimg.com"
                 },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                "path": "/obj"
+            }
+        },
+        {
+            "tag": "加拿大",
+            "type": "vless",
+            "server": "14.102.228.75",
+            "server_port": 80,
+            "uuid": "b49d8a13-12f6-4613-bb0d-3e2f6244f29c",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/vless/",
+                "headers": {
+                    "Host": "ov-canada1.09vpn.com"
                 }
             }
         },
@@ -147,20 +166,22 @@
             "outbounds": [
                 "auto",
                 "direct",
+                "加拿大",
+                "🇩🇪 机场推荐:dafei.de 德国 01",
                 "🇺🇸_US_美国",
-                "新加坡4|@ripaojiedian",
-                "🇫🇷_FR_法国 3",
-                "俄罗斯 24"
+                "🇬🇧 英国 01",
+                "🇫🇷_FR_法国 3"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "加拿大",
+                "🇩🇪 机场推荐:dafei.de 德国 01",
                 "🇺🇸_US_美国",
-                "新加坡4|@ripaojiedian",
-                "🇫🇷_FR_法国 3",
-                "俄罗斯 24"
+                "🇬🇧 英国 01",
+                "🇫🇷_FR_法国 3"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
