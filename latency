@@ -75,16 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "香港|@ripaojiedian",
-            "type": "vmess",
-            "server": "v10.hdacd.com",
-            "server_port": 30807,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp"
-        },
-        {
             "tag": "未知 VLESS-06 | free-nodes",
             "type": "vless",
             "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
@@ -181,54 +171,97 @@
             }
         },
         {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 01",
-            "type": "hysteria2",
-            "server": "85.209.53.170",
+            "tag": "🇱🇧_黎巴嫩",
+            "type": "vless",
+            "server": "us01-vlr01-gmn03.vpnvezdehod.net",
             "server_port": 443,
-            "password": "fef5ca01-f954-4729-a798-b365ea60688c",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "uuid": "2ca07504-c06a-41a4-b26b-99807a7d24cf",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+                "server_name": "hls-svod.itunes.apple.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "48720c"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 02",
-            "type": "hysteria2",
-            "server": "85.209.53.170",
-            "server_port": 80,
-            "password": "e981d6e0-014f-4327-9680-7a3cbc8a0f37",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
-            }
-        },
-        {
-            "tag": "🇺🇸 美国 29",
+            "tag": "🇯🇵 日本 15 2",
             "type": "vmess",
-            "server": "v29.hdacd.com",
-            "server_port": 30829,
+            "server": "xiaoniu.andcdn.bid",
+            "server_port": 41315,
+            "uuid": "82539eb7-18c8-48d0-bb9c-55d1b6e47f59",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "img14.360buyimg.com"
+                },
+                "path": "/obj"
+            }
+        },
+        {
+            "tag": "🇨🇳_中国_2",
+            "type": "vmess",
+            "server": "v30.hdacd.com",
+            "server_port": 30830,
             "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
             "security": "auto",
-            "alter_id": 2,
+            "alter_id": 0,
             "packet_encoding": "xudp"
+        },
+        {
+            "tag": "俄罗斯 24",
+            "type": "vless",
+            "server": "62.60.148.21",
+            "server_port": 443,
+            "uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "st.ozone.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
+                    "short_id": "ee6f3e8f44b1f0b6"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "法国(yudou6677.top 玉豆免费节点) 8",
+            "type": "vless",
+            "server": "43.165.190.11",
+            "server_port": 42841,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "mot.morisi.ggff.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@Marisa_kristi",
+                "headers": {
+                    "Host": "mot.morisi.ggff.net"
+                }
+            }
         },
         {
             "tag": "proxy",
@@ -236,30 +269,32 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "香港|@ripaojiedian",
-                "🇺🇸 美国 29",
-                "🇩🇪 机场推荐:dafei.de 德国 01",
-                "🇫🇷_FR_法国 3",
-                "未知 VLESS-06 | free-nodes",
-                "🇫🇷_FR_法国",
+                "法国(yudou6677.top 玉豆免费节点) 8",
+                "🇯🇵 日本 15 2",
                 "🇫🇷_FR_法国 2",
+                "🇫🇷_FR_法国",
+                "🇨🇳_中国_2",
+                "🇱🇧_黎巴嫩",
+                "🇫🇷_FR_法国 3",
+                "俄罗斯 24",
                 "🇵🇱_PL_波兰",
-                "🇩🇪 机场推荐:dafei.de 德国 02"
+                "未知 VLESS-06 | free-nodes"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "香港|@ripaojiedian",
-                "🇺🇸 美国 29",
-                "🇩🇪 机场推荐:dafei.de 德国 01",
-                "🇫🇷_FR_法国 3",
-                "未知 VLESS-06 | free-nodes",
-                "🇫🇷_FR_法国",
+                "法国(yudou6677.top 玉豆免费节点) 8",
+                "🇯🇵 日本 15 2",
                 "🇫🇷_FR_法国 2",
+                "🇫🇷_FR_法国",
+                "🇨🇳_中国_2",
+                "🇱🇧_黎巴嫩",
+                "🇫🇷_FR_法国 3",
+                "俄罗斯 24",
                 "🇵🇱_PL_波兰",
-                "🇩🇪 机场推荐:dafei.de 德国 02"
+                "未知 VLESS-06 | free-nodes"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",

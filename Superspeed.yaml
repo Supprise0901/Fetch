@@ -75,17 +75,115 @@
     ],
     "outbounds": [
         {
+            "tag": "未知 VLESS-06 | free-nodes",
+            "type": "vless",
+            "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+            "server_port": 443,
+            "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "i2pd.website",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+                    "short_id": "55e6af1a35e64a98"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇧_黎巴嫩",
+            "type": "vless",
+            "server": "us01-vlr01-gmn03.vpnvezdehod.net",
+            "server_port": 443,
+            "uuid": "2ca07504-c06a-41a4-b26b-99807a7d24cf",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hls-svod.itunes.apple.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "48720c"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "俄罗斯 24",
+            "type": "vless",
+            "server": "62.60.148.21",
+            "server_port": 443,
+            "uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "st.ozone.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
+                    "short_id": "ee6f3e8f44b1f0b6"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "法国(yudou6677.top 玉豆免费节点) 8",
+            "type": "vless",
+            "server": "43.165.190.11",
+            "server_port": 42841,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "mot.morisi.ggff.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@Marisa_kristi",
+                "headers": {
+                    "Host": "mot.morisi.ggff.net"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "法国(yudou6677.top 玉豆免费节点) 8",
+                "俄罗斯 24",
+                "未知 VLESS-06 | free-nodes",
+                "🇱🇧_黎巴嫩"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "法国(yudou6677.top 玉豆免费节点) 8",
+                "俄罗斯 24",
+                "未知 VLESS-06 | free-nodes",
+                "🇱🇧_黎巴嫩"
+            ],
             "url": "https://www.google.com/",
             "interval": "10m",
             "tolerance": 50
