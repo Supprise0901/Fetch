@@ -75,6 +75,51 @@
     ],
     "outbounds": [
         {
+            "tag": "🇵🇱_PL_波兰",
+            "type": "vless",
+            "server": "185.136.132.171",
+            "server_port": 24170,
+            "uuid": "fe21e399-ec6f-4cb5-8441-e911178665b1",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "speedtest.net",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4",
+                    "short_id": "2fb2106a629b"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "未知 VLESS-78 | free-nodes",
+            "type": "vless",
+            "server": "167.17.70.16",
+            "server_port": 8443,
+            "uuid": "55975415-43c0-461c-8752-d5b8013364e3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.microsoft.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8W9r2aXGhKNtvPxnL6EiPpQuSm9OJT17x2xyxwxIo30",
+                    "short_id": "84f70f1177981563"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "KR_speednode_0012",
             "type": "http",
             "server": "testkr3.ssv.vc",
@@ -92,14 +137,18 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "KR_speednode_0012"
+                "未知 VLESS-78 | free-nodes",
+                "KR_speednode_0012",
+                "🇵🇱_PL_波兰"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "KR_speednode_0012"
+                "未知 VLESS-78 | free-nodes",
+                "KR_speednode_0012",
+                "🇵🇱_PL_波兰"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
