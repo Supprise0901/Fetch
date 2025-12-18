@@ -75,16 +75,70 @@
     ],
     "outbounds": [
         {
-            "tag": "KR_speednode_0012",
-            "type": "http",
-            "server": "testkr3.ssv.vc",
-            "server_port": 30446,
+            "tag": "香港3|@ripaojiedian",
+            "type": "trojan",
+            "server": "112.118.116.8",
+            "server_port": 443,
+            "password": "e2722c0fb503f8a592436c12bce0509a",
             "tls": {
                 "enabled": true,
-                "insecure": true
+                "insecure": false,
+                "server_name": "www.nintendogames.net"
+            }
+        },
+        {
+            "tag": "🇺🇸_US_美国 6",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "73856b73-19d2-47e6-b991-5eaa421161ea",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR."
             },
-            "username": "test",
-            "password": "test.+"
+            "transport": {
+                "type": "ws",
+                "path": "/admin",
+                "headers": {
+                    "Host": "DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR."
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 1024
+            }
+        },
+        {
+            "tag": "GB英国(mibei77.com 米贝节点分享) 26",
+            "type": "vless",
+            "server": "209.38.168.122",
+            "server_port": 21250,
+            "uuid": "69239696-f17e-4eb2-a337-7ce07d65d23d",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+            }
+        },
+        {
+            "tag": "🇫🇷_法国_13",
+            "type": "vless",
+            "server": "185.231.205.152",
+            "server_port": 443,
+            "uuid": "2b74e019-81b0-4c77-9f41-2f3aaf04132d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ads.x5.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/uefsanws",
+                "headers": {
+                    "Host": "ads.x5.ru"
+                }
+            }
         },
         {
             "tag": "proxy",
@@ -92,14 +146,20 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "KR_speednode_0012"
+                "🇺🇸_US_美国 6",
+                "🇫🇷_法国_13",
+                "GB英国(mibei77.com 米贝节点分享) 26",
+                "香港3|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "KR_speednode_0012"
+                "🇺🇸_US_美国 6",
+                "🇫🇷_法国_13",
+                "GB英国(mibei77.com 米贝节点分享) 26",
+                "香港3|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
