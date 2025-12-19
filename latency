@@ -87,37 +87,66 @@
             }
         },
         {
-            "tag": "🇫🇷_FR_法国",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 50011,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
+            "tag": "JP日本(mibei77.com 米贝节点分享) 2",
+            "type": "vless",
+            "server": "43.165.190.11",
+            "server_port": 42841,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "insecure": false,
+                "server_name": "mot.morisi.ggff.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@Marisa_kristi",
+                "headers": {
+                    "Host": "mot.morisi.ggff.net"
+                }
             }
         },
         {
-            "tag": "🇫🇷_FR_法国 2",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 35511,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
+            "tag": "未知 VLESS-13 | free-nodes",
+            "type": "vless",
+            "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+            "server_port": 443,
+            "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "server_name": "apple.com",
+                "insecure": false,
+                "server_name": "i2pd.website",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+                    "short_id": "55e6af1a35e64a98"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷_法国_13",
+            "type": "vless",
+            "server": "185.231.205.152",
+            "server_port": 443,
+            "uuid": "2b74e019-81b0-4c77-9f41-2f3aaf04132d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
                 "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "server_name": "ads.x5.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/uefsanws",
+                "headers": {
+                    "Host": "ads.x5.ru"
+                }
             }
         },
         {
@@ -141,6 +170,14 @@
             "tag": "US_speednode_0015",
             "type": "shadowsocks",
             "server": "156.146.38.167",
+            "server_port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks"
+        },
+        {
+            "tag": "US_speednode_0016",
+            "type": "shadowsocks",
+            "server": "156.146.38.169",
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks"
@@ -171,31 +208,60 @@
             }
         },
         {
+            "tag": "俄罗斯 24",
+            "type": "vless",
+            "server": "62.60.148.21",
+            "server_port": 443,
+            "uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "st.ozone.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
+                    "short_id": "ee6f3e8f44b1f0b6"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "r♡ya",
+                "俄罗斯 24",
+                "🇫🇷_法国_13",
+                "US_speednode_0016",
+                "香港5|@ripaojiedian",
                 "US_speednode_0017",
                 "未知_7",
                 "US_speednode_0015",
-                "香港5|@ripaojiedian",
-                "🇫🇷_FR_法国",
-                "🇫🇷_FR_法国 2"
+                "JP日本(mibei77.com 米贝节点分享) 2",
+                "未知 VLESS-13 | free-nodes",
+                "r♡ya"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "r♡ya",
+                "俄罗斯 24",
+                "🇫🇷_法国_13",
+                "US_speednode_0016",
+                "香港5|@ripaojiedian",
                 "US_speednode_0017",
                 "未知_7",
                 "US_speednode_0015",
-                "香港5|@ripaojiedian",
-                "🇫🇷_FR_法国",
-                "🇫🇷_FR_法国 2"
+                "JP日本(mibei77.com 米贝节点分享) 2",
+                "未知 VLESS-13 | free-nodes",
+                "r♡ya"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
