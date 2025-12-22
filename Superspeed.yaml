@@ -75,15 +75,47 @@
     ],
     "outbounds": [
         {
-            "tag": "TR TROJAN-94 | free-nodes",
+            "tag": "香港4|@ripaojiedian",
             "type": "trojan",
-            "server": "58.152.30.31",
+            "server": "58.152.25.71",
             "server_port": 443,
             "password": "BxceQaOe",
             "tls": {
                 "enabled": true,
                 "insecure": true,
                 "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "香港5|@ripaojiedian",
+            "type": "trojan",
+            "server": "58.152.26.107",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "美国(yudou6677.top 玉豆免费节点) 10",
+            "type": "vless",
+            "server": "185.138.164.228",
+            "server_port": 700,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "zybs.worker.ddns-ip.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@Marisa_kristi",
+                "headers": {
+                    "Host": "zybs.worker.ddns-ip.net"
+                }
             }
         },
         {
@@ -109,70 +141,25 @@
             }
         },
         {
-            "tag": "BR_speednode_0001",
-            "type": "vless",
-            "server": "167.234.255.2",
-            "server_port": 34045,
-            "uuid": "d8dd94fd-540e-461d-b5d4-acebef02c22a",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA",
-                    "short_id": "e8ab71d0"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "HK_speednode_0005",
-            "type": "vless",
-            "server": "1.36.189.217",
-            "server_port": 10122,
-            "uuid": "7f60f6e7-8419-4cff-9e1b-14179f677a5e",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "music.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY",
-                    "short_id": "8a6394aa28d6"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "HK_speednode_0005",
-                "BR_speednode_0001",
+                "美国(yudou6677.top 玉豆免费节点) 10",
+                "香港4|@ripaojiedian",
                 "MD_speednode_0007",
-                "TR TROJAN-94 | free-nodes"
+                "香港5|@ripaojiedian"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "HK_speednode_0005",
-                "BR_speednode_0001",
+                "美国(yudou6677.top 玉豆免费节点) 10",
+                "香港4|@ripaojiedian",
                 "MD_speednode_0007",
-                "TR TROJAN-94 | free-nodes"
+                "香港5|@ripaojiedian"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
