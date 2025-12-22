@@ -87,16 +87,34 @@
             }
         },
         {
-            "tag": "未知 VLESS-01 | free-nodes",
-            "type": "vless",
-            "server": "ams1.fromblancwithlove.com",
-            "server_port": 8443,
-            "uuid": "a207569d-bf8f-43dd-81fd-2c847c7870c4",
-            "packet_encoding": "xudp",
+            "tag": "香港4|@ripaojiedian",
+            "type": "trojan",
+            "server": "58.152.25.71",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "🇦🇲_www.panlongid.com_AM_16",
+            "type": "trojan",
+            "server": "cf.130519.xyz",
+            "server_port": 443,
+            "password": "5a2c16f9",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "ams1.fromblancwithlove.com"
+                "server_name": "snippets.kkii.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "snippets.kkii.eu.org"
+                }
             }
         },
         {
@@ -122,26 +140,48 @@
             }
         },
         {
-            "tag": "RU_speednode_0024",
+            "tag": "NL_speednode_0020",
+            "type": "socks",
+            "version": "5",
+            "udp_over_tcp": {},
+            "server": "104.248.203.234",
+            "server_port": 1080
+        },
+        {
+            "tag": "🇺🇸_US_美国 21",
             "type": "vless",
-            "server": "158.160.201.80",
-            "server_port": 443,
-            "uuid": "b27c7007-9a35-43cb-ab1e-8c5c0a7e3c34",
+            "server": "support.zoom.us",
+            "server_port": 2096,
+            "uuid": "fba4e0e0-118c-431f-9f6a-4cfc99f39de8",
             "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "m.vk.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
-                    "short_id": "1929ef620e9b34f5"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                "server_name": "zoom.seaseus.pp.ua"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/seaseus",
+                "headers": {
+                    "Host": "zero.seaseus.pp.ua"
                 }
+            }
+        },
+        {
+            "tag": "🇭🇰HK-203.198.28.145-1002",
+            "type": "vmess",
+            "server": "aflzzul.meiquankongjian.com",
+            "server_port": 52513,
+            "uuid": "342bacfd-2b8f-3f49-a16e-439db5b0b9d5",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "headers": {
+                    "Host": "aflzzul.meiquankongjian.com"
+                },
+                "path": "/564dfa20/"
             }
         },
         {
@@ -150,20 +190,26 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "RU_speednode_0024",
-                "香港3|@ripaojiedian",
+                "NL_speednode_0020",
                 "BR_speednode_0001",
-                "未知 VLESS-01 | free-nodes"
+                "香港3|@ripaojiedian",
+                "🇭🇰HK-203.198.28.145-1002",
+                "🇦🇲_www.panlongid.com_AM_16",
+                "香港4|@ripaojiedian",
+                "🇺🇸_US_美国 21"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "RU_speednode_0024",
-                "香港3|@ripaojiedian",
+                "NL_speednode_0020",
                 "BR_speednode_0001",
-                "未知 VLESS-01 | free-nodes"
+                "香港3|@ripaojiedian",
+                "🇭🇰HK-203.198.28.145-1002",
+                "🇦🇲_www.panlongid.com_AM_16",
+                "香港4|@ripaojiedian",
+                "🇺🇸_US_美国 21"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
