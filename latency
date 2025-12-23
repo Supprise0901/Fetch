@@ -75,9 +75,9 @@
     ],
     "outbounds": [
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 50",
+            "tag": "美国(yudou6677.top 玉豆免费节点) 74",
             "type": "trojan",
-            "server": "freeyx.cloudflare88.eu.org",
+            "server": "cf.130519.xyz",
             "server_port": 443,
             "password": "5a2c16f9",
             "tls": {
@@ -94,19 +94,66 @@
             }
         },
         {
+            "tag": "FR_speednode_0004",
+            "type": "vless",
+            "server": "94.131.118.18",
+            "server_port": 443,
+            "uuid": "784ac0b2-3837-4889-8ad6-b58259dd1d0f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ads.x5.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/kmdznvws",
+                "headers": {
+                    "Host": "ads.x5.ru"
+                }
+            }
+        },
+        {
+            "tag": "LB_speednode_0018",
+            "type": "vless",
+            "server": "77.110.113.219",
+            "server_port": 443,
+            "uuid": "d44e93de-4a8c-464f-81f2-eb0d384b1ab2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.kinopoisk.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "8453e5fd9af927"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "US美国(mibei77.com 米贝节点分享) 50"
+                "LB_speednode_0018",
+                "美国(yudou6677.top 玉豆免费节点) 74",
+                "FR_speednode_0004"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US美国(mibei77.com 米贝节点分享) 50"
+                "LB_speednode_0018",
+                "美国(yudou6677.top 玉豆免费节点) 74",
+                "FR_speednode_0004"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
