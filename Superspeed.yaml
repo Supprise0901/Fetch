@@ -75,18 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "香港3|@ripaojiedian",
-            "type": "trojan",
-            "server": "112.118.116.8",
-            "server_port": 443,
-            "password": "44e660b0ee21cf3ac66aee2c08af85d2",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.nintendogames.net"
-            }
-        },
-        {
             "tag": "香港5|@ripaojiedian",
             "type": "trojan",
             "server": "58.152.26.107",
@@ -99,54 +87,26 @@
             }
         },
         {
-            "tag": "🇫🇷_FR_法国",
-            "type": "hysteria",
-            "server": "62.210.196.68",
-            "server_port": 26691,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
+            "tag": "🇺🇸_US_美国",
+            "type": "vless",
+            "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+            "server_port": 443,
+            "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇫🇷_FR_法国 2",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 35511,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇫🇷_FR_法国 3",
-            "type": "hysteria",
-            "server": "62.210.10.186",
-            "server_port": 50011,
-            "up_mbps": 11,
-            "down_mbps": 55,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "insecure": false,
+                "server_name": "i2pd.website",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+                    "short_id": "55e6af1a35e64a98"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -265,29 +225,6 @@
             }
         },
         {
-            "tag": "NL_speednode_0013",
-            "type": "vless",
-            "server": "nl5.tunnely.ru",
-            "server_port": 443,
-            "uuid": "c42e4667-ca09-4769-b544-89a8da730daf",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "nl5.tunnely.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM",
-                    "short_id": "2e40144ddc07e8e1"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0026",
             "type": "vless",
             "server": "ru2.tunnely.ru",
@@ -302,28 +239,6 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "51TT1F2DugIjuNuGgaeEoW_BWhEKg3mNyNkjNGd_2RM"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0029",
-            "type": "vless",
-            "server": "172.234.130.82",
-            "server_port": 10001,
-            "uuid": "53cd8178-2ee6-43d9-a2a7-881f287fd408",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yahoo.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM",
-                    "short_id": "1a24af87"
                 },
                 "utls": {
                     "enabled": true,
@@ -507,63 +422,96 @@
             }
         },
         {
+            "tag": "未知_31",
+            "type": "trojan",
+            "server": "cf.130519.xyz",
+            "server_port": 443,
+            "password": "5a2c16f9",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "snippets.kkii.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "snippets.kkii.eu.org"
+                }
+            }
+        },
+        {
+            "tag": "美国(yudou6677.top 玉豆免费节点) 8",
+            "type": "vmess",
+            "server": "v9.hdacd.com",
+            "server_port": 30809,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "美国(yudou6677.top 玉豆免费节点) 21",
+            "type": "shadowsocks",
+            "server": "liubu9.singdns.com",
+            "server_port": 17459,
+            "method": "aes-128-gcm",
+            "password": "57bc0c04-8184-48f5-906b-897d095ed445"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "US_speednode_0029",
-                "香港5|@ripaojiedian",
-                "NL_speednode_0013",
-                "🇨🇦_CA_加拿大",
-                "🇺🇸_美国_50",
+                "美国(yudou6677.top 玉豆免费节点) 8",
                 "RU_a0b20_0021",
-                "US美国(mibei77.com 米贝节点分享) 2",
-                "KR_a0b20_0012",
-                "🏳️_未知",
-                "🇺🇸_美国_3",
-                "🇫🇷_FR_法国",
+                "香港5|@ripaojiedian",
                 "🇺🇸 美国 | USA 10",
-                "香港3|@ripaojiedian",
-                "GB_speednode_0005",
-                "🇫🇷_FR_法国 2",
-                "🇺🇸_美国_2",
                 "🇺🇸 美国 | USA 4",
+                "KR_a0b20_0012",
                 "🇸🇬_新加坡_1",
-                "US_speednode_0025",
-                "🇫🇷_FR_法国 3",
+                "🇺🇸_美国_3",
+                "🇺🇸_美国_2",
+                "JP_speednode_0011",
+                "未知_31",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "GB_speednode_0005",
                 "US_speednode_0026",
+                "🇨🇦_CA_加拿大",
+                "US_speednode_0025",
+                "🇺🇸_美国_50",
+                "🇺🇸_US_美国",
                 "US美国(mibei77.com 米贝节点分享) 3",
-                "JP_speednode_0011"
+                "🏳️_未知",
+                "美国(yudou6677.top 玉豆免费节点) 21"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US_speednode_0029",
-                "香港5|@ripaojiedian",
-                "NL_speednode_0013",
-                "🇨🇦_CA_加拿大",
-                "🇺🇸_美国_50",
+                "美国(yudou6677.top 玉豆免费节点) 8",
                 "RU_a0b20_0021",
-                "US美国(mibei77.com 米贝节点分享) 2",
-                "KR_a0b20_0012",
-                "🏳️_未知",
-                "🇺🇸_美国_3",
-                "🇫🇷_FR_法国",
+                "香港5|@ripaojiedian",
                 "🇺🇸 美国 | USA 10",
-                "香港3|@ripaojiedian",
-                "GB_speednode_0005",
-                "🇫🇷_FR_法国 2",
-                "🇺🇸_美国_2",
                 "🇺🇸 美国 | USA 4",
+                "KR_a0b20_0012",
                 "🇸🇬_新加坡_1",
-                "US_speednode_0025",
-                "🇫🇷_FR_法国 3",
+                "🇺🇸_美国_3",
+                "🇺🇸_美国_2",
+                "JP_speednode_0011",
+                "未知_31",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "GB_speednode_0005",
                 "US_speednode_0026",
+                "🇨🇦_CA_加拿大",
+                "US_speednode_0025",
+                "🇺🇸_美国_50",
+                "🇺🇸_US_美国",
                 "US美国(mibei77.com 米贝节点分享) 3",
-                "JP_speednode_0011"
+                "🏳️_未知",
+                "美国(yudou6677.top 玉豆免费节点) 21"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
