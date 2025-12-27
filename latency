@@ -75,20 +75,33 @@
     ],
     "outbounds": [
         {
-            "tag": "🇯🇵 日本 | JPN 2",
-            "type": "vless",
-            "server": "139.162.82.185",
+            "tag": "香港4|@ripaojiedian",
+            "type": "trojan",
+            "server": "58.152.46.60",
             "server_port": 443,
-            "uuid": "0ab02f6d-3304-44f1-915b-7ed8fc5751fa",
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "🇺🇸_US_美国",
+            "type": "vless",
+            "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+            "server_port": 443,
+            "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "www.cisco.com",
+                "server_name": "i2pd.website",
                 "reality": {
                     "enabled": true,
-                    "public_key": "Qj72gbWEZOJshMegmLtOrLUf4bIAQFpJPtCy_pBfcRU"
+                    "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+                    "short_id": "55e6af1a35e64a98"
                 },
                 "utls": {
                     "enabled": true,
@@ -97,20 +110,41 @@
             }
         },
         {
-            "tag": "🇳🇱 荷兰 | NLD 2",
+            "tag": "🇬🇷_希腊_1",
             "type": "vless",
-            "server": "78.159.131.51",
+            "server": "185.235.241.155",
             "server_port": 443,
-            "uuid": "0f6c83bc-34ba-4ca1-96e6-08b3620cbce5",
+            "uuid": "e615a5ba-fce3-4ffa-9c86-b0327a8a107a",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "www.samsung.com",
+                "insecure": true,
+                "server_name": "m.vk.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/hormoz",
+                "headers": {
+                    "Host": "m.vk.com"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺_俄罗斯_3",
+            "type": "vless",
+            "server": "89.169.137.193",
+            "server_port": 443,
+            "uuid": "2c8adcaa-e428-4cea-9c88-e88166651ab3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "eh.vk.com",
                 "reality": {
                     "enabled": true,
-                    "public_key": "bonLTdEWniTF7h32iBBM4XK5CP0MhhZ0rIegMsYpbkw",
-                    "short_id": "7d498dcd"
+                    "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+                    "short_id": "d1579a8745398e34"
                 },
                 "utls": {
                     "enabled": true,
@@ -185,6 +219,28 @@
             }
         },
         {
+            "tag": "🇺🇸 美国 | USA 37",
+            "type": "vless",
+            "server": "172.236.226.105",
+            "server_port": 443,
+            "uuid": "0ab02f6d-3304-44f1-915b-7ed8fc5751fa",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.sap.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ECt37dCemP3n_4VSz0ytjrCdu4jDF1r3IkD1Mph-L2Q"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸 美国 | USA 39",
             "type": "vless",
             "server": "172.235.61.240",
@@ -212,24 +268,30 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇳🇱 荷兰 | NLD 2",
-                "🇺🇸 美国 | USA 39",
-                "🇺🇸 美国 | USA 15",
+                "🇷🇺_俄罗斯_3",
                 "🇺🇸 美国 | USA 21",
-                "🇺🇸 美国 | USA 31",
-                "🇯🇵 日本 | JPN 2"
+                "🇬🇷_希腊_1",
+                "香港4|@ripaojiedian",
+                "🇺🇸 美国 | USA 15",
+                "🇺🇸_US_美国",
+                "🇺🇸 美国 | USA 37",
+                "🇺🇸 美国 | USA 39",
+                "🇺🇸 美国 | USA 31"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱 荷兰 | NLD 2",
-                "🇺🇸 美国 | USA 39",
-                "🇺🇸 美国 | USA 15",
+                "🇷🇺_俄罗斯_3",
                 "🇺🇸 美国 | USA 21",
-                "🇺🇸 美国 | USA 31",
-                "🇯🇵 日本 | JPN 2"
+                "🇬🇷_希腊_1",
+                "香港4|@ripaojiedian",
+                "🇺🇸 美国 | USA 15",
+                "🇺🇸_US_美国",
+                "🇺🇸 美国 | USA 37",
+                "🇺🇸 美国 | USA 39",
+                "🇺🇸 美国 | USA 31"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
