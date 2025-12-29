@@ -75,6 +75,20 @@
     ],
     "outbounds": [
         {
+            "tag": "US VLESS-150 | free-nodes",
+            "type": "vless",
+            "server": "193.29.14.197",
+            "server_port": 443,
+            "uuid": "f3dc78d2-a8cb-3f6e-bebd-b223dfa91691",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "u720947uef26s672.okxyzback.xyz"
+            }
+        },
+        {
             "tag": "RU_speednode_0007",
             "type": "vless",
             "server": "89.169.137.193",
@@ -98,35 +112,38 @@
             }
         },
         {
-            "tag": "🇷🇺_俄罗斯_2",
+            "tag": "KR_speednode_0005",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "🇺🇸 美国 | USA 14",
             "type": "vless",
-            "server": "45.139.26.152",
-            "server_port": 7443,
-            "uuid": "7fc953d6-ae75-46fb-a970-10b57d513487",
+            "server": "198.144.179.87",
+            "server_port": 57417,
+            "uuid": "3de4bba6-c832-4920-9da2-8f92d81816dd",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "server_name": "eh.vk.com",
+                "insecure": false,
+                "server_name": "aqua-aria.company",
                 "reality": {
                     "enabled": true,
-                    "public_key": "BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA",
-                    "short_id": "fd88bd27db4cc661"
+                    "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI"
                 },
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "safari"
                 }
             }
-        },
-        {
-            "tag": "NL_speednode_0006",
-            "type": "socks",
-            "version": "5",
-            "udp_over_tcp": {},
-            "server": "104.248.203.234",
-            "server_port": 1080
         },
         {
             "tag": "proxy",
@@ -134,18 +151,20 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇷🇺_俄罗斯_2",
+                "🇺🇸 美国 | USA 14",
                 "RU_speednode_0007",
-                "NL_speednode_0006"
+                "KR_speednode_0005",
+                "US VLESS-150 | free-nodes"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇷🇺_俄罗斯_2",
+                "🇺🇸 美国 | USA 14",
                 "RU_speednode_0007",
-                "NL_speednode_0006"
+                "KR_speednode_0005",
+                "US VLESS-150 | free-nodes"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
