@@ -75,9 +75,9 @@
     ],
     "outbounds": [
         {
-            "tag": "香港4|@ripaojiedian",
+            "tag": "香港5|@ripaojiedian",
             "type": "trojan",
-            "server": "58.152.46.60",
+            "server": "203.198.84.221",
             "server_port": 443,
             "password": "BxceQaOe",
             "tls": {
@@ -87,26 +87,37 @@
             }
         },
         {
-            "tag": "CA VLESS-69 | free-nodes",
-            "type": "vless",
-            "server": "85.208.108.136",
-            "server_port": 8443,
-            "uuid": "309fa273-6579-4cb2-9143-7cad50401eba",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
+            "tag": "🇫🇷_FR_法国",
+            "type": "hysteria",
+            "server": "62.210.196.68",
+            "server_port": 26691,
+            "up_mbps": 11,
+            "down_mbps": 55,
+            "auth_str": "dongtaiwang.com",
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "www.cloudflare.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY",
-                    "short_id": "7cad5040"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇫🇷_FR_法国 3",
+            "type": "hysteria",
+            "server": "62.210.10.186",
+            "server_port": 50011,
+            "up_mbps": 11,
+            "down_mbps": 55,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
@@ -178,27 +189,50 @@
             }
         },
         {
+            "tag": "🇺🇸_美国_19",
+            "type": "trojan",
+            "server": "172.64.229.65",
+            "server_port": 443,
+            "password": "5a2c16f9",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "snippets.kkii.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "snippets.kkii.eu.org"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇷🇺_俄罗斯_2",
+                "香港5|@ripaojiedian",
+                "RU_speednode_0005",
+                "🇫🇷_FR_法国 3",
                 "RU_speednode_0007",
-                "CA VLESS-69 | free-nodes",
-                "香港4|@ripaojiedian",
-                "RU_speednode_0005"
+                "🇺🇸_美国_19",
+                "🇫🇷_FR_法国",
+                "🇷🇺_俄罗斯_2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇷🇺_俄罗斯_2",
+                "香港5|@ripaojiedian",
+                "RU_speednode_0005",
+                "🇫🇷_FR_法国 3",
                 "RU_speednode_0007",
-                "CA VLESS-69 | free-nodes",
-                "香港4|@ripaojiedian",
-                "RU_speednode_0005"
+                "🇺🇸_美国_19",
+                "🇫🇷_FR_法国",
+                "🇷🇺_俄罗斯_2"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
