@@ -75,18 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "香港3|@ripaojiedian",
-            "type": "trojan",
-            "server": "58.152.110.104",
-            "server_port": 443,
-            "password": "381f2e86233720eacda26d50e9aa26da",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.nintendogames.net"
-            }
-        },
-        {
             "tag": "香港4|@ripaojiedian",
             "type": "trojan",
             "server": "58.152.25.86",
@@ -96,6 +84,44 @@
                 "enabled": true,
                 "insecure": true,
                 "server_name": "t.me/ripaojiedian"
+            }
+        },
+        {
+            "tag": "🇺🇸龟壳 美国 US-Oracle_Corporation-1",
+            "type": "hysteria2",
+            "server": "170.9.63.232",
+            "server_port": 26902,
+            "password": "f19823db-48e6-44fc-8a6a-372ce3611763",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "德国 萨克森州 法尔肯施泰因",
+            "type": "hysteria2",
+            "server": "91.107.190.166",
+            "server_port": 8443,
+            "password": "xtGIM7iEx9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "KLSADFIU43#$"
             }
         },
         {
@@ -116,17 +142,7 @@
             }
         },
         {
-            "tag": "🇫🇷 法国 09",
-            "type": "vmess",
-            "server": "v35.hdacd.com",
-            "server_port": 30835,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "俄羅斯 3",
+            "tag": "RU VLESS-23 | free-nodes",
             "type": "vless",
             "server": "45.139.26.152",
             "server_port": 7443,
@@ -135,7 +151,7 @@
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "insecure": true,
+                "insecure": false,
                 "server_name": "eh.vk.com",
                 "reality": {
                     "enabled": true,
@@ -144,25 +160,31 @@
                 },
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "random"
                 }
             }
         },
         {
-            "tag": "KR_speednode_0011",
-            "type": "shadowsocks",
-            "server": "125.141.31.100",
-            "server_port": 18590,
-            "method": "aes-256-cfb",
-            "password": "qwerREWQ@@"
-        },
-        {
-            "tag": "KR_speednode_0018",
-            "type": "shadowsocks",
-            "server": "211.201.169.70",
-            "server_port": 19307,
-            "method": "aes-256-cfb",
-            "password": "qwerREWQ@@"
+            "tag": "DE VLESS-39 | free-nodes",
+            "type": "vless",
+            "server": "Cr7.zx-shop.ir",
+            "server_port": 2096,
+            "uuid": "725f7cc0-af7e-40b8-e2c1-72e29bc00529",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "Nvm.website-game.ir"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config",
+                "headers": {
+                    "Host": "Nvm.website-game.ir"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
         },
         {
             "tag": "TW_speednode_0021",
@@ -177,340 +199,84 @@
             "password": "exaxgqkKkd0TAMrCxeonWg=="
         },
         {
-            "tag": "US_speednode_0025",
+            "tag": "MD_speednode_0020",
             "type": "vless",
-            "server": "cloudflare.182682.xyz",
-            "server_port": 443,
-            "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+            "server": "83.166.236.201",
+            "server_port": 8443,
+            "uuid": "329bd550-a8f8-4157-b2df-dc4503097a27",
             "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "l.ayovo.netlib.re"
+                "server_name": "m.vk.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
+                    "short_id": "8f222b3475800821"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧_英国_16",
+            "type": "vless",
+            "server": "185.138.164.228",
+            "server_port": 700,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "zybs.worker.ddns-ip.net"
             },
+            "transport": {
+                "type": "ws",
+                "path": "/@Marisa_kristi",
+                "headers": {
+                    "Host": "zybs.worker.ddns-ip.net"
+                }
+            }
+        },
+        {
+            "tag": "_未知_2",
+            "type": "vless",
+            "server": "whatismyipaddress.com",
+            "server_port": 80,
+            "uuid": "18ff277a-3b9a-46a0-842e-290f2b0661d2",
+            "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
                 "path": "/",
                 "headers": {
-                    "Host": "l.ayovo.netlib.re"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
+                    "Host": "hidden-base-217b.powas74490.workers.dev"
+                }
             }
         },
         {
-            "tag": "🇭🇰 香港 | HKG",
-            "type": "vmess",
-            "server": "daa0ee28-t8lts0-t9eu8q-tlhh.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "bdf3e15e-c64c-11ea-82ef-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
+            "tag": "俄羅斯 15",
+            "type": "vless",
+            "server": "51.250.4.181",
+            "server_port": 443,
+            "uuid": "846c5d45-936c-42f6-9120-2d13830d5fa0",
             "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "eh.vk.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "t0Gj0moa6d8jMp9LazLtWPenE3wl_M9tMHveifor8GU",
+                    "short_id": "4d4421a0bac569"
                 },
-                "path": "/"
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 10",
-            "type": "vmess",
-            "server": "hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "hkt.gotochinatown.net"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 15",
-            "type": "vmess",
-            "server": "3c66b913-t8lts0-tcp4th-1c4g6.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "676c67c6-5e73-11ee-9a79-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 22",
-            "type": "vmess",
-            "server": "7264b62c-t8lts0-t8ygh3-81nv.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "47e91fb6-25b8-df52-bc18-3cdc8548192f",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 24",
-            "type": "vmess",
-            "server": "c760d6c2-t8lts0-thv9l4-1jbj0.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 27",
-            "type": "vmess",
-            "server": "fc41a9ed-t8lts0-tpw4i4-1pckg.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "526a1128-7487-11ee-9bca-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 29",
-            "type": "vmess",
-            "server": "6989c314-t8lts0-tn57fp-5ifr.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 30",
-            "type": "vmess",
-            "server": "2304a470-t8lts0-tbac1z-1j3zm.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "6ce63b80-8b5b-11ef-b635-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 33",
-            "type": "vmess",
-            "server": "6d59909a-t8lts0-tamumc-1lkbs.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "5a4c13ae-6673-11ee-a149-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 35",
-            "type": "vmess",
-            "server": "c4afc2ca-t8lts0-t95ncr-1slop.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "520b9126-9870-11ef-81b0-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 37",
-            "type": "vmess",
-            "server": "a1728291-t8lts0-thvc3p-1o4kv.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "87b31a02-172e-11ee-a11f-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 39",
-            "type": "vmess",
-            "server": "1e55ac41-t6r5s0-tiuylw-46gc.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "225d1cca-d744-11ef-b790-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "1e55ac41-t6r5s0-tiuylw-46gc.hkt.gotochinatown.net"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 50",
-            "type": "vmess",
-            "server": "946bd029-t8lts0-tc48kl-1szgv.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "448aff24-b2e6-11ef-97e0-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 55",
-            "type": "vmess",
-            "server": "1ecb028e-t8lts0-tiuylw-46gc.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "225d1cca-d744-11ef-b790-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 59",
-            "type": "vmess",
-            "server": "5e8d9f95-t8lts0-t8xdsu-nx3b.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "32315324-cf6b-11ed-979b-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 61",
-            "type": "vmess",
-            "server": "137d9435-t8lts0-tpn98f-1rcxl.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "9141f048-0b70-11ef-9eb1-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 62",
-            "type": "vmess",
-            "server": "14600a27-t8lts0-tc67m2-1tjc4.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "fac704ae-0304-11f0-a2ef-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 63",
-            "type": "vmess",
-            "server": "679063a1-t8lts0-tnfe2z-1s4hc.hkt.gotochinatown.net",
-            "server_port": 80,
-            "uuid": "aafedc64-9c23-11ef-a79f-f23c91cfbbc9",
-            "security": "auto",
-            "alter_id": 2,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "broadcastlv.chat.bilibili.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "🇻🇳 越南 | VNM 8",
-            "type": "shadowsocks",
-            "server": "103.186.154.22",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
         },
         {
             "tag": "proxy",
@@ -518,68 +284,34 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇫🇷_FR_法国",
-                "🇭🇰 香港 | HKG 50",
+                "_未知_2",
+                "DE VLESS-39 | free-nodes",
+                "🇺🇸龟壳 美国 US-Oracle_Corporation-1",
                 "TW_speednode_0021",
-                "🇫🇷 法国 09",
-                "🇭🇰 香港 | HKG 35",
-                "🇭🇰 香港 | HKG 55",
-                "🇻🇳 越南 | VNM 8",
-                "🇭🇰 香港 | HKG 24",
-                "🇭🇰 香港 | HKG 27",
-                "🇭🇰 香港 | HKG 61",
-                "🇭🇰 香港 | HKG 30",
-                "🇭🇰 香港 | HKG 39",
-                "🇭🇰 香港 | HKG 37",
-                "🇭🇰 香港 | HKG 10",
-                "🇭🇰 香港 | HKG 15",
-                "俄羅斯 3",
-                "🇭🇰 香港 | HKG 62",
-                "🇭🇰 香港 | HKG 33",
-                "🇭🇰 香港 | HKG 22",
-                "🇭🇰 香港 | HKG 63",
-                "US_speednode_0025",
-                "KR_speednode_0011",
-                "🇭🇰 香港 | HKG",
-                "🇭🇰 香港 | HKG 59",
+                "🇫🇷_FR_法国",
+                "德国 萨克森州 法尔肯施泰因",
                 "香港4|@ripaojiedian",
-                "🇭🇰 香港 | HKG 29",
-                "香港3|@ripaojiedian",
-                "KR_speednode_0018"
+                "俄羅斯 15",
+                "RU VLESS-23 | free-nodes",
+                "🇬🇧_英国_16",
+                "MD_speednode_0020"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷_FR_法国",
-                "🇭🇰 香港 | HKG 50",
+                "_未知_2",
+                "DE VLESS-39 | free-nodes",
+                "🇺🇸龟壳 美国 US-Oracle_Corporation-1",
                 "TW_speednode_0021",
-                "🇫🇷 法国 09",
-                "🇭🇰 香港 | HKG 35",
-                "🇭🇰 香港 | HKG 55",
-                "🇻🇳 越南 | VNM 8",
-                "🇭🇰 香港 | HKG 24",
-                "🇭🇰 香港 | HKG 27",
-                "🇭🇰 香港 | HKG 61",
-                "🇭🇰 香港 | HKG 30",
-                "🇭🇰 香港 | HKG 39",
-                "🇭🇰 香港 | HKG 37",
-                "🇭🇰 香港 | HKG 10",
-                "🇭🇰 香港 | HKG 15",
-                "俄羅斯 3",
-                "🇭🇰 香港 | HKG 62",
-                "🇭🇰 香港 | HKG 33",
-                "🇭🇰 香港 | HKG 22",
-                "🇭🇰 香港 | HKG 63",
-                "US_speednode_0025",
-                "KR_speednode_0011",
-                "🇭🇰 香港 | HKG",
-                "🇭🇰 香港 | HKG 59",
+                "🇫🇷_FR_法国",
+                "德国 萨克森州 法尔肯施泰因",
                 "香港4|@ripaojiedian",
-                "🇭🇰 香港 | HKG 29",
-                "香港3|@ripaojiedian",
-                "KR_speednode_0018"
+                "俄羅斯 15",
+                "RU VLESS-23 | free-nodes",
+                "🇬🇧_英国_16",
+                "MD_speednode_0020"
             ],
             "url": "https://www.google.com/",
             "interval": "10m",
