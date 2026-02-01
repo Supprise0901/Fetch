@@ -75,6 +75,51 @@
     ],
     "outbounds": [
         {
+            "tag": "美国-004",
+            "type": "vless",
+            "server": "159.223.205.136",
+            "server_port": 42356,
+            "uuid": "3c28c3cf-85ef-4a8a-a475-3a8585d563fe",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "dash.cloudflare.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nY642oPT9bs-EddohAqLcif8a7qaxAUwxeDD85eXNjw"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "TR VLESS-50 | free-nodes",
+            "type": "vless",
+            "server": "89.169.162.214",
+            "server_port": 8443,
+            "uuid": "2ad6bd90-51fd-41d2-985b-b7aab5cd77c8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "yandex.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+                    "short_id": "205748bc0f24a747"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "RU_speednode_0019",
             "type": "vless",
             "server": "russia7.yourbot.me",
@@ -98,42 +143,23 @@
             }
         },
         {
-            "tag": "香港 12",
-            "type": "vless",
-            "server": "47.80.10.52",
-            "server_port": 443,
-            "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "api.company-target.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "TR VLESS-50 | free-nodes",
                 "RU_speednode_0019",
-                "香港 12"
+                "美国-004"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "TR VLESS-50 | free-nodes",
                 "RU_speednode_0019",
-                "香港 12"
+                "美国-004"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
