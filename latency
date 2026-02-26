@@ -75,6 +75,14 @@
     ],
     "outbounds": [
         {
+            "tag": "美国-009 |5.9MB/s|0%|GPT⁺|X|History",
+            "type": "socks",
+            "version": "5",
+            "udp_over_tcp": {},
+            "server": "205.185.113.92",
+            "server_port": 1080
+        },
+        {
             "tag": "加拿大-001 |4.7MB/s|GPT⁺|X|Succeed",
             "type": "socks",
             "version": "5",
@@ -91,6 +99,29 @@
             "security": "auto",
             "alter_id": 0,
             "packet_encoding": "xudp"
+        },
+        {
+            "tag": "俄罗斯联邦-011 |4.1MB/s|YT-RU|NF|D+",
+            "type": "vless",
+            "server": "213.165.54.4",
+            "server_port": 443,
+            "uuid": "c2d09c1c-7d4d-46c4-838f-ad263b93c4e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "cdnjs.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4",
+                    "short_id": "82c8140feb118043"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            }
         },
         {
             "tag": "🇭🇰HK  ROSE—08",
@@ -110,48 +141,6 @@
             }
         },
         {
-            "tag": "FR2｜原生/疑似家宽｜非常安全",
-            "type": "hysteria2",
-            "server": "fr.pddwdf.store",
-            "server_port": 26399,
-            "password": "c7730b65-c3c7-44a6-b1be-9d72d36679d1",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "fr.pddwdf.store",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "ZjlmNDQ0MzAwNDgwMTUxMQ=="
-            }
-        },
-        {
-            "tag": "SG8｜机房｜低风险",
-            "type": "hysteria2",
-            "server": "afeioraclesg.54141528.xyz",
-            "server_port": 36588,
-            "password": "de0c4b78-82d5-4f30-8d57-5302748b6af9",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "afeioraclesg.54141528.xyz",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "ZDQxZDhjZDk4ZjAwYjIwNA=="
-            }
-        },
-        {
             "tag": "香港|@ripaojiedian",
             "type": "vmess",
             "server": "v10.hdacd.com",
@@ -160,26 +149,6 @@
             "security": "auto",
             "alter_id": 2,
             "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇺🇸US 5",
-            "type": "vless",
-            "server": "192.193.104.25",
-            "server_port": 443,
-            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "sni.111000.indevs.in"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560&Telegram🇨🇳 @WangCai2",
-                "headers": {
-                    "Host": "sni.111000.indevs.in"
-                }
-            }
         },
         {
             "tag": "🇬🇷_GR_希腊",
@@ -201,6 +170,45 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇭🇰HK 4",
+            "type": "vless",
+            "server": "223.16.138.113",
+            "server_port": 10002,
+            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "sni.jpmj.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?ed=2560&Telegram🇨🇳 @WangCai2",
+                "headers": {
+                    "Host": "sni.jpmj.dev"
+                }
+            }
+        },
+        {
+            "tag": "RU俄罗斯(mibei77.com 米贝节点分享)",
+            "type": "trojan",
+            "server": "109.234.211.66",
+            "server_port": 8443,
+            "password": "trojan",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "store.timimi.dpdns.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "store.timimi.dpdns.org"
                 }
             }
         },
@@ -268,28 +276,6 @@
             }
         },
         {
-            "tag": "SC_speednode_0017",
-            "type": "vless",
-            "server": "80.253.251.122",
-            "server_port": 13686,
-            "uuid": "8f09e644-7208-4f38-ac2f-db6d23cc647f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yandex.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "E2rSTxjCs8arrVzkG0htKf5OQt6wyoIsvwnsvkmKanQ",
-                    "short_id": "fd38dd693669e822"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0031",
             "type": "vless",
             "server": "143.20.236.51",
@@ -335,49 +321,6 @@
             }
         },
         {
-            "tag": "US_speednode_0036",
-            "type": "vless",
-            "server": "3.cdnconn.com",
-            "server_port": 23335,
-            "uuid": "e384913f-8863-47b4-8858-a84b68abb4a6",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "icloud.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik",
-                    "short_id": "67b1e94e4dd1ef90"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0038",
-            "type": "vless",
-            "server": "198.62.62.248",
-            "server_port": 443,
-            "uuid": "5a4abb78-ecd7-4d68-ab2a-c11a3842f261",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "tar.alabama-tigr.info"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/love",
-                "headers": {
-                    "Host": "tar.alabama-tigr.info"
-                }
-            }
-        },
-        {
             "tag": "🇳🇱_荷兰_1",
             "type": "vless",
             "server": "nl04-vlr01.tcp-reset-club.net",
@@ -401,14 +344,6 @@
             }
         },
         {
-            "tag": "KR_79914_0014",
-            "type": "socks",
-            "version": "5",
-            "udp_over_tcp": {},
-            "server": "121.169.46.116",
-            "server_port": 1090
-        },
-        {
             "tag": "16-台湾-124ms",
             "type": "vless",
             "server": "122.116.105.15",
@@ -425,52 +360,6 @@
                 "path": "/122.116.105.15:995",
                 "headers": {
                     "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "BY_speednode_0001",
-            "type": "vless",
-            "server": "by.cdn.titun.su",
-            "server_port": 443,
-            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "by.cdn.titun.su",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg",
-                    "short_id": "cad317b20db4aad2"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "FI_speednode_0004",
-            "type": "vless",
-            "server": "78.153.139.68",
-            "server_port": 8443,
-            "uuid": "fd8972d7-cf5e-11f0-9970-45e1d80c4039",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "images.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4",
-                    "short_id": "58c512b4422e2517"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
@@ -542,6 +431,206 @@
             }
         },
         {
+            "tag": "未知 VLESS-101 | free-nodes 2",
+            "type": "vless",
+            "server": "45.13.119.38",
+            "server_port": 443,
+            "uuid": "ccedb1b1-35f3-46d1-a85a-c699eef5f3e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fran.scroogethebest.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc",
+                    "short_id": "4fa44664f6a566d3"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🏳️_未知",
+            "type": "vless",
+            "server": "142.248.80.157",
+            "server_port": 443,
+            "uuid": "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "apple.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇲🇾 马来西亚 | MYS 2 2",
+            "type": "http",
+            "server": "00a7a1a4-tb4kg0-ttx5yr-1j0y6.my.oshuawei.com",
+            "server_port": 31233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "1cce7df2-251c-11ee-9409-f23c9164ca5d",
+            "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d"
+        },
+        {
+            "tag": "🇹🇭 泰国 | THA 3",
+            "type": "http",
+            "server": "fd6d9d64-tb4kg0-tcl68l-1fy29.id.oshuawei.com",
+            "server_port": 32232,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "500dd8cc-a21c-11ec-bd7c-f23c913c8d2b",
+            "password": "500dd8cc-a21c-11ec-bd7c-f23c913c8d2b"
+        },
+        {
+            "tag": "美国02|",
+            "type": "trojan",
+            "server": "faq1.lieerr222.cn",
+            "server_port": 43534,
+            "password": "58ea18cc-9009-4835-ad5e-8e01c603d797",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "最低月付2块钱1000G流量",
+            "type": "vless",
+            "server": "220.128.110.108",
+            "server_port": 43,
+            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "63.hhhhh.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/220.128.110.108:43",
+                "headers": {
+                    "Host": "63.hhhhh.eu.org"
+                }
+            }
+        },
+        {
+            "tag": "15-台湾-87ms",
+            "type": "vless",
+            "server": "220.135.92.105",
+            "server_port": 2087,
+            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "63.hhhhh.eu.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/220.135.92.105:2087",
+                "headers": {
+                    "Host": "63.hhhhh.eu.org"
+                }
+            }
+        },
+        {
+            "tag": "BY_speednode_0001",
+            "type": "vless",
+            "server": "by.cdn.titun.su",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "by.cdn.titun.su",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg",
+                    "short_id": "cad317b20db4aad2"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "FI_speednode_0004",
+            "type": "vless",
+            "server": "78.153.139.68",
+            "server_port": 8443,
+            "uuid": "fd8972d7-cf5e-11f0-9970-45e1d80c4039",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "images.apple.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4",
+                    "short_id": "58c512b4422e2517"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "IQ_speednode_0010",
+            "type": "vless",
+            "server": "deu469.unboundworld.org",
+            "server_port": 443,
+            "uuid": "cc9f7840-757a-430b-bddc-a73478bea434",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.t3n.de",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "KR_speednode_0011",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
             "tag": "RU_speednode_0013",
             "type": "vless",
             "server": "us01-vlr01-gmn03.tcp-reset-club.net",
@@ -557,6 +646,29 @@
                     "enabled": true,
                     "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
                     "short_id": "f79448a30d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "RU_speednode_0015",
+            "type": "vless",
+            "server": "51.250.4.119",
+            "server_port": 443,
+            "uuid": "9a599b2e-5455-44d5-9a72-5c76f28e93e3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ads.x5.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+                    "short_id": "87cc0414902bee2d"
                 },
                 "utls": {
                     "enabled": true,
@@ -588,6 +700,209 @@
             }
         },
         {
+            "tag": "US_speednode_0020",
+            "type": "vless",
+            "server": "www.npmjs.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0021",
+            "type": "vless",
+            "server": "developers.cloudflare.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0022",
+            "type": "vless",
+            "server": "www.udemy.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0024",
+            "type": "vless",
+            "server": "cf.090227.xyz",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0025",
+            "type": "vless",
+            "server": "blog.cloudflare.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0026",
+            "type": "vless",
+            "server": "cloudflare-dns.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0027",
+            "type": "vless",
+            "server": "ns.cloudflare.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0028",
+            "type": "vless",
+            "server": "openai.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0029",
+            "type": "vless",
+            "server": "support.cloudflare.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0030",
+            "type": "vless",
+            "server": "www.epicgames.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0034",
+            "type": "vless",
+            "server": "www.temu.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0035",
+            "type": "vless",
+            "server": "www.shopify.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0036",
+            "type": "vless",
+            "server": "3.cdnconn.com",
+            "server_port": 23335,
+            "uuid": "e384913f-8863-47b4-8858-a84b68abb4a6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "icloud.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik",
+                    "short_id": "67b1e94e4dd1ef90"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "US_speednode_0037",
             "type": "vless",
             "server": "66.179.82.126",
@@ -610,25 +925,22 @@
             }
         },
         {
-            "tag": "未知 VLESS-101 | free-nodes 2",
+            "tag": "US_speednode_0038",
             "type": "vless",
-            "server": "45.13.119.38",
+            "server": "198.62.62.248",
             "server_port": 443,
-            "uuid": "ccedb1b1-35f3-46d1-a85a-c699eef5f3e1",
+            "uuid": "5a4abb78-ecd7-4d68-ab2a-c11a3842f261",
             "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "fran.scroogethebest.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc",
-                    "short_id": "4fa44664f6a566d3"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                "server_name": "tar.alabama-tigr.info"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/love",
+                "headers": {
+                    "Host": "tar.alabama-tigr.info"
                 }
             }
         },
@@ -655,6 +967,29 @@
             }
         },
         {
+            "tag": "未知 VLESS-112 | free-nodes",
+            "type": "vless",
+            "server": "152.53.46.200",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "at.jojack.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA",
+                    "short_id": "8dc4fccb2bcfc99d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "DE13｜机房｜低风险",
             "type": "vmess",
             "server": "v33.hdacd.com",
@@ -665,24 +1000,18 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇭🇰 机场推荐:dafei.de 香港 02",
-            "type": "hysteria2",
-            "server": "212.192.12.146",
-            "server_port": 12344,
-            "password": "6dfbef3b-f718-4053-806f-c9657e2fd943",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "hkfree.jljd.xyz",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "ZWI4MWQ5YmMzOWY2NzlhMA=="
+            "tag": "🇨🇾_塞浦路斯",
+            "type": "vless",
+            "server": "www.csgo.net",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "fuckingfangbinxing.cnm--fangbinxing-cnm.workers.dev"
+                }
             }
         },
         {
@@ -706,20 +1035,78 @@
             }
         },
         {
-            "tag": "🏳️_未知",
+            "tag": "🇰🇷_韩国",
             "type": "vless",
-            "server": "142.248.80.157",
+            "server": "kr-tls01.gunyoung.top",
+            "server_port": 50000,
+            "uuid": "7524fe71-0287-455d-bf0d-143ece42736c",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "cloud-newcf.hwoong.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cloud-newcf.hwoong.top"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_60",
+            "type": "vless",
+            "server": "172.67.160.192",
             "server_port": 443,
-            "uuid": "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2",
+            "uuid": "2bcfbfba-b446-4ad5-93ad-72af9e008f61",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "nuclear.us.kg"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/free/103.101.153.32:443",
+                "headers": {
+                    "Host": "nuclear.us.kg"
+                }
+            }
+        },
+        {
+            "tag": "_未知_43",
+            "type": "vless",
+            "server": "104.18.32.47",
+            "server_port": 2052,
+            "uuid": "5e62ddcf-78c9-4b15-803a-436c8c839ddc",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK."
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_69",
+            "type": "vless",
+            "server": "dns.dressforida.monster",
+            "server_port": 443,
+            "uuid": "79149019-5abe-46f9-91ae-e1e7d1d2c408",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "apple.com",
+                "server_name": "www.techradar.com",
                 "reality": {
                     "enabled": true,
-                    "public_key": "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"
+                    "public_key": "4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8",
+                    "short_id": "174c6cf22e22"
                 },
                 "utls": {
                     "enabled": true,
@@ -728,11 +1115,34 @@
             }
         },
         {
-            "tag": "🇹🇼_中国台湾省_6",
+            "tag": "🇫🇷_法国_24",
+            "type": "vless",
+            "server": "185.171.202.55",
+            "server_port": 443,
+            "uuid": "ccedb1b1-35f3-46d1-a85a-c699eef5f3e1",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fran.scroogethebest.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc",
+                    "short_id": "4fa44664f6a566d3"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇼_中国台湾省_3",
             "type": "trojan",
-            "server": "220.130.58.136",
-            "server_port": 35502,
-            "password": "6f038cee-6ba1-4941-bce5-de1969f37405",
+            "server": "green2.cdntencentmusic.com",
+            "server_port": 35501,
+            "password": "bbde1e79-49d4-448a-a81d-38bfbba3480d",
             "tls": {
                 "enabled": true,
                 "insecure": false,
@@ -740,11 +1150,11 @@
             }
         },
         {
-            "tag": "🇹🇼_中国台湾省_7",
+            "tag": "🇹🇼_中国台湾省_4",
             "type": "trojan",
-            "server": "green2.cdntencentmusic.com",
-            "server_port": 31101,
-            "password": "0a169d7d-a30f-4d90-af1b-55f6ef6afcb7",
+            "server": "220.130.58.136",
+            "server_port": 35501,
+            "password": "f976ac58-b52a-4a54-9c8e-3d49fd365232",
             "tls": {
                 "enabled": true,
                 "insecure": false,
@@ -772,10 +1182,10 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "🇨🇳_中国_38",
+            "tag": "🇨🇳_中国_36",
             "type": "vmess",
-            "server": "v9.hdacd.com",
-            "server_port": 30809,
+            "server": "v24.hdacd.com",
+            "server_port": 30824,
             "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
             "security": "auto",
             "alter_id": 2,
@@ -794,24 +1204,57 @@
             }
         },
         {
-            "tag": "🇯🇵 日本 | JPN 3",
+            "tag": "🇩🇪DE_9 | ⬇️ 3.5MB/s",
             "type": "vless",
-            "server": "154.31.114.125",
+            "server": "178.17.50.111",
             "server_port": 443,
-            "uuid": "1be0abff-aa62-4e7a-bade-982c593be422",
+            "uuid": "36f6f998-029e-48e2-ba30-24e2a8159075",
             "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "navi.bankrate.com",
+                "server_name": "ads.x5.ru",
                 "reality": {
                     "enabled": true,
-                    "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-                    "short_id": "2da72ce6"
+                    "public_key": "vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4",
+                    "short_id": "82c8140feb118043"
                 },
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "美国(yudou789.top 玉豆免费节点) 62",
+            "type": "vless",
+            "server": "188.114.98.112",
+            "server_port": 80,
+            "uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY",
+                "headers": {
+                    "Host": "elenaaaaaaaaaa.cloudns.pro."
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "美国(yudou789.top 玉豆免费节点) 75",
+            "type": "vless",
+            "server": "104.21.31.4",
+            "server_port": 8880,
+            "uuid": "0a5ab719-2407-4398-b507-8437ef365023",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY",
+                "headers": {
+                    "Host": "underthegun.cfd."
                 }
             }
         },
@@ -848,66 +1291,6 @@
             "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d"
         },
         {
-            "tag": "🇭🇰 香港 | HKG 2 2",
-            "type": "http",
-            "server": "f86ad752-tb4kg0-td81f9-146qr.cm4.oshuawei.com",
-            "server_port": 5228,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 3 2",
-            "type": "http",
-            "server": "f868c076-t9zts0-tqx9ef-1k0yf.hkt.cdnhuawei.com",
-            "server_port": 8443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "9cc3c03e-21fd-11ee-a642-f23c91369f2d",
-            "password": "<password>"
-        },
-        {
-            "tag": "🇰🇷 韩国 | KOR",
-            "type": "http",
-            "server": "f772fb18-tb4kg0-td81f9-146qr.kr.oshuawei.com",
-            "server_port": 31433,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
-        },
-        {
-            "tag": "🇲🇾 马来西亚 | MYS 2 2",
-            "type": "http",
-            "server": "00a7a1a4-tb4kg0-ttx5yr-1j0y6.my.oshuawei.com",
-            "server_port": 31233,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "1cce7df2-251c-11ee-9409-f23c9164ca5d",
-            "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d"
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 2 2",
-            "type": "http",
-            "server": "f86ad752-tb4kg0-td81f9-146qr.cm4.oshuawei.com",
-            "server_port": 17235,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
-        },
-        {
             "tag": "🇸🇬 新加坡 | SGP 7",
             "type": "http",
             "server": "b41a7517-tb4kg0-ttx5yr-1j0y6.cm4.oshuawei.com",
@@ -918,30 +1301,6 @@
             },
             "username": "1cce7df2-251c-11ee-9409-f23c9164ca5d",
             "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d"
-        },
-        {
-            "tag": "🇹🇭 泰国 | THA 2",
-            "type": "http",
-            "server": "fa2b9a73-tb4kg0-td81f9-146qr.id.oshuawei.com",
-            "server_port": 32232,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
-        },
-        {
-            "tag": "🇹🇭 泰国 | THA 3",
-            "type": "http",
-            "server": "fd6d9d64-tb4kg0-tcl68l-1fy29.id.oshuawei.com",
-            "server_port": 32232,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "500dd8cc-a21c-11ec-bd7c-f23c913c8d2b",
-            "password": "500dd8cc-a21c-11ec-bd7c-f23c913c8d2b"
         },
         {
             "tag": "🇹🇼 🇨🇳 台湾 | TWN 4",
@@ -964,28 +1323,12 @@
             }
         },
         {
-            "tag": "🇺🇸 美国 | USA 5 2",
-            "type": "http",
-            "server": "60bef54d-tb4kg0-td81f9-146qr.se.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
-        },
-        {
-            "tag": "🇺🇸 美国 | USA 7 2",
-            "type": "http",
-            "server": "f058d88b-tb4kg0-td81f9-146qr.cu.oshuawei.com",
-            "server_port": 15229,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "21a74582-f139-11ed-ab21-f23c913c8d2b",
-            "password": "21a74582-f139-11ed-ab21-f23c913c8d2b"
+            "tag": "🇻🇳 越南 | VNM 2 2",
+            "type": "shadowsocks",
+            "server": "103.186.154.155",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
         },
         {
             "tag": "🇻🇳 越南 | VNM 3 2",
@@ -996,34 +1339,26 @@
             "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
         },
         {
-            "tag": "美国02|",
-            "type": "trojan",
-            "server": "faq1.lieerr222.cn",
-            "server_port": 43534,
-            "password": "58ea18cc-9009-4835-ad5e-8e01c603d797",
+            "tag": " 香港 46",
+            "type": "vless",
+            "server": "2.hk.2.cdn-bilibili.cn",
+            "server_port": 443,
+            "uuid": "fcfc091d-81a4-40b7-cbdc-8eb7683617a4",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "insecure": true
+                "insecure": false,
+                "server_name": "www.icloud.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
             }
-        },
-        {
-            "tag": "美国01",
-            "type": "trojan",
-            "server": "faq1.lieerr222.cn",
-            "server_port": 43533,
-            "password": "685343f2-49e1-41f8-a7fc-5d0993afb6c6",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇹🇭 泰国",
-            "type": "shadowsocks",
-            "server": "th1.07c06051-81fd-4aa4-a94e-a0860315df8f.org",
-            "server_port": 14999,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:6YebGRecdqKoInRf4i8SZqlAevOV13VtNw+oNecrWPQ="
         },
         {
             "tag": "官网地址https://kelayun.notepin.co",
@@ -1046,10 +1381,10 @@
             }
         },
         {
-            "tag": "最低月付2块钱1000G流量",
+            "tag": "下单地址https://kelayun.notepin.co",
             "type": "vless",
-            "server": "220.128.110.108",
-            "server_port": 43,
+            "server": "125.228.236.138",
+            "server_port": 2443,
             "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
             "packet_encoding": "xudp",
             "tls": {
@@ -1059,107 +1394,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/220.128.110.108:43",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "新疆西藏福建都能用",
-            "type": "vless",
-            "server": "60.248.139.106",
-            "server_port": 12755,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/60.248.139.106:12755",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "解锁Gemini和ChatGPT",
-            "type": "vless",
-            "server": "60.248.139.106",
-            "server_port": 18081,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/60.248.139.106:18081",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "9-台湾-63ms",
-            "type": "vless",
-            "server": "60.248.139.106",
-            "server_port": 10016,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/60.248.139.106:10016",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "10-台湾-66ms",
-            "type": "vless",
-            "server": "60.248.139.106",
-            "server_port": 12128,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/60.248.139.106:12128",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "11-台湾-68ms",
-            "type": "vless",
-            "server": "114.33.57.170",
-            "server_port": 443,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/114.33.57.170:443",
+                "path": "/125.228.236.138:2443",
                 "headers": {
                     "Host": "63.hhhhh.eu.org"
                 }
@@ -1206,171 +1441,173 @@
             }
         },
         {
-            "tag": "15-台湾-87ms",
-            "type": "vless",
-            "server": "220.135.92.105",
-            "server_port": 2087,
-            "uuid": "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "63.hhhhh.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/220.135.92.105:2087",
-                "headers": {
-                    "Host": "63.hhhhh.eu.org"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇨🇳_中国_38",
-                "🇹🇼_中国台湾省_7",
-                "🇸🇬 新加坡 | SGP 7",
-                "SG8｜机房｜低风险",
-                "🇹🇼_中国台湾省_6",
-                "🇯🇵 日本 | JPN 3",
-                "🇸🇬 新加坡 | SGP 2 2",
-                "FI_speednode_0004",
-                "FR VLESS-92 | free-nodes",
-                "US_speednode_0037",
-                "US_speednode_0036",
-                "SC_speednode_0017",
-                "🇺🇸US 5",
-                "付费机场VPN梯子加速器推荐",
-                "解锁Gemini和ChatGPT",
-                "🇹🇭 泰国",
-                "🇹🇼 🇨🇳 台湾 | TWN 4",
-                "🇬🇷_GR_希腊",
-                "BY_speednode_0001",
-                "美国02|",
-                "香港|@ripaojiedian",
-                "最低月付2块钱1000G流量",
-                "🇺🇸 美国 | USA 5 2",
-                "US_speednode_0038",
-                "FR2｜原生/疑似家宽｜非常安全",
-                "🇭🇰 香港 | HKG 2 2",
-                "🇩🇪 德国 | DEU 2 2",
-                "9-台湾-63ms",
-                "FR_speednode_0005",
-                "🇨🇳_中国_22",
-                "未知 VLESS-106 | free-nodes",
-                "新疆西藏福建都能用",
-                "🇲🇾 马来西亚 | MYS 2 2",
-                "🇺🇸 美国 | USA 7 2",
-                "13-台湾-351ms",
-                "RU_speednode_0016",
-                "RU_speednode_0013",
-                "GB_speednode_0007",
-                "KR_79914_0014",
-                "12-台湾-68ms",
-                "🇭🇰 机场推荐:dafei.de 香港 02",
-                "10-台湾-66ms",
-                "🇹🇭 泰国 | THA 2",
-                "16-台湾-124ms",
-                "🇰🇷 韩国 | KOR",
-                "US_speednode_0031",
-                "DE13｜机房｜低风险",
-                "加拿大-001 |4.7MB/s|GPT⁺|X|Succeed",
-                "KR VLESS-55 | free-nodes",
-                "🇭🇰 香港 | HKG 3 2",
-                "🇭🇰HK  ROSE—08",
-                "🇳🇱 荷兰 | NLD 3",
-                "🇨🇳_中国_23",
-                "🏳️_未知",
-                "🇹🇭 泰国 | THA 3",
-                "🇳🇱_荷兰_1",
                 "15-台湾-87ms",
+                "US_speednode_0020",
+                "US_speednode_0037",
+                "最低月付2块钱1000G流量",
+                "🇭🇰HK  ROSE—08",
+                "US_speednode_0028",
+                "FI_speednode_0004",
+                "RU俄罗斯(mibei77.com 米贝节点分享)",
+                "US_speednode_0031",
+                "12-台湾-68ms",
+                "16-台湾-124ms",
+                "DE13｜机房｜低风险",
+                "🇹🇼 🇨🇳 台湾 | TWN 4",
+                "US_speednode_0021",
+                "未知 VLESS-112 | free-nodes",
+                "US_speednode_0029",
+                "🇻🇳 越南 | VNM 2 2",
+                "KR_speednode_0011",
+                "🇳🇱_荷兰_1",
+                "俄罗斯联邦-011 |4.1MB/s|YT-RU|NF|D+",
+                "美国(yudou789.top 玉豆免费节点) 75",
+                "RU_speednode_0015",
+                "香港|@ripaojiedian",
+                "🇲🇾 马来西亚 | MYS 2 2",
+                "US_speednode_0026",
+                "🇹🇭 泰国 | THA 3",
+                "US_speednode_0038",
                 "未知 VLESS-101 | free-nodes 2",
-                "RU_speednode_0012",
-                "🇻🇳 越南 | VNM 3 2",
-                "🇹🇼_中国台湾省_17",
+                "_未知_43",
+                "🇹🇼_中国台湾省_3",
+                "德国-006 |GB英国(mibei77.com 米贝节点分享) 7",
+                "🇨🇳_中国_23",
+                "US_speednode_0034",
+                "KR VLESS-55 | free-nodes",
+                "US_speednode_0024",
                 "官网地址https://kelayun.notepin.co",
-                "11-台湾-68ms",
+                "🇭🇰HK 4",
+                "US_speednode_0022",
+                " 香港 46",
+                "US_speednode_0030",
+                "FR_speednode_0005",
+                "🇩🇪 德国 | DEU 2 2",
+                "🏳️_未知",
+                "🇹🇼_中国台湾省_17",
+                "🇺🇸_美国_60",
+                "🇫🇷_法国_24",
+                "下单地址https://kelayun.notepin.co",
+                "🇹🇼_中国台湾省_4",
+                "🇺🇸_美国_69",
+                "US_speednode_0025",
+                "🇨🇳_中国_36",
+                "🇸🇬 新加坡 | SGP 7",
+                "US_speednode_0035",
+                "🇨🇳_中国_22",
+                "RU_speednode_0012",
+                "加拿大-001 |4.7MB/s|GPT⁺|X|Succeed",
+                "🇰🇷_韩国",
+                "未知 VLESS-106 | free-nodes",
+                "🇬🇷_GR_希腊",
+                "🇩🇪DE_9 | ⬇️ 3.5MB/s",
+                "付费机场VPN梯子加速器推荐",
                 "US_speednode_0032",
+                "RU_speednode_0016",
+                "美国02|",
+                "BY_speednode_0001",
+                "🇳🇱 荷兰 | NLD 3",
+                "IQ_speednode_0010",
+                "US_speednode_0027",
+                "美国(yudou789.top 玉豆免费节点) 62",
                 "🇹🇼_中国台湾省",
-                "美国01",
-                "德国-006 |GB英国(mibei77.com 米贝节点分享) 7"
+                "🇨🇾_塞浦路斯",
+                "GB_speednode_0007",
+                "13-台湾-351ms",
+                "🇻🇳 越南 | VNM 3 2",
+                "RU_speednode_0013",
+                "FR VLESS-92 | free-nodes",
+                "US_speednode_0036",
+                "美国-009 |5.9MB/s|0%|GPT⁺|X|History"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳_中国_38",
-                "🇹🇼_中国台湾省_7",
-                "🇸🇬 新加坡 | SGP 7",
-                "SG8｜机房｜低风险",
-                "🇹🇼_中国台湾省_6",
-                "🇯🇵 日本 | JPN 3",
-                "🇸🇬 新加坡 | SGP 2 2",
-                "FI_speednode_0004",
-                "FR VLESS-92 | free-nodes",
-                "US_speednode_0037",
-                "US_speednode_0036",
-                "SC_speednode_0017",
-                "🇺🇸US 5",
-                "付费机场VPN梯子加速器推荐",
-                "解锁Gemini和ChatGPT",
-                "🇹🇭 泰国",
-                "🇹🇼 🇨🇳 台湾 | TWN 4",
-                "🇬🇷_GR_希腊",
-                "BY_speednode_0001",
-                "美国02|",
-                "香港|@ripaojiedian",
-                "最低月付2块钱1000G流量",
-                "🇺🇸 美国 | USA 5 2",
-                "US_speednode_0038",
-                "FR2｜原生/疑似家宽｜非常安全",
-                "🇭🇰 香港 | HKG 2 2",
-                "🇩🇪 德国 | DEU 2 2",
-                "9-台湾-63ms",
-                "FR_speednode_0005",
-                "🇨🇳_中国_22",
-                "未知 VLESS-106 | free-nodes",
-                "新疆西藏福建都能用",
-                "🇲🇾 马来西亚 | MYS 2 2",
-                "🇺🇸 美国 | USA 7 2",
-                "13-台湾-351ms",
-                "RU_speednode_0016",
-                "RU_speednode_0013",
-                "GB_speednode_0007",
-                "KR_79914_0014",
-                "12-台湾-68ms",
-                "🇭🇰 机场推荐:dafei.de 香港 02",
-                "10-台湾-66ms",
-                "🇹🇭 泰国 | THA 2",
-                "16-台湾-124ms",
-                "🇰🇷 韩国 | KOR",
-                "US_speednode_0031",
-                "DE13｜机房｜低风险",
-                "加拿大-001 |4.7MB/s|GPT⁺|X|Succeed",
-                "KR VLESS-55 | free-nodes",
-                "🇭🇰 香港 | HKG 3 2",
-                "🇭🇰HK  ROSE—08",
-                "🇳🇱 荷兰 | NLD 3",
-                "🇨🇳_中国_23",
-                "🏳️_未知",
-                "🇹🇭 泰国 | THA 3",
-                "🇳🇱_荷兰_1",
                 "15-台湾-87ms",
+                "US_speednode_0020",
+                "US_speednode_0037",
+                "最低月付2块钱1000G流量",
+                "🇭🇰HK  ROSE—08",
+                "US_speednode_0028",
+                "FI_speednode_0004",
+                "RU俄罗斯(mibei77.com 米贝节点分享)",
+                "US_speednode_0031",
+                "12-台湾-68ms",
+                "16-台湾-124ms",
+                "DE13｜机房｜低风险",
+                "🇹🇼 🇨🇳 台湾 | TWN 4",
+                "US_speednode_0021",
+                "未知 VLESS-112 | free-nodes",
+                "US_speednode_0029",
+                "🇻🇳 越南 | VNM 2 2",
+                "KR_speednode_0011",
+                "🇳🇱_荷兰_1",
+                "俄罗斯联邦-011 |4.1MB/s|YT-RU|NF|D+",
+                "美国(yudou789.top 玉豆免费节点) 75",
+                "RU_speednode_0015",
+                "香港|@ripaojiedian",
+                "🇲🇾 马来西亚 | MYS 2 2",
+                "US_speednode_0026",
+                "🇹🇭 泰国 | THA 3",
+                "US_speednode_0038",
                 "未知 VLESS-101 | free-nodes 2",
-                "RU_speednode_0012",
-                "🇻🇳 越南 | VNM 3 2",
-                "🇹🇼_中国台湾省_17",
+                "_未知_43",
+                "🇹🇼_中国台湾省_3",
+                "德国-006 |GB英国(mibei77.com 米贝节点分享) 7",
+                "🇨🇳_中国_23",
+                "US_speednode_0034",
+                "KR VLESS-55 | free-nodes",
+                "US_speednode_0024",
                 "官网地址https://kelayun.notepin.co",
-                "11-台湾-68ms",
+                "🇭🇰HK 4",
+                "US_speednode_0022",
+                " 香港 46",
+                "US_speednode_0030",
+                "FR_speednode_0005",
+                "🇩🇪 德国 | DEU 2 2",
+                "🏳️_未知",
+                "🇹🇼_中国台湾省_17",
+                "🇺🇸_美国_60",
+                "🇫🇷_法国_24",
+                "下单地址https://kelayun.notepin.co",
+                "🇹🇼_中国台湾省_4",
+                "🇺🇸_美国_69",
+                "US_speednode_0025",
+                "🇨🇳_中国_36",
+                "🇸🇬 新加坡 | SGP 7",
+                "US_speednode_0035",
+                "🇨🇳_中国_22",
+                "RU_speednode_0012",
+                "加拿大-001 |4.7MB/s|GPT⁺|X|Succeed",
+                "🇰🇷_韩国",
+                "未知 VLESS-106 | free-nodes",
+                "🇬🇷_GR_希腊",
+                "🇩🇪DE_9 | ⬇️ 3.5MB/s",
+                "付费机场VPN梯子加速器推荐",
                 "US_speednode_0032",
+                "RU_speednode_0016",
+                "美国02|",
+                "BY_speednode_0001",
+                "🇳🇱 荷兰 | NLD 3",
+                "IQ_speednode_0010",
+                "US_speednode_0027",
+                "美国(yudou789.top 玉豆免费节点) 62",
                 "🇹🇼_中国台湾省",
-                "美国01",
-                "德国-006 |GB英国(mibei77.com 米贝节点分享) 7"
+                "🇨🇾_塞浦路斯",
+                "GB_speednode_0007",
+                "13-台湾-351ms",
+                "🇻🇳 越南 | VNM 3 2",
+                "RU_speednode_0013",
+                "FR VLESS-92 | free-nodes",
+                "US_speednode_0036",
+                "美国-009 |5.9MB/s|0%|GPT⁺|X|History"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
