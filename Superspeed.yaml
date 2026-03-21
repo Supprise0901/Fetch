@@ -75,6 +75,117 @@
     ],
     "outbounds": [
         {
+            "tag": "US VLESS-104 | free-nodes",
+            "type": "vless",
+            "server": "157.254.223.44",
+            "server_port": 18959,
+            "uuid": "d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "itunes.apple.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA",
+                    "short_id": "d557c6895d014075"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "DE VLESS-115 | free-nodes",
+            "type": "vless",
+            "server": "desta.axinode.sbs",
+            "server_port": 10965,
+            "uuid": "d1209ffb-c159-48d5-b40d-542ce11fc768",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "deepl.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lHxeD2nYtDb1V7JseV-sUTEuqH6_jie7U_iOARX7cT0",
+                    "short_id": "9f3a7c6d2e8b41af"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "未知 VLESS-120 | free-nodes",
+            "type": "vless",
+            "server": "195.3.223.112",
+            "server_port": 443,
+            "uuid": "e2e1ddaa-1acf-4c4c-a211-92284f6440ed",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "pl.scroogethebest.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc",
+                    "short_id": "4fa44664f6a566d3"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪_DE_德国 3",
+            "type": "vless",
+            "server": "185.94.29.156",
+            "server_port": 4001,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "sub.mot.ip-ddns.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sub.mot.ip-ddns.com"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪_DE_德国 4",
+            "type": "vless",
+            "server": "der.jojack.ru",
+            "server_port": 443,
+            "uuid": "c67f81df-34e8-4cb3-ab43-599585775fa9",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "der.jojack.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xpv3OgIQ4ND_ZaiLxjHk1JsykVAVUY73UkyxPlU8Clc",
+                    "short_id": "695f0df252f9889d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇮🇱_以色列",
             "type": "trojan",
             "server": "89.221.225.71",
@@ -152,25 +263,57 @@
             }
         },
         {
+            "tag": "🇨🇭_瑞士_1",
+            "type": "vless",
+            "server": "138.226.240.199",
+            "server_port": 4433,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "sub.mot.ip-ddns.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sub.mot.ip-ddns.com"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "US_speednode_0060",
-                "🇮🇱_以色列",
+                "🇨🇭_瑞士_1",
+                "🇰🇷_韩国_7",
+                "🇩🇪_DE_德国 3",
                 "下单地址https://kelayun.notepin.co",
-                "🇰🇷_韩国_7"
+                "未知 VLESS-120 | free-nodes",
+                "🇩🇪_DE_德国 4",
+                "🇮🇱_以色列",
+                "US_speednode_0060",
+                "US VLESS-104 | free-nodes",
+                "DE VLESS-115 | free-nodes"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US_speednode_0060",
-                "🇮🇱_以色列",
+                "🇨🇭_瑞士_1",
+                "🇰🇷_韩国_7",
+                "🇩🇪_DE_德国 3",
                 "下单地址https://kelayun.notepin.co",
-                "🇰🇷_韩国_7"
+                "未知 VLESS-120 | free-nodes",
+                "🇩🇪_DE_德国 4",
+                "🇮🇱_以色列",
+                "US_speednode_0060",
+                "US VLESS-104 | free-nodes",
+                "DE VLESS-115 | free-nodes"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
