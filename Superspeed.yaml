@@ -75,21 +75,39 @@
     ],
     "outbounds": [
         {
-            "tag": "美國節點 2",
-            "type": "trojan",
-            "server": "152.53.200.167",
-            "server_port": 8444,
-            "password": "trojan",
+            "tag": "🇨🇦CA_1|2.5MB/s t.me/rjsxrd t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "ca-hy2.onetaplink.app",
+            "server_port": 443,
+            "password": "48b36b6a-eaa6-4843-9231-0bb8b38b5da5",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hy2-ca.onetaplink.app",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱_NL_荷兰->🇺🇸_US_美国",
+            "type": "vless",
+            "server": "45.145.42.170",
+            "server_port": 8005,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "jflsjlaf.pages.dev"
+                "server_name": "sub.mot.ip-ddns.com"
             },
             "transport": {
                 "type": "ws",
                 "path": "/",
                 "headers": {
-                    "Host": "jflsjlaf.pages.dev"
+                    "Host": "sub.mot.ip-ddns.com"
                 }
             }
         },
@@ -116,27 +134,7 @@
             }
         },
         {
-            "tag": "🇳🇱_NL_荷兰->🇺🇸_US_美国",
-            "type": "vless",
-            "server": "45.145.42.170",
-            "server_port": 8005,
-            "uuid": "00000000-0000-4000-8000-000000000000",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "sub.mot.ip-ddns.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "sub.mot.ip-ddns.com"
-                }
-            }
-        },
-        {
-            "tag": "美國 26",
+            "tag": "美國 21",
             "type": "vless",
             "server": "192.200.160.20",
             "server_port": 443,
@@ -158,71 +156,171 @@
             }
         },
         {
-            "tag": "🇺🇸 US美国(mibei77.com 米贝节点分享)",
-            "type": "trojan",
-            "server": "167.68.4.199",
-            "server_port": 2053,
-            "password": "Aimer",
+            "tag": "US美国(mibei77.com 米贝节点分享) 2",
+            "type": "vless",
+            "server": "104.19.58.74",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "epge.muarua.filegear-sg.me"
+                "server_name": "r.icy.de5.net"
             },
             "transport": {
                 "type": "ws",
-                "path": "/?ed=2560&proxyip=ts.hpc.tw",
+                "path": "/",
                 "headers": {
-                    "Host": "epge.muarua.filegear-sg.me"
-                }
-            }
-        },
-        {
-            "tag": "US VLESS-104 | free-nodes",
-            "type": "vless",
-            "server": "157.254.223.44",
-            "server_port": 18959,
-            "uuid": "d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "itunes.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA",
-                    "short_id": "d557c6895d014075"
+                    "Host": "r.icy.de5.net"
                 },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
             }
         },
         {
-            "tag": "US VLESS-123 | free-nodes",
+            "tag": "US美国(mibei77.com 米贝节点分享) 38",
+            "type": "vmess",
+            "server": "v33.hdacd.com",
+            "server_port": 30833,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 49",
             "type": "vless",
-            "server": "23.148.20.55",
+            "server": "104.18.40.56",
             "server_port": 443,
-            "uuid": "e5130eee-cf44-405e-ce04-25817f961399",
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
             "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "www.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "R0M4F0Di9oppNbz_LRIkF08whSeXbBHMNkAKVq5l-U8",
-                    "short_id": "ea80ef"
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
                 },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
             }
         },
         {
-            "tag": "🇩🇪_DE_德国 3",
+            "tag": "US美国(mibei77.com 米贝节点分享) 50",
+            "type": "vless",
+            "server": "172.64.229.165",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 62",
+            "type": "vless",
+            "server": "172.64.156.0",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 73",
+            "type": "vless",
+            "server": "172.64.229.85",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 80",
+            "type": "vless",
+            "server": "www.visa.cn",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 82",
+            "type": "vless",
+            "server": "104.17.28.89",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🇩🇪_DE_德国",
             "type": "vless",
             "server": "185.94.29.156",
             "server_port": 4001,
@@ -242,7 +340,7 @@
             }
         },
         {
-            "tag": "🇺🇸_US_美国 5",
+            "tag": "🇺🇸_US_美国",
             "type": "vless",
             "server": "vip1.kaixincloud.top",
             "server_port": 443,
@@ -264,25 +362,6 @@
             }
         },
         {
-            "tag": "未知 8",
-            "type": "shadowsocks",
-            "server": "103.186.154.75",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-        },
-        {
-            "tag": "🇨🇳_CN_中国 2",
-            "type": "trojan",
-            "server": "58.152.25.253",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
             "tag": "🇮🇱_以色列",
             "type": "trojan",
             "server": "89.221.225.71",
@@ -291,43 +370,6 @@
             "tls": {
                 "enabled": true,
                 "insecure": true
-            }
-        },
-        {
-            "tag": "TW_speednode_0036",
-            "type": "trojan",
-            "server": "85.237.206.249",
-            "server_port": 443,
-            "password": "3ac6a6ca99f74941b1eaf892818e2ddb",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0040",
-            "type": "vless",
-            "server": "172.64.229.85",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
             }
         },
         {
@@ -353,153 +395,6 @@
             }
         },
         {
-            "tag": "US_speednode_0044",
-            "type": "vless",
-            "server": "162.159.24.111",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0046",
-            "type": "vless",
-            "server": "162.159.7.2",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0047",
-            "type": "vless",
-            "server": "172.64.229.165",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0048",
-            "type": "vless",
-            "server": "www.visa.cn",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0056",
-            "type": "vless",
-            "server": "172.64.156.0",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0059",
-            "type": "vless",
-            "server": "162.159.44.142",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "US_speednode_0068",
-            "type": "trojan",
-            "server": "194.33.45.157",
-            "server_port": 443,
-            "password": "3ac6a6ca99f74941b1eaf892818e2ddb",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇷🇴_罗马尼亚_1",
             "type": "vless",
             "server": "88.218.0.184",
@@ -516,26 +411,6 @@
                 "path": "/",
                 "headers": {
                     "Host": "sub.mot.ip-ddns.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸_美国_30",
-            "type": "vless",
-            "server": "partner.zoom.us",
-            "server_port": 8443,
-            "uuid": "39eb8c33-ee7f-4980-b3e5-684aaf390f56",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "darknet-free.alexid.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "darknet-free.alexid.org"
                 }
             }
         },
@@ -584,90 +459,6 @@
             }
         },
         {
-            "tag": "_未知_11",
-            "type": "vless",
-            "server": "104.19.58.74",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "_未知_31",
-            "type": "vless",
-            "server": "104.17.28.89",
-            "server_port": 443,
-            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "r.icy.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "r.icy.de5.net"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "🏳️_未知_1",
-            "type": "vless",
-            "server": "23.187.72.183",
-            "server_port": 520,
-            "uuid": "00000000-0000-4000-8000-000000000000",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "sub.mot.ip-ddns.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "sub.mot.ip-ddns.com"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 7",
-            "type": "vless",
-            "server": "news.zoom.us",
-            "server_port": 8443,
-            "uuid": "39eb8c33-ee7f-4980-b3e5-684aaf390f56",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "darknet-free.alexid.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "darknet-free.alexid.org"
-                }
-            }
-        },
-        {
             "tag": "CH_speednode_0005",
             "type": "vless",
             "server": "138.124.104.221",
@@ -684,21 +475,6 @@
                     "public_key": "iCY6H8CpnIfqmIkEABduJEAeJrnYS089R1-jKEyVp3w",
                     "short_id": "e043995937"
                 },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "SG_speednode_0034",
-            "type": "trojan",
-            "server": "185.151.146.40",
-            "server_port": 443,
-            "password": "3ac6a6ca99f74941b1eaf892818e2ddb",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -748,44 +524,6 @@
             }
         },
         {
-            "tag": "_未知_19",
-            "type": "vless",
-            "server": "104.21.31.4",
-            "server_port": 8880,
-            "uuid": "0a5ab719-2407-4398-b507-8437ef365023",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY",
-                "headers": {
-                    "Host": "underthegun.cfd."
-                }
-            }
-        },
-        {
-            "tag": "🇨🇭_瑞士_2",
-            "type": "vless",
-            "server": "2.56.177.140",
-            "server_port": 443,
-            "uuid": "22f0e412-60d6-4c34-8714-e988d9c1ba1d",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.asus.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14",
-                    "short_id": "96e03e0f184639ef"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇹🇼_中国台湾省_4",
             "type": "trojan",
             "server": "220.130.75.219",
@@ -797,48 +535,92 @@
             }
         },
         {
-            "tag": "🇺🇸_美国_53",
+            "tag": "KR_speednode_0016",
             "type": "vless",
-            "server": "156.229.161.107",
-            "server_port": 10001,
-            "uuid": "9c79aceb-4649-44ea-9698-b5e9ecf6d6da",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.icloud.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4",
-                    "short_id": "fb2c6678"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE_9 | ⬇️ 3.5MB/s",
-            "type": "vless",
-            "server": "178.17.50.111",
-            "server_port": 443,
-            "uuid": "36f6f998-029e-48e2-ba30-24e2a8159075",
+            "server": "krp01.jumperservice.com",
+            "server_port": 19001,
+            "uuid": "455fc271-3ee2-493b-8c75-9324b4851e2f",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "ads.x5.ru",
+                "server_name": "addons.mozilla.org",
                 "reality": {
                     "enabled": true,
-                    "public_key": "vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4",
-                    "short_id": "82c8140feb118043"
+                    "public_key": "UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM"
                 },
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "_未知_6",
+            "type": "vless",
+            "server": "104.18.41.43",
+            "server_port": 443,
+            "uuid": "9e4f36da-8f61-44f8-a9a7-0fd3a8d81234",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "r.icy.de5.net"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "r.icy.de5.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "🏳️_未知_3",
+            "type": "vless",
+            "server": "140.235.10.14",
+            "server_port": 30003,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "sub.mot.ip-ddns.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sub.mot.ip-ddns.com"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇼_中国台湾省_3",
+            "type": "trojan",
+            "server": "220.130.75.217",
+            "server_port": 443,
+            "password": "3ac6a6ca99f74941b1eaf892818e2ddb",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA 5",
+            "type": "vless",
+            "server": "docs.cloudflare.com",
+            "server_port": 2095,
+            "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "cnmfangbinxing.cnmfangbinxing-e.workers.dev"
                 }
             }
         },
@@ -848,90 +630,68 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇹🇼_中国台湾省_4",
-                "🇷🇴_罗马尼亚_1",
-                "US_speednode_0040",
-                "🇨🇭_瑞士_2",
-                "未知 8",
-                "TW_speednode_0036",
-                "🇸🇬 新加坡 | SGP 7",
-                "CH_speednode_0005",
-                "US VLESS-123 | free-nodes",
-                "_未知_19",
-                "_未知_11",
-                "🇨🇭_瑞士_1",
-                "美國 26",
-                "🇩🇪DE_9 | ⬇️ 3.5MB/s",
-                "🇳🇱_NL_荷兰->🇺🇸_US_美国",
-                "US_speednode_0048",
-                "US VLESS-104 | free-nodes",
-                "_未知_4",
-                "_未知_3",
-                "US_speednode_0044",
-                "_未知_12",
-                "SG_speednode_0034",
-                "US_speednode_0046",
-                "🇨🇳_CN_中国 2",
-                "美國節點 2",
-                "🏳️_未知_1",
-                "US_speednode_0047",
-                "🇺🇸_US_美国 5",
-                "US_speednode_0068",
-                "🇮🇱_以色列",
-                "🇺🇸 US美国(mibei77.com 米贝节点分享)",
-                "US_speednode_0056",
-                "🇺🇸_美国_30",
                 "美國節點 8",
-                "_未知_31",
-                "🇩🇪_DE_德国 3",
-                "🇺🇸_美国_53",
-                "US_speednode_0059",
-                "US_speednode_0043"
+                "US_speednode_0043",
+                "🇨🇦CA_1|2.5MB/s t.me/rjsxrd t.me/rjsxrd",
+                "US美国(mibei77.com 米贝节点分享) 80",
+                "US美国(mibei77.com 米贝节点分享) 38",
+                "🇳🇱_NL_荷兰->🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "🇮🇱_以色列",
+                "US美国(mibei77.com 米贝节点分享) 50",
+                "🏳️_未知_3",
+                "🇷🇴_罗马尼亚_1",
+                "_未知_3",
+                "CH_speednode_0005",
+                "US美国(mibei77.com 米贝节点分享) 82",
+                "美國 21",
+                "KR_speednode_0016",
+                "US美国(mibei77.com 米贝节点分享) 49",
+                "_未知_12",
+                "_未知_4",
+                "🇩🇪_DE_德国",
+                "🇺🇸 美国 | USA 5",
+                "US美国(mibei77.com 米贝节点分享) 62",
+                "🇹🇼_中国台湾省_4",
+                "🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 73",
+                "_未知_6",
+                "🇹🇼_中国台湾省_3",
+                "🇨🇭_瑞士_1"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇹🇼_中国台湾省_4",
-                "🇷🇴_罗马尼亚_1",
-                "US_speednode_0040",
-                "🇨🇭_瑞士_2",
-                "未知 8",
-                "TW_speednode_0036",
-                "🇸🇬 新加坡 | SGP 7",
-                "CH_speednode_0005",
-                "US VLESS-123 | free-nodes",
-                "_未知_19",
-                "_未知_11",
-                "🇨🇭_瑞士_1",
-                "美國 26",
-                "🇩🇪DE_9 | ⬇️ 3.5MB/s",
-                "🇳🇱_NL_荷兰->🇺🇸_US_美国",
-                "US_speednode_0048",
-                "US VLESS-104 | free-nodes",
-                "_未知_4",
-                "_未知_3",
-                "US_speednode_0044",
-                "_未知_12",
-                "SG_speednode_0034",
-                "US_speednode_0046",
-                "🇨🇳_CN_中国 2",
-                "美國節點 2",
-                "🏳️_未知_1",
-                "US_speednode_0047",
-                "🇺🇸_US_美国 5",
-                "US_speednode_0068",
-                "🇮🇱_以色列",
-                "🇺🇸 US美国(mibei77.com 米贝节点分享)",
-                "US_speednode_0056",
-                "🇺🇸_美国_30",
                 "美國節點 8",
-                "_未知_31",
-                "🇩🇪_DE_德国 3",
-                "🇺🇸_美国_53",
-                "US_speednode_0059",
-                "US_speednode_0043"
+                "US_speednode_0043",
+                "🇨🇦CA_1|2.5MB/s t.me/rjsxrd t.me/rjsxrd",
+                "US美国(mibei77.com 米贝节点分享) 80",
+                "US美国(mibei77.com 米贝节点分享) 38",
+                "🇳🇱_NL_荷兰->🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 2",
+                "🇮🇱_以色列",
+                "US美国(mibei77.com 米贝节点分享) 50",
+                "🏳️_未知_3",
+                "🇷🇴_罗马尼亚_1",
+                "_未知_3",
+                "CH_speednode_0005",
+                "US美国(mibei77.com 米贝节点分享) 82",
+                "美國 21",
+                "KR_speednode_0016",
+                "US美国(mibei77.com 米贝节点分享) 49",
+                "_未知_12",
+                "_未知_4",
+                "🇩🇪_DE_德国",
+                "🇺🇸 美国 | USA 5",
+                "US美国(mibei77.com 米贝节点分享) 62",
+                "🇹🇼_中国台湾省_4",
+                "🇺🇸_US_美国",
+                "US美国(mibei77.com 米贝节点分享) 73",
+                "_未知_6",
+                "🇹🇼_中国台湾省_3",
+                "🇨🇭_瑞士_1"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
