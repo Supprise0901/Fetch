@@ -75,6 +75,26 @@
     ],
     "outbounds": [
         {
+            "tag": "香港|@ripaojiedian",
+            "type": "vmess",
+            "server": "v10.hdacd.com",
+            "server_port": 30807,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "美國節點",
+            "type": "vmess",
+            "server": "v12.hdacd.com",
+            "server_port": 30812,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
             "tag": "美國節點 2",
             "type": "trojan",
             "server": "152.53.200.167",
@@ -112,6 +132,38 @@
                     "Host": "sub.mot.ip-ddns.com"
                 }
             }
+        },
+        {
+            "tag": "美國 8",
+            "type": "vless",
+            "server": "192.200.160.20",
+            "server_port": 443,
+            "uuid": "ee248e40-9468-4ef6-81b7-707a1e47c54a",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "639073677243557970.camry-perma.info"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/yaeungws",
+                "headers": {
+                    "Host": "639073677243557970.camry-perma.info"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享)",
+            "type": "vmess",
+            "server": "103.181.164.145",
+            "server_port": 51556,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
         },
         {
             "tag": "GB英国(mibei77.com 米贝节点分享)",
@@ -344,28 +396,6 @@
             }
         },
         {
-            "tag": "HK香港(mibei77.com 米贝节点分享) 7",
-            "type": "vless",
-            "server": "104.26.11.130",
-            "server_port": 443,
-            "uuid": "4d6fa520-b8c1-4811-93f6-a91fd6f87b59",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "snip.ees.pp.ua"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/zrf",
-                "headers": {
-                    "Host": "snip.ees.pp.ua"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "GB英国(mibei77.com 米贝节点分享) 9",
             "type": "vless",
             "server": "162.159.38.81",
@@ -432,28 +462,6 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 89",
-            "type": "vless",
-            "server": "172.67.77.155",
-            "server_port": 443,
-            "uuid": "4d6fa520-b8c1-4811-93f6-a91fd6f87b59",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "snip.zrfs.indevs.in"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/zrf",
-                "headers": {
-                    "Host": "snip.zrfs.indevs.in"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "SG新加坡(mibei77.com 米贝节点分享) 7",
             "type": "vless",
             "server": "27.50.48.8",
@@ -473,6 +481,25 @@
                 },
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "max_early_data": 2560
+            }
+        },
+        {
+            "tag": "KR韩国(mibei77.com 米贝节点分享)",
+            "type": "trojan",
+            "server": "221.146.116.77",
+            "server_port": 10003,
+            "password": "trojan",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "jflsjlaf.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "jflsjlaf.pages.dev"
+                }
             }
         },
         {
@@ -975,28 +1002,6 @@
             }
         },
         {
-            "tag": "🇺🇸_美国_98",
-            "type": "vless",
-            "server": "172.64.52.86",
-            "server_port": 443,
-            "uuid": "4d6fa520-b8c1-4811-93f6-a91fd6f87b59",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "snip.gm.ug.cx"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/zrf",
-                "headers": {
-                    "Host": "snip.gm.ug.cx"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
             "tag": "🇲🇾_马来西亚",
             "type": "vless",
             "server": "8.35.211.69",
@@ -1107,84 +1112,6 @@
             }
         },
         {
-            "tag": "🇷🇴_罗马尼亚",
-            "type": "vless",
-            "server": "88.218.0.184",
-            "server_port": 8085,
-            "uuid": "00000000-0000-4000-8000-000000000000",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "rpx-rd33nh3.mesa.ip-ddns.com"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/@Marisa_kristi",
-                "headers": {
-                    "Host": "rpx-rd33nh3.mesa.ip-ddns.com"
-                }
-            }
-        },
-        {
-            "tag": "DE VLESS-104 | free-nodes",
-            "type": "vless",
-            "server": "64.188.106.173",
-            "server_port": 2443,
-            "uuid": "b9662467-171c-4afc-8fac-dabf62fc47cc",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.microsoft.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "EeM87Tb64-rdyOYJmKlx3OqxVXCLHIJvGGuDrc-In1k",
-                    "short_id": "a1b2c3d4"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TestChatGRPC"
-            }
-        },
-        {
-            "tag": "🇷🇴_罗马尼亚 2",
-            "type": "trojan",
-            "server": "fun-seagull.rooster465.autos",
-            "server_port": 443,
-            "password": "WF42809561",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇺🇸_美国_2",
-            "type": "vless",
-            "server": "47.81.39.100",
-            "server_port": 443,
-            "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "api.digital-help-prd.autodesk.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            }
-        },
-        {
             "tag": "🇪🇸_西班牙",
             "type": "vless",
             "server": "150.241.83.152",
@@ -1222,29 +1149,6 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "FZbK0E3QBK7QslwVEXimX6vmXC8cb6826lSLJUkIEgU"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸_美国_4",
-            "type": "vless",
-            "server": "pl.nitroo-tech.ru",
-            "server_port": 48885,
-            "uuid": "3f88f137-a506-4386-8936-b0b4d7349478",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "sun6-21.userapi.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "V8Sc-r31vGee66vJ2wBt-eW061TNbMuXK1aw0UQXcyI",
-                    "short_id": "6d"
                 },
                 "utls": {
                     "enabled": true,
@@ -1297,6 +1201,123 @@
             }
         },
         {
+            "tag": "h3RKNqz9_hysteria2",
+            "type": "hysteria2",
+            "server": "meiguo.iptk123.com",
+            "server_port": 443,
+            "password": "2e6e6164-ba26-45f8-a831-9365e0f58a0a",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "DE VLESS-104 | free-nodes",
+            "type": "vless",
+            "server": "64.188.106.173",
+            "server_port": 2443,
+            "uuid": "b9662467-171c-4afc-8fac-dabf62fc47cc",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.microsoft.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EeM87Tb64-rdyOYJmKlx3OqxVXCLHIJvGGuDrc-In1k",
+                    "short_id": "a1b2c3d4"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TestChatGRPC"
+            }
+        },
+        {
+            "tag": "DE VLESS-114 | free-nodes",
+            "type": "vless",
+            "server": "94.141.123.146",
+            "server_port": 10965,
+            "uuid": "d1209ffb-c159-48d5-b40d-542ce11fc768",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "deepl.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lHxeD2nYtDb1V7JseV-sUTEuqH6_jie7U_iOARX7cT0",
+                    "short_id": "9f3a7c6d2e8b41af"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇴_罗马尼亚 2",
+            "type": "trojan",
+            "server": "fun-seagull.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_2",
+            "type": "vless",
+            "server": "47.81.39.100",
+            "server_port": 443,
+            "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "api.digital-help-prd.autodesk.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱_荷兰",
+            "type": "vless",
+            "server": "188.114.98.0",
+            "server_port": 2087,
+            "uuid": "fa35cfa7-e61b-4752-b4d3-394f53f0a108",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "all-tm1.netsnap.ir."
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "all-tm1.netsnap.ir."
+                }
+            }
+        },
+        {
             "tag": "🏳️_未知_1",
             "type": "vless",
             "server": "23.187.72.183",
@@ -1314,6 +1335,28 @@
                 "headers": {
                     "Host": "sub.mot.ip-ddns.com"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_30",
+            "type": "vless",
+            "server": "172.64.52.86",
+            "server_port": 443,
+            "uuid": "4d6fa520-b8c1-4811-93f6-a91fd6f87b59",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "snip.gm.ug.cx"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/zrf",
+                "headers": {
+                    "Host": "snip.gm.ug.cx"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
             }
         },
         {
@@ -1339,6 +1382,26 @@
             }
         },
         {
+            "tag": "🇺🇸_美国_39",
+            "type": "vless",
+            "server": "172.64.147.236",
+            "server_port": 443,
+            "uuid": "c35050ce-01ab-45a9-91b8-54cec637d0a8",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "octopusss5.info"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/udfyfws",
+                "headers": {
+                    "Host": "octopusss5.info"
+                }
+            }
+        },
+        {
             "tag": "🇨🇭_瑞士",
             "type": "vless",
             "server": "138.226.240.199",
@@ -1359,76 +1422,24 @@
             }
         },
         {
-            "tag": "m6KIEElw_hysteria2",
-            "type": "hysteria2",
-            "server": "aodaliya.iptk123.com",
-            "server_port": 443,
-            "password": "c8d187bb-1464-4407-a86b-c9fd5c777334",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
+            "tag": "美国(yudou789.top 玉豆免费节点) 58",
+            "type": "vmess",
+            "server": "v29.hdacd.com",
+            "server_port": 30829,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp"
         },
         {
-            "tag": "h3RKNqz9_hysteria2",
-            "type": "hysteria2",
-            "server": "meiguo.iptk123.com",
-            "server_port": 443,
-            "password": "2e6e6164-ba26-45f8-a831-9365e0f58a0a",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "jlVVayv5_hysteria2",
-            "type": "hysteria2",
-            "server": "ydnxy.iptk123.com",
-            "server_port": 443,
-            "password": "b9c27a40-beaa-49d8-bb39-0511b23c0966",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "epDA0d6u_hysteria2",
-            "type": "hysteria2",
-            "server": "yindu.iptk123.com",
-            "server_port": 443,
-            "password": "b9c27a40-beaa-49d8-bb39-0511b23c0966",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇩🇪 德国 | DEU 5",
-            "type": "shadowsocks",
-            "server": "jp02.academicbest.dpdns.org",
-            "server_port": 7008,
-            "method": "aes-256-gcm",
-            "password": "26a6a0aa-cf25-42b2-8b9c-6f9835b81b78"
+            "tag": "美国(yudou789.top 玉豆免费节点) 67",
+            "type": "vmess",
+            "server": "v36.hdacd.com",
+            "server_port": 30836,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+            "security": "auto",
+            "alter_id": 2,
+            "packet_encoding": "xudp"
         },
         {
             "tag": "🇩🇪 德国 | DEU 6",
@@ -1439,46 +1450,6 @@
             "password": "f36520aa-a3dc-4144-bef9-cfd4a310f2f3"
         },
         {
-            "tag": "🇭🇰 香港 | HKG",
-            "type": "vless",
-            "server": "172.64.145.15",
-            "server_port": 443,
-            "uuid": "22ab7157-b957-48ec-8bee-15c375dfd46d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "h1.nzjlerhb.icu"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/app/hk8",
-                "headers": {
-                    "Host": "h1.nzjlerhb.icu"
-                }
-            }
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 4",
-            "type": "vless",
-            "server": "162.159.44.33",
-            "server_port": 443,
-            "uuid": "22ab7157-b957-48ec-8bee-15c375dfd46d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "b1.nzjlerhb.icu"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/app/hk2",
-                "headers": {
-                    "Host": "b1.nzjlerhb.icu"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸 美国 | USA 6",
             "type": "vmess",
             "server": "v4.hdacd.com",
@@ -1487,14 +1458,6 @@
             "security": "auto",
             "alter_id": 2,
             "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇺🇸 美国 | USA 19",
-            "type": "shadowsocks",
-            "server": "us.academicbest.dpdns.org",
-            "server_port": 7002,
-            "method": "aes-256-gcm",
-            "password": "65025369-720b-4792-9f7e-163b0372a4ad"
         },
         {
             "tag": "🇨🇦 加拿大 | CAN",
@@ -1522,38 +1485,6 @@
             "password": "ece9f981-9069-4ed4-9593-680dec198a43"
         },
         {
-            "tag": "🇭🇰 香港 | HKG 11",
-            "type": "http",
-            "server": "e932dbfa-tcb5s0-tcad90-fymc.cm4.oshuawei.com",
-            "server_port": 5228,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9",
-            "password": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9"
-        },
-        {
-            "tag": "🇭🇰 香港 | HKG 4 2",
-            "type": "shadowsocks",
-            "server": "toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org",
-            "server_port": 12401,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ="
-        },
-        {
-            "tag": "🇮🇩 印尼 | IDN 2",
-            "type": "http",
-            "server": "a74df680-tcb5s0-tcad90-fymc.id.oshuawei.com",
-            "server_port": 32233,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9",
-            "password": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9"
-        },
-        {
             "tag": "🇮🇱 以色列 | ISR",
             "type": "hysteria2",
             "server": "yiselie.iptk123.com",
@@ -1571,143 +1502,7 @@
             }
         },
         {
-            "tag": "🇯🇵 日本 | JPN 7",
-            "type": "http",
-            "server": "e6d8d0c4-tcb5s0-tcad90-fymc.jp.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9",
-            "password": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9"
-        },
-        {
-            "tag": "🇰🇷 韩国 | KOR 3 2",
-            "type": "http",
-            "server": "2037aee2-tcb5s0-tcad90-fymc.kr.oshuawei.com",
-            "server_port": 31433,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "username": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9",
-            "password": "7fcb586c-9157-11ec-a8bf-f23c91cfbbc9"
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 6",
-            "type": "shadowsocks",
-            "server": "103.47.225.69",
-            "server_port": 443,
-            "method": "aes-256-gcm",
-            "password": "899c7e30-50c7-4b63-a0a0-f26ac572d4f9"
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 2 2",
-            "type": "vless",
-            "server": "104.19.73.126",
-            "server_port": 2053,
-            "uuid": "26524cce-d514-4014-a426-365fb266a14d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "wbsnthrtc.chinav.indevs.in"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/danfeng",
-                "headers": {
-                    "Host": "wbsnthrtc.chinav.indevs.in"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 4 2",
-            "type": "vless",
-            "server": "b3.cfyx.20237737.xyz",
-            "server_port": 2053,
-            "uuid": "26524cce-d514-4014-a426-365fb266a14d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "abxxswoudcjz.chinav.eu.org"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/danfeng",
-                "headers": {
-                    "Host": "abxxswoudcjz.chinav.eu.org"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 5 2",
-            "type": "vless",
-            "server": "cf.cloudflare.182682.xyz",
-            "server_port": 443,
-            "uuid": "26524cce-d514-4014-a426-365fb266a14d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "wbsnthrtc.chinav.indevs.in"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/danfeng",
-                "headers": {
-                    "Host": "wbsnthrtc.chinav.indevs.in"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 6 2",
-            "type": "shadowsocks",
-            "server": "toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org",
-            "server_port": 12528,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ="
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 8",
-            "type": "vless",
-            "server": "one.dash.cloudflare.com",
-            "server_port": 2053,
-            "uuid": "26524cce-d514-4014-a426-365fb266a14d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "wbsnthrtc.chinav.indevs.in"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/danfeng",
-                "headers": {
-                    "Host": "wbsnthrtc.chinav.indevs.in"
-                },
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "max_early_data": 2560
-            }
-        },
-        {
-            "tag": "🇺🇸 美国 | USA 6 2",
-            "type": "shadowsocks",
-            "server": "toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org",
-            "server_port": 12745,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ="
-        },
-        {
-            "tag": "VPN地址https://kelayun.notepin.co",
+            "tag": "购买地址https://kelayun.notepin.co",
             "type": "vless",
             "server": "23.148.20.55",
             "server_port": 443,
@@ -1730,189 +1525,215 @@
             }
         },
         {
+            "tag": "下单地址https://kelayun.notepin.co",
+            "type": "trojan",
+            "server": "outgoing-cockatoo.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "outgoing-cockatoo.rooster465.autos"
+            }
+        },
+        {
+            "tag": "梯子地址https://kelayun.notepin.co",
+            "type": "trojan",
+            "server": "funky-platypus.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "funky-platypus.rooster465.autos"
+            }
+        },
+        {
+            "tag": "VPN地址https://kelayun.notepin.co",
+            "type": "trojan",
+            "server": "top-goshawk.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "top-goshawk.rooster465.autos"
+            }
+        },
+        {
+            "tag": "最高200元终身无限流量",
+            "type": "shadowsocks",
+            "server": "185.231.233.112",
+            "server_port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "HK香港(mibei77.com 米贝节点分享) 2",
-                "🇺🇸_美国_103",
-                "🇺🇸 美国 | USA 19",
-                "🇺🇸_美国_87",
-                "🇭🇰 香港 | HKG 11",
-                "🇩🇪 德国 | DEU 7",
-                "🇺🇸_美国_98",
-                "🇸🇬 新加坡 | SGP 6 2",
-                "DE VLESS-104 | free-nodes",
-                "🇲🇾_马来西亚_2",
-                "🇺🇸_美国_4",
-                "_未知_164",
-                "🇮🇩 印尼 | IDN 2",
-                "🇩🇪 德国 | DEU",
-                "_未知_54",
-                "🇮🇱 以色列 | ISR",
-                "HK香港(mibei77.com 米贝节点分享) 7",
-                "GB英国(mibei77.com 米贝节点分享) 37",
-                "🇺🇸_美国_2",
-                "🇺🇸_美国_91",
-                "🇺🇸_美国_101",
-                "HK香港(mibei77.com 米贝节点分享) 3",
-                "🇰🇷 韩国 | KOR 3 2",
-                "US美国(mibei77.com 米贝节点分享) 51",
-                "_未知_31",
-                "HK香港(mibei77.com 米贝节点分享)",
-                "🇪🇸_西班牙",
-                "_未知_15",
-                "🇸🇬 新加坡 | SGP 6",
-                "HK香港(mibei77.com 米贝节点分享) 6",
-                "US美国(mibei77.com 米贝节点分享) 8",
-                "GB英国(mibei77.com 米贝节点分享) 3",
-                "🇺🇸 美国 | USA 6",
-                "GB英国(mibei77.com 米贝节点分享)",
-                "🇸🇬 新加坡 | SGP 4 2",
-                "🇨🇭_瑞士",
-                "🇭🇰 香港 | HKG 4 2",
-                "🇩🇪 德国 | DEU 6",
-                "jlVVayv5_hysteria2",
-                "GB英国(mibei77.com 米贝节点分享) 4",
-                "_未知_121",
-                "HK香港(mibei77.com 米贝节点分享) 15",
-                "US美国(mibei77.com 米贝节点分享) 89",
-                "🇨🇦 加拿大 | CAN",
-                "_未知_9",
-                "美國節點 2",
-                "h3RKNqz9_hysteria2",
-                "🇭🇰 香港 | HKG",
-                "VPN地址https://kelayun.notepin.co",
-                "🇺🇸_美国_89",
-                "epDA0d6u_hysteria2",
-                "_未知_11",
-                "GB英国(mibei77.com 米贝节点分享) 40",
-                "GB英国(mibei77.com 米贝节点分享) 9",
-                "🇸🇬 新加坡 | SGP 5 2",
-                "GB英国(mibei77.com 米贝节点分享) 2",
-                "🇺🇸_美国_102",
-                "🏳️_未知_1",
-                "_未知_18",
-                "🇸🇬 新加坡 | SGP 2 2",
-                "_未知_24",
-                "🇷🇺_俄罗斯",
-                "GB英国(mibei77.com 米贝节点分享) 41",
-                "🇩🇪_DE_德国",
-                "🇺🇸_美国_100",
-                "🇷🇴_罗马尼亚",
-                "🇺🇸_美国_20",
-                "GB英国(mibei77.com 米贝节点分享) 5",
-                "🇭🇰 香港 | HKG 4",
-                "US美国(mibei77.com 米贝节点分享) 53",
-                "🇲🇾_马来西亚_1",
-                "_未知_29",
-                "_未知_7",
-                "🇸🇬 新加坡 | SGP 8",
-                "m6KIEElw_hysteria2",
-                "🇷🇴_罗马尼亚 2",
-                "🇩🇪 德国 | DEU 3",
-                "🇲🇾_马来西亚_3",
-                "_未知_10",
                 "SG新加坡(mibei77.com 米贝节点分享) 7",
+                "🇺🇸_美国_91",
+                "🇨🇭_瑞士",
+                "梯子地址https://kelayun.notepin.co",
+                "GB英国(mibei77.com 米贝节点分享)",
+                "🇩🇪 德国 | DEU 3",
+                "_未知_11",
                 "🇲🇾_马来西亚",
-                "🇩🇪 德国 | DEU 5",
-                "HK香港(mibei77.com 米贝节点分享) 5",
-                "🇯🇵 日本 | JPN 7",
+                "_未知_24",
+                "DE VLESS-114 | free-nodes",
+                "最高200元终身无限流量",
+                "_未知_164",
+                "h3RKNqz9_hysteria2",
+                "GB英国(mibei77.com 米贝节点分享) 37",
+                "🇺🇸_美国_20",
+                "HK香港(mibei77.com 米贝节点分享)",
+                "🇲🇾_马来西亚_1",
+                "GB英国(mibei77.com 米贝节点分享) 40",
+                "美国(yudou789.top 玉豆免费节点) 58",
+                "HK香港(mibei77.com 米贝节点分享) 2",
+                "🇺🇸_美国_30",
+                "🇺🇸 美国 | USA 6",
+                "_未知_18",
+                "🇺🇸_美国_102",
+                "🇮🇱 以色列 | ISR",
+                "GB英国(mibei77.com 米贝节点分享) 41",
+                "_未知_54",
+                "GB英国(mibei77.com 米贝节点分享) 4",
+                "🇪🇸_西班牙",
+                "_未知_9",
+                "🇲🇾_马来西亚_2",
+                "🇺🇸_美国_100",
+                "美國 8",
+                "🇩🇪_DE_德国",
                 "🇺🇸_美国_96",
-                "🇺🇸 美国 | USA 6 2"
+                "_未知_31",
+                "HK香港(mibei77.com 米贝节点分享) 3",
+                "US美国(mibei77.com 米贝节点分享)",
+                "🇺🇸_美国_39",
+                "🏳️_未知_1",
+                "VPN地址https://kelayun.notepin.co",
+                "US美国(mibei77.com 米贝节点分享) 53",
+                "GB英国(mibei77.com 米贝节点分享) 5",
+                "_未知_10",
+                "HK香港(mibei77.com 米贝节点分享) 6",
+                "🇺🇸_美国_2",
+                "🇷🇺_俄罗斯",
+                "美國節點",
+                "🇺🇸_美国_87",
+                "🇩🇪 德国 | DEU",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "_未知_15",
+                "美國節點 2",
+                "KR韩国(mibei77.com 米贝节点分享)",
+                "美国(yudou789.top 玉豆免费节点) 67",
+                "US美国(mibei77.com 米贝节点分享) 8",
+                "US美国(mibei77.com 米贝节点分享) 51",
+                "GB英国(mibei77.com 米贝节点分享) 3",
+                "🇩🇪 德国 | DEU 7",
+                "🇺🇸_美国_103",
+                "HK香港(mibei77.com 米贝节点分享) 15",
+                "香港|@ripaojiedian",
+                "🇺🇸_美国_101",
+                "GB英国(mibei77.com 米贝节点分享) 9",
+                "_未知_29",
+                "🇩🇪 德国 | DEU 6",
+                "_未知_7",
+                "🇲🇾_马来西亚_3",
+                "HK香港(mibei77.com 米贝节点分享) 5",
+                "DE VLESS-104 | free-nodes",
+                "🇳🇱_荷兰",
+                "_未知_121",
+                "购买地址https://kelayun.notepin.co",
+                "🇺🇸_美国_89",
+                "🇨🇦 加拿大 | CAN",
+                "下单地址https://kelayun.notepin.co",
+                "🇷🇴_罗马尼亚 2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "HK香港(mibei77.com 米贝节点分享) 2",
-                "🇺🇸_美国_103",
-                "🇺🇸 美国 | USA 19",
-                "🇺🇸_美国_87",
-                "🇭🇰 香港 | HKG 11",
-                "🇩🇪 德国 | DEU 7",
-                "🇺🇸_美国_98",
-                "🇸🇬 新加坡 | SGP 6 2",
-                "DE VLESS-104 | free-nodes",
-                "🇲🇾_马来西亚_2",
-                "🇺🇸_美国_4",
-                "_未知_164",
-                "🇮🇩 印尼 | IDN 2",
-                "🇩🇪 德国 | DEU",
-                "_未知_54",
-                "🇮🇱 以色列 | ISR",
-                "HK香港(mibei77.com 米贝节点分享) 7",
-                "GB英国(mibei77.com 米贝节点分享) 37",
-                "🇺🇸_美国_2",
-                "🇺🇸_美国_91",
-                "🇺🇸_美国_101",
-                "HK香港(mibei77.com 米贝节点分享) 3",
-                "🇰🇷 韩国 | KOR 3 2",
-                "US美国(mibei77.com 米贝节点分享) 51",
-                "_未知_31",
-                "HK香港(mibei77.com 米贝节点分享)",
-                "🇪🇸_西班牙",
-                "_未知_15",
-                "🇸🇬 新加坡 | SGP 6",
-                "HK香港(mibei77.com 米贝节点分享) 6",
-                "US美国(mibei77.com 米贝节点分享) 8",
-                "GB英国(mibei77.com 米贝节点分享) 3",
-                "🇺🇸 美国 | USA 6",
-                "GB英国(mibei77.com 米贝节点分享)",
-                "🇸🇬 新加坡 | SGP 4 2",
-                "🇨🇭_瑞士",
-                "🇭🇰 香港 | HKG 4 2",
-                "🇩🇪 德国 | DEU 6",
-                "jlVVayv5_hysteria2",
-                "GB英国(mibei77.com 米贝节点分享) 4",
-                "_未知_121",
-                "HK香港(mibei77.com 米贝节点分享) 15",
-                "US美国(mibei77.com 米贝节点分享) 89",
-                "🇨🇦 加拿大 | CAN",
-                "_未知_9",
-                "美國節點 2",
-                "h3RKNqz9_hysteria2",
-                "🇭🇰 香港 | HKG",
-                "VPN地址https://kelayun.notepin.co",
-                "🇺🇸_美国_89",
-                "epDA0d6u_hysteria2",
-                "_未知_11",
-                "GB英国(mibei77.com 米贝节点分享) 40",
-                "GB英国(mibei77.com 米贝节点分享) 9",
-                "🇸🇬 新加坡 | SGP 5 2",
-                "GB英国(mibei77.com 米贝节点分享) 2",
-                "🇺🇸_美国_102",
-                "🏳️_未知_1",
-                "_未知_18",
-                "🇸🇬 新加坡 | SGP 2 2",
-                "_未知_24",
-                "🇷🇺_俄罗斯",
-                "GB英国(mibei77.com 米贝节点分享) 41",
-                "🇩🇪_DE_德国",
-                "🇺🇸_美国_100",
-                "🇷🇴_罗马尼亚",
-                "🇺🇸_美国_20",
-                "GB英国(mibei77.com 米贝节点分享) 5",
-                "🇭🇰 香港 | HKG 4",
-                "US美国(mibei77.com 米贝节点分享) 53",
-                "🇲🇾_马来西亚_1",
-                "_未知_29",
-                "_未知_7",
-                "🇸🇬 新加坡 | SGP 8",
-                "m6KIEElw_hysteria2",
-                "🇷🇴_罗马尼亚 2",
-                "🇩🇪 德国 | DEU 3",
-                "🇲🇾_马来西亚_3",
-                "_未知_10",
                 "SG新加坡(mibei77.com 米贝节点分享) 7",
+                "🇺🇸_美国_91",
+                "🇨🇭_瑞士",
+                "梯子地址https://kelayun.notepin.co",
+                "GB英国(mibei77.com 米贝节点分享)",
+                "🇩🇪 德国 | DEU 3",
+                "_未知_11",
                 "🇲🇾_马来西亚",
-                "🇩🇪 德国 | DEU 5",
-                "HK香港(mibei77.com 米贝节点分享) 5",
-                "🇯🇵 日本 | JPN 7",
+                "_未知_24",
+                "DE VLESS-114 | free-nodes",
+                "最高200元终身无限流量",
+                "_未知_164",
+                "h3RKNqz9_hysteria2",
+                "GB英国(mibei77.com 米贝节点分享) 37",
+                "🇺🇸_美国_20",
+                "HK香港(mibei77.com 米贝节点分享)",
+                "🇲🇾_马来西亚_1",
+                "GB英国(mibei77.com 米贝节点分享) 40",
+                "美国(yudou789.top 玉豆免费节点) 58",
+                "HK香港(mibei77.com 米贝节点分享) 2",
+                "🇺🇸_美国_30",
+                "🇺🇸 美国 | USA 6",
+                "_未知_18",
+                "🇺🇸_美国_102",
+                "🇮🇱 以色列 | ISR",
+                "GB英国(mibei77.com 米贝节点分享) 41",
+                "_未知_54",
+                "GB英国(mibei77.com 米贝节点分享) 4",
+                "🇪🇸_西班牙",
+                "_未知_9",
+                "🇲🇾_马来西亚_2",
+                "🇺🇸_美国_100",
+                "美國 8",
+                "🇩🇪_DE_德国",
                 "🇺🇸_美国_96",
-                "🇺🇸 美国 | USA 6 2"
+                "_未知_31",
+                "HK香港(mibei77.com 米贝节点分享) 3",
+                "US美国(mibei77.com 米贝节点分享)",
+                "🇺🇸_美国_39",
+                "🏳️_未知_1",
+                "VPN地址https://kelayun.notepin.co",
+                "US美国(mibei77.com 米贝节点分享) 53",
+                "GB英国(mibei77.com 米贝节点分享) 5",
+                "_未知_10",
+                "HK香港(mibei77.com 米贝节点分享) 6",
+                "🇺🇸_美国_2",
+                "🇷🇺_俄罗斯",
+                "美國節點",
+                "🇺🇸_美国_87",
+                "🇩🇪 德国 | DEU",
+                "GB英国(mibei77.com 米贝节点分享) 2",
+                "_未知_15",
+                "美國節點 2",
+                "KR韩国(mibei77.com 米贝节点分享)",
+                "美国(yudou789.top 玉豆免费节点) 67",
+                "US美国(mibei77.com 米贝节点分享) 8",
+                "US美国(mibei77.com 米贝节点分享) 51",
+                "GB英国(mibei77.com 米贝节点分享) 3",
+                "🇩🇪 德国 | DEU 7",
+                "🇺🇸_美国_103",
+                "HK香港(mibei77.com 米贝节点分享) 15",
+                "香港|@ripaojiedian",
+                "🇺🇸_美国_101",
+                "GB英国(mibei77.com 米贝节点分享) 9",
+                "_未知_29",
+                "🇩🇪 德国 | DEU 6",
+                "_未知_7",
+                "🇲🇾_马来西亚_3",
+                "HK香港(mibei77.com 米贝节点分享) 5",
+                "DE VLESS-104 | free-nodes",
+                "🇳🇱_荷兰",
+                "_未知_121",
+                "购买地址https://kelayun.notepin.co",
+                "🇺🇸_美国_89",
+                "🇨🇦 加拿大 | CAN",
+                "下单地址https://kelayun.notepin.co",
+                "🇷🇴_罗马尼亚 2"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
