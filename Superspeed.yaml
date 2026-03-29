@@ -75,6 +75,26 @@
     ],
     "outbounds": [
         {
+            "tag": "🇩🇪_DE_德国",
+            "type": "vless",
+            "server": "185.94.29.156",
+            "server_port": 4001,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "sub.mot.ip-ddns.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sub.mot.ip-ddns.com"
+                }
+            }
+        },
+        {
             "tag": "US美国(mibei77.com 米贝节点分享)",
             "type": "vless",
             "server": "209.102.207.120",
@@ -127,25 +147,6 @@
             }
         },
         {
-            "tag": "US美国(mibei77.com 米贝节点分享) 34",
-            "type": "trojan",
-            "server": "152.53.200.98",
-            "server_port": 8444,
-            "password": "trojan",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "jflsjlaf.pages.dev"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "jflsjlaf.pages.dev"
-                }
-            }
-        },
-        {
             "tag": "US美国(mibei77.com 米贝节点分享) 103",
             "type": "vless",
             "server": "135.84.74.155",
@@ -162,6 +163,49 @@
                 "path": "/?Telegram🇨🇳@WangCai2=",
                 "headers": {
                     "Host": "sni.111000.v6.navy"
+                }
+            }
+        },
+        {
+            "tag": "US美国(mibei77.com 米贝节点分享) 104",
+            "type": "vless",
+            "server": "135.84.74.43",
+            "server_port": 443,
+            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "sni.111000.v6.navy"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sni.111000.v6.navy"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪_DE_德国 3",
+            "type": "vless",
+            "server": "der.jojack.ru",
+            "server_port": 443,
+            "uuid": "c67f81df-34e8-4cb3-ab43-599585775fa9",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "der.jojack.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xpv3OgIQ4ND_ZaiLxjHk1JsykVAVUY73UkyxPlU8Clc",
+                    "short_id": "695f0df252f9889d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -203,14 +247,6 @@
                     "h3"
                 ]
             }
-        },
-        {
-            "tag": "🇸🇪 瑞典 | SWE",
-            "type": "shadowsocks",
-            "server": "13.63.166.122",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
         },
         {
             "tag": "🇩🇪 德国 | DEU 6",
@@ -267,46 +303,6 @@
             }
         },
         {
-            "tag": "🇦🇹_奥地利",
-            "type": "vless",
-            "server": "152.53.200.241",
-            "server_port": 8443,
-            "uuid": "8d2aeab8-ce98-47a6-84ec-d5b45d060b66",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "edt2.btxst.eu.cc"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/channels",
-                "headers": {
-                    "Host": "edt2.btxst.eu.cc"
-                }
-            }
-        },
-        {
-            "tag": "🇪🇸_西班牙_7",
-            "type": "vless",
-            "server": "188.130.207.158",
-            "server_port": 2053,
-            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "sni.111000.v6.navy"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "sni.111000.v6.navy"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦 加拿大 | CAN 2",
             "type": "vless",
             "server": "217.163.76.254",
@@ -349,12 +345,99 @@
             }
         },
         {
-            "tag": "🇻🇳 越南 | VNM 7 2",
-            "type": "shadowsocks",
-            "server": "103.186.155.153",
-            "server_port": 38388,
-            "method": "aes-256-cfb",
-            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+            "tag": "🇺🇸_美国_3",
+            "type": "vless",
+            "server": "47.80.13.250",
+            "server_port": 443,
+            "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "api.company-target.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺_俄罗斯 2",
+            "type": "vless",
+            "server": "5.182.5.239",
+            "server_port": 443,
+            "uuid": "c4f2dee2-14e3-4c02-91e9-31c7917e239c",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "sub.sbrf-cdn342.ru"
+            }
+        },
+        {
+            "tag": "🇬🇧_英国_55",
+            "type": "vless",
+            "server": "45.43.76.184",
+            "server_port": 2053,
+            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "sni.111000.v6.navy"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/?ed=2560&telegram🇨🇳+@wangcai2",
+                "headers": {
+                    "Host": "sni.111000.v6.navy"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇭_瑞士_1",
+            "type": "vless",
+            "server": "138.226.240.199",
+            "server_port": 4433,
+            "uuid": "00000000-0000-4000-8000-000000000000",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "sub.mot.ip-ddns.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "sub.mot.ip-ddns.com"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬 新加坡 | SGP 3 2",
+            "type": "vless",
+            "server": "198.41.208.162",
+            "server_port": 8443,
+            "uuid": "29ff2954-dfea-4d20-8089-059cfa861453",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "wr.ssdxz.cn"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net",
+                "headers": {
+                    "Host": "wr.ssdxz.cn"
+                }
+            }
         },
         {
             "tag": "proxy",
@@ -362,44 +445,50 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇷🇺_俄罗斯",
-                "US美国(mibei77.com 米贝节点分享)",
-                "US美国(mibei77.com 米贝节点分享) 24",
-                "US美国(mibei77.com 米贝节点分享) 18",
                 "🇩🇪 德国 | DEU 2 2",
-                "🇦🇹_奥地利",
-                "🇻🇳 越南 | VNM 7 2",
-                "🇪🇸_西班牙",
-                "KR_speednode_0009",
-                "US美国(mibei77.com 米贝节点分享) 103",
+                "US美国(mibei77.com 米贝节点分享)",
                 "🇸🇬 新加坡 | SGP",
+                "US美国(mibei77.com 米贝节点分享) 104",
+                "US美国(mibei77.com 米贝节点分享) 103",
                 "🇩🇪 德国 | DEU 6",
-                "US美国(mibei77.com 米贝节点分享) 34",
-                "🇪🇸_西班牙_7",
+                "🇷🇺_俄罗斯",
+                "🇸🇬 新加坡 | SGP 3 2",
+                "🇬🇧_英国_55",
                 "🇨🇦 加拿大 | CAN 2",
-                "🇸🇪 瑞典 | SWE"
+                "US美国(mibei77.com 米贝节点分享) 18",
+                "US美国(mibei77.com 米贝节点分享) 24",
+                "🇪🇸_西班牙",
+                "🇩🇪_DE_德国 3",
+                "🇩🇪_DE_德国",
+                "🇨🇭_瑞士_1",
+                "🇷🇺_俄罗斯 2",
+                "🇺🇸_美国_3",
+                "KR_speednode_0009"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇷🇺_俄罗斯",
-                "US美国(mibei77.com 米贝节点分享)",
-                "US美国(mibei77.com 米贝节点分享) 24",
-                "US美国(mibei77.com 米贝节点分享) 18",
                 "🇩🇪 德国 | DEU 2 2",
-                "🇦🇹_奥地利",
-                "🇻🇳 越南 | VNM 7 2",
-                "🇪🇸_西班牙",
-                "KR_speednode_0009",
-                "US美国(mibei77.com 米贝节点分享) 103",
+                "US美国(mibei77.com 米贝节点分享)",
                 "🇸🇬 新加坡 | SGP",
+                "US美国(mibei77.com 米贝节点分享) 104",
+                "US美国(mibei77.com 米贝节点分享) 103",
                 "🇩🇪 德国 | DEU 6",
-                "US美国(mibei77.com 米贝节点分享) 34",
-                "🇪🇸_西班牙_7",
+                "🇷🇺_俄罗斯",
+                "🇸🇬 新加坡 | SGP 3 2",
+                "🇬🇧_英国_55",
                 "🇨🇦 加拿大 | CAN 2",
-                "🇸🇪 瑞典 | SWE"
+                "US美国(mibei77.com 米贝节点分享) 18",
+                "US美国(mibei77.com 米贝节点分享) 24",
+                "🇪🇸_西班牙",
+                "🇩🇪_DE_德国 3",
+                "🇩🇪_DE_德国",
+                "🇨🇭_瑞士_1",
+                "🇷🇺_俄罗斯 2",
+                "🇺🇸_美国_3",
+                "KR_speednode_0009"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
