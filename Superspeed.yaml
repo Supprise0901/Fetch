@@ -75,23 +75,36 @@
     ],
     "outbounds": [
         {
-            "tag": "【测速 Nodes】70.87MB/s",
-            "type": "vless",
-            "server": "162.159.45.243",
-            "server_port": 443,
-            "uuid": "b3209c97-be59-4eec-87a0-cf18e3fe5024",
-            "packet_encoding": "xudp",
+            "tag": "🇩🇪 德国 | DEU 2 2",
+            "type": "hysteria",
+            "server": "5.83.129.153",
+            "server_port": 20088,
+            "up_mbps": 500,
+            "down_mbps": 1000,
+            "auth_str": "dongtaiwang.com",
             "tls": {
                 "enabled": true,
-                "insecure": false,
-                "server_name": "317.hg168.de5.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "pyip=proxyip.cmliussss.net",
-                "headers": {
-                    "Host": "317.hg168.de5.net"
-                }
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "os7f40AE_hysteria2",
+            "type": "hysteria2",
+            "server": "195.154.54.131",
+            "server_port": 40022,
+            "password": "dongtaiwang.com",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
@@ -100,14 +113,16 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "【测速 Nodes】70.87MB/s"
+                "🇩🇪 德国 | DEU 2 2",
+                "os7f40AE_hysteria2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "【测速 Nodes】70.87MB/s"
+                "🇩🇪 德国 | DEU 2 2",
+                "os7f40AE_hysteria2"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
