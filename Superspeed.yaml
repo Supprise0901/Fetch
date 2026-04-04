@@ -92,27 +92,6 @@
             }
         },
         {
-            "tag": "⭐ 🇷🇴 Bucharest | HY2 t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "82.117.255.37",
-            "server_port": 444,
-            "password": "strong-secret-pass-777",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.microsoft.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "cry_me_a_r1ver_2026"
-            }
-        },
-        {
             "tag": "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
             "type": "hysteria2",
             "server": "45.82.245.37",
@@ -151,25 +130,61 @@
             }
         },
         {
+            "tag": "🇰🇷 韩国 | KOR",
+            "type": "http",
+            "server": "772b033d-tcz8g0-tdktcz-ezjz.kr.oshuawei.com",
+            "server_port": 31433,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "591ac730-bd6f-11ed-a8bf-f23c91cfbbc9",
+            "password": "591ac730-bd6f-11ed-a8bf-f23c91cfbbc9"
+        },
+        {
+            "tag": "youtube@资源分享师_65",
+            "type": "vless",
+            "server": "166.117.33.104",
+            "server_port": 443,
+            "uuid": "948fac3c-42bf-41a6-a5f9-704d36ff0d8d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "snippet.danfeng.theworkpc.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/danfeng",
+                "headers": {
+                    "Host": "snippet.danfeng.theworkpc.com"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇩🇪 德国 | DEU 2",
-                "🇫🇷 France, Paris | 🌐 | [IPv6] | [BL] t.me/rjsxrd",
+                "youtube@资源分享师_65",
                 "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
-                "⭐ 🇷🇴 Bucharest | HY2 t.me/rjsxrd"
+                "🇰🇷 韩国 | KOR",
+                "🇩🇪 德国 | DEU 2",
+                "🇫🇷 France, Paris | 🌐 | [IPv6] | [BL] t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪 德国 | DEU 2",
-                "🇫🇷 France, Paris | 🌐 | [IPv6] | [BL] t.me/rjsxrd",
+                "youtube@资源分享师_65",
                 "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
-                "⭐ 🇷🇴 Bucharest | HY2 t.me/rjsxrd"
+                "🇰🇷 韩国 | KOR",
+                "🇩🇪 德国 | DEU 2",
+                "🇫🇷 France, Paris | 🌐 | [IPv6] | [BL] t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
