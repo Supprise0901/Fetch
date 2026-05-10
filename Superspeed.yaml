@@ -75,33 +75,16 @@
     ],
     "outbounds": [
         {
-            "tag": "🇺🇸US_2|1.0MB/s t.me/rjsxrd",
+            "tag": "🇺🇸 机场推荐:dafei.de 美国 09 t.me/rjsxrd",
             "type": "hysteria2",
-            "server": "vpn-us-004.fastervpn.world",
+            "server": "vpn-us-001.fastervpn.world",
             "server_port": 443,
             "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "vpn-us-004.fastervpn.world",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇺🇸US_9|2.4MB/s t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "vpn-us-002.fastervpn.world",
-            "server_port": 443,
-            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "vpn-us-002.fastervpn.world",
+                "server_name": "vpn-us-001.fastervpn.world",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -130,19 +113,17 @@
             }
         },
         {
-            "tag": "h2DP2rlX_hysteria2",
-            "type": "hysteria2",
-            "server": "vpn-us-001.fastervpn.world",
-            "server_port": 443,
-            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-            "up_mbps": 10,
-            "down_mbps": 100,
+            "tag": "未知 VLESS-88 | free-nodes",
+            "type": "vless",
+            "server": "72.56.62.253",
+            "server_port": 22231,
+            "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
+                "insecure": false,
+                "server_name": "r1.mizulina.top"
             }
         },
         {
@@ -166,69 +147,25 @@
             }
         },
         {
-            "tag": "🇳🇱 荷兰 348",
-            "type": "vless",
-            "server": "46.8.229.218",
-            "server_port": 2053,
-            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "sni.111000.v6.army"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560&https://t.me/wangcai2🇨🇳",
-                "headers": {
-                    "Host": "sni.111000.v6.army"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇳 印度 | IND 2",
-            "type": "shadowsocks",
-            "server": "15.206.82.205",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "dada1203"
-        },
-        {
-            "tag": "🇸🇬 新加坡 | SGP 6",
-            "type": "shadowsocks",
-            "server": "13.229.61.103",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "dada1203"
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "h2DP2rlX_hysteria2",
-                "🇺🇸US_2|1.0MB/s t.me/rjsxrd",
-                "🇸🇬 新加坡 | SGP 6",
-                "🇺🇸US_9|2.4MB/s t.me/rjsxrd",
-                "🇭🇰HK_4|1.9MB/s",
-                "🇳🇱 荷兰 348",
+                "未知 VLESS-88 | free-nodes",
                 "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
-                "🇮🇳 印度 | IND 2"
+                "🇭🇰HK_4|1.9MB/s",
+                "🇺🇸 机场推荐:dafei.de 美国 09 t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "h2DP2rlX_hysteria2",
-                "🇺🇸US_2|1.0MB/s t.me/rjsxrd",
-                "🇸🇬 新加坡 | SGP 6",
-                "🇺🇸US_9|2.4MB/s t.me/rjsxrd",
-                "🇭🇰HK_4|1.9MB/s",
-                "🇳🇱 荷兰 348",
+                "未知 VLESS-88 | free-nodes",
                 "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
-                "🇮🇳 印度 | IND 2"
+                "🇭🇰HK_4|1.9MB/s",
+                "🇺🇸 机场推荐:dafei.de 美国 09 t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
