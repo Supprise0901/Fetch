@@ -75,6 +75,23 @@
     ],
     "outbounds": [
         {
+            "tag": "👀5@oneclickvpnkeys t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "212.192.13.242",
+            "server_port": 4433,
+            "password": "2545ab46-6306-4f2b-badd-5531f384d55f",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.xiaoliyu.cyou",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "B - 🇹🇼 TW 01 TG: @nodpai t.me/rjsxrd",
             "type": "hysteria2",
             "server": "160.187.100.109",
@@ -85,40 +102,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "https://t.me/WangCai2🇨🇳",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇷🇺RU_1|1.2MB/s t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "193.53.126.108",
-            "server_port": 443,
-            "password": "10550754-cf62-3d3b-ba6a-50be27a275d7",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "s463.okgfwbackxyz.xyz",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 03 t.me/rjsxrd",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
                 "insecure": true,
                 "alpn": [
                     "h3"
@@ -148,14 +131,36 @@
             }
         },
         {
+            "tag": "官网https://kelayun.notepin.co",
+            "type": "vless",
+            "server": "ct.877774.xyz",
+            "server_port": 443,
+            "uuid": "d2f54466-0055-4a25-a3b3-b54a5107f980",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "do-sfo3.862400.xyz"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/announcement",
+                "headers": {
+                    "Host": "do-sfo3.862400.xyz"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "官网https://kelayun.notepin.co",
                 "B - 🇹🇼 TW 01 TG: @nodpai t.me/rjsxrd",
-                "🇷🇺RU_1|1.2MB/s t.me/rjsxrd",
-                "🇩🇪 机场推荐:dafei.de 德国 03 t.me/rjsxrd",
+                "👀5@oneclickvpnkeys t.me/rjsxrd",
                 "🇦🇺 AU"
             ]
         },
@@ -163,9 +168,9 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "官网https://kelayun.notepin.co",
                 "B - 🇹🇼 TW 01 TG: @nodpai t.me/rjsxrd",
-                "🇷🇺RU_1|1.2MB/s t.me/rjsxrd",
-                "🇩🇪 机场推荐:dafei.de 德国 03 t.me/rjsxrd",
+                "👀5@oneclickvpnkeys t.me/rjsxrd",
                 "🇦🇺 AU"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
