@@ -75,23 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "NL_2|1.2MB/s t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "178.18.147.66",
-            "server_port": 29900,
-            "password": "github.com/Alvin9999-newpac/fanqiang",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.microsoft.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
             "type": "hysteria2",
             "server": "45.82.245.37",
@@ -113,21 +96,38 @@
             }
         },
         {
+            "tag": "🇩🇪 机场推荐:dafei.de 德国 02 t.me/rjsxrd",
+            "type": "hysteria",
+            "server": "5.83.129.90",
+            "server_port": 54177,
+            "up_mbps": 500,
+            "down_mbps": 1000,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "NL_2|1.2MB/s t.me/rjsxrd",
-                "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd"
+                "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
+                "🇩🇪 机场推荐:dafei.de 德国 02 t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "NL_2|1.2MB/s t.me/rjsxrd",
-                "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd"
+                "⭐ 🇧🇷 Brasilia | HY2 t.me/rjsxrd",
+                "🇩🇪 机场推荐:dafei.de 德国 02 t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
