@@ -75,23 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🇳🇱 The Netherlands, Eygelshoven | [BL] t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "31.59.39.192",
-            "server_port": 500,
-            "password": "8vX6A657pl",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "www.amd.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸 (ai) wifi @nzea_tri_bykvi t.me/rjsxrd",
             "type": "hysteria2",
             "server": "204.12.170.168",
@@ -113,54 +96,67 @@
             }
         },
         {
-            "tag": "英國節點 8",
+            "tag": "未知 VLESS-479 | free-nodes",
+            "type": "vless",
+            "server": "serv-ne-3.whit3.net",
+            "server_port": 10444,
+            "uuid": "49f3fec2-1a21-481e-ae65-7c32ae262582",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "serv-ne-3.whit3.net",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4",
+                    "short_id": "378086fbdb7c61cd"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇴 罗马尼亚 | ROU 4",
+            "type": "http",
+            "server": "84.239.49.224",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "KR_speednode_0022",
+            "type": "http",
+            "server": "testkr3.ssv.vc",
+            "server_port": 30446,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "test",
+            "password": "test.+"
+        },
+        {
+            "tag": "B - 🇹🇼 TW 05 TG: @nodpai",
             "type": "vmess",
-            "server": "82.198.246.214",
-            "server_port": 180,
-            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "server": "v11.zgtfqs.click",
+            "server_port": 30811,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 2,
             "packet_encoding": "xudp"
         },
         {
-            "tag": "B - 🇺🇸 US 08 TG: @nodpai",
-            "type": "hysteria2",
-            "server": "zf.9966690.xyz",
-            "server_port": 60041,
-            "password": "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "YzgyOTkwNDk42TU23T365A=="
-            }
-        },
-        {
-            "tag": "B - 🇺🇸 US 29 TG: @nodpai",
-            "type": "hysteria2",
-            "server": "zf.9966690.xyz",
-            "server_port": 60042,
-            "password": "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "YzgyOTkwNDk42TU23T365A=="
-            }
+            "tag": "🇻🇳 越南 | VNM 11",
+            "type": "shadowsocks",
+            "server": "103.186.154.150",
+            "server_port": 38388,
+            "method": "aes-256-cfb",
+            "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
         },
         {
             "tag": "proxy",
@@ -168,22 +164,24 @@
             "outbounds": [
                 "auto",
                 "direct",
+                "未知 VLESS-479 | free-nodes",
+                "B - 🇹🇼 TW 05 TG: @nodpai",
+                "🇷🇴 罗马尼亚 | ROU 4",
+                "🇻🇳 越南 | VNM 11",
                 "🇺🇸 (ai) wifi @nzea_tri_bykvi t.me/rjsxrd",
-                "B - 🇺🇸 US 08 TG: @nodpai",
-                "🇳🇱 The Netherlands, Eygelshoven | [BL] t.me/rjsxrd",
-                "英國節點 8",
-                "B - 🇺🇸 US 29 TG: @nodpai"
+                "KR_speednode_0022"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "未知 VLESS-479 | free-nodes",
+                "B - 🇹🇼 TW 05 TG: @nodpai",
+                "🇷🇴 罗马尼亚 | ROU 4",
+                "🇻🇳 越南 | VNM 11",
                 "🇺🇸 (ai) wifi @nzea_tri_bykvi t.me/rjsxrd",
-                "B - 🇺🇸 US 08 TG: @nodpai",
-                "🇳🇱 The Netherlands, Eygelshoven | [BL] t.me/rjsxrd",
-                "英國節點 8",
-                "B - 🇺🇸 US 29 TG: @nodpai"
+                "KR_speednode_0022"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
