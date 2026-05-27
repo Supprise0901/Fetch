@@ -75,17 +75,56 @@
     ],
     "outbounds": [
         {
+            "tag": "B - 🇩🇪 DE 10 TG: @nodpai t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "vpn-de-002.fastervpn.world",
+            "server_port": 443,
+            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-de-002.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱NL_1|2.7MB/s|GPT⁺|YT-NL|NF|5% t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "150.129.10.140",
+            "server_port": 443,
+            "password": "6d49fae1-374d-313e-b360-1227b0ea8dea",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "s614.ccgfw.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "🇳🇱NL_1|2.7MB/s|GPT⁺|YT-NL|NF|5% t.me/rjsxrd",
+                "B - 🇩🇪 DE 10 TG: @nodpai t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇳🇱NL_1|2.7MB/s|GPT⁺|YT-NL|NF|5% t.me/rjsxrd",
+                "B - 🇩🇪 DE 10 TG: @nodpai t.me/rjsxrd"
+            ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
