@@ -75,90 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 06 t.me/rjsxrd",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "B - 🇭🇰 HK 07 TG: @nodpai",
-            "type": "vmess",
-            "server": "world.t.51guangtaobao.com",
-            "server_port": 6012,
-            "uuid": "1d3d868e-ae7b-3762-b9d9-a7f267494c7e",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "B - 🇺🇸 US 14 TG: @nodpai",
-            "type": "hysteria2",
-            "server": "zf.9966690.xyz",
-            "server_port": 60041,
-            "password": "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "YzgyOTkwNDk42TU23T365A=="
-            }
-        },
-        {
-            "tag": "B - 🇩🇪 DE 10 TG: @nodpai",
-            "type": "hysteria2",
-            "server": "vpn-de-002.fastervpn.world",
-            "server_port": 443,
-            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "vpn-de-002.fastervpn.world",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇩🇪 机场推荐:dafei.de 德国 06 t.me/rjsxrd",
-                "B - 🇭🇰 HK 07 TG: @nodpai",
-                "B - 🇺🇸 US 14 TG: @nodpai",
-                "B - 🇩🇪 DE 10 TG: @nodpai"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇩🇪 机场推荐:dafei.de 德国 06 t.me/rjsxrd",
-                "B - 🇭🇰 HK 07 TG: @nodpai",
-                "B - 🇺🇸 US 14 TG: @nodpai",
-                "B - 🇩🇪 DE 10 TG: @nodpai"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
