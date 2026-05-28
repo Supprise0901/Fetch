@@ -75,64 +75,23 @@
     ],
     "outbounds": [
         {
-            "tag": "🇨🇳 中国 329",
-            "type": "vmess",
-            "server": "cu7.ainivp.com",
-            "server_port": 33414,
-            "uuid": "9204afcd-026e-781f-1abc-c03efabd1344",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
+            "tag": "NN_speednode_0030",
+            "type": "tuic",
+            "server": "r68lo7.yydzx.xyz",
+            "server_port": 27108,
+            "uuid": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280",
+            "password": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280",
+            "congestion_control": "bbr",
+            "udp_relay_mode": null,
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
             "tls": {
                 "enabled": true,
+                "alpn": [
+                    "h3"
+                ],
                 "insecure": false,
-                "server_name": "cu7.ainivp.com"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "cu7.ainivp.com"
-                },
-                "path": "/ray"
-            }
-        },
-        {
-            "tag": "🇨🇳 中国 333",
-            "type": "vmess",
-            "server": "yd4.ainivp.com",
-            "server_port": 33204,
-            "uuid": "9204afcd-026e-781f-1abc-c03efabd1344",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yd4.ainivp.com"
-            },
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "yd4.ainivp.com"
-                },
-                "path": "/ray"
-            }
-        },
-        {
-            "tag": "🇫🇷 法国 339",
-            "type": "vmess",
-            "server": "planb.mojcn.com",
-            "server_port": 16648,
-            "uuid": "24e37e6e-7e01-4f68-afea-28fb14a47aef",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "08071ec6f38bfb263ee89b1bb0c3ca1b.mobgslb.tbcache.com"
-                },
-                "path": "/"
+                "server_name": "r68lo7.yydzx.xyz"
             }
         },
         {
@@ -141,18 +100,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇨🇳 中国 329",
-                "🇨🇳 中国 333",
-                "🇫🇷 法国 339"
+                "NN_speednode_0030"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳 中国 329",
-                "🇨🇳 中国 333",
-                "🇫🇷 法国 339"
+                "NN_speednode_0030"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
