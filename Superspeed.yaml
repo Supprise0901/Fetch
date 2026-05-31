@@ -75,61 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪 德国 | DEU 3 2",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇩🇪德国DE-460",
-            "type": "vless",
-            "server": "87.120.93.69",
-            "server_port": 443,
-            "uuid": "2001daf3-5c56-4bef-8ea6-8dd0493c5a4c",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.deepl.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇩🇪德国DE-460",
-                "🇩🇪 德国 | DEU 3 2"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇩🇪德国DE-460",
-                "🇩🇪 德国 | DEU 3 2"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
