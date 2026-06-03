@@ -75,15 +75,27 @@
     ],
     "outbounds": [
         {
-            "tag": "🇺🇸_US_美国->🇫🇷_FR_法国",
+            "tag": "🇺🇸_US_美国 2",
             "type": "trojan",
             "server": "90081bb25c.node.tro.cac.cab",
-            "server_port": 45619,
+            "server_port": 47909,
             "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "fr.01.naiun.bilibili.com"
+                "server_name": "is.01.naiun.bilibili.com"
+            }
+        },
+        {
+            "tag": "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
+            "type": "trojan",
+            "server": "90081bb25c.node.tro.cac.cab",
+            "server_port": 41943,
+            "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "az.01.naiun.bilibili.com"
             }
         },
         {
@@ -111,15 +123,41 @@
             }
         },
         {
-            "tag": "🇭🇰 香港 129",
-            "type": "trojan",
-            "server": "95.40.68.192",
-            "server_port": 17801,
-            "password": "BxceQaOe",
+            "tag": "BWG-USA-HY2-TLS t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "vps-bwg-usa.maze-maker.com",
+            "server_port": 37749,
+            "password": "mRmdkn1voV",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "insecure": true,
-                "server_name": "t.me/ripaojiedian"
+                "server_name": "vps-bwg-usa.maze-maker.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "80.66.81.78",
+            "server_port": 9443,
+            "password": "rs2mR3g9bZiMloftx6lZQ59Um1Ld",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "tunel1.washing.help",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "oMgvuBy5Lj5kYM57sGsnjpjNcSEQ"
             }
         },
         {
@@ -143,22 +181,26 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "🇫🇷FR_1|1.1MB/s",
-                "🇭🇰 香港 129",
-                "🇺🇸 美国 123",
+                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
+                "🇺🇸_US_美国 2",
+                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
+                "BWG-USA-HY2-TLS t.me/rjsxrd",
                 "🇺🇸 美国 127",
-                "🇺🇸_US_美国->🇫🇷_FR_法国"
+                "🇫🇷FR_1|1.1MB/s",
+                "🇺🇸 美国 123"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR_1|1.1MB/s",
-                "🇭🇰 香港 129",
-                "🇺🇸 美国 123",
+                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
+                "🇺🇸_US_美国 2",
+                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
+                "BWG-USA-HY2-TLS t.me/rjsxrd",
                 "🇺🇸 美国 127",
-                "🇺🇸_US_美国->🇫🇷_FR_法国"
+                "🇫🇷FR_1|1.1MB/s",
+                "🇺🇸 美国 123"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
