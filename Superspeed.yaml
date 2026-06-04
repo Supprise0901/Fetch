@@ -75,6 +75,68 @@
     ],
     "outbounds": [
         {
+            "tag": "俄羅斯丨yoyapai.com",
+            "type": "vless",
+            "server": "r1.mizulina.top",
+            "server_port": 22231,
+            "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r1.mizulina.top"
+            }
+        },
+        {
+            "tag": "美國節點 6",
+            "type": "vmess",
+            "server": "82.198.246.250",
+            "server_port": 180,
+            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "security": "auto",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "美國",
+            "type": "vmess",
+            "server": "82.198.246.37",
+            "server_port": 180,
+            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "security": "aes-128-gcm",
+            "alter_id": 0,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "俄羅斯丨yoyapai.com 4",
+            "type": "vless",
+            "server": "85.234.114.53",
+            "server_port": 443,
+            "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r1.mizulina.top"
+            }
+        },
+        {
+            "tag": "俄羅斯節點丨yoyapai.com 3",
+            "type": "vless",
+            "server": "85.234.114.53",
+            "server_port": 22231,
+            "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "r1.mizulina.top"
+            }
+        },
+        {
             "tag": "🇺🇸_US_美国->🇨🇭_CH_瑞士",
             "type": "trojan",
             "server": "90081bb25c.node.tro.cac.cab",
@@ -123,6 +185,46 @@
             }
         },
         {
+            "tag": "🇺🇸 美国 43",
+            "type": "vless",
+            "server": "43.162.115.192",
+            "server_port": 666,
+            "uuid": "8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "43.162.115.192"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxy",
+                "headers": {
+                    "Host": "43.162.115.192"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 44",
+            "type": "vless",
+            "server": "43.162.85.247",
+            "server_port": 666,
+            "uuid": "8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "43.162.85.247"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/proxy",
+                "headers": {
+                    "Host": "43.162.85.247"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸 美国 123",
             "type": "trojan",
             "server": "90081bb25c.node.tro.cac.cab",
@@ -164,6 +266,23 @@
             }
         },
         {
+            "tag": "9|41@oneclickvpnkeys t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "vpn-de-002.fastervpn.world",
+            "server_port": 443,
+            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-de-002.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "BWG-USA-HY2-TLS t.me/rjsxrd",
             "type": "hysteria2",
             "server": "vps-bwg-usa.maze-maker.com",
@@ -174,6 +293,40 @@
             "tls": {
                 "enabled": true,
                 "server_name": "vps-bwg-usa.maze-maker.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "VMISS-USA-HY2-TLS t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "vps-vmiss-usa.maze-maker.com",
+            "server_port": 37749,
+            "password": "s12fFiUvpP8B",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vps-vmiss-usa.maze-maker.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "ORANGE-JPN-HY2-TLS t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "vps-orange-jpn.maze-maker.com",
+            "server_port": 37749,
+            "password": "C6TpRY6HyT",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vps-orange-jpn.maze-maker.com",
                 "insecure": false,
                 "alpn": [
                     "h3"
@@ -214,9 +367,103 @@
             "password": "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b"
         },
         {
-            "tag": "GB_speednode_0014",
+            "tag": "NN_speednode_0025",
+            "type": "http",
+            "server": "19b7ea9d-t9zts0-tbnk1n-ueq.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
+            "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b"
+        },
+        {
+            "tag": "RO_speednode_0031",
+            "type": "http",
+            "server": "84.239.14.158",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "CN_speednode_0003",
+            "type": "http",
+            "server": "c54d0241-t9zts0-tnfe2z-1s4hc.my.oshuawei.com",
+            "server_port": 31233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "aafedc64-9c23-11ef-a79f-f23c91cfbbc9",
+            "password": "aafedc64-9c23-11ef-a79f-f23c91cfbbc9"
+        },
+        {
+            "tag": "CN_speednode_0004",
+            "type": "http",
+            "server": "41bb1fa0-t9zts0-tcr22d-1rsuw.my.oshuawei.com",
+            "server_port": 31233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "0de37cdc-abff-11ef-b7c6-f23c913c8d2b",
+            "password": "0de37cdc-abff-11ef-b7c6-f23c913c8d2b"
+        },
+        {
+            "tag": "CN_speednode_0007",
+            "type": "http",
+            "server": "85af7e0c-t9zts0-ta7ccz-1j0a4.id.oshuawei.com",
+            "server_port": 32233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
+            "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b"
+        },
+        {
+            "tag": "CN_speednode_0008",
+            "type": "http",
+            "server": "d33fa2df-t9zts0-trg4wh-z65w.id.oshuawei.com",
+            "server_port": 32233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9",
+            "password": "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9"
+        },
+        {
+            "tag": "CN_speednode_0009",
+            "type": "http",
+            "server": "9541dbe9-t9zts0-tcinla-hrtf.id.oshuawei.com",
+            "server_port": 32233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b",
+            "password": "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b"
+        },
+        {
+            "tag": "CN_speednode_0010",
+            "type": "http",
+            "server": "c711fb09-t9zts0-tq9o8d-1d3bw.id.oshuawei.com",
+            "server_port": 32233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9",
+            "password": "0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9"
+        },
+        {
+            "tag": "GB_speednode_0015",
             "type": "vless",
-            "server": "31.76.113.26",
+            "server": "31.76.113.91",
             "server_port": 443,
             "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
             "packet_encoding": "xudp",
@@ -237,37 +484,223 @@
             }
         },
         {
-            "tag": "NN_speednode_0025",
+            "tag": "NN_speednode_0021",
             "type": "http",
-            "server": "19b7ea9d-t9zts0-tbnk1n-ueq.cm4.oshuawei.com",
+            "server": "4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com",
+            "server_port": 3233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "16955d72-1794-11f0-a035-f23c95b6f51d",
+            "password": "16955d72-1794-11f0-a035-f23c95b6f51d"
+        },
+        {
+            "tag": "NN_speednode_0023",
+            "type": "http",
+            "server": "2de0e51d-teisg0-tg0j4k-gacy.cm4.oshuawei.com",
             "server_port": 5228,
             "tls": {
                 "enabled": true,
                 "insecure": true
             },
-            "username": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
-            "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b"
+            "username": "20f87b02-0eaa-11eb-8684-f23c913c8d2b",
+            "password": "20f87b02-0eaa-11eb-8684-f23c913c8d2b"
         },
         {
-            "tag": "NN_speednode_0029",
+            "tag": "NN_speednode_0024",
             "type": "http",
-            "server": "a18418b5-t9zts0-tsjk4v-1atkp.cm4.oshuawei.com",
+            "server": "9ae34110-t9zts0-tb592v-4lg6.cm4.oshuawei.com",
             "server_port": 5228,
             "tls": {
                 "enabled": true,
                 "insecure": true
             },
-            "username": "1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9",
-            "password": "1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9"
+            "username": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d",
+            "password": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d"
         },
         {
-            "tag": "RO_speednode_0031",
+            "tag": "NN_speednode_0026",
             "type": "http",
-            "server": "84.239.14.158",
+            "server": "b21cad55-t9zts0-tiaexf-ufc0.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "22308988-8548-11ea-a22e-f23c91cfbbc9",
+            "password": "22308988-8548-11ea-a22e-f23c91cfbbc9"
+        },
+        {
+            "tag": "NN_speednode_0027",
+            "type": "http",
+            "server": "1d603f3e-t9zts0-tc9wl2-py5w.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "ae5338ae-9a70-58c9-3d47-7d54a5675715",
+            "password": "ae5338ae-9a70-58c9-3d47-7d54a5675715"
+        },
+        {
+            "tag": "NN_speednode_0028",
+            "type": "http",
+            "server": "64a99740-t9zts0-tipjoa-1slop.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "520b9126-9870-11ef-81b0-f23c9164ca5d",
+            "password": "520b9126-9870-11ef-81b0-f23c9164ca5d"
+        },
+        {
+            "tag": "NN_speednode_0030",
+            "type": "http",
+            "server": "c4c796bb-t9zts0-tlpfci-1jdha.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "de629d50-1711-11ed-bd7c-f23c913c8d2b",
+            "password": "de629d50-1711-11ed-bd7c-f23c913c8d2b"
+        },
+        {
+            "tag": "RO_speednode_0032",
+            "type": "http",
+            "server": "84.239.49.201",
             "server_port": 9002,
             "tls": {
                 "enabled": true,
                 "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0033",
+            "type": "http",
+            "server": "84.239.49.239",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0034",
+            "type": "http",
+            "server": "84.239.49.185",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0035",
+            "type": "http",
+            "server": "84.239.49.154",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0036",
+            "type": "http",
+            "server": "84.239.14.146",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0037",
+            "type": "http",
+            "server": "84.239.49.175",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "US_speednode_0047",
+            "type": "http",
+            "server": "8e2d06c5-teisg0-ts3rye-mrtr.jp.oshuawei.com",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9",
+            "password": "28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9"
+        },
+        {
+            "tag": "未知 VLESS-100 | free-nodes 2",
+            "type": "vless",
+            "server": "162.217.249.72",
+            "server_port": 443,
+            "uuid": "d78c12c4-6927-40b8-8550-ed9be00334da",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "nether1cxc.chickenkiller.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MFedImeNi-4keZx_rkV8WL6jjY6sLncSaXgNjpUBPGo",
+                    "short_id": "8917bfb9900788d5"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇭🇰HK_2|1003KB/s",
+            "type": "trojan",
+            "server": "155.117.198.83",
+            "server_port": 46424,
+            "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "de.01.naiun.bilibili.com"
+            }
+        },
+        {
+            "tag": "🇨🇦CA_1|1.2MB/s",
+            "type": "shadowsocks",
+            "server": "35.183.93.91",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "🇨🇦CA_2|1.0MB/s",
+            "type": "shadowsocks",
+            "server": "3.99.174.90",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+        {
+            "tag": "🇳🇱NL_2|1.6MB/s",
+            "type": "vless",
+            "server": "213.171.30.169",
+            "server_port": 8443,
+            "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "cdn3-87.vk-cdnvideo.com"
             }
         },
         {
@@ -276,40 +709,108 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "GB_speednode_0014",
-                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
-                "🇺🇸_US_美国->🇫🇷_FR_法国",
-                "🇺🇸_US_美国->🇨🇭_CH_瑞士",
-                "RO_speednode_0031",
-                "🇺🇸 美国 123",
-                "NN_speednode_0025",
-                "CN_speednode_0006",
-                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
-                "🇺🇸 美国 127",
+                "ORANGE-JPN-HY2-TLS t.me/rjsxrd",
+                "🇨🇦CA_1|1.2MB/s",
+                "NN_speednode_0021",
                 "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
-                "NN_speednode_0029",
+                "🇺🇸_US_美国->🇨🇭_CH_瑞士",
+                "俄羅斯節點丨yoyapai.com 3",
+                "🇳🇱NL_2|1.6MB/s",
+                "NN_speednode_0030",
+                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
+                "NN_speednode_0027",
+                "NN_speednode_0024",
+                "GB_speednode_0015",
+                "🇺🇸 美国 127",
+                "CN_speednode_0010",
+                "RO_speednode_0031",
                 "🇺🇸_US_美国 2",
-                "BWG-USA-HY2-TLS t.me/rjsxrd"
+                "RO_speednode_0034",
+                "美國",
+                "🇺🇸_US_美国->🇫🇷_FR_法国",
+                "🇺🇸 美国 123",
+                "US_speednode_0047",
+                "RO_speednode_0036",
+                "CN_speednode_0006",
+                "🇭🇰HK_2|1003KB/s",
+                "RO_speednode_0037",
+                "俄羅斯丨yoyapai.com 4",
+                "RO_speednode_0033",
+                "VMISS-USA-HY2-TLS t.me/rjsxrd",
+                "NN_speednode_0023",
+                "CN_speednode_0009",
+                "未知 VLESS-100 | free-nodes 2",
+                "CN_speednode_0008",
+                "CN_speednode_0004",
+                "CN_speednode_0007",
+                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
+                "美國節點 6",
+                "俄羅斯丨yoyapai.com",
+                "RO_speednode_0035",
+                "NN_speednode_0025",
+                "🇨🇦CA_2|1.0MB/s",
+                "🇺🇸 美国 43",
+                "BWG-USA-HY2-TLS t.me/rjsxrd",
+                "NN_speednode_0026",
+                "RO_speednode_0032",
+                "🇺🇸 美国 44",
+                "CN_speednode_0003",
+                "NN_speednode_0028",
+                "9|41@oneclickvpnkeys t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "GB_speednode_0014",
-                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
-                "🇺🇸_US_美国->🇫🇷_FR_法国",
-                "🇺🇸_US_美国->🇨🇭_CH_瑞士",
-                "RO_speednode_0031",
-                "🇺🇸 美国 123",
-                "NN_speednode_0025",
-                "CN_speednode_0006",
-                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
-                "🇺🇸 美国 127",
+                "ORANGE-JPN-HY2-TLS t.me/rjsxrd",
+                "🇨🇦CA_1|1.2MB/s",
+                "NN_speednode_0021",
                 "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
-                "NN_speednode_0029",
+                "🇺🇸_US_美国->🇨🇭_CH_瑞士",
+                "俄羅斯節點丨yoyapai.com 3",
+                "🇳🇱NL_2|1.6MB/s",
+                "NN_speednode_0030",
+                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
+                "NN_speednode_0027",
+                "NN_speednode_0024",
+                "GB_speednode_0015",
+                "🇺🇸 美国 127",
+                "CN_speednode_0010",
+                "RO_speednode_0031",
                 "🇺🇸_US_美国 2",
-                "BWG-USA-HY2-TLS t.me/rjsxrd"
+                "RO_speednode_0034",
+                "美國",
+                "🇺🇸_US_美国->🇫🇷_FR_法国",
+                "🇺🇸 美国 123",
+                "US_speednode_0047",
+                "RO_speednode_0036",
+                "CN_speednode_0006",
+                "🇭🇰HK_2|1003KB/s",
+                "RO_speednode_0037",
+                "俄羅斯丨yoyapai.com 4",
+                "RO_speednode_0033",
+                "VMISS-USA-HY2-TLS t.me/rjsxrd",
+                "NN_speednode_0023",
+                "CN_speednode_0009",
+                "未知 VLESS-100 | free-nodes 2",
+                "CN_speednode_0008",
+                "CN_speednode_0004",
+                "CN_speednode_0007",
+                "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
+                "美國節點 6",
+                "俄羅斯丨yoyapai.com",
+                "RO_speednode_0035",
+                "NN_speednode_0025",
+                "🇨🇦CA_2|1.0MB/s",
+                "🇺🇸 美国 43",
+                "BWG-USA-HY2-TLS t.me/rjsxrd",
+                "NN_speednode_0026",
+                "RO_speednode_0032",
+                "🇺🇸 美国 44",
+                "CN_speednode_0003",
+                "NN_speednode_0028",
+                "9|41@oneclickvpnkeys t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
