@@ -87,6 +87,18 @@
             }
         },
         {
+            "tag": "🇺🇸_US_美国->🇫🇷_FR_法国",
+            "type": "trojan",
+            "server": "90081bb25c.node.tro.cac.cab",
+            "server_port": 45619,
+            "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fr.01.naiun.bilibili.com"
+            }
+        },
+        {
             "tag": "🇺🇸_US_美国 2",
             "type": "trojan",
             "server": "90081bb25c.node.tro.cac.cab",
@@ -123,6 +135,35 @@
             }
         },
         {
+            "tag": "🇺🇸 美国 127",
+            "type": "trojan",
+            "server": "90081bb25c.node.tro.cac.cab",
+            "server_port": 46424,
+            "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "de.01.naiun.bilibili.com"
+            }
+        },
+        {
+            "tag": "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
+            "type": "hysteria2",
+            "server": "202.61.205.86",
+            "server_port": 4433,
+            "password": "18cf8030-1ceb-4b7d-8c0c-c036413c144e",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "de1.xiaoliyu.cyou",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "BWG-USA-HY2-TLS t.me/rjsxrd",
             "type": "hysteria2",
             "server": "vps-bwg-usa.maze-maker.com",
@@ -133,23 +174,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "vps-bwg-usa.maze-maker.com",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "VMISS-USA-HY2-TLS t.me/rjsxrd",
-            "type": "hysteria2",
-            "server": "vps-vmiss-usa.maze-maker.com",
-            "server_port": 37749,
-            "password": "s12fFiUvpP8B",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "vps-vmiss-usa.maze-maker.com",
                 "insecure": false,
                 "alpn": [
                     "h3"
@@ -178,31 +202,114 @@
             }
         },
         {
+            "tag": "CN_speednode_0006",
+            "type": "http",
+            "server": "a12b6942-ta1og0-taxf6m-ieln.id.oshuawei.com",
+            "server_port": 32233,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b",
+            "password": "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b"
+        },
+        {
+            "tag": "GB_speednode_0014",
+            "type": "vless",
+            "server": "31.76.113.26",
+            "server_port": 443,
+            "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "it.s3-cloud.xyz",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY",
+                    "short_id": "7a3f9e2b1c8d4f6a"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "NN_speednode_0025",
+            "type": "http",
+            "server": "19b7ea9d-t9zts0-tbnk1n-ueq.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
+            "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b"
+        },
+        {
+            "tag": "NN_speednode_0029",
+            "type": "http",
+            "server": "a18418b5-t9zts0-tsjk4v-1atkp.cm4.oshuawei.com",
+            "server_port": 5228,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9",
+            "password": "1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9"
+        },
+        {
+            "tag": "RO_speednode_0031",
+            "type": "http",
+            "server": "84.239.14.158",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "VMISS-USA-HY2-TLS t.me/rjsxrd",
+                "GB_speednode_0014",
+                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
+                "🇺🇸_US_美国->🇫🇷_FR_法国",
                 "🇺🇸_US_美国->🇨🇭_CH_瑞士",
-                "🇺🇸_US_美国 2",
-                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
-                "BWG-USA-HY2-TLS t.me/rjsxrd",
+                "RO_speednode_0031",
+                "🇺🇸 美国 123",
+                "NN_speednode_0025",
+                "CN_speednode_0006",
                 "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
-                "🇺🇸 美国 123"
+                "🇺🇸 美国 127",
+                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
+                "NN_speednode_0029",
+                "🇺🇸_US_美国 2",
+                "BWG-USA-HY2-TLS t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "VMISS-USA-HY2-TLS t.me/rjsxrd",
+                "GB_speednode_0014",
+                "0133 | 🇩🇪 Germany | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
+                "🇺🇸_US_美国->🇫🇷_FR_法国",
                 "🇺🇸_US_美国->🇨🇭_CH_瑞士",
-                "🇺🇸_US_美国 2",
-                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
-                "BWG-USA-HY2-TLS t.me/rjsxrd",
+                "RO_speednode_0031",
+                "🇺🇸 美国 123",
+                "NN_speednode_0025",
+                "CN_speednode_0006",
                 "🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆",
-                "🇺🇸 美国 123"
+                "🇺🇸 美国 127",
+                "🇷🇺  Russia  [01]  MIFA t.me/rjsxrd",
+                "NN_speednode_0029",
+                "🇺🇸_US_美国 2",
+                "BWG-USA-HY2-TLS t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
