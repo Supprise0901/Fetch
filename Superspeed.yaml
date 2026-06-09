@@ -75,17 +75,51 @@
     ],
     "outbounds": [
         {
+            "tag": "🇺🇸US_7|1.0MB/s",
+            "type": "hysteria2",
+            "server": "devoracle.clarkpf.top",
+            "server_port": 443,
+            "password": "f4281a5fdfb44e0744d6f683",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "devoracle.clarkpf.top",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇫🇷FR_2|1.1MB/s",
+            "type": "trojan",
+            "server": "155.117.198.89",
+            "server_port": 48697,
+            "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "gh.01.naiun.bilibili.com"
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "🇫🇷FR_2|1.1MB/s",
+                "🇺🇸US_7|1.0MB/s"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇫🇷FR_2|1.1MB/s",
+                "🇺🇸US_7|1.0MB/s"
+            ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
