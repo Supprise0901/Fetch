@@ -75,17 +75,29 @@
     ],
     "outbounds": [
         {
-            "tag": " t.me/rjsxrd 155",
+            "tag": "🇺🇸 美国 starcorenode.com",
+            "type": "vless",
+            "server": "cdn9-33.vk-cdnvideo.com",
+            "server_port": 8443,
+            "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": ""
+            }
+        },
+        {
+            "tag": "0332 | 🇺🇸 USA | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd",
             "type": "hysteria2",
-            "server": "696969696969.duckdns.org",
-            "server_port": 443,
-            "password": "dd4xmofilrdbpqwx",
+            "server": "us3.xiaoliyu.cyou",
+            "server_port": 4433,
+            "password": "4543ebb9-3fa5-438d-8791-cb3d9a9e4137",
             "up_mbps": 10,
             "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "server_name": "104.248.149.145",
-                "insecure": false,
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
@@ -132,23 +144,48 @@
             }
         },
         {
+            "tag": "RO_speednode_0038",
+            "type": "http",
+            "server": "84.239.49.37",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "KR_speednode_0003",
+            "server": "121.169.46.116",
+            "server_port": 1090,
+            "type": "socks",
+            "version": "5",
+            "username": "T2clM0QlM0Q6",
+            "password": ""
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                " t.me/rjsxrd 155",
+                "RO_speednode_0038",
+                "KR_speednode_0003",
                 "CF官方优选13",
-                "CF官方优选12"
+                "🇺🇸 美国 starcorenode.com",
+                "CF官方优选12",
+                "0332 | 🇺🇸 USA | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                " t.me/rjsxrd 155",
+                "RO_speednode_0038",
+                "KR_speednode_0003",
                 "CF官方优选13",
-                "CF官方优选12"
+                "🇺🇸 美国 starcorenode.com",
+                "CF官方优选12",
+                "0332 | 🇺🇸 USA | HYSTERIA2 | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
