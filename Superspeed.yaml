@@ -75,6 +75,23 @@
     ],
     "outbounds": [
         {
+            "tag": "中國臺灣丨yoyapai.com",
+            "type": "hysteria2",
+            "server": "vpn-tw-002.fastervpn.world",
+            "server_port": 443,
+            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-tw-002.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "未知 SS-68 | free-nodes",
             "type": "shadowsocks",
             "server": "61.171.92.202",
@@ -163,16 +180,34 @@
             }
         },
         {
+            "tag": "mCxq5Xsr_hysteria2",
+            "type": "hysteria2",
+            "server": "3.70.127.37",
+            "server_port": 443,
+            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "未知 SS-68 | free-nodes",
+                "中國臺灣丨yoyapai.com",
+                "mCxq5Xsr_hysteria2",
+                "US_speednode_0095",
                 "US_speednode_0091",
                 "US_speednode_0092",
+                "未知 SS-68 | free-nodes",
                 "US_speednode_0093",
-                "US_speednode_0095",
                 "分享日记 211"
             ]
         },
@@ -180,11 +215,13 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "未知 SS-68 | free-nodes",
+                "中國臺灣丨yoyapai.com",
+                "mCxq5Xsr_hysteria2",
+                "US_speednode_0095",
                 "US_speednode_0091",
                 "US_speednode_0092",
+                "未知 SS-68 | free-nodes",
                 "US_speednode_0093",
-                "US_speednode_0095",
                 "分享日记 211"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
