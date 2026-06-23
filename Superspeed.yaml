@@ -75,23 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "中國臺灣丨yoyapai.com",
-            "type": "hysteria2",
-            "server": "vpn-tw-002.fastervpn.world",
-            "server_port": 443,
-            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "vpn-tw-002.fastervpn.world",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "未知 SS-68 | free-nodes",
             "type": "shadowsocks",
             "server": "61.171.92.202",
@@ -196,33 +179,122 @@
             }
         },
         {
+            "tag": "未知 VLESS-367 | free-nodes 2",
+            "type": "vless",
+            "server": "173.245.58.75",
+            "server_port": 443,
+            "uuid": "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "terazhediii.info"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/hdgrbws",
+                "headers": {
+                    "Host": "terazhediii.info"
+                }
+            }
+        },
+        {
+            "tag": "德国_19",
+            "type": "vless",
+            "server": "151.101.0.151",
+            "server_port": 80,
+            "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "max-gb1.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "德国_96",
+            "type": "vless",
+            "server": "151.101.1.151",
+            "server_port": 80,
+            "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "max-gb1.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "德国_99",
+            "type": "vless",
+            "server": "151.101.64.151",
+            "server_port": 80,
+            "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "max-gb1.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "MNVo0y2a_hysteria2",
+            "type": "hysteria2",
+            "server": "vpn-de-002.fastervpn.world",
+            "server_port": 443,
+            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "中國臺灣丨yoyapai.com",
-                "mCxq5Xsr_hysteria2",
+                "未知 VLESS-367 | free-nodes 2",
                 "US_speednode_0095",
-                "US_speednode_0091",
-                "US_speednode_0092",
-                "未知 SS-68 | free-nodes",
+                "德国_19",
+                "mCxq5Xsr_hysteria2",
+                "德国_96",
+                "分享日记 211",
+                "MNVo0y2a_hysteria2",
                 "US_speednode_0093",
-                "分享日记 211"
+                "US_speednode_0092",
+                "德国_99",
+                "US_speednode_0091",
+                "未知 SS-68 | free-nodes"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "中國臺灣丨yoyapai.com",
-                "mCxq5Xsr_hysteria2",
+                "未知 VLESS-367 | free-nodes 2",
                 "US_speednode_0095",
-                "US_speednode_0091",
-                "US_speednode_0092",
-                "未知 SS-68 | free-nodes",
+                "德国_19",
+                "mCxq5Xsr_hysteria2",
+                "德国_96",
+                "分享日记 211",
+                "MNVo0y2a_hysteria2",
                 "US_speednode_0093",
-                "分享日记 211"
+                "US_speednode_0092",
+                "德国_99",
+                "US_speednode_0091",
+                "未知 SS-68 | free-nodes"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
