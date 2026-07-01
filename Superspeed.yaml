@@ -75,38 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "CA加拿大(mibei77.com 米贝节点分享) 29",
-            "type": "vless",
-            "server": "162.159.32.29",
-            "server_port": 8443,
-            "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "t1s1.rittbo.kdns.fr"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "t1s1.rittbo.kdns.fr"
-                }
-            }
-        },
-        {
-            "tag": "日本2|@ripaojiedian",
-            "type": "trojan",
-            "server": "18.163.118.4",
-            "server_port": 3743,
-            "password": "cbed60798db0624ba9d15418f0d0d9a4",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "www.nintendogames.net"
-            }
-        },
-        {
             "tag": "bsXHjBAZ_hysteria2",
             "type": "hysteria2",
             "server": "54.255.1.222",
@@ -156,12 +124,32 @@
             }
         },
         {
-            "tag": "未知 SS-84 | free-nodes 2",
-            "type": "shadowsocks",
-            "server": "61.171.92.202",
-            "server_port": 1001,
-            "method": "aes-256-gcm",
-            "password": "123"
+            "tag": "US_speednode_0059",
+            "type": "http",
+            "server": "9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "username": "1b609740-eec2-11ef-8543-f23c93136cb3",
+            "password": "1b609740-eec2-11ef-8543-f23c93136cb3"
+        },
+        {
+            "tag": "OVcFg2vw_hysteria2",
+            "type": "hysteria2",
+            "server": "13.250.29.24",
+            "server_port": 443,
+            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         },
         {
             "tag": "proxy",
@@ -169,24 +157,22 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "FsRSbZ7s_hysteria2",
+                "US_speednode_0059",
                 "8|SG_@WangCai_8",
-                "未知 SS-84 | free-nodes 2",
-                "CA加拿大(mibei77.com 米贝节点分享) 29",
                 "bsXHjBAZ_hysteria2",
-                "日本2|@ripaojiedian"
+                "OVcFg2vw_hysteria2",
+                "FsRSbZ7s_hysteria2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "FsRSbZ7s_hysteria2",
+                "US_speednode_0059",
                 "8|SG_@WangCai_8",
-                "未知 SS-84 | free-nodes 2",
-                "CA加拿大(mibei77.com 米贝节点分享) 29",
                 "bsXHjBAZ_hysteria2",
-                "日本2|@ripaojiedian"
+                "OVcFg2vw_hysteria2",
+                "FsRSbZ7s_hysteria2"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
