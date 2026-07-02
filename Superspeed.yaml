@@ -75,54 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "FsRSbZ7s_hysteria2",
-            "type": "hysteria2",
-            "server": "13.212.236.88",
-            "server_port": 443,
-            "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "1VCpUUgp_hysteria2",
-            "type": "hysteria2",
-            "server": "vpn-sg-003.fastervpn.world",
-            "server_port": 443,
-            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "1VCpUUgp_hysteria2",
-                "FsRSbZ7s_hysteria2"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "1VCpUUgp_hysteria2",
-                "FsRSbZ7s_hysteria2"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
