@@ -75,109 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪DE_75|1.9MB/s|R002-260618 01",
-            "type": "hysteria",
-            "server": "5.83.129.153",
-            "server_port": 20088,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇺🇸US_523|8.3MB/s|R002-260618",
-            "type": "http",
-            "server": "f082be17-t9zts0-tkhmfr-1jm8i.sj.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "f082be17-t9zts0-tkhmfr-1jm8i.sj.oshuawei.com",
-                "insecure": false
-            },
-            "username": "a6ddfc37-05eb-11ed-af40-f23c91cfbbc9",
-            "password": "a6ddfc37-05eb-11ed-af40-f23c91cfbbc9"
-        },
-        {
-            "tag": "0KICI5nx_http",
-            "type": "http",
-            "server": "38.28.193.1",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇺🇸US_283|7.5MB/s|R002-260618",
-            "type": "http",
-            "server": "31cebf36-t9zts0-tq9o8d-1d3bw.sj.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "31cebf36-t9zts0-tq9o8d-1d3bw.sj.oshuawei.com",
-                "insecure": false
-            },
-            "username": "0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9",
-            "password": "0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9"
-        },
-        {
-            "tag": "🇺🇸US_351|9.9MB/s|R002-260618",
-            "type": "http",
-            "server": "5a4bdbc5-t9zts0-tairte-1m0fq.sj.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "5a4bdbc5-t9zts0-tairte-1m0fq.sj.oshuawei.com",
-                "insecure": false
-            },
-            "username": "a698c4a6-c3c9-11ee-9693-f23c91cfbbc9",
-            "password": "a698c4a6-c3c9-11ee-9693-f23c91cfbbc9"
-        },
-        {
-            "tag": "🇺🇸US_749|8.6MB/s|R002-260618",
-            "type": "http",
-            "server": "887e72ad-t9zts0-tr9h64-1f1f1.sj.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "887e72ad-t9zts0-tr9h64-1f1f1.sj.oshuawei.com",
-                "insecure": false
-            },
-            "username": "61c4be90-6235-11ec-a8bf-f23c91cfbbc9",
-            "password": "61c4be90-6235-11ec-a8bf-f23c91cfbbc9"
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇺🇸US_283|7.5MB/s|R002-260618",
-                "0KICI5nx_http",
-                "🇩🇪DE_75|1.9MB/s|R002-260618 01",
-                "🇺🇸US_351|9.9MB/s|R002-260618",
-                "🇺🇸US_523|8.3MB/s|R002-260618",
-                "🇺🇸US_749|8.6MB/s|R002-260618"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇺🇸US_283|7.5MB/s|R002-260618",
-                "0KICI5nx_http",
-                "🇩🇪DE_75|1.9MB/s|R002-260618 01",
-                "🇺🇸US_351|9.9MB/s|R002-260618",
-                "🇺🇸US_523|8.3MB/s|R002-260618",
-                "🇺🇸US_749|8.6MB/s|R002-260618"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
