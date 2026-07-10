@@ -75,23 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪DE_78|1.9MB/s 01",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "🇺🇸US_284|1.6MB/s|R002-260618",
             "type": "http",
             "server": "5a4bdbc5-t9zts0-tairte-1m0fq.sj.oshuawei.com",
@@ -103,16 +86,6 @@
             },
             "username": "a698c4a6-c3c9-11ee-9693-f23c91cfbbc9",
             "password": "a698c4a6-c3c9-11ee-9693-f23c91cfbbc9"
-        },
-        {
-            "tag": "RO_speednode_0044",
-            "type": "http",
-            "server": "84.239.49.209",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
         },
         {
             "tag": "🇺🇸US_1323|4.7MB/s|R002-260618",
@@ -128,25 +101,47 @@
             "password": "b9c9905c-1627-11ec-a0fc-f23c913c8d2b"
         },
         {
+            "tag": "🇺🇸US_40|1.4MB/s",
+            "type": "http",
+            "server": "156.146.59.39",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "156.146.59.39",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸US_209|4.9MB/s|P002-260618",
+            "type": "http",
+            "server": "38.28.193.1",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "server_name": "38.28.193.1",
+                "insecure": true
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
+                "🇺🇸US_284|1.6MB/s|R002-260618",
+                "🇺🇸US_40|1.4MB/s",
                 "🇺🇸US_1323|4.7MB/s|R002-260618",
-                "RO_speednode_0044",
-                "🇩🇪DE_78|1.9MB/s 01",
-                "🇺🇸US_284|1.6MB/s|R002-260618"
+                "🇺🇸US_209|4.9MB/s|P002-260618"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US_284|1.6MB/s|R002-260618",
+                "🇺🇸US_40|1.4MB/s",
                 "🇺🇸US_1323|4.7MB/s|R002-260618",
-                "RO_speednode_0044",
-                "🇩🇪DE_78|1.9MB/s 01",
-                "🇺🇸US_284|1.6MB/s|R002-260618"
+                "🇺🇸US_209|4.9MB/s|P002-260618"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
