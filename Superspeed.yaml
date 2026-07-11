@@ -75,22 +75,6 @@
     ],
     "outbounds": [
         {
-            "tag": "03xo2Kxm_hysteria2",
-            "type": "hysteria2",
-            "server": "argg2.auragg.org",
-            "server_port": 443,
-            "password": "b05346a9-4d13-41a4-8d2a-6b7b64e73ffc",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "❓Other_1|1.7MB/s",
             "type": "hysteria",
             "server": "5.83.129.153",
@@ -109,17 +93,6 @@
             "down_mbps": 1000
         },
         {
-            "tag": "🇺🇸US_423|2.3MB/s|P002-260618",
-            "type": "http",
-            "server": "38.28.193.1",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "38.28.193.1",
-                "insecure": true
-            }
-        },
-        {
             "tag": "🇺🇸US_990|6.8MB/s|R002-260618",
             "type": "http",
             "server": "4d32fdfa-t9zts0-tb08pe-luwe.sj.oshuawei.com",
@@ -133,15 +106,42 @@
             "password": "a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a"
         },
         {
+            "tag": "3GKY9jj8_hysteria2",
+            "type": "hysteria2",
+            "server": "202.61.205.86",
+            "server_port": 4433,
+            "password": "18cf8030-1ceb-4b7d-8c0c-c036413c144e",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US_70|3.3MB/s",
+            "type": "http",
+            "server": "156.146.59.25",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "156.146.59.25",
+                "insecure": true
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
                 "🇺🇸US_990|6.8MB/s|R002-260618",
-                "03xo2Kxm_hysteria2",
-                "❓Other_1|1.7MB/s",
-                "🇺🇸US_423|2.3MB/s|P002-260618"
+                "3GKY9jj8_hysteria2",
+                "🇺🇸US_70|3.3MB/s",
+                "❓Other_1|1.7MB/s"
             ]
         },
         {
@@ -149,9 +149,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US_990|6.8MB/s|R002-260618",
-                "03xo2Kxm_hysteria2",
-                "❓Other_1|1.7MB/s",
-                "🇺🇸US_423|2.3MB/s|P002-260618"
+                "3GKY9jj8_hysteria2",
+                "🇺🇸US_70|3.3MB/s",
+                "❓Other_1|1.7MB/s"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
