@@ -75,58 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🏳️_未知_183",
-            "type": "vless",
-            "server": "saas.sin.fan",
-            "server_port": 443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "server_name": "wgjja.ebur.b51.hh.ov0.kdns.fr"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/glasspanel/guest000_0_5de14443985f/",
-                "headers": {
-                    "Host": "wgjja.ebur.b51.hh.ov0.kdns.fr"
-                }
-            }
-        },
-        {
-            "tag": "J16gljV5_hysteria2",
-            "type": "hysteria2",
-            "server": "vpn-kr-002.fastervpn.world",
-            "server_port": 443,
-            "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🏳️_未知_183",
-                "J16gljV5_hysteria2"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🏳️_未知_183",
-                "J16gljV5_hysteria2"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
