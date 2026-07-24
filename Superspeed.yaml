@@ -75,165 +75,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇨🇳_中国_61",
-            "type": "vless",
-            "server": "120.227.1.43",
-            "server_port": 12528,
-            "uuid": "f0169b08-43fd-4dc3-8195-18f6ad2fe39d",
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇩🇪DE_7|519KB/s 01",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "server": "114.236.137.41",
-            "server_port": 21000,
-            "tag": "88-http-http-1177757",
-            "type": "http"
-        },
-        {
-            "server": "123.138.24.114",
-            "server_port": 8800,
-            "tag": "162-http-http-1198115",
-            "type": "http"
-        },
-        {
-            "server": "219.142.66.244",
-            "server_port": 9090,
-            "tag": "187-http-http-1426678",
-            "type": "http"
-        },
-        {
-            "server": "47.245.62.151",
-            "server_port": 20000,
-            "tag": "1018-socks5-socks5-1007977",
-            "type": "socks",
-            "version": "5"
-        },
-        {
-            "tag": "🇺🇸US_209|603KB/s|P002-260618",
-            "type": "http",
-            "server": "38.28.193.1",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "38.28.193.1",
-                "insecure": true
-            }
-        },
-        {
-            "server": "219.132.37.53",
-            "server_port": 3128,
-            "tag": "173-http-http-1426652",
-            "type": "http"
-        },
-        {
-            "password": "2222",
-            "server": "43.100.106.226",
-            "server_port": 2222,
-            "tag": "1091-socks5-socks5-62823562",
-            "type": "socks",
-            "username": "2222",
-            "version": "5"
-        },
-        {
-            "tag": "🇧🇷@FREE2CONFIG ",
-            "type": "hysteria2",
-            "server": "167.234.249.46",
-            "server_port": 444,
-            "password": "sysadmin.sysadmin",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "a.961229.xyz",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇰🇷KR_30|1.1MB/s",
-            "type": "http",
-            "server": "testkr3.ssv.vc",
-            "server_port": 30446,
-            "tls": {
-                "enabled": true,
-                "server_name": "testkr3.ssv.vc",
-                "insecure": true
-            },
-            "username": "test",
-            "password": "test.+"
-        },
-        {
-            "server": "112.2.3.162",
-            "server_port": 2334,
-            "tag": "637-http-http-1174519",
-            "type": "http"
-        },
-        {
-            "password": "2222",
-            "server": "43.100.106.217",
-            "server_port": 2222,
-            "tag": "1100-socks5-socks5-60057365",
-            "type": "socks",
-            "username": "2222",
-            "version": "5"
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "1100-socks5-socks5-60057365",
-                "1091-socks5-socks5-62823562",
-                "🇩🇪DE_7|519KB/s 01",
-                "173-http-http-1426652",
-                "162-http-http-1198115",
-                "🇨🇳_中国_61",
-                "🇰🇷KR_30|1.1MB/s",
-                "1018-socks5-socks5-1007977",
-                "637-http-http-1174519",
-                "🇧🇷@FREE2CONFIG ",
-                "🇺🇸US_209|603KB/s|P002-260618",
-                "187-http-http-1426678",
-                "88-http-http-1177757"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "1100-socks5-socks5-60057365",
-                "1091-socks5-socks5-62823562",
-                "🇩🇪DE_7|519KB/s 01",
-                "173-http-http-1426652",
-                "162-http-http-1198115",
-                "🇨🇳_中国_61",
-                "🇰🇷KR_30|1.1MB/s",
-                "1018-socks5-socks5-1007977",
-                "637-http-http-1174519",
-                "🇧🇷@FREE2CONFIG ",
-                "🇺🇸US_209|603KB/s|P002-260618",
-                "187-http-http-1426678",
-                "88-http-http-1177757"
-            ],
+            "outbounds": [],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "10m",
             "tolerance": 50
