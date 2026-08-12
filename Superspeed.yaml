@@ -9,36 +9,32 @@
             "external_controller": "127.0.0.1:9090",
             "external_ui": "ui",
             "secret": "",
-            "external_ui_download_url": "https://ghfast.top/github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-            "external_ui_download_detour": "",
+            "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+            "external_ui_download_detour": "direct",
             "default_mode": "rule"
-        },
-        "cache_file": {
-            "enabled": true,
-            "store_fakeip": false
         }
     },
     "dns": {
         "servers": [
             {
                 "tag": "proxyDns",
-                "address": "tls://8.8.8.8",
+                "type": "tls",
+                "server": "8.8.8.8",
+                "server_port": 853,
                 "detour": "proxy"
             },
             {
                 "tag": "localDns",
-                "address": "https://223.5.5.5/dns-query",
-                "detour": "direct"
-            },
-            {
-                "tag": "block",
-                "address": "rcode://success"
+                "type": "https",
+                "server": "223.5.5.5",
+                "path": "/dns-query"
             }
         ],
         "rules": [
             {
                 "domain": [
-                    "ghfast.top",
+                    "gh-proxy.com",
+                    "ghproxy.com",
                     "cdn.jsdelivr.net",
                     "testingcf.jsdelivr.net"
                 ],
@@ -46,12 +42,7 @@
             },
             {
                 "rule_set": "geosite-category-ads-all",
-                "server": "block"
-            },
-            {
-                "outbound": "any",
-                "server": "localDns",
-                "disable_cache": true
+                "action": "reject"
             },
             {
                 "clash_mode": "direct",
@@ -68,12 +59,22 @@
         {
             "type": "mixed",
             "listen": "127.0.0.1",
-            "listen_port": 2080,
-            "sniff": true,
-            "users": []
+            "listen_port": 2080
         }
     ],
     "outbounds": [
+        {
+            "tag": "香港4|@ripaojiedian",
+            "type": "trojan",
+            "server": "18.162.244.203",
+            "server_port": 11035,
+            "password": "BxceQaOe",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "t.me/ripaojiedian"
+            }
+        },
         {
             "tag": "🇺🇸US_301|192KB/s|P002-260618",
             "type": "http",
@@ -82,18 +83,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "138.199.35.197",
-                "insecure": true
-            },
-            "password": "None"
-        },
-        {
-            "tag": "🇺🇸US_304|472KB/s|P002-260618",
-            "type": "http",
-            "server": "156.146.59.39",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "server_name": "156.146.59.39",
                 "insecure": true
             },
             "password": "None"
@@ -120,32 +109,6 @@
             }
         },
         {
-            "tag": "🇫🇷FR_1286|242KB/s|R002-260618",
-            "type": "http",
-            "server": "527b5b47-t9zts0-tighxj-12hj8.fr.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "527b5b47-t9zts0-tighxj-12hj8.fr.oshuawei.com",
-                "insecure": false
-            },
-            "username": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
-            "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d"
-        },
-        {
-            "tag": "🇺🇸US_530|287KB/s|R002-260618",
-            "type": "http",
-            "server": "b0746e33-tcxds0-tgl02u-1jr1u.sjc.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "b0746e33-tcxds0-tgl02u-1jr1u.sjc.oshuawei.com",
-                "insecure": false
-            },
-            "username": "2c01eae6-0b6a-11ee-a058-f23c91369f2d",
-            "password": "2c01eae6-0b6a-11ee-a058-f23c91369f2d"
-        },
-        {
             "tag": "❓Other_20|90KB/s|P002-260618",
             "type": "http",
             "server": "156.146.59.31",
@@ -157,17 +120,6 @@
             }
         },
         {
-            "tag": "🇺🇸US_195|284KB/s|R002-260618",
-            "type": "http",
-            "server": "156.146.59.49",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "server_name": "156.146.59.49",
-                "insecure": true
-            }
-        },
-        {
             "tag": "🇺🇸US_187|271KB/s|R002-260618",
             "type": "http",
             "server": "156.146.59.50",
@@ -175,17 +127,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "156.146.59.50",
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇺🇸US_253|124KB/s|P002-260618",
-            "type": "http",
-            "server": "156.146.59.7",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "server_name": "156.146.59.7",
                 "insecure": true
             }
         },
@@ -229,72 +170,8 @@
             }
         },
         {
-            "tag": "NL_speednode_0019",
-            "server": "84.17.47.148",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "None",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "NL_speednode_0021",
             "server": "84.17.47.149",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "NL_speednode_0022",
-            "server": "84.17.47.125",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "None",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "NL_speednode_0023",
-            "server": "84.17.47.150",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "RO_speednode_0046",
-            "server": "193.176.84.16",
             "server_port": 9002,
             "type": "http",
             "username": "",
@@ -315,22 +192,6 @@
             "type": "http",
             "username": "",
             "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "RO_speednode_0110",
-            "server": "193.176.84.31",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "None",
             "tls": {
                 "enabled": true,
                 "insecure": true,
@@ -437,72 +298,8 @@
             }
         },
         {
-            "tag": "US_speednode_0136",
-            "server": "138.199.35.195",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0138",
-            "server": "138.199.35.211",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0139",
             "server": "138.199.35.199",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0142",
-            "server": "156.146.59.4",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0146",
-            "server": "156.146.59.23",
             "server_port": 9002,
             "type": "http",
             "username": "",
@@ -533,72 +330,8 @@
             }
         },
         {
-            "tag": "US_speednode_0148",
-            "server": "156.146.59.9",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0152",
             "server": "156.146.59.8",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0153",
-            "server": "156.146.59.25",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0154",
-            "server": "156.146.59.15",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "US_speednode_0156",
-            "server": "156.146.59.34",
             "server_port": 9002,
             "type": "http",
             "username": "",
@@ -722,17 +455,6 @@
             }
         },
         {
-            "tag": "🇫🇷FR_494|116KB/s|R002-260618",
-            "type": "http",
-            "server": "103.82.101.43",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com",
-                "insecure": true
-            }
-        },
-        {
             "tag": "🇫🇷FR_495|470KB/s|R002-260618",
             "type": "http",
             "server": "103.82.101.44",
@@ -740,17 +462,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com",
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇺🇸US_298|277KB/s|R002-260618",
-            "type": "http",
-            "server": "156.146.59.30",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "server_name": "156.146.59.30",
                 "insecure": true
             }
         },
@@ -766,28 +477,6 @@
             },
             "username": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b",
             "password": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b"
-        },
-        {
-            "tag": "🇫🇷FR_513|161KB/s|R002-260618",
-            "type": "http",
-            "server": "472e9718-tcxds0-tu0ezx-1m7l4.fr.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "472e9718-tcxds0-tu0ezx-1m7l4.fr.oshuawei.com",
-                "insecure": false
-            },
-            "username": "bd515574-3b10-11ee-ac14-f23c9164ca5d",
-            "password": "bd515574-3b10-11ee-ac14-f23c9164ca5d"
-        },
-        {
-            "tag": "🇫🇷FR_554|247KB/s|R002-260618",
-            "type": "socks",
-            "server": "ch-zur.pvdata.host",
-            "server_port": 1080,
-            "version": "5",
-            "username": "N9cyF6jvgy3ZEmCNKe04zBIR",
-            "password": "1Telegram_MojiVPN"
         },
         {
             "tag": "🇫🇷FR_563|260KB/s|P002-260618",
@@ -813,19 +502,6 @@
                 "insecure": true
             },
             "password": "None"
-        },
-        {
-            "tag": "🇫🇷FR_652|96KB/s|P002-260618",
-            "type": "http",
-            "server": "2816ea00-tcxds0-tcw58g-1p0be.fr.oshuawei.com",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "server_name": "2816ea00-tcxds0-tcw58g-1p0be.fr.oshuawei.com",
-                "insecure": true
-            },
-            "username": "55cce5a4-56b7-11ee-af82-f23c9164ca5d",
-            "password": "55cce5a4-56b7-11ee-af82-f23c9164ca5d"
         },
         {
             "password": "MiTiVPN",
@@ -860,30 +536,9 @@
             "type": "http"
         },
         {
-            "server": "45.77.244.108",
-            "server_port": 1080,
-            "tag": "socks5-258672221",
-            "type": "socks",
-            "version": "5"
-        },
-        {
-            "server": "103.82.37.110",
-            "server_port": 49153,
-            "tag": "socks5-649226",
-            "type": "socks",
-            "version": "5"
-        },
-        {
             "server": "173.212.252.150",
             "server_port": 1080,
             "tag": "socks5-797857",
-            "type": "socks",
-            "version": "5"
-        },
-        {
-            "server": "193.233.218.213",
-            "server_port": 1080,
-            "tag": "socks5-138637692",
             "type": "socks",
             "version": "5"
         },
@@ -904,40 +559,8 @@
             }
         },
         {
-            "tag": "RO_speednode_0044",
-            "server": "193.176.84.35",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "RO_speednode_0047",
             "server": "193.176.84.33",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "RO_speednode_0066",
-            "server": "84.239.49.240",
             "server_port": 9002,
             "type": "http",
             "username": "",
@@ -1048,22 +671,6 @@
             }
         },
         {
-            "tag": "RO_speednode_0115",
-            "server": "193.176.84.23",
-            "server_port": 9002,
-            "type": "http",
-            "username": "",
-            "password": "None",
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "US_speednode_0151",
             "server": "156.146.59.41",
             "server_port": 9002,
@@ -1124,20 +731,6 @@
             }
         },
         {
-            "tag": "🇱🇻 [VL] Латвия #9387 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "fr143.mechvpn.online",
-            "server_port": 443,
-            "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": ""
-            }
-        },
-        {
             "tag": "🇮🇳 [VL] Индия #9409 | РосТуннель t.me/rjsxrd",
             "type": "vless",
             "server": "fr76.mechvpn.online",
@@ -1155,62 +748,6 @@
             "tag": "🇩🇪 [VL] Германия #9419 | РосТуннель t.me/rjsxrd",
             "type": "vless",
             "server": "de151.mechvpn.online",
-            "server_port": 443,
-            "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": ""
-            }
-        },
-        {
-            "tag": "🇺🇸_美国_403 t.me/rjsxrd",
-            "type": "vless",
-            "server": "18.239.83.52",
-            "server_port": 443,
-            "uuid": "7ce54bb3-d612-4aa7-be08-089d3c461d53",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "d1yxsk0zprgivr.cloudfront.net"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "d1yxsk0zprgivr.cloudfront.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸 [VL] США #2832 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "179.198.49.14",
-            "server_port": 443,
-            "uuid": "4cfb9456-0921-4547-a684-4614980d4a86",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "yandex.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "0tsW6-mbhq0zPODM7BlymfZDYAjSB5S5doDDk8qpYXE",
-                    "short_id": "8e79809e9958ae22"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                }
-            }
-        },
-        {
-            "tag": "🇭🇰 [VL] Гонконг #9404 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "fr198.mechvpn.online",
             "server_port": 443,
             "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
             "packet_encoding": "xudp",
@@ -1394,22 +931,6 @@
             "password": "cafe3d6c85dd0d64a17efd98df25be1e"
         },
         {
-            "password": "123",
-            "server": "43.100.43.114",
-            "server_port": 3060,
-            "tag": "socks5-40745353",
-            "type": "socks",
-            "username": "123",
-            "version": "5"
-        },
-        {
-            "server": "93.123.118.15",
-            "server_port": 1080,
-            "tag": "socks5-335124317",
-            "type": "socks",
-            "version": "5"
-        },
-        {
             "password": "MITIVPN",
             "server": "199.232.78.160",
             "server_port": 443,
@@ -1436,213 +957,722 @@
             "type": "trojan"
         },
         {
+            "tag": "RO_speednode_0026",
+            "server": "193.176.84.39",
+            "server_port": 9002,
+            "type": "http",
+            "username": "",
+            "password": "None",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "RO_speednode_0048",
+            "server": "193.176.84.30",
+            "server_port": 9002,
+            "type": "http",
+            "username": "",
+            "password": "",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0121",
+            "server": "138.199.35.215",
+            "server_port": 9002,
+            "type": "http",
+            "username": "",
+            "password": "",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0129",
+            "server": "138.199.35.208",
+            "server_port": 9002,
+            "type": "http",
+            "username": "",
+            "password": "",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "US_speednode_0143",
+            "server": "156.146.59.28",
+            "server_port": 9002,
+            "type": "http",
+            "username": "",
+            "password": "",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪 德国 | DEU t.me/rjsxrd 3",
+            "type": "vless",
+            "server": "152.53.173.90",
+            "server_port": 443,
+            "uuid": "f4dbc770-016d-4a0f-82f0-d83ee6f45da3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fastsync.xyz",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_379 t.me/rjsxrd",
+            "type": "vless",
+            "server": "199.232.78.159",
+            "server_port": 443,
+            "uuid": "0f350a5d-e801-4eca-a1b9-abe9798ad48a",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ssl.fastly.com"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER",
+                "headers": {
+                    "Host": "pan1.global.ssl.fastly.net"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2053
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA t.me/rjsxrd 4",
+            "type": "vless",
+            "server": "166.1.89.85",
+            "server_port": 40056,
+            "uuid": "090122da-ad6b-42a1-92d7-bab2630e2511",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.cloudflare.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EYLZTm0VpViSmTLfehDg0DE57ZEp0P0hab5ME3pXrgs",
+                    "short_id": "9ccdca9f"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵 日本 | JPN t.me/rjsxrd",
+            "type": "vless",
+            "server": "34.124.166.13",
+            "server_port": 21443,
+            "uuid": "16b3793b-3335-4832-b1fd-877b2c5e15d6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "djp01.ps5.update.playstation.net",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jxmd60h22_LgUlequekara-UbjKGbvqq1f8CBCLBek8",
+                    "short_id": "08db2d117d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇼 🇨🇳 台湾 | TWN t.me/rjsxrd",
+            "type": "vless",
+            "server": "34.87.98.100",
+            "server_port": 12012,
+            "uuid": "16b3793b-3335-4832-b1fd-877b2c5e15d6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.spotify.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UbqTROWvFpdLOFLeYoTStrBKlEi9QzzsmBF0xJ4zqGY",
+                    "short_id": "47668fe775a586ba"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA t.me/rjsxrd 6",
+            "type": "vless",
+            "server": "34.87.98.100",
+            "server_port": 12879,
+            "uuid": "16b3793b-3335-4832-b1fd-877b2c5e15d6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.spotify.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cTFTQJQS_FCRtnEDixh2Ab92ZbM6EDiEGMNW3fCoHQo",
+                    "short_id": "9ca80937b65d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵 日本 | JPN t.me/rjsxrd 2",
+            "type": "vless",
+            "server": "35.200.86.178",
+            "server_port": 21143,
+            "uuid": "16b3793b-3335-4832-b1fd-877b2c5e15d6",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.spotify.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VFcjMcy9uLRCq3dy9zqYFOPF73TAx6QO11rleDrfBgM",
+                    "short_id": "274772e3550ee3eb"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷 [VL] Франция #4113 | РосТуннель t.me/rjsxrd",
+            "type": "vless",
+            "server": "fr199.mechvpn.online",
+            "server_port": 443,
+            "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": ""
+            }
+        },
+        {
+            "tag": "🇨🇭 [VL] Швейцария #9067 | РосТуннель t.me/rjsxrd",
+            "type": "vless",
+            "server": "c2.nyanners.ir",
+            "server_port": 443,
+            "uuid": "956d6917-0f67-4515-aafa-d6210312648d",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ilia1.ironmouse.ir"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/ws",
+                "headers": {
+                    "Host": "ilia1.ironmouse.ir"
+                }
+            }
+        },
+        {
+            "tag": "[32505][UnResolvedDomains][0][VLESS][None][ext_raw.githubusercontent.com][2026-08-07][2026-08-07 15:51] t.me/rjsxrd",
+            "type": "vless",
+            "server": "ns.o11111o.club",
+            "server_port": 443,
+            "uuid": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "id.vk.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless-grpc-reality"
+            }
+        },
+        {
+            "tag": "nsKXSVJJ_http",
+            "type": "http",
+            "server": "138.199.35.216",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇩🇪 德国 | DEU 5",
+            "type": "vless",
+            "server": "152.53.173.93",
+            "server_port": 443,
+            "uuid": "f4dbc770-016d-4a0f-82f0-d83ee6f45da3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fastsync.xyz",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷 法国 | FRA 25",
+            "type": "vless",
+            "server": "Ggggggggggggggggggggggggggggggggggggggggg.kafsh-topakin.ir",
+            "server_port": 61463,
+            "uuid": "64a183f5-03dc-4a12-b61a-9f55e4649090",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "http"
+            }
+        },
+        {
+            "tag": "🇫🇷 法国 | FRA 34",
+            "type": "vless",
+            "server": "fr15.mechvpn.online",
+            "server_port": 443,
+            "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": ""
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA 11",
+            "type": "hysteria2",
+            "server": "vpn-us-006.fastervpn.world",
+            "server_port": 443,
+            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-us-006.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪 德国 | DEU 14",
+            "type": "hysteria",
+            "server": "5.83.129.143",
+            "server_port": 26691,
+            "up_mbps": 11,
+            "down_mbps": 55,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "yCUMpdaN_hysteria2",
+            "type": "hysteria2",
+            "server": "au1.xiaoliyu.cyou",
+            "server_port": 4433,
+            "password": "1427eb10-7529-4d38-a6a2-01b337868b37",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇷🇴RO_93|241KB/s|R002-260618",
+            "type": "http",
+            "server": "193.176.84.27",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸US_59|350KB/s",
+            "type": "http",
+            "server": "156.146.59.20",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "156.146.59.20",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸US_115|355KB/s",
+            "type": "http",
+            "server": "156.146.59.32",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "156.146.59.32",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇳🇱NL_114|454KB/s|R002-260618",
+            "type": "http",
+            "server": "103.97.88.154",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "server_name": "4a8c2906c96058315dffbc2b0e7ff19b-98005bea43f9ac33.apache-iv.com",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇳🇱NL_115|495KB/s|R002-260618",
+            "type": "http",
+            "server": "185.246.153.42",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "server_name": "482c8436a1f7c908b48a1757abb5dd79-3791fb4df2db250b.apache-iv.com",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸US_282|359KB/s|R002-260618",
+            "type": "http",
+            "server": "156.146.59.44",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "server_name": "156.146.59.44",
+                "insecure": true
+            },
+            "password": "None"
+        },
+        {
+            "password": "b3f564b8-b3de-415f-901a-b989768c3464",
+            "server": "fr1us9.stableq.top",
+            "server_port": 24422,
+            "tag": "trojan-406418829",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fr1us9.stableq.top"
+            },
+            "type": "trojan"
+        },
+        {
+            "server": "116.62.81.204",
+            "server_port": 1081,
+            "tag": "http-1183443",
+            "type": "http"
+        },
+        {
+            "server": "39.106.165.196",
+            "server_port": 8080,
+            "tag": "http-1458558",
+            "type": "http"
+        },
+        {
+            "server": "83.147.216.208",
+            "server_port": 1080,
+            "tag": "socks5-159230338",
+            "type": "socks",
+            "version": "5"
+        },
+        {
+            "password": "1Telegram_MojiVPN",
+            "server": "im-bal.pvdata.host",
+            "server_port": 1080,
+            "tag": "socks5-321355223",
+            "type": "socks",
+            "username": "N9cyF6jvgy3ZEmCNKe04zBIR",
+            "version": "5"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "socks5-649226",
-                "RO_speednode_0066",
-                "🇩🇪DE_56|102KB/s|A004-260618",
-                "US_speednode_0139",
-                "LTN0sWff_socks",
-                "🇷🇴RO_18|311KB/s|P002-260618",
-                "🇺🇸US_39|117KB/s",
-                "🇺🇸_美国_403 t.me/rjsxrd",
-                "trojan-387464376",
-                "US_speednode_0130",
-                "🇺🇸US_55|93KB/s",
-                "🇺🇸US_327|343KB/s|R002-260618",
-                "🇺🇸 [VL] США #2832 | РосТуннель t.me/rjsxrd",
-                "RO_speednode_0044",
-                "NL_speednode_0023",
-                "🇫🇷FR_1286|242KB/s|R002-260618",
-                "NL_speednode_0021",
-                "🇺🇸US_187|271KB/s|R002-260618",
-                "US_speednode_0138",
-                "US_speednode_0142",
-                "🇺🇸US_155|396KB/s|R002-260618",
-                "RO_speednode_0108",
-                "RO_speednode_0115",
-                "🇳🇱NL_123|461KB/s|R002-260618",
-                "RO_speednode_0086",
-                "🇫🇷FR_563|260KB/s|P002-260618",
-                "🇺🇸US_152|153KB/s|R002-260618",
-                "🇺🇸US_143|197KB/s|R002-260618",
-                "🇱🇻 [VL] Латвия #9387 | РосТуннель t.me/rjsxrd",
-                "US_speednode_0151",
-                "🇩🇪 [VL] Германия #9419 | РосТуннель t.me/rjsxrd",
-                "RO_speednode_0047",
-                "🇫🇷FR_652|96KB/s|P002-260618",
-                "socks5-797857",
-                "🇺🇸US_164|97KB/s|R002-260618",
-                "US_speednode_0124",
-                "🇺🇸US_301|192KB/s|P002-260618",
-                "🇺🇸US_90|100KB/s",
-                "US_speednode_0154",
-                "1. 🇷🇺 VLESS | SNI: io.ozone.ru | CIDR: ? | TG: @wlrustg | Thanks: @YoutubeUnBlockRu t.me/rjsxrd",
                 "US_speednode_0147",
-                "http-1458559",
-                "🇫🇷FR_495|470KB/s|R002-260618",
-                "🇺🇸US_354|202KB/s|P002-260618",
-                "🇷🇴RO_72|106KB/s",
-                "US_speednode_0156",
-                "🇺🇸US_302|134KB/s|P002-260618",
-                "socks5-138637692",
-                "🇷🇴RO_38|131KB/s|P002-260618",
-                "socks5-335124317",
-                "US_speednode_0136",
-                "🇭🇰 [VL] Гонконг #9404 | РосТуннель t.me/rjsxrd",
-                "🇺🇸US_253|124KB/s|P002-260618",
-                "🇮🇳 [VL] Индия #9409 | РосТуннель t.me/rjsxrd",
-                "hs1uEwzp_http",
-                "🇺🇸US_234|452KB/s|M002-260618",
-                "US_speednode_0152",
-                "US_speednode_0132",
-                "RO_speednode_0088",
-                "US_speednode_0131",
-                "US_speednode_0135",
-                "🇷🇴RO_39|316KB/s|R002-260618",
-                "US_speednode_0146",
-                "🇫🇷FR_494|116KB/s|R002-260618",
-                "NL_speednode_0022",
-                "🇫🇷FR_554|247KB/s|R002-260618",
-                "RO_speednode_0091",
-                "❓Other_20|90KB/s|P002-260618",
-                "🇺🇸US_124|138KB/s|P002-260618",
-                "🇺🇸US_304|472KB/s|P002-260618",
-                "🇺🇸US_195|284KB/s|R002-260618",
-                "🇺🇸US_250|95KB/s|R002-260618",
-                "US_speednode_0128",
-                "NL_speednode_0007",
-                "🇫🇷FR_498|320KB/s|P002-260618",
-                "socks5-40745353",
-                "RO_speednode_0090",
-                "US_speednode_0157",
-                "RO_speednode_0094",
                 "US_speednode_0159",
-                "RO_speednode_0089",
-                "🇫🇷FR_513|161KB/s|R002-260618",
-                "🇫🇮FI_15|396KB/s|R002-260618",
-                "RO_speednode_0043",
-                "🇷🇴RO_6|78KB/s",
-                "trojan-404344003",
-                "🇺🇸US_530|287KB/s|R002-260618",
-                "NL_speednode_0019",
+                "hs1uEwzp_http",
+                "🇺🇸US_302|134KB/s|P002-260618",
+                "RO_speednode_0086",
+                "🇫🇷FR_495|470KB/s|R002-260618",
+                "US_speednode_0121",
+                "🇺🇸US_282|359KB/s|R002-260618",
+                "🇮🇳 [VL] Индия #9409 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0157",
+                "US_speednode_0131",
+                "RO_speednode_0047",
+                "🇷🇴RO_93|241KB/s|R002-260618",
+                "🇷🇴RO_39|316KB/s|R002-260618",
                 "🇵🇱 [VL] Польша #4786 | РосТуннель t.me/rjsxrd",
-                "US_speednode_0153",
-                "RO_speednode_0110",
-                "US_speednode_0148",
-                "🇺🇸US_134|313KB/s",
-                "socks5-258672221",
+                "🇷🇴RO_72|106KB/s",
+                "🇩🇪DE_56|102KB/s|A004-260618",
+                "socks5-797857",
+                "🇺🇸US_301|192KB/s|P002-260618",
+                "RO_speednode_0094",
+                "US_speednode_0152",
+                "socks5-321355223",
+                "LTN0sWff_socks",
+                "RO_speednode_0108",
+                "US_speednode_0130",
+                "🇹🇼 🇨🇳 台湾 | TWN t.me/rjsxrd",
+                "http-1458558",
+                "RO_speednode_0089",
+                "🇨🇭 [VL] Швейцария #9067 | РосТуннель t.me/rjsxrd",
+                "🇺🇸US_59|350KB/s",
+                "🇳🇱NL_115|495KB/s|R002-260618",
+                "🇳🇱NL_114|454KB/s|R002-260618",
+                "🇫🇷 [VL] Франция #4113 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0128",
+                "🇺🇸US_234|452KB/s|M002-260618",
+                "trojan-387464376",
+                "1. 🇷🇺 VLESS | SNI: io.ozone.ru | CIDR: ? | TG: @wlrustg | Thanks: @YoutubeUnBlockRu t.me/rjsxrd",
+                "RO_speednode_0091",
+                "🇫🇷FR_498|320KB/s|P002-260618",
+                "NL_speednode_0021",
+                "http-1183443",
+                "socks5-159230338",
+                "🇺🇸US_152|153KB/s|R002-260618",
+                "US_speednode_0139",
+                "🇷🇴RO_6|78KB/s",
+                "🇩🇪 [VL] Германия #9419 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0151",
+                "[32505][UnResolvedDomains][0][VLESS][None][ext_raw.githubusercontent.com][2026-08-07][2026-08-07 15:51] t.me/rjsxrd",
+                "香港4|@ripaojiedian",
+                "🇺🇸 美国 | USA t.me/rjsxrd 4",
+                "🇺🇸US_124|138KB/s|P002-260618",
+                "🇺🇸US_187|271KB/s|R002-260618",
+                "🇺🇸_美国_379 t.me/rjsxrd",
+                "yCUMpdaN_hysteria2",
+                "🇩🇪 德国 | DEU t.me/rjsxrd 3",
+                "🇺🇸US_354|202KB/s|P002-260618",
+                "🇯🇵 日本 | JPN t.me/rjsxrd",
+                "NL_speednode_0007",
+                "RO_speednode_0088",
+                "🇫🇷 法国 | FRA 34",
+                "RO_speednode_0090",
+                "http-1458559",
+                "🇺🇸 美国 | USA 11",
+                "🇺🇸US_164|97KB/s|R002-260618",
+                "🇫🇮FI_15|396KB/s|R002-260618",
+                "US_speednode_0143",
+                "🇺🇸 美国 | USA t.me/rjsxrd 6",
+                "🇺🇸US_143|197KB/s|R002-260618",
+                "RO_speednode_0026",
+                "RO_speednode_0043",
+                "US_speednode_0135",
+                "🇺🇸US_90|100KB/s",
+                "🇩🇪 德国 | DEU 5",
+                "US_speednode_0132",
+                "❓Other_20|90KB/s|P002-260618",
+                "🇫🇷 法国 | FRA 25",
                 "NL_speednode_0017",
-                "RO_speednode_0046",
-                "🇺🇸US_298|277KB/s|R002-260618"
+                "🇫🇷FR_563|260KB/s|P002-260618",
+                "US_speednode_0124",
+                "🇺🇸US_55|93KB/s",
+                "trojan-404344003",
+                "🇺🇸US_134|313KB/s",
+                "nsKXSVJJ_http",
+                "🇳🇱NL_123|461KB/s|R002-260618",
+                "🇺🇸US_250|95KB/s|R002-260618",
+                "🇺🇸US_327|343KB/s|R002-260618",
+                "🇺🇸US_155|396KB/s|R002-260618",
+                "US_speednode_0129",
+                "🇷🇴RO_38|131KB/s|P002-260618",
+                "🇩🇪 德国 | DEU 14",
+                "🇺🇸US_39|117KB/s",
+                "trojan-406418829",
+                "🇷🇴RO_18|311KB/s|P002-260618",
+                "RO_speednode_0048",
+                "🇺🇸US_115|355KB/s",
+                "🇯🇵 日本 | JPN t.me/rjsxrd 2"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "socks5-649226",
-                "RO_speednode_0066",
-                "🇩🇪DE_56|102KB/s|A004-260618",
-                "US_speednode_0139",
-                "LTN0sWff_socks",
-                "🇷🇴RO_18|311KB/s|P002-260618",
-                "🇺🇸US_39|117KB/s",
-                "🇺🇸_美国_403 t.me/rjsxrd",
-                "trojan-387464376",
-                "US_speednode_0130",
-                "🇺🇸US_55|93KB/s",
-                "🇺🇸US_327|343KB/s|R002-260618",
-                "🇺🇸 [VL] США #2832 | РосТуннель t.me/rjsxrd",
-                "RO_speednode_0044",
-                "NL_speednode_0023",
-                "🇫🇷FR_1286|242KB/s|R002-260618",
-                "NL_speednode_0021",
-                "🇺🇸US_187|271KB/s|R002-260618",
-                "US_speednode_0138",
-                "US_speednode_0142",
-                "🇺🇸US_155|396KB/s|R002-260618",
-                "RO_speednode_0108",
-                "RO_speednode_0115",
-                "🇳🇱NL_123|461KB/s|R002-260618",
-                "RO_speednode_0086",
-                "🇫🇷FR_563|260KB/s|P002-260618",
-                "🇺🇸US_152|153KB/s|R002-260618",
-                "🇺🇸US_143|197KB/s|R002-260618",
-                "🇱🇻 [VL] Латвия #9387 | РосТуннель t.me/rjsxrd",
-                "US_speednode_0151",
-                "🇩🇪 [VL] Германия #9419 | РосТуннель t.me/rjsxrd",
-                "RO_speednode_0047",
-                "🇫🇷FR_652|96KB/s|P002-260618",
-                "socks5-797857",
-                "🇺🇸US_164|97KB/s|R002-260618",
-                "US_speednode_0124",
-                "🇺🇸US_301|192KB/s|P002-260618",
-                "🇺🇸US_90|100KB/s",
-                "US_speednode_0154",
-                "1. 🇷🇺 VLESS | SNI: io.ozone.ru | CIDR: ? | TG: @wlrustg | Thanks: @YoutubeUnBlockRu t.me/rjsxrd",
                 "US_speednode_0147",
-                "http-1458559",
-                "🇫🇷FR_495|470KB/s|R002-260618",
-                "🇺🇸US_354|202KB/s|P002-260618",
-                "🇷🇴RO_72|106KB/s",
-                "US_speednode_0156",
-                "🇺🇸US_302|134KB/s|P002-260618",
-                "socks5-138637692",
-                "🇷🇴RO_38|131KB/s|P002-260618",
-                "socks5-335124317",
-                "US_speednode_0136",
-                "🇭🇰 [VL] Гонконг #9404 | РосТуннель t.me/rjsxrd",
-                "🇺🇸US_253|124KB/s|P002-260618",
-                "🇮🇳 [VL] Индия #9409 | РосТуннель t.me/rjsxrd",
-                "hs1uEwzp_http",
-                "🇺🇸US_234|452KB/s|M002-260618",
-                "US_speednode_0152",
-                "US_speednode_0132",
-                "RO_speednode_0088",
-                "US_speednode_0131",
-                "US_speednode_0135",
-                "🇷🇴RO_39|316KB/s|R002-260618",
-                "US_speednode_0146",
-                "🇫🇷FR_494|116KB/s|R002-260618",
-                "NL_speednode_0022",
-                "🇫🇷FR_554|247KB/s|R002-260618",
-                "RO_speednode_0091",
-                "❓Other_20|90KB/s|P002-260618",
-                "🇺🇸US_124|138KB/s|P002-260618",
-                "🇺🇸US_304|472KB/s|P002-260618",
-                "🇺🇸US_195|284KB/s|R002-260618",
-                "🇺🇸US_250|95KB/s|R002-260618",
-                "US_speednode_0128",
-                "NL_speednode_0007",
-                "🇫🇷FR_498|320KB/s|P002-260618",
-                "socks5-40745353",
-                "RO_speednode_0090",
-                "US_speednode_0157",
-                "RO_speednode_0094",
                 "US_speednode_0159",
-                "RO_speednode_0089",
-                "🇫🇷FR_513|161KB/s|R002-260618",
-                "🇫🇮FI_15|396KB/s|R002-260618",
-                "RO_speednode_0043",
-                "🇷🇴RO_6|78KB/s",
-                "trojan-404344003",
-                "🇺🇸US_530|287KB/s|R002-260618",
-                "NL_speednode_0019",
+                "hs1uEwzp_http",
+                "🇺🇸US_302|134KB/s|P002-260618",
+                "RO_speednode_0086",
+                "🇫🇷FR_495|470KB/s|R002-260618",
+                "US_speednode_0121",
+                "🇺🇸US_282|359KB/s|R002-260618",
+                "🇮🇳 [VL] Индия #9409 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0157",
+                "US_speednode_0131",
+                "RO_speednode_0047",
+                "🇷🇴RO_93|241KB/s|R002-260618",
+                "🇷🇴RO_39|316KB/s|R002-260618",
                 "🇵🇱 [VL] Польша #4786 | РосТуннель t.me/rjsxrd",
-                "US_speednode_0153",
-                "RO_speednode_0110",
-                "US_speednode_0148",
-                "🇺🇸US_134|313KB/s",
-                "socks5-258672221",
+                "🇷🇴RO_72|106KB/s",
+                "🇩🇪DE_56|102KB/s|A004-260618",
+                "socks5-797857",
+                "🇺🇸US_301|192KB/s|P002-260618",
+                "RO_speednode_0094",
+                "US_speednode_0152",
+                "socks5-321355223",
+                "LTN0sWff_socks",
+                "RO_speednode_0108",
+                "US_speednode_0130",
+                "🇹🇼 🇨🇳 台湾 | TWN t.me/rjsxrd",
+                "http-1458558",
+                "RO_speednode_0089",
+                "🇨🇭 [VL] Швейцария #9067 | РосТуннель t.me/rjsxrd",
+                "🇺🇸US_59|350KB/s",
+                "🇳🇱NL_115|495KB/s|R002-260618",
+                "🇳🇱NL_114|454KB/s|R002-260618",
+                "🇫🇷 [VL] Франция #4113 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0128",
+                "🇺🇸US_234|452KB/s|M002-260618",
+                "trojan-387464376",
+                "1. 🇷🇺 VLESS | SNI: io.ozone.ru | CIDR: ? | TG: @wlrustg | Thanks: @YoutubeUnBlockRu t.me/rjsxrd",
+                "RO_speednode_0091",
+                "🇫🇷FR_498|320KB/s|P002-260618",
+                "NL_speednode_0021",
+                "http-1183443",
+                "socks5-159230338",
+                "🇺🇸US_152|153KB/s|R002-260618",
+                "US_speednode_0139",
+                "🇷🇴RO_6|78KB/s",
+                "🇩🇪 [VL] Германия #9419 | РосТуннель t.me/rjsxrd",
+                "US_speednode_0151",
+                "[32505][UnResolvedDomains][0][VLESS][None][ext_raw.githubusercontent.com][2026-08-07][2026-08-07 15:51] t.me/rjsxrd",
+                "香港4|@ripaojiedian",
+                "🇺🇸 美国 | USA t.me/rjsxrd 4",
+                "🇺🇸US_124|138KB/s|P002-260618",
+                "🇺🇸US_187|271KB/s|R002-260618",
+                "🇺🇸_美国_379 t.me/rjsxrd",
+                "yCUMpdaN_hysteria2",
+                "🇩🇪 德国 | DEU t.me/rjsxrd 3",
+                "🇺🇸US_354|202KB/s|P002-260618",
+                "🇯🇵 日本 | JPN t.me/rjsxrd",
+                "NL_speednode_0007",
+                "RO_speednode_0088",
+                "🇫🇷 法国 | FRA 34",
+                "RO_speednode_0090",
+                "http-1458559",
+                "🇺🇸 美国 | USA 11",
+                "🇺🇸US_164|97KB/s|R002-260618",
+                "🇫🇮FI_15|396KB/s|R002-260618",
+                "US_speednode_0143",
+                "🇺🇸 美国 | USA t.me/rjsxrd 6",
+                "🇺🇸US_143|197KB/s|R002-260618",
+                "RO_speednode_0026",
+                "RO_speednode_0043",
+                "US_speednode_0135",
+                "🇺🇸US_90|100KB/s",
+                "🇩🇪 德国 | DEU 5",
+                "US_speednode_0132",
+                "❓Other_20|90KB/s|P002-260618",
+                "🇫🇷 法国 | FRA 25",
                 "NL_speednode_0017",
-                "RO_speednode_0046",
-                "🇺🇸US_298|277KB/s|R002-260618"
+                "🇫🇷FR_563|260KB/s|P002-260618",
+                "US_speednode_0124",
+                "🇺🇸US_55|93KB/s",
+                "trojan-404344003",
+                "🇺🇸US_134|313KB/s",
+                "nsKXSVJJ_http",
+                "🇳🇱NL_123|461KB/s|R002-260618",
+                "🇺🇸US_250|95KB/s|R002-260618",
+                "🇺🇸US_327|343KB/s|R002-260618",
+                "🇺🇸US_155|396KB/s|R002-260618",
+                "US_speednode_0129",
+                "🇷🇴RO_38|131KB/s|P002-260618",
+                "🇩🇪 德国 | DEU 14",
+                "🇺🇸US_39|117KB/s",
+                "trojan-406418829",
+                "🇷🇴RO_18|311KB/s|P002-260618",
+                "RO_speednode_0048",
+                "🇺🇸US_115|355KB/s",
+                "🇯🇵 日本 | JPN t.me/rjsxrd 2"
             ],
-            "url": "http://cp.cloudflare.com/generate_204",
+            "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
             "tolerance": 50
         },
@@ -1651,30 +1681,30 @@
             "tag": "direct"
         },
         {
-            "type": "dns",
-            "tag": "dns-out"
-        },
-        {
             "type": "block",
             "tag": "block"
         }
     ],
     "route": {
+        "default_domain_resolver": "localDns",
         "auto_detect_interface": true,
         "final": "proxy",
         "rules": [
             {
+                "action": "sniff"
+            },
+            {
                 "protocol": "dns",
-                "outbound": "dns-out"
+                "action": "hijack-dns"
             },
             {
                 "network": "udp",
                 "port": 443,
-                "outbound": "block"
+                "action": "reject"
             },
             {
                 "rule_set": "geosite-category-ads-all",
-                "outbound": "block"
+                "action": "reject"
             },
             {
                 "clash_mode": "direct",
@@ -1699,7 +1729,7 @@
                 "tag": "geosite-category-ads-all",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://ghfast.top/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
+                "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
                 "download_detour": "direct"
             }
         ]
