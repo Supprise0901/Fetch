@@ -64,66 +64,17 @@
     ],
     "outbounds": [
         {
-            "tag": "@FREE2CONFIG 13",
-            "type": "hysteria2",
-            "server": "hy2.aspidnet.xyz",
-            "server_port": 443,
-            "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "hy2.aspidnet.xyz",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-            }
-        },
-        {
-            "tag": "🇺🇸US_836|349KB/s|A004-260618",
-            "type": "vless",
-            "server": "192.220.54.83",
-            "server_port": 443,
-            "uuid": "93b20d00-c16c-4a49-8b66-4a1ee0b6da95",
-            "tls": {
-                "enabled": true,
-                "server_name": "www.apple.com",
-                "insecure": false,
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_hetCO1z82axzKuCWxc1rbdqd3NdtbcsXf2Y5p6UGQ8",
-                    "short_id": "86c2e49f2e122d0b"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision"
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "@FREE2CONFIG 13",
-                "🇺🇸US_836|349KB/s|A004-260618"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "@FREE2CONFIG 13",
-                "🇺🇸US_836|349KB/s|A004-260618"
-            ],
+            "outbounds": [],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
             "tolerance": 50
