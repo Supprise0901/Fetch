@@ -72,28 +72,29 @@
             "packet_encoding": "xudp"
         },
         {
-            "tag": "香港2|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "103.236.66.4",
-            "server_port": 10001,
-            "method": "aes-256-gcm",
-            "password": "Butterfly123@qwe9527"
+            "tag": "🇳🇴NO_2|3.3MB/s",
+            "type": "trojan",
+            "server": "kkvlvvq-a.catcat321.com",
+            "server_port": 20085,
+            "password": "a126f35c-e832-4115-8593-b723ade3f7be",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hk.catxstar.com"
+            }
         },
         {
-            "tag": "日本2|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "103.236.66.4",
-            "server_port": 40001,
-            "method": "aes-256-gcm",
-            "password": "Butterfly123@qwe9527"
-        },
-        {
-            "tag": "美国2|@ripaojiedian",
-            "type": "shadowsocks",
-            "server": "103.236.66.4",
-            "server_port": 50003,
-            "method": "aes-256-gcm",
-            "password": "Butterfly123@qwe9527"
+            "tag": "vless-871514695",
+            "type": "vless",
+            "server": "bgpvless-2342ss.834928.xyz",
+            "server_port": 41483,
+            "uuid": "f9dbc783-baa1-33fa-af0a-c66a16e1b6ff",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": ""
+            }
         },
         {
             "tag": "proxy",
@@ -101,20 +102,18 @@
             "outbounds": [
                 "auto",
                 "direct",
+                "vless-871514695",
                 "🇨🇳_中国_154",
-                "香港2|@ripaojiedian",
-                "日本2|@ripaojiedian",
-                "美国2|@ripaojiedian"
+                "🇳🇴NO_2|3.3MB/s"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "vless-871514695",
                 "🇨🇳_中国_154",
-                "香港2|@ripaojiedian",
-                "日本2|@ripaojiedian",
-                "美国2|@ripaojiedian"
+                "🇳🇴NO_2|3.3MB/s"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
