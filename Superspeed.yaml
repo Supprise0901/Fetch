@@ -64,25 +64,73 @@
     ],
     "outbounds": [
         {
-            "tag": "NL_speednode_0009",
-            "type": "http",
-            "server": "84.17.47.146",
-            "server_port": 9002,
+            "tag": "🇯🇵 日本 | JPN 3",
+            "type": "hysteria2",
+            "server": "45.153.245.25",
+            "server_port": 50160,
+            "password": "bb7c0aa0966a031bb9184a64a52ce80e",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
-                "insecure": true
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
-            "tag": "🇳🇴NO_1|3.2MB/s",
-            "type": "trojan",
-            "server": "kkvlvvq-a.catcat321.com",
-            "server_port": 20085,
-            "password": "a126f35c-e832-4115-8593-b723ade3f7be",
+            "tag": "🇱🇻 拉脱维亚 | LVA 2",
+            "type": "hysteria2",
+            "server": "hy2-netherlands.unlimited-access.ru",
+            "server_port": 8443,
+            "password": "GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hy2-netherlands.unlimited-access.ru",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇸🇬 新加坡 | SGP 6",
+            "type": "vless",
+            "server": "172.64.151.254",
+            "server_port": 2096,
+            "uuid": "341832cc-ba98-425b-8225-b3db621a0da3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "oyue.rainfall0705.cc.cd"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "oyue.rainfall0705.cc.cd"
+                }
+            }
+        },
+        {
+            "tag": "9zqgXpiP_hysteria2",
+            "type": "hysteria2",
+            "server": "pov2.api3-max.ru",
+            "server_port": 443,
+            "password": "ac7fb60f-0b7a-465d-a002-05160ec04ed6",
+            "up_mbps": 10,
+            "down_mbps": 100,
             "tls": {
                 "enabled": true,
                 "insecure": true,
-                "server_name": "hk.catxstar.com"
+                "alpn": [
+                    "h3"
+                ]
             }
         },
         {
@@ -91,16 +139,20 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "NL_speednode_0009",
-                "🇳🇴NO_1|3.2MB/s"
+                "🇱🇻 拉脱维亚 | LVA 2",
+                "9zqgXpiP_hysteria2",
+                "🇸🇬 新加坡 | SGP 6",
+                "🇯🇵 日本 | JPN 3"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "NL_speednode_0009",
-                "🇳🇴NO_1|3.2MB/s"
+                "🇱🇻 拉脱维亚 | LVA 2",
+                "9zqgXpiP_hysteria2",
+                "🇸🇬 新加坡 | SGP 6",
+                "🇯🇵 日本 | JPN 3"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
