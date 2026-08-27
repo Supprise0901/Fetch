@@ -64,6 +64,44 @@
     ],
     "outbounds": [
         {
+            "tag": "🇨🇳_中国_31",
+            "type": "vmess",
+            "server": "112.132.215.108",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸_美国_67",
+            "type": "vless",
+            "server": "193.134.209.123",
+            "server_port": 443,
+            "uuid": "e911c552-3a98-41e0-b5fb-0dd3879887b7",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "vod.ensf.top"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/api/v1/irc",
+                "headers": {
+                    "Host": "vod.ensf.top"
+                }
+            }
+        },
+        {
+            "tag": "🇰🇷 机场推荐:dafei.de 韩国 01",
+            "type": "shadowsocks",
+            "server": "121.46.230.138",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
             "tag": "🇺🇸 美国 | USA 3",
             "type": "shadowsocks",
             "server": "121.46.230.233",
@@ -78,32 +116,6 @@
             "server_port": 65443,
             "method": "aes-256-cfb",
             "password": "7eadc6dbe2ae"
-        },
-        {
-            "tag": "🇳🇱NL_1|2.1MB/s",
-            "type": "hysteria2",
-            "server": "hys13.wba-pn.ru",
-            "server_port": 443,
-            "password": "CnVfXXvMzh",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "US_speednode_0141",
-            "type": "http",
-            "server": "38.28.193.188",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
         },
         {
             "tag": "vless-997014793",
@@ -126,27 +138,425 @@
             }
         },
         {
+            "tag": "🇫🇷_FR_法国",
+            "type": "shadowsocks",
+            "server": "95.170.13.47",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
+            "tag": "Beta-тест 🇳🇱 t.me/rjsxrd",
+            "type": "vless",
+            "server": "chmstnd1.jarvesitw.ru",
+            "server_port": 443,
+            "uuid": "ec537bff-dc14-495c-b65f-65393ad7ee75",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "app12.jarvesitw.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg",
+                    "short_id": "cf41f778"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                }
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇧🇬 t.me/rjsxrd",
+            "type": "vless",
+            "server": "bul2.helper-internet.com",
+            "server_port": 443,
+            "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "bul2.helper-internet.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+                    "short_id": "ff776ff77be48b88"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪 Germany | [*CIDR] t.me/rjsxrd 6",
+            "type": "vless",
+            "server": "5.42.110.24",
+            "server_port": 9892,
+            "uuid": "064a967e-0862-4cea-bdbd-9458cb7b6070",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "dl.google.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc-tunnel"
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 3",
+            "type": "vless",
+            "server": "152.53.65.60",
+            "server_port": 8443,
+            "uuid": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "avstri.plus-hit.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Zvq-k6PMXjmd6YlWcu3T1J63m0IxZcOaedRwSG9O0lI",
+                    "short_id": "92558baf673ab721"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": ""
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 9",
+            "type": "vless",
+            "server": "31.76.9.56",
+            "server_port": 8443,
+            "uuid": "a210cb80-f379-44e9-a103-97ba59357a46",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "xnod5x.artemida.live",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU",
+                    "short_id": "a1b2c3d4e5f6a7b8"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇱🇹 t.me/rjsxrd",
+            "type": "vless",
+            "server": "84.32.9.191",
+            "server_port": 443,
+            "uuid": "c1d62d53-2fcd-4951-ab96-c81486f59775",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "w-mebel.pro",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3ioSDy998cS2J-O6M9rzh8fDaybnOJ2PDPfd7ulFpH4",
+                    "short_id": "51941b7edff5bc55"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "KuwessYJ_http",
+            "type": "http",
+            "server": "193.176.84.30",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "CYQvZL5u_http",
+            "type": "http",
+            "server": "193.176.84.17",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "v6cyy7lY_http",
+            "type": "http",
+            "server": "193.176.84.25",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "KRMU8trr_http",
+            "type": "http",
+            "server": "193.176.84.32",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "DQxz5y2G_http",
+            "type": "http",
+            "server": "193.176.84.39",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "NL_speednode_0004",
+            "type": "http",
+            "server": "84.17.47.125",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "NL_speednode_0006",
+            "type": "http",
+            "server": "84.17.47.150",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "NL_speednode_0007",
+            "type": "http",
+            "server": "84.17.47.148",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "NL_speednode_0009",
+            "type": "http",
+            "server": "84.17.47.146",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0094",
+            "type": "http",
+            "server": "193.176.84.31",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "vless-971269422",
+            "type": "vless",
+            "server": "82.38.46.66",
+            "server_port": 15007,
+            "uuid": "399c4c9b-27e1-37f1-9dce-22ccc2727a86",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.bing.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qVNutDFjEp3v2wjeUl_Yy6l9TXawXfSjAsFj3iktmRA",
+                    "short_id": "2c4d005b"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                }
+            }
+        },
+        {
+            "server": "fan.596189.xyz",
+            "server_port": 443,
+            "tag": "https-379383356",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "fan.596189.xyz"
+            },
+            "type": "http"
+        },
+        {
+            "tag": "489|🔴🇫🇷[🤖📺🎭🎪]_github.com/Ruk1ng001... #1",
+            "type": "http",
+            "server": "103.82.101.43",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com"
+            }
+        },
+        {
+            "tag": "489|🟠🇸🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...",
+            "type": "http",
+            "server": "149.50.216.65",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "489|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #31",
+            "type": "http",
+            "server": "138.199.35.203",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "489|🔴🇺🇸[📺🎭🎪]_github.com/Ruk1ng001_...",
+            "type": "http",
+            "server": "209.148.53.153",
+            "server_port": 8090,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "489|🟠🇺🇸[📦🔍]_github.com/Ruk1ng001_2...",
+            "type": "socks",
+            "version": "5",
+            "udp_over_tcp": {},
+            "server": "104.168.249.36",
+            "server_port": 1080,
+            "username": "test123",
+            "password": "test123"
+        },
+        {
+            "tag": "489|🟠🇨🇭_github.com/Ruk1ng001_a74c3...",
+            "type": "http",
+            "server": "31.7.62.50",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "vless-997014793",
-                "🇺🇸 美国 | USA 3",
+                "RO_speednode_0094",
+                "489|🔴🇫🇷[🤖📺🎭🎪]_github.com/Ruk1ng001... #1",
+                "NL_speednode_0009",
+                "489|🔴🇺🇸[📺🎭🎪]_github.com/Ruk1ng001_...",
+                "🇨🇳_中国_31",
+                "NL_speednode_0004",
+                "🇫🇷_FR_法国",
+                "489|🟠🇺🇸[📦🔍]_github.com/Ruk1ng001_2...",
+                "NL_speednode_0006",
+                "Бесплатный VPN Tg:VlessForU 🇱🇹 t.me/rjsxrd",
+                "🇰🇷 机场推荐:dafei.de 韩国 01",
+                "489|🟠🇸🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...",
                 "🇺🇸US_2|3.6MB/s",
-                "🇳🇱NL_1|2.1MB/s",
-                "US_speednode_0141"
+                "Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 9",
+                "🇺🇸 美国 | USA 3",
+                "KRMU8trr_http",
+                "v6cyy7lY_http",
+                "🇺🇸_美国_67",
+                "https-379383356",
+                "🇩🇪 Germany | [*CIDR] t.me/rjsxrd 6",
+                "489|🟠🇨🇭_github.com/Ruk1ng001_a74c3...",
+                "Бесплатный VPN Tg:VlessForU 🇧🇬 t.me/rjsxrd",
+                "Beta-тест 🇳🇱 t.me/rjsxrd",
+                "vless-971269422",
+                "489|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #31",
+                "KuwessYJ_http",
+                "CYQvZL5u_http",
+                "DQxz5y2G_http",
+                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 3",
+                "vless-997014793",
+                "NL_speednode_0007"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "vless-997014793",
-                "🇺🇸 美国 | USA 3",
+                "RO_speednode_0094",
+                "489|🔴🇫🇷[🤖📺🎭🎪]_github.com/Ruk1ng001... #1",
+                "NL_speednode_0009",
+                "489|🔴🇺🇸[📺🎭🎪]_github.com/Ruk1ng001_...",
+                "🇨🇳_中国_31",
+                "NL_speednode_0004",
+                "🇫🇷_FR_法国",
+                "489|🟠🇺🇸[📦🔍]_github.com/Ruk1ng001_2...",
+                "NL_speednode_0006",
+                "Бесплатный VPN Tg:VlessForU 🇱🇹 t.me/rjsxrd",
+                "🇰🇷 机场推荐:dafei.de 韩国 01",
+                "489|🟠🇸🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...",
                 "🇺🇸US_2|3.6MB/s",
-                "🇳🇱NL_1|2.1MB/s",
-                "US_speednode_0141"
+                "Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 9",
+                "🇺🇸 美国 | USA 3",
+                "KRMU8trr_http",
+                "v6cyy7lY_http",
+                "🇺🇸_美国_67",
+                "https-379383356",
+                "🇩🇪 Germany | [*CIDR] t.me/rjsxrd 6",
+                "489|🟠🇨🇭_github.com/Ruk1ng001_a74c3...",
+                "Бесплатный VPN Tg:VlessForU 🇧🇬 t.me/rjsxrd",
+                "Beta-тест 🇳🇱 t.me/rjsxrd",
+                "vless-971269422",
+                "489|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #31",
+                "KuwessYJ_http",
+                "CYQvZL5u_http",
+                "DQxz5y2G_http",
+                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 3",
+                "vless-997014793",
+                "NL_speednode_0007"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
