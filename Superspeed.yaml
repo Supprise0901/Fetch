@@ -74,19 +74,76 @@
             "packet_encoding": "xudp"
         },
         {
+            "tag": "🇩🇪 机场推荐:dafei.de 德国 11",
+            "type": "hysteria",
+            "server": "5.83.129.153",
+            "server_port": 20088,
+            "up_mbps": 500,
+            "down_mbps": 1000,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
+            "type": "vless",
+            "server": "152.53.65.60",
+            "server_port": 8443,
+            "uuid": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "avstri.plus-hit.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Zvq-k6PMXjmd6YlWcu3T1J63m0IxZcOaedRwSG9O0lI",
+                    "short_id": "92558baf673ab721"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": ""
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA 3",
+            "type": "shadowsocks",
+            "server": "121.46.230.233",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇨🇳_中国_118"
+                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
+                "🇩🇪 机场推荐:dafei.de 德国 11",
+                "🇨🇳_中国_118",
+                "🇺🇸 美国 | USA 3"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳_中国_118"
+                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
+                "🇩🇪 机场推荐:dafei.de 德国 11",
+                "🇨🇳_中国_118",
+                "🇺🇸 美国 | USA 3"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
