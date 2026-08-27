@@ -64,59 +64,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🇨🇳_中国_118",
-            "type": "vmess",
-            "server": "112.132.215.108",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "🇩🇪 机场推荐:dafei.de 德国 11",
-            "type": "hysteria",
-            "server": "5.83.129.153",
-            "server_port": 20088,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
-            "type": "vless",
-            "server": "152.53.65.60",
-            "server_port": 8443,
-            "uuid": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "avstri.plus-hit.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Zvq-k6PMXjmd6YlWcu3T1J63m0IxZcOaedRwSG9O0lI",
-                    "short_id": "92558baf673ab721"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": ""
-            }
-        },
-        {
             "tag": "🇺🇸 美国 | USA 3",
             "type": "shadowsocks",
             "server": "121.46.230.233",
@@ -125,25 +72,81 @@
             "password": "7eadc6dbe2ae"
         },
         {
+            "tag": "🇺🇸US_2|3.6MB/s",
+            "type": "shadowsocks",
+            "server": "121.46.230.232",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
+            "tag": "🇳🇱NL_1|2.1MB/s",
+            "type": "hysteria2",
+            "server": "hys13.wba-pn.ru",
+            "server_port": 443,
+            "password": "CnVfXXvMzh",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "US_speednode_0141",
+            "type": "http",
+            "server": "38.28.193.188",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "vless-997014793",
+            "type": "vless",
+            "server": "bounded-crammed.video-streams.org",
+            "server_port": 443,
+            "uuid": "f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "bounded-crammed.video-streams.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/ws",
+                "headers": {
+                    "Host": "bounded-crammed.video-streams.org"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
-                "🇩🇪 机场推荐:dafei.de 德国 11",
-                "🇨🇳_中国_118",
-                "🇺🇸 美国 | USA 3"
+                "vless-997014793",
+                "🇺🇸 美国 | USA 3",
+                "🇺🇸US_2|3.6MB/s",
+                "🇳🇱NL_1|2.1MB/s",
+                "US_speednode_0141"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "Бесплатный VPN Tg:VlessForU 🇦🇹 t.me/rjsxrd 2",
-                "🇩🇪 机场推荐:dafei.de 德国 11",
-                "🇨🇳_中国_118",
-                "🇺🇸 美国 | USA 3"
+                "vless-997014793",
+                "🇺🇸 美国 | USA 3",
+                "🇺🇸US_2|3.6MB/s",
+                "🇳🇱NL_1|2.1MB/s",
+                "US_speednode_0141"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
