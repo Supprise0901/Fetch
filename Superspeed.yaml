@@ -64,64 +64,15 @@
     ],
     "outbounds": [
         {
-            "tag": "🇯🇵 机场推荐:dafei.de 日本 03",
-            "type": "vless",
-            "server": "dsfds-dfgwr-sad.dfhhse.xyz",
-            "server_port": 21478,
-            "uuid": "accb2535-87db-4a6c-8417-0c504b7646ca",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
+            "server": "fan.596189.xyz",
+            "server_port": 443,
+            "tag": "https-379383356",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "download-porter.hoyoverse.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Ci-qn43DpSFEoKfKujnxq_1oSqrGSR7suRPuZNPozzo",
-                    "short_id": "efdca86b"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "ios"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇬 机场推荐:dafei.de 新加坡 03",
-            "type": "hysteria2",
-            "server": "sg1.xiaoliyu.cyou",
-            "server_port": 1933,
-            "password": "19f72087-4591-4d72-930b-2697078ec2be",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "sg1.xiaoliyu.cyou",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "FANOGvGS_http",
-            "type": "http",
-            "server": "fan.365747.xyz",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "US_speednode_0141",
-            "type": "http",
-            "server": "38.28.193.188",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
+                "server_name": "fan.596189.xyz"
+            },
+            "type": "http"
         },
         {
             "tag": "proxy",
@@ -129,20 +80,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "US_speednode_0141",
-                "FANOGvGS_http",
-                "🇸🇬 机场推荐:dafei.de 新加坡 03",
-                "🇯🇵 机场推荐:dafei.de 日本 03"
+                "https-379383356"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "US_speednode_0141",
-                "FANOGvGS_http",
-                "🇸🇬 机场推荐:dafei.de 新加坡 03",
-                "🇯🇵 机场推荐:dafei.de 日本 03"
+                "https-379383356"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
