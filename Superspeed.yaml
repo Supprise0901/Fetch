@@ -64,15 +64,85 @@
     ],
     "outbounds": [
         {
-            "server": "fan.596189.xyz",
+            "tag": "🇨🇳_中国_74",
+            "type": "vmess",
+            "server": "112.132.215.108",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "🇺🇸 机场推荐:dafei.de 美国 02",
+            "type": "shadowsocks",
+            "server": "121.46.230.233",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
+            "tag": "🇰🇷 机场推荐:dafei.de 韩国 01",
+            "type": "shadowsocks",
+            "server": "121.46.230.138",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
+            "tag": "🇯🇵 日本 | JPN t.me/rjsxrd 2",
+            "type": "vless",
+            "server": "node1.jjjjjj.eu.cc",
             "server_port": 443,
-            "tag": "https-379383356",
+            "uuid": "75bc1bab-ff62-4c7c-a946-ec49fd53f89f",
+            "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "fan.596189.xyz"
+                "server_name": "jpb2.jjjjjj.eu.cc"
             },
-            "type": "http"
+            "transport": {
+                "type": "ws",
+                "path": "/jige",
+                "headers": {
+                    "Host": "jpb2.jjjjjj.eu.cc"
+                },
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2048
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 3",
+            "type": "vless",
+            "server": "88.216.190.206",
+            "server_port": 443,
+            "uuid": "2f600710-9f4e-4eab-8de1-89f60a878e55",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "app4.goonars.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI",
+                    "short_id": "09ef88a6"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "I2gWMAji_http",
+            "type": "http",
+            "server": "fan.365747.xyz",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
         },
         {
             "tag": "proxy",
@@ -80,14 +150,24 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "https-379383356"
+                "🇨🇳_中国_74",
+                "Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 3",
+                "🇯🇵 日本 | JPN t.me/rjsxrd 2",
+                "🇰🇷 机场推荐:dafei.de 韩国 01",
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "I2gWMAji_http"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "https-379383356"
+                "🇨🇳_中国_74",
+                "Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 3",
+                "🇯🇵 日本 | JPN t.me/rjsxrd 2",
+                "🇰🇷 机场推荐:dafei.de 韩国 01",
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "I2gWMAji_http"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
