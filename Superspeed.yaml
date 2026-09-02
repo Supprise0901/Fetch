@@ -64,14 +64,70 @@
     ],
     "outbounds": [
         {
-            "tag": "🇨🇳_中国_17",
-            "type": "vmess",
-            "server": "112.132.215.108",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "packet_encoding": "xudp"
+            "tag": "🇺🇸_美国_5",
+            "type": "vless",
+            "server": "rrr.windconnect.pro",
+            "server_port": 443,
+            "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "rrr.windconnect.pro",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30",
+                    "short_id": "4da5d1853f04af6d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸_美国_13",
+            "type": "vless",
+            "server": "31.76.71.140",
+            "server_port": 443,
+            "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "rrr.windconnect.pro",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30",
+                    "short_id": "4da5d1853f04af6d"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺_俄罗斯_71",
+            "type": "vless",
+            "server": "ru05.abvpn.ru",
+            "server_port": 443,
+            "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ru05.abvpn.ru"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/websocket",
+                "headers": {
+                    "Host": "ru05.abvpn.ru"
+                }
+            }
         },
         {
             "tag": "🇺🇸 机场推荐:dafei.de 美国 01",
@@ -116,14 +172,6 @@
             }
         },
         {
-            "tag": "🇰🇷 机场推荐:dafei.de 韩国 01",
-            "type": "shadowsocks",
-            "server": "121.46.230.138",
-            "server_port": 65443,
-            "method": "aes-256-cfb",
-            "password": "7eadc6dbe2ae"
-        },
-        {
             "tag": "shadowsocks-696792816",
             "type": "shadowsocks",
             "server": "121.46.230.137",
@@ -132,169 +180,10 @@
             "password": "7eadc6dbe2ae"
         },
         {
-            "tag": "🇺🇸 [VL] США #3612 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "marzban-node-production-70e40.up.railway.app",
-            "server_port": 443,
-            "uuid": "56594501-61e1-4a9d-b628-ad0c60bbfb74",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "marzban-node-production-70e40.up.railway.app"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/vless",
-                "headers": {
-                    "Host": "marzban-node-production-70e40.up.railway.app"
-                }
-            }
-        },
-        {
-            "tag": "🇷🇺 [VL] Россия #4129 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "94.228.166.247",
-            "server_port": 2053,
-            "uuid": "9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "fi-one.quiet-rogue.site",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI",
-                    "short_id": "beff3ff061a64cfd"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇷🇺 Russia [*CIDR] t.me/rjsxrd",
-            "type": "vless",
-            "server": "195.19.164.83",
-            "server_port": 443,
-            "uuid": "2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "sellflow.org",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "edge"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸 美国 | USA t.me/rjsxrd 3",
-            "type": "vless",
-            "server": "38.244.20.31",
-            "server_port": 443,
-            "uuid": "43ecb6db-829f-4e5b-9bd6-4bdd1c537395",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "unoYKky1zvybmB8H3a4SbZLABSKl96rrWZWYeLiLxTQ",
-                    "short_id": "2306d22aff497746"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦 [VL] Канада #1463 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "104.17.73.206",
-            "server_port": 8443,
-            "uuid": "542fd687-5160-4f80-9223-56678567dd29",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "8.sahanwickramasinghe.me"
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "8.sahanwickramasinghe.me"
-                }
-            }
-        },
-        {
-            "tag": "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 2",
-            "type": "vless",
-            "server": "beast.locallynet.org",
-            "server_port": 9443,
-            "uuid": "e6b5e08a-83fa-48d2-8a94-c6cc01fc35fd",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "beast.locallynet.org"
-            }
-        },
-        {
             "tag": "r8PCH1qW_http",
             "type": "http",
             "server": "193.176.84.39",
             "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇮🇳IN_1|3.3MB/s",
-            "type": "vmess",
-            "server": "planb.mojcn.com.linuxlh.xin",
-            "server_port": 16626,
-            "uuid": "62e0878c-ff8c-4a67-b18f-89886e24750c",
-            "security": "auto",
-            "alter_id": 0,
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "headers": {
-                    "Host": "706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com"
-                },
-                "path": "/"
-            }
-        },
-        {
-            "tag": "zJgyU194_http",
-            "type": "http",
-            "server": "138.199.35.195",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "WG5rrroF_http",
-            "type": "http",
-            "server": "87.120.103.242",
-            "server_port": 443,
             "tls": {
                 "enabled": true,
                 "insecure": true
@@ -328,86 +217,6 @@
             "tls": {
                 "enabled": true,
                 "insecure": true
-            }
-        },
-        {
-            "tag": "NL_speednode_0009",
-            "type": "http",
-            "server": "84.17.47.146",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "vless-1060989182",
-            "type": "vless",
-            "server": "74.222.12.186",
-            "server_port": 443,
-            "uuid": "f025c7e4-32fa-42b9-9509-57bd61826d16",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "d2c.aws.amazon.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "9Ae0LKjkGaMsiGEPH_7Y5W33wpj53CMYJhuNIP7UiDA",
-                    "short_id": "95b0ffe90ac0536b"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                }
-            }
-        },
-        {
-            "tag": "vless-1060867575",
-            "type": "vless",
-            "server": "kr3-r.link-t7.com",
-            "server_port": 10048,
-            "uuid": "31904E3E-F57B-41D1-BDB2-CB6D3A496232",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "s0.awsstatic.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-                    "short_id": "686c0ef0"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "update"
-            }
-        },
-        {
-            "tag": "vless-1063237658",
-            "type": "vless",
-            "server": "46b624e6-tkyw00-trnd2c-jjv2.hk3.hyhuawei.com",
-            "server_port": 443,
-            "uuid": "31676725-b0fd-fed2-c857-2da8ce5a6e4f",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "updates.cdn-apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
@@ -498,44 +307,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR_212|178KB/s|A004-260618",
-            "type": "vless",
-            "server": "172.64.229.2",
-            "server_port": 2052,
-            "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560security=tls",
-                "headers": {
-                    "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-                }
-            }
-        },
-        {
             "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_483f6707",
             "type": "http",
             "server": "138.199.35.214",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_06db8839",
-            "type": "http",
-            "server": "138.199.35.217",
-            "server_port": 9002,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
-            "type": "http",
-            "server": "138.199.35.206",
             "server_port": 9002,
             "tls": {
                 "enabled": true,
@@ -554,81 +328,392 @@
             }
         },
         {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 4",
+            "type": "vless",
+            "server": "2.26.129.73",
+            "server_port": 443,
+            "uuid": "f2ea3f68-6e31-4e07-a78c-fff6ebe246c3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "ukrop.mycdn-me.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gPTBA-gVUWAK9yziB_v_sGSncm0LwBQvEAsTQZK4jEE",
+                    "short_id": "5a8e1a04f3d92b67"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 5",
+            "type": "vless",
+            "server": "2.26.135.201",
+            "server_port": 443,
+            "uuid": "f2ea3f68-6e31-4e07-a78c-fff6ebe246c3",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "smorodina.mycdn-me.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "09O8bAlIWm9AGnNyxBtHwpYNQxlXPSQeQeKzS3ZMwGE",
+                    "short_id": "a1f9c0e21d7b6485"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "Beta-тест 🇭🇰 t.me/rjsxrd",
+            "type": "vless",
+            "server": "191.40.32.183",
+            "server_port": 10019,
+            "uuid": "c2564a65-0821-3241-b090-45d49cef58fd",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.sap.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pqXjD4or04GC_CbVnjNLFhJkfxcIXSAbxzLsBad2TCI",
+                    "short_id": "6b4135b5fd"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
+        },
+        {
+            "tag": "5aHsU7Ui_http",
+            "type": "http",
+            "server": "138.199.35.198",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "KUgOoEcc_http",
+            "type": "http",
+            "server": "138.199.35.212",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "Vga4VN0c_http",
+            "type": "http",
+            "server": "fan.132031.xyz",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇺🇸US_26|4.2MB/s",
+            "type": "trojan",
+            "server": "adakv1-u03.sonofthewinds.com",
+            "server_port": 14492,
+            "password": "5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "un5.sonofthewinds.com"
+            }
+        },
+        {
+            "tag": "fsHs0ODD_http",
+            "type": "http",
+            "server": "193.176.84.33",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "NL_speednode_0005",
+            "type": "http",
+            "server": "84.17.47.125",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "🇷🇴RO_5|3.8MB/s",
+            "type": "http",
+            "server": "193.176.84.38",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "RO_speednode_0097",
+            "type": "http",
+            "server": "193.176.84.23",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "vless-1063411454",
+            "type": "vless",
+            "server": "jp4-r.link-t7.com",
+            "server_port": 10034,
+            "uuid": "31904E3E-F57B-41D1-BDB2-CB6D3A496232",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "s0.awsstatic.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+                    "short_id": "686c0ef0"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "update"
+            }
+        },
+        {
+            "tag": "vless-1061671220",
+            "type": "vless",
+            "server": "149.130.179.193",
+            "server_port": 62145,
+            "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a",
+            "packet_encoding": "xudp"
+        },
+        {
+            "tag": "vless-652135065",
+            "type": "vless",
+            "server": "nbg.edgeptr.org",
+            "server_port": 443,
+            "uuid": "b4a2bcfd-f90b-434f-ab5e-be8874908e60",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "www.lovelive-anime.jp",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0",
+                    "short_id": "f0eb800bd980b00b"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "vless-1064969189",
+            "type": "vless",
+            "server": "146.75.37.242",
+            "server_port": 443,
+            "uuid": "91c35e01-00bf-41f5-94e4-71539222d255",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "bounded-crammed.video-streams.org"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/ws",
+                "headers": {
+                    "Host": "bounded-crammed.video-streams.org"
+                }
+            }
+        },
+        {
+            "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f",
+            "type": "http",
+            "server": "138.199.35.196",
+            "server_port": 9002,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "489|D🔴🇺🇸_dokng.com_2c62dab2",
+            "type": "socks",
+            "version": "5",
+            "udp_over_tcp": {},
+            "server": "144.24.47.42",
+            "server_port": 1080
+        },
+        {
+            "tag": "566|🇺🇸 美国 | USA 9",
+            "type": "vless",
+            "server": "43.174.193.1",
+            "server_port": 443,
+            "uuid": "2eadb97f-bba4-4471-8d55-bd461525a2dc",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "eded-52n.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "eded-52n.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "566|🇺🇸 美国 | USA 20",
+            "type": "vless",
+            "server": "208.103.161.249",
+            "server_port": 80,
+            "uuid": "a3c51f71-ffb5-4c80-a136-cee4b36d6e85",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv"
+                }
+            }
+        },
+        {
+            "tag": "566|🇺🇸 美国 | USA 21",
+            "type": "vless",
+            "server": "43.174.195.1",
+            "server_port": 443,
+            "uuid": "2eadb97f-bba4-4471-8d55-bd461525a2dc",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "eded-52n.pages.dev"
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "eded-52n.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇦🇺AU_1|1.6MB/s",
-                "🇺🇸 机场推荐:dafei.de 美国 02",
-                "NL_speednode_0009",
-                "🇨🇦 [VL] Канада #1463 | РосТуннель t.me/rjsxrd",
-                "🇷🇺 Russia [*CIDR] t.me/rjsxrd",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
-                "🇳🇱NL_3|4.6MB/s",
-                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 2",
-                "🇺🇸 机场推荐:dafei.de 美国 01",
-                "🇺🇸 美国 | USA t.me/rjsxrd 3",
-                "🇺🇸 机场推荐:dafei.de 美国 33",
-                "shadowsocks-696792816",
-                "vless-1063237658",
-                "🇺🇸US_7|3.6MB/s",
-                "🇷🇺 [VL] Россия #4129 | РосТуннель t.me/rjsxrd",
-                "🇰🇷 机场推荐:dafei.de 韩国 01",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_06db8839",
-                "🇨🇳_中国_17",
-                "vless-1063593020",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_483f6707",
+                "566|🇺🇸 美国 | USA 21",
+                "🇺🇸_美国_5",
+                "fsHs0ODD_http",
+                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 4",
                 "vless-1059261752",
-                "zJgyU194_http",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_6b515df2",
-                "🇮🇳IN_1|3.3MB/s",
+                "🇷🇴RO_5|3.8MB/s",
+                "Vga4VN0c_http",
+                "🇺🇸 机场推荐:dafei.de 美国 01",
+                "🇺🇸_美国_13",
+                "vless-1061671220",
                 "r8PCH1qW_http",
-                "vless-1063237672",
-                "WG5rrroF_http",
-                "🇫🇷FR_212|178KB/s|A004-260618",
-                "🇺🇸 [VL] США #3612 | РосТуннель t.me/rjsxrd",
-                "vless-1060867575",
+                "489|D🔴🇺🇸_dokng.com_2c62dab2",
+                "566|🇺🇸 美国 | USA 9",
+                "vless-652135065",
+                "🇺🇸US_7|3.6MB/s",
+                "vless-1063411454",
                 "vless-1063237808",
-                "vless-1060989182"
+                "vless-1063237672",
+                "🇦🇺AU_1|1.6MB/s",
+                "KUgOoEcc_http",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_483f6707",
+                "vless-1064969189",
+                "RO_speednode_0097",
+                "shadowsocks-696792816",
+                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 5",
+                "🇳🇱NL_3|4.6MB/s",
+                "Beta-тест 🇭🇰 t.me/rjsxrd",
+                "5aHsU7Ui_http",
+                "vless-1063593020",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f",
+                "🇷🇺_俄罗斯_71",
+                "🇺🇸US_26|4.2MB/s",
+                "NL_speednode_0005",
+                "566|🇺🇸 美国 | USA 20",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_6b515df2",
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "🇺🇸 机场推荐:dafei.de 美国 33"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇦🇺AU_1|1.6MB/s",
-                "🇺🇸 机场推荐:dafei.de 美国 02",
-                "NL_speednode_0009",
-                "🇨🇦 [VL] Канада #1463 | РосТуннель t.me/rjsxrd",
-                "🇷🇺 Russia [*CIDR] t.me/rjsxrd",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
-                "🇳🇱NL_3|4.6MB/s",
-                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 2",
-                "🇺🇸 机场推荐:dafei.de 美国 01",
-                "🇺🇸 美国 | USA t.me/rjsxrd 3",
-                "🇺🇸 机场推荐:dafei.de 美国 33",
-                "shadowsocks-696792816",
-                "vless-1063237658",
-                "🇺🇸US_7|3.6MB/s",
-                "🇷🇺 [VL] Россия #4129 | РосТуннель t.me/rjsxrd",
-                "🇰🇷 机场推荐:dafei.de 韩国 01",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_06db8839",
-                "🇨🇳_中国_17",
-                "vless-1063593020",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_483f6707",
+                "566|🇺🇸 美国 | USA 21",
+                "🇺🇸_美国_5",
+                "fsHs0ODD_http",
+                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 4",
                 "vless-1059261752",
-                "zJgyU194_http",
-                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_6b515df2",
-                "🇮🇳IN_1|3.3MB/s",
+                "🇷🇴RO_5|3.8MB/s",
+                "Vga4VN0c_http",
+                "🇺🇸 机场推荐:dafei.de 美国 01",
+                "🇺🇸_美国_13",
+                "vless-1061671220",
                 "r8PCH1qW_http",
-                "vless-1063237672",
-                "WG5rrroF_http",
-                "🇫🇷FR_212|178KB/s|A004-260618",
-                "🇺🇸 [VL] США #3612 | РосТуннель t.me/rjsxrd",
-                "vless-1060867575",
+                "489|D🔴🇺🇸_dokng.com_2c62dab2",
+                "566|🇺🇸 美国 | USA 9",
+                "vless-652135065",
+                "🇺🇸US_7|3.6MB/s",
+                "vless-1063411454",
                 "vless-1063237808",
-                "vless-1060989182"
+                "vless-1063237672",
+                "🇦🇺AU_1|1.6MB/s",
+                "KUgOoEcc_http",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_483f6707",
+                "vless-1064969189",
+                "RO_speednode_0097",
+                "shadowsocks-696792816",
+                "Бесплатный VPN Tg:VlessForU 🇪🇪 t.me/rjsxrd 5",
+                "🇳🇱NL_3|4.6MB/s",
+                "Beta-тест 🇭🇰 t.me/rjsxrd",
+                "5aHsU7Ui_http",
+                "vless-1063593020",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f",
+                "🇷🇺_俄罗斯_71",
+                "🇺🇸US_26|4.2MB/s",
+                "NL_speednode_0005",
+                "566|🇺🇸 美国 | USA 20",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_6b515df2",
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "🇺🇸 机场推荐:dafei.de 美国 33"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
