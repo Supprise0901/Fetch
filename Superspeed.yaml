@@ -64,82 +64,92 @@
     ],
     "outbounds": [
         {
-            "tag": "🇯🇵JP_1|5.8MB/s",
+            "tag": "🇰🇷 机场推荐:dafei.de 韩国 01",
             "type": "shadowsocks",
-            "server": "121.46.230.137",
+            "server": "121.46.230.138",
             "server_port": 65443,
             "method": "aes-256-cfb",
             "password": "7eadc6dbe2ae"
         },
         {
-            "server": "fan.596189.xyz",
-            "server_port": 443,
-            "tag": "https-379383356",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "fan.596189.xyz"
-            },
-            "type": "http"
-        },
-        {
-            "tag": "美国 #3",
-            "type": "hysteria2",
-            "server": "faq.wwwinternetvideo.click",
-            "server_port": 443,
-            "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "cabinet.wwwinternetvideo.click",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇩🇪158848 | ⚡️Telegram = t.me/S...",
-            "type": "hysteria2",
-            "server": "31.76.106.61",
-            "server_port": 443,
-            "password": "1a17fbd6-a54f-456c-8e71-5282893e2b69",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "gos.ultimagamest.com",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "vless-1062968414",
+            "tag": "🇩🇪 德国 | DEU t.me/rjsxrd",
             "type": "vless",
-            "server": "hk1-r.link-t7.com",
-            "server_port": 10126,
-            "uuid": "C1CE3941-AC6F-4E98-9791-3B33ABBAF64F",
+            "server": "2.26.128.80",
+            "server_port": 443,
+            "uuid": "739c1201-db54-47f5-aed7-29782a5bbe18",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "wombat.mycdn-me.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "w88Ys8dVF9DuslGwUD05J9-FHNoAT9qmPysCvHiEmmg",
+                    "short_id": "1b40e7c2a1d8f635"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP_3|2.0MB/s",
+            "type": "http",
+            "server": "fan.571589.xyz",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "fan.571589.xyz"
+            },
+            "username": "null",
+            "password": "null"
+        },
+        {
+            "tag": "US_speednode_0141",
+            "type": "http",
+            "server": "38.28.193.188",
+            "server_port": 443,
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            }
+        },
+        {
+            "tag": "vless-1075316561",
+            "type": "vless",
+            "server": "piracy-android.video-streams.org",
+            "server_port": 443,
+            "uuid": "a375fa6a-bef7-4f71-92f0-17976e5afaac",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
                 "insecure": false,
-                "server_name": "s0.awsstatic.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-                    "short_id": "686c0ef0"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+                "server_name": "piracy-android.video-streams.org"
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "update"
+                "type": "ws",
+                "path": "/ws",
+                "headers": {
+                    "Host": "piracy-android.video-streams.org"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸 美国 | USA 7",
+            "type": "vless",
+            "server": "us6.lunariai.ru",
+            "server_port": 443,
+            "uuid": "170e1be8-e51b-4a82-a779-3ad27b78607c",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "us6.lunariai.ru"
+                }
             }
         },
         {
@@ -148,22 +158,24 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "https-379383356",
-                "🇯🇵JP_1|5.8MB/s",
-                "美国 #3",
-                "🇩🇪158848 | ⚡️Telegram = t.me/S...",
-                "vless-1062968414"
+                "🇺🇸 美国 | USA 7",
+                "vless-1075316561",
+                "🇯🇵JP_3|2.0MB/s",
+                "US_speednode_0141",
+                "🇩🇪 德国 | DEU t.me/rjsxrd",
+                "🇰🇷 机场推荐:dafei.de 韩国 01"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "https-379383356",
-                "🇯🇵JP_1|5.8MB/s",
-                "美国 #3",
-                "🇩🇪158848 | ⚡️Telegram = t.me/S...",
-                "vless-1062968414"
+                "🇺🇸 美国 | USA 7",
+                "vless-1075316561",
+                "🇯🇵JP_3|2.0MB/s",
+                "US_speednode_0141",
+                "🇩🇪 德国 | DEU t.me/rjsxrd",
+                "🇰🇷 机场推荐:dafei.de 韩国 01"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
