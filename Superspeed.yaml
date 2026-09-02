@@ -64,76 +64,12 @@
     ],
     "outbounds": [
         {
-            "tag": "🇺🇸 机场推荐:dafei.de 美国 01",
-            "type": "shadowsocks",
-            "server": "121.46.230.232",
-            "server_port": 65443,
-            "method": "aes-256-cfb",
-            "password": "7eadc6dbe2ae"
-        },
-        {
-            "tag": "🇪🇸 [VL] Испания #14570 | РосТуннель t.me/rjsxrd",
-            "type": "vless",
-            "server": "2.26.128.74",
-            "server_port": 443,
-            "uuid": "f2ea3f68-6e31-4e07-a78c-fff6ebe246c3",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "wombat.mycdn-me.ru",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "w88Ys8dVF9DuslGwUD05J9-FHNoAT9qmPysCvHiEmmg",
-                    "short_id": "1b40e7c2a1d8f635"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇯🇵JP_1|5.8MB/s",
             "type": "shadowsocks",
             "server": "121.46.230.137",
             "server_port": 65443,
             "method": "aes-256-cfb",
             "password": "7eadc6dbe2ae"
-        },
-        {
-            "tag": "01hBR4EB_http",
-            "type": "http",
-            "server": "fan.365747.xyz",
-            "server_port": 443,
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "🇯🇵 日本 | JPN",
-            "type": "vless",
-            "server": "103.76.85.242",
-            "server_port": 443,
-            "uuid": "cd578a0f-4b18-43ce-9a38-52d5919fd4bc",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "www.apple.com",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "jGpS_zJlDp2Jmo87eVM-pYcVd3XkRL4J-lzn7QpWah4",
-                    "short_id": "7b160d08e2213a6d"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                }
-            }
         },
         {
             "server": "fan.596189.xyz",
@@ -147,18 +83,63 @@
             "type": "http"
         },
         {
-            "tag": "🇩🇪DE_40|799KB/s|A004-260618",
+            "tag": "美国 #3",
+            "type": "hysteria2",
+            "server": "faq.wwwinternetvideo.click",
+            "server_port": 443,
+            "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "cabinet.wwwinternetvideo.click",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪158848 | ⚡️Telegram = t.me/S...",
+            "type": "hysteria2",
+            "server": "31.76.106.61",
+            "server_port": 443,
+            "password": "1a17fbd6-a54f-456c-8e71-5282893e2b69",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "gos.ultimagamest.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "vless-1062968414",
             "type": "vless",
-            "server": "162.159.38.127",
-            "server_port": 2052,
-            "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+            "server": "hk1-r.link-t7.com",
+            "server_port": 10126,
+            "uuid": "C1CE3941-AC6F-4E98-9791-3B33ABBAF64F",
             "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560security=tls",
-                "headers": {
-                    "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+            "tls": {
+                "enabled": true,
+                "insecure": false,
+                "server_name": "s0.awsstatic.com",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+                    "short_id": "686c0ef0"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "update"
             }
         },
         {
@@ -167,26 +148,22 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "01hBR4EB_http",
+                "https-379383356",
                 "🇯🇵JP_1|5.8MB/s",
-                "🇯🇵 日本 | JPN",
-                "🇪🇸 [VL] Испания #14570 | РосТуннель t.me/rjsxrd",
-                "🇩🇪DE_40|799KB/s|A004-260618",
-                "🇺🇸 机场推荐:dafei.de 美国 01",
-                "https-379383356"
+                "美国 #3",
+                "🇩🇪158848 | ⚡️Telegram = t.me/S...",
+                "vless-1062968414"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "01hBR4EB_http",
+                "https-379383356",
                 "🇯🇵JP_1|5.8MB/s",
-                "🇯🇵 日本 | JPN",
-                "🇪🇸 [VL] Испания #14570 | РосТуннель t.me/rjsxrd",
-                "🇩🇪DE_40|799KB/s|A004-260618",
-                "🇺🇸 机场推荐:dafei.de 美国 01",
-                "https-379383356"
+                "美国 #3",
+                "🇩🇪158848 | ⚡️Telegram = t.me/S...",
+                "vless-1062968414"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
