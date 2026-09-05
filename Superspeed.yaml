@@ -64,6 +64,14 @@
     ],
     "outbounds": [
         {
+            "tag": "🇺🇸 机场推荐:dafei.de 美国 02",
+            "type": "shadowsocks",
+            "server": "121.46.230.232",
+            "server_port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+        },
+        {
             "tag": "vless-1121839562",
             "type": "vless",
             "server": "38.150.33.232",
@@ -96,28 +104,6 @@
             }
         },
         {
-            "tag": "🇩🇪 德国 | DEU t.me/rjsxrd",
-            "type": "vless",
-            "server": "de-6.kihsuyhf8jkiugsxb.cfd",
-            "server_port": 443,
-            "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-            "packet_encoding": "xudp",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "insecure": false,
-                "server_name": "de-6.kihsuyhf8jkiugsxb.cfd",
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ia6cEEqjnawIhBPzcHFWSNsQIOJcHQU5t5FebSphWGA"
-                },
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                }
-            }
-        },
-        {
             "tag": "a1XvnXNL_http",
             "type": "http",
             "server": "fan.365747.xyz",
@@ -128,25 +114,42 @@
             }
         },
         {
+            "tag": "vless-1108455134",
+            "type": "vless",
+            "server": "172.64.229.170",
+            "server_port": 80,
+            "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+            "packet_encoding": "xudp",
+            "transport": {
+                "type": "ws",
+                "path": "/?ed=2560security=tls",
+                "headers": {
+                    "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+                }
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇩🇪 德国 | DEU t.me/rjsxrd",
                 "vless-1121839562",
                 "a1XvnXNL_http",
-                "US_speednode_0141"
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "US_speednode_0141",
+                "vless-1108455134"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪 德国 | DEU t.me/rjsxrd",
                 "vless-1121839562",
                 "a1XvnXNL_http",
-                "US_speednode_0141"
+                "🇺🇸 机场推荐:dafei.de 美国 02",
+                "US_speednode_0141",
+                "vless-1108455134"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
