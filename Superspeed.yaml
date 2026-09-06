@@ -64,12 +64,26 @@
     ],
     "outbounds": [
         {
-            "tag": "🇺🇸 机场推荐:dafei.de 美国 02",
-            "type": "shadowsocks",
-            "server": "121.46.230.232",
-            "server_port": 65443,
-            "method": "aes-256-cfb",
-            "password": "7eadc6dbe2ae"
+            "tag": "🇺🇸_美国_11",
+            "type": "vless",
+            "server": "bridge2.kolhoz.fuck-rkn.xyz",
+            "server_port": 443,
+            "uuid": "ef5f6054-61c7-4ce8-a35b-dbcec449f242",
+            "packet_encoding": "xudp",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "jobinvest.ru",
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+                },
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            }
         },
         {
             "tag": "🇵🇱 波兰 | POL t.me/rjsxrd 2",
@@ -94,29 +108,75 @@
             }
         },
         {
-            "tag": "xRPySALq_http",
-            "type": "http",
-            "server": "fan.365747.xyz",
+            "tag": "日本",
+            "type": "hysteria2",
+            "server": "138.3.208.26",
+            "server_port": 50160,
+            "password": "184cdec28da5a09450803c8debcd2cc9",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "印度",
+            "type": "hysteria2",
+            "server": "vpn-in-001.fastervpn.world",
             "server_port": 443,
+            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-in-001.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇰DK_3|1.2MB/s|M003-260806",
+            "type": "hysteria2",
+            "server": "give.internet-card.sbs",
+            "server_port": 24444,
+            "password": "niEGIEcu9rRmRBoA3yYiKtFRv87BMRnFEpozCmNTHyY",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "bel7bel.internet-card.sbs",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
+            "type": "http",
+            "server": "138.199.35.206",
+            "server_port": 9002,
             "tls": {
                 "enabled": true,
                 "insecure": true
             }
         },
         {
-            "tag": "🇳🇱NL_219|2.9MB/s|A004-260618",
-            "type": "vless",
-            "server": "108.162.198.178",
-            "server_port": 80,
-            "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560security=tls",
-                "headers": {
-                    "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-                }
-            }
+            "tag": "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_24a6e4b9",
+            "type": "socks",
+            "version": "5",
+            "udp_over_tcp": {},
+            "server": "104.168.249.36",
+            "server_port": 1080,
+            "username": "test123",
+            "password": "test123"
         },
         {
             "tag": "proxy",
@@ -124,20 +184,26 @@
             "outbounds": [
                 "auto",
                 "direct",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_24a6e4b9",
+                "🇩🇰DK_3|1.2MB/s|M003-260806",
                 "🇵🇱 波兰 | POL t.me/rjsxrd 2",
-                "🇳🇱NL_219|2.9MB/s|A004-260618",
-                "xRPySALq_http",
-                "🇺🇸 机场推荐:dafei.de 美国 02"
+                "🇺🇸_美国_11",
+                "印度",
+                "日本"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6",
+                "489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_24a6e4b9",
+                "🇩🇰DK_3|1.2MB/s|M003-260806",
                 "🇵🇱 波兰 | POL t.me/rjsxrd 2",
-                "🇳🇱NL_219|2.9MB/s|A004-260618",
-                "xRPySALq_http",
-                "🇺🇸 机场推荐:dafei.de 美国 02"
+                "🇺🇸_美国_11",
+                "印度",
+                "日本"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
