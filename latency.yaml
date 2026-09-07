@@ -5,21 +5,35 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 每天更新，请加电报群防止失联
+- name: 日期：09-07
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  server: 176.109.88.216
+  port: 443
+  uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
   udp: true
-- name: 🇨🇳_中国_52
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  servername: api-maps.yandex.ru
+  reality-opts:
+    public-key: oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk
+    short-id: a9c4f17e3b62d8
+  client-fingerprint: chrome
+- name: 免费VPN：https://tt.vg/FJOE2Mm
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
   udp: true
-- name: 🇩🇪_德国_57
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  servername: hotcoals.aeternavpn.space
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  client-fingerprint: firefox
+- name: 🇩🇪_德国_38
   type: vless
   server: 176.96.138.122
   port: 443
@@ -32,22 +46,62 @@ proxies:
   reality-opts:
     public-key: O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg
   client-fingerprint: qq
-- name: 🇷🇺_俄罗斯_118
+- name: 🇩🇪_德国_41
   type: vless
-  server: 45.9.15.206
+  server: 2.59.134.226
   port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  servername: rich-falcon.cdn.cachefleet.com
+  reality-opts:
+    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
+  client-fingerprint: qq
+- name: 🇹🇷_土耳其_43
+  type: vless
+  server: 206.1.96.28
+  port: 8082
+  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  udp: true
+- name: 🇵🇱_波兰_64
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  udp: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: 178.95.170.83
+- name: 🇩🇪_德国_74
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: 163.8.195.241
+- name: 🇷🇺_俄罗斯_102
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ru05.abvpn.ru
+  servername: pr-media.pepro.site
   network: ws
   ws-opts:
-    path: /websocket
+    path: /ws
     headers:
-      Host: ru05.abvpn.ru
-    udp: true
-- name: 🇷🇺_俄罗斯_119
+      Host: pr-media.pepro.site
+- name: 🇷🇺_俄罗斯_276
   type: vless
   server: ru05.abvpn.ru
   port: 443
@@ -61,31 +115,199 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-    udp: true
-- name: 🇬🇧_英国_130
+- name: 🇷🇺_俄罗斯_291
   type: vless
-  server: 188.220.67.245
-  port: 2087
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ru05.abvpn.ru
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 🇺🇸_美国_412
+  type: vless
+  server: 172.66.0.236
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🏳️_未知_413
+  type: vless
+  server: cf.090227.xyz
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   udp: true
   network: ws
   ws-opts:
-    path: /8f2690e2d016
+    path: /
     headers:
-      Host: 188.220.67.245
-    udp: true
-- name: 🏳️_未知_167
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_414
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  server: cloudflare-dns.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   udp: true
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /
     headers:
-      Host: netlivpn2950.bbxff.workers.dev
-    udp: true
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🇺🇸_美国_415
+  type: vless
+  server: www.temu.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_416
+  type: vless
+  server: docs.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_417
+  type: vless
+  server: itarmy.com.ua
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_418
+  type: vless
+  server: www.shopify.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_419
+  type: vless
+  server: www.fbi.gov
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_420
+  type: vless
+  server: www.wto.org
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_421
+  type: vless
+  server: www.epicgames.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_422
+  type: vless
+  server: support.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_423
+  type: vless
+  server: blog.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_426
+  type: vless
+  server: openai.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_428
+  type: vless
+  server: www.npmjs.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_429
+  type: vless
+  server: cdnjs.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
+- name: 🏳️_未知_430
+  type: vless
+  server: www.udemy.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.fuckingnigga.eu.cc
 - name: 香港5|@ripaojiedian
   type: trojan
   server: 13.215.162.132
@@ -94,13 +316,6 @@ proxies:
   udp: true
   sni: t.me/ripaojiedian
   skip-cert-verify: true
-- name: 🇺🇸 机场推荐:dafei.de 美国 01
-  type: ss
-  server: 121.46.230.232
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  udp: true
 - name: 🇺🇸 机场推荐:dafei.de 美国 03
   type: ss
   server: 121.46.230.233
@@ -108,73 +323,51 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: lots1VUB_http
+- name: 🇰🇷 机场推荐:dafei.de 韩国 01
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: https-379383356
   type: http
-  server: 138.199.35.216
-  port: 9002
+  server: fan.596189.xyz
+  port: 443
+  tls: true
+  servername: fan.596189.xyz
+- name: 4c3XAfBS_http
+  type: http
+  server: fan.365747.xyz
+  port: 443
   tls: true
   skip-cert-verify: true
-- name: '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
+- name: vless-1168885953
   type: vless
-  server: brightharbor.download
+  server: 38.244.20.160
   port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: 461396cc-2f0a-42cc-b224-d122ba073a2a
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: localhost
+  servername: www.apple.com
   reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 | POL t.me/rjsxrd
+    public-key: 1wd_6aAjmtQ3lIbMeNq5zs-5x_z9fL7h9rZwFjBPaG8
+    short-id: 041cf34629de8469
+  client-fingerprint: safari
+- name: '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 144.31.5.3
+  server: 200.165.229.159
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: pl4.moritech.net
-- name: 🇺🇸_美国_412 t.me/rjsxrd
-  type: vless
-  server: 172.66.0.236
-  port: 2083
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-    udp: true
-- name: 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  type: vless
-  server: Fi.horlutr.ir
-  port: 11437
-  uuid: fc60d2f9-e3b5-449f-80d8-385c08e93c94
-  udp: true
-  tls: true
-  servername: amp-api-edge.apps.apple.com
+  servername: flarora.ferreo.sbs
   reality-opts:
-    public-key: XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI
-    short-id: 7de83d0e31eb75ef
-  client-fingerprint: chrome
-- name: '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
-  type: vless
-  server: liang92.dpdns.org
-  port: 443
-  uuid: 0aab6adc-104c-4339-8d25-09755ffe2cbd
-  udp: true
-  tls: true
-  servername: liang92.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: liang92.dpdns.org
-    udp: true
+    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
+    short-id: 1067b23f928e7618
+  client-fingerprint: ios
 - name: '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
   type: vless
   server: 172.236.233.59
@@ -188,18 +381,9 @@ proxies:
     public-key: oTMDLwY2hloBfA7ShzVsrFhjL4QXR6mY32B93rMLxV0
     short-id: 525e0ffc773f48ba
   client-fingerprint: chrome
-- name: '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
+- name: '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: pl4.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-- name: '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
-  type: vless
-  server: 130.12.102.62
+  server: 130.12.102.125
   port: 443
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   udp: true
@@ -219,61 +403,19 @@ proxies:
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
   client-fingerprint: chrome
-- name: 🇮🇳 印度 | IND t.me/rjsxrd
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-  udp: true
-- name: 🇹🇷 土耳其 | TUR t.me/rjsxrd
+- name: '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: trpsg20.horlutr.ir
-  port: 11437
-  uuid: fc60d2f9-e3b5-449f-80d8-385c08e93c94
-  udp: true
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  reality-opts:
-    public-key: XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI
-    short-id: 7de83d0e31eb75ef
-  client-fingerprint: chrome
-- name: Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  type: vless
-  server: 194.34.175.158
+  server: 162.159.254.3
   port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  flow: xtls-rprx-vision
   tls: true
-  servername: localhost
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  client-fingerprint: firefox
-- name: Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  type: vless
-  server: 194.34.175.19
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: localhost
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  client-fingerprint: firefox
-- name: Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
-  type: vless
-  server: 194.34.175.235
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: localhost
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  client-fingerprint: firefox
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
   type: vless
   server: 50.7.245.35
@@ -287,60 +429,7 @@ proxies:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
   client-fingerprint: firefox
-- name: Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  type: vless
-  server: 200.165.229.159
-  port: 443
-  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: flarora.ferreo.sbs
-  reality-opts:
-    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-    short-id: 1067b23f928e7618
-  client-fingerprint: firefox
-- name: Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
-  type: vless
-  server: 104.194.143.112
-  port: 443
-  uuid: 268b4f72-c447-4ff4-840a-c178e551e743
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.dodostatic.net
-  reality-opts:
-    public-key: HcBAHoLxmHEKHLNpHOn-XOSNsVlJQThcqtov7le50Gg
-    short-id: aeb1eee5185a2c19
-  client-fingerprint: qq
 - name: 🇫🇮 AetrisVPN t.me/rjsxrd
-  type: vless
-  server: wstg.datasynctrue.online
-  port: 443
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
-  udp: true
-  tls: true
-  servername: wstg.datasynctrue.online
-  network: ws
-  ws-opts:
-    path: /api/connect
-    headers:
-      Host: wstg.datasynctrue.online
-    udp: true
-- name: Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
-  type: vless
-  server: 107.189.19.27
-  port: 443
-  uuid: 813a385c-f26f-48b5-9bbb-53204a9c5bcc
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.dodostatic.net
-  reality-opts:
-    public-key: Sgocj9v63XdHU04TV3-Pk141YPIT_E-UgLr9u4OkE0E
-    short-id: d27201f7bf5874f9
-  client-fingerprint: qq
-- name: 🇫🇮 AetrisVPN t.me/rjsxrd 2
   type: vless
   server: 91.210.169.181
   port: 443
@@ -353,193 +442,213 @@ proxies:
     path: /api/connect
     headers:
       Host: wstg.datasynctrue.online
-    udp: true
-- name: 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
+- name: 🇫🇮 AetrisVPN t.me/rjsxrd 2
   type: vless
-  server: 31.76.62.250
+  server: wstg.datasynctrue.online
   port: 443
-  uuid: 14409b0c-2091-4bc7-9845-2485a31ac38a
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
   udp: true
-  flow: xtls-rprx-vision
   tls: true
-  servername: latin.roastedtoad.best
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  client-fingerprint: firefox
-- name: ktBzFzgN_socks
-  type: socks5
-  server: 104.168.249.36
-  port: 1080
+  servername: wstg.datasynctrue.online
+  network: ws
+  ws-opts:
+    path: /api/connect
+    headers:
+      Host: wstg.datasynctrue.online
+- name: 印度
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  port: 443
   udp: true
-  username: test123
-  password: test123
-- name: y1TRLVPk_http
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 阿联酋
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  udp: true
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: news.gazette.help
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: RV6a3qXc_http
   type: http
   server: 193.176.84.30
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: LjsoVWX7_http
+- name: tpB2UOto_http
   type: http
   server: 138.199.35.198
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: tHCgCy7y_http
+- name: 4ChUFyfQ_http
   type: http
   server: 138.201.56.241
   port: 443
   tls: true
   skip-cert-verify: true
-- name: yLbs8S6v_http
-  type: http
-  server: 146.70.244.2
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: FrqgEHPb_http
+- name: JTWG5yM3_http
   type: http
   server: 138.199.35.200
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 9wEwbydy_http
+- name: OWG1XF0r_http
   type: http
   server: 193.176.84.34
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: vNSuAS4W_http
+- name: 4VNd8xe9_http
   type: http
   server: 138.199.35.217
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: XuHcfqAV_http
+- name: Ai5WAxRl_http
   type: http
   server: 138.199.35.210
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: Yahpz5nC_http
+- name: LHLmYsFL_http
   type: http
   server: 138.199.35.197
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: Eu0gtTO4_http
+- name: 2YO6eVxT_http
   type: http
   server: 138.199.35.199
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: vHH7GYyC_http
+- name: xG2DEWH1_http
   type: http
-  server: 149.22.85.78
+  server: goedkoopgeluid.icu
   port: 443
   tls: true
   skip-cert-verify: true
-- name: NWztpG5J_http
+- name: FFFtQd1W_http
+  type: http
+  server: 138.199.35.216
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: Yjr8sgeC_http
+  type: http
+  server: 185.235.0.98
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: E6gs0PxX_http
   type: http
   server: 185.216.35.130
   port: 443
   tls: true
   skip-cert-verify: true
-- name: gil3DAF4_http
+- name: Q63zjxO8_http
+  type: http
+  server: 31.7.62.50
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: BG3Ht2R2_http
+  type: http
+  server: 212.102.63.1
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: Wz66vDUy_http
   type: http
   server: 193.176.84.16
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: SgBAtWNP_socks
+- name: Lz6yajCN_socks
   type: socks5
   server: 161.35.90.93
   port: 1083
   udp: true
-- name: 🇩🇪DE_12|4.2MB/s
-  type: ss
-  server: 141.95.29.163
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
-  udp: true
-- name: 8qt6PR0u_http
+- name: 28UTEoRp_http
   type: http
   server: 193.176.84.37
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: O19dwQew_http
+- name: XDH1XYb1_http
   type: http
   server: 138.199.35.209
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: SLbaIFfV_http
+- name: l8nQs5It_http
   type: http
   server: 193.176.84.36
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: agK0wciA_http
+- name: meIafcv8_http
   type: http
   server: 193.176.84.25
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: Pyoxu4ZB_http
+- name: cKdh2nG1_http
   type: http
   server: 193.176.84.33
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: r3x5yeCA_http
+- name: wzkwDGgo_http
   type: http
   server: 193.176.84.35
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: jVwQDc6a_http
+- name: m8FWg3Py_http
   type: http
   server: 193.176.84.17
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: KNsq81DX_http
+- name: lGF941HN_http
   type: http
   server: 193.176.84.24
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: x6IyvzFD_http
+- name: q9qbfD5h_http
   type: http
   server: 193.176.84.20
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: Brpxb5Il_http
+- name: VdDhugcy_http
   type: http
   server: 193.176.84.27
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: XtJnxxry_http
+- name: vLX9EdZv_http
   type: http
   server: 193.176.84.32
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: eyR7eaRi_http
+- name: 8fFIDYsI_http
   type: http
   server: 193.176.84.39
   port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: jL5qaBsF_http
-  type: http
-  server: fan.365747.xyz
-  port: 443
   tls: true
   skip-cert-verify: true
 - name: NL_speednode_0004
@@ -572,6 +681,12 @@ proxies:
   port: 9443
   tls: true
   skip-cert-verify: true
+- name: 🇬🇧GB_4|2.7MB/s
+  type: http
+  server: 185.235.0.66
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: 🇨🇿CZ_1|3.2MB/s
   type: http
   server: 185.216.35.66
@@ -596,6 +711,12 @@ proxies:
   type: http
   server: 37.120.213.210
   port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_5|1.4MB/s
+  type: http
+  server: 37.120.233.34
+  port: 443
   tls: true
   skip-cert-verify: true
 - name: 🇷🇴RO_4|2.2MB/s
@@ -664,6 +785,12 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
+- name: 🇬🇧GB_7|2.9MB/s
+  type: http
+  server: 212.102.63.61
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: 🇺🇸US_20|2.8MB/s
   type: http
   server: 147.182.216.4
@@ -676,12 +803,6 @@ proxies:
 - name: 🇳🇱NL_8|3.9MB/s
   type: http
   server: 149.36.51.129
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 🇸🇪SE_1|1.8MB/s
-  type: http
-  server: 149.50.216.65
   port: 443
   tls: true
   skip-cert-verify: true
@@ -703,6 +824,19 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
+- name: 🇳🇱NL_9|1.2MB/s
+  type: http
+  server: 103.97.88.154
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  servername: 4a8c2906c96058315dffbc2b0e7ff19b-98005bea43f9ac33.apache-iv.com
+- name: 🇱🇻LV_2|1.5MB/s
+  type: http
+  server: 109.248.149.34
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: NL_speednode_0006
   type: http
   server: 84.17.47.150
@@ -715,115 +849,23 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US_speednode_0141
-  type: http
-  server: 38.28.193.188
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: EPODONIOS 10
-  type: hysteria2
-  server: 140.238.31.111
-  port: 20000
-  udp: true
-  password: C0DD7bgChaltqnh/T2az6ijM
-  sni: rmgyvpn.rest
-  obfs: salamander
-  obfs-password: C0DD7bgChaltqnh/T2az6ijM
-- name: 法国 2
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇩🇪_德国_41
+- name: 挪威+V2CROSS.COM
   type: vless
-  server: 2.59.134.226
+  server: 138.124.183.18
   port: 443
-  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  skip-cert-verify: true
-  servername: rich-falcon.cdn.cachefleet.com
+  servername: eu-east-es-1.hanvpn.biz
   reality-opts:
-    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
-  client-fingerprint: qq
-- name: 🇷🇺_俄罗斯_102
+    public-key: 2yLrSZNVyK-n2NSJuVnkokYlFS4q07OT_CfGrDiTRhY
+    short-id: 25b5a7681806bc97
+  client-fingerprint: chrome
+- name: vless-1155247902
   type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pr-media.pepro.site
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: pr-media.pepro.site
-    udp: true
-- name: 🏳️_未知_413
-  type: vless
-  server: cf.090227.xyz
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.fuckingnigga.eu.cc
-    udp: true
-- name: 🏳️_未知_417
-  type: vless
-  server: itarmy.com.ua
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.fuckingnigga.eu.cc
-    udp: true
-- name: 🏳️_未知_418
-  type: vless
-  server: www.shopify.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.fuckingnigga.eu.cc
-    udp: true
-- name: 德国+V2CROSS.COM
-  type: vless
-  server: s8748.okgg.top
-  port: 10829
-  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: u643766u2c5f47d6s8746.gogocs.xyz
-- name: 美国纽约州水牛城+ColoCrossing数据中心
-  type: vless
-  server: 198.12.124.74
-  port: 10829
-  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: u643766u5e20ed1cs709.gogocs.xyz
-- name: vless-1155247850
-  type: vless
-  server: 162.159.45.19
-  port: 80
+  server: 162.159.39.218
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   network: ws
@@ -831,44 +873,62 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    udp: true
-- name: vless-1170289102
+- name: vless-1171881317
   type: vless
-  server: 43.201.26.155
-  port: 8686
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  udp: true
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
-  client-fingerprint: chrome
-- name: vless-1152699452
-  type: vless
-  server: 31.76.119.117
-  port: 443
-  uuid: 55ed97fc-77d1-4802-baf3-acef70776331
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.orpheous.ru
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  client-fingerprint: safari
-- name: 🇳🇱 荷兰 | NLD 11
-  type: vless
-  server: 172.67.203.138
-  port: 8080
-  uuid: 015fada5-2c95-4251-9c58-39fa3abf1e24
+  server: 162.159.38.127
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoidzY2QTdySkdOeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+    path: /?ed=2560security=tls
     headers:
-      Host: server17.peekconfig1.workers.dev
-    udp: true
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: vless-1155247845
+  type: vless
+  server: 172.64.229.170
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: vless-928812952
+  type: vless
+  server: 172.64.229.170
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: vless-941486974
+  type: vless
+  server: 172.64.229.2
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 香港 | HKG
+  type: vless
+  server: 194.34.175.11
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: localhost
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 | SGP 3
   type: vless
   server: 13.212.10.131
@@ -882,127 +942,32 @@ proxies:
     public-key: 3fKobetnIIC1NFGtQEPkBx75UdTMmq886OAr9bOt2S4
     short-id: c919090e3c660c
   client-fingerprint: firefox
-- name: https-379383356
-  type: http
-  server: fan.596189.xyz
-  port: 443
-  tls: true
-  servername: fan.596189.xyz
-- name: 🇫🇷FR_678|861KB/s|C002-260622
+- name: 🇫🇷FR_700|901KB/s|B007-260618
   type: vless
-  server: 172.67.133.44
-  port: 2086
-  uuid: af19ce98-b58b-43ef-9f0d-2ae6343e28fe
-  udp: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQTdKUTVZeVVoQWpjamhqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
-    headers:
-      Host: blue-disk-1124.sawmansafi.workers.dev
-    udp: true
-- name: 🇫🇷FR_1572|536KB/s|M003-260806
-  type: vless
-  server: 172.67.179.98
+  server: icook.tw
   port: 8880
-  uuid: 392ed37c-c0cd-472e-8765-a94677005b0b
+  uuid: aa7461af-3176-42a3-8974-59930189c521
   udp: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: frosty-bread-788f.398.workers.dev
-    udp: true
-- name: 🇫🇷FR_249|398KB/s|C002-260622
+      Host: round-block-e864.326.workers.dev
+- name: 🇫🇷FR_740|700KB/s|B007-260618
   type: vless
-  server: 172.67.134.102
+  server: 172.67.81.7
   port: 8880
-  uuid: abd3678b-f654-404c-adc7-1355865197e1
+  uuid: 2ced390a-4252-4541-8985-730f7a06bb45
   udp: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiNUZVWmdPNWNpTW5LOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: vless.a-amr79.workers.dev
-    udp: true
-- name: 🇫🇷FR_790|456KB/s|C002-260622
+      Host: flat-butterfly-d503.411-d1e.workers.dev
+- name: 🇫🇷FR_1660|669KB/s|A004-260618
   type: vless
-  server: 45.40.145.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
-    udp: true
-- name: 🇫🇷FR_1610|969KB/s|M003-260806
-  type: vless
-  server: 45.40.147.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-    udp: true
-- name: 🇫🇷FR_501|556KB/s|A001-260618
-  type: vless
-  server: 172.67.151.243
-  port: 2086
-  uuid: b4a16091-a25d-4d33-aee3-f5ae04f34b14
-  udp: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRjJEdlF3U251aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0Ni4xMDMuMTEzLjE1OCIsIjEwMy45Ny44OC4xMzMiLCIxOTQuMTgwLjE4OC4yNDEiLCIxMTYuMjAyLjEzMi4yMDUiXX0=
-    headers:
-      Host: blue-brook-cc73.karren391.workers.dev
-    udp: true
-- name: 🇫🇷FR_41|330KB/s
-  type: vless
-  server: 45.131.211.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime06.workers.dev
-    udp: true
-- name: 🇫🇷FR_1539|1.4MB/s|B007-260618
-  type: vless
-  server: 172.67.118.45
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.com
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    udp: true
-- name: 🇺🇸US_787|866KB/s|A004-260618
-  type: vless
-  server: 38.244.20.160
-  port: 443
-  uuid: 461396cc-2f0a-42cc-b224-d122ba073a2a
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: 1wd_6aAjmtQ3lIbMeNq5zs-5x_z9fL7h9rZwFjBPaG8
-    short-id: 041cf34629de8469
-  client-fingerprint: safari
-- name: 🇫🇷FR_1028|8.3MB/s|A004-260618
-  type: vless
-  server: 172.64.229.2
-  port: 2086
+  server: 172.64.229.170
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   network: ws
@@ -1010,49 +975,68 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    udp: true
-- name: 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  type: socks5
-  server: 51.178.49.241
-  port: 1088
-  udp: true
-- name: 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  type: http
-  server: fan.132031.xyz
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  type: http
-  server: 103.82.101.44
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  servername: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-- name: 580|🇫🇷FR_106|295KB/s|C002-260622 0...
+- name: 🇫🇷FR_1340|514KB/s|P002-260618
   type: vless
-  server: 103.169.142.30
+  server: 172.64.144.180
   port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: e9d9f06f-d5dd-460a-998f-52efc4732636
   udp: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: vms.lifetime38.workers.dev
-    udp: true
-- name: 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
+      Host: bitter-meadow-1d60.313-0f9.workers.dev
+- name: 🇫🇷FR_1301|546KB/s|M003-260806
+  type: vless
+  server: 172.66.47.45
+  port: 443
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  udp: true
+  tls: true
+  servername: ezaccess-project-f62c30.pages.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+    max-early-data: 2560
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 🇺🇸US_701|251KB/s|S004-260618
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇫🇷FR_1331|682KB/s|S001-260618
+  type: vless
+  server: 172.67.153.109
+  port: 8080
+  uuid: 45643c5f-ffc2-46f3-b82c-329aea9962d4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkRZWDhCN01sIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+    headers:
+      Host: server10.sotowoy673.workers.dev
+    max-early-data: 2560
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
   type: http
-  server: 146.70.242.130
+  server: 141.94.16.4
   port: 443
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+- name: 489|D🔴🇸🇬_dokng.com_8496ce1e
   type: http
-  server: 146.70.242.146
+  server: 104.248.148.240
   port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
   tls: true
   skip-cert-verify: true
+  servername: us.acskey.co
 - name: '508,509|俄罗斯 030 #1'
   type: vless
   server: 188.225.33.141
@@ -1066,25 +1050,6 @@ proxies:
     path: /api/connect
     headers:
       Host: wstg.datasynctrue.online
-    udp: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  type: http
-  server: 138.199.35.212
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  type: http
-  server: purecambogiasl.live
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
-  type: http
-  server: 138.199.35.215
-  port: 9002
-  tls: true
-  skip-cert-verify: true
 - name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   type: http
   server: 138.199.35.204
@@ -1097,21 +1062,9 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
-  type: http
-  server: mmgr.club
-  port: 443
-  tls: true
-  skip-cert-verify: true
 - name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
   type: http
   server: 138.199.35.220
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
-  type: http
-  server: 138.199.35.219
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -1127,16 +1080,18 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
+- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
   type: http
-  server: 38.95.111.226
-  port: 9443
+  server: 138.199.35.206
+  port: 9002
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   type: http
-  server: 138.199.35.201
+  server: 138.199.35.211
   port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
@@ -1158,22 +1113,10 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
-  type: http
-  server: 138.199.35.213
-  port: 9002
-  tls: true
-  skip-cert-verify: true
 - name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
   type: http
   server: 138.199.35.195
   port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
-  type: http
-  server: 149.88.21.129
-  port: 443
   tls: true
   skip-cert-verify: true
 - name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
@@ -1199,26 +1142,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 991cc80f13caf81d3426ddebb2da7f49-92ff472ddc24e5b7.apache-iv.com
-- name: 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  type: http
-  server: 162.243.146.243
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-  servername: a2f392f3.acsnet.co
-- name: 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  type: socks5
-  server: 45.61.129.165
-  port: 9050
-  udp: true
-- name: 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
-  type: http
-  server: 209.148.53.153
-  port: 8090
-  tls: true
-  skip-cert-verify: true
 - name: 502|美国+加利福尼亚州洛杉矶
   type: vless
   server: s849.kukuss.top
@@ -1229,11 +1152,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: u643766u99a93686s848.gogocs.xyz
-- name: 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  udp: true
 - name: 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   type: http
   server: fan.571589.xyz
@@ -1246,13 +1164,11 @@ proxies:
   server: 101.36.104.46
   port: 10808
   udp: true
-- name: 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+- name: 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   type: socks5
-  server: 47.242.19.215
-  port: 8899
+  server: 123.58.219.171
+  port: 10808
   udp: true
-  username: admin
-  password: admin
 - name: 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
   type: socks5
   server: 47.239.116.165
@@ -1260,12 +1176,39 @@ proxies:
   udp: true
   username: admin
   password: admin
+- name: 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
+  type: socks5
+  server: 47.239.98.42
+  port: 1080
+  udp: true
+  username: abc123
+  password: abc123
 - name: 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
   type: http
   server: fan.240104.xyz
   port: 443
   tls: true
   skip-cert-verify: true
+- name: 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  type: http
+  server: 212.102.63.31
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  type: http
+  server: 5.101.149.245
+  port: 8443
+  tls: true
+  skip-cert-verify: true
+- name: 489,508,509,528,580,581,636|🇨🇳 中国 006
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  udp: true
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -1274,76 +1217,88 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -1355,78 +1310,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -1434,76 +1369,88 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -1515,78 +1462,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -1595,76 +1522,88 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -1676,154 +1615,146 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -1835,154 +1766,146 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -1994,78 +1917,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -2074,76 +1977,88 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2155,78 +2070,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -2234,76 +2129,88 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2315,78 +2222,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 📲 电报信息
   type: select
   proxies:
@@ -2394,76 +2281,88 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2475,78 +2374,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -2555,76 +2434,88 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2636,78 +2527,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -2715,76 +2586,88 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2796,152 +2679,144 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -2953,153 +2828,145 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -3111,78 +2978,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -3191,76 +3038,88 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 每天更新，请加电报群防止失联
-  - 🇨🇳_中国_52
-  - 🇩🇪_德国_57
-  - 🇷🇺_俄罗斯_118
-  - 🇷🇺_俄罗斯_119
-  - 🇬🇧_英国_130
-  - 🏳️_未知_167
+  - 日期：09-07
+  - 免费VPN：https://tt.vg/FJOE2Mm
+  - 🇩🇪_德国_38
+  - 🇩🇪_德国_41
+  - 🇹🇷_土耳其_43
+  - 🇵🇱_波兰_64
+  - 🇩🇪_德国_74
+  - 🇷🇺_俄罗斯_102
+  - 🇷🇺_俄罗斯_276
+  - 🇷🇺_俄罗斯_291
+  - 🇺🇸_美国_412
+  - 🏳️_未知_413
+  - 🏳️_未知_414
+  - 🇺🇸_美国_415
+  - 🏳️_未知_416
+  - 🏳️_未知_417
+  - 🏳️_未知_418
+  - 🏳️_未知_419
+  - 🏳️_未知_420
+  - 🏳️_未知_421
+  - 🏳️_未知_422
+  - 🏳️_未知_423
+  - 🏳️_未知_426
+  - 🏳️_未知_428
+  - 🏳️_未知_429
+  - 🏳️_未知_430
   - 香港5|@ripaojiedian
-  - 🇺🇸 机场推荐:dafei.de 美国 01
   - 🇺🇸 机场推荐:dafei.de 美国 03
-  - lots1VUB_http
-  - '🇳🇴 [VL] Норвегия #1711 | РосТуннель t.me/rjsxrd'
-  - 🇵🇱 波兰 | POL t.me/rjsxrd
-  - 🇺🇸_美国_412 t.me/rjsxrd
-  - 🇩🇪 德国 | DEU t.me/rjsxrd 3
-  - '🇺🇸 [VL] США #1581 | РосТуннель t.me/rjsxrd'
+  - 🇰🇷 机场推荐:dafei.de 韩国 01
+  - https-379383356
+  - 4c3XAfBS_http
+  - vless-1168885953
+  - '🇰🇿 [VL] Казахстан #14947 | РосТуннель t.me/rjsxrd'
   - '🇺🇸 [VL] США #3098 | РосТуннель t.me/rjsxrd'
-  - '🇵🇱 [VL] Польша #6838 | РосТуннель t.me/rjsxrd'
-  - '🇭🇰 [VL] Гонконг #5535 | РосТуннель t.me/rjsxrd'
+  - '🇧🇪 [VL] Бельгия #18288 | РосТуннель t.me/rjsxrd'
   - '🇭🇰 [VL] Гонконг #5534 | РосТуннель t.me/rjsxrd'
-  - 🇮🇳 印度 | IND t.me/rjsxrd
-  - 🇹🇷 土耳其 | TUR t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇩🇪 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd
+  - '🇰🇬 [VL] Киргизия #13792 | РосТуннель t.me/rjsxrd'
   - Бесплатный VPN Tg:VlessForU 🇫🇷 t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇷🇺 t.me/rjsxrd 2
-  - Бесплатный VPN Tg:VlessForU 🇺🇸 t.me/rjsxrd 4
   - 🇫🇮 AetrisVPN t.me/rjsxrd
-  - Бесплатный VPN Tg:VlessForU 🇳🇱 t.me/rjsxrd 3
   - 🇫🇮 AetrisVPN t.me/rjsxrd 2
-  - 🇱🇻 Latvia, Riga | [BL] t.me/rjsxrd
-  - ktBzFzgN_socks
-  - y1TRLVPk_http
-  - LjsoVWX7_http
-  - tHCgCy7y_http
-  - yLbs8S6v_http
-  - FrqgEHPb_http
-  - 9wEwbydy_http
-  - vNSuAS4W_http
-  - XuHcfqAV_http
-  - Yahpz5nC_http
-  - Eu0gtTO4_http
-  - vHH7GYyC_http
-  - NWztpG5J_http
-  - gil3DAF4_http
-  - SgBAtWNP_socks
-  - 🇩🇪DE_12|4.2MB/s
-  - 8qt6PR0u_http
-  - O19dwQew_http
-  - SLbaIFfV_http
-  - agK0wciA_http
-  - Pyoxu4ZB_http
-  - r3x5yeCA_http
-  - jVwQDc6a_http
-  - KNsq81DX_http
-  - x6IyvzFD_http
-  - Brpxb5Il_http
-  - XtJnxxry_http
-  - eyR7eaRi_http
-  - jL5qaBsF_http
+  - 印度
+  - 阿联酋
+  - RV6a3qXc_http
+  - tpB2UOto_http
+  - 4ChUFyfQ_http
+  - JTWG5yM3_http
+  - OWG1XF0r_http
+  - 4VNd8xe9_http
+  - Ai5WAxRl_http
+  - LHLmYsFL_http
+  - 2YO6eVxT_http
+  - xG2DEWH1_http
+  - FFFtQd1W_http
+  - Yjr8sgeC_http
+  - E6gs0PxX_http
+  - Q63zjxO8_http
+  - BG3Ht2R2_http
+  - Wz66vDUy_http
+  - Lz6yajCN_socks
+  - 28UTEoRp_http
+  - XDH1XYb1_http
+  - l8nQs5It_http
+  - meIafcv8_http
+  - cKdh2nG1_http
+  - wzkwDGgo_http
+  - m8FWg3Py_http
+  - lGF941HN_http
+  - q9qbfD5h_http
+  - VdDhugcy_http
+  - vLX9EdZv_http
+  - 8fFIDYsI_http
   - NL_speednode_0004
   - NL_speednode_0007
   - NL_speednode_0009
   - RO_speednode_0097
   - 🇸🇬SG_1|1.9MB/s
+  - 🇬🇧GB_4|2.7MB/s
   - 🇨🇿CZ_1|3.2MB/s
   - 🇺🇸US_7|3.9MB/s
   - 🇺🇸US_8|3.4MB/s
   - 🇨🇭CH_1|3.5MB/s
+  - 🇬🇧GB_5|1.4MB/s
   - 🇷🇴RO_4|2.2MB/s
   - 🇳🇱NL_6|3.2MB/s
   - 🇺🇸US_16|4.5MB/s
@@ -3272,78 +3131,58 @@ proxy-groups:
   - 🇷🇴RO_7|1.1MB/s
   - 🇺🇸US_19|3.3MB/s
   - 🇩🇰DK_1|2.8MB/s
+  - 🇬🇧GB_7|2.9MB/s
   - 🇺🇸US_20|2.8MB/s
   - 🇳🇱NL_8|3.9MB/s
-  - 🇸🇪SE_1|1.8MB/s
   - 🇵🇹PT_1|1014KB/s
   - 🇦🇱AL_1|2.5MB/s
   - 🇦🇱AL_2|2.4MB/s
+  - 🇳🇱NL_9|1.2MB/s
+  - 🇱🇻LV_2|1.5MB/s
   - NL_speednode_0006
   - NL_speednode_0010
-  - US_speednode_0141
-  - EPODONIOS 10
-  - 法国 2
-  - 🇩🇪_德国_41
-  - 🇷🇺_俄罗斯_102
-  - 🏳️_未知_413
-  - 🏳️_未知_417
-  - 🏳️_未知_418
-  - 德国+V2CROSS.COM
-  - 美国纽约州水牛城+ColoCrossing数据中心
-  - vless-1155247850
-  - vless-1170289102
-  - vless-1152699452
-  - 🇳🇱 荷兰 | NLD 11
+  - 挪威+V2CROSS.COM
+  - vless-1155247902
+  - vless-1171881317
+  - vless-1155247845
+  - vless-928812952
+  - vless-941486974
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
-  - https-379383356
-  - 🇫🇷FR_678|861KB/s|C002-260622
-  - 🇫🇷FR_1572|536KB/s|M003-260806
-  - 🇫🇷FR_249|398KB/s|C002-260622
-  - 🇫🇷FR_790|456KB/s|C002-260622
-  - 🇫🇷FR_1610|969KB/s|M003-260806
-  - 🇫🇷FR_501|556KB/s|A001-260618
-  - 🇫🇷FR_41|330KB/s
-  - 🇫🇷FR_1539|1.4MB/s|B007-260618
-  - 🇺🇸US_787|866KB/s|A004-260618
-  - 🇫🇷FR_1028|8.3MB/s|A004-260618
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_8c55dcfd
-  - 489|A🟢🇫🇷[🎬🤖📺🎭]_dokng.com_f9617009
-  - 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
-  - 580|🇫🇷FR_106|295KB/s|C002-260622 0...
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
-  - 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_6c7ec50c
+  - 🇫🇷FR_700|901KB/s|B007-260618
+  - 🇫🇷FR_740|700KB/s|B007-260618
+  - 🇫🇷FR_1660|669KB/s|A004-260618
+  - 🇫🇷FR_1340|514KB/s|P002-260618
+  - 🇫🇷FR_1301|546KB/s|M003-260806
+  - 🇺🇸US_701|251KB/s|S004-260618
+  - 🇫🇷FR_1331|682KB/s|S001-260618
+  - 489|C🟠🇫🇷[🤖📺🎭🎪]_dokng.com_67435526
+  - 489|D🔴🇸🇬_dokng.com_8496ce1e
   - '508,509|俄罗斯 030 #1'
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_74d3e768
-  - 489|D🔴🇺🇸[📺🎪✨✈️]_dokng.com_63e28654
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_256dedbc
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_fb61d702
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_d9c98f77
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_808de880
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ccc98c47
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_249361ae
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8668082d
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_253eed88
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_8e3e1d23
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_02619dd0
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_101583a6
+  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_91e30e8f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_2a3ab6a1
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_067d2b9f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_f41808b3
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_4433500a
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_ff5d6731
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c04b578f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_1d385d2c
   - 489|D🔴🇺🇸[📺]_dokng.com_5476324f
   - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_b1448db8
-  - 489|D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_c09c3f93
-  - 489|D🔴🇺🇸[📺]_dokng.com_7f59cd1e
-  - 489|D🔴🇺🇸[📺🎭🎪🔍]_dokng.com_00f6512a
   - 502|美国+加利福尼亚州洛杉矶
-  - 489|D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_d5ac756e
   - 489|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_4920bfe7
   - 489|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_1b81f86d
-  - 489|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+  - 489|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
   - 489|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
+  - 489|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
   - 489|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
+  - 489|D🔴🇬🇧[🎬🤖📺🎭]_dokng.com_485cc62b
+  - 489|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_7d7f3a77
+  - 489,508,509,528,580,581,636|🇨🇳 中国 006
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
