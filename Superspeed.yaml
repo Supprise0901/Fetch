@@ -64,22 +64,15 @@
     ],
     "outbounds": [
         {
-            "tag": "lots1VUB_http",
-            "type": "http",
-            "server": "138.199.35.216",
-            "server_port": 9002,
+            "server": "fan.596189.xyz",
+            "server_port": 443,
+            "tag": "https-379383356",
             "tls": {
                 "enabled": true,
-                "insecure": true
-            }
-        },
-        {
-            "tag": "378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1",
-            "type": "shadowsocks",
-            "server": "121.46.230.137",
-            "server_port": 65443,
-            "method": "aes-256-cfb",
-            "password": "7eadc6dbe2ae"
+                "insecure": false,
+                "server_name": "fan.596189.xyz"
+            },
+            "type": "http"
         },
         {
             "tag": "proxy",
@@ -87,16 +80,14 @@
             "outbounds": [
                 "auto",
                 "direct",
-                "378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1",
-                "lots1VUB_http"
+                "https-379383356"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1",
-                "lots1VUB_http"
+                "https-379383356"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
