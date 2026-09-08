@@ -5,13 +5,25 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
+- name: 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   type: hysteria2
-  server: vpn-us-003.fastervpn.world
+  server: de-tg.fastlanehosting.ru
   port: 443
   udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-003.fastervpn.world
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  sni: de-tg.fastlanehosting.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  udp: true
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: news.gazette.help
   skip-cert-verify: true
   alpn:
   - h3
@@ -29,19 +41,33 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
+- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
   type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
+  server: 104.165.205.41
+  port: 8443
   udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
+  password: 0925fa29-0ec8-421a-a726-1ea2ac8adbf0
+  sni: speedtestmark.com
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
+- name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  type: hysteria2
+  server: 108.59.244.158
+  port: 443
+  udp: true
+  password: 4d13eecf03ea0e949188193c4a4f102a
+  sni: web.max.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   type: hysteria2
   server: 158.180.88.172
   port: 45534
@@ -51,79 +77,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  type: hysteria2
-  server: 103.158.117.74
-  port: 51887
-  udp: true
-  password: yalx0jCCiWDGCwK5WizqUr6N
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  type: hysteria2
-  server: 5.83.129.153
-  port: 20088
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 50 Mbps
-- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  type: hysteria2
-  server: 104.165.205.41
-  port: 8443
-  udp: true
-  password: 0925fa29-0ec8-421a-a726-1ea2ac8adbf0
-  sni: speedtestmark.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
-  type: hysteria2
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -138,28 +91,30 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
+- name: 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
   type: hysteria2
-  server: 23.95.75.23
-  port: 55932
+  server: 31.57.248.176
+  port: 50160
   udp: true
-  password: 8e2419a7-ef0d-4b19-b52b-3333a0edcba8
+  password: b0917015b656b3dd2286b5633af0c5c1
   sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+- name: 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   type: hysteria2
-  server: brb.nnpy.org
-  port: 11100
+  server: 87.58.220.77
+  port: 443
   udp: true
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: www.bing.com
+  password: 473dc64853fcc8a63172876773fec5a3
+  sni: m.vk.com
   skip-cert-verify: true
   alpn:
   - h3
+  - h2
+  - http/1.1
   up: 10 Mbps
   down: 100 Mbps
 proxy-groups:
@@ -170,19 +125,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -190,19 +141,15 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -211,57 +158,45 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -270,19 +205,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -290,19 +221,15 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -310,19 +237,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -331,19 +254,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -351,54 +270,42 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -407,19 +314,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
-  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong, HK · UCLOUD INFORMATION… | 152.32.254.68
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
