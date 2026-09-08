@@ -1,11 +1,331 @@
-proxies:
-  - {"name":"🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork","type":"hysteria2","server":"gta.internet-card.sbs","port":443,"udp":true,"password":"mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj","sni":"gta.internet-card.sbs","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork","type":"hysteria2","server":"158.180.88.172","port":45534,"udp":true,"password":"z4zi7wYc7s","sni":"go.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork","type":"hysteria2","server":"de-tg.fastlanehosting.ru","port":443,"udp":true,"password":"M2NbFywBXjS9Ova8SgqRrQkp","sni":"de-tg.fastlanehosting.ru","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork","type":"hysteria2","server":"dg2.mangshe.xyz","port":2056,"udp":true,"password":"41f0d6d3-4a45-4635-8225-2abd2284189b","sni":"dg2.mangshe.xyz","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork","type":"hysteria2","server":"129.159.156.109","port":50160,"udp":true,"password":"f25f19f29ce3fb53a35bf1b35b452a43","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork","type":"hysteria2","server":"103.158.117.74","port":51887,"udp":true,"password":"yalx0jCCiWDGCwK5WizqUr6N","sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"obfs":"salamander","obfs-password":"yalx0jCCiWDGCwK5WizqUr6N","up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b","type":"hysteria2","server":"news.gazette.help","port":443,"udp":true,"password":"sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX","sni":"news.gazette.help","alpn":["h3"],"up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088","type":"hysteria2","server":"5.83.129.153","port":20088,"udp":true,"password":"dongtaiwang.com","sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"up":"10 Mbps","down":"50 Mbps"}
-  - {"name":"🇯🇵 Osaka, JP · Amazon.com | 6v2tii2i.zf-mix-1.9999231.xyz","type":"hysteria2","server":"6v2tii2i.zf-mix-1.9999231.xyz","port":2035,"udp":true,"password":"a7c5d30b-ce9b-4e34-b5cb-66f8308790ef","sni":"az-wy.9999231.xyz","skip-cert-verify":true,"alpn":["h3"],"obfs":"salamander","obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA==","up":"10 Mbps","down":"100 Mbps"}
-  - {"name":"🇯🇵 Tokyo, JP · Amazon.com | br8l8lyl.zf-mix-4.9999231.xyz","type":"hysteria2","server":"br8l8lyl.zf-mix-4.9999231.xyz","port":2038,"udp":true,"password":"a7c5d30b-ce9b-4e34-b5cb-66f8308790ef","sni":"ng-wy.9999231.xyz","skip-cert-verify":true,"alpn":["h3"],"obfs":"salamander","obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA==","up":"10 Mbps","down":"100 Mbps"}
+{
+    "log": {
+        "disabled": false,
+        "level": "warn",
+        "timestamp": true
+    },
+    "experimental": {
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "secret": "",
+            "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+            "external_ui_download_detour": "direct",
+            "default_mode": "rule"
+        }
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "proxyDns",
+                "type": "tls",
+                "server": "8.8.8.8",
+                "server_port": 853,
+                "detour": "proxy"
+            },
+            {
+                "tag": "localDns",
+                "type": "https",
+                "server": "223.5.5.5",
+                "path": "/dns-query"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "gh-proxy.com",
+                    "ghproxy.com",
+                    "cdn.jsdelivr.net",
+                    "testingcf.jsdelivr.net"
+                ],
+                "server": "localDns"
+            },
+            {
+                "rule_set": "geosite-category-ads-all",
+                "action": "reject"
+            },
+            {
+                "clash_mode": "direct",
+                "server": "localDns"
+            },
+            {
+                "clash_mode": "global",
+                "server": "proxyDns"
+            }
+        ],
+        "strategy": "ipv4_only"
+    },
+    "inbounds": [
+        {
+            "type": "mixed",
+            "listen": "127.0.0.1",
+            "listen_port": 2080
+        }
+    ],
+    "outbounds": [
+        {
+            "tag": "🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "gta.internet-card.sbs",
+            "server_port": 443,
+            "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "gta.internet-card.sbs",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "129.159.156.109",
+            "server_port": 50160,
+            "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "de-tg.fastlanehosting.ru",
+            "server_port": 443,
+            "password": "M2NbFywBXjS9Ova8SgqRrQkp",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "de-tg.fastlanehosting.ru",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "158.180.88.172",
+            "server_port": 45534,
+            "password": "z4zi7wYc7s",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "go.microsoft.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "vpn-uk-002.fastervpn.world",
+            "server_port": 443,
+            "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn-uk-002.fastervpn.world",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria",
+            "type": "hysteria",
+            "server": "5.83.129.153",
+            "server_port": 20088,
+            "up_mbps": 10,
+            "down_mbps": 50,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr",
+            "type": "hysteria2",
+            "server": "152-69-231-175.liao.kdns.fr",
+            "server_port": 50160,
+            "password": "1beb216e3f60aea9555dae60d219a5ca",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "152-69-231-175.liao.kdns.fr",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932",
+            "type": "hysteria2",
+            "server": "23.95.75.23",
+            "server_port": 55932,
+            "password": "8e2419a7-ef0d-4b19-b52b-3333a0edcba8",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org",
+            "type": "hysteria2",
+            "server": "brb.nnpy.org",
+            "server_port": 11100,
+            "password": "df8d55f9-fb51-442d-902a-bf8160dc051b",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 United States · Serv.host Group | fl.larpvpn.space",
+            "type": "hysteria2",
+            "server": "fl.larpvpn.space",
+            "server_port": 4434,
+            "password": "9fd994ad-d36c-476d-96c7-25f10bbdf2cb",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "fl.larpvpn.space",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "proxy",
+            "type": "selector",
+            "outbounds": [
+                "auto",
+                "direct",
+                "🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr",
+                "🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932",
+                "🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork",
+                "🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork",
+                "🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork",
+                "🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork",
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria",
+                "🇺🇸 United States · Serv.host Group | fl.larpvpn.space",
+                "🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org",
+                "🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork"
+            ]
+        },
+        {
+            "tag": "auto",
+            "type": "urltest",
+            "outbounds": [
+                "🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr",
+                "🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932",
+                "🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork",
+                "🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork",
+                "🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork",
+                "🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork",
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria",
+                "🇺🇸 United States · Serv.host Group | fl.larpvpn.space",
+                "🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org",
+                "🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": "10m",
+            "tolerance": 50
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "block",
+            "tag": "block"
+        }
+    ],
+    "route": {
+        "default_domain_resolver": "localDns",
+        "auto_detect_interface": true,
+        "final": "proxy",
+        "rules": [
+            {
+                "action": "sniff"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
+            },
+            {
+                "network": "udp",
+                "port": 443,
+                "action": "reject"
+            },
+            {
+                "rule_set": "geosite-category-ads-all",
+                "action": "reject"
+            },
+            {
+                "clash_mode": "direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "global",
+                "outbound": "proxy"
+            },
+            {
+                "domain": [
+                    "clash.razord.top",
+                    "yacd.metacubex.one",
+                    "yacd.haishan.me",
+                    "d.metacubex.one"
+                ],
+                "outbound": "direct"
+            }
+        ],
+        "rule_set": [
+            {
+                "tag": "geosite-category-ads-all",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
+                "download_detour": "direct"
+            }
+        ]
+    }
+}
