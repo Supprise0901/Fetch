@@ -5,6 +5,18 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-us-003.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-003.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   type: hysteria2
   server: gta.internet-card.sbs
@@ -17,13 +29,13 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+- name: 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   type: hysteria2
-  server: 129.159.156.109
-  port: 50160
+  server: de-tg.fastlanehosting.ru
+  port: 443
   udp: true
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  sni: de-tg.fastlanehosting.ru
   skip-cert-verify: true
   alpn:
   - h3
@@ -41,37 +53,51 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
+- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   type: hysteria2
-  server: vpn-uk-002.fastervpn.world
-  port: 443
+  server: 103.158.117.74
+  port: 51887
   udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
+  password: yalx0jCCiWDGCwK5WizqUr6N
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  type: hysteria2
+  server: 104.165.205.41
+  port: 8443
+  udp: true
+  password: 0925fa29-0ec8-421a-a726-1ea2ac8adbf0
+  sni: speedtestmark.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+- name: 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   type: hysteria2
-  server: 5.83.129.153
-  port: 20088
+  server: 172.245.234.168
+  port: 55001
   udp: true
-  password: dongtaiwang.com
-  sni: apple.com
+  password: 8e2419a7-ef0d-4b19-b52b-3333a0edcba8
+  sni: www.bing.com
   skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 50 Mbps
-- name: 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
   alpn:
   - h3
   up: 10 Mbps
@@ -88,17 +114,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
-  type: hysteria2
-  server: fl.larpvpn.space
-  port: 4434
-  udp: true
-  password: 9fd994ad-d36c-476d-96c7-25f10bbdf2cb
-  sni: fl.larpvpn.space
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -107,14 +122,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -122,14 +138,15 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -138,42 +155,45 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -182,14 +202,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -197,14 +218,15 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 📲 电报信息
   type: select
   proxies:
@@ -212,14 +234,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -228,14 +251,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -243,39 +267,42 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -284,14 +311,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇺🇸 US | vpn-us-003.fastervpn.world | HYSTERIA2 [B532] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
-  - 🇬🇧 GB | vpn-uk-002.fastervpn.world | HYSTERIA2 [EC97] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 140.238.213.114 :50160
+  - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
   - 🇺🇸 New York, US · BrainStorm Network | 23.95.75.23 :55932
-  - 🇺🇸 United States · Serv.host Group | fl.larpvpn.space
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
