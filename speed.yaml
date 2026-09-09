@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
-  type: hysteria2
-  server: news.gazette.help
-  port: 443
-  udp: true
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: news.gazette.help
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   type: hysteria2
   server: gta.internet-card.sbs
@@ -29,7 +17,31 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
+- name: 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  type: hysteria2
+  server: 47.129.189.148
+  port: 443
+  udp: true
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  type: hysteria2
+  server: 205.237.109.174
+  port: 8443
+  udp: true
+  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  sni: hopp-netherland-new.dynuddns.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   type: hysteria2
   server: 104.165.205.41
   port: 8443
@@ -41,20 +53,32 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   type: hysteria2
-  server: 108.59.244.158
-  port: 443
+  server: 103.158.117.74
+  port: 51887
   udp: true
-  password: 4d13eecf03ea0e949188193c4a4f102a
-  sni: web.max.ru
+  password: yalx0jCCiWDGCwK5WizqUr6N
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  - h2
-  - http/1.1
+  obfs: salamander
+  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
+  type: hysteria2
+  server: 5.83.129.153
+  port: 20088
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 50 Mbps
 - name: 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   type: hysteria2
   server: 158.180.88.172
@@ -79,32 +103,275 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
+- name: 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
   type: hysteria2
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
-  type: hysteria2
-  server: 87.58.220.77
+  server: cze-02.node.lumixnet.com
   port: 443
   udp: true
-  password: 473dc64853fcc8a63172876773fec5a3
-  sni: m.vk.com
+  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
+  sni: cze-02.node.lumixnet.com
   skip-cert-verify: true
   alpn:
   - h3
-  - h2
-  - http/1.1
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  type: hysteria2
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  type: hysteria2
+  server: good-route.whit3.net
+  port: 443
+  udp: true
+  password: 1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a
+  sni: good-route.whit3.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  type: hysteria2
+  server: lastchance.whit3.net
+  port: 443
+  udp: true
+  password: 1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a
+  sni: lastchance.whit3.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  type: vmess
+  server: 2.27.54.132
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  type: vmess
+  server: 2.27.16.177
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  type: vmess
+  server: 185.137.223.71
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  type: vmess
+  server: 193.181.212.81
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  type: vmess
+  server: 31.77.223.21
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  type: vmess
+  server: 64.188.106.254
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  type: vmess
+  server: 5.255.109.47
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  type: vmess
+  server: 80.240.252.241
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  type: vmess
+  server: 95.85.233.138
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  type: vmess
+  server: 185.232.204.222
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  type: vmess
+  server: 195.85.23.225
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  type: vmess
+  server: 132.243.22.80
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  type: vmess
+  server: 64.188.82.159
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 29
+  type: vmess
+  server: 95.81.126.119
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -113,14 +380,32 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -128,14 +413,32 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -144,42 +447,96 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -188,14 +545,32 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -203,14 +578,32 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 📲 电报信息
   type: select
   proxies:
@@ -218,14 +611,32 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -234,14 +645,32 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -249,39 +678,93 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -290,14 +773,32 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇷🇺 RU | news.gazette.help | HYSTERIA2 [AD90] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.41
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
+  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
-  - 🇭🇰 Hong Kong, HK · w1n | 31.57.248.176 :50160
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇺🇸 United States · Serv.host Group | cze-02.node.lumixnet.com :443
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou
+  - 🇵🇱 Warsaw, PL · Paul Sagov | good-route.whit3.net :443
+  - 🇳🇱 Amsterdam, NL · Hostkey | lastchance.whit3.net
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 29
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
