@@ -41,6 +41,32 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  type: hysteria2
+  server: 103.158.117.74
+  port: 51887
+  udp: true
+  password: yalx0jCCiWDGCwK5WizqUr6N
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
+  type: hysteria2
+  server: 47.241.108.227
+  port: 50160
+  udp: true
+  password: 436114b5f36b2e704bdfa0927d57b6cd
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   type: hysteria2
   server: 91.240.87.46
@@ -115,25 +141,13 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
+- name: 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   type: hysteria2
-  server: 205.237.109.174
-  port: 8443
+  server: kz03hy01.tcp-reset-club.net
+  port: 443
   udp: true
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  sni: hopp-netherland-new.dynuddns.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  type: hysteria2
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
+  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  sni: kz03hy01.tcp-reset-club.net
   skip-cert-verify: true
   alpn:
   - h3
@@ -159,6 +173,86 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  type: vmess
+  server: 185.232.204.222
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  type: vmess
+  server: 195.85.23.225
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  type: vmess
+  server: 192.71.249.186
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  type: vmess
+  server: 84.75.76.16
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 17
+  type: vmess
+  server: 95.81.126.119
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -170,16 +264,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -190,16 +290,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -211,16 +317,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -230,16 +342,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -249,16 +367,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -270,16 +394,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -290,16 +420,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 📲 电报信息
   type: select
   proxies:
@@ -310,16 +446,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -331,16 +473,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -351,16 +499,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -368,16 +522,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -386,16 +546,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -407,16 +573,22 @@ proxy-groups:
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [9CFA] | @ScDevNetwork
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [1008] | @ScDevNetwork
   - 🇷🇺 RU | hy.quattro-tech.ru | HYSTERIA2 [3EA8] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇰🇷 KR | go.microsoft.com | HYSTERIA2 [D059] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [0DB6] | @ScDevNetwork
-  - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇰🇿 KZ | kz03hy01.tcp-reset-club.net | HYSTERIA2 [C01B] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 7
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 17
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
