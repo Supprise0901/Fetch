@@ -53,20 +53,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  type: hysteria2
-  server: 103.158.117.74
-  port: 51887
-  udp: true
-  password: yalx0jCCiWDGCwK5WizqUr6N
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   type: hysteria2
   server: 5.83.129.153
@@ -196,6 +182,22 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 5
+  type: vmess
+  server: 192.71.249.186
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   type: vmess
   server: 193.181.212.81
@@ -276,9 +278,9 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 16
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   type: vmess
-  server: 95.85.233.138
+  server: 84.75.76.16
   port: 443
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
@@ -292,9 +294,9 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 18
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 16
   type: vmess
-  server: 185.232.204.222
+  server: 95.85.233.138
   port: 443
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
@@ -384,7 +386,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -395,13 +396,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -417,7 +419,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -428,13 +429,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -451,7 +453,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -462,13 +463,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -483,7 +485,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -494,13 +495,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -515,7 +517,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -526,13 +527,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -549,7 +551,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -560,13 +561,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -582,7 +584,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -593,13 +594,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -615,7 +617,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -626,13 +627,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -649,7 +651,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -660,13 +661,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -682,7 +684,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -693,13 +694,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -712,7 +714,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -723,13 +724,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -743,7 +745,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -754,13 +755,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
@@ -777,7 +779,6 @@ proxy-groups:
   - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [D842] | @ScDevNetwork
   - 🇳🇱 NL | hopp-netherland-new.dynuddns.net | HYSTERIA2 [AD92] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [4AA0] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 158.180.88.172
   - 🇺🇸 Chicago, US · BrainStorm Network | 172.245.234.168
@@ -788,13 +789,14 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 2
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 4
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 5
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 6
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 8
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 10
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 11
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 12
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 16
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 18
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 19
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 23
   - 🇩🇪 Germany, Frankfurt am Main | [BL] 27
