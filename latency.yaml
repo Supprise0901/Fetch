@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
-  type: hysteria2
-  server: 162.249.126.7
-  port: 8443
-  udp: true
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
   type: hysteria2
   server: 85.204.107.186
@@ -25,17 +13,6 @@ proxies:
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
   alpn:
   - h3
   up: 10 Mbps
@@ -52,32 +29,28 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
+- name: 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   type: hysteria2
-  server: 152.67.75.161
-  port: 443
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+- name: 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   type: hysteria2
-  server: 103.158.117.74
-  port: 51887
+  server: 46.229.243.149
+  port: 8443
   udp: true
-  password: yalx0jCCiWDGCwK5WizqUr6N
-  sni: www.microsoft.com
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
   skip-cert-verify: true
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
@@ -92,39 +65,58 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+- name: 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
   type: hysteria2
-  server: 94.183.239.1
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  type: hysteria2
+  server: 152.67.115.203
   port: 443
   udp: true
-  password: cec9a167-6381-4752-9828-a92ab6e6ebdd
-  sni: cache-stream.videocactus.xyz
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: 91f69ceb59b24b367c71d10183609b30
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
+- name: 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   type: hysteria2
-  server: me17.msjia8844.site
-  port: 7443
+  server: 155.117.19.17
+  port: 443
   udp: true
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
   up: 10 Mbps
   down: 100 Mbps
-- name: 3B9s1diU_http
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  tls: true
+- name: 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  type: hysteria2
+  server: brb.nnpy.org
+  port: 11100
+  udp: true
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: www.bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: DYODxJIA_http
   type: http
   server: 138.199.35.219
@@ -243,12 +235,6 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: WGtyMbKq_http
-  type: http
-  server: 193.176.84.37
-  port: 9002
-  tls: true
-  skip-cert-verify: true
 - name: TdrlxU1H_http
   type: http
   server: 193.176.84.23
@@ -270,12 +256,6 @@ proxies:
 - name: 7Ye6YzqA_http
   type: http
   server: 185.235.0.2
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: sER9jRAE_http
-  type: http
-  server: 185.235.0.66
   port: 443
   tls: true
   skip-cert-verify: true
@@ -303,13 +283,6 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
-- name: 🇨🇦CA_2|1.5MB/s
-  type: ss
-  server: 16.52.165.74
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: MZRBg9qC_http
   type: http
   server: 193.176.84.30
@@ -346,18 +319,85 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: Ozc508qM_http
-  type: http
-  server: 138.199.35.214
-  port: 9002
-  tls: true
-  skip-cert-verify: true
 - name: DxrFDFxA_http
   type: http
   server: 138.199.35.195
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  type: vless
+  server: 91.193.58.45
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇩🇪_DE_德国 3
+  type: vless
+  server: 2.59.134.226
+  port: 443
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rich-falcon.cdn.cachefleet.com
+  reality-opts:
+    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
+  client-fingerprint: qq
+- name: 🇲🇾_MY_马来西亚
+  type: ss
+  server: 118.107.222.231
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+- name: 🇨🇦_CA_加拿大
+  type: ss
+  server: 35.182.182.58
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇨🇭_CH_瑞士
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  client-fingerprint: firefox
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  type: vless
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  uuid: 254e661b-77ef-454a-8e2d-832bcdfc7470
+  udp: true
+  tls: true
+  servername: grimness-backlogs.cdn-content.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -366,16 +406,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -393,25 +432,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -419,16 +461,15 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -446,25 +487,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -473,16 +517,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -500,41 +543,43 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -552,41 +597,43 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -604,25 +651,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -631,16 +681,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -658,25 +707,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -684,16 +736,15 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -711,25 +762,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 📲 电报信息
   type: select
   proxies:
@@ -737,16 +791,15 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -764,25 +817,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -791,16 +847,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -818,25 +873,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -844,16 +902,15 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -871,39 +928,41 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -921,40 +980,42 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -972,25 +1033,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -999,16 +1063,15 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | hopp-germany-new.ddnsguru.com | HYSTERIA2 [9015] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [07F2] | @ScDevNetwork
-  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
-  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [8B35] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 3B9s1diU_http
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203 :443
+  - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   - DYODxJIA_http
   - F6w0o2ot_http
   - uhLPPQjN_http
@@ -1026,25 +1089,28 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - G8vPWDDI_http
-  - WGtyMbKq_http
   - TdrlxU1H_http
   - H3kE9wLG_http
   - Hemqycrx_http
   - 7Ye6YzqA_http
-  - sER9jRAE_http
   - bn9iSTER_http
   - hJ5z2lol_http
   - bCjVxB4j_http
   - 1DYhdalH_http
-  - 🇨🇦CA_2|1.5MB/s
   - MZRBg9qC_http
   - ltl9d6U5_http
   - fzKM1RJO_http
   - KhHLB3mG_http
   - 7rbCWoNc_http
   - v4nKfjsA_http
-  - Ozc508qM_http
   - DxrFDFxA_http
+  - 🇬🇧_GB_英国->🇸🇬_SG_新加坡
+  - 🇩🇪_DE_德国 3
+  - 🇲🇾_MY_马来西亚
+  - 🇨🇦_CA_加拿大
+  - 🇨🇭_CH_瑞士
+  - 🇨🇳_CN_中国
+  - 🇺🇸 美国 | USA 17
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
