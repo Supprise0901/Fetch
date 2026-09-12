@@ -5,6 +5,105 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  type: hysteria2
+  server: sg1.xiaoliyu.cyou
+  port: 1933
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  type: hysteria2
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  type: hysteria2
+  server: 82.38.171.81
+  port: 10451
+  udp: true
+  password: b3a11068-1a7e-4643-85de-7c82cce46943
+  sni: uk.shamanapp.online
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  type: hysteria2
+  server: 47.129.241.226
+  port: 443
+  udp: true
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  type: hysteria2
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  type: hysteria2
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  type: hysteria2
+  server: 103.158.117.74
+  port: 51887
+  udp: true
+  password: yalx0jCCiWDGCwK5WizqUr6N
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
+  type: hysteria2
+  server: 140.238.207.94
+  port: 20000
+  udp: true
+  password: a34f3990b69f44bfa0d32385
+  sni: rmgyvpn.rest
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: a34f3990b69f44bfa0d32385
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   type: hysteria2
   server: 85.204.107.186
@@ -29,6 +128,17 @@ proxies:
   - h3
   obfs: salamander
   obfs-password: 91f69ceb59b24b367c71d10183609b30
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
+  type: hysteria2
+  server: faq1.wwwinternetvideo.click
+  port: 443
+  udp: true
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  alpn:
+  - h3
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
@@ -56,30 +166,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  type: vmess
-  server: 185.233.203.113
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: renderer-stream-2-62.mirra.now
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  udp: true
 - name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   type: hysteria2
   server: de-tg.fastlanehosting.ru
@@ -466,14 +552,6 @@ proxies:
     public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
     short-id: 8ffa160e608bf539
   client-fingerprint: qq
-- name: 🇸🇪 瑞典 | SWE 3
-  type: vless
-  server: austria-2.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
 - name: 🇺🇸 美国 | USA 18
   type: vless
   server: unitedstates-sgood.wopd.butnorwa.butter.silicore.ir
@@ -494,12 +572,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -555,7 +640,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: ♻️ 自动选择
   type: url-test
@@ -564,12 +648,19 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -625,7 +716,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🎥 NETFLIX
   type: select
@@ -635,12 +725,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -696,7 +793,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: ⛔️ 广告拦截
   type: select
@@ -704,12 +800,19 @@ proxy-groups:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -765,7 +868,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🚫 运营劫持
   type: select
@@ -773,12 +875,19 @@ proxy-groups:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -834,7 +943,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🌍 国外媒体
   type: select
@@ -844,12 +952,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -905,7 +1020,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🌏 国内媒体
   type: select
@@ -914,12 +1028,19 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -975,7 +1096,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 📲 电报信息
   type: select
@@ -984,12 +1104,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1045,7 +1172,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🍎 苹果服务
   type: select
@@ -1055,12 +1181,19 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1116,7 +1249,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: Ⓜ️ 微软服务
   type: select
@@ -1125,12 +1257,19 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1186,18 +1325,24 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1253,19 +1398,25 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1321,7 +1472,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 - name: 🐟 漏网之鱼
   type: select
@@ -1331,12 +1481,19 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇸🇬 SG | sg1.xiaoliyu.cyou | HYSTERIA2 [37D7] | @ScDevNetwork
+  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+  - 🇬🇧 GB | uk.shamanapp.online | HYSTERIA2 [0143] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [1911] | @ScDevNetwork
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
+  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 140.238.207.94 :20000
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
   - 🇪🇪 Tallinn, EE · Eternity International… | 94.183.239.1
+  - 🇷🇺 Moscow, RU · Serv.host Group | faq1.wwwinternetvideo.click
   - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site
   - 🇬🇧 City Of London, GB · Amazon.com | vpn-uk-002.fastervpn.world :443
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] 14
-  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 Los Angeles, US · FiberState | 155.117.19.17
   - DYODxJIA_http
@@ -1392,7 +1549,6 @@ proxy-groups:
   - K4v6PVjH_http
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 4
-  - 🇸🇪 瑞典 | SWE 3
   - 🇺🇸 美国 | USA 18
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
