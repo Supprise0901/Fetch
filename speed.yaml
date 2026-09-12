@@ -5,6 +5,26 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  type: hysteria2
+  server: 85.204.107.186
+  port: 8443
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  type: vmess
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  udp: true
 - name: DYODxJIA_http
   type: http
   server: 138.199.35.219
@@ -14,12 +34,6 @@ proxies:
 - name: F6w0o2ot_http
   type: http
   server: 138.199.35.207
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: uhLPPQjN_http
-  type: http
-  server: 193.176.84.33
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -35,15 +49,27 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: dhDa3XTY_http
+  type: http
+  server: 141.17.83.73
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: YwdOmShI_http
+  type: http
+  server: 104.219.236.83
+  port: 8443
+  tls: true
+  skip-cert-verify: true
 - name: vRAj9ahG_http
   type: http
   server: 193.176.84.22
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: sw9UooKv_http
+- name: KHT2tILJ_http
   type: http
-  server: 193.176.84.25
+  server: 193.176.84.27
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -53,49 +79,21 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: Hemqycrx_http
-  type: http
-  server: 146.70.176.242
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 7Ye6YzqA_http
-  type: http
-  server: 185.235.0.2
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: hJ5z2lol_http
-  type: http
-  server: 149.88.96.1
-  port: 443
-  tls: true
-  skip-cert-verify: true
 - name: bCjVxB4j_http
   type: http
   server: 149.22.86.1
   port: 443
   tls: true
   skip-cert-verify: true
-- name: MZRBg9qC_http
+- name: fzKM1RJO_http
   type: http
-  server: 193.176.84.30
+  server: 193.176.84.17
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: KhHLB3mG_http
+  type: http
+  server: 193.176.84.24
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -105,38 +103,18 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: DxrFDFxA_http
+  type: http
+  server: 138.199.35.195
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: GkTlYC61_http
   type: http
   server: 138.199.35.198
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 5
-  type: vless
-  server: 171.22.129.56
-  port: 8443
-  uuid: b2744db0-1c64-4218-a93b-9eba0e5f811f
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de-two.quiet-rogue.site
-  reality-opts:
-    public-key: QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0
-    short-id: 00a02855ba568c29
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 | DEU 6
-  type: vless
-  server: 171.22.129.56
-  port: 2053
-  uuid: 9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fi-one.quiet-rogue.site
-  reality-opts:
-    public-key: AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI
-    short-id: beff3ff061a64cfd
-  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 | SWE
   type: vless
   server: 171.22.129.56
@@ -156,21 +134,39 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: 1d2b1APG_http
+  type: http
+  server: 138.199.35.205
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: 5KyNvyOB_http
   type: http
   server: 138.199.35.211
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: fbYn1lOM_http
+- name: RrMYGwe3_http
   type: http
-  server: 138.199.35.214
+  server: 138.199.35.204
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: 6TbEbAOy_http
+- name: sTJv1Lbv_http
   type: http
-  server: 193.176.84.37
+  server: 138.199.35.209
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: LNmkPh32_http
+  type: http
+  server: 151.115.54.133
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: ixtD65cW_http
+  type: http
+  server: 193.176.84.31
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -180,6 +176,45 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: K4v6PVjH_http
+  type: http
+  server: hk40.240104.xyz
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 3
+  type: vless
+  server: 84.21.173.246
+  port: 443
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de.pinkmoon.pro
+  reality-opts:
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 | GBR 3
+  type: vless
+  server: uk-dedic.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+- name: 🇺🇸 美国 | USA 18
+  type: vless
+  server: unitedstates-sgood.wopd.butnorwa.butter.silicore.ir
+  port: 9000
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  udp: true
+  tls: true
+  servername: sheets.google.com
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+    short-id: cd0a1986719e44c8
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -188,30 +223,36 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -219,30 +260,36 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -251,90 +298,108 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -343,30 +408,36 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -374,30 +445,36 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 📲 电报信息
   type: select
   proxies:
@@ -405,30 +482,36 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -437,30 +520,36 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -468,87 +557,105 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -557,30 +664,36 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.186
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - DYODxJIA_http
   - F6w0o2ot_http
-  - uhLPPQjN_http
   - 1YwWIG2N_http
   - WM4va8AQ_http
+  - dhDa3XTY_http
+  - YwdOmShI_http
   - vRAj9ahG_http
-  - sw9UooKv_http
+  - KHT2tILJ_http
   - MbSUwAug_http
-  - 🇺🇸_US_美国
-  - Hemqycrx_http
-  - 7Ye6YzqA_http
-  - hJ5z2lol_http
   - bCjVxB4j_http
-  - MZRBg9qC_http
+  - fzKM1RJO_http
+  - KhHLB3mG_http
   - v4nKfjsA_http
+  - DxrFDFxA_http
   - GkTlYC61_http
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 6
   - 🇸🇪 瑞典 | SWE
   - E6BZnOe7_http
+  - 1d2b1APG_http
   - 5KyNvyOB_http
-  - fbYn1lOM_http
-  - 6TbEbAOy_http
+  - RrMYGwe3_http
+  - sTJv1Lbv_http
+  - LNmkPh32_http
+  - ixtD65cW_http
   - XAWIN96I_http
+  - K4v6PVjH_http
+  - 🇩🇪 德国 | DEU 3
+  - 🇬🇧 英国 | GBR 3
+  - 🇺🇸 美国 | USA 18
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
