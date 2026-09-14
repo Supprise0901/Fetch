@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
-  type: hysteria2
-  server: brb.nnpy.org
-  port: 11100
-  udp: true
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   type: hysteria2
   server: hk01.kfc-520.com
@@ -36,18 +24,6 @@ proxies:
   udp: true
   password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   sni: gta.internet-card.sbs
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
-  type: hysteria2
-  server: xg1.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: hdlb1.mangshe.xyz
   skip-cert-verify: true
   alpn:
   - h3
@@ -176,6 +152,53 @@ proxies:
   obfs-password: C0DD7bgChaltqnh/T2az6ijM
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  type: hysteria2
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  type: hysteria2
+  server: cze-01.node.lumixnet.com
+  port: 443
+  udp: true
+  password: 8645697d-51c1-4e90-aca5-ba63a0392f11
+  sni: cze-01.node.lumixnet.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  type: hysteria2
+  server: mlxy2.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy2.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
+  type: hysteria2
+  server: msjp.mangshe.xyz
+  port: 20562
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -184,10 +207,8 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -198,6 +219,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -205,10 +230,8 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -219,6 +242,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -227,10 +254,8 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -241,16 +266,18 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -261,16 +288,18 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -281,6 +310,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -289,10 +322,8 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -303,6 +334,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -310,10 +345,8 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -324,6 +357,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 📲 电报信息
   type: select
   proxies:
@@ -331,10 +368,8 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -345,6 +380,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -353,10 +392,8 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -367,6 +404,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -374,10 +415,8 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -388,14 +427,16 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -406,15 +447,17 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -425,6 +468,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -433,10 +480,8 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇧🇷 BR | www.bing.com | HYSTERIA2 [5D5A] | @ScDevNetwork
   - 🇭🇰 HK | hk01.kfc-520.com | HYSTERIA2 [2953] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [6D01] | @ScDevNetwork
-  - 🇨🇳 CN | hdlb1.mangshe.xyz | HYSTERIA2 [70D3] | @ScDevNetwork
   - 🇺🇸 US | 107.174.255.14 | HYSTERIA2 [E330] | @ScDevNetwork
   - 🇺🇸 US | proxy.bingtao.xyz | HYSTERIA2 [A036] | @ScDevNetwork
   - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
@@ -447,6 +492,10 @@ proxy-groups:
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20562
   - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20564
   - 韩国
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109
+  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | mlxy2.mangshe.xyz
+  - 🇯🇵 Japan · Datacamp Limited | msjp.mangshe.xyz :20562
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
