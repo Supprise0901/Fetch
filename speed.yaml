@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   type: hysteria2
   server: 94.183.239.1
@@ -44,20 +32,6 @@ proxies:
   - h3
   obfs: salamander
   obfs-password: w45rd5iieamj9wpb
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
-  type: hysteria2
-  server: 103.158.117.74
-  port: 51887
-  udp: true
-  password: yalx0jCCiWDGCwK5WizqUr6N
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
@@ -99,20 +73,6 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
-  type: hysteria2
-  server: 138.2.89.249
-  port: 443
-  udp: true
-  password: d042d150716709bb778cc73889cddb02
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
   type: hysteria2
   server: se-node.rumedia-cdn.com
@@ -120,30 +80,6 @@ proxies:
   udp: true
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  type: hysteria2
-  server: mszz.mangshe.xyz
-  port: 20561
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
-  type: hysteria2
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
   skip-cert-verify: true
   alpn:
   - h3
@@ -161,18 +97,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
-  type: hysteria2
-  server: dg2.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: dg2.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   type: hysteria2
   server: 108.59.244.158
@@ -181,29 +105,6 @@ proxies:
   password: 9452bb1ca5043e7f7b70430911afb034
   sni: 5post-gate.x5.ru
   skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  type: hysteria2
-  server: 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  password: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-  sni: 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
-  type: hysteria2
-  server: cze-01.node.lumixnet.com
-  port: 443
-  udp: true
-  password: 8645697d-51c1-4e90-aca5-ba63a0392f11
-  sni: cze-01.node.lumixnet.com
   alpn:
   - h3
   up: 10 Mbps
@@ -232,6 +133,42 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  type: hysteria2
+  server: 5.83.129.153
+  port: 20088
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 50 Mbps
+- name: 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  type: hysteria2
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
+  type: hysteria2
+  server: mszz.mangshe.xyz
+  port: 20562
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -240,24 +177,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -265,24 +197,19 @@ proxy-groups:
   proxies:
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -291,72 +218,57 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -365,24 +277,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -390,24 +297,19 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 📲 电报信息
   type: select
   proxies:
@@ -415,24 +317,19 @@ proxy-groups:
   - 🎯 全球直连
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -441,24 +338,19 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -466,69 +358,54 @@ proxy-groups:
   - 🔰 节点选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -537,24 +414,19 @@ proxy-groups:
   - ♻️ 自动选择
   - end-gfw.com12@sg89
   - end-gfw.com22@kr64
-  - 🇩🇪 DE | de-tg.fastlanehosting.ru | HYSTERIA2 [3B2D] | @ScDevNetwork
   - 🇪🇪 EE | cache-stream.videocactus.xyz | HYSTERIA2 [F2B6] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · The Constant Company | y5hh889q.zibayeman.com
-  - 🇭🇰 Hong Kong, HK · LINKLESS COMMUNICATIONS… | 103.158.117.74
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - 韩国
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇸🇪 SE | cf2.rumedia-cdn.com | HYSTERIA2 [3912] | @ScDevNetwork
-  - 🇯🇵 Japan · Datacamp Limited | mszz.mangshe.xyz :20561
-  - 🇩🇪 DE | germany3.h2corp.local | HYSTERIA2 [8594] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | dg2.mangshe.xyz | HYSTERIA2 [9A3E] | @ScDevNetwork
   - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong · HKT Limited | 1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com
-  - 🇺🇸 United States · Serv.host Group | cze-01.node.lumixnet.com :443
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20061
   - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20564
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
+  - 🇺🇸 United States · Serv.host Group | gta.internet-card.sbs :443
+  - 🇯🇵 Tokyo, JP · Baxet Group | mszz.mangshe.xyz :20562
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
