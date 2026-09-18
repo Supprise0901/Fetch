@@ -52,26 +52,51 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
+- name: 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
   type: hysteria2
-  server: uk1.xiaoliyu.us
-  port: 2056
+  server: 103.158.117.74
+  port: 51887
+  udp: true
+  password: yalx0jCCiWDGCwK5WizqUr6N
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: yalx0jCCiWDGCwK5WizqUr6N
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  type: hysteria2
+  server: jp3.xiaoliyu.us
+  port: 27102
   udp: true
   password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  sni: uk1.xiaoliyu.us
+  sni: jp3.xiaoliyu.us
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+- name: 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
   type: hysteria2
-  server: us2.xiaoliyu.us
-  port: 2077
+  server: status.fastline-labs.com
+  port: 443
   udp: true
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  sni: us2.xiaoliyu.us
+  password: f89c89df-905c-4df3-ab07-4f1a37a81005
+  sni: status.fastline-labs.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
+  type: hysteria2
+  server: api.fastline-labs.com
+  port: 443
+  udp: true
+  password: f89c89df-905c-4df3-ab07-4f1a37a81005
+  sni: api.fastline-labs.com
   alpn:
   - h3
   up: 10 Mbps
@@ -88,8 +113,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -101,8 +128,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -115,8 +144,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -127,8 +158,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -139,8 +172,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -153,8 +188,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -166,8 +203,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -179,8 +218,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -193,8 +234,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -206,8 +249,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -216,8 +261,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -227,8 +274,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -241,8 +290,10 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇸🇬 Singapore, SG · Datacamp Limited | sg3.xiaoliyu.us
-  - 🇬🇧 London, GB · Baxet Group | uk1.xiaoliyu.us
-  - 🇺🇸 United States · Baxet Group | us2.xiaoliyu.us
+  - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
+  - 🇯🇵 JP | jp3.xiaoliyu.us | HYSTERIA2 [0FDE] | @ScDevNetwork
+  - 🇩🇪 DE | status.fastline-labs.com | HYSTERIA2 [C9C7] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | api.fastline-labs.com :443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
