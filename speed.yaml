@@ -17,9 +17,32 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
+  type: hysteria2
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
   type: hysteria2
   server: 162.249.126.8
+  port: 8443
+  udp: true
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
+  type: hysteria2
+  server: 162.249.126.9
   port: 8443
   udp: true
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
@@ -35,6 +58,17 @@ proxies:
   udp: true
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
+  type: hysteria2
+  server: 85.204.107.187
+  port: 8443
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
   alpn:
   - h3
   up: 10 Mbps
@@ -73,6 +107,69 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  type: hysteria2
+  server: 161.118.253.238
+  port: 443
+  udp: true
+  password: 1027576c-c4df-4277-b3ef-38d3213b6574
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  type: hysteria2
+  server: 8.209.248.218
+  port: 443
+  udp: true
+  password: 8592a518062d3aaeacd3b202f30118f9
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  type: hysteria2
+  server: 5.83.129.153
+  port: 20088
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 50 Mbps
+- name: 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  type: hysteria2
+  server: 13.143.129.130
+  port: 23719
+  udp: true
+  password: 1d0be037-f650-4d33-b683-0fec61b2ccc3
+  sni: 13.143.129.130
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: gCytSLRsXmPSJIPLCtQz
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
+  type: hysteria2
+  server: ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  sni: ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -80,22 +177,38 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -103,11 +216,19 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -115,11 +236,19 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -127,11 +256,19 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -139,33 +276,57 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -173,43 +334,75 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -217,11 +410,19 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
+  - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.8
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.9
   - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.229
+  - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.187
   - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
   - 🇸🇪 Stockholm, SE · Play2go International… | se2.belka.network
   - 🇪🇪 Tallinn, EE · ExpressHost | tishina-axe.dedyn.io :8443
+  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [D65F] | @ScDevNetwork
+  - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇫🇮 Finland · DpkgSoft International… | 13.143.129.130 :23719
+  - 🇭🇰 Hong Kong · HKT Limited | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
