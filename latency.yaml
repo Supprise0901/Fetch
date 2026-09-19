@@ -30,18 +30,6 @@ proxies:
   obfs-password: yalx0jCCiWDGCwK5WizqUr6N
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  type: hysteria2
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   type: hysteria2
   server: 46.229.243.153
@@ -67,18 +55,6 @@ proxies:
   obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
-  type: hysteria2
-  server: de1.apexvpn.space
-  port: 443
-  udp: true
-  password: a9935c30-f94c-45c3-b520-532b666959da
-  sni: de1.apexvpn.space
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
   type: hysteria2
   server: msk.frkn.org
@@ -91,39 +67,42 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
+- name: 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
   type: hysteria2
-  server: news.gazette.help
+  server: gta.internet-card.sbs
   port: 443
   udp: true
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: news.gazette.help
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  type: hysteria2
-  server: db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  port: 443
-  udp: true
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   type: hysteria2
-  server: xg1.mangshe.xyz
-  port: 2056
+  server: 5.83.129.153
+  port: 20088
   udp: true
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: hdlb1.mangshe.xyz
+  password: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
+  up: 10 Mbps
+  down: 50 Mbps
+- name: 🇺🇸US_772|100KB/s|R002-260618 01
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  udp: true
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
   up: 10 Mbps
   down: 100 Mbps
 proxy-groups:
@@ -136,14 +115,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -153,14 +130,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -171,14 +146,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -187,14 +160,12 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -203,14 +174,12 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -221,14 +190,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -238,14 +205,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 📲 电报信息
   type: select
   proxies:
@@ -255,14 +220,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -273,14 +236,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -290,28 +251,24 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -319,14 +276,12 @@ proxy-groups:
   - DIRECT
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -337,14 +292,12 @@ proxy-groups:
   - end-gfw.com22@kr64
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇭🇰 HK | www.microsoft.com | HYSTERIA2 [2426] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | grape-turbo-fr.roxa.org | HYSTERIA2 [7784] | @ScDevNetwork
   - 🇯🇵 JP | 8.209.248.218 | HYSTERIA2 [67A8] | @ScDevNetwork
-  - 🇩🇪 DE | de1.apexvpn.space | HYSTERIA2 [EC42] | @ScDevNetwork
   - 🇷🇺 RU | msk.frkn.org | HYSTERIA2 [2F4C] | @ScDevNetwork
-  - '[1596]💰 🇷🇺 RUS [H2] 💰 🚀 #2bfd4b'
-  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
-  - 🇨🇳 China · VH Global Limited | xg1.mangshe.xyz :2056
+  - 🇷🇺 RU | gta.internet-card.sbs | HYSTERIA2 [99F8] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇺🇸US_772|100KB/s|R002-260618 01
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
