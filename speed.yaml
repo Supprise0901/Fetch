@@ -5,6 +5,17 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
+  type: hysteria2
+  server: de-tg.fastlanehosting.ru
+  port: 443
+  udp: true
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   type: hysteria2
   server: 5.83.129.90
@@ -103,35 +114,13 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  type: hysteria2
-  server: 46.8.210.129
-  port: 22443
-  udp: true
-  password: 2a3b101d-d8f9-40e7-9373-b0ef487c0035
-  sni: disk.api-yandex.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
-  type: hysteria2
-  server: dg1.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -140,13 +129,12 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -155,14 +143,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -171,14 +158,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -187,14 +173,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -203,14 +188,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -219,13 +203,12 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -234,13 +217,12 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -249,14 +231,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -265,13 +246,12 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -280,12 +260,11 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -294,13 +273,12 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -309,14 +287,13 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
@@ -325,8 +302,6 @@ proxy-groups:
   - 🇦🇹 AT | filesconvert.org | HYSTERIA2 [80A9] | @ScDevNetwork
   - 🇳🇱 NL | filesconvert.org | HYSTERIA2 [27A4] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇷🇺 RU | disk.api-yandex.net | HYSTERIA2 [059D] | @ScDevNetwork
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
