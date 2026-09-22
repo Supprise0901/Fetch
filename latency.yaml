@@ -40,20 +40,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇺🇸US_318|102KB/s|R002-260618 01
-  type: hysteria2
-  server: 24.233.8.109
-  port: 443
-  udp: true
-  password: 8294f130408299df8cab08c80bf6f819
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: c8827ab99e316c5bd414e21afa915ddf
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   type: hysteria2
   server: msjp1.mangshe.xyz
@@ -115,17 +101,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
-  type: hysteria2
-  server: dg1.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -135,28 +110,24 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: ♻️ 自动选择
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
-  interval: 300
+  url: http://www.gstatic.com/generate_204
+  interval: 60
   proxies:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -166,13 +137,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -182,13 +151,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -198,13 +165,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -214,13 +179,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -229,13 +192,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 📲 电报信息
   type: select
   proxies:
@@ -244,13 +205,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -260,13 +219,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -275,13 +232,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -289,13 +244,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -304,13 +257,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -320,13 +271,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸US_318|102KB/s|R002-260618 01
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · NetLab Global | dg1.mangshe.xyz
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
