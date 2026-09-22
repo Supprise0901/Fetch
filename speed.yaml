@@ -5,17 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   type: hysteria2
   server: 5.83.129.90
@@ -54,18 +43,6 @@ proxies:
   obfs-password: c8827ab99e316c5bd414e21afa915ddf
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  type: hysteria2
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   type: hysteria2
   server: msjp1.mangshe.xyz
@@ -78,32 +55,29 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+- name: 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   type: hysteria2
-  server: 108.59.244.158
-  port: 443
+  server: 193.41.4.4
+  port: 6443
   udp: true
-  password: 1eaa7584af3e68bb8425908b6f78aa31
-  sni: ads.x5.ru
-  skip-cert-verify: true
+  password: fdeaee32-c865-4a56-868d-fb404b756c68
+  sni: stream.annet.site
   alpn:
   - h3
-  - h2
-  - http/1.1
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   type: hysteria2
-  server: 8.218.56.189
+  server: 152.67.115.203
   port: 443
   udp: true
-  password: 0c7fa158eb9f72a1c4b80927e48373dc
-  sni: 8.218.56.189
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
   up: 10 Mbps
   down: 100 Mbps
 proxy-groups:
@@ -112,175 +86,149 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇺🇸US_318|102KB/s|R002-260618 01
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  - 🇭🇰 Hong Kong, HK · Alibaba (US) Technology… | 8.218.56.189
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
