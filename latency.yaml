@@ -63,20 +63,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
-  type: hysteria2
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   type: hysteria2
   server: de.i-love-russia.online
@@ -101,6 +87,41 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  type: hysteria2
+  server: 103.117.141.103
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  type: hysteria2
+  server: 87.58.220.77
+  port: 443
+  udp: true
+  password: c1e81aedb0ec8cff78c2a90dc0aa0db1
+  sni: cloud.mail.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  type: hysteria2
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -112,22 +133,26 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
-  interval: 60
+  interval: 300
   proxies:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -139,9 +164,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -153,9 +180,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -167,9 +196,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -181,9 +212,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -194,9 +227,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 📲 电报信息
   type: select
   proxies:
@@ -207,9 +242,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -221,9 +258,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -234,9 +273,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -246,9 +287,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -259,9 +302,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -273,9 +318,11 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
+  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
+  - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
