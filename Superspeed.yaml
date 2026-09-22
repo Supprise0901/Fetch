@@ -64,17 +64,116 @@
     ],
     "outbounds": [
         {
+            "tag": "🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria",
+            "type": "hysteria",
+            "server": "5.83.129.90",
+            "server_port": 54177,
+            "up_mbps": 500,
+            "down_mbps": 1000,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪 Germany · Takehost Ou | 5.83.129.153",
+            "type": "hysteria",
+            "server": "5.83.129.153",
+            "server_port": 20088,
+            "up_mbps": 10,
+            "down_mbps": 50,
+            "auth_str": "dongtaiwang.com",
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4",
+            "type": "hysteria2",
+            "server": "193.41.4.4",
+            "server_port": 6443,
+            "password": "fdeaee32-c865-4a56-868d-fb404b756c68",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "stream.annet.site",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou",
+            "type": "hysteria2",
+            "server": "hk2.xiaoliyu.cyou",
+            "server_port": 4433,
+            "password": "19f72087-4591-4d72-930b-2697078ec2be",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "24.233.8.109",
+            "server_port": 443,
+            "password": "8294f130408299df8cab08c80bf6f819",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "c8827ab99e316c5bd414e21afa915ddf"
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.153",
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria",
+                "🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4",
+                "🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou",
+                "🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.153",
+                "🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria",
+                "🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4",
+                "🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou",
+                "🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork"
+            ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
             "tolerance": 50

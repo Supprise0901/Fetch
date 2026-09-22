@@ -40,18 +40,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
-  type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   type: hysteria2
   server: 193.41.4.4
@@ -59,54 +47,6 @@ proxies:
   udp: true
   password: fdeaee32-c865-4a56-868d-fb404b756c68
   sni: stream.annet.site
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  type: hysteria2
-  server: de.i-love-russia.online
-  port: 443
-  udp: true
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  sni: de.i-love-russia.online
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  type: hysteria2
-  server: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  sni: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  type: hysteria2
-  server: 103.117.141.103
-  port: 2060
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: mlxy.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
-  type: hysteria2
-  server: 87.58.220.77
-  port: 443
-  udp: true
-  password: c1e81aedb0ec8cff78c2a90dc0aa0db1
-  sni: cloud.mail.ru
-  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -122,6 +62,44 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  udp: true
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-sg-001.fastervpn.world
+  port: 443
+  udp: true
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
+  type: hysteria2
+  server: 108.59.244.158
+  port: 443
+  udp: true
+  password: f62f231b031f54cde7015c87a754ea8f
+  sni: vkvideo.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -131,13 +109,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -146,13 +122,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -162,13 +136,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -178,13 +150,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -194,13 +164,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -210,13 +178,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -225,13 +191,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -240,13 +204,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -256,13 +218,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -271,13 +231,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -285,13 +243,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -300,13 +256,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -316,13 +270,11 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇯🇵 JP | www.microsoft.com | HYSTERIA2 [6A7D] | @ScDevNetwork
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  - 🇭🇰 Hong Kong · HKT Limited | 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  - 🇲🇾 Cyberjaya, MY · Gigabit Hosting Sdn Bhd | 103.117.141.103
-  - 🇳🇱 Amsterdam, NL · Scalaxy | 87.58.220.77 :443
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
