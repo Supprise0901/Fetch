@@ -28,18 +28,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
-  type: hysteria2
-  server: de.i-love-russia.online
-  port: 443
-  udp: true
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  sni: de.i-love-russia.online
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   type: hysteria2
   server: hk2.xiaoliyu.cyou
@@ -63,18 +51,6 @@ proxies:
   - h3
   obfs: salamander
   obfs-password: c8827ab99e316c5bd414e21afa915ddf
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
-  type: hysteria2
-  server: 108.59.244.158
-  port: 443
-  udp: true
-  password: f62f231b031f54cde7015c87a754ea8f
-  sni: vkvideo.ru
-  skip-cert-verify: true
-  alpn:
-  - h3
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
@@ -101,24 +77,65 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
+- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   type: hysteria2
-  server: nlbest2.vihodest.net
+  server: 152.67.115.203
   port: 443
   udp: true
-  password: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  sni: nlbest2.vihodest.net
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  type: hysteria2
+  server: api.ohbah.com
+  port: 25287
+  udp: true
+  password: telegram-ID-conf0088
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: telegram-ID-conf0088
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  type: hysteria2
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+- name: 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
   type: hysteria2
-  server: nlbest3.vihodest.net
+  server: open.w2m.ink
   port: 443
   udp: true
-  password: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  sni: nlbest3.vihodest.net
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
+  type: hysteria2
+  server: open.w2m.ink
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -131,14 +148,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -146,14 +164,15 @@ proxy-groups:
   proxies:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -162,14 +181,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -178,14 +198,15 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -194,14 +215,15 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -210,14 +232,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -225,14 +248,15 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -240,14 +264,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -256,14 +281,15 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -271,28 +297,30 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -300,14 +328,15 @@ proxy-groups:
   - DIRECT
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -316,14 +345,15 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
   - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  - 🇫🇮 FI | de.i-love-russia.online | HYSTERIA2 [7AA4] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
-  - 🇺🇸 New York, US · 1GSERVERS | 108.59.244.158 :443
   - 🇸🇪 SE | se1.chromevpn.cc | HYSTERIA2 [A0D8] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇳🇱 Amsterdam, NL · Paul Sagov | nlbest2.vihodest.net
-  - 🇳🇱 Amsterdam, NL · YottaSrc | nlbest3.vihodest.net
+  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇩🇪 Nuremberg, DE · Hetzner Online | api.ohbah.com :25287
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.cc.cd
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :443
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.w2m.ink :5443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
