@@ -28,17 +28,6 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
-  type: hysteria2
-  server: 193.41.4.4
-  port: 6443
-  udp: true
-  password: fdeaee32-c865-4a56-868d-fb404b756c68
-  sni: stream.annet.site
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   type: hysteria2
   server: 5.83.129.153
@@ -102,14 +91,75 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+- name: 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
   type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-sg-001.fastervpn.world
+  port: 443
+  udp: true
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  udp: true
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  type: hysteria2
+  server: 77.110.104.238
+  port: 443
+  udp: true
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  type: hysteria2
+  server: 103.117.141.103
+  port: 2060
   udp: true
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
+  sni: mlxy.mangshe.xyz
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
+  type: hysteria2
+  server: cze-02.node.lumixnet.com
+  port: 443
+  udp: true
+  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
+  sni: cze-02.node.lumixnet.com
   alpn:
   - h3
   up: 10 Mbps
@@ -122,13 +172,17 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -136,13 +190,17 @@ proxy-groups:
   proxies:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -151,13 +209,17 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -166,13 +228,17 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -181,13 +247,17 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -196,13 +266,17 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -210,13 +284,17 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 📲 电报信息
   type: select
   proxies:
@@ -224,13 +302,17 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -239,13 +321,17 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -253,26 +339,34 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -280,13 +374,17 @@ proxy-groups:
   - DIRECT
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -295,13 +393,17 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
   - 🇭🇰 Hong Kong, HK · Amazon.com | hk01.kfc-520.com
-  - 🇯🇵 Japan · Datacamp Limited | msjp1.mangshe.xyz :20561
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
+  - 🇷🇺 RU | ch2-hy2.veilvpn.life | HYSTERIA2 [36C3] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

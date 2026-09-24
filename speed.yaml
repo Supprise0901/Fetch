@@ -5,52 +5,37 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
+- name: 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
   type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  type: hysteria2
-  server: 5.83.129.153
-  port: 20088
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 50 Mbps
-- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  type: hysteria2
-  server: 155.117.19.17
+  server: vpn-sg-001.fastervpn.world
   port: 443
   udp: true
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
   skip-cert-verify: true
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+- name: 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
   type: hysteria2
-  server: 85.204.107.188
-  port: 8443
+  server: 103.117.141.103
+  port: 2060
   udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy.mangshe.xyz
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
+  type: hysteria2
+  server: cze-02.node.lumixnet.com
+  port: 443
+  udp: true
+  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
+  sni: cze-02.node.lumixnet.com
   alpn:
   - h3
   up: 10 Mbps
@@ -61,123 +46,110 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90 :54177·hysteria
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [5019] | @ScDevNetwork
+  - 🇸🇬 SG | vpn-sg-001.fastervpn.world | HYSTERIA2 [61E7] | @ScDevNetwork
+  - 🇲🇾 MY | mlxy.mangshe.xyz | HYSTERIA2 [CE86] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Serv.host Group | cze-02.node.lumixnet.com :443·hysteria2
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
