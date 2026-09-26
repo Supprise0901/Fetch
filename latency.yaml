@@ -40,34 +40,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  type: hysteria2
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: maintell
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
-  type: hysteria2
-  server: 138.2.89.249
-  port: 443
-  udp: true
-  password: d042d150716709bb778cc73889cddb02
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   type: hysteria2
   server: 5.83.129.90
@@ -189,18 +161,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
-  type: hysteria2
-  server: fi2.chromevpn.cc
-  port: 443
-  udp: true
-  password: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  sni: fi2.chromevpn.cc
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   type: hysteria2
   server: 43.167.208.94
@@ -249,6 +209,77 @@ proxies:
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  type: hysteria2
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  type: hysteria2
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  type: hysteria2
+  server: 162.249.127.130
+  port: 8081
+  udp: true
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  type: hysteria2
+  server: 193.41.4.4
+  port: 6443
+  udp: true
+  password: 8b25a466-71a7-4eef-b735-3d7b9901e74c
+  sni: stream.annet.site
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  type: hysteria2
+  server: 85.237.207.49
+  port: 50160
+  udp: true
+  password: a56619e2bed91121eabb97d20be207c3
+  sni: 85-237-207-49.liao.kdns.fr
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
+  type: hysteria2
+  server: open.2ml.bid
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -258,8 +289,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -270,11 +299,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -283,8 +317,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -295,11 +327,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -309,8 +346,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -321,11 +356,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -335,8 +375,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -347,11 +385,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -361,8 +404,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -373,11 +414,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -387,8 +433,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -399,11 +443,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -412,8 +461,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -424,11 +471,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -437,8 +489,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -449,11 +499,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -463,8 +518,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -475,11 +528,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -488,8 +546,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -500,11 +556,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -512,8 +573,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -524,11 +583,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -537,8 +601,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -549,11 +611,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -563,8 +630,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇫🇮 FI | new-finland-september.bumbleshrimp.com | HYSTERIA2 [D6A5] | @ScDevNetwork
   - 🇩🇿 DZ | hopp-romania-new.roxa.org | HYSTERIA2 [37F0] | @ScDevNetwork
-  - 🇺🇸 Los Angeles, US · HostPapa | 107.172.67.52
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [536D] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [8E6E] | @ScDevNetwork
   - '[1596]🎈 🇫🇮 FIN [H2] 🎈 🚀 #a3629c'
@@ -575,11 +640,16 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.100
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [ED3B] | @ScDevNetwork
   - 🇨🇭 CH | hopp-swizland-new.mysynology.net | HYSTERIA2 [783C] | @ScDevNetwork
-  - 🇫🇮 FI | fi2.chromevpn.cc | HYSTERIA2 [D2FA] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇷🇺 RU | itsallproxy.quattro-tech.ru | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
   - 🇹🇷TR_1|150KB/s|A001-260618 01
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.cc.cd | HYSTERIA2 [65D6] | @ScDevNetwork
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.127.130 :8081
+  - 🇺🇦 Ukraine · NetCrafters OU | 193.41.4.4
+  - 🇹🇼 Taipei, TW · WAP.AC | 85.237.207.49
+  - 🇯🇵 Inzai, JP · Oracle Corporation | open.2ml.bid :5443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
