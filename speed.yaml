@@ -5,17 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   type: hysteria2
   server: 5.83.129.90
@@ -28,13 +17,13 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+- name: 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   type: hysteria2
-  server: 138.3.208.26
-  port: 50160
+  server: 82.38.64.235
+  port: 8443
   udp: true
-  password: 184cdec28da5a09450803c8debcd2cc9
-  skip-cert-verify: true
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
   alpn:
   - h3
   up: 10 Mbps
@@ -84,18 +73,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
-  type: hysteria2
-  server: xg1.mangshe.xyz
-  port: 2060
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xg1.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
   type: hysteria2
   server: xjp1.mangshe.xyz
@@ -108,13 +85,12 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+- name: 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   type: hysteria2
-  server: 31.57.248.176
-  port: 50160
+  server: 91.240.86.70
+  port: 22443
   udp: true
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   skip-cert-verify: true
   alpn:
   - h3
@@ -142,18 +118,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
-  type: hysteria2
-  server: 156.229.160.253
-  port: 55000
-  udp: true
-  password: e4fa7b90-b8ee-45bb-b3be-cb3bfdc551e3
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
   type: hysteria2
   server: 152.67.115.203
@@ -166,6 +130,20 @@ proxies:
   - h3
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
+  type: hysteria2
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
@@ -181,272 +159,473 @@ proxies:
   obfs-password: SalamanderKey1
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  type: hysteria2
+  server: us3.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: us3.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  type: hysteria2
+  server: rou0001ntrhy01.tcp-reset-club.net
+  port: 443
+  udp: true
+  password: aa6f8aaf-d7ff-46f8-a9a0-d143d7e71f71
+  sni: tcp-reset-club.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  type: hysteria2
+  server: 162.249.127.136
+  port: 8443
+  udp: true
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  type: hysteria2
+  server: 5.83.129.153
+  port: 20088
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 500 Mbps
+  down: 1000 Mbps
+- name: 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  type: hysteria2
+  server: ch.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ch.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  type: hysteria2
+  server: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  type: hysteria2
+  server: mg.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mg.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  type: hysteria2
+  server: yg.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: yg.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 香港 46
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  udp: true
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇯🇵 JP | 138.3.208.26 | HYSTERIA2 [1DD5] | @ScDevNetwork
+  - 🇨🇭 Zurich, CH · Hostkey | 82.38.64.235
   - 🇭🇰 HK | 202.146.222.29 | HYSTERIA2 [8360] | @ScDevNetwork
   - 🇯🇵 JP | 43.167.208.94 | HYSTERIA2 [4771] | @ScDevNetwork
   - 🇸🇬 SG | 138.2.73.238 | HYSTERIA2 [B019] | @ScDevNetwork
   - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
-  - 🇭🇰 Hong Kong, HK · Baxet Group | xg1.mangshe.xyz :2060
   - 🇸🇬 SG | xjp1.mangshe.xyz | HYSTERIA2 [AD6A] | @ScDevNetwork
-  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.101
   - 🇷🇴 Romania · Interkvm Host Srl | 85.204.107.179
-  - 🇺🇸 US | www.bing.com | HYSTERIA2 [E96D] | @ScDevNetwork
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 152.67.115.203
+  - 🇨🇭 Zurich, CH · Oracle Corporation | 152.67.75.161 :443
   - 🇩🇪 Frankfurt Am Main, DE · Play2go International… | 2.26.54.174 :8443
+  - 🇺🇸 US | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇷🇴 RO | tcp-reset-club.net | HYSTERIA2 [8963] | @ScDevNetwork
+  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [4C57] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
+  - 🇦🇪 United Arab Emirates · Baxet Group | ch.xiaoliyu.cyou
+  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
+  - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
+  - 香港 46
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
