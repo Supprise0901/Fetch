@@ -5,42 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  type: hysteria2
-  server: els.mangshe.xyz
-  port: 2060
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: els.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  type: hysteria2
-  server: mg.mangshe.xyz
-  port: 2060
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: mg.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
-  type: hysteria2
-  server: rb.mangshe.xyz
-  port: 2060
-  udp: true
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: rb.mangshe.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
   type: hysteria2
   server: us3.xiaoliyu.cyou
@@ -48,6 +12,18 @@ proxies:
   udp: true
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: us3.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
+  type: hysteria2
+  server: xby.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: xby.mangshe.xyz
   skip-cert-verify: true
   alpn:
   - h3
@@ -65,16 +41,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+- name: 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   type: hysteria2
-  server: 162.249.127.141
-  port: 8443
+  server: 152.67.75.161
+  port: 443
   udp: true
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
@@ -91,18 +69,18 @@ proxies:
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   type: hysteria2
-  server: 103.126.51.40
-  port: 8443
+  server: 5.83.129.153
+  port: 20088
   udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  password: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
-  up: 10 Mbps
-  down: 100 Mbps
+  up: 500 Mbps
+  down: 1000 Mbps
 - name: 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   type: hysteria2
   server: 152.67.115.203
@@ -117,18 +95,6 @@ proxies:
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
-  type: hysteria2
-  server: 162.249.127.143
-  port: 8443
-  udp: true
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
   type: hysteria2
   server: 77.74.123.103
@@ -136,6 +102,18 @@ proxies:
   udp: true
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
+  type: hysteria2
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
   alpn:
   - h3
@@ -153,18 +131,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
-  type: hysteria2
-  server: 162.249.127.142
-  port: 8443
-  udp: true
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
   type: hysteria2
   server: ru1.xiaoliyu.cyou
@@ -172,41 +138,6 @@ proxies:
   udp: true
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: ru1.xiaoliyu.cyou
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  type: hysteria2
-  server: 103.126.51.39
-  port: 8443
-  udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
-  type: hysteria2
-  server: 103.126.51.41
-  port: 8443
-  udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
   alpn:
   - h3
@@ -224,30 +155,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  type: hysteria2
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
-  type: hysteria2
-  server: 162.249.127.144
-  port: 8443
-  udp: true
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
   type: hysteria2
   server: 144.31.232.216
@@ -255,18 +162,6 @@ proxies:
   udp: true
   password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   sni: fi01.clgate.network
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
-  type: hysteria2
-  server: covers.pantera-radio.ru
-  port: 443
-  udp: true
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: covers.pantera-radio.ru
-  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -282,18 +177,17 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
-  type: trojan
-  server: 199.107.164.105
-  port: 443
-  password: 8GXLP3dEzm7T8wP5Jx0Ufg
+- name: '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
+  type: hysteria2
+  server: 91.240.86.70
+  port: 24443
   udp: true
-  sni: quictest.burncommunity.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: quictest.burncommunity.ru
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   type: hysteria2
   server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
@@ -309,17 +203,6 @@ proxies:
 - name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
   type: hysteria2
   server: 104.165.205.142
-  port: 9443
-  udp: true
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
-  type: hysteria2
-  server: 104.165.205.191
   port: 9443
   udp: true
   password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
@@ -387,19 +270,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
-  type: hysteria2
-  server: 137.23.3.238
-  port: 20000
-  udp: true
-  password: b42d90fa667942aebc734d60
-  sni: rmgyvpn.rest
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   type: hysteria2
   server: 150-230-252-217.liao.kdns.fr
@@ -418,18 +288,6 @@ proxies:
   udp: true
   password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   sni: onecloudstream.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
-  type: hysteria2
-  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -481,29 +339,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  type: hysteria2
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
-  type: hysteria2
-  server: dehys.superbuba.top
-  port: 443
-  udp: true
-  password: d4cae7df-50a1-428c-bd62-881c8f3bbd90
-  sni: dehys.superbuba.top
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   type: hysteria2
   server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
@@ -511,65 +346,6 @@ proxies:
   udp: true
   password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
   sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  type: hysteria2
-  server: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  type: hysteria2
-  server: mix.pantera-radio.ru
-  port: 443
-  udp: true
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: mix.pantera-radio.ru
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  type: hysteria2
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  type: hysteria2
-  server: 144151f6-tmeqo0-u4zl7f-1jk6u.sg7.hyhuawei.com
-  port: 443
-  udp: true
-  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
-  sni: 144151f6-tmeqo0-u4zl7f-1jk6u.sg7.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 香港 68
-  type: hysteria2
-  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -587,714 +363,941 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  type: hysteria2
+  server: 153.56.210.134
+  port: 53718
+  udp: true
+  password: 34ec1f39-3e1c-4b03-a65a-87a98b097bf3
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 2751fccc-d797-47cc-895d-70c9629cc8fe
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  type: hysteria2
+  server: 153.56.210.134
+  port: 38045
+  udp: true
+  password: a81a7b45-dd70-42ef-822f-ef467f944382
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  type: hysteria2
+  server: meow-berlin.nethcloud.top
+  port: 443
+  udp: true
+  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  sni: meow-berlin.nethcloud.top
+  skip-cert-verify: true
+  alpn:
+  - h2
+  - http/1.1
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  type: hysteria2
+  server: 147.79.1.18
+  port: 22458
+  udp: true
+  password: 08420541-b54b-44d8-bab4-0a4c470c4803
+  sni: tencent.cfastcdn.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: OGQ0N2E4NzQ2YmE4MTBjMw==
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  type: hysteria2
+  server: 156.229.160.253
+  port: 55000
+  udp: true
+  password: fe552e75-4ffd-4e1a-984c-44e71c746c15
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  type: hysteria2
+  server: 95.85.252.67
+  port: 9443
+  udp: true
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  type: hysteria2
+  server: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  sni: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  type: hysteria2
+  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  type: hysteria2
+  server: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  type: hysteria2
+  server: 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  sni: 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  type: hysteria2
+  server: 45.151.101.197
+  port: 2053
+  udp: true
+  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
+  sni: hy2.80.240.25.205.nip.io
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  type: hysteria2
+  server: 45.151.101.197
+  port: 8443
+  udp: true
+  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
+  sni: hy2.70.34.213.83.nip.io
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  type: hysteria2
+  server: 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  type: hysteria2
+  server: 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  type: hysteria2
+  server: 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  sni: 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  type: hysteria2
+  server: d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  sni: d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  type: hysteria2
+  server: d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  type: hysteria2
+  server: db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  port: 443
+  udp: true
+  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  sni: db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
+  type: hysteria2
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇷🇺 Moscow, RU · LLC Baxet | els.mangshe.xyz
-  - 🇺🇸 Seattle, US · Baxet Group | mg.mangshe.xyz
-  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz
   - 🇦🇲 Yerevan, AM · Baxet Group | us3.xiaoliyu.cyou
+  - 🇪🇸 Madrid, ES · Baxet Group | xby.mangshe.xyz
   - 🇬🇧 City Of London, GB · Baxet Group | yg.mangshe.xyz
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [F817] | @ScDevNetwork
+  - 🇨🇭 CH | www.bing.com | HYSTERIA2 [E53B] | @ScDevNetwork
   - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [2EDA] | @ScDevNetwork
+  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [B5C8] | @ScDevNetwork
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [A0E7] | @ScDevNetwork
+  - 🇫🇮 FI | vps155-edge.kermemehori.ru | HYSTERIA2 [FE99] | @ScDevNetwork
   - 🇭🇰 HK | xg1.mangshe.xyz | HYSTERIA2 [C9F5] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [1E2C] | @ScDevNetwork
   - 🇷🇺 RU | ru1.xiaoliyu.cyou | HYSTERIA2 [6F90] | @ScDevNetwork
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.39
-  - 🇬🇧 GB | hopp-romania-new.roxa.org | HYSTERIA2 [8A27] | @ScDevNetwork
   - 🇵🇱 PL | pl.nextgencloud.tech | HYSTERIA2 [6B53] | @ScDevNetwork
-  - 🇸🇬 SG | www.bing.com | HYSTERIA2 [B019] | @ScDevNetwork
-  - 🇨🇿 CZ | hop-germany-september.dynuddns.com | HYSTERIA2 [D314] | @ScDevNetwork
   - 🇫🇮 Helsinki, FI · Senko Digital | 144.31.232.216
-  - 🇩🇪 Frankfurt Am Main, DE · Paul Sagov | covers.pantera-radio.ru
   - 🇷🇺 RU | 91.240.86.70 | HYSTERIA2 [4D6F] | @ScDevNetwork
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #cd3fbc'
+  - '[1596]⭐ 🇱🇻 LVA [H2] ⭐ 📑 🚀 #f42d80'
   - 🇭🇰 Hong Kong · HKT Limited | 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.142 :9443
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.191
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.219
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.250
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.40
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.42
   - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.3.238 :20000
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr :50160
   - 🇨🇭 Switzerland · Intars Rupeiks | 31.76.104.152
-  - 🇭🇰 Hong Kong · HKT Limited | 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   - 🇳🇱 Amsterdam, NL · DELUXHOST | 87.229.95.140 :443
   - 🇫🇮 Helsinki, FI · Oc Networks Limited | 87.251.17.11
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.66
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 95.85.252.78 :9443
-  - 🇭🇰 Hong Kong · HKT Limited | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  - 🇩🇪 Frankfurt Am Main, DE · Akenai Products | dehys.superbuba.top :443
   - 🇭🇰 Hong Kong · HKT Limited | e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  - 🇭🇰 Hong Kong · HKT Limited | fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  - 🇵🇱 Warsaw, PL · Paul Sagov | mix.pantera-radio.ru
-  - 🇺🇸 United States · CTG Server Limited | vpn-hk-004.fastervpn.world
-  - 🇸🇬SG_100|1.3MB/s|A004-260618 01
-  - 香港 68
   - 香港 61
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇩🇪 DE | meow-berlin.nethcloud.top | HYSTERIA2 [1C2F] | @ScDevNetwork
+  - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [29C1] | @ScDevNetwork
+  - 🇩🇪 DE | onecloudstream.com | HYSTERIA2 [3DAA] | @ScDevNetwork
+  - 🇭🇰 Hong Kong · HKT Limited | 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  - 🇭🇰 Hong Kong · HKT Limited | 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 42fab11a-tm96o0-tnggms-6gn6.los.hyhuawei.com
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :2053
+  - 🇷🇺 Moscow, RU · Aeza Group | 45.151.101.197 :8443
+  - 🇭🇰 Hong Kong · HKT Limited | 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 8b327214-tm3mo0-tlvsde-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d758db8f-tmeqo0-0-1jcwu.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
+  - 🇺🇸 Chicago, US · Sharktech | db09351f-tlsio0-0-mv7m.los.hyhuawei.com
+  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
