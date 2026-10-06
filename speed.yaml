@@ -5,30 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  type: hysteria2
-  server: 5.83.129.153
-  port: 20088
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
 - name: 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   type: hysteria2
   server: hk2.xiaoliyu.cyou
@@ -53,9 +29,84 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
+    headers:
+      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
+- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP
+    headers:
+      Host: mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net
+- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  type: trojan
+  server: 167.82.76.27
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
+    headers:
+      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
+- name: 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
+  type: hysteria2
+  server: 103.126.51.49
+  port: 8443
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: ocober-romania-new.yyuyy.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
   type: hysteria2
   server: 78.17.209.108
+  port: 8443
+  udp: true
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  type: hysteria2
+  server: i.wareznet.ru
+  port: 8446
+  udp: true
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
+  type: hysteria2
+  server: i.wareznet.ru
   port: 8443
   udp: true
   password: d402d4c0b8354a90b70bb2566dce9a08
@@ -79,56 +130,28 @@ proxies:
   obfs-password: OGQ0N2E4NzQ2YmE4MTBjMw==
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
+- name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
   type: hysteria2
-  server: 77.74.123.107
+  server: i.wareznet.ru
+  port: 8444
+  udp: true
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
+  type: hysteria2
+  server: 162.249.126.36
   port: 8443
   udp: true
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
   alpn:
   - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  type: hysteria2
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  type: hysteria2
-  server: e7q.internet-booster.online
-  port: 2443
-  udp: true
-  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
-  sni: hy2.78.141.219.189.nip.io
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
-  type: hysteria2
-  server: 206.1.96.108
-  port: 7443
-  udp: true
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
@@ -165,13 +188,124 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+- name: 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
   type: hysteria2
-  server: 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  type: hysteria2
+  server: els.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: els.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  type: hysteria2
+  server: yg.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: yg.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  type: hysteria2
+  server: xby.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: xby.mangshe.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  type: hysteria2
+  server: 13.143.232.86
   port: 443
   udp: true
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  sni: 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  password: 4ffc5c57-3242-4422-88de-25fb0f7e97bc
+  sni: media.pantera-radio.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  type: hysteria2
+  server: mix.pantera-radio.ru
+  port: 443
+  udp: true
+  password: 4ffc5c57-3242-4422-88de-25fb0f7e97bc
+  sni: mix.pantera-radio.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  type: hysteria2
+  server: 78.17.209.108
+  port: 8444
+  udp: true
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  type: hysteria2
+  server: us3.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: us3.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  type: hysteria2
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
+  type: hysteria2
+  server: rb.mangshe.xyz
+  port: 2060
+  udp: true
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   skip-cert-verify: true
   alpn:
   - h3
@@ -183,253 +317,396 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #092d02'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.49
   - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B06D] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [82E8] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [1293] | @ScDevNetwork
   - 🇯🇵 JP | tencent.cfastcdn.com | HYSTERIA2 [956C] | @ScDevNetwork
-  - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
-  - 🇷🇺 RU | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
   - 🇷🇺 RU | info.wwwinternetvideo.click | HYSTERIA2 [1C70] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 152-69-231-175.liao.kdns.fr
-  - 🇭🇰 Hong Kong · HKT Limited | 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :57251
+  - 🇷🇺 RU | els.mangshe.xyz | HYSTERIA2 [E477] | @ScDevNetwork
+  - 🇬🇧 GB | yg.mangshe.xyz | HYSTERIA2 [6F2F] | @ScDevNetwork
+  - 🇪🇸 ES | xby.mangshe.xyz | HYSTERIA2 [D601] | @ScDevNetwork
+  - 🇳🇱 NL | media.pantera-radio.ru | HYSTERIA2 [F0FD] | @ScDevNetwork
+  - 🇵🇱 PL | mix.pantera-radio.ru | HYSTERIA2 [39CA] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [73DA] | @ScDevNetwork
+  - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
+  - 🇹🇷 Ankara, TR · Priente Software Yazilim… | 153.56.210.134 :34121
+  - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
