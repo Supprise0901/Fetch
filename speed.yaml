@@ -17,32 +17,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  type: trojan
-  server: 167.82.76.27
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-    headers:
-      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
 - name: 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
   type: hysteria2
   server: 77.74.123.107
@@ -55,13 +29,25 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+- name: 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
   type: hysteria2
-  server: 103.126.51.50
+  server: i.wareznet.ru
+  port: 8444
+  udp: true
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
+  type: hysteria2
+  server: 162.249.126.36
   port: 8443
   udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: ocober-romania-new.yyuyy.com
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -79,41 +65,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  type: hysteria2
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  type: hysteria2
-  server: e7q.internet-booster.online
-  port: 2443
-  udp: true
-  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
-  sni: hy2.78.141.219.189.nip.io
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
-  type: hysteria2
-  server: 103.126.51.51
-  port: 8443
-  udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: ocober-romania-new.yyuyy.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
   type: hysteria2
   server: 153.76.194.154
@@ -121,6 +72,17 @@ proxies:
   udp: true
   password: axP-VNWeg-V-Bd_ZaSJGxWbWEE-t35Y2
   sni: northernleaf.gazette.help
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
+  type: hysteria2
+  server: 162.249.126.37
+  port: 8443
+  udp: true
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
   alpn:
   - h3
   up: 10 Mbps
@@ -137,16 +99,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+- name: 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   type: hysteria2
-  server: vpn-au-001.fastervpn.world
-  port: 443
+  server: 206.1.96.108
+  port: 7443
   udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-au-001.fastervpn.world
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   skip-cert-verify: true
   alpn:
   - h3
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
@@ -156,18 +120,6 @@ proxies:
   udp: true
   password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
   sni: cz.h2.cleanersaz.help
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
-  type: hysteria2
-  server: 45.147.31.52
-  port: 2443
-  udp: true
-  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
-  sni: hy2.78.141.219.189.nip.io
   skip-cert-verify: true
   alpn:
   - h3
@@ -198,6 +150,135 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  type: hysteria2
+  server: 103.126.51.52
+  port: 8443
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: ocober-romania-new.yyuyy.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  type: hysteria2
+  server: cz.h2.cleanersaz.help
+  port: 443
+  udp: true
+  password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
+  sni: cz.h2.cleanersaz.help
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  type: hysteria2
+  server: 153.56.210.134
+  port: 38045
+  udp: true
+  password: a81a7b45-dd70-42ef-822f-ef467f944382
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  type: hysteria2
+  server: 153.56.210.134
+  port: 53718
+  udp: true
+  password: 34ec1f39-3e1c-4b03-a65a-87a98b097bf3
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 2751fccc-d797-47cc-895d-70c9629cc8fe
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  type: hysteria2
+  server: 31.76.71.232
+  port: 443
+  udp: true
+  password: axP-VNWeg-V-Bd_ZaSJGxWbWEE-t35Y2
+  sni: de.1.23.h2corp.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  type: hysteria2
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  type: trojan
+  server: 77.74.123.108
+  port: 4443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  udp: true
+  sni: grape-test-italy.dynuddns.net
+- name: 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  type: hysteria2
+  server: 103.126.51.53
+  port: 8443
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: ocober-romania-new.yyuyy.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  type: hysteria2
+  server: 162.249.126.39
+  port: 8443
+  udp: true
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  type: hysteria2
+  server: 45.144.30.154
+  port: 2087
+  udp: true
+  password: axP-VNWeg-V-Bd_ZaSJGxWbWEE-t35Y2
+  sni: hazeljournal.gazette.help
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
+  type: hysteria2
+  server: 45.144.30.156
+  port: 8443
+  udp: true
+  password: axP-VNWeg-V-Bd_ZaSJGxWbWEE-t35Y2
+  sni: hazeljournal.gazette.help
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -205,42 +286,56 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -248,21 +343,28 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -270,21 +372,28 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -292,21 +401,28 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -314,63 +430,84 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -378,83 +515,111 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -462,21 +627,28 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [BC89] | @ScDevNetwork
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
-  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #065fb4'
   - 🇩🇪 DE | grape-test-italy.dynuddns.net | HYSTERIA2 [36DF] | @ScDevNetwork
-  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [B76C] | @ScDevNetwork
+  - 🇫🇮 FI | i.wareznet.ru | HYSTERIA2 [B571] | @ScDevNetwork
+  - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [16AA] | @ScDevNetwork
   - 🇦🇲 AM | us3.xiaoliyu.cyou | HYSTERIA2 [717D] | @ScDevNetwork
-  - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [509D] | @ScDevNetwork
-  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.51
   - 🇫🇮 Helsinki, FI · Web1 Oy | 153.76.194.154
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.37
   - 🇷🇺 RU | media2.h2corp.org | HYSTERIA2 [8480] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [72A2] | @ScDevNetwork
   - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [D45F] | @ScDevNetwork
-  - 🇩🇪 DE | hy2.78.141.219.189.nip.io | HYSTERIA2 [3CA4] | @ScDevNetwork
   - 🇹🇷 TR | me17.msjia8844.site | HYSTERIA2 [06AB] | @ScDevNetwork
   - 🇷🇴 Romania · Interkvm Host Srl | 77.74.123.108
+  - 🇩🇪 DE | ocober-romania-new.yyuyy.com | HYSTERIA2 [6BD2] | @ScDevNetwork
+  - 🇨🇿 CZ | cz.h2.cleanersaz.help | HYSTERIA2 [118F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [E88C] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [5F01] | @ScDevNetwork
+  - 🇷🇺 RU | de.1.23.h2corp.org | HYSTERIA2 [313F] | @ScDevNetwork
+  - 🇹🇷 TR | www.bing.com | HYSTERIA2 [58C1] | @ScDevNetwork
+  - '[1596]🎈 🇮🇹 ITA [TR] 🎈 🗺️ #6c8112'
+  - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.53
+  - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.154
+  - 🇷🇺 Moscow, RU · UFO Hosting | 45.144.30.156 :8443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
