@@ -133,19 +133,6 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
-  type: hysteria2
-  server: 159.13.42.167
-  port: 20000
-  udp: true
-  password: b42d90fa667942aebc734d60
-  sni: rmgyvpn.rest
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   type: hysteria2
   server: 43.156.36.253
@@ -263,30 +250,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  type: hysteria2
-  server: 87.251.17.11
-  port: 9443
-  udp: true
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
-  type: hysteria2
-  server: 104.165.205.46
-  port: 9443
-  udp: true
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
   type: hysteria2
   server: h64zr42s.zf-mix.9999231.xyz
@@ -300,27 +263,120 @@ proxies:
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
+- name: 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
   type: hysteria2
-  server: hm6wzm11.zf-mix.9999231.xyz
-  port: 2019
+  server: top.bostnet.xyz
+  port: 443
+  udp: true
+  password: 83rwy5zazcx1f4i6
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  type: trojan
+  server: 146.75.57.238
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl-mitivpn.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn-4--vip.global.ssl.fastly.net
+- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  type: trojan
+  server: 167.82.76.27
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: mitivpn-mitivpn.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-3--vip.global.ssl.fastly.net
+- name: '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: mitivpn.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn-2--vip.global.ssl.fastly.net
+- name: 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  type: hysteria2
+  server: 129.146.67.83
+  port: 2039
   udp: true
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  sni: pl-house.9999231.xyz
+  sni: ro-wy.9999231.xyz
   alpn:
   - h3
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+- name: 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
   type: hysteria2
-  server: ru.xiaoliyu.cyou
-  port: 18333
+  server: brb.nnpy.org
+  port: 11100
   udp: true
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru.xiaoliyu.cyou
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: www.bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@GozargahAzad|🇷🇺'
+  type: hysteria2
+  server: 138.124.254.233
+  port: 443
+  udp: true
+  password: cc4074d6-f450-4025-833a-a6e0100ceaff
+  sni: crt.molniya.sbs
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@GozargahAzad|🇪🇪'
+  type: hysteria2
+  server: 31.76.107.12
+  port: 443
+  udp: true
+  password: cc4074d6-f450-4025-833a-a6e0100ceaff
+  sni: crt.molniya.sbs
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@GozargahAzad|🇩🇪'
+  type: hysteria2
+  server: 45.88.12.155
+  port: 443
+  udp: true
+  password: cc4074d6-f450-4025-833a-a6e0100ceaff
+  sni: crt.molniya.sbs
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@GozargahAzad|🇫🇮'
+  type: hysteria2
+  server: 65.108.67.45
+  port: 443
+  udp: true
+  password: cc4074d6-f450-4025-833a-a6e0100ceaff
+  sni: crt.molniya.sbs
   alpn:
   - h3
   up: 10 Mbps
@@ -342,7 +398,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -353,11 +408,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -374,7 +435,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -385,11 +445,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -407,7 +473,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -418,11 +483,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -440,7 +511,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -451,11 +521,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -473,7 +549,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -484,11 +559,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -506,7 +587,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -517,11 +597,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -538,7 +624,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -549,11 +634,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 📲 电报信息
   type: select
   proxies:
@@ -570,7 +661,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -581,11 +671,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -603,7 +699,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -614,11 +709,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -635,7 +736,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -646,11 +746,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -666,7 +772,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -677,11 +782,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -698,7 +809,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -709,11 +819,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -731,7 +847,6 @@ proxy-groups:
   - 🇷🇴 Romania · Interkvm Host Srl | 162.249.126.39 :8443
   - 🇯🇵 Tokyo, JP · Baxet Group | rb.mangshe.xyz :2060
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088·hysteria
-  - 🇦🇺 Bungarribee, AU · Oracle Corporation | 159.13.42.167 :20000
   - 🇸🇬 Singapore, SG · Tencent Building,… | 43.156.36.253 :8443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
   - 🇩🇪 DE | hop-germany-september.dynuddns.com | HYSTERIA2 [A097] | @ScDevNetwork
@@ -742,11 +857,17 @@ proxy-groups:
   - '[1596]🎈 🇹🇷 TUR [H2] 🎈 🚀 #f5bfdd'
   - 🇷🇴 Romania · Interkvm Host Srl | 103.126.51.55
   - 🇮🇳 Mumbai, IN · Oracle Corporation | 144.24.109.215
-  - 🇫🇮FI_41|3.1MB/s|R002-260618 01
-  - 🇱🇻 Riga, LV · UXHOST | 104.165.205.46 :9443
   - 🇯🇵 Osaka, JP · Amazon.com | h64zr42s.zf-mix.9999231.xyz
-  - 🇯🇵 Osaka, JP · Amazon.com | hm6wzm11.zf-mix.9999231.xyz
-  - 🇷🇺 Moscow, RU · LLC Baxet | ru.xiaoliyu.cyou
+  - 🇺🇸 US | top.bostnet.xyz | HYSTERIA2 [8163] | @ScDevNetwork
+  - '[1596]🎈 🇸🇪 SWE [TR] 🎈 🗺️ #25a639'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7c05f5'
+  - '[1596]🎈 🇨🇦 CAN [TR] 🎈 🗺️ #7043ab'
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.67.83
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | brb.nnpy.org
+  - '@GozargahAzad|🇷🇺'
+  - '@GozargahAzad|🇪🇪'
+  - '@GozargahAzad|🇩🇪'
+  - '@GozargahAzad|🇫🇮'
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
