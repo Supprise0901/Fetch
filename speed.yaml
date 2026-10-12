@@ -5,29 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   type: hysteria2
   server: 5.83.129.153
@@ -52,29 +29,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
+- name: 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   type: hysteria2
-  server: pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru
-  port: 3218
+  server: lbrts-central.duckdns.org
+  port: 17483
   udp: true
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  sni: pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
-  type: hysteria2
-  server: nord-central.duckdns.org
-  port: 59799
-  udp: true
-  password: 0637f970-5223-4d8e-86b4-07c62509c6e8
-  sni: stream-uplink.nord-central.duckdns.org
+  password: 05cd5acd-469c-46e8-8f94-29b0ccb684ec
+  sni: rt-gateway.lbrts-central.duckdns.org
   skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: 4B95QktCUF1yQC6t6qaE2qgvPD6LOiH3
+  obfs-password: UmPH2NsuaQshhlzF5sY87aWpSaOLYrDm
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
@@ -91,20 +57,6 @@ proxies:
   obfs-password: WM0CSORkdxWByZqumlLav9pU7irma8IV
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
-  type: hysteria2
-  server: frdm-central.duckdns.org
-  port: 19807
-  udp: true
-  password: 68d8cba0-3aed-41eb-92e5-a41fa8b2f53a
-  sni: rtc-media.frdm-central.duckdns.org
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: B2wguTi2uslqQdDN3Oc52DgfE3sipMQ4
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
   type: hysteria2
   server: lbrts-central.duckdns.org
@@ -119,59 +71,6 @@ proxies:
   obfs-password: sXm0lT02h9fsNKAXDOoiPYcqLapQbhVh
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  type: hysteria2
-  server: frdm-central.duckdns.org
-  port: 50853
-  udp: true
-  password: 68d8cba0-3aed-41eb-92e5-a41fa8b2f53a
-  sni: search-index.frdm-central.duckdns.org
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: T7rL1aJ7kcAvyvilLqfTD4YdBDugofQG
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  type: hysteria2
-  server: frdm-central.duckdns.org
-  port: 53358
-  udp: true
-  password: 68d8cba0-3aed-41eb-92e5-a41fa8b2f53a
-  sni: turn-server.frdm-central.duckdns.org
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: RN7E60W45DDCf2Ef5nMD87gxvDKMXcnk
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  type: hysteria2
-  server: lbrts-central.duckdns.org
-  port: 46695
-  udp: true
-  password: 05cd5acd-469c-46e8-8f94-29b0ccb684ec
-  sni: ws-proxy.lbrts-central.duckdns.org
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: dvZ9oudJ5hDD7P5OGpSE0m59hwvaETPC
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org
-    :57006
-  type: hysteria2
-  server: nuxt-vless.duckdns.org
-  port: 57006
-  udp: true
-  password: cf77acae-4b9c-486d-9e59-24068e240ab3
-  sni: webrtc-turn.nuxt-vless.duckdns.org
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: J21pWQMUIJvBNxhSmM69iIPaeZLOeIB8
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
   type: hysteria2
   server: 194.48.250.233
@@ -180,17 +79,6 @@ proxies:
   password: a2c74ce7-5daa-4bee-a1eb-52863873b3c3
   sni: mol.ultimagamest.com
   skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany · neroserv UG… | 94.249.241.156
-  type: hysteria2
-  server: 94.249.241.156
-  port: 3218
-  udp: true
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  sni: pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru
   alpn:
   - h3
   up: 10 Mbps
@@ -232,17 +120,6 @@ proxies:
   obfs-password: b42d90fa667942aebc734d60
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
-  type: hysteria2
-  server: 88.218.42.102
-  port: 443
-  udp: true
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: routes-cdn.travel-blogmir.blog
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
   type: hysteria2
   server: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
@@ -255,337 +132,379 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  type: hysteria2
+  server: open.2ml.bid
+  port: 443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  type: hysteria2
+  server: open.2ml.bid
+  port: 5443
+  udp: true
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  type: hysteria2
+  server: alb1337.zaebalsanoproxyklinus.lol
+  port: 28152
+  udp: true
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: alb1337.zaebalsanoproxyklinus.lol
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  type: hysteria2
+  server: 3.71.108.98
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  type: hysteria2
+  server: 45.141.202.49
+  port: 3006
+  udp: true
+  password: 43212c32-01f2-4356-b216-67dc1c178262
+  sni: ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  type: hysteria2
+  server: ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru
+  port: 3006
+  udp: true
+  password: 43212c32-01f2-4356-b216-67dc1c178262
+  sni: ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🏳️ ShatakVPN 976172
+  type: hysteria2
+  server: 18.198.189.91
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇺🇸 Los Angeles, US · NTT America | 192.220.56.72
-  - 🇩🇪 Germany · neroserv UG… | pbf5bif5gkg.vpvr4ib84nuv6hdkt.ru :3218
-  - 🇳🇱 NL | stream-uplink.nord-central.duckdns.org | HYSTERIA2 [32D9] | @ScDevNetwork
+  - 🇷🇺 RU | rt-gateway.lbrts-central.duckdns.org | HYSTERIA2 [9F05] | @ScDevNetwork
   - 🇩🇪 DE | game-relay.nuxt-vless.duckdns.org | HYSTERIA2 [DF3D] | @ScDevNetwork
-  - 🇷🇺 RU | rtc-media.frdm-central.duckdns.org | HYSTERIA2 [D811] | @ScDevNetwork
   - 🇷🇺 RU | proxy-registry.lbrts-central.duckdns.org | HYSTERIA2 [2B48] | @ScDevNetwork
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :50853
-  - 🇷🇺 Russia · Cloud.ru | frdm-central.duckdns.org :53358
-  - 🇷🇺 Russia · Cloud.ru | lbrts-central.duckdns.org :46695
-  - 🇩🇪 Frankfurt Am Main, DE · EdgeSec Technologies… | nuxt-vless.duckdns.org :57006
   - 🇩🇪 Frankfurt Am Main, DE · Oc Networks Limited | 194.48.250.233
-  - 🇩🇪 Germany · neroserv UG… | 94.249.241.156
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - '[1596]⭐ 🇨🇦 CAN [H2] ⭐ 📑 🗺️ 🚀 #77352b'
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
-  - 🇷🇴 Romania · Interkvm Host Srl | 88.218.42.102
   - 🇭🇰 Hong Kong · HKT Limited | 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [53BF] | @ScDevNetwork
+  - 🇯🇵 JP | open.2ml.bid | HYSTERIA2 [DE77] | @ScDevNetwork
+  - 🇦🇱 AL | alb1337.zaebalsanoproxyklinus.lol | HYSTERIA2 [D620] | @ScDevNetwork
+  - 🇩🇪 Frankfurt Am Main, DE · Amazon.com | 3.71.108.98
+  - 🇳🇱 The Netherlands · RoyaleHosting BV | 45.141.202.49 :3006
+  - 🇩🇪 Germany · neroserv UG… | ovk6lv4rlvi.vpvr4ib84nuv6hdkt.ru :3006
+  - 🏳️ ShatakVPN 976172
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
