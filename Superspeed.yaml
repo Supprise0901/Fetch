@@ -64,17 +64,144 @@
     ],
     "outbounds": [
         {
+            "tag": "🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "ru03.arpanet-cdn.com",
+            "server_port": 17701,
+            "password": "56ff50da-a238-4646-95ab-dd159634bd87",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "ru03.arpanet-cdn.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce"
+            }
+        },
+        {
+            "tag": "🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "8.209.247.109",
+            "server_port": 443,
+            "password": "usqmqUKJFIlCmvkCNSY64L3k",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET",
+            "type": "hysteria2",
+            "server": "37.9.4.112",
+            "server_port": 17701,
+            "password": "56ff50da-a238-4646-95ab-dd159634bd87",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "ru03.arpanet-cdn.com",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce"
+            }
+        },
+        {
+            "tag": "🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "qcloudge1.exitvpn.shop",
+            "server_port": 20270,
+            "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "qcloudge1.exitvpn.shop",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56",
+            "type": "hysteria2",
+            "server": "137.23.2.56",
+            "server_port": 20000,
+            "password": "b42d90fa667942aebc734d60",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "rmgyvpn.rest",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "b42d90fa667942aebc734d60"
+            }
+        },
+        {
+            "tag": "🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru",
+            "type": "hysteria2",
+            "server": "hy9.shamanfun.ru",
+            "server_port": 1443,
+            "password": "c635b5f6-b5ea-4e57-927f-75860b0cb984",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "hy9.shamanfun.ru",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct"
+                "direct",
+                "🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork",
+                "🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56",
+                "🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru",
+                "🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET",
+                "🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork",
+                "🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork",
+                "🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56",
+                "🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru",
+                "🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET",
+                "🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork",
+                "🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork"
+            ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "5m",
             "tolerance": 50
