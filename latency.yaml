@@ -5,42 +5,93 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
+- name: 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
   type: hysteria2
-  server: 152.70.237.123
-  port: 2053
+  server: 192.220.56.72
+  port: 8882
   udp: true
-  password: maintell
+  password: PD_0jD41hkQxq5ghBRhe7adO
   sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
   type: hysteria2
-  server: me17.msjia8844.site
-  port: 7443
+  server: 155.117.19.17
+  port: 443
   udp: true
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+- name: 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
   type: hysteria2
-  server: sg1.dexlos.com
-  port: 20177
+  server: ru03.arpanet-cdn.com
+  port: 17701
   udp: true
-  password: 745A6079-6A61-423D-BDD9-B344C1D26E62
-  sni: sg1.dexlos.com
+  password: 56ff50da-a238-4646-95ab-dd159634bd87
+  sni: ru03.arpanet-cdn.com
   skip-cert-verify: true
   alpn:
   - h3
+  obfs: salamander
+  obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  type: hysteria2
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  type: hysteria2
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
+  type: hysteria2
+  server: 37.9.4.112
+  port: 17701
+  udp: true
+  password: 56ff50da-a238-4646-95ab-dd159634bd87
+  sni: ru03.arpanet-cdn.com
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
   up: 10 Mbps
   down: 100 Mbps
 proxy-groups:
@@ -49,110 +100,162 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork
-  - 🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443
-  - 🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177
+  - 🇺🇸 US | bing.com | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [EE49] | @ScDevNetwork
+  - 🇷🇺 RU | ru03.arpanet-cdn.com | HYSTERIA2 [0AB2] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  - 🇯🇵 JP | bing.com | HYSTERIA2 [4F32] | @ScDevNetwork
+  - 🇮🇱 Jerusalem, IL · Oracle Corporation | 129.159.156.109 :50160
+  - 🇷🇺193429 | ⚡️Telegram = t.me/SOSkeyNET
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

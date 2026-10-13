@@ -64,79 +64,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork",
-            "type": "hysteria2",
-            "server": "152.70.237.123",
-            "server_port": 2053,
-            "password": "maintell",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443",
-            "type": "hysteria2",
-            "server": "me17.msjia8844.site",
-            "server_port": 7443,
-            "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "me17.msjia8844.site",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-            }
-        },
-        {
-            "tag": "🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177",
-            "type": "hysteria2",
-            "server": "sg1.dexlos.com",
-            "server_port": 20177,
-            "password": "745A6079-6A61-423D-BDD9-B344C1D26E62",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "sg1.dexlos.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443",
-                "🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork",
-                "🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇹🇷 Istanbul, TR · Netlen Internet… | me17.msjia8844.site :7443",
-                "🇰🇷 KR | bing.com | HYSTERIA2 [4268] | @ScDevNetwork",
-                "🇸🇬 Singapore, SG · Amazon.com | sg1.dexlos.com :20177"
-            ],
+            "outbounds": [],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "5m",
             "tolerance": 50
