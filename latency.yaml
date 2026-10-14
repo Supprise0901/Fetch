@@ -64,18 +64,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
-  type: hysteria2
-  server: outh.yandex-cloud.org
-  port: 54183
-  udp: true
-  password: f3023b24-ac67-4cf3-8da7-980ab2bfe709
-  sni: outh.yandex-cloud.org
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   type: hysteria2
   server: 5.83.129.153
@@ -100,13 +88,74 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+- name: 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
   type: hysteria2
-  server: hy10.shamanfun.ru
+  server: sg4.dexlos.com
+  port: 20654
+  udp: true
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg4.dexlos.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  type: hysteria2
+  server: ch.newromania.website
+  port: 8443
+  udp: true
+  password: d9189eb1-a513-4317-929f-67c07715bf31
+  sni: ch.newromania.website
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  type: hysteria2
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  type: hysteria2
+  server: hy9.shamanfun.ru
   port: 1443
   udp: true
   password: c635b5f6-b5ea-4e57-927f-75860b0cb984
-  sni: hy10.shamanfun.ru
+  sni: hy9.shamanfun.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: By EbraSha 🧨 4
+  type: hysteria2
+  server: 3.75.178.53
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🏳️ ShatakVPN 358743
+  type: hysteria2
+  server: 3.77.57.250
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -122,10 +171,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -136,10 +189,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -151,10 +208,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -166,10 +227,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -181,10 +246,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -196,10 +265,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -210,10 +283,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 📲 电报信息
   type: select
   proxies:
@@ -224,10 +301,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -239,10 +320,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -253,10 +338,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -266,10 +355,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -280,10 +373,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -295,10 +392,14 @@ proxy-groups:
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
   - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [9FCC] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
-  - 🇺🇸 United States · Serv.host Group | hy10.shamanfun.ru :1443
+  - 🇸🇬 SG | sg4.dexlos.com | HYSTERIA2 [5A6F] | @ScDevNetwork
+  - 🇨🇭 Zug, CH · Julian Achter | ch.newromania.website
+  - 🇩🇪 Nuremberg, DE · netcup | de1.xiaoliyu.cyou :4433
+  - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
+  - By EbraSha 🧨 4
+  - 🏳️ ShatakVPN 358743
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
