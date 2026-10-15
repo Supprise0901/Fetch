@@ -52,18 +52,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
-  type: hysteria2
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-au-001.fastervpn.world
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   type: hysteria2
   server: 5.83.129.153
@@ -159,17 +147,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
-  type: hysteria2
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  password: b0917015b656b3dd2286b5633af0c5c1
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   type: hysteria2
   server: vpn-de-002.fastervpn.world
@@ -216,6 +193,53 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  type: hysteria2
+  server: 185.233.187.188
+  port: 2087
+  udp: true
+  password: d0589fb6-420b-4078-a72a-66d270a25fd9
+  sni: fireedge.eaglors.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  type: hysteria2
+  server: boostlitva77www.qcloud.surf
+  port: 21733
+  udp: true
+  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  sni: boostlitva77www.qcloud.surf
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  type: hysteria2
+  server: es2.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
+  sni: es2.xiaoliyu.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
+  type: hysteria2
+  server: outh.yandex-cloud.org
+  port: 54183
+  udp: true
+  password: 43c6e610-03e3-4b6d-9abd-a4bfe7cc0aa9
+  sni: outh.yandex-cloud.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -226,7 +250,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -235,11 +258,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -249,7 +275,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -258,11 +283,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -273,7 +301,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -282,11 +309,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -297,7 +327,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -306,11 +335,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -321,7 +353,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -330,11 +361,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -345,7 +379,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -354,11 +387,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -368,7 +404,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -377,11 +412,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -391,7 +429,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -400,11 +437,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -415,7 +455,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -424,11 +463,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -438,7 +480,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -447,11 +488,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -460,7 +504,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -469,11 +512,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -483,7 +529,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -492,11 +537,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -507,7 +555,6 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇺🇸 US | finkawwwbroy5.qcloud.surf | HYSTERIA2 [C770] | @ScDevNetwork
   - 🇸🇪 SE | hy11.shamanfun.ru | HYSTERIA2 [89A1] | @ScDevNetwork
-  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.153 :20088
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇷🇺 Russia · Serv.host Group | hy9.shamanfun.ru
@@ -516,11 +563,14 @@ proxy-groups:
   - 🇺🇸 US | qcloudge1.exitvpn.shop | HYSTERIA2 [74A3] | @ScDevNetwork
   - 🇮🇱 IL | www.bing.com | HYSTERIA2 [A086] | @ScDevNetwork
   - 🇳🇱 NL | hy10.shamanfun.ru | HYSTERIA2 [7957] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇰🇷 Chuncheon, KR · Oracle Corporation | 150-230-252-217.liao.kdns.fr
   - 🇭🇰 Hong Kong, HK · Google | 34.150.46.137
   - 🇭🇰 Hong Kong, HK · Baxet Group | hk2.xiaoliyu.cyou
+  - 🇷🇺 RU | fireedge.eaglors.com | HYSTERIA2 [A0BD] | @ScDevNetwork
+  - 🇱🇹 LT | boostlitva77www.qcloud.surf | HYSTERIA2 [0452] | @ScDevNetwork
+  - 🇪🇸 ES | es2.xiaoliyu.cyou | HYSTERIA2 [30C7] | @ScDevNetwork
+  - 🇷🇺 RU | outh.yandex-cloud.org | HYSTERIA2 [7E34] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
