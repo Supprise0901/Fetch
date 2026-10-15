@@ -79,6 +79,93 @@ proxies:
   obfs-password: a34f3990b69f44bfa0d32385
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  type: hysteria2
+  server: 152.67.115.203
+  port: 443
+  udp: true
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  type: hysteria2
+  server: 31.57.248.176
+  port: 50160
+  udp: true
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  type: trojan
+  server: 201.10.90.81
+  port: 443
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  udp: true
+  sni: HL-FREEDOM-2.UNDEF.NETWORK
+  network: ws
+  ws-opts:
+    path: /f2fc2a1f
+    headers:
+      Host: hl-freedom-2.undef.network
+- name: 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  type: hysteria2
+  server: 137.131.171.249
+  port: 20000
+  udp: true
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  type: hysteria2
+  server: 179.255.104.98
+  port: 443
+  udp: true
+  password: lh92eQnxIpeg2odHHDg0SrcczqwS4e8Y
+  sni: dl1.yuanshicheng.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
+  type: hysteria2
+  server: 32.236.157.157
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-001.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -91,6 +178,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -102,6 +196,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -114,6 +215,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -126,6 +234,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -138,6 +253,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -150,6 +272,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -161,6 +290,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -172,6 +308,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -184,6 +327,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -195,6 +345,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -205,6 +362,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -216,6 +380,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -228,6 +399,13 @@ proxy-groups:
   - 🏳️ ShatakVPN 358743
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 137.23.2.56 :20000
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 192.9.175.191 :20000
+  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
+  - 🇭🇰 HK | www.bing.com | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇦🇺 AU | vpn-au-001.fastervpn.world | HYSTERIA2 [2103] | @ScDevNetwork
+  - '[1596]🎈 🇵🇱 POL [TR] 🎈 #167df2'
+  - 🇧🇷 São Paulo, BR · Oracle Corporation | 137.131.171.249 :20000
+  - 🇺🇸 Los Angeles, US · DMIT Cloud Services | 179.255.104.98
+  - 🇦🇺 Sydney, AU · Amazon.com | 32.236.157.157 :443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
