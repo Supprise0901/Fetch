@@ -5,20 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
-  type: hysteria2
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   type: hysteria2
   server: de-tg.fastlanehosting.ru
@@ -30,18 +16,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇩🇪 Germany · Takehost Ou | 5.83.129.153
-  type: hysteria2
-  server: 5.83.129.153
-  port: 20088
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
 - name: 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   type: hysteria2
   server: 5.83.129.90
@@ -67,18 +41,6 @@ proxies:
   obfs-password: b42d90fa667942aebc734d60
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
-  type: hysteria2
-  server: 153.76.190.31
-  port: 8443
-  udp: true
-  password: d65fb384-5029-4edf-bdc7-0f5960600e3d
-  sni: speedtestmark.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
   type: hysteria2
   server: 192.236.226.182
@@ -97,24 +59,18 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🎥 NETFLIX
   type: select
@@ -122,12 +78,9 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: ⛔️ 广告拦截
   type: select
@@ -135,12 +88,9 @@ proxy-groups:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🚫 运营劫持
   type: select
@@ -148,12 +98,9 @@ proxy-groups:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🌍 国外媒体
   type: select
@@ -161,36 +108,27 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🍎 苹果服务
   type: select
@@ -198,47 +136,35 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 - name: 🐟 漏网之鱼
   type: select
@@ -246,12 +172,9 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇦🇺 AU | www.bing.com | HYSTERIA2 [D502] | @ScDevNetwork
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
-  - 🇩🇪 Germany · Takehost Ou | 5.83.129.153
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000
-  - 🇨🇿 CZ | speedtestmark.com | HYSTERIA2 [DDD4] | @ScDevNetwork
   - 🇺🇸 United States (US) - Unknown | 192.236.226.182:2053
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
