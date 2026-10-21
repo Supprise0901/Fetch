@@ -64,98 +64,17 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪 Germany · Takehost Ou | 5.83.129.90",
-            "type": "hysteria",
-            "server": "5.83.129.90",
-            "server_port": 54177,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000",
-            "type": "hysteria2",
-            "server": "158.178.137.129",
-            "server_port": 20000,
-            "password": "b42d90fa667942aebc734d60",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "rmgyvpn.rest",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "b42d90fa667942aebc734d60"
-            }
-        },
-        {
-            "tag": "🇺🇸 United States (US) - Unknown | 192.236.226.182:2053",
-            "type": "hysteria2",
-            "server": "192.236.226.182",
-            "server_port": 2053,
-            "password": "46647da9-d4b4-407f-bea6-ad0b1abc561f",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "192.236.226.182",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇩🇪 Germany (DE) - Unknown | 5.83.129.153:20088",
-            "type": "hysteria",
-            "server": "5.83.129.153",
-            "server_port": 20088,
-            "up_mbps": 500,
-            "down_mbps": 1000,
-            "auth_str": "dongtaiwang.com",
-            "tls": {
-                "enabled": true,
-                "server_name": "apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
-                "direct",
-                "🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000",
-                "🇩🇪 Germany (DE) - Unknown | 5.83.129.153:20088",
-                "🇩🇪 Germany · Takehost Ou | 5.83.129.90",
-                "🇺🇸 United States (US) - Unknown | 192.236.226.182:2053"
+                "direct"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
-            "outbounds": [
-                "🇦🇺 Bungarribee, AU · Oracle Corporation | 158.178.137.129 :20000",
-                "🇩🇪 Germany (DE) - Unknown | 5.83.129.153:20088",
-                "🇩🇪 Germany · Takehost Ou | 5.83.129.90",
-                "🇺🇸 United States (US) - Unknown | 192.236.226.182:2053"
-            ],
+            "outbounds": [],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "5m",
             "tolerance": 50
