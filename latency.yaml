@@ -42,17 +42,6 @@ proxies:
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
-  type: hysteria2
-  server: jp1.frnhk.xyz
-  port: 9443
-  udp: true
-  password: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  sni: jp1.frnhk.xyz
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   type: hysteria2
   server: 38.175.202.26
@@ -65,36 +54,24 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  type: hysteria2
-  server: 191.223.209.245
-  port: 8443
-  udp: true
-  password: r5uI9R8L6vw5vhtXT4EU9O5XCbHWePj1
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
-  type: trojan
-  server: 78.17.171.137
-  port: 443
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  udp: true
-  sni: 2.HI-L.IM
-  network: ws
-  ws-opts:
-    path: /f2fc2a1f
-    headers:
-      Host: 2.hi-l.im
 - name: 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
   type: hysteria2
   server: 1o2.690423.xyz
   port: 8443
   udp: true
   password: myptyun.Hu5bS3VYUd3iqmaU
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
+  type: hysteria2
+  server: 13.209.18.208
+  port: 443
+  udp: true
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -109,11 +86,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -122,11 +97,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -136,11 +109,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -150,11 +121,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -164,11 +133,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -178,11 +145,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -191,11 +156,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -204,11 +167,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -218,11 +179,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -231,11 +190,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -243,11 +200,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -256,11 +211,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -270,11 +223,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 Japan (JP) - Tokyo | jp1.frnhk.xyz:9443
   - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  - 🇭🇰 Hong Kong SAR China (HK) - Kwai Chung | 191.223.209.245:8443
-  - '[1596]🎈 🇳🇱 NLD [TR] 🎈 #26eb5f'
   - 🇩🇪 Germany (DE) - Nuremberg | 1o2.690423.xyz:8443
+  - 🇰🇷 South Korea (KR) - Incheon | 13.209.18.208:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
