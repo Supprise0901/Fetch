@@ -42,18 +42,6 @@ proxies:
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
-  type: hysteria2
-  server: 38.175.202.26
-  port: 443
-  udp: true
-  password: wvA0PtDIuFbSqooIC2goKzFr
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   type: hysteria2
   server: 62.210.70.191
@@ -66,6 +54,31 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  type: hysteria2
+  server: tw40.344211.cc
+  port: 8080
+  udp: true
+  password: 2cc3c129-34b6-4af7-ba33-7b8fca4363ea
+  sni: localhost
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] |
+    @ScDevNetwork
+  type: hysteria2
+  server: ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  sni: ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -75,8 +88,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -85,8 +99,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -96,8 +111,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -107,8 +123,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -118,8 +135,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -129,8 +147,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -139,8 +158,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -149,8 +169,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -160,8 +181,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -170,8 +192,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -179,8 +202,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -189,8 +213,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -200,8 +225,9 @@ proxy-groups:
   - 🇩🇪 Frankfurt Am Main, DE · Global Connectivity… | de-tg.fastlanehosting.ru
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇹🇷 TR | www.bing.com | HYSTERIA2 [6076] | @ScDevNetwork
-  - 🇯🇵 JP | bing.com | HYSTERIA2 [285D] | @ScDevNetwork
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
+  - 🇹🇼 TW | localhost | HYSTERIA2 [4780] | @ScDevNetwork
+  - 🇭🇰 HK | ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com | HYSTERIA2 [AF67] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
