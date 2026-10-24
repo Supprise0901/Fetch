@@ -52,30 +52,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  type: hysteria2
-  server: 83.147.192.85
-  port: 443
-  udp: true
-  password: 0ce6e041-b701-4dd0-a82a-96b287abc4bf
-  sni: fl.solomon-planet.ru
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
-  type: hysteria2
-  server: fl.solomon-planet.ru
-  port: 443
-  udp: true
-  password: 0ce6e041-b701-4dd0-a82a-96b287abc4bf
-  sni: fl.solomon-planet.ru
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
   type: hysteria2
   server: noway.luxes.network
@@ -83,18 +59,6 @@ proxies:
   udp: true
   password: 78559873-84ef-4cab-a0b2-46d4cd20de4a
   sni: noway.luxes.network
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
-  type: hysteria2
-  server: pl4.cryposikel.ru
-  port: 443
-  udp: true
-  password: 46785352-db89-4839-8079-d4c69ad87996
-  sni: pl4.cryposikel.ru
   skip-cert-verify: true
   alpn:
   - h3
@@ -136,6 +100,54 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  type: hysteria2
+  server: 84.32.129.182
+  port: 443
+  udp: true
+  password: 94c2b91777f8de3a5bc12d2a91b732c2
+  sni: promo3.betust.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  type: hysteria2
+  server: ch.newromania.website
+  port: 8443
+  udp: true
+  password: 9b11f521-7052-4933-bae1-caadb5cd8d23
+  sni: ch.newromania.website
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  type: hysteria2
+  server: 2.26.48.112
+  port: 2053
+  udp: true
+  password: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  sni: noway.luxes.network
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 United States - Buffalo | 104.168.6.236:44443
+  type: hysteria2
+  server: 104.168.6.236
+  port: 44443
+  udp: true
+  password: 64c05afc-ce81-4ba0-b697-afa04da1427e
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -146,13 +158,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -162,13 +175,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -179,13 +193,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -196,13 +211,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -213,13 +229,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -230,13 +247,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -246,13 +264,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -262,13 +281,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -279,13 +299,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -295,13 +316,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -310,13 +332,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -326,13 +349,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -343,13 +367,14 @@ proxy-groups:
   - 🇩🇪 Germany · Takehost Ou | 5.83.129.90
   - 🇫🇷 France (FR) - Paris | 62.210.70.191:24667
   - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [3D25] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [CDB4] | @ScDevNetwork
-  - 🇫🇮 FI | fl.solomon-planet.ru | HYSTERIA2 [AD3B] | @ScDevNetwork
   - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [A495] | @ScDevNetwork
-  - 🇺🇸 US | pl4.cryposikel.ru | HYSTERIA2 [AB44] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [CDEC] | @ScDevNetwork
   - 🇫🇷 FR | fr.gorobsub.com | HYSTERIA2 [505E] | @ScDevNetwork
   - 🇸🇪 SE | sweden.luxes.network | HYSTERIA2 [9AE1] | @ScDevNetwork
+  - 🇺🇸 US | promo3.betust.net | HYSTERIA2 [1CC3] | @ScDevNetwork
+  - 🇨🇭 CH | ch.newromania.website | HYSTERIA2 [8FC4] | @ScDevNetwork
+  - 🇩🇪 DE | noway.luxes.network | HYSTERIA2 [B761] | @ScDevNetwork
+  - 🇺🇸 United States - Buffalo | 104.168.6.236:44443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
