@@ -72,24 +72,24 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
-  type: hysteria2
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   type: hysteria2
   server: de-tg.fastlanehosting.ru
   port: 443
   udp: true
   password: M2NbFywBXjS9Ova8SgqRrQkp
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
+  type: hysteria2
+  server: 88.99.213.222
+  port: 14444
+  udp: true
+  password: mhsl
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -107,8 +107,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -120,8 +120,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -134,8 +134,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -148,8 +148,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -162,8 +162,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -176,8 +176,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -189,8 +189,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -202,8 +202,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -216,8 +216,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -229,8 +229,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -241,8 +241,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -254,8 +254,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -268,8 +268,8 @@ proxy-groups:
   - '[1596]🎈 🇹🇼 RUS [TR] 🎈 #217c6e'
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇭🇰 Hong Kong SAR China - Hong Kong | b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇩🇪 DE | bing.com | HYSTERIA2 [4453] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
