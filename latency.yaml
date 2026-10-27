@@ -158,74 +158,48 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
+- name: 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   type: hysteria2
-  server: fl2.nexfile.net
+  server: 31.57.248.176
+  port: 50160
+  udp: true
+  password: b0917015b656b3dd2286b5633af0c5c1
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  type: hysteria2
+  server: 13.143.189.71
   port: 4444
   udp: true
   password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: fl2.nexfile.net
+  sni: pl3.nexfile.net
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
+- name: 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   type: hysteria2
-  server: swe2.obxodvpn.us
-  port: 4443
+  server: pl3.nexfile.net
+  port: 4444
   udp: true
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
+  password: 10be1dad-9952-4c5e-aa30-db435f69b727
+  sni: pl3.nexfile.net
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
+- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   type: hysteria2
-  server: 31.76.81.191
-  port: 4443
-  udp: true
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  type: hysteria2
-  server: 132.243.252.21
+  server: 178.17.58.55
   port: 443
   udp: true
-  password: 8d18449d-e60d-40e1-b100-0468f1c2035b
-  sni: media.embrofree.org
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  type: hysteria2
-  server: 46.137.227.142
-  port: 443
-  udp: true
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇰🇷 South Korea - Incheon | 52.78.45.69:443
-  type: hysteria2
-  server: 52.78.45.69
-  port: 443
-  udp: true
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  sni: www.bing.com
-  skip-cert-verify: true
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  sni: de-tg.fastlanehosting.ru
   alpn:
   - h3
   up: 10 Mbps
@@ -249,12 +223,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -273,12 +245,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -298,12 +268,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -323,12 +291,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -348,12 +314,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -373,12 +337,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -397,12 +359,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -421,12 +381,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -446,12 +404,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -470,12 +426,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -493,12 +447,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -517,12 +469,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -542,12 +492,10 @@ proxy-groups:
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   - 🇯🇵 JP | jap2.nexfile.net | HYSTERIA2 [E949] | @ScDevNetwork
   - 🇺🇸 US | us.mi11o4ka.com | HYSTERIA2 [2AA9] | @ScDevNetwork
-  - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [ADCC] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [132A] | @ScDevNetwork
-  - 🇸🇪 SE | nl1.obxodvpn.us | HYSTERIA2 [967F] | @ScDevNetwork
-  - 🇵🇱 PL | media.embrofree.org | HYSTERIA2 [1C5E] | @ScDevNetwork
-  - 🇸🇬 Singapore - Unknown | 46.137.227.142:443
-  - 🇰🇷 South Korea - Incheon | 52.78.45.69:443
+  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
+  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
