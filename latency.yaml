@@ -76,17 +76,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
-  type: hysteria2
-  server: bl2.nexfile.net
-  port: 4444
-  udp: true
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: bl2.nexfile.net
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
   type: hysteria2
   server: 144.31.239.226
@@ -94,17 +83,6 @@ proxies:
   udp: true
   password: 10be1dad-9952-4c5e-aa30-db435f69b727
   sni: fl2.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
-  type: hysteria2
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  password: b0917015b656b3dd2286b5633af0c5c1
   skip-cert-verify: true
   alpn:
   - h3
@@ -145,30 +123,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  type: hysteria2
-  server: bl3.nexfile.net
-  port: 4444
-  udp: true
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: bl3.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
-  type: hysteria2
-  server: 13.143.188.158
-  port: 4444
-  udp: true
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: bl3.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
   type: hysteria2
   server: 13.143.188.153
@@ -181,13 +135,36 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+- name: 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
   type: hysteria2
-  server: 13.143.188.157
+  server: 192.236.226.182
+  port: 2053
+  udp: true
+  password: 46647da9-d4b4-407f-bea6-ad0b1abc561f
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  type: hysteria2
+  server: api5.nexfile.net
   port: 4444
   udp: true
   password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: bl3.nexfile.net
+  sni: api5.nexfile.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
   skip-cert-verify: true
   alpn:
   - h3
@@ -205,16 +182,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -226,16 +201,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -248,16 +221,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -270,16 +241,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -292,16 +261,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -314,16 +281,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -335,16 +300,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -356,16 +319,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -378,16 +339,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -399,16 +358,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -419,16 +376,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -440,16 +395,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -462,16 +415,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5C15] | @ScDevNetwork
   - 🇫🇷 FR | fr2-cl3.happy-glonaris.top | HYSTERIA2 [5685] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | bl2.nexfile.net:4444
   - 🇫🇮 FI | fl2.nexfile.net | HYSTERIA2 [E4B8] | @ScDevNetwork
-  - 🇭🇰 HK | 31.57.248.176 | HYSTERIA2 [F6DC] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [2637] | @ScDevNetwork
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [7F24] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [6E1D] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [F69E] | @ScDevNetwork
   - 🇧🇾 BY | bl2.nexfile.net | HYSTERIA2 [4ECB] | @ScDevNetwork
-  - 🇧🇾 BY | bl3.nexfile.net | HYSTERIA2 [C1A9] | @ScDevNetwork
+  - 🇺🇸 US | 192.236.226.182 | HYSTERIA2 [6A10] | @ScDevNetwork
+  - 🇬🇧 GB | api5.nexfile.net | HYSTERIA2 [AB7F] | @ScDevNetwork
+  - 🇭🇰 HK | vpn-hk-004.fastervpn.world | HYSTERIA2 [1A3D] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
