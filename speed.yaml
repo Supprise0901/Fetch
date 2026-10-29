@@ -63,29 +63,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  type: hysteria2
-  server: 2.26.85.45
-  port: 36912
-  udp: true
-  password: 70_Za5h0JLLSBIzH5E_E-A
-  sni: vpnmmg.serveblog.net
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
-  type: hysteria2
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   type: hysteria2
   server: 18.193.79.104
@@ -131,6 +108,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
+  type: hysteria2
+  server: 130.94.16.109
+  port: 443
+  udp: true
+  password: dQPT5I2ojYNjBeT2KPvk3Lr
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -142,12 +131,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -158,12 +146,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -175,12 +162,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -192,12 +178,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -209,12 +194,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -226,12 +210,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -242,12 +225,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -258,12 +240,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -275,12 +256,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -291,12 +271,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -306,12 +285,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -322,12 +300,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -339,12 +316,11 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 United States - Phoenix | 129.153.97.46:443
-  - 🇫🇮 Finland - Helsinki | 2.26.85.45:36912
-  - 🇭🇰HK_14|433KB/s|A004-260618 [b3006ae7e9ec]
   - 🇩🇪 DE | 18.193.79.104 | HYSTERIA2 [0DDA] | @ScDevNetwork
   - 🇩🇪 DE | 3.76.203.180 | HYSTERIA2 [5D55] | @ScDevNetwork
   - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
   - 🇩🇪 DE | 3.69.232.199 | HYSTERIA2 [A600] | @ScDevNetwork
+  - 🇺🇸 US | www.microsoft.com | HYSTERIA2 [D2FE] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
