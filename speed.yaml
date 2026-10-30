@@ -51,17 +51,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇱🇻 Latvia - Riga | 104.165.205.22:9443
-  type: hysteria2
-  server: 104.165.205.22
-  port: 9443
-  udp: true
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
   type: hysteria2
   server: 153.76.194.118
@@ -69,6 +58,78 @@ proxies:
   udp: true
   password: 7d43670b-6b08-45b9-8a24-8f3971abc132
   sni: finland.biznes.lol
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  type: hysteria2
+  server: 13.209.20.53
+  port: 443
+  udp: true
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  type: hysteria2
+  server: 13.184.188.220
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  type: hysteria2
+  server: finland.biznes.lol
+  port: 8443
+  udp: true
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  type: hysteria2
+  server: 5.83.129.143
+  port: 26691
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  type: hysteria2
+  server: vpn-us-004.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
+  type: hysteria2
+  server: vpn-us-001.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-001.fastervpn.world
+  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
@@ -83,8 +144,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -94,8 +160,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -106,8 +177,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -118,8 +194,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -130,8 +211,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -142,8 +228,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -153,8 +244,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 📲 电报信息
   type: select
   proxies:
@@ -164,8 +260,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -176,8 +277,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -187,8 +293,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -197,8 +308,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -208,8 +324,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -220,8 +341,13 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇪🇪 EE | nl1.obxodvpn.us | HYSTERIA2 [4BB1] | @ScDevNetwork
-  - 🇱🇻 Latvia - Riga | 104.165.205.22:9443
   - 🇫🇮 Finland - Helsinki | 153.76.194.118:8443
+  - 🇰🇷 KR | www.bing.com | HYSTERIA2 [82F1] | @ScDevNetwork
+  - 🇺🇸 US | vpn-us-004.fastervpn.world | HYSTERIA2 [F22A] | @ScDevNetwork
+  - 🇫🇮 FI | finland.biznes.lol | HYSTERIA2 [9A8E] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇺🇸US_324|1.3MB/s|C002-260622 [5d1c1682e3e8]
+  - 🇺🇸US_337|1.2MB/s|A004-260618 [cfbca0313596]
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
