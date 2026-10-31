@@ -75,18 +75,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
-  type: hysteria2
-  server: 13.143.188.143
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   type: hysteria2
   server: 9.247.54.69
@@ -122,6 +110,63 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  type: hysteria2
+  server: promo3.goonars.com
+  port: 443
+  udp: true
+  password: 63e1b9462d708b56d5d5a0267cffecdc
+  sni: promo3.goonars.com
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  type: hysteria2
+  server: 88.216.195.188
+  port: 443
+  udp: true
+  password: 63e1b9462d708b56d5d5a0267cffecdc
+  sni: promo3.goonars.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  type: hysteria2
+  server: promo2.betust.net
+  port: 443
+  udp: true
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  type: hysteria2
+  server: 50.7.193.146
+  port: 443
+  udp: true
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Russia - Unknown | 87.242.119.253:443
+  type: hysteria2
+  server: 87.242.119.253
+  port: 443
+  udp: true
+  password: 39b9f02c-a53d-0001-a535-8e779923d48b
+  sni: hvtlr-ru-47sb.fade.mom
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -134,10 +179,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -149,10 +198,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -165,10 +218,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -181,10 +238,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -197,10 +258,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -213,10 +278,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -228,10 +297,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -243,10 +316,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -259,10 +336,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -274,10 +355,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -288,10 +373,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -303,10 +392,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -319,10 +412,14 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [BF41] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5A4B] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [4F2A] | @ScDevNetwork
   - 🇩🇪 DE | nl1.obxodvpn.us | HYSTERIA2 [5BDA] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [173A] | @ScDevNetwork
+  - 🇺🇸 US | promo3.goonars.com | HYSTERIA2 [EDB1] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [563C] | @ScDevNetwork
+  - 🇬🇧 GB | promo2.betust.net | HYSTERIA2 [2606] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 87.242.119.253:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
