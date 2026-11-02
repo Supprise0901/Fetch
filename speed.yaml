@@ -51,6 +51,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
+  type: hysteria2
+  server: 217.60.73.56
+  port: 443
+  udp: true
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   type: hysteria2
   server: 165.154.193.165
@@ -109,41 +121,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  type: hysteria2
-  server: fl3.nexfile.net
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  type: hysteria2
-  server: 179.253.82.19
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 United States - Unknown | 179.253.82.33:4444
-  type: hysteria2
-  server: 179.253.82.33
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
   type: hysteria2
   server: 64.90.0.30
@@ -152,6 +129,17 @@ proxies:
   password: Ya8s3KxQ9pLw2
   sni: hk-node
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
+  type: hysteria2
+  server: 195.63.135.199
+  port: 8444
+  udp: true
+  password: 37dc525c-491e-4e6d-9925-fc0efd82b548
+  sni: 195-63-135-199.sslip.io
   alpn:
   - h3
   up: 10 Mbps
@@ -166,15 +154,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -184,15 +171,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -203,15 +189,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -222,15 +207,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -241,15 +225,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -260,15 +243,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -278,15 +260,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 📲 电报信息
   type: select
   proxies:
@@ -296,15 +277,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -315,15 +295,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -333,15 +312,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -350,15 +328,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -368,15 +345,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -387,15 +363,14 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [84F8] | @ScDevNetwork
+  - 🇺🇸 US | forshynewh.duckdns.org | HYSTERIA2 [E2D0] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.144:4444
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇺🇸 United States - Unknown | 13.143.189.149:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [7D2B] | @ScDevNetwork
-  - 🇺🇸 US | fl3.nexfile.net | HYSTERIA2 [3132] | @ScDevNetwork
-  - 🇺🇸 United States - Unknown | 179.253.82.33:4444
   - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
+  - 🇳🇱 Netherlands - Amsterdam | 195.63.135.199:8444
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
