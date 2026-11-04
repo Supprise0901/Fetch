@@ -17,6 +17,42 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
+- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  type: hysteria2
+  server: 178.17.58.55
+  port: 443
+  udp: true
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  sni: de-tg.fastlanehosting.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  type: hysteria2
+  server: 5.83.129.143
+  port: 26691
+  udp: true
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  type: hysteria2
+  server: 165.154.193.165
+  port: 443
+  udp: true
+  password: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: d7897b996af77eeecb7ac010361d74fb
+  up: 10 Mbps
+  down: 100 Mbps
 - name: 🇺🇸 United States - Unknown | 13.143.189.147:4444
   type: hysteria2
   server: 13.143.189.147
@@ -52,17 +88,42 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   type: hysteria2
-  server: pl2.nexfile.net
-  port: 4444
+  server: 198.200.57.142
+  port: 22335
   udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  up: 10 Mbps
-  down: 100 Mbps
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 United States - San Jose | 137.175.82.43:443
+  type: hysteria2
+  server: 137.175.82.43
+  port: 443
+  udp: true
+  password: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 20 Mbps
+  down: 20 Mbps
+- name: 🇺🇸 United States - San Jose | 137.175.82.44:443
+  type: hysteria2
+  server: 137.175.82.44
+  port: 443
+  udp: true
+  password: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -70,20 +131,30 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -91,10 +162,15 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -102,10 +178,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -113,10 +194,15 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -124,30 +210,45 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -155,39 +256,59 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -195,10 +316,15 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇺🇸 United States - Unknown | 13.143.189.147:4444
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
+  - 🇺🇸 United States - San Jose | 137.175.82.44:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
