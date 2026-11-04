@@ -5,29 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   type: hysteria2
   server: 5.83.129.143
@@ -53,18 +30,6 @@ proxies:
   obfs-password: d7897b996af77eeecb7ac010361d74fb
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇫🇷 France - Paris | 62.210.28.175:24667
-  type: hysteria2
-  server: 62.210.28.175
-  port: 24667
-  udp: true
-  password: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
   type: hysteria2
   server: 163.172.117.163
@@ -77,18 +42,18 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+- name: 🇺🇸 United States - San Jose | 137.175.82.43:443
   type: hysteria2
-  server: 198.200.57.142
-  port: 22335
+  server: 137.175.82.43
+  port: 443
   udp: true
-  password: github.com/Alvin9999-newpac/fanqiang
+  password: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-  up: 11 Mbps
-  down: 55 Mbps
+  up: 20 Mbps
+  down: 20 Mbps
 - name: 🇺🇸 United States - San Jose | 137.175.82.44:443
   type: hysteria2
   server: 137.175.82.44
@@ -101,25 +66,25 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 United States - Phoenix | 129.146.124.201:51000
+- name: 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
   type: hysteria2
-  server: 129.146.124.201
+  server: 144.24.109.215
   port: 51000
   udp: true
-  password: 1d491f8c-ccaa-43e1-b62d-f255c7832e27
+  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
   sni: cn.cremedelamer.com
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+- name: 🇫🇮 Finland - Unknown | 92.242.165.40:8443
   type: hysteria2
-  server: se.mimowhat.online
-  port: 443
+  server: 92.242.165.40
+  port: 8443
   udp: true
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
+  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
+  sni: speedtestmark.com
   alpn:
   - h3
   up: 10 Mbps
@@ -130,201 +95,162 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇺🇸 United States - San Jose | 137.175.82.43:443
   - 🇺🇸 United States - San Jose | 137.175.82.44:443
-  - 🇺🇸 United States - Phoenix | 129.146.124.201:51000
-  - 🇸🇪SE_16|3.4MB/s|K001-260618 [681e9c054218]
+  - 🇮🇳 IN | cn.cremedelamer.com | HYSTERIA2 [5990] | @ScDevNetwork
+  - 🇫🇮 Finland - Unknown | 92.242.165.40:8443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
