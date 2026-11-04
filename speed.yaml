@@ -17,9 +17,9 @@ proxies:
   - h3
   up: 500 Mbps
   down: 1000 Mbps
-- name: 🇺🇸 United States - Unknown | 13.143.189.144:4444
+- name: 🇺🇸 United States - Unknown | 13.143.189.147:4444
   type: hysteria2
-  server: 13.143.189.144
+  server: 13.143.189.147
   port: 4444
   udp: true
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
@@ -28,6 +28,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇫🇷 France - Paris | 62.210.28.175:24667
+  type: hysteria2
+  server: 62.210.28.175
+  port: 24667
+  udp: true
+  password: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
   type: hysteria2
   server: 163.172.117.163
@@ -40,37 +52,13 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+- name: 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
   type: hysteria2
-  server: 198.200.57.142
-  port: 22335
-  udp: true
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  type: hysteria2
-  server: 2.27.210.6
+  server: pl2.nexfile.net
   port: 4444
   udp: true
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: lv2.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
-  type: hysteria2
-  server: 45.88.12.119
-  port: 443
-  udp: true
-  password: 80cbaaec-caff-4181-8539-ea6e51731007
-  sni: crt.onecloudstream.com
+  sni: pl2.nexfile.net
   alpn:
   - h3
   up: 10 Mbps
@@ -82,22 +70,20 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -105,11 +91,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -117,11 +102,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -129,11 +113,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -141,33 +124,30 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -175,43 +155,39 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -219,11 +195,10 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇺🇸 United States - Unknown | 13.143.189.144:4444
+  - 🇺🇸 United States - Unknown | 13.143.189.147:4444
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇳🇱 NL | lv2.nexfile.net | HYSTERIA2 [19D7] | @ScDevNetwork
-  - 🇩🇪206168 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇵🇱 PL | pl2.nexfile.net | HYSTERIA2 [A0E9] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
