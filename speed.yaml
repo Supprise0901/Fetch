@@ -5,40 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  type: hysteria2
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  type: hysteria2
-  server: 178.17.58.55
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   type: hysteria2
   server: 5.83.129.143
@@ -136,15 +102,59 @@ proxies:
   obfs-password: d7897b996af77eeecb7ac010361d74fb
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  type: hysteria2
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  type: hysteria2
+  server: 88.99.213.222
+  port: 14444
+  udp: true
+  password: mhsl
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  type: hysteria2
+  server: 193.23.216.179
+  port: 443
+  udp: true
+  password: ce29a04d-c95a-4451-9518-bae0c074e0d7
+  sni: crt.onecloudstream.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇷 France - Paris | 62.210.70.191:24667
+  type: hysteria2
+  server: 62.210.70.191
+  port: 24667
+  udp: true
+  password: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -153,14 +163,15 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -169,15 +180,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -186,15 +198,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -203,15 +216,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -220,15 +234,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -237,14 +252,15 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -253,14 +269,15 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -269,15 +286,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -286,14 +304,15 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -302,13 +321,14 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -317,14 +337,15 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -333,15 +354,16 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
@@ -350,6 +372,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇳🇱 NL | nl1.obxodvpn.us | HYSTERIA2 [234C] | @ScDevNetwork
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
+  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
+  - 🇩🇪 DE | crt.onecloudstream.com | HYSTERIA2 [FC6F] | @ScDevNetwork
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
