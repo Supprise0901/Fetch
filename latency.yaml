@@ -136,29 +136,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  type: hysteria2
-  server: 64.90.0.30
-  port: 443
-  udp: true
-  password: Ya8s3KxQ9pLw2
-  sni: hk-node
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
-  type: hysteria2
-  server: 88.99.213.222
-  port: 14444
-  udp: true
-  password: mhsl
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇷 France - Paris | 62.210.70.191:24667
   type: hysteria2
   server: 62.210.70.191
@@ -171,6 +148,29 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  type: hysteria2
+  server: 186.246.18.62
+  port: 443
+  udp: true
+  password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
+  sni: hy.cardlist24.shop
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
+  type: hysteria2
+  server: 9.247.54.188
+  port: 443
+  udp: true
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nl1.obxodvpn.us
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -188,9 +188,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -207,9 +207,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -227,9 +227,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -247,9 +247,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -267,9 +267,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -287,9 +287,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -306,9 +306,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -325,9 +325,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -345,9 +345,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -364,9 +364,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -382,9 +382,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -401,9 +401,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -421,9 +421,9 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇱🇻 LV | speedtestmark.com | HYSTERIA2 [EC0D] | @ScDevNetwork
-  - 🇭🇰 HK | hk-node | HYSTERIA2 [7E31] | @ScDevNetwork
-  - 🇩🇪 DE | 88.99.213.222 | HYSTERIA2 [4453] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - Buffalo | 186.246.18.62:443
+  - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
