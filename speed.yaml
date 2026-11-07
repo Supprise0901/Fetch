@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
 - name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   type: hysteria2
   server: 178.17.58.55
@@ -136,13 +124,24 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
+  type: hysteria2
+  server: 201.8.64.7
+  port: 443
+  udp: true
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nlll.obxodvpn.us
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -153,12 +152,12 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -169,13 +168,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -186,13 +185,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -203,13 +202,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -220,13 +219,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -237,12 +236,12 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -253,12 +252,12 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -269,13 +268,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -286,12 +285,12 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -302,11 +301,11 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -317,12 +316,12 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -333,13 +332,13 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
@@ -350,6 +349,7 @@ proxy-groups:
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
