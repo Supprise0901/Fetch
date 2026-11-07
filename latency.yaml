@@ -6,11 +6,11 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
 - name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  type: hysteria2
+  type: hysteria
   server: 5.83.129.90
   port: 54177
   udp: true
-  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -40,11 +40,11 @@ proxies:
   up: 10 Mbps
   down: 100 Mbps
 - name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
-  type: hysteria2
+  type: hysteria
   server: 5.83.129.143
   port: 26691
   udp: true
-  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -52,11 +52,11 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
-  type: hysteria2
+  type: hysteria
   server: 163.172.117.163
   port: 36699
   udp: true
-  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -64,35 +64,11 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  type: hysteria2
+  type: hysteria
   server: 198.200.57.142
   port: 22335
   udp: true
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.43:443
-  type: hysteria2
-  server: 137.175.82.43
-  port: 443
-  udp: true
-  password: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 20 Mbps
-  down: 20 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.44:443
-  type: hysteria2
-  server: 137.175.82.44
-  port: 443
-  udp: true
-  password: dongtaiwang.com
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -100,11 +76,11 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 France - Paris | 62.210.28.175:24667
-  type: hysteria2
+  type: hysteria
   server: 62.210.28.175
   port: 24667
   udp: true
-  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -120,16 +96,16 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: d7897b996af77eeecb7ac010361d74fb
   up: 10 Mbps
   down: 100 Mbps
+  obfs: salamander
+  obfs-password: d7897b996af77eeecb7ac010361d74fb
 - name: 🇫🇷 France - Paris | 62.210.70.191:24667
-  type: hysteria2
+  type: hysteria
   server: 62.210.70.191
   port: 24667
   udp: true
-  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -147,18 +123,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
-  type: hysteria2
-  server: 201.8.64.7
-  port: 443
-  udp: true
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nlll.obxodvpn.us
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
   type: hysteria2
   server: fi-p1.h1cloud.net
@@ -166,18 +130,6 @@ proxies:
   udp: true
   password: p5xt6oLOA3qikIaj
   sni: www.bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
-  type: hysteria2
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
   skip-cert-verify: true
   alpn:
   - h3
@@ -207,15 +159,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: ♻️ 自动选择
   type: url-test
@@ -228,15 +176,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🎥 NETFLIX
   type: select
@@ -250,15 +194,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: ⛔️ 广告拦截
   type: select
@@ -272,15 +212,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🚫 运营劫持
   type: select
@@ -294,15 +230,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🌍 国外媒体
   type: select
@@ -316,15 +248,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🌏 国内媒体
   type: select
@@ -337,15 +265,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 📲 电报信息
   type: select
@@ -358,15 +282,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🍎 苹果服务
   type: select
@@ -380,15 +300,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: Ⓜ️ 微软服务
   type: select
@@ -401,15 +317,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🎯 全球直连
   type: select
@@ -421,15 +333,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🛑 全球拦截
   type: select
@@ -442,15 +350,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 - name: 🐟 漏网之鱼
   type: select
@@ -464,15 +368,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇺🇸 United States - San Jose | 137.175.82.43:443
-  - 🇺🇸 United States - San Jose | 137.175.82.44:443
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇳🇱 Netherlands - Amsterdam | 9.247.54.188:443
-  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
   - 🇫🇮 FI | www.bing.com | HYSTERIA2 [EA6B] | @ScDevNetwork
-  - 🇺🇸 US | fi1.obxodvpn.us | HYSTERIA2 [04C3] | @ScDevNetwork
   - 🇺🇸 United States - North Charleston | 35.207.53.51:20999
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
