@@ -66,28 +66,6 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: d7897b996af77eeecb7ac010361d74fb
-- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  type: hysteria2
-  server: 178.17.58.55
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
   type: hysteria
   server: 163.172.117.163
@@ -123,6 +101,28 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  type: hysteria2
+  server: 18.153.65.67
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
+  type: hysteria2
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -134,11 +134,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -149,11 +149,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -165,11 +165,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -181,11 +181,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -197,11 +197,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -213,11 +213,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -228,11 +228,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 📲 电报信息
   type: select
   proxies:
@@ -243,11 +243,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -259,11 +259,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -274,11 +274,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -288,11 +288,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -303,11 +303,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -319,11 +319,11 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇸🇬 Singapore - Unknown | 165.154.193.165:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇳🇱 Netherlands - Amsterdam | 201.8.64.7:443
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇰🇷 South Korea - Chuncheon | 152.69.231.175:50160
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
