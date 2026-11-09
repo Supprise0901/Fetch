@@ -111,6 +111,54 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  type: hysteria2
+  server: 165.154.193.165
+  port: 443
+  udp: true
+  password: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: d7897b996af77eeecb7ac010361d74fb
+- name: 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  type: hysteria2
+  server: 18.153.65.67
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
+  type: hysteria2
+  server: 201.8.64.7
+  port: 443
+  udp: true
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nlll.obxodvpn.us
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -126,6 +174,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -140,6 +192,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -155,6 +211,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -170,6 +230,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -185,6 +249,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -200,6 +268,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -214,6 +286,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -228,6 +304,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -243,6 +323,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -257,6 +341,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -270,6 +358,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -284,6 +376,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -299,6 +395,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [4462] | @ScDevNetwork
+  - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
+  - 🇩🇪 DE | vpn-de-002.fastervpn.world | HYSTERIA2 [B135] | @ScDevNetwork
+  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
+  - 🇺🇸 US | nlll.obxodvpn.us | HYSTERIA2 [E554] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
