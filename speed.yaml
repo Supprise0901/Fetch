@@ -18,17 +18,6 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: d7897b996af77eeecb7ac010361d74fb
-- name: 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
-  type: hysteria2
-  server: 18.153.65.67
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇸 United States - San Jose | 137.175.82.43:20022
   type: hysteria
   server: 137.175.82.43
@@ -41,18 +30,6 @@ proxies:
   - h3
   up: 20 Mbps
   down: 20 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  type: hysteria
-  server: 137.175.82.44
-  port: 20022
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
   type: hysteria
   server: 163.172.117.163
@@ -113,6 +90,89 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  type: hysteria2
+  server: 95.85.231.3
+  port: 443
+  udp: true
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: guide.blog-forme.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  type: hysteria2
+  server: 94.183.164.119
+  port: 24414
+  udp: true
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: harbor.blog-forme.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  type: hysteria2
+  server: 94.183.164.119
+  port: 24403
+  udp: true
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: docs.blog-forme.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  type: hysteria2
+  server: 212.34.137.105
+  port: 443
+  udp: true
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: shorts.blog-forme.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  type: hysteria2
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
+  udp: true
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇵🇱 Poland - Warsaw | 213.21.232.4:443
+  type: hysteria2
+  server: 213.21.232.4
+  port: 443
+  udp: true
+  password: 4b13c29ebe735e47
+  sni: mytubeproxy10.duckdns.org
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -120,28 +180,38 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -149,14 +219,19 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -164,14 +239,19 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -179,14 +259,19 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -194,42 +279,57 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -237,55 +337,75 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -293,14 +413,19 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇸🇬 SG | 165.154.193.165 | HYSTERIA2 [1A22] | @ScDevNetwork
-  - 🇩🇪 DE | 18.153.65.67 | HYSTERIA2 [9A45] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇩🇪 DE | guide.blog-forme.ru | HYSTERIA2 [9E92] | @ScDevNetwork
+  - 🇮🇷 IR | harbor.blog-forme.ru | HYSTERIA2 [941A] | @ScDevNetwork
+  - 🇮🇷 IR | docs.blog-forme.ru | HYSTERIA2 [6691] | @ScDevNetwork
+  - 🇳🇱 NL | shorts.blog-forme.ru | HYSTERIA2 [E066] | @ScDevNetwork
+  - 🇮🇷 IR | lakes.blog-forme.ru | HYSTERIA2 [46F5] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇵🇱 Poland - Warsaw | 213.21.232.4:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
