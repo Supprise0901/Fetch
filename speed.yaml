@@ -17,18 +17,6 @@ proxies:
   - h3
   up: 20 Mbps
   down: 20 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  type: hysteria
-  server: 137.175.82.44
-  port: 20022
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
 - name: 🇫🇷 France - Paris | 163.172.117.163:36699
   type: hysteria
   server: 163.172.117.163
@@ -101,30 +89,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  type: hysteria2
-  server: 13.143.189.143
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
-  type: hysteria2
-  server: 177.202.66.212
-  port: 443
-  udp: true
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: de1.obxodvpn.us
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
   type: hysteria2
   server: 192.9.179.140
@@ -144,15 +108,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
@@ -160,15 +121,12 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
@@ -177,15 +135,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
@@ -194,15 +149,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
@@ -211,15 +163,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
@@ -228,15 +177,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
@@ -244,15 +190,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
@@ -260,15 +203,12 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
@@ -277,15 +217,12 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
@@ -293,30 +230,24 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
@@ -324,15 +255,12 @@ proxy-groups:
   - REJECT
   - DIRECT
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
@@ -341,15 +269,12 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
   - 🇫🇷 France - Paris | 163.172.117.163:36699
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.28.175:24667 2
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  - 🇵🇱 PL | pl3.nexfile.net | HYSTERIA2 [5D2A] | @ScDevNetwork
-  - 🇩🇪 DE | de1.obxodvpn.us | HYSTERIA2 [95D0] | @ScDevNetwork
   - 🇦🇺 AU | cn.cremedelamer.com | HYSTERIA2 [75AF] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
