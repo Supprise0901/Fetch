@@ -5,277 +5,126 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  type: hysteria
-  server: 137.175.82.43
-  port: 20022
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 20 Mbps
-  down: 20 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  type: hysteria
-  server: 137.175.82.44
-  port: 20022
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇫🇷 France - Paris | 163.172.117.163:36699
-  type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: 163.172.117.163
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇫🇷 France - Paris | 62.210.28.175:24667
-  type: hysteria
-  server: 62.210.28.175
-  port: 24667
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
+- name: 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
   type: hysteria2
-  server: 157.173.16.59
+  server: bl1.nexfile.net
+  port: 4444
+  udp: true
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: bl1.nexfile.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
+  type: hysteria2
+  server: 130.49.163.188
   port: 443
   udp: true
-  password: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  sni: static.hain.lalibobi.online
+  password: 307ee0e53ea04dfd86a7f2f9fcd53844
+  sni: s5.libertyrunet.store
   skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  type: hysteria2
-  server: 201.58.139.134
-  port: 443
-  udp: true
-  password: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  sni: static.birch.lalibobi.online
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  type: hysteria2
-  server: 64.188.78.32
-  port: 443
-  udp: true
-  password: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  sni: static.parnu.lalibobi.online
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
-  type: hysteria
-  server: 198.200.57.142
-  port: 22335
-  udp: true
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  - 🇫🇷 France - Paris | 163.172.117.163:36699
-  - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
-  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇷🇸 RS | s5.libertyrunet.store | HYSTERIA2 [A81B] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
