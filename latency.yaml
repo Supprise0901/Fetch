@@ -100,18 +100,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
-  type: hysteria2
-  server: 48.102.214.167
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl5.edgeport.cloud
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
   type: hysteria2
   server: 201.58.139.134
@@ -119,30 +107,6 @@ proxies:
   udp: true
   password: 7d718630-7a1a-4af8-9332-aa0610634e8a
   sni: static.birch.lalibobi.online
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  type: hysteria2
-  server: 217.60.33.146
-  port: 1443
-  udp: true
-  password: bc60e93b-1c62-45fc-9c1d-c26285b29e7e
-  sni: infra-core.cvedcdigital.vip
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
-  type: hysteria2
-  server: 45.192.12.173
-  port: 443
-  udp: true
-  password: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  sni: arena.lalibobi.online
   skip-cert-verify: true
   alpn:
   - h3
@@ -171,6 +135,18 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
+  udp: true
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -185,12 +161,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -204,12 +178,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -224,12 +196,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -244,12 +214,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -264,12 +232,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -284,12 +250,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -303,12 +267,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 📲 电报信息
   type: select
   proxies:
@@ -322,12 +284,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -342,12 +302,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -361,12 +319,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -379,12 +335,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -398,12 +352,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -418,12 +370,10 @@ proxy-groups:
   - 🇫🇷 France - Paris | 62.210.28.175:24667
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 DE | static.hain.lalibobi.online | HYSTERIA2 [F6E1] | @ScDevNetwork
-  - 🇺🇸 US | fl5.edgeport.cloud | HYSTERIA2 [092C] | @ScDevNetwork
   - 🇺🇸 US | static.birch.lalibobi.online | HYSTERIA2 [838E] | @ScDevNetwork
-  - 🇵🇱 PL | infra-core.cvedcdigital.vip | HYSTERIA2 [6CE6] | @ScDevNetwork
-  - 🇵🇱 PL | arena.lalibobi.online | HYSTERIA2 [CAD8] | @ScDevNetwork
   - 🇪🇪 EE | static.parnu.lalibobi.online | HYSTERIA2 [9E6F] | @ScDevNetwork
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
