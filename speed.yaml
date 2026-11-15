@@ -4,78 +4,254 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-proxies: []
+proxies:
+- name: 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  type: hysteria2
+  server: 77.90.15.183
+  port: 8964
+  udp: true
+  password: HATATEAYA
+  sni: ganlanc.at
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: HATATEAYA
+- name: 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  type: hysteria2
+  server: 179.254.127.219
+  port: 25318
+  udp: true
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 775c8bt.lt4.h1clayd.click
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  type: hysteria2
+  server: bl1.nexfile.net
+  port: 4444
+  udp: true
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: bl1.nexfile.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  type: hysteria2
+  server: tr3.h1cloud.net
+  port: 25515
+  udp: true
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 2c74e5t.tr3.h1clayd.click
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  type: hysteria
+  server: 5.83.129.143
+  port: 26691
+  udp: true
+  auth-str: dongtaiwang.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 500 Mbps
+  down: 1000 Mbps
+- name: telegram:@pirozi_ArGaP
+  type: hysteria2
+  server: panel.autonetshop.ir
+  port: 43345
+  udp: true
+  password: d1gkicdgem3bsoaa
+  sni: panel.autonetshop.ir
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: km9oqmefh2km1i5n
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
-  proxies: []
+  proxies:
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
+  - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
+  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
+  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
+  - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
+  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
+  - telegram:@pirozi_ArGaP
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
