@@ -74,17 +74,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  type: hysteria2
-  server: 178.17.58.55
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany - Unknown | 77.90.15.183:8964
   type: hysteria2
   server: 77.90.15.183
@@ -98,17 +87,6 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: HATATEAYA
-- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
   type: hysteria2
   server: es1.xiaoliyu.cyou
@@ -116,6 +94,65 @@ proxies:
   udp: true
   password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  type: hysteria2
+  server: 196.240.181.9
+  port: 25318
+  udp: true
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 775c8bt.lt4.h1clayd.click
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  type: hysteria2
+  server: 38.17.64.118
+  port: 25515
+  udp: true
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 2c74e5t.tr3.h1clayd.click
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  type: hysteria
+  server: 137.175.82.43
+  port: 20022
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 20 Mbps
+  down: 20 Mbps
+- name: 🇫🇷 France - Paris | 62.210.28.175:24667
+  type: hysteria
+  server: 62.210.28.175
+  port: 24667
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
+  type: hysteria2
+  server: 217.60.33.146
+  port: 1443
+  udp: true
+  password: bc60e93b-1c62-45fc-9c1d-c26285b29e7e
+  sni: infra-core.cvedcdigital.vip
   alpn:
   - h3
   up: 10 Mbps
@@ -132,10 +169,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -147,10 +187,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -163,10 +206,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -179,10 +225,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -195,10 +244,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -211,10 +263,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -226,10 +281,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 📲 电报信息
   type: select
   proxies:
@@ -241,10 +299,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -257,10 +318,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -272,10 +336,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -286,10 +353,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -301,10 +371,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -317,10 +390,13 @@ proxy-groups:
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Unknown | 77.90.15.183:8964
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇪🇸 Spain - Madrid | es1.xiaoliyu.cyou:2056
+  - 🇧🇪 BE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [2ED4] | @ScDevNetwork
+  - 🇹🇷 TR | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [E6F8] | @ScDevNetwork
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇵🇱 Poland - Warsaw | 217.60.33.146:1443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
