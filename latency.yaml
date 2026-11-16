@@ -31,29 +31,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  type: hysteria2
-  server: bl1.nexfile.net
-  port: 4444
-  udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
-  type: hysteria2
-  server: tr3.h1cloud.net
-  port: 25515
-  udp: true
-  password: b36a14f8-fc3f-4142-968f-48031cf5f330
-  sni: 2c74e5t.tr3.h1clayd.click
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   type: hysteria
   server: 5.83.129.143
@@ -99,19 +76,40 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: telegram:@pirozi_ArGaP
-  type: hysteria2
-  server: panel.autonetshop.ir
-  port: 43345
+- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
   udp: true
-  password: d1gkicdgem3bsoaa
-  sni: panel.autonetshop.ir
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 France - Paris | 62.210.28.175:24667
+  type: hysteria
+  server: 62.210.28.175
+  port: 24667
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 France - Paris | 62.210.70.191:24667
+  type: hysteria
+  server: 62.210.70.191
+  port: 24667
+  udp: true
+  auth-str: dongtaiwang.com
+  skip-cert-verify: true
   alpn:
   - h3
   up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: km9oqmefh2km1i5n
+  down: 50 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -120,13 +118,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -134,13 +132,13 @@ proxy-groups:
   proxies:
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -149,13 +147,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -164,13 +162,13 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -179,13 +177,13 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -194,13 +192,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -208,13 +206,13 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 📲 电报信息
   type: select
   proxies:
@@ -222,13 +220,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -237,13 +235,13 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -251,26 +249,26 @@ proxy-groups:
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -278,13 +276,13 @@ proxy-groups:
   - DIRECT
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -293,13 +291,13 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 DE | 775c8bt.lt4.h1clayd.click | HYSTERIA2 [01C7] | @ScDevNetwork
-  - 🇧🇾 BY | bl1.nexfile.net | HYSTERIA2 [F856] | @ScDevNetwork
-  - 🇳🇪 NE | 2c74e5t.tr3.h1clayd.click | HYSTERIA2 [389F] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.143:26691
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - telegram:@pirozi_ArGaP
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
+  - 🇫🇷 France - Paris | 62.210.70.191:24667
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
