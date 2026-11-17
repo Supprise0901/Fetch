@@ -19,18 +19,6 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: HATATEAYA
-- name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 500 Mbps
-  down: 1000 Mbps
 - name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   type: hysteria2
   server: 178.17.58.55
@@ -64,17 +52,19 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
-- name: 🇺🇸 United States - San Jose | 137.175.82.44:20022
-  type: hysteria
-  server: 137.175.82.44
-  port: 20022
+- name: 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
+  type: hysteria2
+  server: ide.vipvirtualnet.eu
+  port: 30746
   udp: true
-  auth-str: dongtaiwang.com
-  skip-cert-verify: true
+  password: 99a271e85dbc4aa8950f9c7beee06b19
+  sni: del.vipvirtualnet.eu
   alpn:
   - h3
-  up: 11 Mbps
-  down: 55 Mbps
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: 7wjvepshx5g115x4
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -82,22 +72,20 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -105,11 +93,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -117,11 +104,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -129,11 +115,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -141,33 +126,30 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -175,43 +157,39 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -219,11 +197,10 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
-  - 🇺🇸 United States - San Jose | 137.175.82.44:20022
+  - 🇮🇷217684 | ⚡️Telegram = t.me/SOSkeyNET
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
