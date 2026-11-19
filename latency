@@ -64,27 +64,6 @@
     ],
     "outbounds": [
         {
-            "tag": "🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork",
-            "type": "hysteria2",
-            "server": "77.90.15.183",
-            "server_port": 8964,
-            "password": "HATATEAYA",
-            "up_mbps": 10,
-            "down_mbps": 100,
-            "tls": {
-                "enabled": true,
-                "server_name": "ganlanc.at",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "obfs": {
-                "type": "salamander",
-                "password": "HATATEAYA"
-            }
-        },
-        {
             "tag": "🇩🇪 Germany - Unknown | 5.83.129.90:54177",
             "type": "hysteria",
             "server": "5.83.129.90",
@@ -173,29 +152,69 @@
             }
         },
         {
+            "tag": "🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork",
+            "type": "hysteria2",
+            "server": "48.103.230.51",
+            "server_port": 16146,
+            "password": "u9axzkplfc3463am",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "sub.macdonalder.cyou",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "mn1g0eianbese7bl"
+            }
+        },
+        {
+            "tag": "🇵🇱 Poland - Warsaw | 45.198.0.228:1443",
+            "type": "hysteria2",
+            "server": "45.198.0.228",
+            "server_port": 1443,
+            "password": "bc60e93b-1c62-45fc-9c1d-c26285b29e7e",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "infra-core.cvedcdigital.vip",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork",
+                "🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork",
                 "🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443",
-                "🇩🇪 Germany - Unknown | 5.83.129.90:54177",
                 "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
-                "@iranping24",
-                "🇫🇷 France - Paris | 62.210.70.191:24667"
+                "🇵🇱 Poland - Warsaw | 45.198.0.228:1443",
+                "🇩🇪 Germany - Unknown | 5.83.129.90:54177",
+                "🇫🇷 France - Paris | 62.210.70.191:24667",
+                "@iranping24"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork",
+                "🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork",
                 "🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443",
-                "🇩🇪 Germany - Unknown | 5.83.129.90:54177",
                 "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
-                "@iranping24",
-                "🇫🇷 France - Paris | 62.210.70.191:24667"
+                "🇵🇱 Poland - Warsaw | 45.198.0.228:1443",
+                "🇩🇪 Germany - Unknown | 5.83.129.90:54177",
+                "🇫🇷 France - Paris | 62.210.70.191:24667",
+                "@iranping24"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "5m",

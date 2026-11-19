@@ -5,20 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
-  type: hysteria2
-  server: 77.90.15.183
-  port: 8964
-  udp: true
-  password: HATATEAYA
-  sni: ganlanc.at
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: HATATEAYA
 - name: 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   type: hysteria
   server: 5.83.129.90
@@ -77,155 +63,193 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: mn1g0eianbese7bl
+- name: 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  type: hysteria2
+  server: 48.103.230.51
+  port: 16146
+  udp: true
+  password: u9axzkplfc3463am
+  sni: sub.macdonalder.cyou
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: mn1g0eianbese7bl
+- name: 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
+  type: hysteria2
+  server: 45.198.0.228
+  port: 1443
+  udp: true
+  password: bc60e93b-1c62-45fc-9c1d-c26285b29e7e
+  sni: infra-core.cvedcdigital.vip
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 DE | ganlanc.at | HYSTERIA2 [3763] | @ScDevNetwork
   - 🇩🇪 Germany - Unknown | 5.83.129.90:54177
   - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.70.191:24667
   - '@iranping24'
+  - 🇺🇸 US | sub.macdonalder.cyou | HYSTERIA2 [661A] | @ScDevNetwork
+  - 🇵🇱 Poland - Warsaw | 45.198.0.228:1443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
