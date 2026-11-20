@@ -5,17 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  type: hysteria2
-  server: 178.17.58.55
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   type: hysteria2
   server: 48.102.214.171
@@ -105,24 +94,12 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
-  type: hysteria2
-  server: 87.121.112.83
-  port: 443
-  udp: true
-  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  sni: bulghys.live
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -131,13 +108,11 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -146,14 +121,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -162,14 +135,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -178,14 +149,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -194,14 +163,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -210,13 +177,11 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -225,13 +190,11 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -240,14 +203,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -256,13 +217,11 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -271,12 +230,10 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -285,13 +242,11 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -300,14 +255,12 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
   - 🇺🇸 US | fl4.edgeport.cloud | HYSTERIA2 [C236] | @ScDevNetwork
   - 🇷🇺 Russia - Unknown | 176.108.240.182:443
   - 🇷🇺 Russia - Unknown | 176.108.244.162:443
@@ -316,7 +269,6 @@ proxy-groups:
   - 🇵🇱 Poland - Warsaw | 31.58.117.133:443
   - 🇦🇪 United Arab Emirates - Unknown | 31.59.169.225:443
   - 🇵🇱 Poland - Warsaw | 82.40.63.138:443
-  - 🇧🇬 Bulgaria - Unknown | 87.121.112.83:443
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
