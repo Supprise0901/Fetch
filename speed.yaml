@@ -4,78 +4,151 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-proxies: []
+proxies:
+- name: 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  type: hysteria2
+  server: 185.175.45.4
+  port: 443
+  udp: true
+  password: 457805fb-7409-0001-88f4-419d10f2444f
+  sni: envbi-ru-31sel.my-fade.cloud
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  type: hysteria2
+  server: 185.102.75.145
+  port: 888
+  udp: true
+  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
+  sni: fin1.cft-razor.online
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
+  type: hysteria2
+  server: 185.102.75.145
+  port: 12242
+  udp: true
+  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
+  sni: fin4.cft-razor.online
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
-  proxies: []
+  proxies:
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
+  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

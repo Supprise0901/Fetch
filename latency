@@ -148,27 +148,65 @@
             }
         },
         {
+            "tag": "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888",
+            "type": "hysteria2",
+            "server": "185.102.75.145",
+            "server_port": 888,
+            "password": "GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "fin1.cft-razor.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242",
+            "type": "hysteria2",
+            "server": "185.102.75.145",
+            "server_port": 12242,
+            "password": "GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb",
+            "up_mbps": 10,
+            "down_mbps": 100,
+            "tls": {
+                "enabled": true,
+                "server_name": "fin4.cft-razor.online",
+                "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
                 "auto",
                 "direct",
-                "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
+                "🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork",
                 "🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443",
-                "🇷🇺 Russia - Moscow | 136.148.83.69:443",
                 "🇫🇷 France - Paris | 62.210.124.132:24667",
-                "🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork"
+                "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
+                "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242",
+                "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888",
+                "🇷🇺 Russia - Moscow | 136.148.83.69:443"
             ]
         },
         {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
+                "🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork",
                 "🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443",
-                "🇷🇺 Russia - Moscow | 136.148.83.69:443",
                 "🇫🇷 France - Paris | 62.210.124.132:24667",
-                "🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork"
+                "🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443",
+                "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242",
+                "🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888",
+                "🇷🇺 Russia - Moscow | 136.148.83.69:443"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "5m",
@@ -231,9 +269,9 @@
         "rule_set": [
             {
                 "tag": "geosite-category-ads-all",
-                "type": "remote",
+                "type": "local",
                 "format": "binary",
-                "url": "https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs"
+                "path": "D:\\pyproject\\sing-box-test\\config_template\\category-ads-all.srs"
             }
         ]
     }
