@@ -5,25 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇫🇷 机场推荐:dafei.de 法国 15
-  type: hysteria
-  server: 62.210.124.132
-  port: 24667
-  udp: true
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇳🇬 机场推荐:dafei.de 尼日利亚 02
-  type: trojan
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  udp: true
-  sni: hk.catxstar.com
 - name: 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
   type: vless
   server: 109.106.15.99
@@ -37,20 +18,6 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   client-fingerprint: firefox
-- name: 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
-  type: vless
-  server: 45.144.52.205
-  port: 4243
-  uuid: 78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c
-  udp: true
-  tls: true
-  servername: fi.convert-cloud.guru
-  reality-opts:
-    public-key: vCHucdoD_m-TKVHS7si1akKgP6r4dvTLUX8y1TTZQG4
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ns
 - name: 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
   type: vless
   server: 77.232.143.142
@@ -64,19 +31,6 @@ proxies:
     path: /media/ws/
     headers:
       Host: volumestyle.komediyatorg.net
-- name: LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
-  type: vless
-  server: api.floweroom.vip
-  port: 443
-  uuid: 8897280f-82be-4d5a-bfa1-80bd22851384
-  udp: true
-  tls: true
-  servername: api.floweroom.vip
-  network: ws
-  ws-opts:
-    path: /cart/sync/g-jSjxyhq24P
-    headers:
-      Host: api.floweroom.vip
 - name: 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
   type: vless
   server: 144.31.90.235
@@ -90,12 +44,6 @@ proxies:
     public-key: 32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ
     short-id: b3a633bc754b648d
   client-fingerprint: firefox
-- name: YBsmtWXH_http
-  type: http
-  server: 172.64.68.89
-  port: 443
-  tls: true
-  skip-cert-verify: true
 - name: Mj9evIsR_http
   type: http
   server: 172.64.69.89
@@ -126,9 +74,9 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
-- name: Md4rPDez_http
+- name: PHKUAwej_http
   type: http
-  server: 38.247.141.135
+  server: 185.219.159.15
   port: 443
   tls: true
   skip-cert-verify: true
@@ -139,13 +87,6 @@ proxies:
   udp: true
   username: u_rb1dba2
   password: l1tlrdx52v
-- name: 2yGcNuZR_socks
-  type: socks5
-  server: 103.14.164.30
-  port: 42000
-  udp: true
-  username: route164JIa2CBPxfy
-  password: VAwyJQX0iKMJiyCw5UVK9wGH
 - name: Kr2rHl2c_socks
   type: socks5
   server: 69.16.157.244
@@ -153,11 +94,12 @@ proxies:
   udp: true
   username: ufCobhydz4Wd
   password: JdFlrZhqHP
-- name: kHOLCHJO_socks
-  type: socks5
-  server: 103.248.228.166
-  port: 5555
-  udp: true
+- name: pFh0inCY_http
+  type: http
+  server: 158.173.154.4
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: jth6LOXg_socks
   type: socks5
   server: 103.248.150.50
@@ -177,13 +119,6 @@ proxies:
   udp: true
   username: route164JIa2CBPxfy
   password: VAwyJQX0iKMJiyCw5UVK9wGH
-- name: GWl2VodM_socks
-  type: socks5
-  server: 216.132.114.194
-  port: 62000
-  udp: true
-  username: utdr8wvs
-  password: 7i1dheg6
 - name: 0icTOhko_socks
   type: socks5
   server: 216.132.114.27
@@ -198,13 +133,6 @@ proxies:
   udp: true
   username: UBXich0K
   password: VvUAFi2E
-- name: BbNNFGX1_socks
-  type: socks5
-  server: 72.57.228.30
-  port: 62000
-  udp: true
-  username: UBXich0K
-  password: VvUAFi2E
 - name: mUGuW4Yz_socks
   type: socks5
   server: 144.225.47.158
@@ -212,9 +140,29 @@ proxies:
   udp: true
   username: DJy1T0dt
   password: sZnD8GTz
+- name: 2VBl7Vwr_http
+  type: http
+  server: 158.173.154.3
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: NL_speednode_0026
   type: http
   server: 84.17.47.125
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_6|2.9MB/s|R002-260618
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_7|3.1MB/s
+  type: http
+  server: 84.17.47.126
   port: 9002
   tls: true
   skip-cert-verify: true
@@ -224,6 +172,37 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
+- name: NL_speednode_0022
+  type: http
+  server: 103.97.88.154
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: NL_speednode_0023
+  type: http
+  server: 84.17.47.124
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_12|4.1MB/s
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_13|3.7MB/s
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  servername: 84.17.47.147
 - name: NL_speednode_0027
   type: http
   server: 84.17.47.123
@@ -242,13 +221,12 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
-- name: 489|D🔴🇺🇸hos_dokng.com_60b20da2
-  type: socks5
-  server: 216.132.114.182
-  port: 62000
-  udp: true
-  username: u_rf6ba87
-  password: r1703057as
+- name: '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
+  type: http
+  server: 138.199.35.218
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
   type: http
   server: fan.571589.xyz
@@ -256,6 +234,12 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: fan.571589.xyz
+- name: '378,537|CN-118.184.140.90-0528 #1'
+  type: http
+  server: 118.184.140.90
+  port: 58764
+  tls: true
+  skip-cert-verify: true
 - name: 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   type: hysteria2
   server: 185.175.45.4
@@ -268,519 +252,544 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
+- name: 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
+  type: hysteria2
+  server: 168.113.252.11
+  port: 443
+  udp: true
+  password: 004ea4a8-d701-0001-b0c0-8e61a5c31a23
+  sni: jkawq-ru-45sb.fade.mom
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇫🇷 机场推荐:dafei.de 法国 15
-  - 🇳🇬 机场推荐:dafei.de 尼日利亚 02
   - 🇩🇪 Германия 17 Need, L.L.C.-FZ t.me/rjsxrd
-  - 🇫🇮 Финляндия 7 aurologic GmbH t.me/rjsxrd
   - 🇸🇪 Швеция 5 AEZA GROUP LLC t.me/rjsxrd
-  - LTE/5G Все операторы 🇪🇺 t.me/rjsxrd 4
   - 🇰🇿 Казахстан 2 PS Internet Company LLP t.me/rjsxrd
-  - YBsmtWXH_http
   - Mj9evIsR_http
   - AMG7cBF6_http
   - S9n90br3_http
   - v90XHncK_http
   - z02hIbAa_http
-  - Md4rPDez_http
+  - PHKUAwej_http
   - wwMuepH6_socks
-  - 2yGcNuZR_socks
   - Kr2rHl2c_socks
-  - kHOLCHJO_socks
+  - pFh0inCY_http
   - jth6LOXg_socks
   - ld3Jxcm8_socks
   - 16N22kQo_socks
-  - GWl2VodM_socks
   - 0icTOhko_socks
   - AS0X6doU_socks
-  - BbNNFGX1_socks
   - mUGuW4Yz_socks
+  - 2VBl7Vwr_http
   - NL_speednode_0026
+  - 🇳🇱NL_6|2.9MB/s|R002-260618
+  - 🇳🇱NL_7|3.1MB/s
   - 🇺🇸US_5|3.4MB/s
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇳🇱NL_12|4.1MB/s
+  - 🇳🇱NL_13|3.7MB/s
   - NL_speednode_0027
   - 🇩🇪DE_240|3.0MB/s|M003-260806
   - 489|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
-  - 489|D🔴🇺🇸hos_dokng.com_60b20da2
+  - '477,482|🇺🇸US_35|355KB/s [f658df7df711] #1'
   - 489|D🔴🇯🇵hos[🤖💬🔮🧩]_dokng.com_9d3ee5...
+  - '378,537|CN-118.184.140.90-0528 #1'
   - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇷🇺 RU | jkawq-ru-45sb.fade.mom | HYSTERIA2 [35A4] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
