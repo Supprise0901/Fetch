@@ -5,18 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
-  type: hysteria2
-  server: 185.175.45.4
-  port: 443
-  udp: true
-  password: 457805fb-7409-0001-88f4-419d10f2444f
-  sni: envbi-ru-31sel.my-fade.cloud
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇫🇷 France - Paris | 62.210.124.132:24667
   type: hysteria
   server: 62.210.124.132
@@ -29,223 +17,90 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  type: hysteria2
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
-  sni: szqbx-ru-77dc.my-fade.cloud
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  type: hysteria2
-  server: 178.17.58.55
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  sni: de-tg.fastlanehosting.ru
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  type: hysteria2
-  server: de-tg.fastlanehosting.ru
-  port: 443
-  udp: true
-  password: M2NbFywBXjS9Ova8SgqRrQkp
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  type: hysteria2
-  server: 185.102.75.145
-  port: 888
-  udp: true
-  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  sni: fin1.cft-razor.online
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-- name: 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
-  type: hysteria2
-  server: 185.102.75.145
-  port: 12242
-  udp: true
-  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  sni: fin4.cft-razor.online
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: ⛔️ 广告拦截
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🚫 运营劫持
   type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
-  - 🇷🇺 Russia - Moscow | 136.148.83.69:443
-  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
-  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:888
-  - 🇰🇿 Kazakhstan - Unknown | 185.102.75.145:12242
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
