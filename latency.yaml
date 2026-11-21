@@ -17,6 +17,100 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  type: hysteria2
+  server: media.embrofree.org
+  port: 443
+  udp: true
+  password: 713142c9-ad09-4894-b35c-645423f3f6c9
+  sni: media.embrofree.org
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  type: hysteria2
+  server: 185.175.45.4
+  port: 443
+  udp: true
+  password: 457805fb-7409-0001-88f4-419d10f2444f
+  sni: envbi-ru-31sel.my-fade.cloud
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  type: hysteria2
+  server: 104.233.178.178
+  port: 443
+  udp: true
+  password: fanvpn.net
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  type: hysteria2
+  server: 168.113.252.11
+  port: 443
+  udp: true
+  password: 004ea4a8-d701-0001-b0c0-8e61a5c31a23
+  sni: jkawq-ru-45sb.fade.mom
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  type: hysteria2
+  server: 178.17.58.55
+  port: 443
+  udp: true
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  sni: de-tg.fastlanehosting.ru
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  type: hysteria2
+  server: 4f070970.con.metricdraft.tech
+  port: 443
+  udp: true
+  password: 030e421e-9317-4cb8-8fbe-a07a565ad3db
+  sni: 4f070970.con.metricdraft.tech
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  type: hysteria2
+  server: de-tg.fastlanehosting.ru
+  port: 443
+  udp: true
+  password: M2NbFywBXjS9Ova8SgqRrQkp
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@V2rayNPVTConfig 2'
+  type: hysteria2
+  server: 23.141.172.229
+  port: 50541
+  udp: true
+  password: ePPsH1bMFD
+  sni: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  up: 10 Mbps
+  down: 100 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -24,12 +118,28 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -37,6 +147,14 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -44,6 +162,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -51,6 +177,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -58,18 +192,42 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 📲 电报信息
   type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -77,23 +235,55 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🎯 全球直连
   type: select
   proxies:
   - DIRECT
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🛑 全球拦截
   type: select
   proxies:
   - REJECT
   - DIRECT
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -101,6 +291,14 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇫🇷 France - Paris | 62.210.124.132:24667
+  - 🇺🇸 US | media.embrofree.org | HYSTERIA2 [93F9] | @ScDevNetwork
+  - 🇷🇺 RU | envbi-ru-31sel.my-fade.cloud | HYSTERIA2 [15BC] | @ScDevNetwork
+  - 🇺🇸 US | www.bing.com | HYSTERIA2 [8AA9] | @ScDevNetwork
+  - 🇷🇺 Russia - Unknown | 168.113.252.11:443
+  - 🇩🇪 Germany - Frankfurt am Main | 178.17.58.55:443
+  - 🇫🇮 Finland - Helsinki | 4f070970.con.metricdraft.tech:443
+  - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
+  - '@V2rayNPVTConfig 2'
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
