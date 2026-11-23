@@ -63,31 +63,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  type: hysteria2
-  server: 77.93.89.197
-  port: 443
-  udp: true
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: bgsg2.hikigo.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: sj1awrdwnn5lbuno
-- name: 🇺🇸 2
-  type: hysteria2
-  server: de2.substituteme.space
-  port: 443
-  udp: true
-  password: PEisy6m-98HcX1TWZt0yXiCS7jRZG4IzKQTXo6k1qb4
-  sni: de2.substituteme.space
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇵🇱 2
   type: hysteria2
   server: 91.211.27.217
@@ -238,6 +213,48 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: a7rK-GlWiXFjHnfCYQeiNGqPgqj7sfRr
+- name: 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  type: hysteria2
+  server: 48.102.136.233
+  port: 443
+  udp: true
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-pl.snobvpn.online
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: sFQIE4F3SbaXCYoCQTY-4YvYiif8__By
+- name: 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  type: hysteria2
+  server: 23.141.172.229
+  port: 50541
+  udp: true
+  password: ePPsH1bMFD
+  sni: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
+  type: hysteria2
+  server: bgsg2.hikigo.com
+  port: 443
+  udp: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: bgsg2.hikigo.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: sj1awrdwnn5lbuno
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -249,8 +266,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -263,6 +278,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -273,8 +291,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -287,6 +303,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -298,8 +317,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -312,6 +329,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -323,8 +343,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -337,6 +355,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -348,8 +369,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -362,6 +381,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -373,8 +395,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -387,6 +407,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -397,8 +420,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -411,6 +432,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -421,8 +445,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -435,6 +457,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -446,8 +471,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -460,6 +483,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -470,8 +496,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -484,6 +508,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -493,8 +520,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -507,6 +532,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -517,8 +545,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -531,6 +557,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -542,8 +571,6 @@ proxy-groups:
   - 🇫🇷 FR | szqbx-ru-77dc.my-fade.cloud | HYSTERIA2 [F2DB] | @ScDevNetwork
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [C62C] | @ScDevNetwork
-  - 🇺🇸 2
   - 🇵🇱 2
   - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | der.substituteme.space | HYSTERIA2 [F373] | @ScDevNetwork
@@ -556,6 +583,9 @@ proxy-groups:
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  - 🇭🇰 HK | is1-ssl.mzstatic.com | HYSTERIA2 [1890] | @ScDevNetwork
+  - 🇸🇬 SG | bgsg2.hikigo.com | HYSTERIA2 [ACD9] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

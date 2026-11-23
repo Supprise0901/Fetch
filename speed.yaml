@@ -51,17 +51,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 2
-  type: hysteria2
-  server: de2.substituteme.space
-  port: 443
-  udp: true
-  password: PEisy6m-98HcX1TWZt0yXiCS7jRZG4IzKQTXo6k1qb4
-  sni: de2.substituteme.space
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇵🇱 2
   type: hysteria2
   server: 91.211.27.217
@@ -69,6 +58,17 @@ proxies:
   udp: true
   password: 04920673-035c-410d-94e4-5b1469d3fb6f
   sni: 91.211.27.217
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
+  type: hysteria2
+  server: der.substituteme.space
+  port: 443
+  udp: true
+  password: 7ltdv0p-ThUzWHLNKwejOnmWRVfgq7gswzL34GP_7n8
+  sni: der.substituteme.space
   alpn:
   - h3
   up: 10 Mbps
@@ -85,20 +85,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
-  type: hysteria2
-  server: hkzfsg2.mateflora.com
-  port: 443
-  udp: true
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: hkzfsg2.mateflora.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: fcfqz5o4znnjqtrp
 - name: 🇺🇸 United States - San Jose | 137.175.82.41:20022
   type: hysteria
   server: 137.175.82.41
@@ -123,20 +109,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
-  type: hysteria2
-  server: dga1de.mateflora.com
-  port: 40120
-  udp: true
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: psstatic.cdn.bcebos.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 100 Mbps
-  down: 200 Mbps
-  obfs: salamander
-  obfs-password: pz7lyeav76a5wqzb
 - name: '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   type: hysteria2
   server: 48.102.139.122
@@ -189,6 +161,20 @@ proxies:
   down: 100 Mbps
   obfs: salamander
   obfs-password: a7rK-GlWiXFjHnfCYQeiNGqPgqj7sfRr
+- name: 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
+  type: hysteria2
+  server: 48.102.136.233
+  port: 443
+  udp: true
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-pl.snobvpn.online
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+  obfs: salamander
+  obfs-password: sFQIE4F3SbaXCYoCQTY-4YvYiif8__By
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -199,17 +185,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -219,17 +204,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -240,17 +224,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -261,17 +244,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -282,17 +264,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -303,17 +284,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -323,17 +303,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 📲 电报信息
   type: select
   proxies:
@@ -343,17 +322,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -364,17 +342,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -384,17 +361,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -403,17 +379,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -423,17 +398,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -444,17 +418,16 @@ proxy-groups:
   - 🇩🇪 Germany - Frankfurt am Main | de-tg.fastlanehosting.ru:443
   - 🇫🇷 France - Paris | 62.210.124.132:24667
   - 🇺🇸 United States - San Jose | 38.6.222.132:11008
-  - 🇺🇸 2
   - 🇵🇱 2
+  - '0202 | 🇺🇸 United States | [7585ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - 🇺🇸 US | de2.substituteme.space | HYSTERIA2 [7A04] | @ScDevNetwork
-  - 🇭🇰 HK | hkzfsg2.mateflora.com | HYSTERIA2 [9089] | @ScDevNetwork
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
-  - 🇩🇪 Germany - Frankfurt am Main | dga1de.mateflora.com:40120
   - '0001 | 🇺🇸 United States | [74ms0.0mbps] | 🏴 Black | TG: @FlareFeedtg'
   - Sword-saint69 100
   - Sword-saint69 101
   - Sword-saint69 103
+  - 🇺🇸 US | hy2-pl.snobvpn.online | HYSTERIA2 [0BFA] | @ScDevNetwork
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
