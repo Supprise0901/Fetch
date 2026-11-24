@@ -87,32 +87,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 United States - Unknown | 216.73.157.142:443
-  type: hysteria2
-  server: 216.73.157.142
-  port: 443
-  udp: true
-  password: 74bec046f0004aa5bc280ecc4ab50465
-  sni: 216.73.157.142
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: qrl-03E8Q6JaUlAkOPHXQBwN
-- name: 🇺🇸 US - [t.me/SOSkeyNET]
-  type: hysteria2
-  server: us1.taptapvpn.top
-  port: 8443
-  udp: true
-  password: 14c9c083296b4caa9108c429a68ec786
-  sni: us1.taptapvpn.top
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: 00d67gvra35ubery
 - name: 🇫🇷 France - Paris | 62.210.70.191:24667
   type: hysteria
   server: 62.210.70.191
@@ -124,6 +98,42 @@ proxies:
   - h3
   up: 10 Mbps
   down: 50 Mbps
+- name: 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  type: hysteria
+  server: 137.175.82.43
+  port: 20022
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 20 Mbps
+  down: 20 Mbps
+- name: 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
+  udp: true
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 France - Paris | 62.210.28.175:24667
+  type: hysteria
+  server: 62.210.28.175
+  port: 24667
+  udp: true
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11 Mbps
+  down: 55 Mbps
 proxy-groups:
 - name: 🔰 节点选择
   type: select
@@ -137,9 +147,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -152,9 +163,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -168,9 +180,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -184,9 +197,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -200,9 +214,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -216,9 +231,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -231,9 +247,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 📲 电报信息
   type: select
   proxies:
@@ -246,9 +263,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -262,9 +280,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -277,9 +296,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -291,9 +311,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -306,9 +327,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -322,9 +344,10 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.41:20022
   - 🇺🇸 United States - San Jose | 38.6.222.131:11008
   - Sword-saint69 384
-  - 🇺🇸 United States - Unknown | 216.73.157.142:443
-  - 🇺🇸 US - [t.me/SOSkeyNET]
   - 🇫🇷 France - Paris | 62.210.70.191:24667
+  - 🇺🇸 United States - San Jose | 137.175.82.43:20022
+  - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
+  - 🇫🇷 France - Paris | 62.210.28.175:24667
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
