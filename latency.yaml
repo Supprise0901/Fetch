@@ -134,17 +134,6 @@ proxies:
   - h3
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇯🇵 Japan - Tokyo | 64.204.49.143:443
-  type: hysteria2
-  server: 64.204.49.143
-  port: 443
-  udp: true
-  password: 5dc783605a6829f831a21d86bb913c7a
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   type: hysteria2
   server: 194.93.61.120
@@ -169,32 +158,6 @@ proxies:
   - h3
   up: 10 Mbps
   down: 100 Mbps
-- name: 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  type: hysteria2
-  server: 64.118.154.18
-  port: 40055
-  udp: true
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: psstatic.cdn.bcebos.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
-  obfs: salamander
-  obfs-password: 6fltjteoyab7fjf1
-- name: 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
-  type: hysteria2
-  server: 193.233.130.66
-  port: 443
-  udp: true
-  password: 4dea9141-914b-4a25-86b4-c5f98616cb8d
-  sni: app.vles.space
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 10 Mbps
-  down: 100 Mbps
 - name: 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
   type: hysteria2
   server: 128.254.186.190
@@ -203,6 +166,73 @@ proxies:
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   sni: mother-earth.fyi
   skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇭🇰 Hong Kong 02
+  type: hysteria2
+  server: 23.141.172.229
+  port: 50541
+  udp: true
+  password: ePPsH1bMFD
+  sni: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: Бесплатный 3
+  type: hysteria2
+  server: uk-tube-01.stre4m.net
+  port: 13337
+  udp: true
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  sni: mother-earth.fyi
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇩🇪 15
+  type: hysteria2
+  server: 177.202.73.181
+  port: 443
+  udp: true
+  password: 7316d881-eeec-429b-94f1-07585747f7c8
+  sni: captcha.get-links.net
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@happ_tmn 5'
+  type: hysteria2
+  server: welcometorussia.belka.tv
+  port: 443
+  udp: true
+  password: 7316d881-eeec-429b-94f1-07585747f7c8
+  sni: welcometorussia.belka.tv
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: '@happ_tmn 6'
+  type: hysteria2
+  server: channelru.belka.tv
+  port: 443
+  udp: true
+  password: 7316d881-eeec-429b-94f1-07585747f7c8
+  sni: channelru.belka.tv
+  alpn:
+  - h3
+  up: 10 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 @happ_tmn 5
+  type: hysteria2
+  server: ru2.streamclubz.com
+  port: 443
+  udp: true
+  password: 7316d881-eeec-429b-94f1-07585747f7c8
+  sni: ru2.streamclubz.com
   alpn:
   - h3
   up: 10 Mbps
@@ -224,12 +254,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -246,12 +279,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -269,12 +305,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -292,12 +331,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🚫 运营劫持
   type: select
   proxies:
@@ -315,12 +357,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -338,12 +383,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -360,12 +408,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 📲 电报信息
   type: select
   proxies:
@@ -382,12 +433,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -405,12 +459,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -427,12 +484,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -448,12 +508,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -470,12 +533,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -493,12 +559,15 @@ proxy-groups:
   - 🇺🇸 United States - San Jose | 137.175.82.43:20022
   - 🇺🇸 United States - San Jose | 198.200.57.142:22335 3
   - 🇫🇷 France - Paris | 62.210.28.175:24667
-  - 🇯🇵 Japan - Tokyo | 64.204.49.143:443
   - 🇳🇱 NL | nether.cxhub.su | HYSTERIA2 [45F1] | @ScDevNetwork
   - 🇺🇸 US | quattro-vpn-zalupa.cxhub.su | HYSTERIA2 [D995] | @ScDevNetwork
-  - 🇺🇸 US | psstatic.cdn.bcebos.com | HYSTERIA2 [6103] | @ScDevNetwork
-  - 🇺🇸 US | app.vles.space | HYSTERIA2 [5002] | @ScDevNetwork
   - 🇦🇪 AE | mother-earth.fyi | HYSTERIA2 [0229] | @ScDevNetwork
+  - 🇭🇰 Hong Kong 02
+  - Бесплатный 3
+  - 🇩🇪 15
+  - '@happ_tmn 5'
+  - '@happ_tmn 6'
+  - 🇷🇺 @happ_tmn 5
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
